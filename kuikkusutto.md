@@ -8,9 +8,9 @@
     Assets/Create/NonNon Sheet/NonNonDatabase から Database アセットを作成します。
 
     ProjectSettings 内の NonNon Sheet を開き、Database のフィールドに作成した Database アセットを設定します。
-3.  Tableの定義
+3.  Table の定義
 
-    SampleTable というスクリプトを作成します。その後、以下のように編集します。
+    SampleTable というスクリプトを作成し、以下のように編集します。
 
     ```csharp
     using System;
@@ -30,6 +30,6 @@
 4.  Table アセットの作成
 
     Table を定義すると、その Table アセットを Assets/Create/NonNon Sheet から作成できるようになります。Assets/Create/NonNon Sheet/SampleTable から Table アセットを作成します。
-5.  Tableを開く
+5.  Table を開く
 
     Table アセットのインスペクタから “Open Sheet Window” ボタンをクリックするか、Tableアセットをダブルクリックするとウィンドウが開きます。

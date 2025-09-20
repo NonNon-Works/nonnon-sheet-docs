@@ -19,7 +19,7 @@ layout:
 
 {% columns %}
 {% column %}
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -101,7 +101,7 @@ ValidateName は Name フィールドが空の場合にエラーとするバリ�
 
 エラーの場合は ValidationResult.Error を返します。ValidationResult.Error の引数にメッセージを渡すことで、セルの Tooltip としてメッセージを表示することもできます。
 
-<div align="left"><figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure></div>
 {% endcolumn %}
 {% endcolumns %}
 
