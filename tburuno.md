@@ -7,7 +7,7 @@ Untiy エディタ上で表形式にレンダリングされ、各フィール�
 
 {% columns %}
 {% column %}
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -53,7 +53,7 @@ Untiy エディタ上で表形式にレンダリングされ、各フィール�
 
 {% columns %}
 {% column %}
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -79,7 +79,7 @@ Untiy エディタ上で表形式にレンダリングされ、各フィール�
 
 ### &#x20;制約
 
-`NonNonTable<T>` は実装する上でいくつかの制約があります。これら
+`NonNonTable<T>` は実装する上でいくつかの制約があります
 
 * `partial` なクラスである
 * データ型 `<T>` は `class` のみ、`struct` はサポート対象外
