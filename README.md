@@ -1,5 +1,7 @@
 # はじめに
 
+<figure><img src=".gitbook/assets/sheet.png" alt=""><figcaption></figcaption></figure>
+
 NonNon Sheet は Unity エディタ上でマスターデータを管理するためのツールです。\
 ScriptableObject を Excel や SpreadSheet のような表形式の UI で編集することができます。\
 UI Toolkit で実装されており、Unity らしい操作感と Excel のような表形式の UI が自然に融合しています。
