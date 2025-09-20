@@ -9,3 +9,4 @@
 * [データをバリデーションする](dtawobaridshonsuru.md)
 * [csv・jsonをインポート・エクスポートする](csvjsonwoinptoekusuptosuru.md)
 * [サンプルについて](sanpurunitsuite.md)
+* [更新履歴](geng-xinlli.md)
