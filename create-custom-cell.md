@@ -55,7 +55,7 @@ public class SampleCustomCell : CustomCell<[任意の型], SampleCustomAttribute
 
 {% columns %}
 {% column %}
-<div align="left"><figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 
 {% endcolumn %}

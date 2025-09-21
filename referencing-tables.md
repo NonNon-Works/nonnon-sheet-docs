@@ -18,116 +18,132 @@ layout:
 # 他のテーブルを参照する
 
 {% columns %}
-{% column %}
-<div align="left"><figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure></div>
+{% column width="50%" %}
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
-{% column %}
+{% column width="50%" %}
 あるテーブルのデータを他のテーブルからドロップダウンで選択することもできます。
 
-保存されるのはデータそのものではなく、参照されるテーブルのデータクラスの**キー**なので注意してください。
+保存されるのはデータそのものではなく、参照されるテーブルのデータクラスの**キー**になります。
+
+他のテーブルを参照するために必要な作業は主に以下の4つです。
+
+* 参照されるテーブルのデータクラスへの `IRelationalData<T>` の実装
+* 参照指定のための属性の実装
+* カスタムセルの実装
+* 参照するテーブルのフィールドへ属性を付与
+
+int 値をキーとするテーブルを例に上記4つの実装をしてみましょう。
 {% endcolumn %}
 {% endcolumns %}
 
-int値をキーとするテーブルを例にテーブルの参照関係を作ってみましょう。
 
-まずは参照されるテーブル側の実装についてです。
 
+{% columns %}
+{% column %}
 ```csharp
 [NonNonTable]
-public partial class IntKeyReferencedTable : NonNonTable<IntKeyData> { }
+public partial class SampleTable : NonNonTable<SampleData> { }
 
 [Serializable]
-public class IntKeyData : IRelationalData<int>
-{
-    public int Id;
+public class SampleData : IRelationalData<int> 
+{ 
+    public int Key;
     public string Name;
 
-    int IRelationalData<int>.Id => Id;
-    string IRelationalData<int>.DisplayName => $"{Id}: {Name}";
-}
-
-public class IntKeyDataRelationAttribute : CellCustomAttribute { }
-
-#if UNITY_EDITOR
-[NonNonSheet.Editor.NonNonCell]
-public class IntKeyDataRelationCell : NonNonSheet.Editor.DataRelationCell<int, IntKeyDataRelationAttribute, IntKeyData> { }
-#endif
-```
-
-
-
-{% columns %}
-{% column %}
-```csharp
-[Serializable]
-public class IntKeyData : IRelationalData<int>
-{
-    public int Id;
-    public string Name;
-
-    int IRelationalData<int>.Id => Id;
-    string IRelationalData<int>.DisplayName => $"{Id}: {Name}";
+    int IRelationalData<int>.Id => Key;
+    string IRelationalData<int>.DisplayName => $"{Key}: {Name}";
 }
 ```
 {% endcolumn %}
 
 {% column %}
-IntKeyData クラスが `IRelationalData<int>` を実装してる点に注目してください。\
-こうすることで IntKeyData をデータクラスとして用いるテーブルは他のテーブルから参照されることができます。
+### データクラスへの IRelationalData の実装
 
-IRelationalData は T Id と string DisplayName の実装が必要です。
+あるテーブルを他のテーブルから参照するためには、テーブルのデータクラスに `IRelationalData<T>` を実装する必要があります。
 
-T Id は参照先で実際に保存される値となります。
+`T` で指定した型がそのデータクラスのキーとなります。
 
-string DisplayName は後述する IntKeyDataRelationCell のセル内で表示される文字列になります。
-{% endcolumn %}
-{% endcolumns %}
-
-
-
-{% columns %}
-{% column %}
-```csharp
-public class IntKeyDataRelationAttribute : CellCustomAttribute { }
-```
-{% endcolumn %}
-
-{% column %}
-IntKeyDataRelationAttribute は参照する側のテーブルのデータクラスにおいて、キーを保存するフィールドに付与するための CellCustomAttribute です。
-{% endcolumn %}
-{% endcolumns %}
-
-
-
-{% columns %}
-{% column %}
-```csharp
-#if UNITY_EDITOR
-[NonNonSheet.Editor.NonNonCell]
-public class IntKeyDataRelationCell : NonNonSheet.Editor.DataRelationCell<int, IntKeyDataRelationAttribute, IntKeyData> { }
-#endif
-```
-{% endcolumn %}
-
-{% column %}
-IntKeyDataRelationCell は参照を設定するようのカスタムセルの定義です。
-
-DataRelationCell のサブクラスとして実装します。
-
-DataRelationCell の第一型引数にはキーの型を、第二型引数にはリレーション用属性を、第三型引数には参照される側のデータクラスを指定します。
-{% endcolumn %}
-{% endcolumns %}
-
-また、参照されるテーブルは必ずDatabaseに登録しておく必要があります。
+また、DisplayName で生成した文字列がセルに表示される文字列となります。
 
 {% hint style="info" %}
-同じIRelationalDataなデータクラスを使用したテーブルが複数データベースに登録されている場合、登録順の早いものが参照されます。\
-例えばIntKeyDataをデータクラスとするテーブルが複数あったり、IntKeyReferencedTable の ScriptableObject が複数作成されていたりすると上記のような動作が起こります。しかし、このような使用法は推奨しません。なるべく避けるようにしてください。
+参照されるテーブルは ProjectSettings/NonNonSheet の Tables に登録されている必要があります。テーブルアセットは作成時点で自動登録されますが、セルに「Table not found」と表示された場合はテーブルアセットが登録されているかを確認してください。\
+また、同じデータクラスを使用したテーブルが複数登録されている場合、登録順の早いものが参照されるため注意してください。
 {% endhint %}
+{% endcolumn %}
+{% endcolumns %}
 
-次に参照するテーブル側の実装についてです。
 
+
+{% columns %}
+{% column %}
+```csharp
+public class SampleTableRefAttribute : CellCustomAttribute { }
+```
+{% endcolumn %}
+
+{% column %}
+### 参照指定のための属性の実装
+
+`CellCustomAttribute` を継承した Attribute クラスを実装します。命名に特に制約はありません。
+
+ここで定義した Attribute がテーブル参照用フィールドを示す属性として使用されます。
+{% endcolumn %}
+{% endcolumns %}
+
+
+
+{% columns %}
+{% column %}
+```csharp
+#if UNITY_EDITOR
+[NonNonSheet.Editor.NonNonCell]
+public class SampleTableRelationCell : NonNonSheet.Editor.DataRelationCell<int, SampleDataRelationAttribute , SampleData> { }
+#endif
+```
+{% endcolumn %}
+
+{% column %}
+### カスタムセルの実装
+
+`DataRelationCell` を継承したクラスを実装します。
+
+`DataRelationCell` の型引数は
+
+* 第１型引数: `IRelationalData<T>` の T と同じ型
+* 第２型引数: `CellCustomAttribute` を継承した Attribute クラス
+* 第３型引数: `IRelationalData<T>` を実装したデータクラス
+
+また、このクラスは Editor only なアセンブリに配置するか、#if UNITY\_EDITOR で囲む必要があるため注意してください。
+{% endcolumn %}
+{% endcolumns %}
+
+
+
+{% columns %}
+{% column %}
+```csharp
+public class MultiSampleTableRefAttribute : CellCustomAttribute { }
+
+#if UNITY_EDITOR
+[NonNonSheet.Editor.NonNonCell]
+public class SampleTableMultiRelationCell : NonNonSheet.Editor.MultiDataRelationCell<int, MultiSampleTableRefAttribute, SampleData> { }
+#endif
+```
+{% endcolumn %}
+
+{% column %}
+`DataRelationCell` の代わりに `MultiDataRelationCell` を継承したクラスを実装することで、複数のキーを保存させることもできます。
+
+<div align="left"><figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>
+{% endcolumn %}
+{% endcolumns %}
+
+
+
+{% columns %}
+{% column %}
 ```csharp
 [NonNonTable]
 public partial class ReferencingTable : NonNonTable<ReferencingData> { }
@@ -135,18 +151,36 @@ public partial class ReferencingTable : NonNonTable<ReferencingData> { }
 [Serializable]
 public class ReferencingData
 {
-    [IntKeyDataRelation] public int IntKeyRelation;
+    [SampleTableRef] public int SampleTableKey;
+    [MultiSampleTableRef] public int[] SampleTableKeys;
 }
 ```
+{% endcolumn %}
 
-参照したいテーブルが提供するキーの型と同じ型のフィールドにリレーション用属性を付与しましょう。
+{% column %}
+### 参照するテーブルのフィールドへ属性を付与
+
+参照されるテーブルとは別のテーブルを実装します。
+
+データクラスに `IRelationalData<T>` の T と同じ型のフィールドを実装しましょう。
+
+そのフィールドに  `CellCustomAttribute` を継承した Attribute クラス（今回だと `SampleTableRefAttribute` または `MultiSampleTableRefAttribute`）を付与します。
+{% endcolumn %}
+{% endcolumns %}
+
+
 
 {% columns %}
 {% column %}
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-これで ReferencingTable から IntKeyReferencedTable を参照できるようになりました
+以上で ReferencingTable から SampleTable を参照することができるようになりました。
+
+今回の例では int 値をキーにしましたが、 string や enum をキーとすることも可能です。
+
+
 {% endcolumn %}
 {% endcolumns %}
+

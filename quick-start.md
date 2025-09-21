@@ -3,12 +3,7 @@
 1.  ダウンロード
 
     Unity アセットストアから NonNon Sheet をダウンロード＆インポートします
-2.  Databaseの作成
-
-    Assets/Create/NonNon Sheet/NonNonDatabase から Database アセットを作成します。
-
-    ProjectSettings 内の NonNon Sheet を開き、Database のフィールドに作成した Database アセットを設定します。
-3.  Table の定義
+2.  Table の定義
 
     SampleTable というスクリプトを作成し、以下のように編集します。
 
@@ -27,9 +22,9 @@
         public string Name;
     }
     ```
-4.  Table アセットの作成
+3.  Table アセットの作成
 
     Table を定義すると、その Table アセットを Assets/Create/NonNon Sheet から作成できるようになります。Assets/Create/NonNon Sheet/SampleTable から Table アセットを作成します。
-5.  Table を開く
+4.  Table を開く
 
     Table アセットのインスペクタから “Open Sheet Window” ボタンをクリックするか、Tableアセットをダブルクリックするとウィンドウが開きます。
