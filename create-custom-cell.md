@@ -28,7 +28,7 @@ layout:
 そのために必要な作業は主に以下の2つです。
 
 * カスタムセルを指定するための Attribute の実装
-* カスタムセル VisualElement の実装
+* カスタムセルの実装
 {% endcolumn %}
 {% endcolumns %}
 
@@ -68,31 +68,31 @@ public class SampleCustomCell : CustomCell<[任意の型], SampleCustomAttribute
 {% endcolumn %}
 
 {% column %}
-### カスタムセル VisualElement の実装
+### カスタムセルの実装
 
 次に `CustomCell` のサブクラスを実装し、 `NonNonCell` 属性を付与します。
-
-`CustomCell` の型引数は
-
-* 第１型引数: セルで扱う値の型
-* 第２型引数: `CellCustomAttribute` を継承した Attribute クラス
 
 `CustomCell` は `VisualElement` のサブクラスです。\
 このクラスに `IntegerField` などを追加することで UI を表示することができます。
 
-また、このクラスは必ず Editor only なアセンブリに実装してください。
+`CustomCell` の型引数は
+
+* 第１型引数: セルで扱う値の型
+* 第２型引数: 先ほど実装した `CellCustomAttribute` のサブクラス
 
 CustomCell には3つのコールバックメソッドが用意されています。
 
 * OnInitialize
   * セル生成時に呼び出されます
-  * セル内の VisualElement の生成等の処理を実装しましょう
+  * セルへの VisualElement 追加処理等を実装しましょう
 * OnBindProperty
-  * セルの生成や行の並び替えなど、セルに紐づくデータが変更され、Binding 処理が必要なときに呼び出されます
+  * セルの生成やデータ並び替えなど、セルに紐づくデータが変更され、Binding 処理が必要なときに呼び出されます
   * OnInitialize で生成した VisualElement の Binding 処理を実装しましょう
 * OnStartEditing
   * セル編集開始操作（セルをダブルクリック or セル選択中にF2またはEnterを入力）時に呼び出されます
   * 編集中のみ UI を変更したい場合、UI 変更処理を実装しましょう
+
+また、カスタムセルは必ず Editor only なアセンブリに実装する必要があるため注意してください。
 {% endcolumn %}
 {% endcolumns %}
 
@@ -265,6 +265,6 @@ public class DateCell : CustomCell<Date, DateAttribute>
 {% endcolumn %}
 
 {% column %}
-最後に各コールバックを用いて `DateCell` を実装して完了です。
+最後に各コールバックメソッドを用いて `DateCell` を実装して完了です。
 {% endcolumn %}
 {% endcolumns %}

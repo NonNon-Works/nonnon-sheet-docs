@@ -23,18 +23,18 @@ layout:
 {% endcolumn %}
 
 {% column width="50%" %}
-あるテーブルのデータを他のテーブルからドロップダウンで選択することもできます。
+他のテーブルのデータをドロップダウンで選択できるようにすることも可能です。
 
 保存されるのはデータそのものではなく、参照されるテーブルのデータクラスの**キー**になります。
 
 他のテーブルを参照するために必要な作業は主に以下の4つです。
 
 * 参照されるテーブルのデータクラスへの `IRelationalData<T>` の実装
-* 参照指定のための属性の実装
+* 参照指定のための Attribute の実装
 * カスタムセルの実装
-* 参照するテーブルのフィールドへ属性を付与
+* 参照するテーブルのフィールドへ Attribute を付与
 
-int 値をキーとするテーブルを例に実装をしてみましょう。
+int 値をキーとするテーブルを例に実装の流れを追ってみましょう。
 {% endcolumn %}
 {% endcolumns %}
 
@@ -84,9 +84,9 @@ public class SampleTableRefAttribute : CellCustomAttribute { }
 {% endcolumn %}
 
 {% column %}
-### 参照指定のための属性の実装
+### 参照指定のための Attribute の実装
 
-`CellCustomAttribute` を継承した Attribute クラスを実装します。命名に特に制約はありません。
+`CellCustomAttribute` を継承した Attribute を実装します。命名に特に制約はありません。
 
 ここで定義した Attribute がテーブル参照用フィールドを示す属性として使用されます。
 {% endcolumn %}
@@ -98,8 +98,8 @@ public class SampleTableRefAttribute : CellCustomAttribute { }
 {% column %}
 ```csharp
 #if UNITY_EDITOR
-[NonNonSheet.Editor.NonNonCell]
-public class SampleTableRelationCell : NonNonSheet.Editor.DataRelationCell<int, SampleDataRelationAttribute , SampleData> { }
+[NonNonCell]
+public class SampleTableRelationCell : DataRelationCell<int, SampleDataRelationAttribute , SampleData> { }
 #endif
 ```
 {% endcolumn %}
@@ -127,8 +127,8 @@ public class SampleTableRelationCell : NonNonSheet.Editor.DataRelationCell<int, 
 public class MultiSampleTableRefAttribute : CellCustomAttribute { }
 
 #if UNITY_EDITOR
-[NonNonSheet.Editor.NonNonCell]
-public class SampleTableMultiRelationCell : NonNonSheet.Editor.MultiDataRelationCell<int, MultiSampleTableRefAttribute, SampleData> { }
+[NonNonCell]
+public class SampleTableMultiRelationCell : MultiDataRelationCell<int, MultiSampleTableRefAttribute, SampleData> { }
 #endif
 ```
 {% endcolumn %}
@@ -158,13 +158,13 @@ public class ReferencingData
 {% endcolumn %}
 
 {% column %}
-### 参照するテーブルのフィールドへ属性を付与
+### 参照するテーブルのフィールドへ Attribute を付与
 
 参照されるテーブルとは別のテーブルを実装します。
 
 データクラスに `IRelationalData<T>` の T と同じ型のフィールドを実装しましょう。
 
-そのフィールドに  `CellCustomAttribute` を継承した Attribute クラス（今回だと `SampleTableRefAttribute` または `MultiSampleTableRefAttribute`）を付与します。
+そのフィールドに  `CellCustomAttribute` を継承した Attribute（今回だと `SampleTableRefAttribute` または `MultiSampleTableRefAttribute`）を付与します。
 {% endcolumn %}
 {% endcolumns %}
 

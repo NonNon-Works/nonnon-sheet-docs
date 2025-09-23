@@ -22,7 +22,7 @@ layout:
 
 {% columns %}
 {% column %}
-<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -30,9 +30,8 @@ layout:
 [Serializable]
 public class SampleData
 {
-    public int Id;
-    public string Name;
-    [Slider(0, 200)] public float Height;
+    public float Float;
+    [Slider(0f, 1f)] public float SliderFloat;
 }
 ```
 {% endcolumn %}

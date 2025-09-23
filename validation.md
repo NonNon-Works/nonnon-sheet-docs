@@ -33,8 +33,42 @@ NonNonSheet では問題のあるデータを素早く検知するため、セ�
 
 
 
+{% columns %}
+{% column %}
+```csharp
+[NonNonTable]
+public partial class SampleTable : NonNonTable<SampleData>, ISampleTableValidator { }
+
+[Serializable]
+public class SampleData
+{
+    public int Id;
+    public string Name;
+}
+```
+{% endcolumn %}
+
+{% column %}
 バリデーションをするためには `Table` クラスに `IXxxValidator` インタフェースを実装します。
 
+
+{% endcolumn %}
+{% endcolumns %}
+
+
+
+{% columns %}
+{% column %}
+```csharp
+public interface ISampleTableValidator : IValidator<SampleData>
+{
+    ValidationResult ValidateId(SubclassData self, int id) => ValidationResult.Success();
+    ValidationResult ValidateName(SubclassData self, string id) => ValidationResult.Success();
+}
+```
+{% endcolumn %}
+
+{% column %}
 `IXxxValidator` インタフェースは SourceGenerator によって自動生成されます。\
 例えば `SampleTabl`e クラスを定義すると、 `ISampleTableValidator` インタフェースが生成されます。
 
@@ -43,8 +77,16 @@ NonNonSheet では問題のあるデータを素早く検知するため、セ�
 
 バリデーションメソッドは引数としてバリエーション対象のデータ全体と更新後のフィールドの値が渡されます。また、返値としてValidationResult (struct) を返すことでバリエーションの結果を
 
-ValidationSampleTable を例にいくつかのバリエーションの例を示します。
 
+{% endcolumn %}
+{% endcolumns %}
+
+
+
+## バリデーションの例
+
+{% columns %}
+{% column %}
 ```csharp
 [NonNonTable]
 public partial class ValidationSampleTable : NonNonTable<ValidationSampleData>, IValidationSampleTableValidator
@@ -78,6 +120,14 @@ public class ValidationSampleData
     public int Age;
 }
 ```
+{% endcolumn %}
+
+{% column %}
+ValidationSampleTable を例にいくつかのバリエーションの例を示します。
+
+
+{% endcolumn %}
+{% endcolumns %}
 
 
 
