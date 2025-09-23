@@ -95,7 +95,7 @@ ValidationResult IValidationSampleTableValidator.ValidateName(ValidationSampleDa
 {% endcolumn %}
 
 {% column %}
-まずはシンプルなバリエーションの例からいきましょう。
+まずはシンプルなバリエーションの例です。
 
 ValidateName は Name フィールドが空の場合にエラーとするバリデーションメソッドです。
 

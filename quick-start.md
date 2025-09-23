@@ -10,7 +10,6 @@
     ```csharp
     using System;
     using NonNonSheet;
-    using UnityEngine;
 
     [NonNonTable]
     public partial class SampleTable : NonNonTable<SampleData> { }
@@ -28,3 +27,8 @@
 4.  Table を開く
 
     Table アセットのインスペクタから “Open Sheet Window” ボタンをクリックするか、Tableアセットをダブルクリックするとウィンドウが開きます。
+
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+1.
+2.

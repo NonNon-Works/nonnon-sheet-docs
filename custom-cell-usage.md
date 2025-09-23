@@ -20,6 +20,12 @@ layout:
 フィールドに特定の属性をつけることでセルの UI をカスタマイズすることができます。\
 例えば float 型のフィールドに Slider 属性をつけるとセルの UI がスライダーに変更されます。
 
+{% columns %}
+{% column %}
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
 ```csharp
 [Serializable]
 public class SampleData
@@ -29,6 +35,10 @@ public class SampleData
     [Slider(0, 200)] public float Height;
 }
 ```
+{% endcolumn %}
+{% endcolumns %}
+
+
 
 標準で実装されているカスタムセルは以下の表の通りです。
 

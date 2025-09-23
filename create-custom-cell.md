@@ -17,8 +17,22 @@ layout:
 
 # カスタムセルを自作する
 
-カスタムセルはユーザーが実装することも可能です。\
-そのためには「カスタムセル自体」の実装と「カスタムセルを指定するための属性」の実装が必要になります。
+{% columns %}
+{% column %}
+<figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+カスタムセルはユーザーが実装・追加することも可能です。
+
+そのために必要な作業は主に以下の2つです。
+
+* カスタムセルを指定するための Attribute の実装
+* カスタムセル VisualElement の実装
+{% endcolumn %}
+{% endcolumns %}
+
+
 
 {% columns %}
 {% column %}
@@ -28,159 +42,229 @@ public class SampleCustomAttribute : CellCustomAttribute { }
 {% endcolumn %}
 
 {% column %}
-最初にデータクラスのフィールドでカスタムセルを指定するための属性を定義します。\
+### カスタムセルを指定するための Attribute の実装
+
+データクラスのフィールドに対し、カスタムセルの使用を指定するための属性を定義します。
+
 この属性はテーブルのデータクラスで利用するため、テーブルやデータクラスと同じアセンブリに実装してください。
 {% endcolumn %}
 {% endcolumns %}
 
+
+
 {% columns %}
 {% column %}
 ```csharp
 [NonNonCell]
-public class SampleCustomCell : CustomCell<[任意の型], SampleCustomAttribute> { }
+public class SampleCustomCell : CustomCell<[任意の型], SampleCustomAttribute>
+{
+    protected override void OnInitialize() { }
+    
+    protected override void OnBindProperty() { }
+    
+    public override void OnStartEditing() { }
+}
 ```
 {% endcolumn %}
 
 {% column %}
-次に `CustomCell` のサブクラスを実装し、 `NonNonCell` 属性を付与します。\
-`CustomCell` の第一型引数はそのセルで扱う値の型を、第二型引数には先ほど定義した属性を指定します。\
-カスタムセルは必ず Editor only なアセンブリに実装してください。
+### カスタムセル VisualElement の実装
+
+次に `CustomCell` のサブクラスを実装し、 `NonNonCell` 属性を付与します。
+
+`CustomCell` の型引数は
+
+* 第１型引数: セルで扱う値の型
+* 第２型引数: `CellCustomAttribute` を継承した Attribute クラス
 
 `CustomCell` は `VisualElement` のサブクラスです。\
-`CustomCell` に `IntegerField` などを追加することで UI を表示することができます。
+このクラスに `IntegerField` などを追加することで UI を表示することができます。
+
+また、このクラスは必ず Editor only なアセンブリに実装してください。
+
+CustomCell には3つのコールバックメソッドが用意されています。
+
+* OnInitialize
+  * セル生成時に呼び出されます
+  * セル内の VisualElement の生成等の処理を実装しましょう
+* OnBindProperty
+  * セルの生成や行の並び替えなど、セルに紐づくデータが変更され、Binding 処理が必要なときに呼び出されます
+  * OnInitialize で生成した VisualElement の Binding 処理を実装しましょう
+* OnStartEditing
+  * セル編集開始操作（セルをダブルクリック or セル選択中にF2またはEnterを入力）時に呼び出されます
+  * 編集中のみ UI を変更したい場合、UI 変更処理を実装しましょう
 {% endcolumn %}
 {% endcolumns %}
 
-### シンプルなカスタムセル
+
+
+## カスタムセルの実装例
 
 {% columns %}
 {% column %}
-<div align="left"><figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure></div>
-
-
+<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-今回は年月日を入力できるカスタムセルを試しに作ってみましょう。
-
-最初にコード全体をお見せします。細部については後程説明いたします。
-
-なお、このコードは Editor only なアセンブリに配置してください。
+日付入力用セルを例にカスタムセルの実装例を紹介します。
 {% endcolumn %}
 {% endcolumns %}
 
-```csharp
-using NonNonSheet.Editor;
-using UnityEditor.UIElements;
-using UnityEngine.UIElements;
 
-[NonNonCell]
-public class SampleCustomCell : CustomCell<SampleCustomCellData, SampleCustomAttribute>
+
+{% columns %}
+{% column %}
+```csharp
+[Serializable]
+public class Date
 {
+    public int Year;
+    public int Month;
+    public int Day;
+}
+```
+{% endcolumn %}
+
+{% column %}
+まず日付データ用のクラスを実装します。
+
+`Date` 型のフィールドを編集するためのカスタムセルを実装していきます。
+
+
+
+
+{% endcolumn %}
+{% endcolumns %}
+
+
+
+{% columns %}
+{% column %}
+```csharp
+public class DateAttribute : CellCustomAttribute { }
+```
+{% endcolumn %}
+
+{% column %}
+Attribute を実装します。
+{% endcolumn %}
+{% endcolumns %}
+
+
+
+{% columns %}
+{% column %}
+```csharp
+#if UNITY_EDITOR
+[NonNonCell]
+public class DateCell : CustomCell<Date, DateAttribute> { }
+#endif
+```
+{% endcolumn %}
+
+{% column %}
+カスタムセルのクラスを実装します。
+
+これで最低限の準備は完了です。\
+`Date` 型のフィールドに `DateAttribute` をつけると `DateCell` が生成されるようになりました。
+{% endcolumn %}
+{% endcolumns %}
+
+
+
+{% columns %}
+{% column %}
+```csharp
+#if UNITY_EDITOR
+[NonNonCell]
+public class DateCell : CustomCell<Date, DateAttribute>
+{
+    private Label _yearLabel;
+    private Label _monthLabel;
+    private Label _dayLabel;
     private IntegerField _yearField;
     private IntegerField _monthField;
     private IntegerField _dayField;
 
+    private bool _isEditing;
+
     protected override void OnInitialize()
     {
+        _yearLabel = new Label();
+        _monthLabel = new Label();
+        _dayLabel = new Label();
         _yearField = new IntegerField();
         _monthField = new IntegerField();
         _dayField = new IntegerField();
-        Add(_yearField);
-        Add(_monthField);
-        Add(_dayField);
 
+        Add(_yearLabel);
+        Add(_monthLabel);
+        Add(_dayLabel);
+
+        _yearField.RegisterCallback<FocusOutEvent, DateCell>((_, cell) => cell.EndEditing(), this);
+        _monthField.RegisterCallback<FocusOutEvent, DateCell>((_, cell) => cell.EndEditing(), this);
+        _dayField.RegisterCallback<FocusOutEvent, DateCell>((_, cell) => cell.EndEditing(), this);
+
+        style.flexDirection = FlexDirection.Row;
+        _yearLabel.style.flexGrow = 1;
+        _monthLabel.style.flexGrow = 1;
+        _dayLabel.style.flexGrow = 1;
+        _yearLabel.style.width = new StyleLength(new Length(50, LengthUnit.Percent));
+        _monthLabel.style.width = new StyleLength(new Length(25, LengthUnit.Percent));
+        _dayLabel.style.width = new StyleLength(new Length(25, LengthUnit.Percent));
         _yearField.style.flexGrow = 1;
         _monthField.style.flexGrow = 1;
         _dayField.style.flexGrow = 1;
         _yearField.style.width = new StyleLength(new Length(50, LengthUnit.Percent));
         _monthField.style.width = new StyleLength(new Length(25, LengthUnit.Percent));
         _dayField.style.width = new StyleLength(new Length(25, LengthUnit.Percent));
-        style.flexDirection = FlexDirection.Row;
-
-        AddToClassList("input-cell");
     }
 
-    public override void OnBindProperty()
+    protected override void OnBindProperty()
     {
-        _yearField?.BindProperty(CellSerializedProperty.FindPropertyRelative("Year"));
-        _monthField?.BindProperty(CellSerializedProperty.FindPropertyRelative("Month"));
-        _dayField?.BindProperty(CellSerializedProperty.FindPropertyRelative("Day"));
+        _yearLabel?.BindProperty(FieldSerializedProperty.FindPropertyRelative("Year"));
+        _monthLabel?.BindProperty(FieldSerializedProperty.FindPropertyRelative("Month"));
+        _dayLabel?.BindProperty(FieldSerializedProperty.FindPropertyRelative("Day"));
+        _yearField?.BindProperty(FieldSerializedProperty.FindPropertyRelative("Year"));
+        _monthField?.BindProperty(FieldSerializedProperty.FindPropertyRelative("Month"));
+        _dayField?.BindProperty(FieldSerializedProperty.FindPropertyRelative("Day"));
+    }
+
+    public override void OnStartEditing()
+    {
+        if (_isEditing) return;
+
+        _isEditing = true;
+
+        Clear();
+        Add(_yearField);
+        Add(_monthField);
+        Add(_dayField);
+
+        AddToClassList("input-cell"); // input-cell を追加しておくと編集中セルとしていい感じにスタイルが調整されれます
+    }
+
+    private void EndEditing()
+    {
+        if (!_isEditing) return;
+
+        Clear();
+        Add(_yearLabel);
+        Add(_monthLabel);
+        Add(_dayLabel);
+
+        RemoveFromClassList("input-cell");
+
+        _isEditing = false;
+
+        FocusNextFrame(); // 次のフレームに Focus() を実行します
     }
 }
-```
-
-
-
-{% columns %}
-{% column %}
-```csharp
-protected override void OnInitialize()
-{
-    _yearField = new IntegerField();
-    _monthField = new IntegerField();
-    _dayField = new IntegerField();
-    Add(_yearField);
-    Add(_monthField);
-    Add(_dayField);
-
-    _yearField.style.flexGrow = 1;
-    _monthField.style.flexGrow = 1;
-    _dayField.style.flexGrow = 1;
-    _yearField.style.width = new StyleLength(new Length(50, LengthUnit.Percent));
-    _monthField.style.width = new StyleLength(new Length(25, LengthUnit.Percent));
-    _dayField.style.width = new StyleLength(new Length(25, LengthUnit.Percent));
-    style.flexDirection = FlexDirection.Row;
-
-    AddToClassList("input-cell");
-}
+#endif
 ```
 {% endcolumn %}
 
 {% column %}
-OnInitialize() は初期化処理を行うためのコールバックメソッドです。
-
-セルが生成される最初の1回だけ呼ばれます。
-
-ここで各種 UI を追加しましょう。必要であればスタイルの調整もここでやってしまいましょう。
-
-{% hint style="info" %}
-AddToClassList("input-cell") しておくと、各種の標準UIが入力中のスタイルに変更されます。編集可能なセルは常に AddToClassList("input-cell") しておくことをおすすめします。
-{% endhint %}
-
-
-{% endcolumn %}
-{% endcolumns %}
-
-
-
-{% columns %}
-{% column %}
-```csharp
-public override void OnBindProperty()
-{
-    _yearField?.BindProperty(CellSerializedProperty.FindPropertyRelative("Year"));
-    _monthField?.BindProperty(CellSerializedProperty.FindPropertyRelative("Month"));
-    _dayField?.BindProperty(CellSerializedProperty.FindPropertyRelative("Day"));
-}
-```
-
-
-{% endcolumn %}
-
-{% column %}
-BindData はセル中の UI とデータクラスのフィールドを紐づけるためのコールバックメソッドです。
-
-セル生成時とデータの並び替え、削除などでデータのインデックスが変更されたときに呼ばれます。
-
-UIとデータの紐付けはここで行いましょう。
-
-{% hint style="info" %}
-なぜUIとデータの紐付け処理だけ初期化処理とは別にコールバックが用意されているのかと疑問に思ったかもしれません。
-
-これらが分離されている理由はセルに紐づけるべきデータのインデックスが変更された際に再度データの紐付けが必要になるためです。
-{% endhint %}
-
-
+最後に各コールバックを用いて `DateCell` を実装して完了です。
 {% endcolumn %}
 {% endcolumns %}

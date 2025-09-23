@@ -1,18 +1,16 @@
 # csv・jsonをインポート・エクスポートする
 
-NonNonTable は csv・ json 形式でのインポート・エクスポートをサポートしています。
-
 {% columns %}
 {% column %}
 <figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
+NonNonTable は csv・ json 形式でのインポート・エクスポートをサポートしています。
+
 NonNonTable アセットのインスペクタから実行することができます。
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 ## csv
 
