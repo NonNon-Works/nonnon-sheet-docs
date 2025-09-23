@@ -70,12 +70,12 @@ public interface ISampleTableValidator : IValidator<SampleData>
 
 {% column %}
 `IXxxValidator` インタフェースは SourceGenerator によって自動生成されます。\
-例えば `SampleTabl`e クラスを定義すると、 `ISampleTableValidator` インタフェースが生成されます。
+例えば `SampleTable` クラスを定義すると、 `ISampleTableValidator` インタフェースが生成されます。
 
 `IXxxValidator` インタフェースは Table クラスが持つ各フィールドに対するバリデーションメソッドが定義されています。\
 それらのメソッドを実装することでデータのバリエーションを行います。
 
-バリデーションメソッドは引数としてバリエーション対象のデータ全体と更新後のフィールドの値が渡されます。また、返値としてValidationResult (struct) を返すことでバリエーションの結果を
+バリデーションメソッドは引数としてバリエーション対象のデータ全体と更新後のフィールドの値が渡されます。また、返値として `ValidationResult` を返すことでバリエーションの結果を
 
 
 {% endcolumn %}
@@ -103,13 +103,6 @@ public partial class ValidationSampleTable : NonNonTable<ValidationSampleData>, 
         if (string.IsNullOrEmpty(v)) return ValidationResult.Error("name must be non-empty");
         return ValidationResult.Success();
     }
-
-    ValidationResult IValidationSampleTableValidator.ValidateAge(ValidationSampleData self, int v)
-    {
-        if (v < 0) return ValidationResult.Error("age must be non-negative");
-        if (v > 150) return ValidationResult.Warning("age seems too high");
-        return ValidationResult.Success();
-    }
 }
 
 [Serializable]
@@ -117,13 +110,12 @@ public class ValidationSampleData
 {
     public int Id;
     public string Name;
-    public int Age;
 }
 ```
 {% endcolumn %}
 
 {% column %}
-ValidationSampleTable を例にいくつかのバリエーションの例を示します。
+`ValidationSampleTable` を例にいくつかのバリエーションの例を示します。
 
 
 {% endcolumn %}
@@ -147,9 +139,9 @@ ValidationResult IValidationSampleTableValidator.ValidateName(ValidationSampleDa
 {% column %}
 まずはシンプルなバリエーションの例です。
 
-ValidateName は Name フィールドが空の場合にエラーとするバリデーションメソッドです。
+`ValidateName` は `Name` フィールドが空の場合にエラーとするバリデーションメソッドです。
 
-エラーの場合は ValidationResult.Error を返します。ValidationResult.Error の引数にメッセージを渡すことで、セルの Tooltip としてメッセージを表示することもできます。
+エラーの場合は `ValidationResult.Error` を返します。`ValidationResult.Error` の引数にメッセージを渡すことで、セルの `Tooltip` としてメッセージを表示することができます。
 
 <div align="left"><figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 {% endcolumn %}
@@ -172,11 +164,11 @@ ValidationResult IValidationSampleTableValidator.ValidateId(ValidationSampleData
 {% column %}
 次に重複チェックのバリデーションの例です。
 
-ValidateId は重複する Id を持つデータが存在する場合にエラーとするバリデーションメソッドです。
+`ValidateId` は重複する `Id` を持つデータが存在する場合にエラーとするバリデーションメソッドです。
 
-Table クラスは Data プロパティに全データが格納されています。それらと Id を比較することで重複するものがないかどうかバリエーションすることができます。
+`Table` クラスは `Data` プロパティに全データが格納されています。他データと `Id` を比較することで重複するものがないかどうかバリエーションすることができます。
 
-重複するデータを ValidationResult.Error の第二引数として渡すことで、それらのデータもエラーとすることが可能です。
+重複するデータを `ValidationResult.Error` の第二引数として渡すことで、それらのデータもエラーとすることが可能です。
 {% endcolumn %}
 {% endcolumns %}
 
