@@ -9,6 +9,8 @@
 NonNonTable は csv・ json 形式でのインポート・エクスポートをサポートしています。
 
 NonNonTable アセットのインスペクタから実行することができます。
+
+この機能は Unity エディタでのみ動作する機能です。ビルドでは使用できないので注意してください。
 {% endcolumn %}
 {% endcolumns %}
 
