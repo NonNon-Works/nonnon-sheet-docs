@@ -154,10 +154,8 @@ public class DateCell : CustomCell<Date, DateAttribute> { }
 {% endcolumn %}
 {% endcolumns %}
 
-
-
-最後に各コールバックメソッドを用いて `DateCell` を実装して完了です。
-
+{% columns %}
+{% column %}
 ```csharp
 #if UNITY_EDITOR
 [NonNonCell]
@@ -246,3 +244,9 @@ public class DateCell : CustomCell<Date, DateAttribute>
 }
 #endif
 ```
+{% endcolumn %}
+
+{% column %}
+最後に各コールバックメソッドを用いて `DateCell` を実装して完了です。
+{% endcolumn %}
+{% endcolumns %}
