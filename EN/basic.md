@@ -2,8 +2,8 @@
 
 ### Basic specifications
 
-NonNonTable is a `ScriptableObject` that has a List of `Serializable` classes.\
-It is rendered in tabular format in the Unity editor, allowing each field to be edited cell by cell.
+`NonNonTable` is a `ScriptableObject` that stores a `List<T>` of serializable row objects.\
+It is rendered in a tabular format in the Unity **Editor**, and each field is editable on a per-cell basis.
 
 {% columns %}
 {% column %}
@@ -11,11 +11,9 @@ It is rendered in tabular format in the Unity editor, allowing each field to be 
 {% endcolumn %}
 
 {% column %}
-The cell changes shape depending on the field type.
+The cell changes its editor/control based on the field type.
 
-For example, a cell with IntegerField is generated for an int type field, and a cell with Toggle is generated for a boolean type field.
-
-Dedicated cells are available for the following types.
+For example, an **IntegerField** is used for an `int` field, and a **Toggle** is used for a `bool` field.
 {% endcolumn %}
 {% endcolumns %}
 
@@ -57,9 +55,9 @@ Dedicated cells are available for the following types.
 {% endcolumn %}
 
 {% column %}
-If a type does not have a dedicated cell, the value will be displayed in the cell as a string obtained by ToString().
+If a type does not have a dedicated cell, the value is shown as the string returned by `ToString()`.
 
-Also, double-clicking a cell will display a Popup with a PropertyField, allowing you to edit the value.
+Double-clicking a cell opens a popup with a `PropertyField`, allowing you to edit the value.
 
 
 {% endcolumn %}
@@ -71,15 +69,13 @@ Also, double-clicking a cell will display a Popup with a PropertyField, allowing
 {% endcolumn %}
 
 {% column %}
-In the case of an array, a string with each element separated by a comma will be displayed in the cell.
+For arrays, the cell shows a comma-separated string of elements.
 
-Double-clicking an array will display a popup that allows you to edit the contents.
+Double-clicking an array opens a popup to edit its contents.
 {% endcolumn %}
 {% endcolumns %}
 
 ### &#x20;Restriction
 
-NonNonTable has some implementation restrictions.
-
-* partial class
-* Data type `<T>` is only class, struct is not supported
+* The table class **must be declared `partial`.**
+* The generic type parameter `<T>` **must be a class; structs are not supported.**

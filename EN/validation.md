@@ -15,7 +15,7 @@ layout:
     visible: true
 ---
 
-# Data Validation
+# Validate data
 
 {% columns %}
 {% column %}
@@ -26,12 +26,8 @@ layout:
 When managing master data it's common to impose constraints (e.g., uniqueness, required fields).
 
 NonNonSheet helps detect issues early via cell-level validation feedback.
-
-
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -50,12 +46,8 @@ public class SampleData
 
 {% column %}
 To enable validation, implement the generated validator interface (e.g., `ISampleTableValidator`) on the table class.
-
-
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -76,16 +68,13 @@ For example, defining `SampleTable` causes `ISampleTableValidator` to be generat
 This interface declares a validation method for each field in the table's data class.
 
 Each validation method receives:
+
 * `self`: the full data object being edited
 * the new value of the edited field
 
 It returns a `ValidationResult` indicating success or an error.
-
-
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 ## Validation Examples
 
@@ -120,12 +109,8 @@ public class ValidationSampleData
 
 {% column %}
 Validation examples using `ValidationSampleTable`.
-
-
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns fullWidth="true" %}
 {% column %}
@@ -136,12 +121,10 @@ ValidationResult IValidationSampleTableValidator.ValidateName(ValidationSampleDa
     return ValidationResult.Success();
 }
 ```
-
-
 {% endcolumn %}
 
 {% column %}
-### Example: Empty Name Check
+#### Example: Empty Name Check
 
 `ValidateName` triggers an error when the `Name` field is empty.
 
@@ -150,8 +133,6 @@ Return `ValidationResult.Error` to indicate failure. The message you pass is sho
 <div align="left"><figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure></div>
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns fullWidth="true" %}
 {% column %}
@@ -166,7 +147,7 @@ ValidationResult IValidationSampleTableValidator.ValidateId(ValidationSampleData
 {% endcolumn %}
 
 {% column %}
-### Example: Duplicate ID Check
+#### Example: Duplicate ID Check
 
 `ValidateId` returns an error if another row already uses the same ID.
 
@@ -175,10 +156,3 @@ All table rows are stored in the table's `Data` property. The LINQ query filters
 Pass the conflicting rows as the second argument to `ValidationResult.Error` so they are highlighted collectively.
 {% endcolumn %}
 {% endcolumns %}
-
-
-
-
-
-
-

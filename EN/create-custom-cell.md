@@ -15,7 +15,7 @@ layout:
     visible: true
 ---
 
-# Create Custom Cells
+# Create custom cell
 
 {% columns %}
 {% column %}
@@ -32,8 +32,6 @@ There are two main steps:
 {% endcolumn %}
 {% endcolumns %}
 
-
-
 {% columns %}
 {% column %}
 ```csharp
@@ -42,15 +40,13 @@ public class SampleCustomAttribute : CellCustomAttribute { }
 {% endcolumn %}
 
 {% column %}
-### Create a Marker Attribute
+#### Create a Marker Attribute
 
 Create a marker attribute that tells the system a field should be rendered using a custom cell.
 
 This marker attribute must exist in the same assembly as the table or data class that uses it.
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -69,12 +65,11 @@ public class SampleCustomCell : CustomCell<TData, SampleCustomAttribute>
 {% endcolumn %}
 
 {% column %}
-### Implement a Custom Cell
+#### Implement a Custom Cell
 
 Next, create a subclass of `CustomCell` and apply the `NonNonCell` attribute.
 
-`CustomCell` derives from `VisualElement`.
-Add UI Toolkit controls (e.g., `IntegerField`) to build the cell interface.
+`CustomCell` derives from `VisualElement`. Add UI Toolkit controls (e.g., `IntegerField`) to build the cell interface.
 
 Custom cells must always live in an editor-only assembly.
 
@@ -97,8 +92,6 @@ Type parameters of `CustomCell`:
 {% endcolumn %}
 {% endcolumns %}
 
-
-
 ## Custom Cell Implementation Example
 
 {% columns %}
@@ -110,8 +103,6 @@ Type parameters of `CustomCell`:
 The following example demonstrates a custom cell using a simple date type.
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -128,14 +119,8 @@ public class Date
 
 {% column %}
 Define a class for date data.
-
-
-
-
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -148,8 +133,6 @@ public class DateAttribute : CellCustomAttribute { }
 Define the attribute.
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -168,8 +151,6 @@ This is the minimal setup.\
 Applying `DateAttribute` to a `Date` field will now render using a `DateCell`.
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}

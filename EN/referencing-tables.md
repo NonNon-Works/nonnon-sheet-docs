@@ -15,7 +15,7 @@ layout:
     visible: true
 ---
 
-# Referencing Other Tables
+# Refer to other tables
 
 {% columns %}
 {% column width="50%" %}
@@ -38,8 +38,6 @@ Below is an implementation example using an integer key.
 {% endcolumn %}
 {% endcolumns %}
 
-
-
 {% columns %}
 {% column %}
 ```csharp
@@ -59,7 +57,7 @@ public class SampleData : IRelationalData<int>
 {% endcolumn %}
 
 {% column %}
-### Implement `IRelationalData` on the data class of the referenced table
+#### Implement `IRelationalData` on the data class of the referenced table
 
 To establish a foreign-key-like relationship, implement the `IRelationalData<T>` interface on the data class of the table being referenced.
 
@@ -67,14 +65,11 @@ To establish a foreign-key-like relationship, implement the `IRelationalData<T>`
 * The value returned by `DisplayName` is shown in the dropdown cell.
 
 {% hint style="info" %}
-The referenced table must be listed in the Tables section of `ProjectSettings/NonNonSheet`. Table assets are normally registered automatically when created. If the cell displays "Table not found," verify that the table asset is registered.
-\
+The referenced table must be listed in the Tables section of `ProjectSettings/NonNonSheet`. Table assets are normally registered automatically when created. If the cell displays "Table not found," verify that the table asset is registered.\
 If multiple tables using the same data class are registered, the one registered first will be used. Be aware of this order dependency.
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -84,7 +79,7 @@ public class SampleTableRefAttribute : CellCustomAttribute { }
 {% endcolumn %}
 
 {% column %}
-### Define an attribute for referencing
+#### Define an attribute for referencing
 
 Create an attribute that inherits from `CellCustomAttribute`.
 
@@ -93,8 +88,6 @@ There are no naming constraints.
 Use this attribute to mark fields that reference another table.
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -107,7 +100,7 @@ public class SampleTableRelationCell : DataRelationCell<int, SampleTableRefAttri
 {% endcolumn %}
 
 {% column %}
-### Implement a custom relation cell
+#### Implement a custom relation cell
 
 Implement a class that inherits from `DataRelationCell`.
 
@@ -120,8 +113,6 @@ Type parameters of `DataRelationCell<TKey, TAttribute, TData>`:
 Place this class in an editor-only assembly or wrap it with `#if UNITY_EDITOR`.
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -142,8 +133,6 @@ You can inherit from `MultiDataRelationCell` instead of `DataRelationCell` to st
 {% endcolumn %}
 {% endcolumns %}
 
-
-
 {% columns %}
 {% column %}
 ```csharp
@@ -160,7 +149,7 @@ public class ReferencingData
 {% endcolumn %}
 
 {% column %}
-### Apply the attribute to fields in the referencing table
+#### Apply the attribute to fields in the referencing table
 
 Create a separate table that references the earlier table.
 
@@ -169,8 +158,6 @@ Add a field whose type matches the key type `T` used by the referenced data clas
 Apply the attribute you defined (in this case `SampleTableRef` or `MultiSampleTableRef`).
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -181,8 +168,5 @@ Apply the attribute you defined (in this case `SampleTableRef` or `MultiSampleTa
 With this setup, `ReferencingTable` can reference entries in `SampleTable`.
 
 This example uses an integer key, but string or enum key types are also supported.
-
-
 {% endcolumn %}
 {% endcolumns %}
-

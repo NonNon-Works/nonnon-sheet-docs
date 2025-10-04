@@ -1,11 +1,11 @@
 # Quickstart
 
-1.  download
+1.  Download
 
-    Download and import NonNon Sheet from the Unity Asset Store.
-2.  Table implementation
+    Download NonNon Sheet from Unity Asset Store and import it into your Unity project.
+2.  Implement a table class
 
-    Create a script called `SampleTable` and edit it as follows:
+    Create a new C# script named `SampleTable`, and define it as follows:
 
     ```csharp
     using System;
@@ -21,11 +21,15 @@
         public string Name;
     }
     ```
-3.  Creating a Table asset
+3.  Create a Table asset
 
-    Once you implement Table, you can create a Table asset from Assets/Create/NonNon Sheet. Create a Table asset from Assets/Create/NonNon Sheet/SampleTable.
-4.  Open a Table
+    After implementing the table class, create a Table asset via:\
+    `Assets → Create → NonNon Sheet → SampleTable`
+4.  Open the sheet window
 
-    Click the Open Sheet Window button in the Table asset's Inspector, or double-click the Table asset to open the window.
+    To view or edit the table, use one of these methods:
+
+    * Click the **Open Sheet Window** button in the Inspector of the Table asset
+    * Double-click the Table asset in the Project window
 
 <figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
