@@ -62,8 +62,8 @@ public class SampleData
 ```csharp
 public interface ISampleTableValidator : IValidator<SampleData>
 {
-    ValidationResult ValidateId(SubclassData self, int id) => ValidationResult.Success();
-    ValidationResult ValidateName(SubclassData self, string id) => ValidationResult.Success();
+  ValidationResult ValidateId(SampleData self, int id) => ValidationResult.Success();
+  ValidationResult ValidateName(SampleData self, string name) => ValidationResult.Success();
 }
 ```
 {% endcolumn %}
@@ -73,9 +73,9 @@ public interface ISampleTableValidator : IValidator<SampleData>
 例えば `SampleTable` クラスを定義すると、 `ISampleTableValidator` インタフェースが生成されます。
 
 `IXxxValidator` インタフェースは Table クラスが持つ各フィールドに対するバリデーションメソッドが定義されています。\
-それらのメソッドを実装することでデータのバリエーションを行います。
+それらのメソッドを実装することでデータのバリデーションを行います。
 
-バリデーションメソッドは引数としてバリエーション対象のデータ全体と更新後のフィールドの値が渡されます。また、返値として `ValidationResult` を返すことでバリエーションの結果を
+バリデーションメソッドには引数として「行データ全体（self）」と「編集後のフィールド値」が渡されます。返り値として `ValidationResult` を返すことでバリデーション結果（成功/エラー とエラーメッセージ、関連データ）をシートに伝えます。
 
 
 {% endcolumn %}
@@ -115,7 +115,7 @@ public class ValidationSampleData
 {% endcolumn %}
 
 {% column %}
-`ValidationSampleTable` を例にいくつかのバリエーションの例を示します。
+`ValidationSampleTable` を例にいくつかのバリデーションの例を示します。
 
 
 {% endcolumn %}
@@ -137,7 +137,7 @@ ValidationResult IValidationSampleTableValidator.ValidateName(ValidationSampleDa
 {% endcolumn %}
 
 {% column %}
-まずはシンプルなバリエーションの例です。
+まずはシンプルなバリデーションの例です。
 
 `ValidateName` は `Name` フィールドが空の場合にエラーとするバリデーションメソッドです。
 
@@ -166,7 +166,7 @@ ValidationResult IValidationSampleTableValidator.ValidateId(ValidationSampleData
 
 `ValidateId` は重複する `Id` を持つデータが存在する場合にエラーとするバリデーションメソッドです。
 
-`Table` クラスは `Data` プロパティに全データが格納されています。他データと `Id` を比較することで重複するものがないかどうかバリエーションすることができます。
+`Table` クラスは `Data` プロパティに全データが格納されています。他データと `Id` を比較することで重複するものがないかどうかバリデーションすることができます。
 
 重複するデータを `ValidationResult.Error` の第二引数として渡すことで、それらのデータもエラーとすることが可能です。
 {% endcolumn %}

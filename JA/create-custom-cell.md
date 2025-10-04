@@ -241,7 +241,7 @@ public class DateCell : CustomCell<Date, DateAttribute>
         Add(_monthField);
         Add(_dayField);
 
-        AddToClassList("input-cell"); // input-cell を追加しておくと編集中セルとしていい感じにスタイルが調整されれます
+        AddToClassList("input-cell"); // input-cell を追加しておくと編集中セルとしていい感じにスタイルが調整されます
     }
 
     private void EndEditing()

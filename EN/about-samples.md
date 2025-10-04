@@ -16,4 +16,4 @@ You can import these samples from the Unity Package Manager (Window > Package Ma
 
 Overview of each sample:
 
-<table><thead><tr><th width="267">Sample</th><th>Overview</th></tr></thead><tbody><tr><td>01_Simple</td><td>A Very Simple Sample</td></tr><tr><td>02_CustomCell</td><td>Sample User-Defined Custom Cells</td></tr><tr><td>03_ReferencingTable</td><td>Sample of table referential relationships</td></tr><tr><td>04_Validation</td><td>Sample of Validation</td></tr><tr><td>05_AllType</td><td>A sample covering all types that support dedicated cells</td></tr></tbody></table>
+<table><thead><tr><th width="267">Sample</th><th>Overview</th></tr></thead><tbody><tr><td>01_Simple</td><td>Very simple usage</td></tr><tr><td>02_CustomCell</td><td>User-defined custom cell examples</td></tr><tr><td>03_ReferencingTable</td><td>Table-to-table reference examples</td></tr><tr><td>04_Validation</td><td>Data validation examples</td></tr><tr><td>05_AllType</td><td>All types with dedicated cells</td></tr></tbody></table>

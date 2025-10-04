@@ -99,7 +99,7 @@ public class SampleTableRefAttribute : CellCustomAttribute { }
 ```csharp
 #if UNITY_EDITOR
 [NonNonCell]
-public class SampleTableRelationCell : DataRelationCell<int, SampleDataRelationAttribute , SampleData> { }
+public class SampleTableRelationCell : DataRelationCell<int, SampleTableRefAttribute, SampleData> { }
 #endif
 ```
 {% endcolumn %}
@@ -115,7 +115,7 @@ public class SampleTableRelationCell : DataRelationCell<int, SampleDataRelationA
 * 第２型引数: `CellCustomAttribute` を継承した Attribute クラス
 * 第３型引数: `IRelationalData<T>` を実装したデータクラス
 
-また、このクラスは Editor only なアセンブリに配置するか、#if UNITY\_EDITOR で囲む必要があるため注意してください。
+また、このクラスは Editor only なアセンブリに配置するか、`#if UNITY_EDITOR` で囲む必要があるため注意してください。
 {% endcolumn %}
 {% endcolumns %}
 

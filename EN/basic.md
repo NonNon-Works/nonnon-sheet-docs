@@ -34,7 +34,7 @@ For example, an **IntegerField** is used for an `int` field, and a **Toggle** is
 * `double`
 * `string`
 * `enum`
-* `[Falges] enum`
+* `[Flags] enum`
 * `Vector2`
 * `Vector3`
 * `Vector4`

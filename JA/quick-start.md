@@ -2,7 +2,7 @@
 
 1.  ダウンロード
 
-    Unity アセットストアから NonNon Sheet をダウンロード＆インポートします。
+    Unity アセットストアから NonNonSheet をダウンロード＆インポートします。
 2.  Table の定義
 
     SampleTable というスクリプトを作成し、以下のように編集します。
@@ -23,7 +23,7 @@
     ```
 3.  Table アセットの作成
 
-    Table を定義すると、Table アセットを Assets/Create/NonNon Sheet から作成できるようになります。Assets/Create/NonNon Sheet/SampleTable から Table アセットを作成します。
+    Table を定義すると、Table アセットを Assets/Create/NonNonSheet から作成できるようになります。Assets/Create/NonNonSheet/SampleTable から Table アセットを作成します。
 4.  Table を開く
 
     Table アセットのインスペクタから Open Sheet Window ボタンをクリックするか、Table アセットをダブルクリックするとウィンドウが開きます。

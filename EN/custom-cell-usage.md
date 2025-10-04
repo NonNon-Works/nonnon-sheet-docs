@@ -17,9 +17,7 @@ layout:
 
 # Using Custom Cells
 
-You can customize a field's cell UI by applying specific attributes.\
-For example, applying the `Slider` attribute to a `float` field changes its cell UI to a slider.
-For example, adding the Slider attribute to a float type field will change the cell UI to a slider.
+You can customize a field's cell UI by applying specific attributes. For example, applying the `Slider` attribute to a `float` field changes its cell UI to a slider.
 
 {% columns %}
 {% column %}

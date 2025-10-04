@@ -3,7 +3,7 @@
 ### 基本仕様
 
 `NonNonTable` は `Serializable` なクラスを List として持つ `ScriptableObject` です。\
-Untiy エディタ上で表形式にレンダリングされ、各フィールドをセル単位で編集可能にします。
+Unity エディタ上で表形式にレンダリングされ、各フィールドをセル単位で編集可能にします。
 
 {% columns %}
 {% column %}
@@ -36,7 +36,7 @@ Untiy エディタ上で表形式にレンダリングされ、各フィール�
 * `double`
 * `string`
 * `enum`
-* `[Falges] enum`
+* `[Flags] enum`
 * `Vector2`
 * `Vector3`
 * `Vector4`

@@ -2,8 +2,8 @@
 
 <figure><img src=".gitbook/assets/sheet.png" alt=""><figcaption></figcaption></figure>
 
-NonNon Sheet はマスターデータを管理ツールです。\
-Unity エディタ上で Excel や SpreadSheet のような表形式の UI を用いてマスターデータを編集することができます。\
+NonNonSheet はマスターデータ管理ツールです。\
+Unity エディタ上で Excel や Spreadsheet のような表形式 UI を用いてマスターデータを編集することができます。\
 Unity らしい操作感と表形式の UI が自然に融合しています。
 
 ## 特徴
@@ -14,4 +14,4 @@ Unity らしい操作感と表形式の UI が自然に融合しています。
 * ユーザー定義のカスタムセルをサポート
 * 他テーブルの参照が可能
 * セル単位のバリデーションをサポート
-* csv・json のインポート・エスポートが可能
+* csv・json のインポート・エクスポートが可能
