@@ -152,8 +152,8 @@ Applying `DateAttribute` to a `Date` field will now render using a `DateCell`.
 {% endcolumn %}
 {% endcolumns %}
 
-{% columns %}
-{% column %}
+Finally, implement `DateCell` using each callback to complete the process. The cell swaps between display mode (labels) and edit mode (integer fields).
+
 ```csharp
 #if UNITY_EDITOR
 [NonNonCell]
@@ -242,9 +242,3 @@ public class DateCell : CustomCell<Date, DateAttribute>
 }
 #endif
 ```
-{% endcolumn %}
-
-{% column %}
-Finally, implement `DateCell` using each callback to complete the process. The cell swaps between display mode (labels) and edit mode (integer fields).
-{% endcolumn %}
-{% endcolumns %}
