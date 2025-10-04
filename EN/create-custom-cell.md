@@ -23,12 +23,12 @@ layout:
 {% endcolumn %}
 
 {% column %}
-Custom cells can also be implemented and added by users.
+You can implement and register your own custom cells.
 
-The necessary tasks primarily consist of the following two:
+There are two main steps:
 
-* Implementing Attribute for Custom Cell Specification
-* Implementing a Custom Cell
+* Define an attribute that marks fields to use the custom cell
+* Implement the custom cell itself
 {% endcolumn %}
 {% endcolumns %}
 
@@ -42,11 +42,11 @@ public class SampleCustomAttribute : CellCustomAttribute { }
 {% endcolumn %}
 
 {% column %}
-### Implementing Attribute for Custom Cell Specification
+### Create a Marker Attribute
 
-Defines an attribute to specify the use of custom cells for fields in data classes.
+Create a marker attribute that tells the system a field should be rendered using a custom cell.
 
-This attribute must be implemented in the same assembly as the table or data class it will be used with.
+This marker attribute must exist in the same assembly as the table or data class that uses it.
 {% endcolumn %}
 {% endcolumns %}
 
@@ -56,43 +56,44 @@ This attribute must be implemented in the same assembly as the table or data cla
 {% column %}
 ```csharp
 [NonNonCell]
-public class SampleCustomCell : CustomCell<[任意の型], SampleCustomAttribute>
+public class SampleCustomCell : CustomCell<TData, SampleCustomAttribute>
 {
-    protected override void OnInitialize() { }
-    
-    protected override void OnBindProperty() { }
-    
-    public override void OnStartEditing() { }
+  protected override void OnInitialize() { }
+
+  protected override void OnBindProperty() { }
+
+  public override void OnStartEditing() { }
 }
+// TData: the data type handled by this cell
 ```
 {% endcolumn %}
 
 {% column %}
-### Implementing a Custom Cell
+### Implement a Custom Cell
 
-Next, implement a subclass of CustomCell and apply the NonNonCell attribute.
+Next, create a subclass of `CustomCell` and apply the `NonNonCell` attribute.
 
-CustomCell is a subclass of VisualElement.\
-You can display the UI by adding components like IntegerField to this class.
+`CustomCell` derives from `VisualElement`.
+Add UI Toolkit controls (e.g., `IntegerField`) to build the cell interface.
 
-Note that custom cells must always be implemented in an Editor-only assembly, so be aware of this requirement.
+Custom cells must always live in an editor-only assembly.
 
-The type parameters for CustomCell are:
+Type parameters of `CustomCell`:
 
-* First type parameter: The data type handled by the cell
-* Second type parameter: A subclass of the CellCustomAttribute implemented earlier
+* First: the data type handled by the cell
+* Second: the `CellCustomAttribute` subclass you defined earlier
 
-CustomCell provides three callback methods:
+`CustomCell` exposes three callback methods:
 
-* OnInitialize
-  * Called when the cell is initialized
-  * Implement any necessary operations here, such as adding VisualElements to the cell
-* OnBindProperty
-  * Called when data associated with the cell changes (e.g., cell generation or data reordering), requiring binding operations
-  * Implement the binding logic for the VisualElements created in OnInitialize here
-* OnStartEditing
-  * Called when cell editing begins (either by double-clicking the cell or pressing F2 or Enter while the cell is selected)
-  * If you want to modify the UI only during editing, implement the UI change logic here
+* `OnInitialize`
+  * Called once when the cell is created
+  * Instantiate controls and add `VisualElement`s here
+* `OnBindProperty`
+  * Called when the underlying data / serialized property changes (e.g., initial generation or row reorder)
+  * Bind the controls you created in `OnInitialize` here
+* `OnStartEditing`
+  * Called when editing begins (double‑click, F2, or Enter while selected)
+  * Add or adjust UI that should appear only during editing here
 {% endcolumn %}
 {% endcolumns %}
 
@@ -106,7 +107,7 @@ CustomCell provides three callback methods:
 {% endcolumn %}
 
 {% column %}
-The following demonstrates a custom cell implementation using date input cells as an example.
+The following example demonstrates a custom cell using a simple date type.
 {% endcolumn %}
 {% endcolumns %}
 
@@ -126,7 +127,7 @@ public class Date
 {% endcolumn %}
 
 {% column %}
-Implement a class for date data.
+Define a class for date data.
 
 
 
@@ -144,7 +145,7 @@ public class DateAttribute : CellCustomAttribute { }
 {% endcolumn %}
 
 {% column %}
-Implement Attribute.
+Define the attribute.
 {% endcolumn %}
 {% endcolumns %}
 
@@ -161,10 +162,10 @@ public class DateCell : CustomCell<Date, DateAttribute> { }
 {% endcolumn %}
 
 {% column %}
-Implement a custom cell class.
+Implement the custom cell class.
 
-This completes the minimum setup.\
-Now attaching DateAttribute to a Date type field will generate a DateCell.
+This is the minimal setup.\
+Applying `DateAttribute` to a `Date` field will now render using a `DateCell`.
 {% endcolumn %}
 {% endcolumns %}
 
@@ -239,7 +240,7 @@ public class DateCell : CustomCell<Date, DateAttribute>
         Add(_monthField);
         Add(_dayField);
 
-        AddToClassList("input-cell"); // input-cell を追加しておくと編集中セルとしていい感じにスタイルが調整されれます
+        AddToClassList("input-cell"); // Adding this class applies editing styles to the cell
     }
 
     private void EndEditing()
@@ -255,7 +256,7 @@ public class DateCell : CustomCell<Date, DateAttribute>
 
         _isEditing = false;
 
-        FocusNextFrame(); // 次のフレームに Focus() を実行します
+        FocusNextFrame(); // Calls Focus() on the next frame
     }
 }
 #endif
@@ -263,6 +264,6 @@ public class DateCell : CustomCell<Date, DateAttribute>
 {% endcolumn %}
 
 {% column %}
-Finally, implement DateCell using each callback method to complete the process.
+Finally, implement `DateCell` using each callback to complete the process. The cell swaps between display mode (labels) and edit mode (integer fields).
 {% endcolumn %}
 {% endcolumns %}

@@ -15,9 +15,10 @@ layout:
     visible: true
 ---
 
-# How to use custom cells
+# Using Custom Cells
 
-You can customize the cell UI by adding specific attributes to fields.\
+You can customize a field's cell UI by applying specific attributes.\
+For example, applying the `Slider` attribute to a `float` field changes its cell UI to a slider.
 For example, adding the Slider attribute to a float type field will change the cell UI to a slider.
 
 {% columns %}
@@ -39,14 +40,14 @@ public class SampleData
 
 
 
-The custom cells implemented as standard are as shown in the table below.
+The following built-in attributes provide custom cell UIs:
 
-| Attribute    | Type    |
-| ------------ | ------- |
-| Slider       | float   |
-| IntSlider    | int     |
-| MinMaxSlider | Vector2 |
-| Tag          | string  |
-| Layer        | int     |
+| Attribute      | Type     |
+| -------------- | -------- |
+| `Slider`       | float    |
+| `IntSlider`    | int      |
+| `MinMaxSlider` | Vector2  |
+| `Tag`          | string   |
+| `Layer`        | int      |
 
-Please note that if you assign these attributes to a field of the mismatch type, the cell will not function properly.
+If you apply one of these attributes to an incompatible field type, the custom cell will not function properly.

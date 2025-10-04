@@ -1,4 +1,4 @@
-# Import and export csv and json
+# Import and Export CSV and JSON
 
 {% columns %}
 {% column %}
@@ -6,25 +6,25 @@
 {% endcolumn %}
 
 {% column %}
-NonNonTable supports import and export in csv and json formats.
+NonNonTable supports importing and exporting data in CSV and JSON formats.
 
-This can be executed from the inspector of the NonNonTable asset.
+You can perform these operations from the NonNonTable asset's Inspector.
 
-This feature only work in Unity Editor - please note that it cannot work in build.
+This feature only works in the Unity Editor; it is not available in player builds.
 {% endcolumn %}
 {% endcolumns %}
 
-## csv
+## CSV
 
-Supports importing and exporting CSV files in the following formats:
+CSV import / export expects the following:
 
 * Field Separator: `,`&#x20;
 * Header Row: Yes
-  * When importing, we only skip the header row, so the contents of the header row don't necessarily need to be correct.
+  * On import the first row is skipped, so its contents are not strictly validated.
 
-## json
+## JSON
 
-Supports importing and exporting JSON in the following formats:
+JSON import / export expects the following:
 
 * Top-level array structure
-* Array elements are the data types of the table
+* Each array element is an instance of the table's data type

@@ -15,7 +15,7 @@ layout:
     visible: true
 ---
 
-# Refer to other tables
+# Referencing Other Tables
 
 {% columns %}
 {% column width="50%" %}
@@ -23,18 +23,18 @@ layout:
 {% endcolumn %}
 
 {% column width="50%" %}
-You can also enable users to select data from other tables through a dropdown menu.
+You can allow users to select data from another table via a dropdown.
 
-What gets saved is not the actual data itself, but rather the key of the data class for the referenced table.
+What is stored is not the full data object but the key (identifier) of the referenced table's data row.
 
-The primary requirements for referencing another table are as follows:
+To reference another table, you need to:
 
-* Implementing IRelationalData for the data class of the referenced table
-* Implementing the necessary Attribute for referencing
-* Implementing a custom cell
-* Applying the Attribute to the fields in the referenced table
+* Implement `IRelationalData<T>` on the data class of the table you want to reference
+* Define an attribute used to mark referencing fields
+* Implement a custom relation cell (`DataRelationCell` or `MultiDataRelationCell`)
+* Apply the attribute to fields in the referencing table's data class
 
-Let's walk through the implementation process using an example of a table with integer-keyed data.
+Below is an implementation example using an integer key.
 {% endcolumn %}
 {% endcolumns %}
 
@@ -59,17 +59,17 @@ public class SampleData : IRelationalData<int>
 {% endcolumn %}
 
 {% column %}
-### Implementing IRelationalData for the data class of the referenced table
+### Implement `IRelationalData` on the data class of the referenced table
 
-To establish a foreign key relationship between tables, you must implement the IRelationalData interface in the data class of the target table.
+To establish a foreign-key-like relationship, implement the `IRelationalData<T>` interface on the data class of the table being referenced.
 
-The type specified by T serves as the key for that data class.
-
-The string generated using DisplayName will be the text displayed in the cell.
+* `T` is the key type for the data class.
+* The value returned by `DisplayName` is shown in the dropdown cell.
 
 {% hint style="info" %}
-The referenced table must be listed in the Tables section of ProjectSettings/NonNonSheet. While table assets are automatically registered during creation, if the cell displays "Table not found," please verify that the table asset is properly registered.\
-Additionally, note that if multiple tables using the same data class are registered, the one registered earlier will be referenced, so be aware of this order dependency.
+The referenced table must be listed in the Tables section of `ProjectSettings/NonNonSheet`. Table assets are normally registered automatically when created. If the cell displays "Table not found," verify that the table asset is registered.
+\
+If multiple tables using the same data class are registered, the one registered first will be used. Be aware of this order dependency.
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
@@ -84,13 +84,13 @@ public class SampleTableRefAttribute : CellCustomAttribute { }
 {% endcolumn %}
 
 {% column %}
-### Implementing the necessary Attribute for referencing
+### Define an attribute for referencing
 
-Implement an Attribute that inherits from CellCustomAttribute.&#x20;
+Create an attribute that inherits from `CellCustomAttribute`.
 
-There are no specific naming constraints.
+There are no naming constraints.
 
-The Attribute defined here will be used to indicate fields intended for table referencing.
+Use this attribute to mark fields that reference another table.
 {% endcolumn %}
 {% endcolumns %}
 
@@ -101,23 +101,23 @@ The Attribute defined here will be used to indicate fields intended for table re
 ```csharp
 #if UNITY_EDITOR
 [NonNonCell]
-public class SampleTableRelationCell : DataRelationCell<int, SampleDataRelationAttribute , SampleData> { }
+public class SampleTableRelationCell : DataRelationCell<int, SampleTableRefAttribute, SampleData> { }
 #endif
 ```
 {% endcolumn %}
 
 {% column %}
-### Implementing a custom cell
+### Implement a custom relation cell
 
-Implement a class that inherits from DataRelationCell.
+Implement a class that inherits from `DataRelationCell`.
 
-The type parameters for DataRelationCell should be:
+Type parameters of `DataRelationCell<TKey, TAttribute, TData>`:
 
-* First type parameter: The same type as T in IRelationalData
-* Second type parameter: An Attribute class that inherits from CellCustomAttribute
-* Third type parameter: A data class that implements IRelationalData
+* `TKey`: Same type as `T` in `IRelationalData<T>`
+* `TAttribute`: Attribute inheriting from `CellCustomAttribute`
+* `TData`: Data class implementing `IRelationalData<TKey>`
 
-Note that this class must be placed in an Editor-only assembly or wrapped with #if UNITY\_EDITOR directives.
+Place this class in an editor-only assembly or wrap it with `#if UNITY_EDITOR`.
 {% endcolumn %}
 {% endcolumns %}
 
@@ -136,7 +136,7 @@ public class SampleTableMultiRelationCell : MultiDataRelationCell<int, MultiSamp
 {% endcolumn %}
 
 {% column %}
-You can also implement a class that inherits from MultiDataRelationCell instead of DataRelationCell to store multiple keys.
+You can inherit from `MultiDataRelationCell` instead of `DataRelationCell` to store multiple keys.
 
 <div align="left"><figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>
 {% endcolumn %}
@@ -160,13 +160,13 @@ public class ReferencingData
 {% endcolumn %}
 
 {% column %}
-### Applying the Attribute to the fields in the referenced table
+### Apply the attribute to fields in the referencing table
 
-Implement a separate table that references another table.
+Create a separate table that references the earlier table.
 
-Implement a field in the data class with the same type as the T in IRelationalData.
+Add a field whose type matches the key type `T` used by the referenced data class (or an array when using `MultiDataRelationCell`).
 
-Apply an Attribute that inherits from CellCustomAttribute to this field (in this case, either SampleTableRefAttribute or MultiSampleTableRefAttribute).
+Apply the attribute you defined (in this case `SampleTableRef` or `MultiSampleTableRef`).
 {% endcolumn %}
 {% endcolumns %}
 
@@ -178,9 +178,9 @@ Apply an Attribute that inherits from CellCustomAttribute to this field (in this
 {% endcolumn %}
 
 {% column %}
-With this setup, you can now reference SampleTable from ReferencingTable.
+With this setup, `ReferencingTable` can reference entries in `SampleTable`.
 
-In this example we used an integer value as the key, but it's also possible to use strings or enumerations as keys.
+This example uses an integer key, but string or enum key types are also supported.
 
 
 {% endcolumn %}
