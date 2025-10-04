@@ -2,16 +2,16 @@
 
 <figure><img src=".gitbook/assets/sheet.png" alt=""><figcaption></figcaption></figure>
 
-NonNon Sheet is a management tool for master data.\
-You can edit master data using an Excel-like or spreadsheet-style UI directly within the Unity editor.\
-The intuitive Unity interface seamlessly integrates with table-based UI elements.
+NonNon Sheet is a master data management tool.\
+You can edit master data with a Spreadsheet-style UI directly in the Unity Editor.\
+It provides Unity’s operation style, seamlessly integrated with tabular UI elements.
 
 ## Features
 
-* Table-based UI that runs in the Unity Editor
-* A natural fusion of Unity's familiar control scheme with table-based UI elements
+* Spreadsheet-style UI running inside the Unity Editor
+* A natural fusion of Unity's familiar control scheme with Spreadsheet-style UI
 * Customizable cells
 * Supports user-defined custom cells
-* Other tables can be referenced
+* Supports referencing other tables
 * Supports cell-level validation
-* Support for csv and json import and export
+* Support for CSV and JSON import/export
