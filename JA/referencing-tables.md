@@ -38,8 +38,6 @@ int 値をキーとするテーブルを例に実装の流れを追ってみま�
 {% endcolumn %}
 {% endcolumns %}
 
-
-
 {% columns %}
 {% column %}
 ```csharp
@@ -59,7 +57,7 @@ public class SampleData : IRelationalData<int>
 {% endcolumn %}
 
 {% column %}
-### データクラスへの IRelationalData の実装
+#### データクラスへの IRelationalData の実装
 
 あるテーブルを他のテーブルから参照するためには、テーブルのデータクラスに `IRelationalData<T>` を実装する必要があります。
 
@@ -74,8 +72,6 @@ public class SampleData : IRelationalData<int>
 {% endcolumn %}
 {% endcolumns %}
 
-
-
 {% columns %}
 {% column %}
 ```csharp
@@ -84,15 +80,13 @@ public class SampleTableRefAttribute : CellCustomAttribute { }
 {% endcolumn %}
 
 {% column %}
-### 参照指定のための Attribute の実装
+#### 参照指定のための Attribute の実装
 
 `CellCustomAttribute` を継承した Attribute を実装します。命名に特に制約はありません。
 
 ここで定義した Attribute がテーブル参照用フィールドを示す属性として使用されます。
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -105,7 +99,7 @@ public class SampleTableRelationCell : DataRelationCell<int, SampleTableRefAttri
 {% endcolumn %}
 
 {% column %}
-### カスタムセルの実装
+#### カスタムセルの実装
 
 `DataRelationCell` を継承したクラスを実装します。
 
@@ -118,8 +112,6 @@ public class SampleTableRelationCell : DataRelationCell<int, SampleTableRefAttri
 また、このクラスは Editor only なアセンブリに配置するか、`#if UNITY_EDITOR` で囲む必要があるため注意してください。
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -140,8 +132,6 @@ public class SampleTableMultiRelationCell : MultiDataRelationCell<int, MultiSamp
 {% endcolumn %}
 {% endcolumns %}
 
-
-
 {% columns %}
 {% column %}
 ```csharp
@@ -158,17 +148,15 @@ public class ReferencingData
 {% endcolumn %}
 
 {% column %}
-### 参照するテーブルのフィールドへ Attribute を付与
+#### 参照するテーブルのフィールドへ Attribute を付与
 
 参照されるテーブルとは別のテーブルを実装します。
 
 データクラスに `IRelationalData<T>` の T と同じ型のフィールドを実装しましょう。
 
-そのフィールドに  `CellCustomAttribute` を継承した Attribute（今回だと `SampleTableRefAttribute` または `MultiSampleTableRefAttribute`）を付与します。
+そのフィールドに `CellCustomAttribute` を継承した Attribute（今回だと `SampleTableRefAttribute` または `MultiSampleTableRefAttribute`）を付与します。
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -179,8 +167,5 @@ public class ReferencingData
 以上で ReferencingTable から SampleTable を参照することができるようになりました。
 
 今回の例では int 値をキーにしましたが、 string や enum をキーとすることも可能です。
-
-
 {% endcolumn %}
 {% endcolumns %}
-

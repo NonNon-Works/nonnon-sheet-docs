@@ -32,8 +32,6 @@ layout:
 {% endcolumn %}
 {% endcolumns %}
 
-
-
 {% columns %}
 {% column %}
 ```csharp
@@ -42,15 +40,13 @@ public class SampleCustomAttribute : CellCustomAttribute { }
 {% endcolumn %}
 
 {% column %}
-### カスタムセルを指定するための Attribute の実装
+#### カスタムセルを指定するための Attribute の実装
 
 データクラスのフィールドに対し、カスタムセルの使用を指定するための属性を定義します。
 
 この属性はテーブルのデータクラスで利用するため、テーブルやデータクラスと同じアセンブリに実装してください。
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -68,7 +64,7 @@ public class SampleCustomCell : CustomCell<[任意の型], SampleCustomAttribute
 {% endcolumn %}
 
 {% column %}
-### カスタムセルの実装
+#### カスタムセルの実装
 
 次に `CustomCell` のサブクラスを実装し、 `NonNonCell` 属性を付与します。
 
@@ -96,8 +92,6 @@ CustomCell には3つのコールバックメソッドが用意されていま�
 {% endcolumn %}
 {% endcolumns %}
 
-
-
 ## カスタムセルの実装例
 
 {% columns %}
@@ -109,8 +103,6 @@ CustomCell には3つのコールバックメソッドが用意されていま�
 日付入力用セルを例にカスタムセルの実装例を紹介します。
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -129,14 +121,8 @@ public class Date
 まず日付データ用のクラスを実装します。
 
 `Date` 型のフィールドを編集するためのカスタムセルを実装していきます。
-
-
-
-
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -149,8 +135,6 @@ public class DateAttribute : CellCustomAttribute { }
 Attribute を実装します。
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
@@ -169,8 +153,6 @@ public class DateCell : CustomCell<Date, DateAttribute> { }
 `Date` 型のフィールドに `DateAttribute` をつけると `DateCell` が生成されるようになりました。
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 {% columns %}
 {% column %}
