@@ -28,4 +28,4 @@
 
     Table アセットのインスペクタから Open Sheet Window ボタンをクリックするか、Table アセットをダブルクリックするとウィンドウが開きます。
 
-<figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<img src="~/images/image (19).png" alt="">

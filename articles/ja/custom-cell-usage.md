@@ -1,31 +1,10 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # カスタムセルの使い方
 
 フィールドに特定の属性をつけることでセルの UI をカスタマイズすることができます。\
 例えば float 型のフィールドに Slider 属性をつけるとセルの UI がスライダーに変更されます。
 
-{% columns %}
-{% column %}
-<figure><img src=".gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
+<img src="~/images/image (28).png" alt="">
 
-{% column %}
 ```csharp
 [Serializable]
 public class SampleData
@@ -34,10 +13,6 @@ public class SampleData
     [Slider(0f, 1f)] public float SliderFloat;
 }
 ```
-{% endcolumn %}
-{% endcolumns %}
-
-
 
 標準で実装されているカスタムセルは以下の表の通りです。
 

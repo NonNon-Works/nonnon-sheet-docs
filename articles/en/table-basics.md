@@ -5,17 +5,11 @@
 `NonNonTable` is a `ScriptableObject` that stores a `List<T>` of serializable row objects.\
 It is rendered in a tabular format in the Unity **Editor**, and each field is editable on a per-cell basis.
 
-{% columns %}
-{% column %}
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
+<img src="~/images/image (6).png" alt="">
 
-{% column %}
 The cell changes its editor/control based on the field type.
 
 For example, an **IntegerField** is used for an `int` field, and a **Toggle** is used for a `bool` field.
-{% endcolumn %}
-{% endcolumns %}
 
 <details>
 
@@ -49,31 +43,17 @@ For example, an **IntegerField** is used for an `int` field, and a **Toggle** is
 
 </details>
 
-{% columns %}
-{% column %}
-<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
+<img src="~/images/image (16).png" alt="">
 
-{% column %}
 If a type does not have a dedicated cell, the value is shown as the string returned by `ToString()`.
 
 Double-clicking a cell opens a popup with a `PropertyField`, allowing you to edit the value.
 
+<img src="~/images/image (17).png" alt="">
 
-{% endcolumn %}
-{% endcolumns %}
-
-{% columns %}
-{% column %}
-<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
-
-{% column %}
 For arrays, the cell shows a comma-separated string of elements.
 
 Double-clicking an array opens a popup to edit its contents.
-{% endcolumn %}
-{% endcolumns %}
 
 ### &#x20;Restriction
 

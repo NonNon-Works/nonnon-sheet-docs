@@ -1,18 +1,12 @@
 # Import and Export CSV and JSON
 
-{% columns %}
-{% column %}
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
+<img src="~/images/image (9).png" alt="">
 
-{% column %}
 NonNonTable supports importing and exporting data in CSV and JSON formats.
 
 You can perform these operations from the NonNonTable asset's Inspector.
 
 This feature only works in the Unity Editor; it is not available in player builds.
-{% endcolumn %}
-{% endcolumns %}
 
 ## CSV
 

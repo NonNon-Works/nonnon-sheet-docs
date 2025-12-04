@@ -1,55 +1,24 @@
----
-layout:
-  width: wide
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # カスタムセルを自作する
 
-{% columns %}
-{% column %}
-<figure><img src=".gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
+<img src="~/images/image (24).png" alt="">
 
-{% column %}
 カスタムセルはユーザーが実装・追加することも可能です。
 
 そのために必要な作業は主に以下の2つです。
 
 * カスタムセルを指定するための Attribute の実装
 * カスタムセルの実装
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 public class SampleCustomAttribute : CellCustomAttribute { }
 ```
-{% endcolumn %}
 
-{% column %}
 #### カスタムセルを指定するための Attribute の実装
 
 データクラスのフィールドに対し、カスタムセルの使用を指定するための属性を定義します。
 
 この属性はテーブルのデータクラスで利用するため、テーブルやデータクラスと同じアセンブリに実装してください。
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 [NonNonCell]
 public class SampleCustomCell : CustomCell<[任意の型], SampleCustomAttribute>
@@ -61,9 +30,7 @@ public class SampleCustomCell : CustomCell<[任意の型], SampleCustomAttribute
     public override void OnStartEditing() { }
 }
 ```
-{% endcolumn %}
 
-{% column %}
 #### カスタムセルの実装
 
 次に `CustomCell` のサブクラスを実装し、 `NonNonCell` 属性を付与します。
@@ -89,23 +56,13 @@ CustomCell には3つのコールバックメソッドが用意されていま�
   * 編集中のみ UI を変更したい場合、UI 変更処理を実装しましょう
 
 また、カスタムセルは必ず Editor only なアセンブリに実装する必要があるため注意してください。
-{% endcolumn %}
-{% endcolumns %}
 
 ## カスタムセルの実装例
 
-{% columns %}
-{% column %}
-<figure><img src=".gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
+<img src="~/images/image (26).png" alt="">
 
-{% column %}
 日付入力用セルを例にカスタムセルの実装例を紹介します。
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 [Serializable]
 public class Date
@@ -115,47 +72,29 @@ public class Date
     public int Day;
 }
 ```
-{% endcolumn %}
 
-{% column %}
 まず日付データ用のクラスを実装します。
 
 `Date` 型のフィールドを編集するためのカスタムセルを実装していきます。
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 public class DateAttribute : CellCustomAttribute { }
 ```
-{% endcolumn %}
 
-{% column %}
 Attribute を実装します。
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 #if UNITY_EDITOR
 [NonNonCell]
 public class DateCell : CustomCell<Date, DateAttribute> { }
 #endif
 ```
-{% endcolumn %}
 
-{% column %}
 カスタムセルのクラスを実装します。
 
 これで最低限の準備は完了です。\
 `Date` 型のフィールドに `DateAttribute` をつけると `DateCell` が生成されるようになりました。
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 #if UNITY_EDITOR
 [NonNonCell]
@@ -244,9 +183,6 @@ public class DateCell : CustomCell<Date, DateAttribute>
 }
 #endif
 ```
-{% endcolumn %}
 
-{% column %}
 最後に各コールバックメソッドを用いて `DateCell` を実装して完了です。
-{% endcolumn %}
-{% endcolumns %}
+

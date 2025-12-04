@@ -1,6 +1,6 @@
 # Introduction
 
-<figure><img src=".gitbook/assets/sheet.png" alt=""><figcaption></figcaption></figure>
+<img src="~/images/sheet.png" alt="">
 
 NonNonSheet is a master data management tool.
 \

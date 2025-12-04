@@ -1,55 +1,24 @@
----
-layout:
-  width: wide
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # Create custom cell
 
-{% columns %}
-{% column %}
-<figure><img src=".gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
+<img src="~/images/image (24).png" alt="">
 
-{% column %}
 You can implement and register your own custom cells.
 
 There are two main steps:
 
 * Define an attribute that marks fields to use the custom cell
 * Implement the custom cell itself
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 public class SampleCustomAttribute : CellCustomAttribute { }
 ```
-{% endcolumn %}
 
-{% column %}
 #### Create a Marker Attribute
 
 Create a marker attribute that tells the system a field should be rendered using a custom cell.
 
 This marker attribute must exist in the same assembly as the table or data class that uses it.
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 [NonNonCell]
 public class SampleCustomCell : CustomCell<TData, SampleCustomAttribute>
@@ -62,9 +31,7 @@ public class SampleCustomCell : CustomCell<TData, SampleCustomAttribute>
 }
 // TData: the data type handled by this cell
 ```
-{% endcolumn %}
 
-{% column %}
 #### Implement a Custom Cell
 
 Next, create a subclass of `CustomCell` and apply the `NonNonCell` attribute.
@@ -89,23 +56,13 @@ Type parameters of `CustomCell`:
 * `OnStartEditing`
   * Called when editing begins (double‑click, F2, or Enter while selected)
   * Add or adjust UI that should appear only during editing here
-{% endcolumn %}
-{% endcolumns %}
 
 ## Custom Cell Implementation Example
 
-{% columns %}
-{% column %}
-<figure><img src=".gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
+<img src="~/images/image (26).png" alt="">
 
-{% column %}
 The following example demonstrates a custom cell using a simple date type.
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 [Serializable]
 public class Date
@@ -115,45 +72,27 @@ public class Date
     public int Day;
 }
 ```
-{% endcolumn %}
 
-{% column %}
 Define a class for date data.
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 public class DateAttribute : CellCustomAttribute { }
 ```
-{% endcolumn %}
 
-{% column %}
 Define the attribute.
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 #if UNITY_EDITOR
 [NonNonCell]
 public class DateCell : CustomCell<Date, DateAttribute> { }
 #endif
 ```
-{% endcolumn %}
 
-{% column %}
 Implement the custom cell class.
 
 This is the minimal setup.\
 Applying `DateAttribute` to a `Date` field will now render using a `DateCell`.
-{% endcolumn %}
-{% endcolumns %}
 
-{% columns %}
-{% column %}
 ```csharp
 #if UNITY_EDITOR
 [NonNonCell]
@@ -242,9 +181,5 @@ public class DateCell : CustomCell<Date, DateAttribute>
 }
 #endif
 ```
-{% endcolumn %}
 
-{% column %}
 Finally, implement `DateCell` using each callback to complete the process. The cell swaps between display mode (labels) and edit mode (integer fields).
-{% endcolumn %}
-{% endcolumns %}

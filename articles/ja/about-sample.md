@@ -1,18 +1,8 @@
 # サンプルについて
 
-{% columns %}
-{% column %}
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-{% endcolumn %}
+<img src="~/images/image (5).png" alt="">
 
-{% column %}
 サンプルは PackageManager からインポートすることができます。
-
-
-{% endcolumn %}
-{% endcolumns %}
-
-
 
 各サンプルの概要は以下の表の通りです。
 
