@@ -26,6 +26,8 @@
     "globalMetadata": {
       "_appName": "NonNonSheet",
       "_appTitle": "NonNonSheet",
+      "_appLogoPath": "images/icon.svg",
+      "_appFaviconPath": "images/icon.svg",
       "_enableSearch": true,
       "pdf": false
     }

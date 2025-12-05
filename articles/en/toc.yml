@@ -1,11 +1,11 @@
 - name: Introduction
-  href: introduction.md
+  href: ../../index.md
 - name: Quickstart
   href: quick-start.md
 - name: Table Basics
   href: table-basics.md
 - name: How to use custom cell
-  href: custom-cell-usage.md
+  href: how-to-use-custom-cell.md
 - name: Create custom cell
   href: create-custom-cell.md
 - name: Refer to other tables
@@ -13,7 +13,7 @@
 - name: Validate data
   href: validate-data.md
 - name: Import and export csv and json
-  href: data-import-export.md
+  href: import-and-export-csv-and-json.md
 - name: About sample
   href: about-sample.md
 - name: Changelogs

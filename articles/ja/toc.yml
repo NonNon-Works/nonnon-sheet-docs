@@ -5,7 +5,7 @@
 - name: テーブルの基本
   href: table-basics.md
 - name: カスタムセルの使い方
-  href: custom-cell-usage.md
+  href: how-to-use-custom-cell.md
 - name: カスタムセルを自作する
   href: create-custom-cell.md
 - name: 他のテーブルを参照する
@@ -13,7 +13,7 @@
 - name: データをバリデーションする
   href: validate-data.md
 - name: csv・jsonをインポート・エクスポートする
-  href: data-import-export.md
+  href: import-and-export-csv-and-json.md
 - name: サンプルについて
   href: about-sample.md
 - name: 更新履歴
