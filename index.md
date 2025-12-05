@@ -1,11 +1,17 @@
----
-_layout: landing
----
+# Introduction
 
-# This is the **HOMEPAGE**.
+<img src="~/images/sheet.png" alt=""><br>
 
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
+NonNonSheet is a master data management tool.<br>
+You can edit master data with a Spreadsheet-style UI directly in the Unity Editor.<br>
+It provides Unity’s operation style, seamlessly integrated with tabular UI elements.
 
-## Quick Start Notes:
+## Features
 
-1. Add images to the *images* folder if the file is referencing an image.
+* Spreadsheet-style UI running inside the Unity Editor
+* A natural fusion of Unity's familiar control scheme with Spreadsheet-style UI
+* Customizable cells
+* Supports user-defined custom cells
+* Supports referencing other tables
+* Supports cell-level validation
+* Supports CSV and JSON import/export

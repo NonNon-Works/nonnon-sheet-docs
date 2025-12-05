@@ -1,7 +1,5 @@
 # Create custom cell
 
-<img src="~/images/image (24).png" alt="">
-
 You can implement and register your own custom cells.
 
 There are two main steps:
@@ -59,7 +57,7 @@ Type parameters of `CustomCell`:
 
 ## Custom Cell Implementation Example
 
-<img src="~/images/image (26).png" alt="">
+<img src="~/images/image (26).png" alt=""><br>
 
 The following example demonstrates a custom cell using a simple date type.
 

@@ -32,4 +32,4 @@
     * Click the **Open Sheet Window** button in the Inspector of the Table asset
     * Double-click the Table asset in the Project window
 
-<img src="~/images/image (19).png" alt="">
+    <br><img src="~/images/image (19).png" alt="">

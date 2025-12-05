@@ -28,4 +28,4 @@
 
     Table アセットのインスペクタから Open Sheet Window ボタンをクリックするか、Table アセットをダブルクリックするとウィンドウが開きます。
 
-<img src="~/images/image (19).png" alt="">
+    <br><img src="~/images/image (19).png" alt="">

@@ -1,6 +1,6 @@
 # Import and Export CSV and JSON
 
-<img src="~/images/image (9).png" alt="">
+<img src="~/images/image (9).png" alt=""><br>
 
 NonNonTable supports importing and exporting data in CSV and JSON formats.
 

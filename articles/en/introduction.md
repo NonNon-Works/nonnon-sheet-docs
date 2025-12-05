@@ -1,11 +1,9 @@
 # Introduction
 
-<img src="~/images/sheet.png" alt="">
+<img src="~/images/sheet.png" alt=""><br>
 
-NonNonSheet is a master data management tool.
-\
-You can edit master data with a Spreadsheet-style UI directly in the Unity Editor.
-\
+NonNonSheet is a master data management tool.<br>
+You can edit master data with a Spreadsheet-style UI directly in the Unity Editor.<br>
 It provides Unity’s operation style, seamlessly integrated with tabular UI elements.
 
 ## Features

@@ -1,6 +1,6 @@
 # データをバリデーションする
 
-<img src="~/images/image (10).png" alt="">
+<img src="~/images/image (10).png" alt=""><br>
 
 マスターデータの管理にあたって、データに制約を設けることはよくあることです。
 
@@ -80,7 +80,7 @@ ValidationResult IValidationSampleTableValidator.ValidateName(ValidationSampleDa
 
 エラーの場合は `ValidationResult.Error` を返します。`ValidationResult.Error` の引数にメッセージを渡すことで、セルの `Tooltip` としてメッセージを表示することができます。
 
-<div align="left"><img src="~/images/image (11).png" alt=""></div>
+<img src="~/images/image (11).png" alt=""><br>
 
 ```csharp
 ValidationResult IValidationSampleTableValidator.ValidateId(ValidationSampleData self, int id)

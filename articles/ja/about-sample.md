@@ -1,6 +1,6 @@
 # サンプルについて
 
-<img src="~/images/image (5).png" alt="">
+<img src="~/images/image (5).png" alt=""><br>
 
 サンプルは PackageManager からインポートすることができます。
 

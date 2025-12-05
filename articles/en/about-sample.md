@@ -1,6 +1,6 @@
 # Samples Overview
 
-<img src="~/images/image (5).png" alt="" />
+<img src="~/images/image (5).png" alt="" /><br>
 
 You can import these samples from the Unity Package Manager (Window > Package
 Manager). Overview of each sample:

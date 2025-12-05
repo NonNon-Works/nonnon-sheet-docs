@@ -3,7 +3,7 @@
 フィールドに特定の属性をつけることでセルの UI をカスタマイズすることができます。\
 例えば float 型のフィールドに Slider 属性をつけるとセルの UI がスライダーに変更されます。
 
-<img src="~/images/image (28).png" alt="">
+<img src="~/images/image (28).png" alt=""><br>
 
 ```csharp
 [Serializable]
@@ -16,7 +16,7 @@ public class SampleData
 
 標準で実装されているカスタムセルは以下の表の通りです。
 
-| 属性           | 型       |
+| 属性         | 型       |
 | ------------ | ------- |
 | Slider       | float   |
 | IntSlider    | int     |

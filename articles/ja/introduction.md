@@ -1,9 +1,9 @@
 # はじめに
 
-<img src="~/images/sheet.png" alt="">
+<img src="~/images/sheet.png" alt=""><br>
 
-NonNonSheet はマスターデータ管理ツールです。\
-Unity エディタ上で Excel や Spreadsheet のような表形式 UI を用いてマスターデータを編集することができます。\
+NonNonSheet はマスターデータ管理ツールです。<br>
+Unity エディタ上で Excel や Spreadsheet のような表形式 UI を用いてマスターデータを編集することができます。<br>
 Unity らしい操作感と表形式の UI が自然に融合しています。
 
 ## 特徴

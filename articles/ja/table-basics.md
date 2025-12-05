@@ -2,10 +2,10 @@
 
 ### 基本仕様
 
-`NonNonTable` は `Serializable` なクラスを List として持つ `ScriptableObject` です。\
+`NonNonTable` は `Serializable` なクラスを List として持つ `ScriptableObject` です。<br>
 Unity エディタ上で表形式にレンダリングされ、各フィールドをセル単位で編集可能にします。
 
-<img src="~/images/image (6).png" alt="">
+<img src="~/images/image (6).png" alt=""><br>
 
 セルはフィールドの型に応じて形を変えます。
 
@@ -43,21 +43,21 @@ Unity エディタ上で表形式にレンダリングされ、各フィール�
 * `UnityEngine.Object`（`GameObject`, `MonoBehaviour`, `ScriptableObject`, `Texture` など）
 * `AssetReference`（Addressables が有効なときのみ）
 
-</details>
+</details><br>
 
-<img src="~/images/image (16).png" alt="">
+<img src="~/images/image (16).png" alt=""><br>
 
 専用セルが用意されていない型の場合、値を `ToString()` した文字列がセルに表示されます。
 
 また、セルをダブルクリックすると PropertyField を持つ Popup が表示され、値を編集することができます。
 
-<img src="~/images/image (17).png" alt="">
+<img src="~/images/image (17).png" alt=""><br>
 
 配列の場合、各要素を , 区切りにした文字列がセルに表示されます。
 
 また、配列も同様にダブルクリックにより Popup が表示され、内容を編集することができます。
 
-### &#x20;制約
+### 制約
 
 `NonNonTable` は実装する上でいくつかの制約があります。
 
