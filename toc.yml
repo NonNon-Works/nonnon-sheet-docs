@@ -1,3 +1,7 @@
+pdf: true
+pdfTocPage: true
+pdfFileName: NonNonSheet-Documentation.pdf
+items:
 - name: English
   href: articles/en/
 - name: Japanese

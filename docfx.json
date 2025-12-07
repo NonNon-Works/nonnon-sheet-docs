@@ -29,7 +29,8 @@
       "_appLogoPath": "images/icon.svg",
       "_appFaviconPath": "images/icon.svg",
       "_enableSearch": true,
-      "pdf": false
+      "pdf": true,
+      "pdfTocPage": true
     }
   }
 }

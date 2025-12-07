@@ -1,3 +1,7 @@
+pdf: true
+pdfTocPage: true
+pdfFileName: NonNonSheet-Documentation.pdf
+items:
 - name: はじめに
   href: introduction.md
 - name: クイックスタート
