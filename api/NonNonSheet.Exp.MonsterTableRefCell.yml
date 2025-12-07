@@ -1,0 +1,3868 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.MonsterTableRefCell
+  commentId: T:NonNonSheet.Exp.MonsterTableRefCell
+  id: MonsterTableRefCell
+  parent: NonNonSheet.Exp
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: MonsterTableRefCell
+  nameWithType: MonsterTableRefCell
+  fullName: NonNonSheet.Exp.MonsterTableRefCell
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/MonsterTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: MonsterTableRefCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/MonsterTable.cs
+    startLine: 20
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: 'public class MonsterTableRefCell : DataRelationCell<int, MonsterTableRefAttribute, MonsterData>, IEventHandler, IResolvedStyle, ITransform, ITransitionAnimations, IExperimentalFeatures, IVisualElementScheduler, IBindable, INotifyValueChanged<int>'
+    content.vb: Public Class MonsterTableRefCell Inherits DataRelationCell(Of Integer, MonsterTableRefAttribute, MonsterData) Implements IEventHandler, IResolvedStyle, ITransform, ITransitionAnimations, IExperimentalFeatures, IVisualElementScheduler, IBindable, INotifyValueChanged(Of Integer)
+  inheritance:
+  - System.Object
+  - UnityEngine.UIElements.CallbackEventHandler
+  - UnityEngine.UIElements.Focusable
+  - UnityEngine.UIElements.VisualElement
+  - UnityEngine.UIElements.BindableElement
+  - NonNonSheet.Editor.Cell
+  - NonNonSheet.Editor.Cell{System.Int32}
+  - NonNonSheet.Editor.CustomCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute}
+  - NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}
+  implements:
+  - UnityEngine.UIElements.IEventHandler
+  - UnityEngine.UIElements.IResolvedStyle
+  - UnityEngine.UIElements.ITransform
+  - UnityEngine.UIElements.Experimental.ITransitionAnimations
+  - UnityEngine.UIElements.IExperimentalFeatures
+  - UnityEngine.UIElements.IVisualElementScheduler
+  - UnityEngine.UIElements.IBindable
+  - UnityEngine.UIElements.INotifyValueChanged{System.Int32}
+  inheritedMembers:
+  - NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}.OnInitialize
+  - NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}.OnBindProperty
+  - NonNonSheet.Editor.CustomCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute}.Attribute
+  - NonNonSheet.Editor.Cell{System.Int32}.Value
+  - NonNonSheet.Editor.Cell{System.Int32}.GetValue
+  - NonNonSheet.Editor.Cell{System.Int32}.SetValueWithoutNotify(System.Int32)
+  - NonNonSheet.Editor.Cell.DataSerializedProperty
+  - NonNonSheet.Editor.Cell.FieldSerializedProperty
+  - NonNonSheet.Editor.Cell.AutoBindProperty
+  - NonNonSheet.Editor.Cell.Table
+  - NonNonSheet.Editor.Cell.Metadata
+  - NonNonSheet.Editor.Cell.Row
+  - NonNonSheet.Editor.Cell.Col
+  - NonNonSheet.Editor.Cell.Position
+  - NonNonSheet.Editor.Cell.Width
+  - NonNonSheet.Editor.Cell.Initialize(UnityEditor.SerializedProperty)
+  - NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
+  - NonNonSheet.Editor.Cell.BindField
+  - NonNonSheet.Editor.Cell.OnInitialize
+  - NonNonSheet.Editor.Cell.OnBindProperty
+  - NonNonSheet.Editor.Cell.OnStartEditing
+  - NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+  - NonNonSheet.Editor.Cell.ToString
+  - NonNonSheet.Editor.Cell.FocusNextFrame
+  - UnityEngine.UIElements.BindableElement.binding
+  - UnityEngine.UIElements.BindableElement.bindingPath
+  - UnityEngine.UIElements.VisualElement.disabledUssClassName
+  - UnityEngine.UIElements.VisualElement.Focus
+  - UnityEngine.UIElements.VisualElement.SendEvent(UnityEngine.UIElements.EventBase)
+  - UnityEngine.UIElements.VisualElement.SetEnabledFromHierarchy(System.Boolean)
+  - UnityEngine.UIElements.VisualElement.SetEnabled(System.Boolean)
+  - UnityEngine.UIElements.VisualElement.MarkDirtyRepaint
+  - UnityEngine.UIElements.VisualElement.ContainsPoint(UnityEngine.Vector2)
+  - UnityEngine.UIElements.VisualElement.Overlaps(UnityEngine.Rect)
+  - UnityEngine.UIElements.VisualElement.DoMeasure(System.Single,UnityEngine.UIElements.VisualElement.MeasureMode,System.Single,UnityEngine.UIElements.VisualElement.MeasureMode)
+  - UnityEngine.UIElements.VisualElement.GetClasses
+  - UnityEngine.UIElements.VisualElement.ClearClassList
+  - UnityEngine.UIElements.VisualElement.AddToClassList(System.String)
+  - UnityEngine.UIElements.VisualElement.RemoveFromClassList(System.String)
+  - UnityEngine.UIElements.VisualElement.ToggleInClassList(System.String)
+  - UnityEngine.UIElements.VisualElement.EnableInClassList(System.String,System.Boolean)
+  - UnityEngine.UIElements.VisualElement.ClassListContains(System.String)
+  - UnityEngine.UIElements.VisualElement.FindAncestorUserData
+  - UnityEngine.UIElements.VisualElement.SetBinding(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.Binding)
+  - UnityEngine.UIElements.VisualElement.GetBinding(UnityEngine.UIElements.BindingId)
+  - UnityEngine.UIElements.VisualElement.TryGetBinding(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.Binding@)
+  - UnityEngine.UIElements.VisualElement.GetBindingInfos
+  - UnityEngine.UIElements.VisualElement.HasBinding(UnityEngine.UIElements.BindingId)
+  - UnityEngine.UIElements.VisualElement.ClearBinding(UnityEngine.UIElements.BindingId)
+  - UnityEngine.UIElements.VisualElement.ClearBindings
+  - UnityEngine.UIElements.VisualElement.GetHierarchicalDataSourceContext
+  - UnityEngine.UIElements.VisualElement.GetDataSourceContext(UnityEngine.UIElements.BindingId)
+  - UnityEngine.UIElements.VisualElement.TryGetDataSourceContext(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.DataSourceContext@)
+  - UnityEngine.UIElements.VisualElement.TryGetLastBindingToUIResult(UnityEngine.UIElements.BindingId@,UnityEngine.UIElements.BindingResult@)
+  - UnityEngine.UIElements.VisualElement.TryGetLastBindingToSourceResult(UnityEngine.UIElements.BindingId@,UnityEngine.UIElements.BindingResult@)
+  - UnityEngine.UIElements.VisualElement.Add(UnityEngine.UIElements.VisualElement)
+  - UnityEngine.UIElements.VisualElement.Insert(System.Int32,UnityEngine.UIElements.VisualElement)
+  - UnityEngine.UIElements.VisualElement.Remove(UnityEngine.UIElements.VisualElement)
+  - UnityEngine.UIElements.VisualElement.RemoveAt(System.Int32)
+  - UnityEngine.UIElements.VisualElement.Clear
+  - UnityEngine.UIElements.VisualElement.ElementAt(System.Int32)
+  - UnityEngine.UIElements.VisualElement.IndexOf(UnityEngine.UIElements.VisualElement)
+  - UnityEngine.UIElements.VisualElement.Children
+  - UnityEngine.UIElements.VisualElement.Sort(System.Comparison{UnityEngine.UIElements.VisualElement})
+  - UnityEngine.UIElements.VisualElement.BringToFront
+  - UnityEngine.UIElements.VisualElement.SendToBack
+  - UnityEngine.UIElements.VisualElement.PlaceBehind(UnityEngine.UIElements.VisualElement)
+  - UnityEngine.UIElements.VisualElement.PlaceInFront(UnityEngine.UIElements.VisualElement)
+  - UnityEngine.UIElements.VisualElement.RemoveFromHierarchy
+  - UnityEngine.UIElements.VisualElement.GetFirstOfType``1
+  - UnityEngine.UIElements.VisualElement.GetFirstAncestorOfType``1
+  - UnityEngine.UIElements.VisualElement.Contains(UnityEngine.UIElements.VisualElement)
+  - UnityEngine.UIElements.VisualElement.FindCommonAncestor(UnityEngine.UIElements.VisualElement)
+  - UnityEngine.UIElements.VisualElement.viewDataKey
+  - UnityEngine.UIElements.VisualElement.userData
+  - UnityEngine.UIElements.VisualElement.canGrabFocus
+  - UnityEngine.UIElements.VisualElement.focusController
+  - UnityEngine.UIElements.VisualElement.disablePlayModeTint
+  - UnityEngine.UIElements.VisualElement.usageHints
+  - UnityEngine.UIElements.VisualElement.transform
+  - UnityEngine.UIElements.VisualElement.scaledPixelsPerPoint
+  - UnityEngine.UIElements.VisualElement.layout
+  - UnityEngine.UIElements.VisualElement.contentRect
+  - UnityEngine.UIElements.VisualElement.paddingRect
+  - UnityEngine.UIElements.VisualElement.worldBound
+  - UnityEngine.UIElements.VisualElement.localBound
+  - UnityEngine.UIElements.VisualElement.worldTransform
+  - UnityEngine.UIElements.VisualElement.pickingMode
+  - UnityEngine.UIElements.VisualElement.name
+  - UnityEngine.UIElements.VisualElement.enabledInHierarchy
+  - UnityEngine.UIElements.VisualElement.enabledSelf
+  - UnityEngine.UIElements.VisualElement.languageDirection
+  - UnityEngine.UIElements.VisualElement.visible
+  - UnityEngine.UIElements.VisualElement.generateVisualContent
+  - UnityEngine.UIElements.VisualElement.dataSource
+  - UnityEngine.UIElements.VisualElement.dataSourcePath
+  - UnityEngine.UIElements.VisualElement.dataSourceType
+  - UnityEngine.UIElements.VisualElement.experimental
+  - UnityEngine.UIElements.VisualElement.hierarchy
+  - UnityEngine.UIElements.VisualElement.cacheAsBitmap
+  - UnityEngine.UIElements.VisualElement.parent
+  - UnityEngine.UIElements.VisualElement.panel
+  - UnityEngine.UIElements.VisualElement.contentContainer
+  - UnityEngine.UIElements.VisualElement.visualTreeAssetSource
+  - UnityEngine.UIElements.VisualElement.Item(System.Int32)
+  - UnityEngine.UIElements.VisualElement.childCount
+  - UnityEngine.UIElements.VisualElement.schedule
+  - UnityEngine.UIElements.VisualElement.style
+  - UnityEngine.UIElements.VisualElement.resolvedStyle
+  - UnityEngine.UIElements.VisualElement.customStyle
+  - UnityEngine.UIElements.VisualElement.styleSheets
+  - UnityEngine.UIElements.VisualElement.tooltip
+  - UnityEngine.UIElements.Focusable.Blur
+  - UnityEngine.UIElements.Focusable.focusable
+  - UnityEngine.UIElements.Focusable.tabIndex
+  - UnityEngine.UIElements.Focusable.delegatesFocus
+  - UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``1(UnityEngine.UIElements.EventCallback{{TEventType}},UnityEngine.UIElements.TrickleDown)
+  - UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``1(UnityEngine.UIElements.EventCallback{{TEventType}},UnityEngine.UIElements.TrickleDown)
+  - UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``2(UnityEngine.UIElements.EventCallback{{TEventType},{TUserArgsType}},{TUserArgsType},UnityEngine.UIElements.TrickleDown)
+  - UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``2(UnityEngine.UIElements.EventCallback{{TEventType},{TUserArgsType}},{TUserArgsType},UnityEngine.UIElements.TrickleDown)
+  - UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``1(UnityEngine.UIElements.EventCallback{{TEventType}},UnityEngine.UIElements.TrickleDown)
+  - UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``2(UnityEngine.UIElements.EventCallback{{TEventType},{TUserArgsType}},UnityEngine.UIElements.TrickleDown)
+  - UnityEngine.UIElements.CallbackEventHandler.HasTrickleDownHandlers
+  - UnityEngine.UIElements.CallbackEventHandler.HasBubbleUpHandlers
+  - UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultActionAtTarget(UnityEngine.UIElements.EventBase)
+  - UnityEngine.UIElements.CallbackEventHandler.HandleEventBubbleUp(UnityEngine.UIElements.EventBase)
+  - UnityEngine.UIElements.CallbackEventHandler.HandleEventTrickleDown(UnityEngine.UIElements.EventBase)
+  - UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultAction(UnityEngine.UIElements.EventBase)
+  - UnityEngine.UIElements.CallbackEventHandler.NotifyPropertyChanged(UnityEngine.UIElements.BindingId@)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.UIElements.CallbackEventHandler
+  commentId: T:UnityEngine.UIElements.CallbackEventHandler
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: CallbackEventHandler
+  nameWithType: CallbackEventHandler
+  fullName: UnityEngine.UIElements.CallbackEventHandler
+- uid: UnityEngine.UIElements.Focusable
+  commentId: T:UnityEngine.UIElements.Focusable
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: Focusable
+  nameWithType: Focusable
+  fullName: UnityEngine.UIElements.Focusable
+- uid: UnityEngine.UIElements.VisualElement
+  commentId: T:UnityEngine.UIElements.VisualElement
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: UnityEngine.UIElements.VisualElement
+- uid: UnityEngine.UIElements.BindableElement
+  commentId: T:UnityEngine.UIElements.BindableElement
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: BindableElement
+  nameWithType: BindableElement
+  fullName: UnityEngine.UIElements.BindableElement
+- uid: NonNonSheet.Editor.Cell
+  commentId: T:NonNonSheet.Editor.Cell
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Cell.html
+  name: Cell
+  nameWithType: Cell
+  fullName: NonNonSheet.Editor.Cell
+- uid: NonNonSheet.Editor.Cell{System.Int32}
+  commentId: T:NonNonSheet.Editor.Cell{System.Int32}
+  parent: NonNonSheet.Editor
+  definition: NonNonSheet.Editor.Cell`1
+  href: NonNonSheet.Editor.Cell-1.html
+  name: Cell<int>
+  nameWithType: Cell<int>
+  fullName: NonNonSheet.Editor.Cell<int>
+  nameWithType.vb: Cell(Of Integer)
+  fullName.vb: NonNonSheet.Editor.Cell(Of Integer)
+  name.vb: Cell(Of Integer)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell`1
+    name: Cell
+    href: NonNonSheet.Editor.Cell-1.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell`1
+    name: Cell
+    href: NonNonSheet.Editor.Cell-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: NonNonSheet.Editor.CustomCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute}
+  commentId: T:NonNonSheet.Editor.CustomCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute}
+  parent: NonNonSheet.Editor
+  definition: NonNonSheet.Editor.CustomCell`2
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: CustomCell<int, MonsterTableRefAttribute>
+  nameWithType: CustomCell<int, MonsterTableRefAttribute>
+  fullName: NonNonSheet.Editor.CustomCell<int, NonNonSheet.Exp.MonsterTableRefAttribute>
+  nameWithType.vb: CustomCell(Of Integer, MonsterTableRefAttribute)
+  fullName.vb: NonNonSheet.Editor.CustomCell(Of Integer, NonNonSheet.Exp.MonsterTableRefAttribute)
+  name.vb: CustomCell(Of Integer, MonsterTableRefAttribute)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.CustomCell`2
+    name: CustomCell
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterTableRefAttribute
+    name: MonsterTableRefAttribute
+    href: NonNonSheet.Exp.MonsterTableRefAttribute.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.CustomCell`2
+    name: CustomCell
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterTableRefAttribute
+    name: MonsterTableRefAttribute
+    href: NonNonSheet.Exp.MonsterTableRefAttribute.html
+  - name: )
+- uid: NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}
+  commentId: T:NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}
+  parent: NonNonSheet.Editor
+  definition: NonNonSheet.Editor.DataRelationCell`3
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: DataRelationCell<int, MonsterTableRefAttribute, MonsterData>
+  nameWithType: DataRelationCell<int, MonsterTableRefAttribute, MonsterData>
+  fullName: NonNonSheet.Editor.DataRelationCell<int, NonNonSheet.Exp.MonsterTableRefAttribute, NonNonSheet.Exp.MonsterData>
+  nameWithType.vb: DataRelationCell(Of Integer, MonsterTableRefAttribute, MonsterData)
+  fullName.vb: NonNonSheet.Editor.DataRelationCell(Of Integer, NonNonSheet.Exp.MonsterTableRefAttribute, NonNonSheet.Exp.MonsterData)
+  name.vb: DataRelationCell(Of Integer, MonsterTableRefAttribute, MonsterData)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.DataRelationCell`3
+    name: DataRelationCell
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterTableRefAttribute
+    name: MonsterTableRefAttribute
+    href: NonNonSheet.Exp.MonsterTableRefAttribute.html
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterData
+    name: MonsterData
+    href: NonNonSheet.Exp.MonsterData.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.DataRelationCell`3
+    name: DataRelationCell
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterTableRefAttribute
+    name: MonsterTableRefAttribute
+    href: NonNonSheet.Exp.MonsterTableRefAttribute.html
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterData
+    name: MonsterData
+    href: NonNonSheet.Exp.MonsterData.html
+  - name: )
+- uid: UnityEngine.UIElements.IEventHandler
+  commentId: T:UnityEngine.UIElements.IEventHandler
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: IEventHandler
+  nameWithType: IEventHandler
+  fullName: UnityEngine.UIElements.IEventHandler
+- uid: UnityEngine.UIElements.IResolvedStyle
+  commentId: T:UnityEngine.UIElements.IResolvedStyle
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: IResolvedStyle
+  nameWithType: IResolvedStyle
+  fullName: UnityEngine.UIElements.IResolvedStyle
+- uid: UnityEngine.UIElements.ITransform
+  commentId: T:UnityEngine.UIElements.ITransform
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: ITransform
+  nameWithType: ITransform
+  fullName: UnityEngine.UIElements.ITransform
+- uid: UnityEngine.UIElements.Experimental.ITransitionAnimations
+  commentId: T:UnityEngine.UIElements.Experimental.ITransitionAnimations
+  parent: UnityEngine.UIElements.Experimental
+  isExternal: true
+  name: ITransitionAnimations
+  nameWithType: ITransitionAnimations
+  fullName: UnityEngine.UIElements.Experimental.ITransitionAnimations
+- uid: UnityEngine.UIElements.IExperimentalFeatures
+  commentId: T:UnityEngine.UIElements.IExperimentalFeatures
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: IExperimentalFeatures
+  nameWithType: IExperimentalFeatures
+  fullName: UnityEngine.UIElements.IExperimentalFeatures
+- uid: UnityEngine.UIElements.IVisualElementScheduler
+  commentId: T:UnityEngine.UIElements.IVisualElementScheduler
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: IVisualElementScheduler
+  nameWithType: IVisualElementScheduler
+  fullName: UnityEngine.UIElements.IVisualElementScheduler
+- uid: UnityEngine.UIElements.IBindable
+  commentId: T:UnityEngine.UIElements.IBindable
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: IBindable
+  nameWithType: IBindable
+  fullName: UnityEngine.UIElements.IBindable
+- uid: UnityEngine.UIElements.INotifyValueChanged{System.Int32}
+  commentId: T:UnityEngine.UIElements.INotifyValueChanged{System.Int32}
+  parent: UnityEngine.UIElements
+  definition: UnityEngine.UIElements.INotifyValueChanged`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: INotifyValueChanged<int>
+  nameWithType: INotifyValueChanged<int>
+  fullName: UnityEngine.UIElements.INotifyValueChanged<int>
+  nameWithType.vb: INotifyValueChanged(Of Integer)
+  fullName.vb: UnityEngine.UIElements.INotifyValueChanged(Of Integer)
+  name.vb: INotifyValueChanged(Of Integer)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.UIElements.INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}.OnInitialize
+  commentId: M:NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}.OnInitialize
+  parent: NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}
+  definition: NonNonSheet.Editor.DataRelationCell`3.OnInitialize
+  name: OnInitialize()
+  nameWithType: DataRelationCell<int, MonsterTableRefAttribute, MonsterData>.OnInitialize()
+  fullName: NonNonSheet.Editor.DataRelationCell<int, NonNonSheet.Exp.MonsterTableRefAttribute, NonNonSheet.Exp.MonsterData>.OnInitialize()
+  nameWithType.vb: DataRelationCell(Of Integer, MonsterTableRefAttribute, MonsterData).OnInitialize()
+  fullName.vb: NonNonSheet.Editor.DataRelationCell(Of Integer, NonNonSheet.Exp.MonsterTableRefAttribute, NonNonSheet.Exp.MonsterData).OnInitialize()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}.OnInitialize
+    name: OnInitialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}.OnInitialize
+    name: OnInitialize
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}.OnBindProperty
+  commentId: M:NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}.OnBindProperty
+  parent: NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}
+  definition: NonNonSheet.Editor.DataRelationCell`3.OnBindProperty
+  name: OnBindProperty()
+  nameWithType: DataRelationCell<int, MonsterTableRefAttribute, MonsterData>.OnBindProperty()
+  fullName: NonNonSheet.Editor.DataRelationCell<int, NonNonSheet.Exp.MonsterTableRefAttribute, NonNonSheet.Exp.MonsterData>.OnBindProperty()
+  nameWithType.vb: DataRelationCell(Of Integer, MonsterTableRefAttribute, MonsterData).OnBindProperty()
+  fullName.vb: NonNonSheet.Editor.DataRelationCell(Of Integer, NonNonSheet.Exp.MonsterTableRefAttribute, NonNonSheet.Exp.MonsterData).OnBindProperty()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}.OnBindProperty
+    name: OnBindProperty
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.DataRelationCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute,NonNonSheet.Exp.MonsterData}.OnBindProperty
+    name: OnBindProperty
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.CustomCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute}.Attribute
+  commentId: P:NonNonSheet.Editor.CustomCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute}.Attribute
+  parent: NonNonSheet.Editor.CustomCell{System.Int32,NonNonSheet.Exp.MonsterTableRefAttribute}
+  definition: NonNonSheet.Editor.CustomCell`2.Attribute
+  name: Attribute
+  nameWithType: CustomCell<int, MonsterTableRefAttribute>.Attribute
+  fullName: NonNonSheet.Editor.CustomCell<int, NonNonSheet.Exp.MonsterTableRefAttribute>.Attribute
+  nameWithType.vb: CustomCell(Of Integer, MonsterTableRefAttribute).Attribute
+  fullName.vb: NonNonSheet.Editor.CustomCell(Of Integer, NonNonSheet.Exp.MonsterTableRefAttribute).Attribute
+- uid: NonNonSheet.Editor.Cell{System.Int32}.Value
+  commentId: P:NonNonSheet.Editor.Cell{System.Int32}.Value
+  parent: NonNonSheet.Editor.Cell{System.Int32}
+  definition: NonNonSheet.Editor.Cell`1.Value
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_Value
+  name: Value
+  nameWithType: Cell<int>.Value
+  fullName: NonNonSheet.Editor.Cell<int>.Value
+  nameWithType.vb: Cell(Of Integer).Value
+  fullName.vb: NonNonSheet.Editor.Cell(Of Integer).Value
+- uid: NonNonSheet.Editor.Cell{System.Int32}.GetValue
+  commentId: M:NonNonSheet.Editor.Cell{System.Int32}.GetValue
+  parent: NonNonSheet.Editor.Cell{System.Int32}
+  definition: NonNonSheet.Editor.Cell`1.GetValue
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  name: GetValue()
+  nameWithType: Cell<int>.GetValue()
+  fullName: NonNonSheet.Editor.Cell<int>.GetValue()
+  nameWithType.vb: Cell(Of Integer).GetValue()
+  fullName.vb: NonNonSheet.Editor.Cell(Of Integer).GetValue()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell{System.Int32}.GetValue
+    name: GetValue
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell{System.Int32}.GetValue
+    name: GetValue
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.Cell{System.Int32}.SetValueWithoutNotify(System.Int32)
+  commentId: M:NonNonSheet.Editor.Cell{System.Int32}.SetValueWithoutNotify(System.Int32)
+  parent: NonNonSheet.Editor.Cell{System.Int32}
+  definition: NonNonSheet.Editor.Cell`1.SetValueWithoutNotify(`0)
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  name: SetValueWithoutNotify(int)
+  nameWithType: Cell<int>.SetValueWithoutNotify(int)
+  fullName: NonNonSheet.Editor.Cell<int>.SetValueWithoutNotify(int)
+  nameWithType.vb: Cell(Of Integer).SetValueWithoutNotify(Integer)
+  fullName.vb: NonNonSheet.Editor.Cell(Of Integer).SetValueWithoutNotify(Integer)
+  name.vb: SetValueWithoutNotify(Integer)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell{System.Int32}.SetValueWithoutNotify(System.Int32)
+    name: SetValueWithoutNotify
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell{System.Int32}.SetValueWithoutNotify(System.Int32)
+    name: SetValueWithoutNotify
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: NonNonSheet.Editor.Cell.DataSerializedProperty
+  commentId: P:NonNonSheet.Editor.Cell.DataSerializedProperty
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_DataSerializedProperty
+  name: DataSerializedProperty
+  nameWithType: Cell.DataSerializedProperty
+  fullName: NonNonSheet.Editor.Cell.DataSerializedProperty
+- uid: NonNonSheet.Editor.Cell.FieldSerializedProperty
+  commentId: P:NonNonSheet.Editor.Cell.FieldSerializedProperty
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_FieldSerializedProperty
+  name: FieldSerializedProperty
+  nameWithType: Cell.FieldSerializedProperty
+  fullName: NonNonSheet.Editor.Cell.FieldSerializedProperty
+- uid: NonNonSheet.Editor.Cell.AutoBindProperty
+  commentId: P:NonNonSheet.Editor.Cell.AutoBindProperty
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_AutoBindProperty
+  name: AutoBindProperty
+  nameWithType: Cell.AutoBindProperty
+  fullName: NonNonSheet.Editor.Cell.AutoBindProperty
+- uid: NonNonSheet.Editor.Cell.Table
+  commentId: P:NonNonSheet.Editor.Cell.Table
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Table
+  name: Table
+  nameWithType: Cell.Table
+  fullName: NonNonSheet.Editor.Cell.Table
+- uid: NonNonSheet.Editor.Cell.Metadata
+  commentId: P:NonNonSheet.Editor.Cell.Metadata
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Metadata
+  name: Metadata
+  nameWithType: Cell.Metadata
+  fullName: NonNonSheet.Editor.Cell.Metadata
+- uid: NonNonSheet.Editor.Cell.Row
+  commentId: P:NonNonSheet.Editor.Cell.Row
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Row
+  name: Row
+  nameWithType: Cell.Row
+  fullName: NonNonSheet.Editor.Cell.Row
+- uid: NonNonSheet.Editor.Cell.Col
+  commentId: P:NonNonSheet.Editor.Cell.Col
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Col
+  name: Col
+  nameWithType: Cell.Col
+  fullName: NonNonSheet.Editor.Cell.Col
+- uid: NonNonSheet.Editor.Cell.Position
+  commentId: P:NonNonSheet.Editor.Cell.Position
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Position
+  name: Position
+  nameWithType: Cell.Position
+  fullName: NonNonSheet.Editor.Cell.Position
+- uid: NonNonSheet.Editor.Cell.Width
+  commentId: P:NonNonSheet.Editor.Cell.Width
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Width
+  name: Width
+  nameWithType: Cell.Width
+  fullName: NonNonSheet.Editor.Cell.Width
+- uid: NonNonSheet.Editor.Cell.Initialize(UnityEditor.SerializedProperty)
+  commentId: M:NonNonSheet.Editor.Cell.Initialize(UnityEditor.SerializedProperty)
+  parent: NonNonSheet.Editor.Cell
+  isExternal: true
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Initialize_UnityEditor_SerializedProperty_
+  name: Initialize(SerializedProperty)
+  nameWithType: Cell.Initialize(SerializedProperty)
+  fullName: NonNonSheet.Editor.Cell.Initialize(UnityEditor.SerializedProperty)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.Initialize(UnityEditor.SerializedProperty)
+    name: Initialize
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Initialize_UnityEditor_SerializedProperty_
+  - name: (
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.Initialize(UnityEditor.SerializedProperty)
+    name: Initialize
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Initialize_UnityEditor_SerializedProperty_
+  - name: (
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    isExternal: true
+  - name: )
+- uid: NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
+  commentId: M:NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
+  parent: NonNonSheet.Editor.Cell
+  isExternal: true
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_UpdateRow_System_Int32_
+  name: UpdateRow(int)
+  nameWithType: Cell.UpdateRow(int)
+  fullName: NonNonSheet.Editor.Cell.UpdateRow(int)
+  nameWithType.vb: Cell.UpdateRow(Integer)
+  fullName.vb: NonNonSheet.Editor.Cell.UpdateRow(Integer)
+  name.vb: UpdateRow(Integer)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
+    name: UpdateRow
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_UpdateRow_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
+    name: UpdateRow
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_UpdateRow_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: NonNonSheet.Editor.Cell.BindField
+  commentId: M:NonNonSheet.Editor.Cell.BindField
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_BindField
+  name: BindField()
+  nameWithType: Cell.BindField()
+  fullName: NonNonSheet.Editor.Cell.BindField()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.BindField
+    name: BindField
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_BindField
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.BindField
+    name: BindField
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_BindField
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.Cell.OnInitialize
+  commentId: M:NonNonSheet.Editor.Cell.OnInitialize
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnInitialize
+  name: OnInitialize()
+  nameWithType: Cell.OnInitialize()
+  fullName: NonNonSheet.Editor.Cell.OnInitialize()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.OnInitialize
+    name: OnInitialize
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnInitialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.OnInitialize
+    name: OnInitialize
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnInitialize
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.Cell.OnBindProperty
+  commentId: M:NonNonSheet.Editor.Cell.OnBindProperty
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnBindProperty
+  name: OnBindProperty()
+  nameWithType: Cell.OnBindProperty()
+  fullName: NonNonSheet.Editor.Cell.OnBindProperty()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.OnBindProperty
+    name: OnBindProperty
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnBindProperty
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.OnBindProperty
+    name: OnBindProperty
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnBindProperty
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.Cell.OnStartEditing
+  commentId: M:NonNonSheet.Editor.Cell.OnStartEditing
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnStartEditing
+  name: OnStartEditing()
+  nameWithType: Cell.OnStartEditing()
+  fullName: NonNonSheet.Editor.Cell.OnStartEditing()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.OnStartEditing
+    name: OnStartEditing
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnStartEditing
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.OnStartEditing
+    name: OnStartEditing
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnStartEditing
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+  commentId: M:NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ChangeStatus_NonNonSheet_ValidationResult_
+  name: ChangeStatus(ValidationResult)
+  nameWithType: Cell.ChangeStatus(ValidationResult)
+  fullName: NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+    name: ChangeStatus
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ChangeStatus_NonNonSheet_ValidationResult_
+  - name: (
+  - uid: NonNonSheet.ValidationResult
+    name: ValidationResult
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+    name: ChangeStatus
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ChangeStatus_NonNonSheet_ValidationResult_
+  - name: (
+  - uid: NonNonSheet.ValidationResult
+    name: ValidationResult
+  - name: )
+- uid: NonNonSheet.Editor.Cell.ToString
+  commentId: M:NonNonSheet.Editor.Cell.ToString
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ToString
+  name: ToString()
+  nameWithType: Cell.ToString()
+  fullName: NonNonSheet.Editor.Cell.ToString()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.ToString
+    name: ToString
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.ToString
+    name: ToString
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ToString
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.Cell.FocusNextFrame
+  commentId: M:NonNonSheet.Editor.Cell.FocusNextFrame
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_FocusNextFrame
+  name: FocusNextFrame()
+  nameWithType: Cell.FocusNextFrame()
+  fullName: NonNonSheet.Editor.Cell.FocusNextFrame()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.FocusNextFrame
+    name: FocusNextFrame
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_FocusNextFrame
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.FocusNextFrame
+    name: FocusNextFrame
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_FocusNextFrame
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.BindableElement.binding
+  commentId: P:UnityEngine.UIElements.BindableElement.binding
+  parent: UnityEngine.UIElements.BindableElement
+  isExternal: true
+  name: binding
+  nameWithType: BindableElement.binding
+  fullName: UnityEngine.UIElements.BindableElement.binding
+- uid: UnityEngine.UIElements.BindableElement.bindingPath
+  commentId: P:UnityEngine.UIElements.BindableElement.bindingPath
+  parent: UnityEngine.UIElements.BindableElement
+  isExternal: true
+  name: bindingPath
+  nameWithType: BindableElement.bindingPath
+  fullName: UnityEngine.UIElements.BindableElement.bindingPath
+- uid: UnityEngine.UIElements.VisualElement.disabledUssClassName
+  commentId: F:UnityEngine.UIElements.VisualElement.disabledUssClassName
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: disabledUssClassName
+  nameWithType: VisualElement.disabledUssClassName
+  fullName: UnityEngine.UIElements.VisualElement.disabledUssClassName
+- uid: UnityEngine.UIElements.VisualElement.Focus
+  commentId: M:UnityEngine.UIElements.VisualElement.Focus
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: Focus()
+  nameWithType: VisualElement.Focus()
+  fullName: UnityEngine.UIElements.VisualElement.Focus()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.Focus
+    name: Focus
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.Focus
+    name: Focus
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.SendEvent(UnityEngine.UIElements.EventBase)
+  commentId: M:UnityEngine.UIElements.VisualElement.SendEvent(UnityEngine.UIElements.EventBase)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: SendEvent(EventBase)
+  nameWithType: VisualElement.SendEvent(EventBase)
+  fullName: UnityEngine.UIElements.VisualElement.SendEvent(UnityEngine.UIElements.EventBase)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.SendEvent(UnityEngine.UIElements.EventBase)
+    name: SendEvent
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.EventBase
+    name: EventBase
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.SendEvent(UnityEngine.UIElements.EventBase)
+    name: SendEvent
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.EventBase
+    name: EventBase
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.SetEnabledFromHierarchy(System.Boolean)
+  commentId: M:UnityEngine.UIElements.VisualElement.SetEnabledFromHierarchy(System.Boolean)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: SetEnabledFromHierarchy(bool)
+  nameWithType: VisualElement.SetEnabledFromHierarchy(bool)
+  fullName: UnityEngine.UIElements.VisualElement.SetEnabledFromHierarchy(bool)
+  nameWithType.vb: VisualElement.SetEnabledFromHierarchy(Boolean)
+  fullName.vb: UnityEngine.UIElements.VisualElement.SetEnabledFromHierarchy(Boolean)
+  name.vb: SetEnabledFromHierarchy(Boolean)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.SetEnabledFromHierarchy(System.Boolean)
+    name: SetEnabledFromHierarchy
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.SetEnabledFromHierarchy(System.Boolean)
+    name: SetEnabledFromHierarchy
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.SetEnabled(System.Boolean)
+  commentId: M:UnityEngine.UIElements.VisualElement.SetEnabled(System.Boolean)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: SetEnabled(bool)
+  nameWithType: VisualElement.SetEnabled(bool)
+  fullName: UnityEngine.UIElements.VisualElement.SetEnabled(bool)
+  nameWithType.vb: VisualElement.SetEnabled(Boolean)
+  fullName.vb: UnityEngine.UIElements.VisualElement.SetEnabled(Boolean)
+  name.vb: SetEnabled(Boolean)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.SetEnabled(System.Boolean)
+    name: SetEnabled
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.SetEnabled(System.Boolean)
+    name: SetEnabled
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.MarkDirtyRepaint
+  commentId: M:UnityEngine.UIElements.VisualElement.MarkDirtyRepaint
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: MarkDirtyRepaint()
+  nameWithType: VisualElement.MarkDirtyRepaint()
+  fullName: UnityEngine.UIElements.VisualElement.MarkDirtyRepaint()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.MarkDirtyRepaint
+    name: MarkDirtyRepaint
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.MarkDirtyRepaint
+    name: MarkDirtyRepaint
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.ContainsPoint(UnityEngine.Vector2)
+  commentId: M:UnityEngine.UIElements.VisualElement.ContainsPoint(UnityEngine.Vector2)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: ContainsPoint(Vector2)
+  nameWithType: VisualElement.ContainsPoint(Vector2)
+  fullName: UnityEngine.UIElements.VisualElement.ContainsPoint(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.ContainsPoint(UnityEngine.Vector2)
+    name: ContainsPoint
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.ContainsPoint(UnityEngine.Vector2)
+    name: ContainsPoint
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.Overlaps(UnityEngine.Rect)
+  commentId: M:UnityEngine.UIElements.VisualElement.Overlaps(UnityEngine.Rect)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: Overlaps(Rect)
+  nameWithType: VisualElement.Overlaps(Rect)
+  fullName: UnityEngine.UIElements.VisualElement.Overlaps(UnityEngine.Rect)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.Overlaps(UnityEngine.Rect)
+    name: Overlaps
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.Overlaps(UnityEngine.Rect)
+    name: Overlaps
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.DoMeasure(System.Single,UnityEngine.UIElements.VisualElement.MeasureMode,System.Single,UnityEngine.UIElements.VisualElement.MeasureMode)
+  commentId: M:UnityEngine.UIElements.VisualElement.DoMeasure(System.Single,UnityEngine.UIElements.VisualElement.MeasureMode,System.Single,UnityEngine.UIElements.VisualElement.MeasureMode)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: DoMeasure(float, MeasureMode, float, MeasureMode)
+  nameWithType: VisualElement.DoMeasure(float, VisualElement.MeasureMode, float, VisualElement.MeasureMode)
+  fullName: UnityEngine.UIElements.VisualElement.DoMeasure(float, UnityEngine.UIElements.VisualElement.MeasureMode, float, UnityEngine.UIElements.VisualElement.MeasureMode)
+  nameWithType.vb: VisualElement.DoMeasure(Single, VisualElement.MeasureMode, Single, VisualElement.MeasureMode)
+  fullName.vb: UnityEngine.UIElements.VisualElement.DoMeasure(Single, UnityEngine.UIElements.VisualElement.MeasureMode, Single, UnityEngine.UIElements.VisualElement.MeasureMode)
+  name.vb: DoMeasure(Single, MeasureMode, Single, MeasureMode)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.DoMeasure(System.Single,UnityEngine.UIElements.VisualElement.MeasureMode,System.Single,UnityEngine.UIElements.VisualElement.MeasureMode)
+    name: DoMeasure
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.VisualElement.MeasureMode
+    name: MeasureMode
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.VisualElement.MeasureMode
+    name: MeasureMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.DoMeasure(System.Single,UnityEngine.UIElements.VisualElement.MeasureMode,System.Single,UnityEngine.UIElements.VisualElement.MeasureMode)
+    name: DoMeasure
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.VisualElement.MeasureMode
+    name: MeasureMode
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.VisualElement.MeasureMode
+    name: MeasureMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.GetClasses
+  commentId: M:UnityEngine.UIElements.VisualElement.GetClasses
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: GetClasses()
+  nameWithType: VisualElement.GetClasses()
+  fullName: UnityEngine.UIElements.VisualElement.GetClasses()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.GetClasses
+    name: GetClasses
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.GetClasses
+    name: GetClasses
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.ClearClassList
+  commentId: M:UnityEngine.UIElements.VisualElement.ClearClassList
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: ClearClassList()
+  nameWithType: VisualElement.ClearClassList()
+  fullName: UnityEngine.UIElements.VisualElement.ClearClassList()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.ClearClassList
+    name: ClearClassList
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.ClearClassList
+    name: ClearClassList
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.AddToClassList(System.String)
+  commentId: M:UnityEngine.UIElements.VisualElement.AddToClassList(System.String)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: AddToClassList(string)
+  nameWithType: VisualElement.AddToClassList(string)
+  fullName: UnityEngine.UIElements.VisualElement.AddToClassList(string)
+  nameWithType.vb: VisualElement.AddToClassList(String)
+  fullName.vb: UnityEngine.UIElements.VisualElement.AddToClassList(String)
+  name.vb: AddToClassList(String)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.AddToClassList(System.String)
+    name: AddToClassList
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.AddToClassList(System.String)
+    name: AddToClassList
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.RemoveFromClassList(System.String)
+  commentId: M:UnityEngine.UIElements.VisualElement.RemoveFromClassList(System.String)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: RemoveFromClassList(string)
+  nameWithType: VisualElement.RemoveFromClassList(string)
+  fullName: UnityEngine.UIElements.VisualElement.RemoveFromClassList(string)
+  nameWithType.vb: VisualElement.RemoveFromClassList(String)
+  fullName.vb: UnityEngine.UIElements.VisualElement.RemoveFromClassList(String)
+  name.vb: RemoveFromClassList(String)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.RemoveFromClassList(System.String)
+    name: RemoveFromClassList
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.RemoveFromClassList(System.String)
+    name: RemoveFromClassList
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.ToggleInClassList(System.String)
+  commentId: M:UnityEngine.UIElements.VisualElement.ToggleInClassList(System.String)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ToggleInClassList(string)
+  nameWithType: VisualElement.ToggleInClassList(string)
+  fullName: UnityEngine.UIElements.VisualElement.ToggleInClassList(string)
+  nameWithType.vb: VisualElement.ToggleInClassList(String)
+  fullName.vb: UnityEngine.UIElements.VisualElement.ToggleInClassList(String)
+  name.vb: ToggleInClassList(String)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.ToggleInClassList(System.String)
+    name: ToggleInClassList
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.ToggleInClassList(System.String)
+    name: ToggleInClassList
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.EnableInClassList(System.String,System.Boolean)
+  commentId: M:UnityEngine.UIElements.VisualElement.EnableInClassList(System.String,System.Boolean)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: EnableInClassList(string, bool)
+  nameWithType: VisualElement.EnableInClassList(string, bool)
+  fullName: UnityEngine.UIElements.VisualElement.EnableInClassList(string, bool)
+  nameWithType.vb: VisualElement.EnableInClassList(String, Boolean)
+  fullName.vb: UnityEngine.UIElements.VisualElement.EnableInClassList(String, Boolean)
+  name.vb: EnableInClassList(String, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.EnableInClassList(System.String,System.Boolean)
+    name: EnableInClassList
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.EnableInClassList(System.String,System.Boolean)
+    name: EnableInClassList
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.ClassListContains(System.String)
+  commentId: M:UnityEngine.UIElements.VisualElement.ClassListContains(System.String)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ClassListContains(string)
+  nameWithType: VisualElement.ClassListContains(string)
+  fullName: UnityEngine.UIElements.VisualElement.ClassListContains(string)
+  nameWithType.vb: VisualElement.ClassListContains(String)
+  fullName.vb: UnityEngine.UIElements.VisualElement.ClassListContains(String)
+  name.vb: ClassListContains(String)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.ClassListContains(System.String)
+    name: ClassListContains
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.ClassListContains(System.String)
+    name: ClassListContains
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.FindAncestorUserData
+  commentId: M:UnityEngine.UIElements.VisualElement.FindAncestorUserData
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: FindAncestorUserData()
+  nameWithType: VisualElement.FindAncestorUserData()
+  fullName: UnityEngine.UIElements.VisualElement.FindAncestorUserData()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.FindAncestorUserData
+    name: FindAncestorUserData
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.FindAncestorUserData
+    name: FindAncestorUserData
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.SetBinding(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.Binding)
+  commentId: M:UnityEngine.UIElements.VisualElement.SetBinding(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.Binding)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: SetBinding(BindingId, Binding)
+  nameWithType: VisualElement.SetBinding(BindingId, Binding)
+  fullName: UnityEngine.UIElements.VisualElement.SetBinding(UnityEngine.UIElements.BindingId, UnityEngine.UIElements.Binding)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.SetBinding(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.Binding)
+    name: SetBinding
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.Binding
+    name: Binding
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.SetBinding(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.Binding)
+    name: SetBinding
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.Binding
+    name: Binding
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.GetBinding(UnityEngine.UIElements.BindingId)
+  commentId: M:UnityEngine.UIElements.VisualElement.GetBinding(UnityEngine.UIElements.BindingId)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: GetBinding(BindingId)
+  nameWithType: VisualElement.GetBinding(BindingId)
+  fullName: UnityEngine.UIElements.VisualElement.GetBinding(UnityEngine.UIElements.BindingId)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.GetBinding(UnityEngine.UIElements.BindingId)
+    name: GetBinding
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.GetBinding(UnityEngine.UIElements.BindingId)
+    name: GetBinding
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.TryGetBinding(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.Binding@)
+  commentId: M:UnityEngine.UIElements.VisualElement.TryGetBinding(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.Binding@)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: TryGetBinding(BindingId, out Binding)
+  nameWithType: VisualElement.TryGetBinding(BindingId, out Binding)
+  fullName: UnityEngine.UIElements.VisualElement.TryGetBinding(UnityEngine.UIElements.BindingId, out UnityEngine.UIElements.Binding)
+  nameWithType.vb: VisualElement.TryGetBinding(BindingId, Binding)
+  fullName.vb: UnityEngine.UIElements.VisualElement.TryGetBinding(UnityEngine.UIElements.BindingId, UnityEngine.UIElements.Binding)
+  name.vb: TryGetBinding(BindingId, Binding)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.TryGetBinding(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.Binding@)
+    name: TryGetBinding
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: UnityEngine.UIElements.Binding
+    name: Binding
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.TryGetBinding(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.Binding@)
+    name: TryGetBinding
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.Binding
+    name: Binding
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.GetBindingInfos
+  commentId: M:UnityEngine.UIElements.VisualElement.GetBindingInfos
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: GetBindingInfos()
+  nameWithType: VisualElement.GetBindingInfos()
+  fullName: UnityEngine.UIElements.VisualElement.GetBindingInfos()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.GetBindingInfos
+    name: GetBindingInfos
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.GetBindingInfos
+    name: GetBindingInfos
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.HasBinding(UnityEngine.UIElements.BindingId)
+  commentId: M:UnityEngine.UIElements.VisualElement.HasBinding(UnityEngine.UIElements.BindingId)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: HasBinding(BindingId)
+  nameWithType: VisualElement.HasBinding(BindingId)
+  fullName: UnityEngine.UIElements.VisualElement.HasBinding(UnityEngine.UIElements.BindingId)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.HasBinding(UnityEngine.UIElements.BindingId)
+    name: HasBinding
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.HasBinding(UnityEngine.UIElements.BindingId)
+    name: HasBinding
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.ClearBinding(UnityEngine.UIElements.BindingId)
+  commentId: M:UnityEngine.UIElements.VisualElement.ClearBinding(UnityEngine.UIElements.BindingId)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: ClearBinding(BindingId)
+  nameWithType: VisualElement.ClearBinding(BindingId)
+  fullName: UnityEngine.UIElements.VisualElement.ClearBinding(UnityEngine.UIElements.BindingId)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.ClearBinding(UnityEngine.UIElements.BindingId)
+    name: ClearBinding
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.ClearBinding(UnityEngine.UIElements.BindingId)
+    name: ClearBinding
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.ClearBindings
+  commentId: M:UnityEngine.UIElements.VisualElement.ClearBindings
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: ClearBindings()
+  nameWithType: VisualElement.ClearBindings()
+  fullName: UnityEngine.UIElements.VisualElement.ClearBindings()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.ClearBindings
+    name: ClearBindings
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.ClearBindings
+    name: ClearBindings
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.GetHierarchicalDataSourceContext
+  commentId: M:UnityEngine.UIElements.VisualElement.GetHierarchicalDataSourceContext
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: GetHierarchicalDataSourceContext()
+  nameWithType: VisualElement.GetHierarchicalDataSourceContext()
+  fullName: UnityEngine.UIElements.VisualElement.GetHierarchicalDataSourceContext()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.GetHierarchicalDataSourceContext
+    name: GetHierarchicalDataSourceContext
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.GetHierarchicalDataSourceContext
+    name: GetHierarchicalDataSourceContext
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.GetDataSourceContext(UnityEngine.UIElements.BindingId)
+  commentId: M:UnityEngine.UIElements.VisualElement.GetDataSourceContext(UnityEngine.UIElements.BindingId)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: GetDataSourceContext(BindingId)
+  nameWithType: VisualElement.GetDataSourceContext(BindingId)
+  fullName: UnityEngine.UIElements.VisualElement.GetDataSourceContext(UnityEngine.UIElements.BindingId)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.GetDataSourceContext(UnityEngine.UIElements.BindingId)
+    name: GetDataSourceContext
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.GetDataSourceContext(UnityEngine.UIElements.BindingId)
+    name: GetDataSourceContext
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.TryGetDataSourceContext(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.DataSourceContext@)
+  commentId: M:UnityEngine.UIElements.VisualElement.TryGetDataSourceContext(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.DataSourceContext@)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: TryGetDataSourceContext(BindingId, out DataSourceContext)
+  nameWithType: VisualElement.TryGetDataSourceContext(BindingId, out DataSourceContext)
+  fullName: UnityEngine.UIElements.VisualElement.TryGetDataSourceContext(UnityEngine.UIElements.BindingId, out UnityEngine.UIElements.DataSourceContext)
+  nameWithType.vb: VisualElement.TryGetDataSourceContext(BindingId, DataSourceContext)
+  fullName.vb: UnityEngine.UIElements.VisualElement.TryGetDataSourceContext(UnityEngine.UIElements.BindingId, UnityEngine.UIElements.DataSourceContext)
+  name.vb: TryGetDataSourceContext(BindingId, DataSourceContext)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.TryGetDataSourceContext(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.DataSourceContext@)
+    name: TryGetDataSourceContext
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: UnityEngine.UIElements.DataSourceContext
+    name: DataSourceContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.TryGetDataSourceContext(UnityEngine.UIElements.BindingId,UnityEngine.UIElements.DataSourceContext@)
+    name: TryGetDataSourceContext
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.DataSourceContext
+    name: DataSourceContext
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.TryGetLastBindingToUIResult(UnityEngine.UIElements.BindingId@,UnityEngine.UIElements.BindingResult@)
+  commentId: M:UnityEngine.UIElements.VisualElement.TryGetLastBindingToUIResult(UnityEngine.UIElements.BindingId@,UnityEngine.UIElements.BindingResult@)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: TryGetLastBindingToUIResult(in BindingId, out BindingResult)
+  nameWithType: VisualElement.TryGetLastBindingToUIResult(in BindingId, out BindingResult)
+  fullName: UnityEngine.UIElements.VisualElement.TryGetLastBindingToUIResult(in UnityEngine.UIElements.BindingId, out UnityEngine.UIElements.BindingResult)
+  nameWithType.vb: VisualElement.TryGetLastBindingToUIResult(BindingId, BindingResult)
+  fullName.vb: UnityEngine.UIElements.VisualElement.TryGetLastBindingToUIResult(UnityEngine.UIElements.BindingId, UnityEngine.UIElements.BindingResult)
+  name.vb: TryGetLastBindingToUIResult(BindingId, BindingResult)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.TryGetLastBindingToUIResult(UnityEngine.UIElements.BindingId@,UnityEngine.UIElements.BindingResult@)
+    name: TryGetLastBindingToUIResult
+    isExternal: true
+  - name: (
+  - name: in
+  - name: " "
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: UnityEngine.UIElements.BindingResult
+    name: BindingResult
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.TryGetLastBindingToUIResult(UnityEngine.UIElements.BindingId@,UnityEngine.UIElements.BindingResult@)
+    name: TryGetLastBindingToUIResult
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.BindingResult
+    name: BindingResult
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.TryGetLastBindingToSourceResult(UnityEngine.UIElements.BindingId@,UnityEngine.UIElements.BindingResult@)
+  commentId: M:UnityEngine.UIElements.VisualElement.TryGetLastBindingToSourceResult(UnityEngine.UIElements.BindingId@,UnityEngine.UIElements.BindingResult@)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: TryGetLastBindingToSourceResult(in BindingId, out BindingResult)
+  nameWithType: VisualElement.TryGetLastBindingToSourceResult(in BindingId, out BindingResult)
+  fullName: UnityEngine.UIElements.VisualElement.TryGetLastBindingToSourceResult(in UnityEngine.UIElements.BindingId, out UnityEngine.UIElements.BindingResult)
+  nameWithType.vb: VisualElement.TryGetLastBindingToSourceResult(BindingId, BindingResult)
+  fullName.vb: UnityEngine.UIElements.VisualElement.TryGetLastBindingToSourceResult(UnityEngine.UIElements.BindingId, UnityEngine.UIElements.BindingResult)
+  name.vb: TryGetLastBindingToSourceResult(BindingId, BindingResult)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.TryGetLastBindingToSourceResult(UnityEngine.UIElements.BindingId@,UnityEngine.UIElements.BindingResult@)
+    name: TryGetLastBindingToSourceResult
+    isExternal: true
+  - name: (
+  - name: in
+  - name: " "
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: UnityEngine.UIElements.BindingResult
+    name: BindingResult
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.TryGetLastBindingToSourceResult(UnityEngine.UIElements.BindingId@,UnityEngine.UIElements.BindingResult@)
+    name: TryGetLastBindingToSourceResult
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.BindingResult
+    name: BindingResult
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.Add(UnityEngine.UIElements.VisualElement)
+  commentId: M:UnityEngine.UIElements.VisualElement.Add(UnityEngine.UIElements.VisualElement)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: Add(VisualElement)
+  nameWithType: VisualElement.Add(VisualElement)
+  fullName: UnityEngine.UIElements.VisualElement.Add(UnityEngine.UIElements.VisualElement)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.Add(UnityEngine.UIElements.VisualElement)
+    name: Add
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.Add(UnityEngine.UIElements.VisualElement)
+    name: Add
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.Insert(System.Int32,UnityEngine.UIElements.VisualElement)
+  commentId: M:UnityEngine.UIElements.VisualElement.Insert(System.Int32,UnityEngine.UIElements.VisualElement)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Insert(int, VisualElement)
+  nameWithType: VisualElement.Insert(int, VisualElement)
+  fullName: UnityEngine.UIElements.VisualElement.Insert(int, UnityEngine.UIElements.VisualElement)
+  nameWithType.vb: VisualElement.Insert(Integer, VisualElement)
+  fullName.vb: UnityEngine.UIElements.VisualElement.Insert(Integer, UnityEngine.UIElements.VisualElement)
+  name.vb: Insert(Integer, VisualElement)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.Insert(System.Int32,UnityEngine.UIElements.VisualElement)
+    name: Insert
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.Insert(System.Int32,UnityEngine.UIElements.VisualElement)
+    name: Insert
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.Remove(UnityEngine.UIElements.VisualElement)
+  commentId: M:UnityEngine.UIElements.VisualElement.Remove(UnityEngine.UIElements.VisualElement)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: Remove(VisualElement)
+  nameWithType: VisualElement.Remove(VisualElement)
+  fullName: UnityEngine.UIElements.VisualElement.Remove(UnityEngine.UIElements.VisualElement)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.Remove(UnityEngine.UIElements.VisualElement)
+    name: Remove
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.Remove(UnityEngine.UIElements.VisualElement)
+    name: Remove
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.RemoveAt(System.Int32)
+  commentId: M:UnityEngine.UIElements.VisualElement.RemoveAt(System.Int32)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: RemoveAt(int)
+  nameWithType: VisualElement.RemoveAt(int)
+  fullName: UnityEngine.UIElements.VisualElement.RemoveAt(int)
+  nameWithType.vb: VisualElement.RemoveAt(Integer)
+  fullName.vb: UnityEngine.UIElements.VisualElement.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.Clear
+  commentId: M:UnityEngine.UIElements.VisualElement.Clear
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: Clear()
+  nameWithType: VisualElement.Clear()
+  fullName: UnityEngine.UIElements.VisualElement.Clear()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.Clear
+    name: Clear
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.Clear
+    name: Clear
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.ElementAt(System.Int32)
+  commentId: M:UnityEngine.UIElements.VisualElement.ElementAt(System.Int32)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: ElementAt(int)
+  nameWithType: VisualElement.ElementAt(int)
+  fullName: UnityEngine.UIElements.VisualElement.ElementAt(int)
+  nameWithType.vb: VisualElement.ElementAt(Integer)
+  fullName.vb: UnityEngine.UIElements.VisualElement.ElementAt(Integer)
+  name.vb: ElementAt(Integer)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.ElementAt(System.Int32)
+    name: ElementAt
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.ElementAt(System.Int32)
+    name: ElementAt
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.IndexOf(UnityEngine.UIElements.VisualElement)
+  commentId: M:UnityEngine.UIElements.VisualElement.IndexOf(UnityEngine.UIElements.VisualElement)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: IndexOf(VisualElement)
+  nameWithType: VisualElement.IndexOf(VisualElement)
+  fullName: UnityEngine.UIElements.VisualElement.IndexOf(UnityEngine.UIElements.VisualElement)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.IndexOf(UnityEngine.UIElements.VisualElement)
+    name: IndexOf
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.IndexOf(UnityEngine.UIElements.VisualElement)
+    name: IndexOf
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.Children
+  commentId: M:UnityEngine.UIElements.VisualElement.Children
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: Children()
+  nameWithType: VisualElement.Children()
+  fullName: UnityEngine.UIElements.VisualElement.Children()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.Children
+    name: Children
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.Children
+    name: Children
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.Sort(System.Comparison{UnityEngine.UIElements.VisualElement})
+  commentId: M:UnityEngine.UIElements.VisualElement.Sort(System.Comparison{UnityEngine.UIElements.VisualElement})
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.comparison-1
+  name: Sort(Comparison<VisualElement>)
+  nameWithType: VisualElement.Sort(Comparison<VisualElement>)
+  fullName: UnityEngine.UIElements.VisualElement.Sort(System.Comparison<UnityEngine.UIElements.VisualElement>)
+  nameWithType.vb: VisualElement.Sort(Comparison(Of VisualElement))
+  fullName.vb: UnityEngine.UIElements.VisualElement.Sort(System.Comparison(Of UnityEngine.UIElements.VisualElement))
+  name.vb: Sort(Comparison(Of VisualElement))
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.Sort(System.Comparison{UnityEngine.UIElements.VisualElement})
+    name: Sort
+    isExternal: true
+  - name: (
+  - uid: System.Comparison`1
+    name: Comparison
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.comparison-1
+  - name: <
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.Sort(System.Comparison{UnityEngine.UIElements.VisualElement})
+    name: Sort
+    isExternal: true
+  - name: (
+  - uid: System.Comparison`1
+    name: Comparison
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.comparison-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.BringToFront
+  commentId: M:UnityEngine.UIElements.VisualElement.BringToFront
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: BringToFront()
+  nameWithType: VisualElement.BringToFront()
+  fullName: UnityEngine.UIElements.VisualElement.BringToFront()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.BringToFront
+    name: BringToFront
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.BringToFront
+    name: BringToFront
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.SendToBack
+  commentId: M:UnityEngine.UIElements.VisualElement.SendToBack
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: SendToBack()
+  nameWithType: VisualElement.SendToBack()
+  fullName: UnityEngine.UIElements.VisualElement.SendToBack()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.SendToBack
+    name: SendToBack
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.SendToBack
+    name: SendToBack
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.PlaceBehind(UnityEngine.UIElements.VisualElement)
+  commentId: M:UnityEngine.UIElements.VisualElement.PlaceBehind(UnityEngine.UIElements.VisualElement)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: PlaceBehind(VisualElement)
+  nameWithType: VisualElement.PlaceBehind(VisualElement)
+  fullName: UnityEngine.UIElements.VisualElement.PlaceBehind(UnityEngine.UIElements.VisualElement)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.PlaceBehind(UnityEngine.UIElements.VisualElement)
+    name: PlaceBehind
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.PlaceBehind(UnityEngine.UIElements.VisualElement)
+    name: PlaceBehind
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.PlaceInFront(UnityEngine.UIElements.VisualElement)
+  commentId: M:UnityEngine.UIElements.VisualElement.PlaceInFront(UnityEngine.UIElements.VisualElement)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: PlaceInFront(VisualElement)
+  nameWithType: VisualElement.PlaceInFront(VisualElement)
+  fullName: UnityEngine.UIElements.VisualElement.PlaceInFront(UnityEngine.UIElements.VisualElement)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.PlaceInFront(UnityEngine.UIElements.VisualElement)
+    name: PlaceInFront
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.PlaceInFront(UnityEngine.UIElements.VisualElement)
+    name: PlaceInFront
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.RemoveFromHierarchy
+  commentId: M:UnityEngine.UIElements.VisualElement.RemoveFromHierarchy
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: RemoveFromHierarchy()
+  nameWithType: VisualElement.RemoveFromHierarchy()
+  fullName: UnityEngine.UIElements.VisualElement.RemoveFromHierarchy()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.RemoveFromHierarchy
+    name: RemoveFromHierarchy
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.RemoveFromHierarchy
+    name: RemoveFromHierarchy
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.GetFirstOfType``1
+  commentId: M:UnityEngine.UIElements.VisualElement.GetFirstOfType``1
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: GetFirstOfType<T>()
+  nameWithType: VisualElement.GetFirstOfType<T>()
+  fullName: UnityEngine.UIElements.VisualElement.GetFirstOfType<T>()
+  nameWithType.vb: VisualElement.GetFirstOfType(Of T)()
+  fullName.vb: UnityEngine.UIElements.VisualElement.GetFirstOfType(Of T)()
+  name.vb: GetFirstOfType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.GetFirstOfType``1
+    name: GetFirstOfType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.GetFirstOfType``1
+    name: GetFirstOfType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.GetFirstAncestorOfType``1
+  commentId: M:UnityEngine.UIElements.VisualElement.GetFirstAncestorOfType``1
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: GetFirstAncestorOfType<T>()
+  nameWithType: VisualElement.GetFirstAncestorOfType<T>()
+  fullName: UnityEngine.UIElements.VisualElement.GetFirstAncestorOfType<T>()
+  nameWithType.vb: VisualElement.GetFirstAncestorOfType(Of T)()
+  fullName.vb: UnityEngine.UIElements.VisualElement.GetFirstAncestorOfType(Of T)()
+  name.vb: GetFirstAncestorOfType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.GetFirstAncestorOfType``1
+    name: GetFirstAncestorOfType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.GetFirstAncestorOfType``1
+    name: GetFirstAncestorOfType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.Contains(UnityEngine.UIElements.VisualElement)
+  commentId: M:UnityEngine.UIElements.VisualElement.Contains(UnityEngine.UIElements.VisualElement)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: Contains(VisualElement)
+  nameWithType: VisualElement.Contains(VisualElement)
+  fullName: UnityEngine.UIElements.VisualElement.Contains(UnityEngine.UIElements.VisualElement)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.Contains(UnityEngine.UIElements.VisualElement)
+    name: Contains
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.Contains(UnityEngine.UIElements.VisualElement)
+    name: Contains
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.FindCommonAncestor(UnityEngine.UIElements.VisualElement)
+  commentId: M:UnityEngine.UIElements.VisualElement.FindCommonAncestor(UnityEngine.UIElements.VisualElement)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: FindCommonAncestor(VisualElement)
+  nameWithType: VisualElement.FindCommonAncestor(VisualElement)
+  fullName: UnityEngine.UIElements.VisualElement.FindCommonAncestor(UnityEngine.UIElements.VisualElement)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.VisualElement.FindCommonAncestor(UnityEngine.UIElements.VisualElement)
+    name: FindCommonAncestor
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.FindCommonAncestor(UnityEngine.UIElements.VisualElement)
+    name: FindCommonAncestor
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.viewDataKey
+  commentId: P:UnityEngine.UIElements.VisualElement.viewDataKey
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: viewDataKey
+  nameWithType: VisualElement.viewDataKey
+  fullName: UnityEngine.UIElements.VisualElement.viewDataKey
+- uid: UnityEngine.UIElements.VisualElement.userData
+  commentId: P:UnityEngine.UIElements.VisualElement.userData
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: userData
+  nameWithType: VisualElement.userData
+  fullName: UnityEngine.UIElements.VisualElement.userData
+- uid: UnityEngine.UIElements.VisualElement.canGrabFocus
+  commentId: P:UnityEngine.UIElements.VisualElement.canGrabFocus
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: canGrabFocus
+  nameWithType: VisualElement.canGrabFocus
+  fullName: UnityEngine.UIElements.VisualElement.canGrabFocus
+- uid: UnityEngine.UIElements.VisualElement.focusController
+  commentId: P:UnityEngine.UIElements.VisualElement.focusController
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: focusController
+  nameWithType: VisualElement.focusController
+  fullName: UnityEngine.UIElements.VisualElement.focusController
+- uid: UnityEngine.UIElements.VisualElement.disablePlayModeTint
+  commentId: P:UnityEngine.UIElements.VisualElement.disablePlayModeTint
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: disablePlayModeTint
+  nameWithType: VisualElement.disablePlayModeTint
+  fullName: UnityEngine.UIElements.VisualElement.disablePlayModeTint
+- uid: UnityEngine.UIElements.VisualElement.usageHints
+  commentId: P:UnityEngine.UIElements.VisualElement.usageHints
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: usageHints
+  nameWithType: VisualElement.usageHints
+  fullName: UnityEngine.UIElements.VisualElement.usageHints
+- uid: UnityEngine.UIElements.VisualElement.transform
+  commentId: P:UnityEngine.UIElements.VisualElement.transform
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: transform
+  nameWithType: VisualElement.transform
+  fullName: UnityEngine.UIElements.VisualElement.transform
+- uid: UnityEngine.UIElements.VisualElement.scaledPixelsPerPoint
+  commentId: P:UnityEngine.UIElements.VisualElement.scaledPixelsPerPoint
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: scaledPixelsPerPoint
+  nameWithType: VisualElement.scaledPixelsPerPoint
+  fullName: UnityEngine.UIElements.VisualElement.scaledPixelsPerPoint
+- uid: UnityEngine.UIElements.VisualElement.layout
+  commentId: P:UnityEngine.UIElements.VisualElement.layout
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: layout
+  nameWithType: VisualElement.layout
+  fullName: UnityEngine.UIElements.VisualElement.layout
+- uid: UnityEngine.UIElements.VisualElement.contentRect
+  commentId: P:UnityEngine.UIElements.VisualElement.contentRect
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: contentRect
+  nameWithType: VisualElement.contentRect
+  fullName: UnityEngine.UIElements.VisualElement.contentRect
+- uid: UnityEngine.UIElements.VisualElement.paddingRect
+  commentId: P:UnityEngine.UIElements.VisualElement.paddingRect
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: paddingRect
+  nameWithType: VisualElement.paddingRect
+  fullName: UnityEngine.UIElements.VisualElement.paddingRect
+- uid: UnityEngine.UIElements.VisualElement.worldBound
+  commentId: P:UnityEngine.UIElements.VisualElement.worldBound
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: worldBound
+  nameWithType: VisualElement.worldBound
+  fullName: UnityEngine.UIElements.VisualElement.worldBound
+- uid: UnityEngine.UIElements.VisualElement.localBound
+  commentId: P:UnityEngine.UIElements.VisualElement.localBound
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: localBound
+  nameWithType: VisualElement.localBound
+  fullName: UnityEngine.UIElements.VisualElement.localBound
+- uid: UnityEngine.UIElements.VisualElement.worldTransform
+  commentId: P:UnityEngine.UIElements.VisualElement.worldTransform
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: worldTransform
+  nameWithType: VisualElement.worldTransform
+  fullName: UnityEngine.UIElements.VisualElement.worldTransform
+- uid: UnityEngine.UIElements.VisualElement.pickingMode
+  commentId: P:UnityEngine.UIElements.VisualElement.pickingMode
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: pickingMode
+  nameWithType: VisualElement.pickingMode
+  fullName: UnityEngine.UIElements.VisualElement.pickingMode
+- uid: UnityEngine.UIElements.VisualElement.name
+  commentId: P:UnityEngine.UIElements.VisualElement.name
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: name
+  nameWithType: VisualElement.name
+  fullName: UnityEngine.UIElements.VisualElement.name
+- uid: UnityEngine.UIElements.VisualElement.enabledInHierarchy
+  commentId: P:UnityEngine.UIElements.VisualElement.enabledInHierarchy
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: enabledInHierarchy
+  nameWithType: VisualElement.enabledInHierarchy
+  fullName: UnityEngine.UIElements.VisualElement.enabledInHierarchy
+- uid: UnityEngine.UIElements.VisualElement.enabledSelf
+  commentId: P:UnityEngine.UIElements.VisualElement.enabledSelf
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: enabledSelf
+  nameWithType: VisualElement.enabledSelf
+  fullName: UnityEngine.UIElements.VisualElement.enabledSelf
+- uid: UnityEngine.UIElements.VisualElement.languageDirection
+  commentId: P:UnityEngine.UIElements.VisualElement.languageDirection
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: languageDirection
+  nameWithType: VisualElement.languageDirection
+  fullName: UnityEngine.UIElements.VisualElement.languageDirection
+- uid: UnityEngine.UIElements.VisualElement.visible
+  commentId: P:UnityEngine.UIElements.VisualElement.visible
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: visible
+  nameWithType: VisualElement.visible
+  fullName: UnityEngine.UIElements.VisualElement.visible
+- uid: UnityEngine.UIElements.VisualElement.generateVisualContent
+  commentId: P:UnityEngine.UIElements.VisualElement.generateVisualContent
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: generateVisualContent
+  nameWithType: VisualElement.generateVisualContent
+  fullName: UnityEngine.UIElements.VisualElement.generateVisualContent
+- uid: UnityEngine.UIElements.VisualElement.dataSource
+  commentId: P:UnityEngine.UIElements.VisualElement.dataSource
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: dataSource
+  nameWithType: VisualElement.dataSource
+  fullName: UnityEngine.UIElements.VisualElement.dataSource
+- uid: UnityEngine.UIElements.VisualElement.dataSourcePath
+  commentId: P:UnityEngine.UIElements.VisualElement.dataSourcePath
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: dataSourcePath
+  nameWithType: VisualElement.dataSourcePath
+  fullName: UnityEngine.UIElements.VisualElement.dataSourcePath
+- uid: UnityEngine.UIElements.VisualElement.dataSourceType
+  commentId: P:UnityEngine.UIElements.VisualElement.dataSourceType
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: dataSourceType
+  nameWithType: VisualElement.dataSourceType
+  fullName: UnityEngine.UIElements.VisualElement.dataSourceType
+- uid: UnityEngine.UIElements.VisualElement.experimental
+  commentId: P:UnityEngine.UIElements.VisualElement.experimental
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: experimental
+  nameWithType: VisualElement.experimental
+  fullName: UnityEngine.UIElements.VisualElement.experimental
+- uid: UnityEngine.UIElements.VisualElement.hierarchy
+  commentId: P:UnityEngine.UIElements.VisualElement.hierarchy
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: hierarchy
+  nameWithType: VisualElement.hierarchy
+  fullName: UnityEngine.UIElements.VisualElement.hierarchy
+- uid: UnityEngine.UIElements.VisualElement.cacheAsBitmap
+  commentId: P:UnityEngine.UIElements.VisualElement.cacheAsBitmap
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: cacheAsBitmap
+  nameWithType: VisualElement.cacheAsBitmap
+  fullName: UnityEngine.UIElements.VisualElement.cacheAsBitmap
+- uid: UnityEngine.UIElements.VisualElement.parent
+  commentId: P:UnityEngine.UIElements.VisualElement.parent
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: parent
+  nameWithType: VisualElement.parent
+  fullName: UnityEngine.UIElements.VisualElement.parent
+- uid: UnityEngine.UIElements.VisualElement.panel
+  commentId: P:UnityEngine.UIElements.VisualElement.panel
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: panel
+  nameWithType: VisualElement.panel
+  fullName: UnityEngine.UIElements.VisualElement.panel
+- uid: UnityEngine.UIElements.VisualElement.contentContainer
+  commentId: P:UnityEngine.UIElements.VisualElement.contentContainer
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: contentContainer
+  nameWithType: VisualElement.contentContainer
+  fullName: UnityEngine.UIElements.VisualElement.contentContainer
+- uid: UnityEngine.UIElements.VisualElement.visualTreeAssetSource
+  commentId: P:UnityEngine.UIElements.VisualElement.visualTreeAssetSource
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: visualTreeAssetSource
+  nameWithType: VisualElement.visualTreeAssetSource
+  fullName: UnityEngine.UIElements.VisualElement.visualTreeAssetSource
+- uid: UnityEngine.UIElements.VisualElement.Item(System.Int32)
+  commentId: P:UnityEngine.UIElements.VisualElement.Item(System.Int32)
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: VisualElement.this[int]
+  fullName: UnityEngine.UIElements.VisualElement.this[int]
+  nameWithType.vb: VisualElement.this[](Integer)
+  fullName.vb: UnityEngine.UIElements.VisualElement.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.UIElements.VisualElement.Item(System.Int32)
+    name: this[]
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.UIElements.VisualElement.childCount
+  commentId: P:UnityEngine.UIElements.VisualElement.childCount
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: childCount
+  nameWithType: VisualElement.childCount
+  fullName: UnityEngine.UIElements.VisualElement.childCount
+- uid: UnityEngine.UIElements.VisualElement.schedule
+  commentId: P:UnityEngine.UIElements.VisualElement.schedule
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: schedule
+  nameWithType: VisualElement.schedule
+  fullName: UnityEngine.UIElements.VisualElement.schedule
+- uid: UnityEngine.UIElements.VisualElement.style
+  commentId: P:UnityEngine.UIElements.VisualElement.style
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: style
+  nameWithType: VisualElement.style
+  fullName: UnityEngine.UIElements.VisualElement.style
+- uid: UnityEngine.UIElements.VisualElement.resolvedStyle
+  commentId: P:UnityEngine.UIElements.VisualElement.resolvedStyle
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: resolvedStyle
+  nameWithType: VisualElement.resolvedStyle
+  fullName: UnityEngine.UIElements.VisualElement.resolvedStyle
+- uid: UnityEngine.UIElements.VisualElement.customStyle
+  commentId: P:UnityEngine.UIElements.VisualElement.customStyle
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: customStyle
+  nameWithType: VisualElement.customStyle
+  fullName: UnityEngine.UIElements.VisualElement.customStyle
+- uid: UnityEngine.UIElements.VisualElement.styleSheets
+  commentId: P:UnityEngine.UIElements.VisualElement.styleSheets
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: styleSheets
+  nameWithType: VisualElement.styleSheets
+  fullName: UnityEngine.UIElements.VisualElement.styleSheets
+- uid: UnityEngine.UIElements.VisualElement.tooltip
+  commentId: P:UnityEngine.UIElements.VisualElement.tooltip
+  parent: UnityEngine.UIElements.VisualElement
+  isExternal: true
+  name: tooltip
+  nameWithType: VisualElement.tooltip
+  fullName: UnityEngine.UIElements.VisualElement.tooltip
+- uid: UnityEngine.UIElements.Focusable.Blur
+  commentId: M:UnityEngine.UIElements.Focusable.Blur
+  parent: UnityEngine.UIElements.Focusable
+  isExternal: true
+  name: Blur()
+  nameWithType: Focusable.Blur()
+  fullName: UnityEngine.UIElements.Focusable.Blur()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.Focusable.Blur
+    name: Blur
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.Focusable.Blur
+    name: Blur
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.Focusable.focusable
+  commentId: P:UnityEngine.UIElements.Focusable.focusable
+  parent: UnityEngine.UIElements.Focusable
+  isExternal: true
+  name: focusable
+  nameWithType: Focusable.focusable
+  fullName: UnityEngine.UIElements.Focusable.focusable
+- uid: UnityEngine.UIElements.Focusable.tabIndex
+  commentId: P:UnityEngine.UIElements.Focusable.tabIndex
+  parent: UnityEngine.UIElements.Focusable
+  isExternal: true
+  name: tabIndex
+  nameWithType: Focusable.tabIndex
+  fullName: UnityEngine.UIElements.Focusable.tabIndex
+- uid: UnityEngine.UIElements.Focusable.delegatesFocus
+  commentId: P:UnityEngine.UIElements.Focusable.delegatesFocus
+  parent: UnityEngine.UIElements.Focusable
+  isExternal: true
+  name: delegatesFocus
+  nameWithType: Focusable.delegatesFocus
+  fullName: UnityEngine.UIElements.Focusable.delegatesFocus
+- uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``1(UnityEngine.UIElements.EventCallback{{TEventType}},UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  definition: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  name: RegisterCallback<TEventType>(EventCallback<TEventType>, TrickleDown)
+  nameWithType: CallbackEventHandler.RegisterCallback<TEventType>(EventCallback<TEventType>, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback<TEventType>(UnityEngine.UIElements.EventCallback<TEventType>, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.RegisterCallback(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback(Of TEventType)(UnityEngine.UIElements.EventCallback(Of TEventType), UnityEngine.UIElements.TrickleDown)
+  name.vb: RegisterCallback(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``1(UnityEngine.UIElements.EventCallback{{TEventType}},UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  definition: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  name: RegisterCallbackOnce<TEventType>(EventCallback<TEventType>, TrickleDown)
+  nameWithType: CallbackEventHandler.RegisterCallbackOnce<TEventType>(EventCallback<TEventType>, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce<TEventType>(UnityEngine.UIElements.EventCallback<TEventType>, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.RegisterCallbackOnce(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce(Of TEventType)(UnityEngine.UIElements.EventCallback(Of TEventType), UnityEngine.UIElements.TrickleDown)
+  name.vb: RegisterCallbackOnce(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallbackOnce
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallbackOnce
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``2(UnityEngine.UIElements.EventCallback{{TEventType},{TUserArgsType}},{TUserArgsType},UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  definition: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+  name: RegisterCallback<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TUserArgsType, TrickleDown)
+  nameWithType: CallbackEventHandler.RegisterCallback<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TUserArgsType, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback<TEventType, TUserArgsType>(UnityEngine.UIElements.EventCallback<TEventType, TUserArgsType>, TUserArgsType, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.RegisterCallback(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TUserArgsType, TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback(Of TEventType, TUserArgsType)(UnityEngine.UIElements.EventCallback(Of TEventType, TUserArgsType), TUserArgsType, UnityEngine.UIElements.TrickleDown)
+  name.vb: RegisterCallback(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TUserArgsType, TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``2(UnityEngine.UIElements.EventCallback{{TEventType},{TUserArgsType}},{TUserArgsType},UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  definition: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+  name: RegisterCallbackOnce<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TUserArgsType, TrickleDown)
+  nameWithType: CallbackEventHandler.RegisterCallbackOnce<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TUserArgsType, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce<TEventType, TUserArgsType>(UnityEngine.UIElements.EventCallback<TEventType, TUserArgsType>, TUserArgsType, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.RegisterCallbackOnce(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TUserArgsType, TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce(Of TEventType, TUserArgsType)(UnityEngine.UIElements.EventCallback(Of TEventType, TUserArgsType), TUserArgsType, UnityEngine.UIElements.TrickleDown)
+  name.vb: RegisterCallbackOnce(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TUserArgsType, TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallbackOnce
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallbackOnce
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``1(UnityEngine.UIElements.EventCallback{{TEventType}},UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  definition: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  name: UnregisterCallback<TEventType>(EventCallback<TEventType>, TrickleDown)
+  nameWithType: CallbackEventHandler.UnregisterCallback<TEventType>(EventCallback<TEventType>, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback<TEventType>(UnityEngine.UIElements.EventCallback<TEventType>, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.UnregisterCallback(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback(Of TEventType)(UnityEngine.UIElements.EventCallback(Of TEventType), UnityEngine.UIElements.TrickleDown)
+  name.vb: UnregisterCallback(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: UnregisterCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: UnregisterCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``2(UnityEngine.UIElements.EventCallback{{TEventType},{TUserArgsType}},UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},UnityEngine.UIElements.TrickleDown)
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  definition: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},UnityEngine.UIElements.TrickleDown)
+  name: UnregisterCallback<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TrickleDown)
+  nameWithType: CallbackEventHandler.UnregisterCallback<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback<TEventType, TUserArgsType>(UnityEngine.UIElements.EventCallback<TEventType, TUserArgsType>, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.UnregisterCallback(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback(Of TEventType, TUserArgsType)(UnityEngine.UIElements.EventCallback(Of TEventType, TUserArgsType), UnityEngine.UIElements.TrickleDown)
+  name.vb: UnregisterCallback(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},UnityEngine.UIElements.TrickleDown)
+    name: UnregisterCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},UnityEngine.UIElements.TrickleDown)
+    name: UnregisterCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.HasTrickleDownHandlers
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.HasTrickleDownHandlers
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  isExternal: true
+  name: HasTrickleDownHandlers()
+  nameWithType: CallbackEventHandler.HasTrickleDownHandlers()
+  fullName: UnityEngine.UIElements.CallbackEventHandler.HasTrickleDownHandlers()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.HasTrickleDownHandlers
+    name: HasTrickleDownHandlers
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.HasTrickleDownHandlers
+    name: HasTrickleDownHandlers
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.HasBubbleUpHandlers
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.HasBubbleUpHandlers
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  isExternal: true
+  name: HasBubbleUpHandlers()
+  nameWithType: CallbackEventHandler.HasBubbleUpHandlers()
+  fullName: UnityEngine.UIElements.CallbackEventHandler.HasBubbleUpHandlers()
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.HasBubbleUpHandlers
+    name: HasBubbleUpHandlers
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.HasBubbleUpHandlers
+    name: HasBubbleUpHandlers
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultActionAtTarget(UnityEngine.UIElements.EventBase)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultActionAtTarget(UnityEngine.UIElements.EventBase)
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  isExternal: true
+  name: ExecuteDefaultActionAtTarget(EventBase)
+  nameWithType: CallbackEventHandler.ExecuteDefaultActionAtTarget(EventBase)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultActionAtTarget(UnityEngine.UIElements.EventBase)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultActionAtTarget(UnityEngine.UIElements.EventBase)
+    name: ExecuteDefaultActionAtTarget
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.EventBase
+    name: EventBase
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultActionAtTarget(UnityEngine.UIElements.EventBase)
+    name: ExecuteDefaultActionAtTarget
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.EventBase
+    name: EventBase
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.HandleEventBubbleUp(UnityEngine.UIElements.EventBase)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.HandleEventBubbleUp(UnityEngine.UIElements.EventBase)
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  isExternal: true
+  name: HandleEventBubbleUp(EventBase)
+  nameWithType: CallbackEventHandler.HandleEventBubbleUp(EventBase)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.HandleEventBubbleUp(UnityEngine.UIElements.EventBase)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.HandleEventBubbleUp(UnityEngine.UIElements.EventBase)
+    name: HandleEventBubbleUp
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.EventBase
+    name: EventBase
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.HandleEventBubbleUp(UnityEngine.UIElements.EventBase)
+    name: HandleEventBubbleUp
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.EventBase
+    name: EventBase
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.HandleEventTrickleDown(UnityEngine.UIElements.EventBase)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.HandleEventTrickleDown(UnityEngine.UIElements.EventBase)
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  isExternal: true
+  name: HandleEventTrickleDown(EventBase)
+  nameWithType: CallbackEventHandler.HandleEventTrickleDown(EventBase)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.HandleEventTrickleDown(UnityEngine.UIElements.EventBase)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.HandleEventTrickleDown(UnityEngine.UIElements.EventBase)
+    name: HandleEventTrickleDown
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.EventBase
+    name: EventBase
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.HandleEventTrickleDown(UnityEngine.UIElements.EventBase)
+    name: HandleEventTrickleDown
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.EventBase
+    name: EventBase
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultAction(UnityEngine.UIElements.EventBase)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultAction(UnityEngine.UIElements.EventBase)
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  isExternal: true
+  name: ExecuteDefaultAction(EventBase)
+  nameWithType: CallbackEventHandler.ExecuteDefaultAction(EventBase)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultAction(UnityEngine.UIElements.EventBase)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultAction(UnityEngine.UIElements.EventBase)
+    name: ExecuteDefaultAction
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.EventBase
+    name: EventBase
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.ExecuteDefaultAction(UnityEngine.UIElements.EventBase)
+    name: ExecuteDefaultAction
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.EventBase
+    name: EventBase
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.NotifyPropertyChanged(UnityEngine.UIElements.BindingId@)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.NotifyPropertyChanged(UnityEngine.UIElements.BindingId@)
+  parent: UnityEngine.UIElements.CallbackEventHandler
+  isExternal: true
+  name: NotifyPropertyChanged(in BindingId)
+  nameWithType: CallbackEventHandler.NotifyPropertyChanged(in BindingId)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.NotifyPropertyChanged(in UnityEngine.UIElements.BindingId)
+  nameWithType.vb: CallbackEventHandler.NotifyPropertyChanged(BindingId)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.NotifyPropertyChanged(UnityEngine.UIElements.BindingId)
+  name.vb: NotifyPropertyChanged(BindingId)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.NotifyPropertyChanged(UnityEngine.UIElements.BindingId@)
+    name: NotifyPropertyChanged
+    isExternal: true
+  - name: (
+  - name: in
+  - name: " "
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.NotifyPropertyChanged(UnityEngine.UIElements.BindingId@)
+    name: NotifyPropertyChanged
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.BindingId
+    name: BindingId
+    isExternal: true
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.UIElements
+  commentId: N:UnityEngine.UIElements
+  isExternal: true
+  name: UnityEngine.UIElements
+  nameWithType: UnityEngine.UIElements
+  fullName: UnityEngine.UIElements
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: NonNonSheet.Editor.Cell`1
+  commentId: T:NonNonSheet.Editor.Cell`1
+  href: NonNonSheet.Editor.Cell-1.html
+  name: Cell<T>
+  nameWithType: Cell<T>
+  fullName: NonNonSheet.Editor.Cell<T>
+  nameWithType.vb: Cell(Of T)
+  fullName.vb: NonNonSheet.Editor.Cell(Of T)
+  name.vb: Cell(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell`1
+    name: Cell
+    href: NonNonSheet.Editor.Cell-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell`1
+    name: Cell
+    href: NonNonSheet.Editor.Cell-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.Editor.CustomCell`2
+  commentId: T:NonNonSheet.Editor.CustomCell`2
+  href: NonNonSheet.Editor.CustomCell-2.html
+  name: CustomCell<T, TAttr>
+  nameWithType: CustomCell<T, TAttr>
+  fullName: NonNonSheet.Editor.CustomCell<T, TAttr>
+  nameWithType.vb: CustomCell(Of T, TAttr)
+  fullName.vb: NonNonSheet.Editor.CustomCell(Of T, TAttr)
+  name.vb: CustomCell(Of T, TAttr)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.CustomCell`2
+    name: CustomCell
+    href: NonNonSheet.Editor.CustomCell-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TAttr
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.CustomCell`2
+    name: CustomCell
+    href: NonNonSheet.Editor.CustomCell-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TAttr
+  - name: )
+- uid: NonNonSheet.Editor.DataRelationCell`3
+  commentId: T:NonNonSheet.Editor.DataRelationCell`3
+  href: NonNonSheet.Editor.DataRelationCell-3.html
+  name: DataRelationCell<T, TAttr, TData>
+  nameWithType: DataRelationCell<T, TAttr, TData>
+  fullName: NonNonSheet.Editor.DataRelationCell<T, TAttr, TData>
+  nameWithType.vb: DataRelationCell(Of T, TAttr, TData)
+  fullName.vb: NonNonSheet.Editor.DataRelationCell(Of T, TAttr, TData)
+  name.vb: DataRelationCell(Of T, TAttr, TData)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.DataRelationCell`3
+    name: DataRelationCell
+    href: NonNonSheet.Editor.DataRelationCell-3.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TAttr
+  - name: ','
+  - name: " "
+  - name: TData
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.DataRelationCell`3
+    name: DataRelationCell
+    href: NonNonSheet.Editor.DataRelationCell-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TAttr
+  - name: ','
+  - name: " "
+  - name: TData
+  - name: )
+- uid: UnityEngine.UIElements.Experimental
+  commentId: N:UnityEngine.UIElements.Experimental
+  isExternal: true
+  name: UnityEngine.UIElements.Experimental
+  nameWithType: UnityEngine.UIElements.Experimental
+  fullName: UnityEngine.UIElements.Experimental
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements.Experimental
+    name: Experimental
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements.Experimental
+    name: Experimental
+    isExternal: true
+- uid: UnityEngine.UIElements.INotifyValueChanged`1
+  commentId: T:UnityEngine.UIElements.INotifyValueChanged`1
+  isExternal: true
+  name: INotifyValueChanged<T>
+  nameWithType: INotifyValueChanged<T>
+  fullName: UnityEngine.UIElements.INotifyValueChanged<T>
+  nameWithType.vb: INotifyValueChanged(Of T)
+  fullName.vb: UnityEngine.UIElements.INotifyValueChanged(Of T)
+  name.vb: INotifyValueChanged(Of T)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.UIElements.INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.Editor.DataRelationCell`3.OnInitialize
+  commentId: M:NonNonSheet.Editor.DataRelationCell`3.OnInitialize
+  name: OnInitialize()
+  nameWithType: DataRelationCell<T, TAttr, TData>.OnInitialize()
+  fullName: NonNonSheet.Editor.DataRelationCell<T, TAttr, TData>.OnInitialize()
+  nameWithType.vb: DataRelationCell(Of T, TAttr, TData).OnInitialize()
+  fullName.vb: NonNonSheet.Editor.DataRelationCell(Of T, TAttr, TData).OnInitialize()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.DataRelationCell`3.OnInitialize
+    name: OnInitialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.DataRelationCell`3.OnInitialize
+    name: OnInitialize
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.DataRelationCell`3.OnBindProperty
+  commentId: M:NonNonSheet.Editor.DataRelationCell`3.OnBindProperty
+  name: OnBindProperty()
+  nameWithType: DataRelationCell<T, TAttr, TData>.OnBindProperty()
+  fullName: NonNonSheet.Editor.DataRelationCell<T, TAttr, TData>.OnBindProperty()
+  nameWithType.vb: DataRelationCell(Of T, TAttr, TData).OnBindProperty()
+  fullName.vb: NonNonSheet.Editor.DataRelationCell(Of T, TAttr, TData).OnBindProperty()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.DataRelationCell`3.OnBindProperty
+    name: OnBindProperty
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.DataRelationCell`3.OnBindProperty
+    name: OnBindProperty
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.CustomCell`2.Attribute
+  commentId: P:NonNonSheet.Editor.CustomCell`2.Attribute
+  href: NonNonSheet.Editor.CustomCell-2.html#NonNonSheet_Editor_CustomCell_2_Attribute
+  name: Attribute
+  nameWithType: CustomCell<T, TAttr>.Attribute
+  fullName: NonNonSheet.Editor.CustomCell<T, TAttr>.Attribute
+  nameWithType.vb: CustomCell(Of T, TAttr).Attribute
+  fullName.vb: NonNonSheet.Editor.CustomCell(Of T, TAttr).Attribute
+- uid: NonNonSheet.Editor.Cell`1.Value
+  commentId: P:NonNonSheet.Editor.Cell`1.Value
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_Value
+  name: Value
+  nameWithType: Cell<T>.Value
+  fullName: NonNonSheet.Editor.Cell<T>.Value
+  nameWithType.vb: Cell(Of T).Value
+  fullName.vb: NonNonSheet.Editor.Cell(Of T).Value
+- uid: NonNonSheet.Editor.Cell`1.GetValue
+  commentId: M:NonNonSheet.Editor.Cell`1.GetValue
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  name: GetValue()
+  nameWithType: Cell<T>.GetValue()
+  fullName: NonNonSheet.Editor.Cell<T>.GetValue()
+  nameWithType.vb: Cell(Of T).GetValue()
+  fullName.vb: NonNonSheet.Editor.Cell(Of T).GetValue()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell`1.GetValue
+    name: GetValue
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell`1.GetValue
+    name: GetValue
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.Cell`1.SetValueWithoutNotify(`0)
+  commentId: M:NonNonSheet.Editor.Cell`1.SetValueWithoutNotify(`0)
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  name: SetValueWithoutNotify(T)
+  nameWithType: Cell<T>.SetValueWithoutNotify(T)
+  fullName: NonNonSheet.Editor.Cell<T>.SetValueWithoutNotify(T)
+  nameWithType.vb: Cell(Of T).SetValueWithoutNotify(T)
+  fullName.vb: NonNonSheet.Editor.Cell(Of T).SetValueWithoutNotify(T)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell`1.SetValueWithoutNotify(`0)
+    name: SetValueWithoutNotify
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell`1.SetValueWithoutNotify(`0)
+    name: SetValueWithoutNotify
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  isExternal: true
+  name: RegisterCallback<TEventType>(EventCallback<TEventType>, TrickleDown)
+  nameWithType: CallbackEventHandler.RegisterCallback<TEventType>(EventCallback<TEventType>, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback<TEventType>(UnityEngine.UIElements.EventCallback<TEventType>, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.RegisterCallback(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback(Of TEventType)(UnityEngine.UIElements.EventCallback(Of TEventType), UnityEngine.UIElements.TrickleDown)
+  name.vb: RegisterCallback(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  isExternal: true
+  name: RegisterCallbackOnce<TEventType>(EventCallback<TEventType>, TrickleDown)
+  nameWithType: CallbackEventHandler.RegisterCallbackOnce<TEventType>(EventCallback<TEventType>, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce<TEventType>(UnityEngine.UIElements.EventCallback<TEventType>, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.RegisterCallbackOnce(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce(Of TEventType)(UnityEngine.UIElements.EventCallback(Of TEventType), UnityEngine.UIElements.TrickleDown)
+  name.vb: RegisterCallbackOnce(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallbackOnce
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallbackOnce
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+  isExternal: true
+  name: RegisterCallback<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TUserArgsType, TrickleDown)
+  nameWithType: CallbackEventHandler.RegisterCallback<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TUserArgsType, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback<TEventType, TUserArgsType>(UnityEngine.UIElements.EventCallback<TEventType, TUserArgsType>, TUserArgsType, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.RegisterCallback(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TUserArgsType, TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback(Of TEventType, TUserArgsType)(UnityEngine.UIElements.EventCallback(Of TEventType, TUserArgsType), TUserArgsType, UnityEngine.UIElements.TrickleDown)
+  name.vb: RegisterCallback(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TUserArgsType, TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+  isExternal: true
+  name: RegisterCallbackOnce<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TUserArgsType, TrickleDown)
+  nameWithType: CallbackEventHandler.RegisterCallbackOnce<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TUserArgsType, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce<TEventType, TUserArgsType>(UnityEngine.UIElements.EventCallback<TEventType, TUserArgsType>, TUserArgsType, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.RegisterCallbackOnce(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TUserArgsType, TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce(Of TEventType, TUserArgsType)(UnityEngine.UIElements.EventCallback(Of TEventType, TUserArgsType), TUserArgsType, UnityEngine.UIElements.TrickleDown)
+  name.vb: RegisterCallbackOnce(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TUserArgsType, TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallbackOnce
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.RegisterCallbackOnce``2(UnityEngine.UIElements.EventCallback{``0,``1},``1,UnityEngine.UIElements.TrickleDown)
+    name: RegisterCallbackOnce
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+  isExternal: true
+  name: UnregisterCallback<TEventType>(EventCallback<TEventType>, TrickleDown)
+  nameWithType: CallbackEventHandler.UnregisterCallback<TEventType>(EventCallback<TEventType>, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback<TEventType>(UnityEngine.UIElements.EventCallback<TEventType>, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.UnregisterCallback(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback(Of TEventType)(UnityEngine.UIElements.EventCallback(Of TEventType), UnityEngine.UIElements.TrickleDown)
+  name.vb: UnregisterCallback(Of TEventType)(EventCallback(Of TEventType), TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: UnregisterCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``1(UnityEngine.UIElements.EventCallback{``0},UnityEngine.UIElements.TrickleDown)
+    name: UnregisterCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`1
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+- uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},UnityEngine.UIElements.TrickleDown)
+  commentId: M:UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},UnityEngine.UIElements.TrickleDown)
+  isExternal: true
+  name: UnregisterCallback<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TrickleDown)
+  nameWithType: CallbackEventHandler.UnregisterCallback<TEventType, TUserArgsType>(EventCallback<TEventType, TUserArgsType>, TrickleDown)
+  fullName: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback<TEventType, TUserArgsType>(UnityEngine.UIElements.EventCallback<TEventType, TUserArgsType>, UnityEngine.UIElements.TrickleDown)
+  nameWithType.vb: CallbackEventHandler.UnregisterCallback(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TrickleDown)
+  fullName.vb: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback(Of TEventType, TUserArgsType)(UnityEngine.UIElements.EventCallback(Of TEventType, TUserArgsType), UnityEngine.UIElements.TrickleDown)
+  name.vb: UnregisterCallback(Of TEventType, TUserArgsType)(EventCallback(Of TEventType, TUserArgsType), TrickleDown)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},UnityEngine.UIElements.TrickleDown)
+    name: UnregisterCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: <
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UIElements.CallbackEventHandler.UnregisterCallback``2(UnityEngine.UIElements.EventCallback{``0,``1},UnityEngine.UIElements.TrickleDown)
+    name: UnregisterCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: (
+  - uid: UnityEngine.UIElements.EventCallback`2
+    name: EventCallback
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: ','
+  - name: " "
+  - name: TUserArgsType
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.TrickleDown
+    name: TrickleDown
+    isExternal: true
+  - name: )

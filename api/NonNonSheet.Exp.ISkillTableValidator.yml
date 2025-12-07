@@ -1,0 +1,464 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.ISkillTableValidator
+  commentId: T:NonNonSheet.Exp.ISkillTableValidator
+  id: ISkillTableValidator
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.ISkillTableValidator.ValidateCost(NonNonSheet.Exp.SkillData,System.Int32)
+  - NonNonSheet.Exp.ISkillTableValidator.ValidateDamage(NonNonSheet.Exp.SkillData,System.Int32)
+  - NonNonSheet.Exp.ISkillTableValidator.ValidateElement(NonNonSheet.Exp.SkillData,NonNonSheet.Exp.SkillElement)
+  - NonNonSheet.Exp.ISkillTableValidator.ValidateId(NonNonSheet.Exp.SkillData,System.Int32)
+  - NonNonSheet.Exp.ISkillTableValidator.ValidateName(NonNonSheet.Exp.SkillData,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ISkillTableValidator
+  nameWithType: ISkillTableValidator
+  fullName: NonNonSheet.Exp.ISkillTableValidator
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ISkillTableValidator
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+    startLine: 111
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: 'public interface ISkillTableValidator : IValidator<SkillData>'
+    content.vb: Public Interface ISkillTableValidator Inherits IValidator(Of SkillData)
+  inheritedMembers:
+  - NonNonSheet.IValidator{NonNonSheet.Exp.SkillData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.SkillData,System.Object)
+- uid: NonNonSheet.Exp.ISkillTableValidator.ValidateId(NonNonSheet.Exp.SkillData,System.Int32)
+  commentId: M:NonNonSheet.Exp.ISkillTableValidator.ValidateId(NonNonSheet.Exp.SkillData,System.Int32)
+  id: ValidateId(NonNonSheet.Exp.SkillData,System.Int32)
+  parent: NonNonSheet.Exp.ISkillTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateId(SkillData, int)
+  nameWithType: ISkillTableValidator.ValidateId(SkillData, int)
+  fullName: NonNonSheet.Exp.ISkillTableValidator.ValidateId(NonNonSheet.Exp.SkillData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateId
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+    startLine: 113
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateId(SkillData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.SkillData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateId(self As SkillData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.ISkillTableValidator.ValidateId*
+  nameWithType.vb: ISkillTableValidator.ValidateId(SkillData, Integer)
+  fullName.vb: NonNonSheet.Exp.ISkillTableValidator.ValidateId(NonNonSheet.Exp.SkillData, Integer)
+  name.vb: ValidateId(SkillData, Integer)
+- uid: NonNonSheet.Exp.ISkillTableValidator.ValidateName(NonNonSheet.Exp.SkillData,System.String)
+  commentId: M:NonNonSheet.Exp.ISkillTableValidator.ValidateName(NonNonSheet.Exp.SkillData,System.String)
+  id: ValidateName(NonNonSheet.Exp.SkillData,System.String)
+  parent: NonNonSheet.Exp.ISkillTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateName(SkillData, string)
+  nameWithType: ISkillTableValidator.ValidateName(SkillData, string)
+  fullName: NonNonSheet.Exp.ISkillTableValidator.ValidateName(NonNonSheet.Exp.SkillData, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateName
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+    startLine: 114
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateName(SkillData self, string id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.SkillData
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateName(self As SkillData, id As String) As ValidationResult
+  overload: NonNonSheet.Exp.ISkillTableValidator.ValidateName*
+  nameWithType.vb: ISkillTableValidator.ValidateName(SkillData, String)
+  fullName.vb: NonNonSheet.Exp.ISkillTableValidator.ValidateName(NonNonSheet.Exp.SkillData, String)
+  name.vb: ValidateName(SkillData, String)
+- uid: NonNonSheet.Exp.ISkillTableValidator.ValidateCost(NonNonSheet.Exp.SkillData,System.Int32)
+  commentId: M:NonNonSheet.Exp.ISkillTableValidator.ValidateCost(NonNonSheet.Exp.SkillData,System.Int32)
+  id: ValidateCost(NonNonSheet.Exp.SkillData,System.Int32)
+  parent: NonNonSheet.Exp.ISkillTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateCost(SkillData, int)
+  nameWithType: ISkillTableValidator.ValidateCost(SkillData, int)
+  fullName: NonNonSheet.Exp.ISkillTableValidator.ValidateCost(NonNonSheet.Exp.SkillData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateCost
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+    startLine: 115
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateCost(SkillData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.SkillData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateCost(self As SkillData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.ISkillTableValidator.ValidateCost*
+  nameWithType.vb: ISkillTableValidator.ValidateCost(SkillData, Integer)
+  fullName.vb: NonNonSheet.Exp.ISkillTableValidator.ValidateCost(NonNonSheet.Exp.SkillData, Integer)
+  name.vb: ValidateCost(SkillData, Integer)
+- uid: NonNonSheet.Exp.ISkillTableValidator.ValidateDamage(NonNonSheet.Exp.SkillData,System.Int32)
+  commentId: M:NonNonSheet.Exp.ISkillTableValidator.ValidateDamage(NonNonSheet.Exp.SkillData,System.Int32)
+  id: ValidateDamage(NonNonSheet.Exp.SkillData,System.Int32)
+  parent: NonNonSheet.Exp.ISkillTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateDamage(SkillData, int)
+  nameWithType: ISkillTableValidator.ValidateDamage(SkillData, int)
+  fullName: NonNonSheet.Exp.ISkillTableValidator.ValidateDamage(NonNonSheet.Exp.SkillData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateDamage
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+    startLine: 116
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateDamage(SkillData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.SkillData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateDamage(self As SkillData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.ISkillTableValidator.ValidateDamage*
+  nameWithType.vb: ISkillTableValidator.ValidateDamage(SkillData, Integer)
+  fullName.vb: NonNonSheet.Exp.ISkillTableValidator.ValidateDamage(NonNonSheet.Exp.SkillData, Integer)
+  name.vb: ValidateDamage(SkillData, Integer)
+- uid: NonNonSheet.Exp.ISkillTableValidator.ValidateElement(NonNonSheet.Exp.SkillData,NonNonSheet.Exp.SkillElement)
+  commentId: M:NonNonSheet.Exp.ISkillTableValidator.ValidateElement(NonNonSheet.Exp.SkillData,NonNonSheet.Exp.SkillElement)
+  id: ValidateElement(NonNonSheet.Exp.SkillData,NonNonSheet.Exp.SkillElement)
+  parent: NonNonSheet.Exp.ISkillTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateElement(SkillData, SkillElement)
+  nameWithType: ISkillTableValidator.ValidateElement(SkillData, SkillElement)
+  fullName: NonNonSheet.Exp.ISkillTableValidator.ValidateElement(NonNonSheet.Exp.SkillData, NonNonSheet.Exp.SkillElement)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateElement
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SkillTable.g.cs
+    startLine: 117
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateElement(SkillData self, SkillElement id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.SkillData
+    - id: id
+      type: NonNonSheet.Exp.SkillElement
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateElement(self As SkillData, id As SkillElement) As ValidationResult
+  overload: NonNonSheet.Exp.ISkillTableValidator.ValidateElement*
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.SkillData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.SkillData,System.Object)
+  commentId: M:NonNonSheet.IValidator{NonNonSheet.Exp.SkillData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.SkillData,System.Object)
+  parent: NonNonSheet.IValidator{NonNonSheet.Exp.SkillData}
+  definition: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  href: NonNonSheet.Exp.SkillData.html
+  name: Validate(ColumnMetadata, SkillData, object)
+  nameWithType: IValidator<SkillData>.Validate(ColumnMetadata, SkillData, object)
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.SkillData>.Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.SkillData, object)
+  nameWithType.vb: IValidator(Of SkillData).Validate(ColumnMetadata, SkillData, Object)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.SkillData).Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.SkillData, Object)
+  name.vb: Validate(ColumnMetadata, SkillData, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.SkillData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.SkillData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.SkillData
+    name: SkillData
+    href: NonNonSheet.Exp.SkillData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.SkillData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.SkillData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.SkillData
+    name: SkillData
+    href: NonNonSheet.Exp.SkillData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  commentId: M:NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Validate(ColumnMetadata, T, object)
+  nameWithType: IValidator<T>.Validate(ColumnMetadata, T, object)
+  fullName: NonNonSheet.IValidator<T>.Validate(NonNonSheet.ColumnMetadata, T, object)
+  nameWithType.vb: IValidator(Of T).Validate(ColumnMetadata, T, Object)
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate(NonNonSheet.ColumnMetadata, T, Object)
+  name.vb: Validate(ColumnMetadata, T, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.SkillData}
+  commentId: T:NonNonSheet.IValidator{NonNonSheet.Exp.SkillData}
+  parent: NonNonSheet
+  definition: NonNonSheet.IValidator`1
+  href: NonNonSheet.Exp.SkillData.html
+  name: IValidator<SkillData>
+  nameWithType: IValidator<SkillData>
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.SkillData>
+  nameWithType.vb: IValidator(Of SkillData)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.SkillData)
+  name.vb: IValidator(Of SkillData)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: <
+  - uid: NonNonSheet.Exp.SkillData
+    name: SkillData
+    href: NonNonSheet.Exp.SkillData.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Exp.SkillData
+    name: SkillData
+    href: NonNonSheet.Exp.SkillData.html
+  - name: )
+- uid: NonNonSheet.IValidator`1
+  commentId: T:NonNonSheet.IValidator`1
+  href: NonNonSheet.IValidator-1.html
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: NonNonSheet.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: NonNonSheet.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Exp.ISkillTableValidator.ValidateId*
+  commentId: Overload:NonNonSheet.Exp.ISkillTableValidator.ValidateId
+  href: NonNonSheet.Exp.ISkillTableValidator.html#NonNonSheet_Exp_ISkillTableValidator_ValidateId_NonNonSheet_Exp_SkillData_System_Int32_
+  name: ValidateId
+  nameWithType: ISkillTableValidator.ValidateId
+  fullName: NonNonSheet.Exp.ISkillTableValidator.ValidateId
+- uid: NonNonSheet.Exp.SkillData
+  commentId: T:NonNonSheet.Exp.SkillData
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SkillData.html
+  name: SkillData
+  nameWithType: SkillData
+  fullName: NonNonSheet.Exp.SkillData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Exp.ISkillTableValidator.ValidateName*
+  commentId: Overload:NonNonSheet.Exp.ISkillTableValidator.ValidateName
+  href: NonNonSheet.Exp.ISkillTableValidator.html#NonNonSheet_Exp_ISkillTableValidator_ValidateName_NonNonSheet_Exp_SkillData_System_String_
+  name: ValidateName
+  nameWithType: ISkillTableValidator.ValidateName
+  fullName: NonNonSheet.Exp.ISkillTableValidator.ValidateName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: NonNonSheet.Exp.ISkillTableValidator.ValidateCost*
+  commentId: Overload:NonNonSheet.Exp.ISkillTableValidator.ValidateCost
+  href: NonNonSheet.Exp.ISkillTableValidator.html#NonNonSheet_Exp_ISkillTableValidator_ValidateCost_NonNonSheet_Exp_SkillData_System_Int32_
+  name: ValidateCost
+  nameWithType: ISkillTableValidator.ValidateCost
+  fullName: NonNonSheet.Exp.ISkillTableValidator.ValidateCost
+- uid: NonNonSheet.Exp.ISkillTableValidator.ValidateDamage*
+  commentId: Overload:NonNonSheet.Exp.ISkillTableValidator.ValidateDamage
+  href: NonNonSheet.Exp.ISkillTableValidator.html#NonNonSheet_Exp_ISkillTableValidator_ValidateDamage_NonNonSheet_Exp_SkillData_System_Int32_
+  name: ValidateDamage
+  nameWithType: ISkillTableValidator.ValidateDamage
+  fullName: NonNonSheet.Exp.ISkillTableValidator.ValidateDamage
+- uid: NonNonSheet.Exp.ISkillTableValidator.ValidateElement*
+  commentId: Overload:NonNonSheet.Exp.ISkillTableValidator.ValidateElement
+  href: NonNonSheet.Exp.ISkillTableValidator.html#NonNonSheet_Exp_ISkillTableValidator_ValidateElement_NonNonSheet_Exp_SkillData_NonNonSheet_Exp_SkillElement_
+  name: ValidateElement
+  nameWithType: ISkillTableValidator.ValidateElement
+  fullName: NonNonSheet.Exp.ISkillTableValidator.ValidateElement
+- uid: NonNonSheet.Exp.SkillElement
+  commentId: T:NonNonSheet.Exp.SkillElement
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SkillElement.html
+  name: SkillElement
+  nameWithType: SkillElement
+  fullName: NonNonSheet.Exp.SkillElement

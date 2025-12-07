@@ -1,0 +1,320 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator
+  commentId: T:NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator
+  id: ISampleDataForNonNonSheetTableValidator
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateId(NonNonSheet.Exp.SampleDataForNonNonSheet,System.String)
+  - NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateName(NonNonSheet.Exp.SampleDataForNonNonSheet,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ISampleDataForNonNonSheetTableValidator
+  nameWithType: ISampleDataForNonNonSheetTableValidator
+  fullName: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SampleDataForNonNonSheetTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ISampleDataForNonNonSheetTableValidator
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SampleDataForNonNonSheetTable.g.cs
+    startLine: 90
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: 'public interface ISampleDataForNonNonSheetTableValidator : IValidator<SampleDataForNonNonSheet>'
+    content.vb: Public Interface ISampleDataForNonNonSheetTableValidator Inherits IValidator(Of SampleDataForNonNonSheet)
+  inheritedMembers:
+  - NonNonSheet.IValidator{NonNonSheet.Exp.SampleDataForNonNonSheet}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.SampleDataForNonNonSheet,System.Object)
+- uid: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateId(NonNonSheet.Exp.SampleDataForNonNonSheet,System.String)
+  commentId: M:NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateId(NonNonSheet.Exp.SampleDataForNonNonSheet,System.String)
+  id: ValidateId(NonNonSheet.Exp.SampleDataForNonNonSheet,System.String)
+  parent: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateId(SampleDataForNonNonSheet, string)
+  nameWithType: ISampleDataForNonNonSheetTableValidator.ValidateId(SampleDataForNonNonSheet, string)
+  fullName: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateId(NonNonSheet.Exp.SampleDataForNonNonSheet, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SampleDataForNonNonSheetTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateId
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SampleDataForNonNonSheetTable.g.cs
+    startLine: 92
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateId(SampleDataForNonNonSheet self, string id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.SampleDataForNonNonSheet
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateId(self As SampleDataForNonNonSheet, id As String) As ValidationResult
+  overload: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateId*
+  nameWithType.vb: ISampleDataForNonNonSheetTableValidator.ValidateId(SampleDataForNonNonSheet, String)
+  fullName.vb: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateId(NonNonSheet.Exp.SampleDataForNonNonSheet, String)
+  name.vb: ValidateId(SampleDataForNonNonSheet, String)
+- uid: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateName(NonNonSheet.Exp.SampleDataForNonNonSheet,System.String)
+  commentId: M:NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateName(NonNonSheet.Exp.SampleDataForNonNonSheet,System.String)
+  id: ValidateName(NonNonSheet.Exp.SampleDataForNonNonSheet,System.String)
+  parent: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateName(SampleDataForNonNonSheet, string)
+  nameWithType: ISampleDataForNonNonSheetTableValidator.ValidateName(SampleDataForNonNonSheet, string)
+  fullName: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateName(NonNonSheet.Exp.SampleDataForNonNonSheet, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SampleDataForNonNonSheetTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateName
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SampleDataForNonNonSheetTable.g.cs
+    startLine: 93
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateName(SampleDataForNonNonSheet self, string id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.SampleDataForNonNonSheet
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateName(self As SampleDataForNonNonSheet, id As String) As ValidationResult
+  overload: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateName*
+  nameWithType.vb: ISampleDataForNonNonSheetTableValidator.ValidateName(SampleDataForNonNonSheet, String)
+  fullName.vb: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateName(NonNonSheet.Exp.SampleDataForNonNonSheet, String)
+  name.vb: ValidateName(SampleDataForNonNonSheet, String)
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.SampleDataForNonNonSheet}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.SampleDataForNonNonSheet,System.Object)
+  commentId: M:NonNonSheet.IValidator{NonNonSheet.Exp.SampleDataForNonNonSheet}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.SampleDataForNonNonSheet,System.Object)
+  parent: NonNonSheet.IValidator{NonNonSheet.Exp.SampleDataForNonNonSheet}
+  definition: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  href: NonNonSheet.Exp.SampleDataForNonNonSheet.html
+  name: Validate(ColumnMetadata, SampleDataForNonNonSheet, object)
+  nameWithType: IValidator<SampleDataForNonNonSheet>.Validate(ColumnMetadata, SampleDataForNonNonSheet, object)
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.SampleDataForNonNonSheet>.Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.SampleDataForNonNonSheet, object)
+  nameWithType.vb: IValidator(Of SampleDataForNonNonSheet).Validate(ColumnMetadata, SampleDataForNonNonSheet, Object)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.SampleDataForNonNonSheet).Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.SampleDataForNonNonSheet, Object)
+  name.vb: Validate(ColumnMetadata, SampleDataForNonNonSheet, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.SampleDataForNonNonSheet}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.SampleDataForNonNonSheet,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.SampleDataForNonNonSheet
+    name: SampleDataForNonNonSheet
+    href: NonNonSheet.Exp.SampleDataForNonNonSheet.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.SampleDataForNonNonSheet}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.SampleDataForNonNonSheet,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.SampleDataForNonNonSheet
+    name: SampleDataForNonNonSheet
+    href: NonNonSheet.Exp.SampleDataForNonNonSheet.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  commentId: M:NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Validate(ColumnMetadata, T, object)
+  nameWithType: IValidator<T>.Validate(ColumnMetadata, T, object)
+  fullName: NonNonSheet.IValidator<T>.Validate(NonNonSheet.ColumnMetadata, T, object)
+  nameWithType.vb: IValidator(Of T).Validate(ColumnMetadata, T, Object)
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate(NonNonSheet.ColumnMetadata, T, Object)
+  name.vb: Validate(ColumnMetadata, T, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.SampleDataForNonNonSheet}
+  commentId: T:NonNonSheet.IValidator{NonNonSheet.Exp.SampleDataForNonNonSheet}
+  parent: NonNonSheet
+  definition: NonNonSheet.IValidator`1
+  href: NonNonSheet.Exp.SampleDataForNonNonSheet.html
+  name: IValidator<SampleDataForNonNonSheet>
+  nameWithType: IValidator<SampleDataForNonNonSheet>
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.SampleDataForNonNonSheet>
+  nameWithType.vb: IValidator(Of SampleDataForNonNonSheet)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.SampleDataForNonNonSheet)
+  name.vb: IValidator(Of SampleDataForNonNonSheet)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: <
+  - uid: NonNonSheet.Exp.SampleDataForNonNonSheet
+    name: SampleDataForNonNonSheet
+    href: NonNonSheet.Exp.SampleDataForNonNonSheet.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Exp.SampleDataForNonNonSheet
+    name: SampleDataForNonNonSheet
+    href: NonNonSheet.Exp.SampleDataForNonNonSheet.html
+  - name: )
+- uid: NonNonSheet.IValidator`1
+  commentId: T:NonNonSheet.IValidator`1
+  href: NonNonSheet.IValidator-1.html
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: NonNonSheet.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: NonNonSheet.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateId*
+  commentId: Overload:NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateId
+  href: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.html#NonNonSheet_Exp_ISampleDataForNonNonSheetTableValidator_ValidateId_NonNonSheet_Exp_SampleDataForNonNonSheet_System_String_
+  name: ValidateId
+  nameWithType: ISampleDataForNonNonSheetTableValidator.ValidateId
+  fullName: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateId
+- uid: NonNonSheet.Exp.SampleDataForNonNonSheet
+  commentId: T:NonNonSheet.Exp.SampleDataForNonNonSheet
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SampleDataForNonNonSheet.html
+  name: SampleDataForNonNonSheet
+  nameWithType: SampleDataForNonNonSheet
+  fullName: NonNonSheet.Exp.SampleDataForNonNonSheet
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateName*
+  commentId: Overload:NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateName
+  href: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.html#NonNonSheet_Exp_ISampleDataForNonNonSheetTableValidator_ValidateName_NonNonSheet_Exp_SampleDataForNonNonSheet_System_String_
+  name: ValidateName
+  nameWithType: ISampleDataForNonNonSheetTableValidator.ValidateName
+  fullName: NonNonSheet.Exp.ISampleDataForNonNonSheetTableValidator.ValidateName

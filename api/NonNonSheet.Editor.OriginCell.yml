@@ -1,0 +1,106 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.OriginCell
+  commentId: T:NonNonSheet.Editor.OriginCell
+  id: OriginCell
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.OriginCell.#ctor
+  langs:
+  - csharp
+  - vb
+  name: OriginCell
+  nameWithType: OriginCell
+  fullName: NonNonSheet.Editor.OriginCell
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/OriginCell.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OriginCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/OriginCell.cs
+    startLine: 4
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class OriginCell : VisualElement'
+    content.vb: Public Class OriginCell Inherits VisualElement
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.OriginCell.#ctor
+  commentId: M:NonNonSheet.Editor.OriginCell.#ctor
+  id: '#ctor'
+  parent: NonNonSheet.Editor.OriginCell
+  langs:
+  - csharp
+  - vb
+  name: OriginCell()
+  nameWithType: OriginCell.OriginCell()
+  fullName: NonNonSheet.Editor.OriginCell.OriginCell()
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/OriginCell.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/OriginCell.cs
+    startLine: 6
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public OriginCell()
+    content.vb: Public Sub New()
+  overload: NonNonSheet.Editor.OriginCell.#ctor*
+  nameWithType.vb: OriginCell.New()
+  fullName.vb: NonNonSheet.Editor.OriginCell.New()
+  name.vb: New()
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.OriginCell.#ctor*
+  commentId: Overload:NonNonSheet.Editor.OriginCell.#ctor
+  href: NonNonSheet.Editor.OriginCell.html#NonNonSheet_Editor_OriginCell__ctor
+  name: OriginCell
+  nameWithType: OriginCell.OriginCell
+  fullName: NonNonSheet.Editor.OriginCell.OriginCell
+  nameWithType.vb: OriginCell.New
+  fullName.vb: NonNonSheet.Editor.OriginCell.New
+  name.vb: New

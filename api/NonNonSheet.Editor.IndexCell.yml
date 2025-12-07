@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.IndexCell
+  commentId: T:NonNonSheet.Editor.IndexCell
+  id: IndexCell
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.IndexCell.#ctor(System.Int32)
+  - NonNonSheet.Editor.IndexCell.UpdateIndex(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IndexCell
+  nameWithType: IndexCell
+  fullName: NonNonSheet.Editor.IndexCell
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/IndexCell.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IndexCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/IndexCell.cs
+    startLine: 4
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class IndexCell : VisualElement'
+    content.vb: Public Class IndexCell Inherits VisualElement
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.IndexCell.#ctor(System.Int32)
+  commentId: M:NonNonSheet.Editor.IndexCell.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: NonNonSheet.Editor.IndexCell
+  langs:
+  - csharp
+  - vb
+  name: IndexCell(int)
+  nameWithType: IndexCell.IndexCell(int)
+  fullName: NonNonSheet.Editor.IndexCell.IndexCell(int)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/IndexCell.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/IndexCell.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public IndexCell(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub New(index As Integer)
+  overload: NonNonSheet.Editor.IndexCell.#ctor*
+  nameWithType.vb: IndexCell.New(Integer)
+  fullName.vb: NonNonSheet.Editor.IndexCell.New(Integer)
+  name.vb: New(Integer)
+- uid: NonNonSheet.Editor.IndexCell.UpdateIndex(System.Int32)
+  commentId: M:NonNonSheet.Editor.IndexCell.UpdateIndex(System.Int32)
+  id: UpdateIndex(System.Int32)
+  parent: NonNonSheet.Editor.IndexCell
+  langs:
+  - csharp
+  - vb
+  name: UpdateIndex(int)
+  nameWithType: IndexCell.UpdateIndex(int)
+  fullName: NonNonSheet.Editor.IndexCell.UpdateIndex(int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/IndexCell.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: UpdateIndex
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/IndexCell.cs
+    startLine: 16
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void UpdateIndex(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub UpdateIndex(index As Integer)
+  overload: NonNonSheet.Editor.IndexCell.UpdateIndex*
+  nameWithType.vb: IndexCell.UpdateIndex(Integer)
+  fullName.vb: NonNonSheet.Editor.IndexCell.UpdateIndex(Integer)
+  name.vb: UpdateIndex(Integer)
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.IndexCell.#ctor*
+  commentId: Overload:NonNonSheet.Editor.IndexCell.#ctor
+  href: NonNonSheet.Editor.IndexCell.html#NonNonSheet_Editor_IndexCell__ctor_System_Int32_
+  name: IndexCell
+  nameWithType: IndexCell.IndexCell
+  fullName: NonNonSheet.Editor.IndexCell.IndexCell
+  nameWithType.vb: IndexCell.New
+  fullName.vb: NonNonSheet.Editor.IndexCell.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.Editor.IndexCell.UpdateIndex*
+  commentId: Overload:NonNonSheet.Editor.IndexCell.UpdateIndex
+  href: NonNonSheet.Editor.IndexCell.html#NonNonSheet_Editor_IndexCell_UpdateIndex_System_Int32_
+  name: UpdateIndex
+  nameWithType: IndexCell.UpdateIndex
+  fullName: NonNonSheet.Editor.IndexCell.UpdateIndex

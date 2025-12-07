@@ -1,0 +1,1606 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.SelectSystem
+  commentId: T:NonNonSheet.Editor.SelectSystem
+  id: SelectSystem
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.SelectSystem.#ctor(VisualElement)
+  - NonNonSheet.Editor.SelectSystem.CancelSelecting
+  - NonNonSheet.Editor.SelectSystem.CellSelecting(NonNonSheet.Editor.Cell)
+  - NonNonSheet.Editor.SelectSystem.EndCellSelecting
+  - NonNonSheet.Editor.SelectSystem.EndRowSelecting
+  - NonNonSheet.Editor.SelectSystem.EndSelectedCell
+  - NonNonSheet.Editor.SelectSystem.EndSelectedCellPosition
+  - NonNonSheet.Editor.SelectSystem.EndSelectedRow
+  - NonNonSheet.Editor.SelectSystem.EndSelectedRowIndex
+  - NonNonSheet.Editor.SelectSystem.FitRangeMarker
+  - NonNonSheet.Editor.SelectSystem.FitSelectMarker
+  - NonNonSheet.Editor.SelectSystem.IsCellSelecting
+  - NonNonSheet.Editor.SelectSystem.IsExistEndSelectedCell
+  - NonNonSheet.Editor.SelectSystem.IsExistEndSelectedRow
+  - NonNonSheet.Editor.SelectSystem.IsExistStartSelectedCell
+  - NonNonSheet.Editor.SelectSystem.IsExistStartSelectedRow
+  - NonNonSheet.Editor.SelectSystem.IsRowSelecting
+  - NonNonSheet.Editor.SelectSystem.IsSelected(NonNonSheet.Editor.Cell)
+  - NonNonSheet.Editor.SelectSystem.IsSelected(NonNonSheet.Editor.DataRow)
+  - NonNonSheet.Editor.SelectSystem.RowSelecting(NonNonSheet.Editor.DataRow)
+  - NonNonSheet.Editor.SelectSystem.SelectDown(System.Boolean,System.Boolean)
+  - NonNonSheet.Editor.SelectSystem.SelectLeft(System.Boolean,System.Boolean)
+  - NonNonSheet.Editor.SelectSystem.SelectRange(System.Int32,System.Int32)
+  - NonNonSheet.Editor.SelectSystem.SelectRight(System.Boolean,System.Boolean)
+  - NonNonSheet.Editor.SelectSystem.SelectUp(System.Boolean,System.Boolean)
+  - NonNonSheet.Editor.SelectSystem.SelectedCells
+  - NonNonSheet.Editor.SelectSystem.SelectedRows
+  - NonNonSheet.Editor.SelectSystem.Sheet
+  - NonNonSheet.Editor.SelectSystem.StartCellSelecting(NonNonSheet.Editor.Cell,System.Boolean)
+  - NonNonSheet.Editor.SelectSystem.StartRowSelecting(NonNonSheet.Editor.DataRow,System.Boolean)
+  - NonNonSheet.Editor.SelectSystem.StartSelectedCell
+  - NonNonSheet.Editor.SelectSystem.StartSelectedCellPosition
+  - NonNonSheet.Editor.SelectSystem.StartSelectedRow
+  - NonNonSheet.Editor.SelectSystem.StartSelectedRowIndex
+  - NonNonSheet.Editor.SelectSystem.UpdateMarkers
+  langs:
+  - csharp
+  - vb
+  name: SelectSystem
+  nameWithType: SelectSystem
+  fullName: NonNonSheet.Editor.SelectSystem
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 6
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public class SelectSystem
+    content.vb: Public Class SelectSystem
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NonNonSheet.Editor.SelectSystem.Sheet
+  commentId: P:NonNonSheet.Editor.SelectSystem.Sheet
+  id: Sheet
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: Sheet
+  nameWithType: SelectSystem.Sheet
+  fullName: NonNonSheet.Editor.SelectSystem.Sheet
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Sheet
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Sheet Sheet { get; set; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.Sheet
+    content.vb: Public Property Sheet As Sheet
+  overload: NonNonSheet.Editor.SelectSystem.Sheet*
+- uid: NonNonSheet.Editor.SelectSystem.IsCellSelecting
+  commentId: P:NonNonSheet.Editor.SelectSystem.IsCellSelecting
+  id: IsCellSelecting
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: IsCellSelecting
+  nameWithType: SelectSystem.IsCellSelecting
+  fullName: NonNonSheet.Editor.SelectSystem.IsCellSelecting
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsCellSelecting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 10
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsCellSelecting { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsCellSelecting As Boolean
+  overload: NonNonSheet.Editor.SelectSystem.IsCellSelecting*
+- uid: NonNonSheet.Editor.SelectSystem.IsRowSelecting
+  commentId: P:NonNonSheet.Editor.SelectSystem.IsRowSelecting
+  id: IsRowSelecting
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: IsRowSelecting
+  nameWithType: SelectSystem.IsRowSelecting
+  fullName: NonNonSheet.Editor.SelectSystem.IsRowSelecting
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsRowSelecting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 11
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsRowSelecting { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRowSelecting As Boolean
+  overload: NonNonSheet.Editor.SelectSystem.IsRowSelecting*
+- uid: NonNonSheet.Editor.SelectSystem.SelectedCells
+  commentId: P:NonNonSheet.Editor.SelectSystem.SelectedCells
+  id: SelectedCells
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: SelectedCells
+  nameWithType: SelectSystem.SelectedCells
+  fullName: NonNonSheet.Editor.SelectSystem.SelectedCells
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectedCells
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 13
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Cell[][] SelectedCells { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.Cell[][]
+    content.vb: Public Property SelectedCells As Cell()()
+  overload: NonNonSheet.Editor.SelectSystem.SelectedCells*
+- uid: NonNonSheet.Editor.SelectSystem.SelectedRows
+  commentId: P:NonNonSheet.Editor.SelectSystem.SelectedRows
+  id: SelectedRows
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: SelectedRows
+  nameWithType: SelectSystem.SelectedRows
+  fullName: NonNonSheet.Editor.SelectSystem.SelectedRows
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectedRows
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 14
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public DataRow[] SelectedRows { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.DataRow[]
+    content.vb: Public Property SelectedRows As DataRow()
+  overload: NonNonSheet.Editor.SelectSystem.SelectedRows*
+- uid: NonNonSheet.Editor.SelectSystem.StartSelectedCellPosition
+  commentId: P:NonNonSheet.Editor.SelectSystem.StartSelectedCellPosition
+  id: StartSelectedCellPosition
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: StartSelectedCellPosition
+  nameWithType: SelectSystem.StartSelectedCellPosition
+  fullName: NonNonSheet.Editor.SelectSystem.StartSelectedCellPosition
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StartSelectedCellPosition
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 16
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Vector2Int StartSelectedCellPosition { get; }
+    parameters: []
+    return:
+      type: Vector2Int
+    content.vb: Public Property StartSelectedCellPosition As Vector2Int
+  overload: NonNonSheet.Editor.SelectSystem.StartSelectedCellPosition*
+- uid: NonNonSheet.Editor.SelectSystem.EndSelectedCellPosition
+  commentId: P:NonNonSheet.Editor.SelectSystem.EndSelectedCellPosition
+  id: EndSelectedCellPosition
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: EndSelectedCellPosition
+  nameWithType: SelectSystem.EndSelectedCellPosition
+  fullName: NonNonSheet.Editor.SelectSystem.EndSelectedCellPosition
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EndSelectedCellPosition
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 17
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Vector2Int EndSelectedCellPosition { get; }
+    parameters: []
+    return:
+      type: Vector2Int
+    content.vb: Public Property EndSelectedCellPosition As Vector2Int
+  overload: NonNonSheet.Editor.SelectSystem.EndSelectedCellPosition*
+- uid: NonNonSheet.Editor.SelectSystem.StartSelectedRowIndex
+  commentId: P:NonNonSheet.Editor.SelectSystem.StartSelectedRowIndex
+  id: StartSelectedRowIndex
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: StartSelectedRowIndex
+  nameWithType: SelectSystem.StartSelectedRowIndex
+  fullName: NonNonSheet.Editor.SelectSystem.StartSelectedRowIndex
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StartSelectedRowIndex
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 18
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public int StartSelectedRowIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StartSelectedRowIndex As Integer
+  overload: NonNonSheet.Editor.SelectSystem.StartSelectedRowIndex*
+- uid: NonNonSheet.Editor.SelectSystem.EndSelectedRowIndex
+  commentId: P:NonNonSheet.Editor.SelectSystem.EndSelectedRowIndex
+  id: EndSelectedRowIndex
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: EndSelectedRowIndex
+  nameWithType: SelectSystem.EndSelectedRowIndex
+  fullName: NonNonSheet.Editor.SelectSystem.EndSelectedRowIndex
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EndSelectedRowIndex
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 19
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public int EndSelectedRowIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property EndSelectedRowIndex As Integer
+  overload: NonNonSheet.Editor.SelectSystem.EndSelectedRowIndex*
+- uid: NonNonSheet.Editor.SelectSystem.StartSelectedCell
+  commentId: P:NonNonSheet.Editor.SelectSystem.StartSelectedCell
+  id: StartSelectedCell
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: StartSelectedCell
+  nameWithType: SelectSystem.StartSelectedCell
+  fullName: NonNonSheet.Editor.SelectSystem.StartSelectedCell
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StartSelectedCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 21
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Cell StartSelectedCell { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.Cell
+    content.vb: Public ReadOnly Property StartSelectedCell As Cell
+  overload: NonNonSheet.Editor.SelectSystem.StartSelectedCell*
+- uid: NonNonSheet.Editor.SelectSystem.EndSelectedCell
+  commentId: P:NonNonSheet.Editor.SelectSystem.EndSelectedCell
+  id: EndSelectedCell
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: EndSelectedCell
+  nameWithType: SelectSystem.EndSelectedCell
+  fullName: NonNonSheet.Editor.SelectSystem.EndSelectedCell
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EndSelectedCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 25
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Cell EndSelectedCell { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.Cell
+    content.vb: Public ReadOnly Property EndSelectedCell As Cell
+  overload: NonNonSheet.Editor.SelectSystem.EndSelectedCell*
+- uid: NonNonSheet.Editor.SelectSystem.StartSelectedRow
+  commentId: P:NonNonSheet.Editor.SelectSystem.StartSelectedRow
+  id: StartSelectedRow
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: StartSelectedRow
+  nameWithType: SelectSystem.StartSelectedRow
+  fullName: NonNonSheet.Editor.SelectSystem.StartSelectedRow
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StartSelectedRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 29
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public DataRow StartSelectedRow { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.DataRow
+    content.vb: Public ReadOnly Property StartSelectedRow As DataRow
+  overload: NonNonSheet.Editor.SelectSystem.StartSelectedRow*
+- uid: NonNonSheet.Editor.SelectSystem.EndSelectedRow
+  commentId: P:NonNonSheet.Editor.SelectSystem.EndSelectedRow
+  id: EndSelectedRow
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: EndSelectedRow
+  nameWithType: SelectSystem.EndSelectedRow
+  fullName: NonNonSheet.Editor.SelectSystem.EndSelectedRow
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EndSelectedRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 30
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public DataRow EndSelectedRow { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.DataRow
+    content.vb: Public ReadOnly Property EndSelectedRow As DataRow
+  overload: NonNonSheet.Editor.SelectSystem.EndSelectedRow*
+- uid: NonNonSheet.Editor.SelectSystem.IsExistStartSelectedCell
+  commentId: P:NonNonSheet.Editor.SelectSystem.IsExistStartSelectedCell
+  id: IsExistStartSelectedCell
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: IsExistStartSelectedCell
+  nameWithType: SelectSystem.IsExistStartSelectedCell
+  fullName: NonNonSheet.Editor.SelectSystem.IsExistStartSelectedCell
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsExistStartSelectedCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 32
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsExistStartSelectedCell { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsExistStartSelectedCell As Boolean
+  overload: NonNonSheet.Editor.SelectSystem.IsExistStartSelectedCell*
+- uid: NonNonSheet.Editor.SelectSystem.IsExistEndSelectedCell
+  commentId: P:NonNonSheet.Editor.SelectSystem.IsExistEndSelectedCell
+  id: IsExistEndSelectedCell
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: IsExistEndSelectedCell
+  nameWithType: SelectSystem.IsExistEndSelectedCell
+  fullName: NonNonSheet.Editor.SelectSystem.IsExistEndSelectedCell
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsExistEndSelectedCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 33
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsExistEndSelectedCell { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsExistEndSelectedCell As Boolean
+  overload: NonNonSheet.Editor.SelectSystem.IsExistEndSelectedCell*
+- uid: NonNonSheet.Editor.SelectSystem.IsExistStartSelectedRow
+  commentId: P:NonNonSheet.Editor.SelectSystem.IsExistStartSelectedRow
+  id: IsExistStartSelectedRow
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: IsExistStartSelectedRow
+  nameWithType: SelectSystem.IsExistStartSelectedRow
+  fullName: NonNonSheet.Editor.SelectSystem.IsExistStartSelectedRow
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsExistStartSelectedRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 34
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsExistStartSelectedRow { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsExistStartSelectedRow As Boolean
+  overload: NonNonSheet.Editor.SelectSystem.IsExistStartSelectedRow*
+- uid: NonNonSheet.Editor.SelectSystem.IsExistEndSelectedRow
+  commentId: P:NonNonSheet.Editor.SelectSystem.IsExistEndSelectedRow
+  id: IsExistEndSelectedRow
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: IsExistEndSelectedRow
+  nameWithType: SelectSystem.IsExistEndSelectedRow
+  fullName: NonNonSheet.Editor.SelectSystem.IsExistEndSelectedRow
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsExistEndSelectedRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 35
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsExistEndSelectedRow { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsExistEndSelectedRow As Boolean
+  overload: NonNonSheet.Editor.SelectSystem.IsExistEndSelectedRow*
+- uid: NonNonSheet.Editor.SelectSystem.#ctor(VisualElement)
+  commentId: M:NonNonSheet.Editor.SelectSystem.#ctor(VisualElement)
+  id: '#ctor(VisualElement)'
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: SelectSystem(VisualElement)
+  nameWithType: SelectSystem.SelectSystem(VisualElement)
+  fullName: NonNonSheet.Editor.SelectSystem.SelectSystem(VisualElement)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 43
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public SelectSystem(VisualElement rootVisualElement)
+    parameters:
+    - id: rootVisualElement
+      type: VisualElement
+    content.vb: Public Sub New(rootVisualElement As VisualElement)
+  overload: NonNonSheet.Editor.SelectSystem.#ctor*
+  nameWithType.vb: SelectSystem.New(VisualElement)
+  fullName.vb: NonNonSheet.Editor.SelectSystem.New(VisualElement)
+  name.vb: New(VisualElement)
+- uid: NonNonSheet.Editor.SelectSystem.StartCellSelecting(NonNonSheet.Editor.Cell,System.Boolean)
+  commentId: M:NonNonSheet.Editor.SelectSystem.StartCellSelecting(NonNonSheet.Editor.Cell,System.Boolean)
+  id: StartCellSelecting(NonNonSheet.Editor.Cell,System.Boolean)
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: StartCellSelecting(Cell, bool)
+  nameWithType: SelectSystem.StartCellSelecting(Cell, bool)
+  fullName: NonNonSheet.Editor.SelectSystem.StartCellSelecting(NonNonSheet.Editor.Cell, bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StartCellSelecting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 51
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void StartCellSelecting(Cell cell, bool extend = false)
+    parameters:
+    - id: cell
+      type: NonNonSheet.Editor.Cell
+    - id: extend
+      type: System.Boolean
+    content.vb: Public Sub StartCellSelecting(cell As Cell, extend As Boolean = False)
+  overload: NonNonSheet.Editor.SelectSystem.StartCellSelecting*
+  nameWithType.vb: SelectSystem.StartCellSelecting(Cell, Boolean)
+  fullName.vb: NonNonSheet.Editor.SelectSystem.StartCellSelecting(NonNonSheet.Editor.Cell, Boolean)
+  name.vb: StartCellSelecting(Cell, Boolean)
+- uid: NonNonSheet.Editor.SelectSystem.CellSelecting(NonNonSheet.Editor.Cell)
+  commentId: M:NonNonSheet.Editor.SelectSystem.CellSelecting(NonNonSheet.Editor.Cell)
+  id: CellSelecting(NonNonSheet.Editor.Cell)
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: CellSelecting(Cell)
+  nameWithType: SelectSystem.CellSelecting(Cell)
+  fullName: NonNonSheet.Editor.SelectSystem.CellSelecting(NonNonSheet.Editor.Cell)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: CellSelecting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 72
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void CellSelecting(Cell cell)
+    parameters:
+    - id: cell
+      type: NonNonSheet.Editor.Cell
+    content.vb: Public Sub CellSelecting(cell As Cell)
+  overload: NonNonSheet.Editor.SelectSystem.CellSelecting*
+- uid: NonNonSheet.Editor.SelectSystem.EndCellSelecting
+  commentId: M:NonNonSheet.Editor.SelectSystem.EndCellSelecting
+  id: EndCellSelecting
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: EndCellSelecting()
+  nameWithType: SelectSystem.EndCellSelecting()
+  fullName: NonNonSheet.Editor.SelectSystem.EndCellSelecting()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EndCellSelecting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 84
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void EndCellSelecting()
+    content.vb: Public Sub EndCellSelecting()
+  overload: NonNonSheet.Editor.SelectSystem.EndCellSelecting*
+- uid: NonNonSheet.Editor.SelectSystem.StartRowSelecting(NonNonSheet.Editor.DataRow,System.Boolean)
+  commentId: M:NonNonSheet.Editor.SelectSystem.StartRowSelecting(NonNonSheet.Editor.DataRow,System.Boolean)
+  id: StartRowSelecting(NonNonSheet.Editor.DataRow,System.Boolean)
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: StartRowSelecting(DataRow, bool)
+  nameWithType: SelectSystem.StartRowSelecting(DataRow, bool)
+  fullName: NonNonSheet.Editor.SelectSystem.StartRowSelecting(NonNonSheet.Editor.DataRow, bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StartRowSelecting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 147
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void StartRowSelecting(DataRow row, bool extend = false)
+    parameters:
+    - id: row
+      type: NonNonSheet.Editor.DataRow
+    - id: extend
+      type: System.Boolean
+    content.vb: Public Sub StartRowSelecting(row As DataRow, extend As Boolean = False)
+  overload: NonNonSheet.Editor.SelectSystem.StartRowSelecting*
+  nameWithType.vb: SelectSystem.StartRowSelecting(DataRow, Boolean)
+  fullName.vb: NonNonSheet.Editor.SelectSystem.StartRowSelecting(NonNonSheet.Editor.DataRow, Boolean)
+  name.vb: StartRowSelecting(DataRow, Boolean)
+- uid: NonNonSheet.Editor.SelectSystem.RowSelecting(NonNonSheet.Editor.DataRow)
+  commentId: M:NonNonSheet.Editor.SelectSystem.RowSelecting(NonNonSheet.Editor.DataRow)
+  id: RowSelecting(NonNonSheet.Editor.DataRow)
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: RowSelecting(DataRow)
+  nameWithType: SelectSystem.RowSelecting(DataRow)
+  fullName: NonNonSheet.Editor.SelectSystem.RowSelecting(NonNonSheet.Editor.DataRow)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: RowSelecting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 170
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void RowSelecting(DataRow row)
+    parameters:
+    - id: row
+      type: NonNonSheet.Editor.DataRow
+    content.vb: Public Sub RowSelecting(row As DataRow)
+  overload: NonNonSheet.Editor.SelectSystem.RowSelecting*
+- uid: NonNonSheet.Editor.SelectSystem.EndRowSelecting
+  commentId: M:NonNonSheet.Editor.SelectSystem.EndRowSelecting
+  id: EndRowSelecting
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: EndRowSelecting()
+  nameWithType: SelectSystem.EndRowSelecting()
+  fullName: NonNonSheet.Editor.SelectSystem.EndRowSelecting()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EndRowSelecting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 180
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void EndRowSelecting()
+    content.vb: Public Sub EndRowSelecting()
+  overload: NonNonSheet.Editor.SelectSystem.EndRowSelecting*
+- uid: NonNonSheet.Editor.SelectSystem.SelectUp(System.Boolean,System.Boolean)
+  commentId: M:NonNonSheet.Editor.SelectSystem.SelectUp(System.Boolean,System.Boolean)
+  id: SelectUp(System.Boolean,System.Boolean)
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: SelectUp(bool, bool)
+  nameWithType: SelectSystem.SelectUp(bool, bool)
+  fullName: NonNonSheet.Editor.SelectSystem.SelectUp(bool, bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectUp
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 221
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void SelectUp(bool skipToEnd = false, bool extend = false)
+    parameters:
+    - id: skipToEnd
+      type: System.Boolean
+    - id: extend
+      type: System.Boolean
+    content.vb: Public Sub SelectUp(skipToEnd As Boolean = False, extend As Boolean = False)
+  overload: NonNonSheet.Editor.SelectSystem.SelectUp*
+  nameWithType.vb: SelectSystem.SelectUp(Boolean, Boolean)
+  fullName.vb: NonNonSheet.Editor.SelectSystem.SelectUp(Boolean, Boolean)
+  name.vb: SelectUp(Boolean, Boolean)
+- uid: NonNonSheet.Editor.SelectSystem.SelectDown(System.Boolean,System.Boolean)
+  commentId: M:NonNonSheet.Editor.SelectSystem.SelectDown(System.Boolean,System.Boolean)
+  id: SelectDown(System.Boolean,System.Boolean)
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: SelectDown(bool, bool)
+  nameWithType: SelectSystem.SelectDown(bool, bool)
+  fullName: NonNonSheet.Editor.SelectSystem.SelectDown(bool, bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectDown
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 260
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void SelectDown(bool skipToEnd = false, bool extend = false)
+    parameters:
+    - id: skipToEnd
+      type: System.Boolean
+    - id: extend
+      type: System.Boolean
+    content.vb: Public Sub SelectDown(skipToEnd As Boolean = False, extend As Boolean = False)
+  overload: NonNonSheet.Editor.SelectSystem.SelectDown*
+  nameWithType.vb: SelectSystem.SelectDown(Boolean, Boolean)
+  fullName.vb: NonNonSheet.Editor.SelectSystem.SelectDown(Boolean, Boolean)
+  name.vb: SelectDown(Boolean, Boolean)
+- uid: NonNonSheet.Editor.SelectSystem.SelectLeft(System.Boolean,System.Boolean)
+  commentId: M:NonNonSheet.Editor.SelectSystem.SelectLeft(System.Boolean,System.Boolean)
+  id: SelectLeft(System.Boolean,System.Boolean)
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: SelectLeft(bool, bool)
+  nameWithType: SelectSystem.SelectLeft(bool, bool)
+  fullName: NonNonSheet.Editor.SelectSystem.SelectLeft(bool, bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectLeft
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 297
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void SelectLeft(bool skipToEnd = false, bool extend = false)
+    parameters:
+    - id: skipToEnd
+      type: System.Boolean
+    - id: extend
+      type: System.Boolean
+    content.vb: Public Sub SelectLeft(skipToEnd As Boolean = False, extend As Boolean = False)
+  overload: NonNonSheet.Editor.SelectSystem.SelectLeft*
+  nameWithType.vb: SelectSystem.SelectLeft(Boolean, Boolean)
+  fullName.vb: NonNonSheet.Editor.SelectSystem.SelectLeft(Boolean, Boolean)
+  name.vb: SelectLeft(Boolean, Boolean)
+- uid: NonNonSheet.Editor.SelectSystem.SelectRight(System.Boolean,System.Boolean)
+  commentId: M:NonNonSheet.Editor.SelectSystem.SelectRight(System.Boolean,System.Boolean)
+  id: SelectRight(System.Boolean,System.Boolean)
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: SelectRight(bool, bool)
+  nameWithType: SelectSystem.SelectRight(bool, bool)
+  fullName: NonNonSheet.Editor.SelectSystem.SelectRight(bool, bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectRight
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 316
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void SelectRight(bool skipToEnd = false, bool extend = false)
+    parameters:
+    - id: skipToEnd
+      type: System.Boolean
+    - id: extend
+      type: System.Boolean
+    content.vb: Public Sub SelectRight(skipToEnd As Boolean = False, extend As Boolean = False)
+  overload: NonNonSheet.Editor.SelectSystem.SelectRight*
+  nameWithType.vb: SelectSystem.SelectRight(Boolean, Boolean)
+  fullName.vb: NonNonSheet.Editor.SelectSystem.SelectRight(Boolean, Boolean)
+  name.vb: SelectRight(Boolean, Boolean)
+- uid: NonNonSheet.Editor.SelectSystem.SelectRange(System.Int32,System.Int32)
+  commentId: M:NonNonSheet.Editor.SelectSystem.SelectRange(System.Int32,System.Int32)
+  id: SelectRange(System.Int32,System.Int32)
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: SelectRange(int, int)
+  nameWithType: SelectSystem.SelectRange(int, int)
+  fullName: NonNonSheet.Editor.SelectSystem.SelectRange(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectRange
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 402
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void SelectRange(int index, int count)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    content.vb: Public Sub SelectRange(index As Integer, count As Integer)
+  overload: NonNonSheet.Editor.SelectSystem.SelectRange*
+  nameWithType.vb: SelectSystem.SelectRange(Integer, Integer)
+  fullName.vb: NonNonSheet.Editor.SelectSystem.SelectRange(Integer, Integer)
+  name.vb: SelectRange(Integer, Integer)
+- uid: NonNonSheet.Editor.SelectSystem.CancelSelecting
+  commentId: M:NonNonSheet.Editor.SelectSystem.CancelSelecting
+  id: CancelSelecting
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: CancelSelecting()
+  nameWithType: SelectSystem.CancelSelecting()
+  fullName: NonNonSheet.Editor.SelectSystem.CancelSelecting()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: CancelSelecting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 414
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void CancelSelecting()
+    content.vb: Public Sub CancelSelecting()
+  overload: NonNonSheet.Editor.SelectSystem.CancelSelecting*
+- uid: NonNonSheet.Editor.SelectSystem.IsSelected(NonNonSheet.Editor.Cell)
+  commentId: M:NonNonSheet.Editor.SelectSystem.IsSelected(NonNonSheet.Editor.Cell)
+  id: IsSelected(NonNonSheet.Editor.Cell)
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: IsSelected(Cell)
+  nameWithType: SelectSystem.IsSelected(Cell)
+  fullName: NonNonSheet.Editor.SelectSystem.IsSelected(NonNonSheet.Editor.Cell)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsSelected
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 430
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsSelected(Cell cell)
+    parameters:
+    - id: cell
+      type: NonNonSheet.Editor.Cell
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsSelected(cell As Cell) As Boolean
+  overload: NonNonSheet.Editor.SelectSystem.IsSelected*
+- uid: NonNonSheet.Editor.SelectSystem.IsSelected(NonNonSheet.Editor.DataRow)
+  commentId: M:NonNonSheet.Editor.SelectSystem.IsSelected(NonNonSheet.Editor.DataRow)
+  id: IsSelected(NonNonSheet.Editor.DataRow)
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: IsSelected(DataRow)
+  nameWithType: SelectSystem.IsSelected(DataRow)
+  fullName: NonNonSheet.Editor.SelectSystem.IsSelected(NonNonSheet.Editor.DataRow)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsSelected
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 444
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsSelected(DataRow dataRow)
+    parameters:
+    - id: dataRow
+      type: NonNonSheet.Editor.DataRow
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsSelected(dataRow As DataRow) As Boolean
+  overload: NonNonSheet.Editor.SelectSystem.IsSelected*
+- uid: NonNonSheet.Editor.SelectSystem.FitSelectMarker
+  commentId: M:NonNonSheet.Editor.SelectSystem.FitSelectMarker
+  id: FitSelectMarker
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: FitSelectMarker()
+  nameWithType: SelectSystem.FitSelectMarker()
+  fullName: NonNonSheet.Editor.SelectSystem.FitSelectMarker()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FitSelectMarker
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 455
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void FitSelectMarker()
+    content.vb: Public Sub FitSelectMarker()
+  overload: NonNonSheet.Editor.SelectSystem.FitSelectMarker*
+- uid: NonNonSheet.Editor.SelectSystem.FitRangeMarker
+  commentId: M:NonNonSheet.Editor.SelectSystem.FitRangeMarker
+  id: FitRangeMarker
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: FitRangeMarker()
+  nameWithType: SelectSystem.FitRangeMarker()
+  fullName: NonNonSheet.Editor.SelectSystem.FitRangeMarker()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FitRangeMarker
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 461
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void FitRangeMarker()
+    content.vb: Public Sub FitRangeMarker()
+  overload: NonNonSheet.Editor.SelectSystem.FitRangeMarker*
+- uid: NonNonSheet.Editor.SelectSystem.UpdateMarkers
+  commentId: M:NonNonSheet.Editor.SelectSystem.UpdateMarkers
+  id: UpdateMarkers
+  parent: NonNonSheet.Editor.SelectSystem
+  langs:
+  - csharp
+  - vb
+  name: UpdateMarkers()
+  nameWithType: SelectSystem.UpdateMarkers()
+  fullName: NonNonSheet.Editor.SelectSystem.UpdateMarkers()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: UpdateMarkers
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/SelectSystem.cs
+    startLine: 478
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void UpdateMarkers()
+    content.vb: Public Sub UpdateMarkers()
+  overload: NonNonSheet.Editor.SelectSystem.UpdateMarkers*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.SelectSystem.Sheet*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.Sheet
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_Sheet
+  name: Sheet
+  nameWithType: SelectSystem.Sheet
+  fullName: NonNonSheet.Editor.SelectSystem.Sheet
+- uid: NonNonSheet.Editor.Sheet
+  commentId: T:NonNonSheet.Editor.Sheet
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Sheet.html
+  name: Sheet
+  nameWithType: Sheet
+  fullName: NonNonSheet.Editor.Sheet
+- uid: NonNonSheet.Editor.SelectSystem.IsCellSelecting*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.IsCellSelecting
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_IsCellSelecting
+  name: IsCellSelecting
+  nameWithType: SelectSystem.IsCellSelecting
+  fullName: NonNonSheet.Editor.SelectSystem.IsCellSelecting
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NonNonSheet.Editor.SelectSystem.IsRowSelecting*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.IsRowSelecting
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_IsRowSelecting
+  name: IsRowSelecting
+  nameWithType: SelectSystem.IsRowSelecting
+  fullName: NonNonSheet.Editor.SelectSystem.IsRowSelecting
+- uid: NonNonSheet.Editor.SelectSystem.SelectedCells*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.SelectedCells
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_SelectedCells
+  name: SelectedCells
+  nameWithType: SelectSystem.SelectedCells
+  fullName: NonNonSheet.Editor.SelectSystem.SelectedCells
+- uid: NonNonSheet.Editor.Cell[][]
+  isExternal: true
+  href: NonNonSheet.Editor.Cell.html
+  name: Cell[][]
+  nameWithType: Cell[][]
+  fullName: NonNonSheet.Editor.Cell[][]
+  nameWithType.vb: Cell()()
+  fullName.vb: NonNonSheet.Editor.Cell()()
+  name.vb: Cell()()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell
+    name: Cell
+    href: NonNonSheet.Editor.Cell.html
+  - name: '['
+  - name: ']'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell
+    name: Cell
+    href: NonNonSheet.Editor.Cell.html
+  - name: (
+  - name: )
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.SelectSystem.SelectedRows*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.SelectedRows
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_SelectedRows
+  name: SelectedRows
+  nameWithType: SelectSystem.SelectedRows
+  fullName: NonNonSheet.Editor.SelectSystem.SelectedRows
+- uid: NonNonSheet.Editor.DataRow[]
+  isExternal: true
+  href: NonNonSheet.Editor.DataRow.html
+  name: DataRow[]
+  nameWithType: DataRow[]
+  fullName: NonNonSheet.Editor.DataRow[]
+  nameWithType.vb: DataRow()
+  fullName.vb: NonNonSheet.Editor.DataRow()
+  name.vb: DataRow()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.DataRow
+    name: DataRow
+    href: NonNonSheet.Editor.DataRow.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: NonNonSheet.Editor.DataRow
+    name: DataRow
+    href: NonNonSheet.Editor.DataRow.html
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.SelectSystem.StartSelectedCellPosition*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.StartSelectedCellPosition
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_StartSelectedCellPosition
+  name: StartSelectedCellPosition
+  nameWithType: SelectSystem.StartSelectedCellPosition
+  fullName: NonNonSheet.Editor.SelectSystem.StartSelectedCellPosition
+- uid: Vector2Int
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: Vector2Int
+- uid: NonNonSheet.Editor.SelectSystem.EndSelectedCellPosition*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.EndSelectedCellPosition
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_EndSelectedCellPosition
+  name: EndSelectedCellPosition
+  nameWithType: SelectSystem.EndSelectedCellPosition
+  fullName: NonNonSheet.Editor.SelectSystem.EndSelectedCellPosition
+- uid: NonNonSheet.Editor.SelectSystem.StartSelectedRowIndex*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.StartSelectedRowIndex
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_StartSelectedRowIndex
+  name: StartSelectedRowIndex
+  nameWithType: SelectSystem.StartSelectedRowIndex
+  fullName: NonNonSheet.Editor.SelectSystem.StartSelectedRowIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.Editor.SelectSystem.EndSelectedRowIndex*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.EndSelectedRowIndex
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_EndSelectedRowIndex
+  name: EndSelectedRowIndex
+  nameWithType: SelectSystem.EndSelectedRowIndex
+  fullName: NonNonSheet.Editor.SelectSystem.EndSelectedRowIndex
+- uid: NonNonSheet.Editor.SelectSystem.StartSelectedCell*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.StartSelectedCell
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_StartSelectedCell
+  name: StartSelectedCell
+  nameWithType: SelectSystem.StartSelectedCell
+  fullName: NonNonSheet.Editor.SelectSystem.StartSelectedCell
+- uid: NonNonSheet.Editor.Cell
+  commentId: T:NonNonSheet.Editor.Cell
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Cell.html
+  name: Cell
+  nameWithType: Cell
+  fullName: NonNonSheet.Editor.Cell
+- uid: NonNonSheet.Editor.SelectSystem.EndSelectedCell*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.EndSelectedCell
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_EndSelectedCell
+  name: EndSelectedCell
+  nameWithType: SelectSystem.EndSelectedCell
+  fullName: NonNonSheet.Editor.SelectSystem.EndSelectedCell
+- uid: NonNonSheet.Editor.SelectSystem.StartSelectedRow*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.StartSelectedRow
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_StartSelectedRow
+  name: StartSelectedRow
+  nameWithType: SelectSystem.StartSelectedRow
+  fullName: NonNonSheet.Editor.SelectSystem.StartSelectedRow
+- uid: NonNonSheet.Editor.DataRow
+  commentId: T:NonNonSheet.Editor.DataRow
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.DataRow.html
+  name: DataRow
+  nameWithType: DataRow
+  fullName: NonNonSheet.Editor.DataRow
+- uid: NonNonSheet.Editor.SelectSystem.EndSelectedRow*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.EndSelectedRow
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_EndSelectedRow
+  name: EndSelectedRow
+  nameWithType: SelectSystem.EndSelectedRow
+  fullName: NonNonSheet.Editor.SelectSystem.EndSelectedRow
+- uid: NonNonSheet.Editor.SelectSystem.IsExistStartSelectedCell*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.IsExistStartSelectedCell
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_IsExistStartSelectedCell
+  name: IsExistStartSelectedCell
+  nameWithType: SelectSystem.IsExistStartSelectedCell
+  fullName: NonNonSheet.Editor.SelectSystem.IsExistStartSelectedCell
+- uid: NonNonSheet.Editor.SelectSystem.IsExistEndSelectedCell*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.IsExistEndSelectedCell
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_IsExistEndSelectedCell
+  name: IsExistEndSelectedCell
+  nameWithType: SelectSystem.IsExistEndSelectedCell
+  fullName: NonNonSheet.Editor.SelectSystem.IsExistEndSelectedCell
+- uid: NonNonSheet.Editor.SelectSystem.IsExistStartSelectedRow*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.IsExistStartSelectedRow
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_IsExistStartSelectedRow
+  name: IsExistStartSelectedRow
+  nameWithType: SelectSystem.IsExistStartSelectedRow
+  fullName: NonNonSheet.Editor.SelectSystem.IsExistStartSelectedRow
+- uid: NonNonSheet.Editor.SelectSystem.IsExistEndSelectedRow*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.IsExistEndSelectedRow
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_IsExistEndSelectedRow
+  name: IsExistEndSelectedRow
+  nameWithType: SelectSystem.IsExistEndSelectedRow
+  fullName: NonNonSheet.Editor.SelectSystem.IsExistEndSelectedRow
+- uid: NonNonSheet.Editor.SelectSystem.#ctor*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.#ctor
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem__ctor_VisualElement_
+  name: SelectSystem
+  nameWithType: SelectSystem.SelectSystem
+  fullName: NonNonSheet.Editor.SelectSystem.SelectSystem
+  nameWithType.vb: SelectSystem.New
+  fullName.vb: NonNonSheet.Editor.SelectSystem.New
+  name.vb: New
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement
+- uid: NonNonSheet.Editor.SelectSystem.StartCellSelecting*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.StartCellSelecting
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_StartCellSelecting_NonNonSheet_Editor_Cell_System_Boolean_
+  name: StartCellSelecting
+  nameWithType: SelectSystem.StartCellSelecting
+  fullName: NonNonSheet.Editor.SelectSystem.StartCellSelecting
+- uid: NonNonSheet.Editor.SelectSystem.CellSelecting*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.CellSelecting
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_CellSelecting_NonNonSheet_Editor_Cell_
+  name: CellSelecting
+  nameWithType: SelectSystem.CellSelecting
+  fullName: NonNonSheet.Editor.SelectSystem.CellSelecting
+- uid: NonNonSheet.Editor.SelectSystem.EndCellSelecting*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.EndCellSelecting
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_EndCellSelecting
+  name: EndCellSelecting
+  nameWithType: SelectSystem.EndCellSelecting
+  fullName: NonNonSheet.Editor.SelectSystem.EndCellSelecting
+- uid: NonNonSheet.Editor.SelectSystem.StartRowSelecting*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.StartRowSelecting
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_StartRowSelecting_NonNonSheet_Editor_DataRow_System_Boolean_
+  name: StartRowSelecting
+  nameWithType: SelectSystem.StartRowSelecting
+  fullName: NonNonSheet.Editor.SelectSystem.StartRowSelecting
+- uid: NonNonSheet.Editor.SelectSystem.RowSelecting*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.RowSelecting
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_RowSelecting_NonNonSheet_Editor_DataRow_
+  name: RowSelecting
+  nameWithType: SelectSystem.RowSelecting
+  fullName: NonNonSheet.Editor.SelectSystem.RowSelecting
+- uid: NonNonSheet.Editor.SelectSystem.EndRowSelecting*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.EndRowSelecting
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_EndRowSelecting
+  name: EndRowSelecting
+  nameWithType: SelectSystem.EndRowSelecting
+  fullName: NonNonSheet.Editor.SelectSystem.EndRowSelecting
+- uid: NonNonSheet.Editor.SelectSystem.SelectUp*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.SelectUp
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_SelectUp_System_Boolean_System_Boolean_
+  name: SelectUp
+  nameWithType: SelectSystem.SelectUp
+  fullName: NonNonSheet.Editor.SelectSystem.SelectUp
+- uid: NonNonSheet.Editor.SelectSystem.SelectDown*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.SelectDown
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_SelectDown_System_Boolean_System_Boolean_
+  name: SelectDown
+  nameWithType: SelectSystem.SelectDown
+  fullName: NonNonSheet.Editor.SelectSystem.SelectDown
+- uid: NonNonSheet.Editor.SelectSystem.SelectLeft*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.SelectLeft
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_SelectLeft_System_Boolean_System_Boolean_
+  name: SelectLeft
+  nameWithType: SelectSystem.SelectLeft
+  fullName: NonNonSheet.Editor.SelectSystem.SelectLeft
+- uid: NonNonSheet.Editor.SelectSystem.SelectRight*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.SelectRight
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_SelectRight_System_Boolean_System_Boolean_
+  name: SelectRight
+  nameWithType: SelectSystem.SelectRight
+  fullName: NonNonSheet.Editor.SelectSystem.SelectRight
+- uid: NonNonSheet.Editor.SelectSystem.SelectRange*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.SelectRange
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_SelectRange_System_Int32_System_Int32_
+  name: SelectRange
+  nameWithType: SelectSystem.SelectRange
+  fullName: NonNonSheet.Editor.SelectSystem.SelectRange
+- uid: NonNonSheet.Editor.SelectSystem.CancelSelecting*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.CancelSelecting
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_CancelSelecting
+  name: CancelSelecting
+  nameWithType: SelectSystem.CancelSelecting
+  fullName: NonNonSheet.Editor.SelectSystem.CancelSelecting
+- uid: NonNonSheet.Editor.SelectSystem.IsSelected*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.IsSelected
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_IsSelected_NonNonSheet_Editor_Cell_
+  name: IsSelected
+  nameWithType: SelectSystem.IsSelected
+  fullName: NonNonSheet.Editor.SelectSystem.IsSelected
+- uid: NonNonSheet.Editor.SelectSystem.FitSelectMarker*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.FitSelectMarker
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_FitSelectMarker
+  name: FitSelectMarker
+  nameWithType: SelectSystem.FitSelectMarker
+  fullName: NonNonSheet.Editor.SelectSystem.FitSelectMarker
+- uid: NonNonSheet.Editor.SelectSystem.FitRangeMarker*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.FitRangeMarker
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_FitRangeMarker
+  name: FitRangeMarker
+  nameWithType: SelectSystem.FitRangeMarker
+  fullName: NonNonSheet.Editor.SelectSystem.FitRangeMarker
+- uid: NonNonSheet.Editor.SelectSystem.UpdateMarkers*
+  commentId: Overload:NonNonSheet.Editor.SelectSystem.UpdateMarkers
+  href: NonNonSheet.Editor.SelectSystem.html#NonNonSheet_Editor_SelectSystem_UpdateMarkers
+  name: UpdateMarkers
+  nameWithType: SelectSystem.UpdateMarkers
+  fullName: NonNonSheet.Editor.SelectSystem.UpdateMarkers

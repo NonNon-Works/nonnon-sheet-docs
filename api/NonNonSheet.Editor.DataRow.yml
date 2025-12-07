@@ -1,0 +1,501 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.DataRow
+  commentId: T:NonNonSheet.Editor.DataRow
+  id: DataRow
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.DataRow.#ctor(NonNonSheet.NonNonTable,System.Int32,System.Object,System.Object[],SerializedProperty)
+  - NonNonSheet.Editor.DataRow.Cells
+  - NonNonSheet.Editor.DataRow.Data
+  - NonNonSheet.Editor.DataRow.Index
+  - NonNonSheet.Editor.DataRow.IndexCell
+  - NonNonSheet.Editor.DataRow.Item(System.Int32)
+  - NonNonSheet.Editor.DataRow.ToString
+  - NonNonSheet.Editor.DataRow.UpdateData(System.Object)
+  - NonNonSheet.Editor.DataRow.UpdateIndex(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: DataRow
+  nameWithType: DataRow
+  fullName: NonNonSheet.Editor.DataRow
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DataRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+    startLine: 5
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class DataRow : VisualElement'
+    content.vb: Public Class DataRow Inherits VisualElement
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.DataRow.Index
+  commentId: P:NonNonSheet.Editor.DataRow.Index
+  id: Index
+  parent: NonNonSheet.Editor.DataRow
+  langs:
+  - csharp
+  - vb
+  name: Index
+  nameWithType: DataRow.Index
+  fullName: NonNonSheet.Editor.DataRow.Index
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Index
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+    startLine: 7
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public int Index { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Index As Integer
+  overload: NonNonSheet.Editor.DataRow.Index*
+- uid: NonNonSheet.Editor.DataRow.Data
+  commentId: P:NonNonSheet.Editor.DataRow.Data
+  id: Data
+  parent: NonNonSheet.Editor.DataRow
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: DataRow.Data
+  fullName: NonNonSheet.Editor.DataRow.Data
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Data
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public object Data { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property Data As Object
+  overload: NonNonSheet.Editor.DataRow.Data*
+- uid: NonNonSheet.Editor.DataRow.IndexCell
+  commentId: P:NonNonSheet.Editor.DataRow.IndexCell
+  id: IndexCell
+  parent: NonNonSheet.Editor.DataRow
+  langs:
+  - csharp
+  - vb
+  name: IndexCell
+  nameWithType: DataRow.IndexCell
+  fullName: NonNonSheet.Editor.DataRow.IndexCell
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IndexCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+    startLine: 9
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public IndexCell IndexCell { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.IndexCell
+    content.vb: Public ReadOnly Property IndexCell As IndexCell
+  overload: NonNonSheet.Editor.DataRow.IndexCell*
+- uid: NonNonSheet.Editor.DataRow.Cells
+  commentId: P:NonNonSheet.Editor.DataRow.Cells
+  id: Cells
+  parent: NonNonSheet.Editor.DataRow
+  langs:
+  - csharp
+  - vb
+  name: Cells
+  nameWithType: DataRow.Cells
+  fullName: NonNonSheet.Editor.DataRow.Cells
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Cells
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+    startLine: 10
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Cell[] Cells { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.Cell[]
+    content.vb: Public ReadOnly Property Cells As Cell()
+  overload: NonNonSheet.Editor.DataRow.Cells*
+- uid: NonNonSheet.Editor.DataRow.Item(System.Int32)
+  commentId: P:NonNonSheet.Editor.DataRow.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: NonNonSheet.Editor.DataRow
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: DataRow.this[int]
+  fullName: NonNonSheet.Editor.DataRow.this[int]
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: this[]
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+    startLine: 11
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Cell this[int index] { get; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: NonNonSheet.Editor.Cell
+    content.vb: Public ReadOnly Default Property this[](index As Integer) As Cell
+  overload: NonNonSheet.Editor.DataRow.Item*
+  nameWithType.vb: DataRow.this[](Integer)
+  fullName.vb: NonNonSheet.Editor.DataRow.this[](Integer)
+  name.vb: this[](Integer)
+- uid: NonNonSheet.Editor.DataRow.#ctor(NonNonSheet.NonNonTable,System.Int32,System.Object,System.Object[],SerializedProperty)
+  commentId: M:NonNonSheet.Editor.DataRow.#ctor(NonNonSheet.NonNonTable,System.Int32,System.Object,System.Object[],SerializedProperty)
+  id: '#ctor(NonNonSheet.NonNonTable,System.Int32,System.Object,System.Object[],SerializedProperty)'
+  parent: NonNonSheet.Editor.DataRow
+  langs:
+  - csharp
+  - vb
+  name: DataRow(NonNonTable, int, object, object[], SerializedProperty)
+  nameWithType: DataRow.DataRow(NonNonTable, int, object, object[], SerializedProperty)
+  fullName: NonNonSheet.Editor.DataRow.DataRow(NonNonSheet.NonNonTable, int, object, object[], SerializedProperty)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+    startLine: 13
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public DataRow(NonNonTable table, int index, object data, object[] values, SerializedProperty dataSerializedProperty)
+    parameters:
+    - id: table
+      type: NonNonSheet.NonNonTable
+    - id: index
+      type: System.Int32
+    - id: data
+      type: System.Object
+    - id: values
+      type: System.Object[]
+    - id: dataSerializedProperty
+      type: SerializedProperty
+    content.vb: Public Sub New(table As NonNonTable, index As Integer, data As Object, values As Object(), dataSerializedProperty As SerializedProperty)
+  overload: NonNonSheet.Editor.DataRow.#ctor*
+  nameWithType.vb: DataRow.New(NonNonTable, Integer, Object, Object(), SerializedProperty)
+  fullName.vb: NonNonSheet.Editor.DataRow.New(NonNonSheet.NonNonTable, Integer, Object, Object(), SerializedProperty)
+  name.vb: New(NonNonTable, Integer, Object, Object(), SerializedProperty)
+- uid: NonNonSheet.Editor.DataRow.UpdateIndex(System.Int32)
+  commentId: M:NonNonSheet.Editor.DataRow.UpdateIndex(System.Int32)
+  id: UpdateIndex(System.Int32)
+  parent: NonNonSheet.Editor.DataRow
+  langs:
+  - csharp
+  - vb
+  name: UpdateIndex(int)
+  nameWithType: DataRow.UpdateIndex(int)
+  fullName: NonNonSheet.Editor.DataRow.UpdateIndex(int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: UpdateIndex
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+    startLine: 37
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void UpdateIndex(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub UpdateIndex(index As Integer)
+  overload: NonNonSheet.Editor.DataRow.UpdateIndex*
+  nameWithType.vb: DataRow.UpdateIndex(Integer)
+  fullName.vb: NonNonSheet.Editor.DataRow.UpdateIndex(Integer)
+  name.vb: UpdateIndex(Integer)
+- uid: NonNonSheet.Editor.DataRow.UpdateData(System.Object)
+  commentId: M:NonNonSheet.Editor.DataRow.UpdateData(System.Object)
+  id: UpdateData(System.Object)
+  parent: NonNonSheet.Editor.DataRow
+  langs:
+  - csharp
+  - vb
+  name: UpdateData(object)
+  nameWithType: DataRow.UpdateData(object)
+  fullName: NonNonSheet.Editor.DataRow.UpdateData(object)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: UpdateData
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+    startLine: 44
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void UpdateData(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Public Sub UpdateData(data As Object)
+  overload: NonNonSheet.Editor.DataRow.UpdateData*
+  nameWithType.vb: DataRow.UpdateData(Object)
+  fullName.vb: NonNonSheet.Editor.DataRow.UpdateData(Object)
+  name.vb: UpdateData(Object)
+- uid: NonNonSheet.Editor.DataRow.ToString
+  commentId: M:NonNonSheet.Editor.DataRow.ToString
+  id: ToString
+  parent: NonNonSheet.Editor.DataRow
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: DataRow.ToString()
+  fullName: NonNonSheet.Editor.DataRow.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ToString
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/DataRow.cs
+    startLine: 51
+  namespace: NonNonSheet.Editor
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overload: NonNonSheet.Editor.DataRow.ToString*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.DataRow.Index*
+  commentId: Overload:NonNonSheet.Editor.DataRow.Index
+  href: NonNonSheet.Editor.DataRow.html#NonNonSheet_Editor_DataRow_Index
+  name: Index
+  nameWithType: DataRow.Index
+  fullName: NonNonSheet.Editor.DataRow.Index
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.Editor.DataRow.Data*
+  commentId: Overload:NonNonSheet.Editor.DataRow.Data
+  href: NonNonSheet.Editor.DataRow.html#NonNonSheet_Editor_DataRow_Data
+  name: Data
+  nameWithType: DataRow.Data
+  fullName: NonNonSheet.Editor.DataRow.Data
+- uid: NonNonSheet.Editor.DataRow.IndexCell*
+  commentId: Overload:NonNonSheet.Editor.DataRow.IndexCell
+  href: NonNonSheet.Editor.DataRow.html#NonNonSheet_Editor_DataRow_IndexCell
+  name: IndexCell
+  nameWithType: DataRow.IndexCell
+  fullName: NonNonSheet.Editor.DataRow.IndexCell
+- uid: NonNonSheet.Editor.IndexCell
+  commentId: T:NonNonSheet.Editor.IndexCell
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.IndexCell.html
+  name: IndexCell
+  nameWithType: IndexCell
+  fullName: NonNonSheet.Editor.IndexCell
+- uid: NonNonSheet.Editor.DataRow.Cells*
+  commentId: Overload:NonNonSheet.Editor.DataRow.Cells
+  href: NonNonSheet.Editor.DataRow.html#NonNonSheet_Editor_DataRow_Cells
+  name: Cells
+  nameWithType: DataRow.Cells
+  fullName: NonNonSheet.Editor.DataRow.Cells
+- uid: NonNonSheet.Editor.Cell[]
+  isExternal: true
+  href: NonNonSheet.Editor.Cell.html
+  name: Cell[]
+  nameWithType: Cell[]
+  fullName: NonNonSheet.Editor.Cell[]
+  nameWithType.vb: Cell()
+  fullName.vb: NonNonSheet.Editor.Cell()
+  name.vb: Cell()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell
+    name: Cell
+    href: NonNonSheet.Editor.Cell.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell
+    name: Cell
+    href: NonNonSheet.Editor.Cell.html
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.DataRow.Item*
+  commentId: Overload:NonNonSheet.Editor.DataRow.Item
+  href: NonNonSheet.Editor.DataRow.html#NonNonSheet_Editor_DataRow_Item_System_Int32_
+  name: this
+  nameWithType: DataRow.this
+  fullName: NonNonSheet.Editor.DataRow.this
+  nameWithType.vb: DataRow.this[]
+  fullName.vb: NonNonSheet.Editor.DataRow.this[]
+  name.vb: this[]
+- uid: NonNonSheet.Editor.Cell
+  commentId: T:NonNonSheet.Editor.Cell
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Cell.html
+  name: Cell
+  nameWithType: Cell
+  fullName: NonNonSheet.Editor.Cell
+- uid: NonNonSheet.Editor.DataRow.#ctor*
+  commentId: Overload:NonNonSheet.Editor.DataRow.#ctor
+  href: NonNonSheet.Editor.DataRow.html#NonNonSheet_Editor_DataRow__ctor_NonNonSheet_NonNonTable_System_Int32_System_Object_System_Object___SerializedProperty_
+  name: DataRow
+  nameWithType: DataRow.DataRow
+  fullName: NonNonSheet.Editor.DataRow.DataRow
+  nameWithType.vb: DataRow.New
+  fullName.vb: NonNonSheet.Editor.DataRow.New
+  name.vb: New
+- uid: NonNonSheet.NonNonTable
+  commentId: T:NonNonSheet.NonNonTable
+  parent: NonNonSheet
+  href: NonNonSheet.NonNonTable.html
+  name: NonNonTable
+  nameWithType: NonNonTable
+  fullName: NonNonSheet.NonNonTable
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: SerializedProperty
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Editor.DataRow.UpdateIndex*
+  commentId: Overload:NonNonSheet.Editor.DataRow.UpdateIndex
+  href: NonNonSheet.Editor.DataRow.html#NonNonSheet_Editor_DataRow_UpdateIndex_System_Int32_
+  name: UpdateIndex
+  nameWithType: DataRow.UpdateIndex
+  fullName: NonNonSheet.Editor.DataRow.UpdateIndex
+- uid: NonNonSheet.Editor.DataRow.UpdateData*
+  commentId: Overload:NonNonSheet.Editor.DataRow.UpdateData
+  href: NonNonSheet.Editor.DataRow.html#NonNonSheet_Editor_DataRow_UpdateData_System_Object_
+  name: UpdateData
+  nameWithType: DataRow.UpdateData
+  fullName: NonNonSheet.Editor.DataRow.UpdateData
+- uid: NonNonSheet.Editor.DataRow.ToString*
+  commentId: Overload:NonNonSheet.Editor.DataRow.ToString
+  href: NonNonSheet.Editor.DataRow.html#NonNonSheet_Editor_DataRow_ToString
+  name: ToString
+  nameWithType: DataRow.ToString
+  fullName: NonNonSheet.Editor.DataRow.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,331 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.IMonsterTableValidator
+  commentId: T:NonNonSheet.Exp.IMonsterTableValidator
+  id: IMonsterTableValidator
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.IMonsterTableValidator.ValidateId(NonNonSheet.Exp.MonsterData,System.Int32)
+  - NonNonSheet.Exp.IMonsterTableValidator.ValidateName(NonNonSheet.Exp.MonsterData,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IMonsterTableValidator
+  nameWithType: IMonsterTableValidator
+  fullName: NonNonSheet.Exp.IMonsterTableValidator
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IMonsterTableValidator
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterTable.g.cs
+    startLine: 90
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: 'public interface IMonsterTableValidator : IValidator<MonsterData>'
+    content.vb: Public Interface IMonsterTableValidator Inherits IValidator(Of MonsterData)
+  inheritedMembers:
+  - NonNonSheet.IValidator{NonNonSheet.Exp.MonsterData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.MonsterData,System.Object)
+- uid: NonNonSheet.Exp.IMonsterTableValidator.ValidateId(NonNonSheet.Exp.MonsterData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IMonsterTableValidator.ValidateId(NonNonSheet.Exp.MonsterData,System.Int32)
+  id: ValidateId(NonNonSheet.Exp.MonsterData,System.Int32)
+  parent: NonNonSheet.Exp.IMonsterTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateId(MonsterData, int)
+  nameWithType: IMonsterTableValidator.ValidateId(MonsterData, int)
+  fullName: NonNonSheet.Exp.IMonsterTableValidator.ValidateId(NonNonSheet.Exp.MonsterData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateId
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterTable.g.cs
+    startLine: 92
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateId(MonsterData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.MonsterData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateId(self As MonsterData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IMonsterTableValidator.ValidateId*
+  nameWithType.vb: IMonsterTableValidator.ValidateId(MonsterData, Integer)
+  fullName.vb: NonNonSheet.Exp.IMonsterTableValidator.ValidateId(NonNonSheet.Exp.MonsterData, Integer)
+  name.vb: ValidateId(MonsterData, Integer)
+- uid: NonNonSheet.Exp.IMonsterTableValidator.ValidateName(NonNonSheet.Exp.MonsterData,System.String)
+  commentId: M:NonNonSheet.Exp.IMonsterTableValidator.ValidateName(NonNonSheet.Exp.MonsterData,System.String)
+  id: ValidateName(NonNonSheet.Exp.MonsterData,System.String)
+  parent: NonNonSheet.Exp.IMonsterTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateName(MonsterData, string)
+  nameWithType: IMonsterTableValidator.ValidateName(MonsterData, string)
+  fullName: NonNonSheet.Exp.IMonsterTableValidator.ValidateName(NonNonSheet.Exp.MonsterData, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateName
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterTable.g.cs
+    startLine: 93
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateName(MonsterData self, string id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.MonsterData
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateName(self As MonsterData, id As String) As ValidationResult
+  overload: NonNonSheet.Exp.IMonsterTableValidator.ValidateName*
+  nameWithType.vb: IMonsterTableValidator.ValidateName(MonsterData, String)
+  fullName.vb: NonNonSheet.Exp.IMonsterTableValidator.ValidateName(NonNonSheet.Exp.MonsterData, String)
+  name.vb: ValidateName(MonsterData, String)
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.MonsterData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.MonsterData,System.Object)
+  commentId: M:NonNonSheet.IValidator{NonNonSheet.Exp.MonsterData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.MonsterData,System.Object)
+  parent: NonNonSheet.IValidator{NonNonSheet.Exp.MonsterData}
+  definition: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  href: NonNonSheet.Exp.MonsterData.html
+  name: Validate(ColumnMetadata, MonsterData, object)
+  nameWithType: IValidator<MonsterData>.Validate(ColumnMetadata, MonsterData, object)
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.MonsterData>.Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.MonsterData, object)
+  nameWithType.vb: IValidator(Of MonsterData).Validate(ColumnMetadata, MonsterData, Object)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.MonsterData).Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.MonsterData, Object)
+  name.vb: Validate(ColumnMetadata, MonsterData, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.MonsterData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.MonsterData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterData
+    name: MonsterData
+    href: NonNonSheet.Exp.MonsterData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.MonsterData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.MonsterData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterData
+    name: MonsterData
+    href: NonNonSheet.Exp.MonsterData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  commentId: M:NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Validate(ColumnMetadata, T, object)
+  nameWithType: IValidator<T>.Validate(ColumnMetadata, T, object)
+  fullName: NonNonSheet.IValidator<T>.Validate(NonNonSheet.ColumnMetadata, T, object)
+  nameWithType.vb: IValidator(Of T).Validate(ColumnMetadata, T, Object)
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate(NonNonSheet.ColumnMetadata, T, Object)
+  name.vb: Validate(ColumnMetadata, T, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.MonsterData}
+  commentId: T:NonNonSheet.IValidator{NonNonSheet.Exp.MonsterData}
+  parent: NonNonSheet
+  definition: NonNonSheet.IValidator`1
+  href: NonNonSheet.Exp.MonsterData.html
+  name: IValidator<MonsterData>
+  nameWithType: IValidator<MonsterData>
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.MonsterData>
+  nameWithType.vb: IValidator(Of MonsterData)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.MonsterData)
+  name.vb: IValidator(Of MonsterData)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: <
+  - uid: NonNonSheet.Exp.MonsterData
+    name: MonsterData
+    href: NonNonSheet.Exp.MonsterData.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterData
+    name: MonsterData
+    href: NonNonSheet.Exp.MonsterData.html
+  - name: )
+- uid: NonNonSheet.IValidator`1
+  commentId: T:NonNonSheet.IValidator`1
+  href: NonNonSheet.IValidator-1.html
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: NonNonSheet.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: NonNonSheet.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Exp.IMonsterTableValidator.ValidateId*
+  commentId: Overload:NonNonSheet.Exp.IMonsterTableValidator.ValidateId
+  href: NonNonSheet.Exp.IMonsterTableValidator.html#NonNonSheet_Exp_IMonsterTableValidator_ValidateId_NonNonSheet_Exp_MonsterData_System_Int32_
+  name: ValidateId
+  nameWithType: IMonsterTableValidator.ValidateId
+  fullName: NonNonSheet.Exp.IMonsterTableValidator.ValidateId
+- uid: NonNonSheet.Exp.MonsterData
+  commentId: T:NonNonSheet.Exp.MonsterData
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.MonsterData.html
+  name: MonsterData
+  nameWithType: MonsterData
+  fullName: NonNonSheet.Exp.MonsterData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Exp.IMonsterTableValidator.ValidateName*
+  commentId: Overload:NonNonSheet.Exp.IMonsterTableValidator.ValidateName
+  href: NonNonSheet.Exp.IMonsterTableValidator.html#NonNonSheet_Exp_IMonsterTableValidator_ValidateName_NonNonSheet_Exp_MonsterData_System_String_
+  name: ValidateName
+  nameWithType: IMonsterTableValidator.ValidateName
+  fullName: NonNonSheet.Exp.IMonsterTableValidator.ValidateName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

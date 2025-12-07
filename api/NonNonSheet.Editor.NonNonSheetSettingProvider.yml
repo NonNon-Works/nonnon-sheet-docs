@@ -1,0 +1,370 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.NonNonSheetSettingProvider
+  commentId: T:NonNonSheet.Editor.NonNonSheetSettingProvider
+  id: NonNonSheetSettingProvider
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.NonNonSheetSettingProvider.#ctor(System.String,SettingsScope,System.Collections.Generic.IEnumerable{System.String})
+  - NonNonSheet.Editor.NonNonSheetSettingProvider.CreateProvider
+  - NonNonSheet.Editor.NonNonSheetSettingProvider.OnActivate(System.String,VisualElement)
+  - NonNonSheet.Editor.NonNonSheetSettingProvider.OnGUI(System.String)
+  langs:
+  - csharp
+  - vb
+  name: NonNonSheetSettingProvider
+  nameWithType: NonNonSheetSettingProvider
+  fullName: NonNonSheet.Editor.NonNonSheetSettingProvider
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: NonNonSheetSettingProvider
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
+    startLine: 10
+  namespace: NonNonSheet.Editor
+  summary: Settings provider that exposes NonNonSheet project settings under Project Settings.
+  example: []
+  syntax:
+    content: 'public class NonNonSheetSettingProvider : SettingsProvider'
+    content.vb: Public Class NonNonSheetSettingProvider Inherits SettingsProvider
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.NonNonSheetSettingProvider.CreateProvider
+  commentId: M:NonNonSheet.Editor.NonNonSheetSettingProvider.CreateProvider
+  id: CreateProvider
+  parent: NonNonSheet.Editor.NonNonSheetSettingProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateProvider()
+  nameWithType: NonNonSheetSettingProvider.CreateProvider()
+  fullName: NonNonSheet.Editor.NonNonSheetSettingProvider.CreateProvider()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: CreateProvider
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
+    startLine: 16
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public static SettingsProvider CreateProvider()
+    return:
+      type: SettingsProvider
+    content.vb: Public Shared Function CreateProvider() As SettingsProvider
+  overload: NonNonSheet.Editor.NonNonSheetSettingProvider.CreateProvider*
+- uid: NonNonSheet.Editor.NonNonSheetSettingProvider.#ctor(System.String,SettingsScope,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:NonNonSheet.Editor.NonNonSheetSettingProvider.#ctor(System.String,SettingsScope,System.Collections.Generic.IEnumerable{System.String})
+  id: '#ctor(System.String,SettingsScope,System.Collections.Generic.IEnumerable{System.String})'
+  parent: NonNonSheet.Editor.NonNonSheetSettingProvider
+  langs:
+  - csharp
+  - vb
+  name: NonNonSheetSettingProvider(string, SettingsScope, IEnumerable<string>)
+  nameWithType: NonNonSheetSettingProvider.NonNonSheetSettingProvider(string, SettingsScope, IEnumerable<string>)
+  fullName: NonNonSheet.Editor.NonNonSheetSettingProvider.NonNonSheetSettingProvider(string, SettingsScope, System.Collections.Generic.IEnumerable<string>)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
+    startLine: 28
+  namespace: NonNonSheet.Editor
+  summary: Initializes a new instance of the provider.
+  example: []
+  syntax:
+    content: public NonNonSheetSettingProvider(string path, SettingsScope scopes, IEnumerable<string> keywords)
+    parameters:
+    - id: path
+      type: System.String
+      description: Settings path displayed in Project Settings.
+    - id: scopes
+      type: SettingsScope
+      description: Settings scope.
+    - id: keywords
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Optional search keywords.
+    content.vb: Public Sub New(path As String, scopes As SettingsScope, keywords As IEnumerable(Of String))
+  overload: NonNonSheet.Editor.NonNonSheetSettingProvider.#ctor*
+  nameWithType.vb: NonNonSheetSettingProvider.New(String, SettingsScope, IEnumerable(Of String))
+  fullName.vb: NonNonSheet.Editor.NonNonSheetSettingProvider.New(String, SettingsScope, System.Collections.Generic.IEnumerable(Of String))
+  name.vb: New(String, SettingsScope, IEnumerable(Of String))
+- uid: NonNonSheet.Editor.NonNonSheetSettingProvider.OnActivate(System.String,VisualElement)
+  commentId: M:NonNonSheet.Editor.NonNonSheetSettingProvider.OnActivate(System.String,VisualElement)
+  id: OnActivate(System.String,VisualElement)
+  parent: NonNonSheet.Editor.NonNonSheetSettingProvider
+  langs:
+  - csharp
+  - vb
+  name: OnActivate(string, VisualElement)
+  nameWithType: NonNonSheetSettingProvider.OnActivate(string, VisualElement)
+  fullName: NonNonSheet.Editor.NonNonSheetSettingProvider.OnActivate(string, VisualElement)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OnActivate
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
+    startLine: 36
+  namespace: NonNonSheet.Editor
+  summary: Called when the settings page is activated; prepares the inspector for <xref href="NonNonSheet.Editor.NonNonSheetSetting" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override void OnActivate(string searchContext, VisualElement rootElement)
+    parameters:
+    - id: searchContext
+      type: System.String
+      description: Current search filter.
+    - id: rootElement
+      type: VisualElement
+      description: Root visual element.
+    content.vb: Public Overrides Sub OnActivate(searchContext As String, rootElement As VisualElement)
+  overload: NonNonSheet.Editor.NonNonSheetSettingProvider.OnActivate*
+  nameWithType.vb: NonNonSheetSettingProvider.OnActivate(String, VisualElement)
+  fullName.vb: NonNonSheet.Editor.NonNonSheetSettingProvider.OnActivate(String, VisualElement)
+  name.vb: OnActivate(String, VisualElement)
+- uid: NonNonSheet.Editor.NonNonSheetSettingProvider.OnGUI(System.String)
+  commentId: M:NonNonSheet.Editor.NonNonSheetSettingProvider.OnGUI(System.String)
+  id: OnGUI(System.String)
+  parent: NonNonSheet.Editor.NonNonSheetSettingProvider
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(string)
+  nameWithType: NonNonSheetSettingProvider.OnGUI(string)
+  fullName: NonNonSheet.Editor.NonNonSheetSettingProvider.OnGUI(string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OnGUI
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
+    startLine: 47
+  namespace: NonNonSheet.Editor
+  summary: Draws the IMGUI for the NonNonSheet settings and handles saving.
+  example: []
+  syntax:
+    content: public override void OnGUI(string searchContext)
+    parameters:
+    - id: searchContext
+      type: System.String
+      description: Current search filter.
+    content.vb: Public Overrides Sub OnGUI(searchContext As String)
+  overload: NonNonSheet.Editor.NonNonSheetSettingProvider.OnGUI*
+  nameWithType.vb: NonNonSheetSettingProvider.OnGUI(String)
+  fullName.vb: NonNonSheet.Editor.NonNonSheetSettingProvider.OnGUI(String)
+  name.vb: OnGUI(String)
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.NonNonSheetSettingProvider.CreateProvider*
+  commentId: Overload:NonNonSheet.Editor.NonNonSheetSettingProvider.CreateProvider
+  href: NonNonSheet.Editor.NonNonSheetSettingProvider.html#NonNonSheet_Editor_NonNonSheetSettingProvider_CreateProvider
+  name: CreateProvider
+  nameWithType: NonNonSheetSettingProvider.CreateProvider
+  fullName: NonNonSheet.Editor.NonNonSheetSettingProvider.CreateProvider
+- uid: SettingsProvider
+  commentId: '!:SettingsProvider'
+  isExternal: true
+  name: SettingsProvider
+  nameWithType: SettingsProvider
+  fullName: SettingsProvider
+- uid: NonNonSheet.Editor.NonNonSheetSettingProvider.#ctor*
+  commentId: Overload:NonNonSheet.Editor.NonNonSheetSettingProvider.#ctor
+  href: NonNonSheet.Editor.NonNonSheetSettingProvider.html#NonNonSheet_Editor_NonNonSheetSettingProvider__ctor_System_String_SettingsScope_System_Collections_Generic_IEnumerable_System_String__
+  name: NonNonSheetSettingProvider
+  nameWithType: NonNonSheetSettingProvider.NonNonSheetSettingProvider
+  fullName: NonNonSheet.Editor.NonNonSheetSettingProvider.NonNonSheetSettingProvider
+  nameWithType.vb: NonNonSheetSettingProvider.New
+  fullName.vb: NonNonSheet.Editor.NonNonSheetSettingProvider.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SettingsScope
+  commentId: '!:SettingsScope'
+  isExternal: true
+  name: SettingsScope
+  nameWithType: SettingsScope
+  fullName: SettingsScope
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: NonNonSheet.Editor.NonNonSheetSetting
+  commentId: T:NonNonSheet.Editor.NonNonSheetSetting
+  href: NonNonSheet.Editor.NonNonSheetSetting.html
+  name: NonNonSheetSetting
+  nameWithType: NonNonSheetSetting
+  fullName: NonNonSheet.Editor.NonNonSheetSetting
+- uid: NonNonSheet.Editor.NonNonSheetSettingProvider.OnActivate*
+  commentId: Overload:NonNonSheet.Editor.NonNonSheetSettingProvider.OnActivate
+  href: NonNonSheet.Editor.NonNonSheetSettingProvider.html#NonNonSheet_Editor_NonNonSheetSettingProvider_OnActivate_System_String_VisualElement_
+  name: OnActivate
+  nameWithType: NonNonSheetSettingProvider.OnActivate
+  fullName: NonNonSheet.Editor.NonNonSheetSettingProvider.OnActivate
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement
+- uid: NonNonSheet.Editor.NonNonSheetSettingProvider.OnGUI*
+  commentId: Overload:NonNonSheet.Editor.NonNonSheetSettingProvider.OnGUI
+  href: NonNonSheet.Editor.NonNonSheetSettingProvider.html#NonNonSheet_Editor_NonNonSheetSettingProvider_OnGUI_System_String_
+  name: OnGUI
+  nameWithType: NonNonSheetSettingProvider.OnGUI
+  fullName: NonNonSheet.Editor.NonNonSheetSettingProvider.OnGUI

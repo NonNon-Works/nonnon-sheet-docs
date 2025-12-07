@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.ValidationResult.Type
+  commentId: T:NonNonSheet.ValidationResult.Type
+  id: ValidationResult.Type
+  parent: NonNonSheet
+  children:
+  - NonNonSheet.ValidationResult.Type.Error
+  - NonNonSheet.ValidationResult.Type.Success
+  - NonNonSheet.ValidationResult.Type.Warning
+  langs:
+  - csharp
+  - vb
+  name: ValidationResult.Type
+  nameWithType: ValidationResult.Type
+  fullName: NonNonSheet.ValidationResult.Type
+  type: Enum
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Type
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+    startLine: 61
+  namespace: NonNonSheet
+  syntax:
+    content: public enum ValidationResult.Type
+    content.vb: Public Enum ValidationResult.Type
+- uid: NonNonSheet.ValidationResult.Type.Success
+  commentId: F:NonNonSheet.ValidationResult.Type.Success
+  id: Success
+  parent: NonNonSheet.ValidationResult.Type
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: ValidationResult.Type.Success
+  fullName: NonNonSheet.ValidationResult.Type.Success
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Success
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+    startLine: 64
+  namespace: NonNonSheet
+  summary: Validation succeeded.
+  example: []
+  syntax:
+    content: Success = 0
+    return:
+      type: NonNonSheet.ValidationResult.Type
+- uid: NonNonSheet.ValidationResult.Type.Warning
+  commentId: F:NonNonSheet.ValidationResult.Type.Warning
+  id: Warning
+  parent: NonNonSheet.ValidationResult.Type
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: ValidationResult.Type.Warning
+  fullName: NonNonSheet.ValidationResult.Type.Warning
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Warning
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+    startLine: 66
+  namespace: NonNonSheet
+  summary: Non-blocking issue that may need attention.
+  example: []
+  syntax:
+    content: Warning = 1
+    return:
+      type: NonNonSheet.ValidationResult.Type
+- uid: NonNonSheet.ValidationResult.Type.Error
+  commentId: F:NonNonSheet.ValidationResult.Type.Error
+  id: Error
+  parent: NonNonSheet.ValidationResult.Type
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: ValidationResult.Type.Error
+  fullName: NonNonSheet.ValidationResult.Type.Error
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Error
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+    startLine: 68
+  namespace: NonNonSheet
+  summary: Blocking issue; the value should not be accepted.
+  example: []
+  syntax:
+    content: Error = 2
+    return:
+      type: NonNonSheet.ValidationResult.Type
+references:
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.ValidationResult.Type
+  commentId: T:NonNonSheet.ValidationResult.Type
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult.Type
+  nameWithType: ValidationResult.Type
+  fullName: NonNonSheet.ValidationResult.Type
+  spec.csharp:
+  - uid: NonNonSheet.ValidationResult
+    name: ValidationResult
+    href: NonNonSheet.ValidationResult.html
+  - name: .
+  - uid: NonNonSheet.ValidationResult.Type
+    name: Type
+    href: NonNonSheet.ValidationResult.Type.html
+  spec.vb:
+  - uid: NonNonSheet.ValidationResult
+    name: ValidationResult
+    href: NonNonSheet.ValidationResult.html
+  - name: .
+  - uid: NonNonSheet.ValidationResult.Type
+    name: Type
+    href: NonNonSheet.ValidationResult.Type.html

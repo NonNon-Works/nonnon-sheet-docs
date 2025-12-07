@@ -1,0 +1,545 @@
+### YamlMime:ManagedReference
+items:
+- uid: MasterMemory.DatabaseBuilder
+  commentId: T:MasterMemory.DatabaseBuilder
+  id: DatabaseBuilder
+  parent: MasterMemory
+  children:
+  - MasterMemory.DatabaseBuilder.#ctor
+  - MasterMemory.DatabaseBuilder.#ctor(MessagePack.IFormatterResolver)
+  - MasterMemory.DatabaseBuilder.Append(System.Collections.Generic.IEnumerable{NonNonSheet.Exp.SampleDataForMasterMemory})
+  langs:
+  - csharp
+  - vb
+  name: DatabaseBuilder
+  nameWithType: DatabaseBuilder
+  fullName: MasterMemory.DatabaseBuilder
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.DatabaseBuilder.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DatabaseBuilder
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.DatabaseBuilder.g.cs
+    startLine: 14
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: 'public sealed class DatabaseBuilder : DatabaseBuilderBase'
+    content.vb: Public NotInheritable Class DatabaseBuilder Inherits DatabaseBuilderBase
+  inheritance:
+  - System.Object
+  - MasterMemory.DatabaseBuilderBase
+  inheritedMembers:
+  - MasterMemory.DatabaseBuilderBase.Build
+  - MasterMemory.DatabaseBuilderBase.WriteToStream(System.IO.Stream)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MasterMemory.DatabaseBuilder.#ctor
+  commentId: M:MasterMemory.DatabaseBuilder.#ctor
+  id: '#ctor'
+  parent: MasterMemory.DatabaseBuilder
+  langs:
+  - csharp
+  - vb
+  name: DatabaseBuilder()
+  nameWithType: DatabaseBuilder.DatabaseBuilder()
+  fullName: MasterMemory.DatabaseBuilder.DatabaseBuilder()
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.DatabaseBuilder.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.DatabaseBuilder.g.cs
+    startLine: 16
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public DatabaseBuilder()
+    content.vb: Public Sub New()
+  overload: MasterMemory.DatabaseBuilder.#ctor*
+  nameWithType.vb: DatabaseBuilder.New()
+  fullName.vb: MasterMemory.DatabaseBuilder.New()
+  name.vb: New()
+- uid: MasterMemory.DatabaseBuilder.#ctor(MessagePack.IFormatterResolver)
+  commentId: M:MasterMemory.DatabaseBuilder.#ctor(MessagePack.IFormatterResolver)
+  id: '#ctor(MessagePack.IFormatterResolver)'
+  parent: MasterMemory.DatabaseBuilder
+  langs:
+  - csharp
+  - vb
+  name: DatabaseBuilder(IFormatterResolver?)
+  nameWithType: DatabaseBuilder.DatabaseBuilder(IFormatterResolver?)
+  fullName: MasterMemory.DatabaseBuilder.DatabaseBuilder(MessagePack.IFormatterResolver?)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.DatabaseBuilder.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.DatabaseBuilder.g.cs
+    startLine: 17
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public DatabaseBuilder(IFormatterResolver? resolver)
+    parameters:
+    - id: resolver
+      type: MessagePack.IFormatterResolver
+    content.vb: Public Sub New(resolver As IFormatterResolver)
+  overload: MasterMemory.DatabaseBuilder.#ctor*
+  nameWithType.vb: DatabaseBuilder.New(IFormatterResolver)
+  fullName.vb: MasterMemory.DatabaseBuilder.New(MessagePack.IFormatterResolver)
+  name.vb: New(IFormatterResolver)
+- uid: MasterMemory.DatabaseBuilder.Append(System.Collections.Generic.IEnumerable{NonNonSheet.Exp.SampleDataForMasterMemory})
+  commentId: M:MasterMemory.DatabaseBuilder.Append(System.Collections.Generic.IEnumerable{NonNonSheet.Exp.SampleDataForMasterMemory})
+  id: Append(System.Collections.Generic.IEnumerable{NonNonSheet.Exp.SampleDataForMasterMemory})
+  parent: MasterMemory.DatabaseBuilder
+  langs:
+  - csharp
+  - vb
+  name: Append(IEnumerable<SampleDataForMasterMemory>)
+  nameWithType: DatabaseBuilder.Append(IEnumerable<SampleDataForMasterMemory>)
+  fullName: MasterMemory.DatabaseBuilder.Append(System.Collections.Generic.IEnumerable<NonNonSheet.Exp.SampleDataForMasterMemory>)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.DatabaseBuilder.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Append
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.DatabaseBuilder.g.cs
+    startLine: 19
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public DatabaseBuilder Append(IEnumerable<SampleDataForMasterMemory> dataSource)
+    parameters:
+    - id: dataSource
+      type: System.Collections.Generic.IEnumerable{NonNonSheet.Exp.SampleDataForMasterMemory}
+    return:
+      type: MasterMemory.DatabaseBuilder
+    content.vb: Public Function Append(dataSource As IEnumerable(Of SampleDataForMasterMemory)) As DatabaseBuilder
+  overload: MasterMemory.DatabaseBuilder.Append*
+  nameWithType.vb: DatabaseBuilder.Append(IEnumerable(Of SampleDataForMasterMemory))
+  fullName.vb: MasterMemory.DatabaseBuilder.Append(System.Collections.Generic.IEnumerable(Of NonNonSheet.Exp.SampleDataForMasterMemory))
+  name.vb: Append(IEnumerable(Of SampleDataForMasterMemory))
+references:
+- uid: MasterMemory
+  commentId: N:MasterMemory
+  href: MasterMemory.html
+  name: MasterMemory
+  nameWithType: MasterMemory
+  fullName: MasterMemory
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MasterMemory.DatabaseBuilderBase
+  commentId: T:MasterMemory.DatabaseBuilderBase
+  parent: MasterMemory
+  isExternal: true
+  name: DatabaseBuilderBase
+  nameWithType: DatabaseBuilderBase
+  fullName: MasterMemory.DatabaseBuilderBase
+- uid: MasterMemory.DatabaseBuilderBase.Build
+  commentId: M:MasterMemory.DatabaseBuilderBase.Build
+  parent: MasterMemory.DatabaseBuilderBase
+  isExternal: true
+  name: Build()
+  nameWithType: DatabaseBuilderBase.Build()
+  fullName: MasterMemory.DatabaseBuilderBase.Build()
+  spec.csharp:
+  - uid: MasterMemory.DatabaseBuilderBase.Build
+    name: Build
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MasterMemory.DatabaseBuilderBase.Build
+    name: Build
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MasterMemory.DatabaseBuilderBase.WriteToStream(System.IO.Stream)
+  commentId: M:MasterMemory.DatabaseBuilderBase.WriteToStream(System.IO.Stream)
+  parent: MasterMemory.DatabaseBuilderBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: WriteToStream(Stream)
+  nameWithType: DatabaseBuilderBase.WriteToStream(Stream)
+  fullName: MasterMemory.DatabaseBuilderBase.WriteToStream(System.IO.Stream)
+  spec.csharp:
+  - uid: MasterMemory.DatabaseBuilderBase.WriteToStream(System.IO.Stream)
+    name: WriteToStream
+    isExternal: true
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  spec.vb:
+  - uid: MasterMemory.DatabaseBuilderBase.WriteToStream(System.IO.Stream)
+    name: WriteToStream
+    isExternal: true
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MasterMemory.DatabaseBuilder.#ctor*
+  commentId: Overload:MasterMemory.DatabaseBuilder.#ctor
+  href: MasterMemory.DatabaseBuilder.html#MasterMemory_DatabaseBuilder__ctor
+  name: DatabaseBuilder
+  nameWithType: DatabaseBuilder.DatabaseBuilder
+  fullName: MasterMemory.DatabaseBuilder.DatabaseBuilder
+  nameWithType.vb: DatabaseBuilder.New
+  fullName.vb: MasterMemory.DatabaseBuilder.New
+  name.vb: New
+- uid: MessagePack.IFormatterResolver
+  commentId: T:MessagePack.IFormatterResolver
+  parent: MessagePack
+  isExternal: true
+  name: IFormatterResolver
+  nameWithType: IFormatterResolver
+  fullName: MessagePack.IFormatterResolver
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: MasterMemory.DatabaseBuilder.Append*
+  commentId: Overload:MasterMemory.DatabaseBuilder.Append
+  href: MasterMemory.DatabaseBuilder.html#MasterMemory_DatabaseBuilder_Append_System_Collections_Generic_IEnumerable_NonNonSheet_Exp_SampleDataForMasterMemory__
+  name: Append
+  nameWithType: DatabaseBuilder.Append
+  fullName: MasterMemory.DatabaseBuilder.Append
+- uid: System.Collections.Generic.IEnumerable{NonNonSheet.Exp.SampleDataForMasterMemory}
+  commentId: T:System.Collections.Generic.IEnumerable{NonNonSheet.Exp.SampleDataForMasterMemory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<SampleDataForMasterMemory>
+  nameWithType: IEnumerable<SampleDataForMasterMemory>
+  fullName: System.Collections.Generic.IEnumerable<NonNonSheet.Exp.SampleDataForMasterMemory>
+  nameWithType.vb: IEnumerable(Of SampleDataForMasterMemory)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of NonNonSheet.Exp.SampleDataForMasterMemory)
+  name.vb: IEnumerable(Of SampleDataForMasterMemory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: NonNonSheet.Exp.SampleDataForMasterMemory
+    name: SampleDataForMasterMemory
+    href: NonNonSheet.Exp.SampleDataForMasterMemory.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Exp.SampleDataForMasterMemory
+    name: SampleDataForMasterMemory
+    href: NonNonSheet.Exp.SampleDataForMasterMemory.html
+  - name: )
+- uid: MasterMemory.DatabaseBuilder
+  commentId: T:MasterMemory.DatabaseBuilder
+  parent: MasterMemory
+  href: MasterMemory.DatabaseBuilder.html
+  name: DatabaseBuilder
+  nameWithType: DatabaseBuilder
+  fullName: MasterMemory.DatabaseBuilder
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

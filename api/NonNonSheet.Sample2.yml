@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Sample2
+  commentId: N:NonNonSheet.Sample2
+  id: NonNonSheet.Sample2
+  children:
+  - NonNonSheet.Sample2.OtherNamespaceType
+  langs:
+  - csharp
+  - vb
+  name: NonNonSheet.Sample2
+  nameWithType: NonNonSheet.Sample2
+  fullName: NonNonSheet.Sample2
+  type: Namespace
+  assemblies:
+  - NonNonSheet.Exp.Editor
+references:
+- uid: NonNonSheet.Sample2.OtherNamespaceType
+  commentId: T:NonNonSheet.Sample2.OtherNamespaceType
+  parent: NonNonSheet.Sample2
+  href: NonNonSheet.Sample2.OtherNamespaceType.html
+  name: OtherNamespaceType
+  nameWithType: OtherNamespaceType
+  fullName: NonNonSheet.Sample2.OtherNamespaceType
+- uid: NonNonSheet.Sample2
+  commentId: N:NonNonSheet.Sample2
+  href: NonNonSheet.html
+  name: NonNonSheet.Sample2
+  nameWithType: NonNonSheet.Sample2
+  fullName: NonNonSheet.Sample2
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Sample2
+    name: Sample2
+    href: NonNonSheet.Sample2.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Sample2
+    name: Sample2
+    href: NonNonSheet.Sample2.html

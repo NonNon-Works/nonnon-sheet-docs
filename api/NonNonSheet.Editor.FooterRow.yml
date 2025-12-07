@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.FooterRow
+  commentId: T:NonNonSheet.Editor.FooterRow
+  id: FooterRow
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.FooterRow.#ctor
+  - NonNonSheet.Editor.FooterRow.AddRowButton
+  langs:
+  - csharp
+  - vb
+  name: FooterRow
+  nameWithType: FooterRow
+  fullName: NonNonSheet.Editor.FooterRow
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/FooterRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FooterRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/FooterRow.cs
+    startLine: 4
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class FooterRow : VisualElement'
+    content.vb: Public Class FooterRow Inherits VisualElement
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.FooterRow.AddRowButton
+  commentId: P:NonNonSheet.Editor.FooterRow.AddRowButton
+  id: AddRowButton
+  parent: NonNonSheet.Editor.FooterRow
+  langs:
+  - csharp
+  - vb
+  name: AddRowButton
+  nameWithType: FooterRow.AddRowButton
+  fullName: NonNonSheet.Editor.FooterRow.AddRowButton
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/FooterRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: AddRowButton
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/FooterRow.cs
+    startLine: 6
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Button AddRowButton { get; }
+    parameters: []
+    return:
+      type: Button
+    content.vb: Public ReadOnly Property AddRowButton As Button
+  overload: NonNonSheet.Editor.FooterRow.AddRowButton*
+- uid: NonNonSheet.Editor.FooterRow.#ctor
+  commentId: M:NonNonSheet.Editor.FooterRow.#ctor
+  id: '#ctor'
+  parent: NonNonSheet.Editor.FooterRow
+  langs:
+  - csharp
+  - vb
+  name: FooterRow()
+  nameWithType: FooterRow.FooterRow()
+  fullName: NonNonSheet.Editor.FooterRow.FooterRow()
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/FooterRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/FooterRow.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public FooterRow()
+    content.vb: Public Sub New()
+  overload: NonNonSheet.Editor.FooterRow.#ctor*
+  nameWithType.vb: FooterRow.New()
+  fullName.vb: NonNonSheet.Editor.FooterRow.New()
+  name.vb: New()
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.FooterRow.AddRowButton*
+  commentId: Overload:NonNonSheet.Editor.FooterRow.AddRowButton
+  href: NonNonSheet.Editor.FooterRow.html#NonNonSheet_Editor_FooterRow_AddRowButton
+  name: AddRowButton
+  nameWithType: FooterRow.AddRowButton
+  fullName: NonNonSheet.Editor.FooterRow.AddRowButton
+- uid: Button
+  commentId: '!:Button'
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: Button
+- uid: NonNonSheet.Editor.FooterRow.#ctor*
+  commentId: Overload:NonNonSheet.Editor.FooterRow.#ctor
+  href: NonNonSheet.Editor.FooterRow.html#NonNonSheet_Editor_FooterRow__ctor
+  name: FooterRow
+  nameWithType: FooterRow.FooterRow
+  fullName: NonNonSheet.Editor.FooterRow.FooterRow
+  nameWithType.vb: FooterRow.New
+  fullName.vb: NonNonSheet.Editor.FooterRow.New
+  name.vb: New

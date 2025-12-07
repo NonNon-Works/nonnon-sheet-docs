@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.IEquipmentTableValidator
+  commentId: T:NonNonSheet.Exp.IEquipmentTableValidator
+  id: IEquipmentTableValidator
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.IEquipmentTableValidator.ValidateIcon(NonNonSheet.Exp.EquipmentData,UnityEngine.Texture)
+  - NonNonSheet.Exp.IEquipmentTableValidator.ValidateId(NonNonSheet.Exp.EquipmentData,System.Int32)
+  - NonNonSheet.Exp.IEquipmentTableValidator.ValidateName(NonNonSheet.Exp.EquipmentData,System.String)
+  - NonNonSheet.Exp.IEquipmentTableValidator.ValidatePrefab(NonNonSheet.Exp.EquipmentData,UnityEngine.GameObject)
+  - NonNonSheet.Exp.IEquipmentTableValidator.ValidateType(NonNonSheet.Exp.EquipmentData,NonNonSheet.Exp.EquipmentType)
+  langs:
+  - csharp
+  - vb
+  name: IEquipmentTableValidator
+  nameWithType: IEquipmentTableValidator
+  fullName: NonNonSheet.Exp.IEquipmentTableValidator
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IEquipmentTableValidator
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+    startLine: 111
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: 'public interface IEquipmentTableValidator : IValidator<EquipmentData>'
+    content.vb: Public Interface IEquipmentTableValidator Inherits IValidator(Of EquipmentData)
+  inheritedMembers:
+  - NonNonSheet.IValidator{NonNonSheet.Exp.EquipmentData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.EquipmentData,System.Object)
+- uid: NonNonSheet.Exp.IEquipmentTableValidator.ValidateId(NonNonSheet.Exp.EquipmentData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IEquipmentTableValidator.ValidateId(NonNonSheet.Exp.EquipmentData,System.Int32)
+  id: ValidateId(NonNonSheet.Exp.EquipmentData,System.Int32)
+  parent: NonNonSheet.Exp.IEquipmentTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateId(EquipmentData, int)
+  nameWithType: IEquipmentTableValidator.ValidateId(EquipmentData, int)
+  fullName: NonNonSheet.Exp.IEquipmentTableValidator.ValidateId(NonNonSheet.Exp.EquipmentData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateId
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+    startLine: 113
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateId(EquipmentData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.EquipmentData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateId(self As EquipmentData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IEquipmentTableValidator.ValidateId*
+  nameWithType.vb: IEquipmentTableValidator.ValidateId(EquipmentData, Integer)
+  fullName.vb: NonNonSheet.Exp.IEquipmentTableValidator.ValidateId(NonNonSheet.Exp.EquipmentData, Integer)
+  name.vb: ValidateId(EquipmentData, Integer)
+- uid: NonNonSheet.Exp.IEquipmentTableValidator.ValidateName(NonNonSheet.Exp.EquipmentData,System.String)
+  commentId: M:NonNonSheet.Exp.IEquipmentTableValidator.ValidateName(NonNonSheet.Exp.EquipmentData,System.String)
+  id: ValidateName(NonNonSheet.Exp.EquipmentData,System.String)
+  parent: NonNonSheet.Exp.IEquipmentTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateName(EquipmentData, string)
+  nameWithType: IEquipmentTableValidator.ValidateName(EquipmentData, string)
+  fullName: NonNonSheet.Exp.IEquipmentTableValidator.ValidateName(NonNonSheet.Exp.EquipmentData, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateName
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+    startLine: 114
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateName(EquipmentData self, string id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.EquipmentData
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateName(self As EquipmentData, id As String) As ValidationResult
+  overload: NonNonSheet.Exp.IEquipmentTableValidator.ValidateName*
+  nameWithType.vb: IEquipmentTableValidator.ValidateName(EquipmentData, String)
+  fullName.vb: NonNonSheet.Exp.IEquipmentTableValidator.ValidateName(NonNonSheet.Exp.EquipmentData, String)
+  name.vb: ValidateName(EquipmentData, String)
+- uid: NonNonSheet.Exp.IEquipmentTableValidator.ValidateType(NonNonSheet.Exp.EquipmentData,NonNonSheet.Exp.EquipmentType)
+  commentId: M:NonNonSheet.Exp.IEquipmentTableValidator.ValidateType(NonNonSheet.Exp.EquipmentData,NonNonSheet.Exp.EquipmentType)
+  id: ValidateType(NonNonSheet.Exp.EquipmentData,NonNonSheet.Exp.EquipmentType)
+  parent: NonNonSheet.Exp.IEquipmentTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateType(EquipmentData, EquipmentType)
+  nameWithType: IEquipmentTableValidator.ValidateType(EquipmentData, EquipmentType)
+  fullName: NonNonSheet.Exp.IEquipmentTableValidator.ValidateType(NonNonSheet.Exp.EquipmentData, NonNonSheet.Exp.EquipmentType)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateType
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+    startLine: 115
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateType(EquipmentData self, EquipmentType id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.EquipmentData
+    - id: id
+      type: NonNonSheet.Exp.EquipmentType
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateType(self As EquipmentData, id As EquipmentType) As ValidationResult
+  overload: NonNonSheet.Exp.IEquipmentTableValidator.ValidateType*
+- uid: NonNonSheet.Exp.IEquipmentTableValidator.ValidatePrefab(NonNonSheet.Exp.EquipmentData,UnityEngine.GameObject)
+  commentId: M:NonNonSheet.Exp.IEquipmentTableValidator.ValidatePrefab(NonNonSheet.Exp.EquipmentData,UnityEngine.GameObject)
+  id: ValidatePrefab(NonNonSheet.Exp.EquipmentData,UnityEngine.GameObject)
+  parent: NonNonSheet.Exp.IEquipmentTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidatePrefab(EquipmentData, GameObject)
+  nameWithType: IEquipmentTableValidator.ValidatePrefab(EquipmentData, GameObject)
+  fullName: NonNonSheet.Exp.IEquipmentTableValidator.ValidatePrefab(NonNonSheet.Exp.EquipmentData, UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidatePrefab
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+    startLine: 116
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidatePrefab(EquipmentData self, GameObject id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.EquipmentData
+    - id: id
+      type: UnityEngine.GameObject
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidatePrefab(self As EquipmentData, id As GameObject) As ValidationResult
+  overload: NonNonSheet.Exp.IEquipmentTableValidator.ValidatePrefab*
+- uid: NonNonSheet.Exp.IEquipmentTableValidator.ValidateIcon(NonNonSheet.Exp.EquipmentData,UnityEngine.Texture)
+  commentId: M:NonNonSheet.Exp.IEquipmentTableValidator.ValidateIcon(NonNonSheet.Exp.EquipmentData,UnityEngine.Texture)
+  id: ValidateIcon(NonNonSheet.Exp.EquipmentData,UnityEngine.Texture)
+  parent: NonNonSheet.Exp.IEquipmentTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateIcon(EquipmentData, Texture)
+  nameWithType: IEquipmentTableValidator.ValidateIcon(EquipmentData, Texture)
+  fullName: NonNonSheet.Exp.IEquipmentTableValidator.ValidateIcon(NonNonSheet.Exp.EquipmentData, UnityEngine.Texture)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateIcon
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/EquipmentTable.g.cs
+    startLine: 117
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateIcon(EquipmentData self, Texture id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.EquipmentData
+    - id: id
+      type: UnityEngine.Texture
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateIcon(self As EquipmentData, id As Texture) As ValidationResult
+  overload: NonNonSheet.Exp.IEquipmentTableValidator.ValidateIcon*
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.EquipmentData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.EquipmentData,System.Object)
+  commentId: M:NonNonSheet.IValidator{NonNonSheet.Exp.EquipmentData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.EquipmentData,System.Object)
+  parent: NonNonSheet.IValidator{NonNonSheet.Exp.EquipmentData}
+  definition: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  href: NonNonSheet.Exp.EquipmentData.html
+  name: Validate(ColumnMetadata, EquipmentData, object)
+  nameWithType: IValidator<EquipmentData>.Validate(ColumnMetadata, EquipmentData, object)
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.EquipmentData>.Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.EquipmentData, object)
+  nameWithType.vb: IValidator(Of EquipmentData).Validate(ColumnMetadata, EquipmentData, Object)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.EquipmentData).Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.EquipmentData, Object)
+  name.vb: Validate(ColumnMetadata, EquipmentData, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.EquipmentData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.EquipmentData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.EquipmentData
+    name: EquipmentData
+    href: NonNonSheet.Exp.EquipmentData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.EquipmentData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.EquipmentData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.EquipmentData
+    name: EquipmentData
+    href: NonNonSheet.Exp.EquipmentData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  commentId: M:NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Validate(ColumnMetadata, T, object)
+  nameWithType: IValidator<T>.Validate(ColumnMetadata, T, object)
+  fullName: NonNonSheet.IValidator<T>.Validate(NonNonSheet.ColumnMetadata, T, object)
+  nameWithType.vb: IValidator(Of T).Validate(ColumnMetadata, T, Object)
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate(NonNonSheet.ColumnMetadata, T, Object)
+  name.vb: Validate(ColumnMetadata, T, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.EquipmentData}
+  commentId: T:NonNonSheet.IValidator{NonNonSheet.Exp.EquipmentData}
+  parent: NonNonSheet
+  definition: NonNonSheet.IValidator`1
+  href: NonNonSheet.Exp.EquipmentData.html
+  name: IValidator<EquipmentData>
+  nameWithType: IValidator<EquipmentData>
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.EquipmentData>
+  nameWithType.vb: IValidator(Of EquipmentData)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.EquipmentData)
+  name.vb: IValidator(Of EquipmentData)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: <
+  - uid: NonNonSheet.Exp.EquipmentData
+    name: EquipmentData
+    href: NonNonSheet.Exp.EquipmentData.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Exp.EquipmentData
+    name: EquipmentData
+    href: NonNonSheet.Exp.EquipmentData.html
+  - name: )
+- uid: NonNonSheet.IValidator`1
+  commentId: T:NonNonSheet.IValidator`1
+  href: NonNonSheet.IValidator-1.html
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: NonNonSheet.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: NonNonSheet.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Exp.IEquipmentTableValidator.ValidateId*
+  commentId: Overload:NonNonSheet.Exp.IEquipmentTableValidator.ValidateId
+  href: NonNonSheet.Exp.IEquipmentTableValidator.html#NonNonSheet_Exp_IEquipmentTableValidator_ValidateId_NonNonSheet_Exp_EquipmentData_System_Int32_
+  name: ValidateId
+  nameWithType: IEquipmentTableValidator.ValidateId
+  fullName: NonNonSheet.Exp.IEquipmentTableValidator.ValidateId
+- uid: NonNonSheet.Exp.EquipmentData
+  commentId: T:NonNonSheet.Exp.EquipmentData
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.EquipmentData.html
+  name: EquipmentData
+  nameWithType: EquipmentData
+  fullName: NonNonSheet.Exp.EquipmentData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Exp.IEquipmentTableValidator.ValidateName*
+  commentId: Overload:NonNonSheet.Exp.IEquipmentTableValidator.ValidateName
+  href: NonNonSheet.Exp.IEquipmentTableValidator.html#NonNonSheet_Exp_IEquipmentTableValidator_ValidateName_NonNonSheet_Exp_EquipmentData_System_String_
+  name: ValidateName
+  nameWithType: IEquipmentTableValidator.ValidateName
+  fullName: NonNonSheet.Exp.IEquipmentTableValidator.ValidateName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: NonNonSheet.Exp.IEquipmentTableValidator.ValidateType*
+  commentId: Overload:NonNonSheet.Exp.IEquipmentTableValidator.ValidateType
+  href: NonNonSheet.Exp.IEquipmentTableValidator.html#NonNonSheet_Exp_IEquipmentTableValidator_ValidateType_NonNonSheet_Exp_EquipmentData_NonNonSheet_Exp_EquipmentType_
+  name: ValidateType
+  nameWithType: IEquipmentTableValidator.ValidateType
+  fullName: NonNonSheet.Exp.IEquipmentTableValidator.ValidateType
+- uid: NonNonSheet.Exp.EquipmentType
+  commentId: T:NonNonSheet.Exp.EquipmentType
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.EquipmentType.html
+  name: EquipmentType
+  nameWithType: EquipmentType
+  fullName: NonNonSheet.Exp.EquipmentType
+- uid: NonNonSheet.Exp.IEquipmentTableValidator.ValidatePrefab*
+  commentId: Overload:NonNonSheet.Exp.IEquipmentTableValidator.ValidatePrefab
+  href: NonNonSheet.Exp.IEquipmentTableValidator.html#NonNonSheet_Exp_IEquipmentTableValidator_ValidatePrefab_NonNonSheet_Exp_EquipmentData_UnityEngine_GameObject_
+  name: ValidatePrefab
+  nameWithType: IEquipmentTableValidator.ValidatePrefab
+  fullName: NonNonSheet.Exp.IEquipmentTableValidator.ValidatePrefab
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: NonNonSheet.Exp.IEquipmentTableValidator.ValidateIcon*
+  commentId: Overload:NonNonSheet.Exp.IEquipmentTableValidator.ValidateIcon
+  href: NonNonSheet.Exp.IEquipmentTableValidator.html#NonNonSheet_Exp_IEquipmentTableValidator_ValidateIcon_NonNonSheet_Exp_EquipmentData_UnityEngine_Texture_
+  name: ValidateIcon
+  nameWithType: IEquipmentTableValidator.ValidateIcon
+  fullName: NonNonSheet.Exp.IEquipmentTableValidator.ValidateIcon
+- uid: UnityEngine.Texture
+  commentId: T:UnityEngine.Texture
+  parent: UnityEngine
+  isExternal: true
+  name: Texture
+  nameWithType: Texture
+  fullName: UnityEngine.Texture

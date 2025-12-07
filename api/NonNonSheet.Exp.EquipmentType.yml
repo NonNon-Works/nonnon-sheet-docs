@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.EquipmentType
+  commentId: T:NonNonSheet.Exp.EquipmentType
+  id: EquipmentType
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.EquipmentType.Armor
+  - NonNonSheet.Exp.EquipmentType.Weapon
+  langs:
+  - csharp
+  - vb
+  name: EquipmentType
+  nameWithType: EquipmentType
+  fullName: NonNonSheet.Exp.EquipmentType
+  type: Enum
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/EquipmentTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EquipmentType
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/EquipmentTable.cs
+    startLine: 18
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public enum EquipmentType
+    content.vb: Public Enum EquipmentType
+- uid: NonNonSheet.Exp.EquipmentType.Weapon
+  commentId: F:NonNonSheet.Exp.EquipmentType.Weapon
+  id: Weapon
+  parent: NonNonSheet.Exp.EquipmentType
+  langs:
+  - csharp
+  - vb
+  name: Weapon
+  nameWithType: EquipmentType.Weapon
+  fullName: NonNonSheet.Exp.EquipmentType.Weapon
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/EquipmentTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Weapon
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/EquipmentTable.cs
+    startLine: 20
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: Weapon = 0
+    return:
+      type: NonNonSheet.Exp.EquipmentType
+- uid: NonNonSheet.Exp.EquipmentType.Armor
+  commentId: F:NonNonSheet.Exp.EquipmentType.Armor
+  id: Armor
+  parent: NonNonSheet.Exp.EquipmentType
+  langs:
+  - csharp
+  - vb
+  name: Armor
+  nameWithType: EquipmentType.Armor
+  fullName: NonNonSheet.Exp.EquipmentType.Armor
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/EquipmentTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Armor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/EquipmentTable.cs
+    startLine: 21
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: Armor = 1
+    return:
+      type: NonNonSheet.Exp.EquipmentType
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.Exp.EquipmentType
+  commentId: T:NonNonSheet.Exp.EquipmentType
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.EquipmentType.html
+  name: EquipmentType
+  nameWithType: EquipmentType
+  fullName: NonNonSheet.Exp.EquipmentType

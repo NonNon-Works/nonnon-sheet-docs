@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.TableCollectAssetPostprocessor
+  commentId: T:NonNonSheet.Editor.TableCollectAssetPostprocessor
+  id: TableCollectAssetPostprocessor
+  parent: NonNonSheet.Editor
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: TableCollectAssetPostprocessor
+  nameWithType: TableCollectAssetPostprocessor
+  fullName: NonNonSheet.Editor.TableCollectAssetPostprocessor
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/TableCollectAssetPostprocessor.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: TableCollectAssetPostprocessor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/TableCollectAssetPostprocessor.cs
+    startLine: 5
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class TableCollectAssetPostprocessor : AssetPostprocessor'
+    content.vb: Public Class TableCollectAssetPostprocessor Inherits AssetPostprocessor
+  inheritance:
+  - System.Object
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

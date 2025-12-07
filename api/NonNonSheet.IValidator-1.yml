@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.IValidator`1
+  commentId: T:NonNonSheet.IValidator`1
+  id: IValidator`1
+  parent: NonNonSheet
+  children:
+  - NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: NonNonSheet.IValidator<T>
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IValidator
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+    startLine: 7
+  namespace: NonNonSheet
+  summary: >-
+    Validates edits applied to a row of type <code class="typeparamref">T</code>.
+
+    Implement this in a table to provide per-column validation.
+  example: []
+  syntax:
+    content: public interface IValidator<in T>
+    typeParameters:
+    - id: T
+      description: Row data type handled by the table.
+    content.vb: Public Interface IValidator(Of In T)
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: NonNonSheet.IValidator(Of T)
+  name.vb: IValidator(Of T)
+- uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  commentId: M:NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  id: Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  parent: NonNonSheet.IValidator`1
+  langs:
+  - csharp
+  - vb
+  name: Validate(ColumnMetadata, T, object)
+  nameWithType: IValidator<T>.Validate(ColumnMetadata, T, object)
+  fullName: NonNonSheet.IValidator<T>.Validate(NonNonSheet.ColumnMetadata, T, object)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Validate
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
+    startLine: 16
+  namespace: NonNonSheet
+  summary: Checks whether assigning <code class="paramref">value</code> to the column is acceptable for the given row.
+  example: []
+  syntax:
+    content: ValidationResult Validate(ColumnMetadata column, T data, object value)
+    parameters:
+    - id: column
+      type: NonNonSheet.ColumnMetadata
+      description: Metadata of the edited column.
+    - id: data
+      type: '{T}'
+      description: The current row instance.
+    - id: value
+      type: System.Object
+      description: Proposed value to assign.
+    return:
+      type: NonNonSheet.ValidationResult
+      description: A <xref href="NonNonSheet.ValidationResult" data-throw-if-not-resolved="false"></xref> indicating success, warning, or error.
+    content.vb: Function Validate(column As ColumnMetadata, data As T, value As Object) As ValidationResult
+  overload: NonNonSheet.IValidator`1.Validate*
+  nameWithType.vb: IValidator(Of T).Validate(ColumnMetadata, T, Object)
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate(NonNonSheet.ColumnMetadata, T, Object)
+  name.vb: Validate(ColumnMetadata, T, Object)
+references:
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
+- uid: NonNonSheet.IValidator`1.Validate*
+  commentId: Overload:NonNonSheet.IValidator`1.Validate
+  href: NonNonSheet.IValidator-1.html#NonNonSheet_IValidator_1_Validate_NonNonSheet_ColumnMetadata__0_System_Object_
+  name: Validate
+  nameWithType: IValidator<T>.Validate
+  fullName: NonNonSheet.IValidator<T>.Validate
+  nameWithType.vb: IValidator(Of T).Validate
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate
+- uid: NonNonSheet.ColumnMetadata
+  commentId: T:NonNonSheet.ColumnMetadata
+  parent: NonNonSheet
+  href: NonNonSheet.ColumnMetadata.html
+  name: ColumnMetadata
+  nameWithType: ColumnMetadata
+  fullName: NonNonSheet.ColumnMetadata
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

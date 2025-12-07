@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.NonNonTableEditor
+  commentId: T:NonNonSheet.Editor.NonNonTableEditor
+  id: NonNonTableEditor
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.NonNonTableEditor.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: NonNonTableEditor
+  nameWithType: NonNonTableEditor
+  fullName: NonNonSheet.Editor.NonNonTableEditor
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomInspectors/NonNonTableEditor.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: NonNonTableEditor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomInspectors/NonNonTableEditor.cs
+    startLine: 6
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class NonNonTableEditor : UnityEditor.Editor'
+    content.vb: Public Class NonNonTableEditor Inherits UnityEditor.Editor
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.NonNonTableEditor.OnInspectorGUI
+  commentId: M:NonNonSheet.Editor.NonNonTableEditor.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: NonNonSheet.Editor.NonNonTableEditor
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: NonNonTableEditor.OnInspectorGUI()
+  fullName: NonNonSheet.Editor.NonNonTableEditor.OnInspectorGUI()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomInspectors/NonNonTableEditor.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OnInspectorGUI
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomInspectors/NonNonTableEditor.cs
+    startLine: 12
+  namespace: NonNonSheet.Editor
+  example: []
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overload: NonNonSheet.Editor.NonNonTableEditor.OnInspectorGUI*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.NonNonTableEditor.OnInspectorGUI*
+  commentId: Overload:NonNonSheet.Editor.NonNonTableEditor.OnInspectorGUI
+  href: NonNonSheet.Editor.NonNonTableEditor.html#NonNonSheet_Editor_NonNonTableEditor_OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: NonNonTableEditor.OnInspectorGUI
+  fullName: NonNonSheet.Editor.NonNonTableEditor.OnInspectorGUI

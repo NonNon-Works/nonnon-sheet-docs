@@ -1,0 +1,124 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.NonNonSheetEditorWindow
+  commentId: T:NonNonSheet.Editor.NonNonSheetEditorWindow
+  id: NonNonSheetEditorWindow
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.NonNonSheetEditorWindow.Open(NonNonSheet.NonNonTable)
+  langs:
+  - csharp
+  - vb
+  name: NonNonSheetEditorWindow
+  nameWithType: NonNonSheetEditorWindow
+  fullName: NonNonSheet.Editor.NonNonSheetEditorWindow
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: NonNonSheetEditorWindow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
+    startLine: 10
+  namespace: NonNonSheet.Editor
+  summary: Editor window that displays and edits NonNonSheet tables.
+  example: []
+  syntax:
+    content: 'public class NonNonSheetEditorWindow : EditorWindow'
+    content.vb: Public Class NonNonSheetEditorWindow Inherits EditorWindow
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.NonNonSheetEditorWindow.Open(NonNonSheet.NonNonTable)
+  commentId: M:NonNonSheet.Editor.NonNonSheetEditorWindow.Open(NonNonSheet.NonNonTable)
+  id: Open(NonNonSheet.NonNonTable)
+  parent: NonNonSheet.Editor.NonNonSheetEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: Open(NonNonTable)
+  nameWithType: NonNonSheetEditorWindow.Open(NonNonTable)
+  fullName: NonNonSheet.Editor.NonNonSheetEditorWindow.Open(NonNonSheet.NonNonTable)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Open
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
+    startLine: 27
+  namespace: NonNonSheet.Editor
+  summary: >-
+    Opens the NonNonSheet window for the specified <code class="paramref">table</code>.
+
+    If a window is already open for the table, it is focused instead of creating a new one.
+  example: []
+  syntax:
+    content: public static void Open(NonNonTable table)
+    parameters:
+    - id: table
+      type: NonNonSheet.NonNonTable
+      description: Target table to display.
+    content.vb: Public Shared Sub Open(table As NonNonTable)
+  overload: NonNonSheet.Editor.NonNonSheetEditorWindow.Open*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.NonNonSheetEditorWindow.Open*
+  commentId: Overload:NonNonSheet.Editor.NonNonSheetEditorWindow.Open
+  href: NonNonSheet.Editor.NonNonSheetEditorWindow.html#NonNonSheet_Editor_NonNonSheetEditorWindow_Open_NonNonSheet_NonNonTable_
+  name: Open
+  nameWithType: NonNonSheetEditorWindow.Open
+  fullName: NonNonSheet.Editor.NonNonSheetEditorWindow.Open
+- uid: NonNonSheet.NonNonTable
+  commentId: T:NonNonSheet.NonNonTable
+  parent: NonNonSheet
+  href: NonNonSheet.NonNonTable.html
+  name: NonNonTable
+  nameWithType: NonNonTable
+  fullName: NonNonSheet.NonNonTable
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet

@@ -1,0 +1,684 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.LongCell
+  commentId: T:NonNonSheet.Editor.LongCell
+  id: LongCell
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.LongCell.OnBindProperty
+  - NonNonSheet.Editor.LongCell.OnInitialize
+  - NonNonSheet.Editor.LongCell.OnStartEditing
+  langs:
+  - csharp
+  - vb
+  name: LongCell
+  nameWithType: LongCell
+  fullName: NonNonSheet.Editor.LongCell
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cells/LongCell.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: LongCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cells/LongCell.cs
+    startLine: 6
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class LongCell : Cell<long>, INotifyValueChanged<long>'
+    content.vb: Public Class LongCell Inherits Cell(Of Long) Implements INotifyValueChanged(Of Long)
+  inheritance:
+  - System.Object
+  - NonNonSheet.Editor.Cell
+  - NonNonSheet.Editor.Cell{System.Int64}
+  implements:
+  - INotifyValueChanged{System.Int64}
+  inheritedMembers:
+  - NonNonSheet.Editor.Cell{System.Int64}.Value
+  - NonNonSheet.Editor.Cell{System.Int64}.GetValue
+  - NonNonSheet.Editor.Cell{System.Int64}.SetValueWithoutNotify(System.Int64)
+  - NonNonSheet.Editor.Cell.DataSerializedProperty
+  - NonNonSheet.Editor.Cell.FieldSerializedProperty
+  - NonNonSheet.Editor.Cell.AutoBindProperty
+  - NonNonSheet.Editor.Cell.Table
+  - NonNonSheet.Editor.Cell.Metadata
+  - NonNonSheet.Editor.Cell.Row
+  - NonNonSheet.Editor.Cell.Col
+  - NonNonSheet.Editor.Cell.Position
+  - NonNonSheet.Editor.Cell.Width
+  - NonNonSheet.Editor.Cell.Initialize(SerializedProperty)
+  - NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
+  - NonNonSheet.Editor.Cell.BindField
+  - NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+  - NonNonSheet.Editor.Cell.ToString
+  - NonNonSheet.Editor.Cell.FocusNextFrame
+- uid: NonNonSheet.Editor.LongCell.OnInitialize
+  commentId: M:NonNonSheet.Editor.LongCell.OnInitialize
+  id: OnInitialize
+  parent: NonNonSheet.Editor.LongCell
+  langs:
+  - csharp
+  - vb
+  name: OnInitialize()
+  nameWithType: LongCell.OnInitialize()
+  fullName: NonNonSheet.Editor.LongCell.OnInitialize()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cells/LongCell.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OnInitialize
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cells/LongCell.cs
+    startLine: 13
+  namespace: NonNonSheet.Editor
+  example: []
+  syntax:
+    content: protected override void OnInitialize()
+    content.vb: Protected Overrides Sub OnInitialize()
+  overridden: NonNonSheet.Editor.Cell.OnInitialize
+  overload: NonNonSheet.Editor.LongCell.OnInitialize*
+- uid: NonNonSheet.Editor.LongCell.OnBindProperty
+  commentId: M:NonNonSheet.Editor.LongCell.OnBindProperty
+  id: OnBindProperty
+  parent: NonNonSheet.Editor.LongCell
+  langs:
+  - csharp
+  - vb
+  name: OnBindProperty()
+  nameWithType: LongCell.OnBindProperty()
+  fullName: NonNonSheet.Editor.LongCell.OnBindProperty()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cells/LongCell.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OnBindProperty
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cells/LongCell.cs
+    startLine: 33
+  namespace: NonNonSheet.Editor
+  example: []
+  syntax:
+    content: protected override void OnBindProperty()
+    content.vb: Protected Overrides Sub OnBindProperty()
+  overridden: NonNonSheet.Editor.Cell.OnBindProperty
+  overload: NonNonSheet.Editor.LongCell.OnBindProperty*
+- uid: NonNonSheet.Editor.LongCell.OnStartEditing
+  commentId: M:NonNonSheet.Editor.LongCell.OnStartEditing
+  id: OnStartEditing
+  parent: NonNonSheet.Editor.LongCell
+  langs:
+  - csharp
+  - vb
+  name: OnStartEditing()
+  nameWithType: LongCell.OnStartEditing()
+  fullName: NonNonSheet.Editor.LongCell.OnStartEditing()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cells/LongCell.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OnStartEditing
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cells/LongCell.cs
+    startLine: 39
+  namespace: NonNonSheet.Editor
+  example: []
+  syntax:
+    content: public override void OnStartEditing()
+    content.vb: Public Overrides Sub OnStartEditing()
+  overridden: NonNonSheet.Editor.Cell.OnStartEditing
+  overload: NonNonSheet.Editor.LongCell.OnStartEditing*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: NonNonSheet.Editor.Cell
+  commentId: T:NonNonSheet.Editor.Cell
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Cell.html
+  name: Cell
+  nameWithType: Cell
+  fullName: NonNonSheet.Editor.Cell
+- uid: NonNonSheet.Editor.Cell{System.Int64}
+  commentId: T:NonNonSheet.Editor.Cell{System.Int64}
+  parent: NonNonSheet.Editor
+  definition: NonNonSheet.Editor.Cell`1
+  href: NonNonSheet.Editor.Cell-1.html
+  name: Cell<long>
+  nameWithType: Cell<long>
+  fullName: NonNonSheet.Editor.Cell<long>
+  nameWithType.vb: Cell(Of Long)
+  fullName.vb: NonNonSheet.Editor.Cell(Of Long)
+  name.vb: Cell(Of Long)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell`1
+    name: Cell
+    href: NonNonSheet.Editor.Cell-1.html
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell`1
+    name: Cell
+    href: NonNonSheet.Editor.Cell-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: INotifyValueChanged{System.Int64}
+  commentId: '!:INotifyValueChanged{System.Int64}'
+  definition: INotifyValueChanged`1
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: INotifyValueChanged<long>
+  nameWithType: INotifyValueChanged<long>
+  fullName: INotifyValueChanged<long>
+  nameWithType.vb: INotifyValueChanged(Of Long)
+  fullName.vb: INotifyValueChanged(Of Long)
+  name.vb: INotifyValueChanged(Of Long)
+  spec.csharp:
+  - uid: INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: NonNonSheet.Editor.Cell{System.Int64}.Value
+  commentId: P:NonNonSheet.Editor.Cell{System.Int64}.Value
+  parent: NonNonSheet.Editor.Cell{System.Int64}
+  definition: NonNonSheet.Editor.Cell`1.Value
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_Value
+  name: Value
+  nameWithType: Cell<long>.Value
+  fullName: NonNonSheet.Editor.Cell<long>.Value
+  nameWithType.vb: Cell(Of Long).Value
+  fullName.vb: NonNonSheet.Editor.Cell(Of Long).Value
+- uid: NonNonSheet.Editor.Cell{System.Int64}.GetValue
+  commentId: M:NonNonSheet.Editor.Cell{System.Int64}.GetValue
+  parent: NonNonSheet.Editor.Cell{System.Int64}
+  definition: NonNonSheet.Editor.Cell`1.GetValue
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  name: GetValue()
+  nameWithType: Cell<long>.GetValue()
+  fullName: NonNonSheet.Editor.Cell<long>.GetValue()
+  nameWithType.vb: Cell(Of Long).GetValue()
+  fullName.vb: NonNonSheet.Editor.Cell(Of Long).GetValue()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell{System.Int64}.GetValue
+    name: GetValue
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell{System.Int64}.GetValue
+    name: GetValue
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.Cell{System.Int64}.SetValueWithoutNotify(System.Int64)
+  commentId: M:NonNonSheet.Editor.Cell{System.Int64}.SetValueWithoutNotify(System.Int64)
+  parent: NonNonSheet.Editor.Cell{System.Int64}
+  definition: NonNonSheet.Editor.Cell`1.SetValueWithoutNotify(`0)
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  name: SetValueWithoutNotify(long)
+  nameWithType: Cell<long>.SetValueWithoutNotify(long)
+  fullName: NonNonSheet.Editor.Cell<long>.SetValueWithoutNotify(long)
+  nameWithType.vb: Cell(Of Long).SetValueWithoutNotify(Long)
+  fullName.vb: NonNonSheet.Editor.Cell(Of Long).SetValueWithoutNotify(Long)
+  name.vb: SetValueWithoutNotify(Long)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell{System.Int64}.SetValueWithoutNotify(System.Int64)
+    name: SetValueWithoutNotify
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell{System.Int64}.SetValueWithoutNotify(System.Int64)
+    name: SetValueWithoutNotify
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: NonNonSheet.Editor.Cell.DataSerializedProperty
+  commentId: P:NonNonSheet.Editor.Cell.DataSerializedProperty
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_DataSerializedProperty
+  name: DataSerializedProperty
+  nameWithType: Cell.DataSerializedProperty
+  fullName: NonNonSheet.Editor.Cell.DataSerializedProperty
+- uid: NonNonSheet.Editor.Cell.FieldSerializedProperty
+  commentId: P:NonNonSheet.Editor.Cell.FieldSerializedProperty
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_FieldSerializedProperty
+  name: FieldSerializedProperty
+  nameWithType: Cell.FieldSerializedProperty
+  fullName: NonNonSheet.Editor.Cell.FieldSerializedProperty
+- uid: NonNonSheet.Editor.Cell.AutoBindProperty
+  commentId: P:NonNonSheet.Editor.Cell.AutoBindProperty
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_AutoBindProperty
+  name: AutoBindProperty
+  nameWithType: Cell.AutoBindProperty
+  fullName: NonNonSheet.Editor.Cell.AutoBindProperty
+- uid: NonNonSheet.Editor.Cell.Table
+  commentId: P:NonNonSheet.Editor.Cell.Table
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Table
+  name: Table
+  nameWithType: Cell.Table
+  fullName: NonNonSheet.Editor.Cell.Table
+- uid: NonNonSheet.Editor.Cell.Metadata
+  commentId: P:NonNonSheet.Editor.Cell.Metadata
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Metadata
+  name: Metadata
+  nameWithType: Cell.Metadata
+  fullName: NonNonSheet.Editor.Cell.Metadata
+- uid: NonNonSheet.Editor.Cell.Row
+  commentId: P:NonNonSheet.Editor.Cell.Row
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Row
+  name: Row
+  nameWithType: Cell.Row
+  fullName: NonNonSheet.Editor.Cell.Row
+- uid: NonNonSheet.Editor.Cell.Col
+  commentId: P:NonNonSheet.Editor.Cell.Col
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Col
+  name: Col
+  nameWithType: Cell.Col
+  fullName: NonNonSheet.Editor.Cell.Col
+- uid: NonNonSheet.Editor.Cell.Position
+  commentId: P:NonNonSheet.Editor.Cell.Position
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Position
+  name: Position
+  nameWithType: Cell.Position
+  fullName: NonNonSheet.Editor.Cell.Position
+- uid: NonNonSheet.Editor.Cell.Width
+  commentId: P:NonNonSheet.Editor.Cell.Width
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Width
+  name: Width
+  nameWithType: Cell.Width
+  fullName: NonNonSheet.Editor.Cell.Width
+- uid: NonNonSheet.Editor.Cell.Initialize(SerializedProperty)
+  commentId: M:NonNonSheet.Editor.Cell.Initialize(SerializedProperty)
+  parent: NonNonSheet.Editor.Cell
+  isExternal: true
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Initialize_SerializedProperty_
+  name: Initialize(SerializedProperty)
+  nameWithType: Cell.Initialize(SerializedProperty)
+  fullName: NonNonSheet.Editor.Cell.Initialize(SerializedProperty)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.Initialize(SerializedProperty)
+    name: Initialize
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Initialize_SerializedProperty_
+  - name: (
+  - uid: SerializedProperty
+    name: SerializedProperty
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.Initialize(SerializedProperty)
+    name: Initialize
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Initialize_SerializedProperty_
+  - name: (
+  - uid: SerializedProperty
+    name: SerializedProperty
+    isExternal: true
+  - name: )
+- uid: NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
+  commentId: M:NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
+  parent: NonNonSheet.Editor.Cell
+  isExternal: true
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_UpdateRow_System_Int32_
+  name: UpdateRow(int)
+  nameWithType: Cell.UpdateRow(int)
+  fullName: NonNonSheet.Editor.Cell.UpdateRow(int)
+  nameWithType.vb: Cell.UpdateRow(Integer)
+  fullName.vb: NonNonSheet.Editor.Cell.UpdateRow(Integer)
+  name.vb: UpdateRow(Integer)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
+    name: UpdateRow
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_UpdateRow_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
+    name: UpdateRow
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_UpdateRow_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: NonNonSheet.Editor.Cell.BindField
+  commentId: M:NonNonSheet.Editor.Cell.BindField
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_BindField
+  name: BindField()
+  nameWithType: Cell.BindField()
+  fullName: NonNonSheet.Editor.Cell.BindField()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.BindField
+    name: BindField
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_BindField
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.BindField
+    name: BindField
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_BindField
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+  commentId: M:NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ChangeStatus_NonNonSheet_ValidationResult_
+  name: ChangeStatus(ValidationResult)
+  nameWithType: Cell.ChangeStatus(ValidationResult)
+  fullName: NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+    name: ChangeStatus
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ChangeStatus_NonNonSheet_ValidationResult_
+  - name: (
+  - uid: NonNonSheet.ValidationResult
+    name: ValidationResult
+    href: NonNonSheet.ValidationResult.html
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
+    name: ChangeStatus
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ChangeStatus_NonNonSheet_ValidationResult_
+  - name: (
+  - uid: NonNonSheet.ValidationResult
+    name: ValidationResult
+    href: NonNonSheet.ValidationResult.html
+  - name: )
+- uid: NonNonSheet.Editor.Cell.ToString
+  commentId: M:NonNonSheet.Editor.Cell.ToString
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ToString
+  name: ToString()
+  nameWithType: Cell.ToString()
+  fullName: NonNonSheet.Editor.Cell.ToString()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.ToString
+    name: ToString
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.ToString
+    name: ToString
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ToString
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.Cell.FocusNextFrame
+  commentId: M:NonNonSheet.Editor.Cell.FocusNextFrame
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_FocusNextFrame
+  name: FocusNextFrame()
+  nameWithType: Cell.FocusNextFrame()
+  fullName: NonNonSheet.Editor.Cell.FocusNextFrame()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.FocusNextFrame
+    name: FocusNextFrame
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_FocusNextFrame
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.FocusNextFrame
+    name: FocusNextFrame
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_FocusNextFrame
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.Cell`1
+  commentId: T:NonNonSheet.Editor.Cell`1
+  href: NonNonSheet.Editor.Cell-1.html
+  name: Cell<T>
+  nameWithType: Cell<T>
+  fullName: NonNonSheet.Editor.Cell<T>
+  nameWithType.vb: Cell(Of T)
+  fullName.vb: NonNonSheet.Editor.Cell(Of T)
+  name.vb: Cell(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell`1
+    name: Cell
+    href: NonNonSheet.Editor.Cell-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell`1
+    name: Cell
+    href: NonNonSheet.Editor.Cell-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: INotifyValueChanged`1
+  isExternal: true
+  name: INotifyValueChanged<>
+  nameWithType: INotifyValueChanged<>
+  fullName: INotifyValueChanged<>
+  nameWithType.vb: INotifyValueChanged(Of )
+  fullName.vb: INotifyValueChanged(Of )
+  name.vb: INotifyValueChanged(Of )
+  spec.csharp:
+  - uid: INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: NonNonSheet.Editor.Cell`1.Value
+  commentId: P:NonNonSheet.Editor.Cell`1.Value
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_Value
+  name: Value
+  nameWithType: Cell<T>.Value
+  fullName: NonNonSheet.Editor.Cell<T>.Value
+  nameWithType.vb: Cell(Of T).Value
+  fullName.vb: NonNonSheet.Editor.Cell(Of T).Value
+- uid: NonNonSheet.Editor.Cell`1.GetValue
+  commentId: M:NonNonSheet.Editor.Cell`1.GetValue
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  name: GetValue()
+  nameWithType: Cell<T>.GetValue()
+  fullName: NonNonSheet.Editor.Cell<T>.GetValue()
+  nameWithType.vb: Cell(Of T).GetValue()
+  fullName.vb: NonNonSheet.Editor.Cell(Of T).GetValue()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell`1.GetValue
+    name: GetValue
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell`1.GetValue
+    name: GetValue
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_GetValue
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.Cell`1.SetValueWithoutNotify(`0)
+  commentId: M:NonNonSheet.Editor.Cell`1.SetValueWithoutNotify(`0)
+  href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  name: SetValueWithoutNotify(T)
+  nameWithType: Cell<T>.SetValueWithoutNotify(T)
+  fullName: NonNonSheet.Editor.Cell<T>.SetValueWithoutNotify(T)
+  nameWithType.vb: Cell(Of T).SetValueWithoutNotify(T)
+  fullName.vb: NonNonSheet.Editor.Cell(Of T).SetValueWithoutNotify(T)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell`1.SetValueWithoutNotify(`0)
+    name: SetValueWithoutNotify
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell`1.SetValueWithoutNotify(`0)
+    name: SetValueWithoutNotify
+    href: NonNonSheet.Editor.Cell-1.html#NonNonSheet_Editor_Cell_1_SetValueWithoutNotify__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: NonNonSheet.Editor.Cell.OnInitialize
+  commentId: M:NonNonSheet.Editor.Cell.OnInitialize
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnInitialize
+  name: OnInitialize()
+  nameWithType: Cell.OnInitialize()
+  fullName: NonNonSheet.Editor.Cell.OnInitialize()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.OnInitialize
+    name: OnInitialize
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnInitialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.OnInitialize
+    name: OnInitialize
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnInitialize
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.LongCell.OnInitialize*
+  commentId: Overload:NonNonSheet.Editor.LongCell.OnInitialize
+  href: NonNonSheet.Editor.LongCell.html#NonNonSheet_Editor_LongCell_OnInitialize
+  name: OnInitialize
+  nameWithType: LongCell.OnInitialize
+  fullName: NonNonSheet.Editor.LongCell.OnInitialize
+- uid: NonNonSheet.Editor.Cell.OnBindProperty
+  commentId: M:NonNonSheet.Editor.Cell.OnBindProperty
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnBindProperty
+  name: OnBindProperty()
+  nameWithType: Cell.OnBindProperty()
+  fullName: NonNonSheet.Editor.Cell.OnBindProperty()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.OnBindProperty
+    name: OnBindProperty
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnBindProperty
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.OnBindProperty
+    name: OnBindProperty
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnBindProperty
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.LongCell.OnBindProperty*
+  commentId: Overload:NonNonSheet.Editor.LongCell.OnBindProperty
+  href: NonNonSheet.Editor.LongCell.html#NonNonSheet_Editor_LongCell_OnBindProperty
+  name: OnBindProperty
+  nameWithType: LongCell.OnBindProperty
+  fullName: NonNonSheet.Editor.LongCell.OnBindProperty
+- uid: NonNonSheet.Editor.Cell.OnStartEditing
+  commentId: M:NonNonSheet.Editor.Cell.OnStartEditing
+  parent: NonNonSheet.Editor.Cell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnStartEditing
+  name: OnStartEditing()
+  nameWithType: Cell.OnStartEditing()
+  fullName: NonNonSheet.Editor.Cell.OnStartEditing()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell.OnStartEditing
+    name: OnStartEditing
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnStartEditing
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell.OnStartEditing
+    name: OnStartEditing
+    href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnStartEditing
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.LongCell.OnStartEditing*
+  commentId: Overload:NonNonSheet.Editor.LongCell.OnStartEditing
+  href: NonNonSheet.Editor.LongCell.html#NonNonSheet_Editor_LongCell_OnStartEditing
+  name: OnStartEditing
+  nameWithType: LongCell.OnStartEditing
+  fullName: NonNonSheet.Editor.LongCell.OnStartEditing

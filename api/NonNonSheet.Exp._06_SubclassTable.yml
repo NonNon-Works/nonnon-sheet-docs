@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp._06_SubclassTable
+  commentId: N:NonNonSheet.Exp._06_SubclassTable
+  id: NonNonSheet.Exp._06_SubclassTable
+  children:
+  - NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator
+  - NonNonSheet.Exp._06_SubclassTable.ParentTable
+  - NonNonSheet.Exp._06_SubclassTable.SubclassData
+  - NonNonSheet.Exp._06_SubclassTable.SubclassTable
+  langs:
+  - csharp
+  - vb
+  name: NonNonSheet.Exp._06_SubclassTable
+  nameWithType: NonNonSheet.Exp._06_SubclassTable
+  fullName: NonNonSheet.Exp._06_SubclassTable
+  type: Namespace
+  assemblies:
+  - NonNonSheet.Exp.Editor
+references:
+- uid: NonNonSheet.Exp._06_SubclassTable.SubclassTable
+  commentId: T:NonNonSheet.Exp._06_SubclassTable.SubclassTable
+  href: NonNonSheet.Exp._06_SubclassTable.SubclassTable.html
+  name: SubclassTable
+  nameWithType: SubclassTable
+  fullName: NonNonSheet.Exp._06_SubclassTable.SubclassTable
+- uid: NonNonSheet.Exp._06_SubclassTable.ParentTable
+  commentId: T:NonNonSheet.Exp._06_SubclassTable.ParentTable
+  parent: NonNonSheet.Exp._06_SubclassTable
+  href: NonNonSheet.Exp._06_SubclassTable.ParentTable.html
+  name: ParentTable
+  nameWithType: ParentTable
+  fullName: NonNonSheet.Exp._06_SubclassTable.ParentTable
+- uid: NonNonSheet.Exp._06_SubclassTable.SubclassData
+  commentId: T:NonNonSheet.Exp._06_SubclassTable.SubclassData
+  parent: NonNonSheet.Exp._06_SubclassTable
+  href: NonNonSheet.Exp._06_SubclassTable.SubclassData.html
+  name: SubclassData
+  nameWithType: SubclassData
+  fullName: NonNonSheet.Exp._06_SubclassTable.SubclassData
+- uid: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator
+  commentId: T:NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator
+  href: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.html
+  name: ISubclassTableValidator
+  nameWithType: ISubclassTableValidator
+  fullName: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator
+- uid: NonNonSheet.Exp._06_SubclassTable
+  commentId: N:NonNonSheet.Exp._06_SubclassTable
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp._06_SubclassTable
+  nameWithType: NonNonSheet.Exp._06_SubclassTable
+  fullName: NonNonSheet.Exp._06_SubclassTable
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  - name: .
+  - uid: NonNonSheet.Exp._06_SubclassTable
+    name: _06_SubclassTable
+    href: NonNonSheet.Exp._06_SubclassTable.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  - name: .
+  - uid: NonNonSheet.Exp._06_SubclassTable
+    name: _06_SubclassTable
+    href: NonNonSheet.Exp._06_SubclassTable.html

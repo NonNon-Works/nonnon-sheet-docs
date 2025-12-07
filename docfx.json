@@ -1,28 +1,36 @@
 {
   "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["Editor/**/*.cs", "Runtime/**/*.cs"],
+          "src": "../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet"
+        }
+      ],
+      "dest": "api",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "allowCompilationErrors": true
+    }
+  ],
   "build": {
     "content": [
       {
-        "files": [
-          "**/*.{md,yml}"
-        ],
-        "exclude": [
-          "_site/**"
-        ]
+        "files": ["api/**.yml"]
+      },
+      {
+        "files": ["**/*.{md,yml}"],
+        "exclude": ["_site/**"]
       }
     ],
     "resource": [
       {
-        "files": [
-          "images/**"
-        ]
+        "files": ["images/**"]
       }
     ],
     "output": "_site",
-    "template": [
-      "default",
-      "modern"
-    ],
+    "template": ["default", "modern"],
     "globalMetadata": {
       "_appName": "NonNonSheet",
       "_appTitle": "NonNonSheet",

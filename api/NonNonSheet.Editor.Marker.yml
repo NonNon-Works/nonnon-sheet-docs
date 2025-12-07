@@ -1,0 +1,243 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.Marker
+  commentId: T:NonNonSheet.Editor.Marker
+  id: Marker
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.Marker.#ctor(VisualElement,System.String)
+  - NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell)
+  - NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell)
+  - NonNonSheet.Editor.Marker.IsVisible
+  langs:
+  - csharp
+  - vb
+  name: Marker
+  nameWithType: Marker
+  fullName: NonNonSheet.Editor.Marker
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Marker
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+    startLine: 5
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class Marker : VisualElement'
+    content.vb: Public Class Marker Inherits VisualElement
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.Marker.IsVisible
+  commentId: P:NonNonSheet.Editor.Marker.IsVisible
+  id: IsVisible
+  parent: NonNonSheet.Editor.Marker
+  langs:
+  - csharp
+  - vb
+  name: IsVisible
+  nameWithType: Marker.IsVisible
+  fullName: NonNonSheet.Editor.Marker.IsVisible
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsVisible
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+    startLine: 9
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsVisible As Boolean
+  overload: NonNonSheet.Editor.Marker.IsVisible*
+- uid: NonNonSheet.Editor.Marker.#ctor(VisualElement,System.String)
+  commentId: M:NonNonSheet.Editor.Marker.#ctor(VisualElement,System.String)
+  id: '#ctor(VisualElement,System.String)'
+  parent: NonNonSheet.Editor.Marker
+  langs:
+  - csharp
+  - vb
+  name: Marker(VisualElement, string)
+  nameWithType: Marker.Marker(VisualElement, string)
+  fullName: NonNonSheet.Editor.Marker.Marker(VisualElement, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+    startLine: 15
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Marker(VisualElement rootVisualElement, string className)
+    parameters:
+    - id: rootVisualElement
+      type: VisualElement
+    - id: className
+      type: System.String
+    content.vb: Public Sub New(rootVisualElement As VisualElement, className As String)
+  overload: NonNonSheet.Editor.Marker.#ctor*
+  nameWithType.vb: Marker.New(VisualElement, String)
+  fullName.vb: NonNonSheet.Editor.Marker.New(VisualElement, String)
+  name.vb: New(VisualElement, String)
+- uid: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell)
+  commentId: M:NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell)
+  id: Fit(NonNonSheet.Editor.Cell)
+  parent: NonNonSheet.Editor.Marker
+  langs:
+  - csharp
+  - vb
+  name: Fit(Cell)
+  nameWithType: Marker.Fit(Cell)
+  fullName: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Fit
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+    startLine: 24
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void Fit(Cell cell)
+    parameters:
+    - id: cell
+      type: NonNonSheet.Editor.Cell
+    content.vb: Public Sub Fit(cell As Cell)
+  overload: NonNonSheet.Editor.Marker.Fit*
+- uid: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell)
+  commentId: M:NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell)
+  id: Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell)
+  parent: NonNonSheet.Editor.Marker
+  langs:
+  - csharp
+  - vb
+  name: Fit(Cell, Cell)
+  nameWithType: Marker.Fit(Cell, Cell)
+  fullName: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell, NonNonSheet.Editor.Cell)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Fit
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+    startLine: 30
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void Fit(Cell startCell, Cell endCell)
+    parameters:
+    - id: startCell
+      type: NonNonSheet.Editor.Cell
+    - id: endCell
+      type: NonNonSheet.Editor.Cell
+    content.vb: Public Sub Fit(startCell As Cell, endCell As Cell)
+  overload: NonNonSheet.Editor.Marker.Fit*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.Marker.IsVisible*
+  commentId: Overload:NonNonSheet.Editor.Marker.IsVisible
+  href: NonNonSheet.Editor.Marker.html#NonNonSheet_Editor_Marker_IsVisible
+  name: IsVisible
+  nameWithType: Marker.IsVisible
+  fullName: NonNonSheet.Editor.Marker.IsVisible
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NonNonSheet.Editor.Marker.#ctor*
+  commentId: Overload:NonNonSheet.Editor.Marker.#ctor
+  href: NonNonSheet.Editor.Marker.html#NonNonSheet_Editor_Marker__ctor_VisualElement_System_String_
+  name: Marker
+  nameWithType: Marker.Marker
+  fullName: NonNonSheet.Editor.Marker.Marker
+  nameWithType.vb: Marker.New
+  fullName.vb: NonNonSheet.Editor.Marker.New
+  name.vb: New
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: NonNonSheet.Editor.Marker.Fit*
+  commentId: Overload:NonNonSheet.Editor.Marker.Fit
+  href: NonNonSheet.Editor.Marker.html#NonNonSheet_Editor_Marker_Fit_NonNonSheet_Editor_Cell_
+  name: Fit
+  nameWithType: Marker.Fit
+  fullName: NonNonSheet.Editor.Marker.Fit
+- uid: NonNonSheet.Editor.Cell
+  commentId: T:NonNonSheet.Editor.Cell
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Cell.html
+  name: Cell
+  nameWithType: Cell
+  fullName: NonNonSheet.Editor.Cell

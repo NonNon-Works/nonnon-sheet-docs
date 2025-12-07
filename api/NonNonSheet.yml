@@ -1,0 +1,203 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  id: NonNonSheet
+  children:
+  - NonNonSheet.CellCustomAttribute
+  - NonNonSheet.ColumnMetadata
+  - NonNonSheet.IRelationalData`1
+  - NonNonSheet.IValidator`1
+  - NonNonSheet.IntSliderCellAttribute
+  - NonNonSheet.LayerCellAttribute
+  - NonNonSheet.MinMaxSliderCellAttribute
+  - NonNonSheet.NonNonTable
+  - NonNonSheet.NonNonTableAttribute
+  - NonNonSheet.NonNonTable`1
+  - NonNonSheet.ObjectCaster
+  - NonNonSheet.SliderCellAttribute
+  - NonNonSheet.TagCellAttribute
+  - NonNonSheet.ValidationResult
+  - NonNonSheet.ValidationResult.Type
+  langs:
+  - csharp
+  - vb
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+  type: Namespace
+references:
+- uid: NonNonSheet.ColumnMetadata
+  commentId: T:NonNonSheet.ColumnMetadata
+  parent: NonNonSheet
+  href: NonNonSheet.ColumnMetadata.html
+  name: ColumnMetadata
+  nameWithType: ColumnMetadata
+  fullName: NonNonSheet.ColumnMetadata
+- uid: NonNonSheet.NonNonTable
+  commentId: T:NonNonSheet.NonNonTable
+  parent: NonNonSheet
+  href: NonNonSheet.NonNonTable.html
+  name: NonNonTable
+  nameWithType: NonNonTable
+  fullName: NonNonSheet.NonNonTable
+- uid: NonNonSheet.NonNonTable`1
+  commentId: T:NonNonSheet.NonNonTable`1
+  href: NonNonSheet.NonNonTable-1.html
+  name: NonNonTable<T>
+  nameWithType: NonNonTable<T>
+  fullName: NonNonSheet.NonNonTable<T>
+  nameWithType.vb: NonNonTable(Of T)
+  fullName.vb: NonNonSheet.NonNonTable(Of T)
+  name.vb: NonNonTable(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.NonNonTable`1
+    name: NonNonTable
+    href: NonNonSheet.NonNonTable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.NonNonTable`1
+    name: NonNonTable
+    href: NonNonSheet.NonNonTable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.NonNonTableAttribute
+  commentId: T:NonNonSheet.NonNonTableAttribute
+  href: NonNonSheet.NonNonTableAttribute.html
+  name: NonNonTableAttribute
+  nameWithType: NonNonTableAttribute
+  fullName: NonNonSheet.NonNonTableAttribute
+- uid: NonNonSheet.CellCustomAttribute
+  commentId: T:NonNonSheet.CellCustomAttribute
+  parent: NonNonSheet
+  href: NonNonSheet.CellCustomAttribute.html
+  name: CellCustomAttribute
+  nameWithType: CellCustomAttribute
+  fullName: NonNonSheet.CellCustomAttribute
+- uid: NonNonSheet.LayerCellAttribute
+  commentId: T:NonNonSheet.LayerCellAttribute
+  href: NonNonSheet.LayerCellAttribute.html
+  name: LayerCellAttribute
+  nameWithType: LayerCellAttribute
+  fullName: NonNonSheet.LayerCellAttribute
+- uid: NonNonSheet.TagCellAttribute
+  commentId: T:NonNonSheet.TagCellAttribute
+  href: NonNonSheet.TagCellAttribute.html
+  name: TagCellAttribute
+  nameWithType: TagCellAttribute
+  fullName: NonNonSheet.TagCellAttribute
+- uid: NonNonSheet.SliderCellAttribute
+  commentId: T:NonNonSheet.SliderCellAttribute
+  href: NonNonSheet.SliderCellAttribute.html
+  name: SliderCellAttribute
+  nameWithType: SliderCellAttribute
+  fullName: NonNonSheet.SliderCellAttribute
+- uid: NonNonSheet.IntSliderCellAttribute
+  commentId: T:NonNonSheet.IntSliderCellAttribute
+  href: NonNonSheet.IntSliderCellAttribute.html
+  name: IntSliderCellAttribute
+  nameWithType: IntSliderCellAttribute
+  fullName: NonNonSheet.IntSliderCellAttribute
+- uid: NonNonSheet.MinMaxSliderCellAttribute
+  commentId: T:NonNonSheet.MinMaxSliderCellAttribute
+  href: NonNonSheet.MinMaxSliderCellAttribute.html
+  name: MinMaxSliderCellAttribute
+  nameWithType: MinMaxSliderCellAttribute
+  fullName: NonNonSheet.MinMaxSliderCellAttribute
+- uid: NonNonSheet.IRelationalData`1
+  commentId: T:NonNonSheet.IRelationalData`1
+  href: NonNonSheet.IRelationalData-1.html
+  name: IRelationalData<T>
+  nameWithType: IRelationalData<T>
+  fullName: NonNonSheet.IRelationalData<T>
+  nameWithType.vb: IRelationalData(Of T)
+  fullName.vb: NonNonSheet.IRelationalData(Of T)
+  name.vb: IRelationalData(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.IRelationalData`1
+    name: IRelationalData
+    href: NonNonSheet.IRelationalData-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IRelationalData`1
+    name: IRelationalData
+    href: NonNonSheet.IRelationalData-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.ObjectCaster
+  commentId: T:NonNonSheet.ObjectCaster
+  href: NonNonSheet.ObjectCaster.html
+  name: ObjectCaster
+  nameWithType: ObjectCaster
+  fullName: NonNonSheet.ObjectCaster
+- uid: NonNonSheet.IValidator`1
+  commentId: T:NonNonSheet.IValidator`1
+  href: NonNonSheet.IValidator-1.html
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: NonNonSheet.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: NonNonSheet.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
+- uid: NonNonSheet.ValidationResult.Type
+  commentId: T:NonNonSheet.ValidationResult.Type
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult.Type
+  nameWithType: ValidationResult.Type
+  fullName: NonNonSheet.ValidationResult.Type
+  spec.csharp:
+  - uid: NonNonSheet.ValidationResult
+    name: ValidationResult
+    href: NonNonSheet.ValidationResult.html
+  - name: .
+  - uid: NonNonSheet.ValidationResult.Type
+    name: Type
+    href: NonNonSheet.ValidationResult.Type.html
+  spec.vb:
+  - uid: NonNonSheet.ValidationResult
+    name: ValidationResult
+    href: NonNonSheet.ValidationResult.html
+  - name: .
+  - uid: NonNonSheet.ValidationResult.Type
+    name: Type
+    href: NonNonSheet.ValidationResult.Type.html
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet

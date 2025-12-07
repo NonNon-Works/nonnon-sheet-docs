@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.NonNonSheetSetting
+  commentId: T:NonNonSheet.Editor.NonNonSheetSetting
+  id: NonNonSheetSetting
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.NonNonSheetSetting.CollectTablesToDatabase(System.Boolean)
+  - NonNonSheet.Editor.NonNonSheetSetting.IgnoredTables
+  - NonNonSheet.Editor.NonNonSheetSetting.Save
+  - NonNonSheet.Editor.NonNonSheetSetting.Tables
+  - NonNonSheet.Editor.NonNonSheetSetting.TryGetTable(System.Type,NonNonSheet.NonNonTable@)
+  langs:
+  - csharp
+  - vb
+  name: NonNonSheetSetting
+  nameWithType: NonNonSheetSetting
+  fullName: NonNonSheet.Editor.NonNonSheetSetting
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: NonNonSheetSetting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+    startLine: 9
+  namespace: NonNonSheet.Editor
+  summary: Project-wide settings for NonNonSheet. Holds references to discovered tables and ignored tables.
+  example: []
+  syntax:
+    content: 'public class NonNonSheetSetting : ScriptableSingleton<NonNonSheetSetting>'
+    content.vb: Public Class NonNonSheetSetting Inherits ScriptableSingleton(Of NonNonSheetSetting)
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.NonNonSheetSetting.Tables
+  commentId: F:NonNonSheet.Editor.NonNonSheetSetting.Tables
+  id: Tables
+  parent: NonNonSheet.Editor.NonNonSheetSetting
+  langs:
+  - csharp
+  - vb
+  name: Tables
+  nameWithType: NonNonSheetSetting.Tables
+  fullName: NonNonSheet.Editor.NonNonSheetSetting.Tables
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Tables
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+    startLine: 15
+  namespace: NonNonSheet.Editor
+  summary: Tables discovered in the project and included in the NonNonSheet database.
+  example: []
+  syntax:
+    content: public NonNonTable[] Tables
+    return:
+      type: NonNonSheet.NonNonTable[]
+    content.vb: Public Tables As NonNonTable()
+- uid: NonNonSheet.Editor.NonNonSheetSetting.IgnoredTables
+  commentId: F:NonNonSheet.Editor.NonNonSheetSetting.IgnoredTables
+  id: IgnoredTables
+  parent: NonNonSheet.Editor.NonNonSheetSetting
+  langs:
+  - csharp
+  - vb
+  name: IgnoredTables
+  nameWithType: NonNonSheetSetting.IgnoredTables
+  fullName: NonNonSheet.Editor.NonNonSheetSetting.IgnoredTables
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IgnoredTables
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+    startLine: 20
+  namespace: NonNonSheet.Editor
+  summary: Tables that should be ignored during discovery and excluded from the database.
+  example: []
+  syntax:
+    content: public NonNonTable[] IgnoredTables
+    return:
+      type: NonNonSheet.NonNonTable[]
+    content.vb: Public IgnoredTables As NonNonTable()
+- uid: NonNonSheet.Editor.NonNonSheetSetting.Save
+  commentId: M:NonNonSheet.Editor.NonNonSheetSetting.Save
+  id: Save
+  parent: NonNonSheet.Editor.NonNonSheetSetting
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: NonNonSheetSetting.Save()
+  fullName: NonNonSheet.Editor.NonNonSheetSetting.Save()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Save
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+    startLine: 25
+  namespace: NonNonSheet.Editor
+  summary: Saves the settings asset to disk.
+  example: []
+  syntax:
+    content: public void Save()
+    content.vb: Public Sub Save()
+  overload: NonNonSheet.Editor.NonNonSheetSetting.Save*
+- uid: NonNonSheet.Editor.NonNonSheetSetting.CollectTablesToDatabase(System.Boolean)
+  commentId: M:NonNonSheet.Editor.NonNonSheetSetting.CollectTablesToDatabase(System.Boolean)
+  id: CollectTablesToDatabase(System.Boolean)
+  parent: NonNonSheet.Editor.NonNonSheetSetting
+  langs:
+  - csharp
+  - vb
+  name: CollectTablesToDatabase(bool)
+  nameWithType: NonNonSheetSetting.CollectTablesToDatabase(bool)
+  fullName: NonNonSheet.Editor.NonNonSheetSetting.CollectTablesToDatabase(bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: CollectTablesToDatabase
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+    startLine: 31
+  namespace: NonNonSheet.Editor
+  summary: Scans the project for <xref href="NonNonSheet.NonNonTable" data-throw-if-not-resolved="false"></xref> assets and populates <xref href="NonNonSheet.Editor.NonNonSheetSetting.Tables" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void CollectTablesToDatabase(bool save = true)
+    parameters:
+    - id: save
+      type: System.Boolean
+      description: If true, writes changes to disk after collection.
+    content.vb: Public Sub CollectTablesToDatabase(save As Boolean = True)
+  overload: NonNonSheet.Editor.NonNonSheetSetting.CollectTablesToDatabase*
+  nameWithType.vb: NonNonSheetSetting.CollectTablesToDatabase(Boolean)
+  fullName.vb: NonNonSheet.Editor.NonNonSheetSetting.CollectTablesToDatabase(Boolean)
+  name.vb: CollectTablesToDatabase(Boolean)
+- uid: NonNonSheet.Editor.NonNonSheetSetting.TryGetTable(System.Type,NonNonSheet.NonNonTable@)
+  commentId: M:NonNonSheet.Editor.NonNonSheetSetting.TryGetTable(System.Type,NonNonSheet.NonNonTable@)
+  id: TryGetTable(System.Type,NonNonSheet.NonNonTable@)
+  parent: NonNonSheet.Editor.NonNonSheetSetting
+  langs:
+  - csharp
+  - vb
+  name: TryGetTable(Type, out NonNonTable)
+  nameWithType: NonNonSheetSetting.TryGetTable(Type, out NonNonTable)
+  fullName: NonNonSheet.Editor.NonNonSheetSetting.TryGetTable(System.Type, out NonNonSheet.NonNonTable)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: TryGetTable
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSetting.cs
+    startLine: 47
+  namespace: NonNonSheet.Editor
+  summary: Attempts to find a table whose data type matches <code class="paramref">dataType</code>.
+  example: []
+  syntax:
+    content: public bool TryGetTable(Type dataType, out NonNonTable table)
+    parameters:
+    - id: dataType
+      type: System.Type
+      description: Runtime data type managed by the target table.
+    - id: table
+      type: NonNonSheet.NonNonTable
+      description: When found, receives the matching table.
+    return:
+      type: System.Boolean
+      description: True if a matching table exists; otherwise false.
+    content.vb: Public Function TryGetTable(dataType As Type, table As NonNonTable) As Boolean
+  overload: NonNonSheet.Editor.NonNonSheetSetting.TryGetTable*
+  nameWithType.vb: NonNonSheetSetting.TryGetTable(Type, NonNonTable)
+  fullName.vb: NonNonSheet.Editor.NonNonSheetSetting.TryGetTable(System.Type, NonNonSheet.NonNonTable)
+  name.vb: TryGetTable(Type, NonNonTable)
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.NonNonTable[]
+  isExternal: true
+  href: NonNonSheet.NonNonTable.html
+  name: NonNonTable[]
+  nameWithType: NonNonTable[]
+  fullName: NonNonSheet.NonNonTable[]
+  nameWithType.vb: NonNonTable()
+  fullName.vb: NonNonSheet.NonNonTable()
+  name.vb: NonNonTable()
+  spec.csharp:
+  - uid: NonNonSheet.NonNonTable
+    name: NonNonTable
+    href: NonNonSheet.NonNonTable.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: NonNonSheet.NonNonTable
+    name: NonNonTable
+    href: NonNonSheet.NonNonTable.html
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.NonNonSheetSetting.Save*
+  commentId: Overload:NonNonSheet.Editor.NonNonSheetSetting.Save
+  href: NonNonSheet.Editor.NonNonSheetSetting.html#NonNonSheet_Editor_NonNonSheetSetting_Save
+  name: Save
+  nameWithType: NonNonSheetSetting.Save
+  fullName: NonNonSheet.Editor.NonNonSheetSetting.Save
+- uid: NonNonSheet.NonNonTable
+  commentId: T:NonNonSheet.NonNonTable
+  parent: NonNonSheet
+  href: NonNonSheet.NonNonTable.html
+  name: NonNonTable
+  nameWithType: NonNonTable
+  fullName: NonNonSheet.NonNonTable
+- uid: NonNonSheet.Editor.NonNonSheetSetting.Tables
+  commentId: F:NonNonSheet.Editor.NonNonSheetSetting.Tables
+  href: NonNonSheet.Editor.NonNonSheetSetting.html#NonNonSheet_Editor_NonNonSheetSetting_Tables
+  name: Tables
+  nameWithType: NonNonSheetSetting.Tables
+  fullName: NonNonSheet.Editor.NonNonSheetSetting.Tables
+- uid: NonNonSheet.Editor.NonNonSheetSetting.CollectTablesToDatabase*
+  commentId: Overload:NonNonSheet.Editor.NonNonSheetSetting.CollectTablesToDatabase
+  href: NonNonSheet.Editor.NonNonSheetSetting.html#NonNonSheet_Editor_NonNonSheetSetting_CollectTablesToDatabase_System_Boolean_
+  name: CollectTablesToDatabase
+  nameWithType: NonNonSheetSetting.CollectTablesToDatabase
+  fullName: NonNonSheet.Editor.NonNonSheetSetting.CollectTablesToDatabase
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Editor.NonNonSheetSetting.TryGetTable*
+  commentId: Overload:NonNonSheet.Editor.NonNonSheetSetting.TryGetTable
+  href: NonNonSheet.Editor.NonNonSheetSetting.html#NonNonSheet_Editor_NonNonSheetSetting_TryGetTable_System_Type_NonNonSheet_NonNonTable__
+  name: TryGetTable
+  nameWithType: NonNonSheetSetting.TryGetTable
+  fullName: NonNonSheet.Editor.NonNonSheetSetting.TryGetTable
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

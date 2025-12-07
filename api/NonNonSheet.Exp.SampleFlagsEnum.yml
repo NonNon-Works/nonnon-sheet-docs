@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.SampleFlagsEnum
+  commentId: T:NonNonSheet.Exp.SampleFlagsEnum
+  id: SampleFlagsEnum
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.SampleFlagsEnum.One
+  - NonNonSheet.Exp.SampleFlagsEnum.Three
+  - NonNonSheet.Exp.SampleFlagsEnum.Two
+  langs:
+  - csharp
+  - vb
+  name: SampleFlagsEnum
+  nameWithType: SampleFlagsEnum
+  fullName: NonNonSheet.Exp.SampleFlagsEnum
+  type: Enum
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SampleFlagsEnum
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 79
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum SampleFlagsEnum
+    content.vb: >-
+      <Flags>
+
+      Public Enum SampleFlagsEnum
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: NonNonSheet.Exp.SampleFlagsEnum.One
+  commentId: F:NonNonSheet.Exp.SampleFlagsEnum.One
+  id: One
+  parent: NonNonSheet.Exp.SampleFlagsEnum
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: SampleFlagsEnum.One
+  fullName: NonNonSheet.Exp.SampleFlagsEnum.One
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: One
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 82
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: One = 1
+    return:
+      type: NonNonSheet.Exp.SampleFlagsEnum
+- uid: NonNonSheet.Exp.SampleFlagsEnum.Two
+  commentId: F:NonNonSheet.Exp.SampleFlagsEnum.Two
+  id: Two
+  parent: NonNonSheet.Exp.SampleFlagsEnum
+  langs:
+  - csharp
+  - vb
+  name: Two
+  nameWithType: SampleFlagsEnum.Two
+  fullName: NonNonSheet.Exp.SampleFlagsEnum.Two
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Two
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 83
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: Two = 2
+    return:
+      type: NonNonSheet.Exp.SampleFlagsEnum
+- uid: NonNonSheet.Exp.SampleFlagsEnum.Three
+  commentId: F:NonNonSheet.Exp.SampleFlagsEnum.Three
+  id: Three
+  parent: NonNonSheet.Exp.SampleFlagsEnum
+  langs:
+  - csharp
+  - vb
+  name: Three
+  nameWithType: SampleFlagsEnum.Three
+  fullName: NonNonSheet.Exp.SampleFlagsEnum.Three
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Three
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 84
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: Three = 4
+    return:
+      type: NonNonSheet.Exp.SampleFlagsEnum
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.Exp.SampleFlagsEnum
+  commentId: T:NonNonSheet.Exp.SampleFlagsEnum
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SampleFlagsEnum.html
+  name: SampleFlagsEnum
+  nameWithType: SampleFlagsEnum
+  fullName: NonNonSheet.Exp.SampleFlagsEnum

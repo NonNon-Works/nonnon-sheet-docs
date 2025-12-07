@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.SampleEnum
+  commentId: T:NonNonSheet.Exp.SampleEnum
+  id: SampleEnum
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.SampleEnum.One
+  - NonNonSheet.Exp.SampleEnum.Three
+  - NonNonSheet.Exp.SampleEnum.Two
+  langs:
+  - csharp
+  - vb
+  name: SampleEnum
+  nameWithType: SampleEnum
+  fullName: NonNonSheet.Exp.SampleEnum
+  type: Enum
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SampleEnum
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 72
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public enum SampleEnum
+    content.vb: Public Enum SampleEnum
+- uid: NonNonSheet.Exp.SampleEnum.One
+  commentId: F:NonNonSheet.Exp.SampleEnum.One
+  id: One
+  parent: NonNonSheet.Exp.SampleEnum
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: SampleEnum.One
+  fullName: NonNonSheet.Exp.SampleEnum.One
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: One
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 74
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: One = 0
+    return:
+      type: NonNonSheet.Exp.SampleEnum
+- uid: NonNonSheet.Exp.SampleEnum.Two
+  commentId: F:NonNonSheet.Exp.SampleEnum.Two
+  id: Two
+  parent: NonNonSheet.Exp.SampleEnum
+  langs:
+  - csharp
+  - vb
+  name: Two
+  nameWithType: SampleEnum.Two
+  fullName: NonNonSheet.Exp.SampleEnum.Two
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Two
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 75
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: Two = 1
+    return:
+      type: NonNonSheet.Exp.SampleEnum
+- uid: NonNonSheet.Exp.SampleEnum.Three
+  commentId: F:NonNonSheet.Exp.SampleEnum.Three
+  id: Three
+  parent: NonNonSheet.Exp.SampleEnum
+  langs:
+  - csharp
+  - vb
+  name: Three
+  nameWithType: SampleEnum.Three
+  fullName: NonNonSheet.Exp.SampleEnum.Three
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Three
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 76
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: Three = 2
+    return:
+      type: NonNonSheet.Exp.SampleEnum
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.Exp.SampleEnum
+  commentId: T:NonNonSheet.Exp.SampleEnum
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SampleEnum.html
+  name: SampleEnum
+  nameWithType: SampleEnum
+  fullName: NonNonSheet.Exp.SampleEnum

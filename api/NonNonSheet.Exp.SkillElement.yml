@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.SkillElement
+  commentId: T:NonNonSheet.Exp.SkillElement
+  id: SkillElement
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.SkillElement.Fire
+  - NonNonSheet.Exp.SkillElement.Thunder
+  - NonNonSheet.Exp.SkillElement.Water
+  langs:
+  - csharp
+  - vb
+  name: SkillElement
+  nameWithType: SkillElement
+  fullName: NonNonSheet.Exp.SkillElement
+  type: Enum
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/SkillTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SkillElement
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/SkillTable.cs
+    startLine: 35
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public enum SkillElement
+    content.vb: Public Enum SkillElement
+- uid: NonNonSheet.Exp.SkillElement.Fire
+  commentId: F:NonNonSheet.Exp.SkillElement.Fire
+  id: Fire
+  parent: NonNonSheet.Exp.SkillElement
+  langs:
+  - csharp
+  - vb
+  name: Fire
+  nameWithType: SkillElement.Fire
+  fullName: NonNonSheet.Exp.SkillElement.Fire
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/SkillTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Fire
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/SkillTable.cs
+    startLine: 37
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: Fire = 0
+    return:
+      type: NonNonSheet.Exp.SkillElement
+- uid: NonNonSheet.Exp.SkillElement.Water
+  commentId: F:NonNonSheet.Exp.SkillElement.Water
+  id: Water
+  parent: NonNonSheet.Exp.SkillElement
+  langs:
+  - csharp
+  - vb
+  name: Water
+  nameWithType: SkillElement.Water
+  fullName: NonNonSheet.Exp.SkillElement.Water
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/SkillTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Water
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/SkillTable.cs
+    startLine: 38
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: Water = 1
+    return:
+      type: NonNonSheet.Exp.SkillElement
+- uid: NonNonSheet.Exp.SkillElement.Thunder
+  commentId: F:NonNonSheet.Exp.SkillElement.Thunder
+  id: Thunder
+  parent: NonNonSheet.Exp.SkillElement
+  langs:
+  - csharp
+  - vb
+  name: Thunder
+  nameWithType: SkillElement.Thunder
+  fullName: NonNonSheet.Exp.SkillElement.Thunder
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/SkillTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Thunder
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/04_DocSample/SkillTable.cs
+    startLine: 39
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: Thunder = 2
+    return:
+      type: NonNonSheet.Exp.SkillElement
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.Exp.SkillElement
+  commentId: T:NonNonSheet.Exp.SkillElement
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SkillElement.html
+  name: SkillElement
+  nameWithType: SkillElement
+  fullName: NonNonSheet.Exp.SkillElement

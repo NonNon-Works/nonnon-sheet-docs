@@ -1,0 +1,715 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1
+  commentId: T:NonNonSheet.Editor.MultiSelectDropdownField`1
+  id: MultiSelectDropdownField`1
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.MultiSelectDropdownField`1.#ctor
+  - NonNonSheet.Editor.MultiSelectDropdownField`1.#ctor(System.String)
+  - NonNonSheet.Editor.MultiSelectDropdownField`1.BindProperty(SerializedProperty)
+  - NonNonSheet.Editor.MultiSelectDropdownField`1.Choices
+  - NonNonSheet.Editor.MultiSelectDropdownField`1.LabelFormatter
+  - NonNonSheet.Editor.MultiSelectDropdownField`1.Selected
+  - NonNonSheet.Editor.MultiSelectDropdownField`1.SetValueWithoutNotify(`0[])
+  - NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty
+  - NonNonSheet.Editor.MultiSelectDropdownField`1.label
+  - NonNonSheet.Editor.MultiSelectDropdownField`1.value
+  langs:
+  - csharp
+  - vb
+  name: MultiSelectDropdownField<T>
+  nameWithType: MultiSelectDropdownField<T>
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: MultiSelectDropdownField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 10
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class MultiSelectDropdownField<T> : BindableElement, INotifyValueChanged<T[]>'
+    typeParameters:
+    - id: T
+    content.vb: Public Class MultiSelectDropdownField(Of T) Inherits BindableElement Implements INotifyValueChanged(Of T())
+  inheritance:
+  - System.Object
+  implements:
+  - INotifyValueChanged{{T}[]}
+  nameWithType.vb: MultiSelectDropdownField(Of T)
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T)
+  name.vb: MultiSelectDropdownField(Of T)
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.#ctor
+  commentId: M:NonNonSheet.Editor.MultiSelectDropdownField`1.#ctor
+  id: '#ctor'
+  parent: NonNonSheet.Editor.MultiSelectDropdownField`1
+  langs:
+  - csharp
+  - vb
+  name: MultiSelectDropdownField()
+  nameWithType: MultiSelectDropdownField<T>.MultiSelectDropdownField()
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.MultiSelectDropdownField()
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 27
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public MultiSelectDropdownField()
+    content.vb: Public Sub New()
+  overload: NonNonSheet.Editor.MultiSelectDropdownField`1.#ctor*
+  nameWithType.vb: MultiSelectDropdownField(Of T).New()
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).New()
+  name.vb: New()
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.#ctor(System.String)
+  commentId: M:NonNonSheet.Editor.MultiSelectDropdownField`1.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: NonNonSheet.Editor.MultiSelectDropdownField`1
+  langs:
+  - csharp
+  - vb
+  name: MultiSelectDropdownField(string)
+  nameWithType: MultiSelectDropdownField<T>.MultiSelectDropdownField(string)
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.MultiSelectDropdownField(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 29
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public MultiSelectDropdownField(string label)
+    parameters:
+    - id: label
+      type: System.String
+    content.vb: Public Sub New(label As String)
+  overload: NonNonSheet.Editor.MultiSelectDropdownField`1.#ctor*
+  nameWithType.vb: MultiSelectDropdownField(Of T).New(String)
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).New(String)
+  name.vb: New(String)
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.label
+  commentId: P:NonNonSheet.Editor.MultiSelectDropdownField`1.label
+  id: label
+  parent: NonNonSheet.Editor.MultiSelectDropdownField`1
+  langs:
+  - csharp
+  - vb
+  name: label
+  nameWithType: MultiSelectDropdownField<T>.label
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.label
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: label
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 64
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public string label { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property label As String
+  overload: NonNonSheet.Editor.MultiSelectDropdownField`1.label*
+  nameWithType.vb: MultiSelectDropdownField(Of T).label
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).label
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.Choices
+  commentId: P:NonNonSheet.Editor.MultiSelectDropdownField`1.Choices
+  id: Choices
+  parent: NonNonSheet.Editor.MultiSelectDropdownField`1
+  langs:
+  - csharp
+  - vb
+  name: Choices
+  nameWithType: MultiSelectDropdownField<T>.Choices
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.Choices
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Choices
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 85
+  namespace: NonNonSheet.Editor
+  summary: 選択可能な要素の一覧。
+  example: []
+  syntax:
+    content: public List<T> Choices { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public Property Choices As List(Of T)
+  overload: NonNonSheet.Editor.MultiSelectDropdownField`1.Choices*
+  nameWithType.vb: MultiSelectDropdownField(Of T).Choices
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).Choices
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.LabelFormatter
+  commentId: P:NonNonSheet.Editor.MultiSelectDropdownField`1.LabelFormatter
+  id: LabelFormatter
+  parent: NonNonSheet.Editor.MultiSelectDropdownField`1
+  langs:
+  - csharp
+  - vb
+  name: LabelFormatter
+  nameWithType: MultiSelectDropdownField<T>.LabelFormatter
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.LabelFormatter
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: LabelFormatter
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 101
+  namespace: NonNonSheet.Editor
+  summary: 値を表示用の文字列に変換するためのフォーマッタ。
+  example: []
+  syntax:
+    content: public Func<T, string> LabelFormatter { get; set; }
+    parameters: []
+    return:
+      type: System.Func{{T},System.String}
+    content.vb: Public Property LabelFormatter As Func(Of T, String)
+  overload: NonNonSheet.Editor.MultiSelectDropdownField`1.LabelFormatter*
+  nameWithType.vb: MultiSelectDropdownField(Of T).LabelFormatter
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).LabelFormatter
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.Selected
+  commentId: P:NonNonSheet.Editor.MultiSelectDropdownField`1.Selected
+  id: Selected
+  parent: NonNonSheet.Editor.MultiSelectDropdownField`1
+  langs:
+  - csharp
+  - vb
+  name: Selected
+  nameWithType: MultiSelectDropdownField<T>.Selected
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.Selected
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Selected
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 114
+  namespace: NonNonSheet.Editor
+  summary: 便宜上、選択状態を List として取得／設定できるプロパティ。
+  example: []
+  syntax:
+    content: public List<T> Selected { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public Property Selected As List(Of T)
+  overload: NonNonSheet.Editor.MultiSelectDropdownField`1.Selected*
+  nameWithType.vb: MultiSelectDropdownField(Of T).Selected
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).Selected
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.value
+  commentId: P:NonNonSheet.Editor.MultiSelectDropdownField`1.value
+  id: value
+  parent: NonNonSheet.Editor.MultiSelectDropdownField`1
+  langs:
+  - csharp
+  - vb
+  name: value
+  nameWithType: MultiSelectDropdownField<T>.value
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.value
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: value
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 121
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public T[] value { get; set; }
+    parameters: []
+    return:
+      type: '{T}[]'
+    content.vb: Public Property value As T()
+  overload: NonNonSheet.Editor.MultiSelectDropdownField`1.value*
+  nameWithType.vb: MultiSelectDropdownField(Of T).value
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).value
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.SetValueWithoutNotify(`0[])
+  commentId: M:NonNonSheet.Editor.MultiSelectDropdownField`1.SetValueWithoutNotify(`0[])
+  id: SetValueWithoutNotify(`0[])
+  parent: NonNonSheet.Editor.MultiSelectDropdownField`1
+  langs:
+  - csharp
+  - vb
+  name: SetValueWithoutNotify(T[])
+  nameWithType: MultiSelectDropdownField<T>.SetValueWithoutNotify(T[])
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.SetValueWithoutNotify(T[])
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SetValueWithoutNotify
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 136
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void SetValueWithoutNotify(T[] newValue)
+    parameters:
+    - id: newValue
+      type: '{T}[]'
+    content.vb: Public Sub SetValueWithoutNotify(newValue As T())
+  overload: NonNonSheet.Editor.MultiSelectDropdownField`1.SetValueWithoutNotify*
+  nameWithType.vb: MultiSelectDropdownField(Of T).SetValueWithoutNotify(T())
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).SetValueWithoutNotify(T())
+  name.vb: SetValueWithoutNotify(T())
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.BindProperty(SerializedProperty)
+  commentId: M:NonNonSheet.Editor.MultiSelectDropdownField`1.BindProperty(SerializedProperty)
+  id: BindProperty(SerializedProperty)
+  parent: NonNonSheet.Editor.MultiSelectDropdownField`1
+  langs:
+  - csharp
+  - vb
+  name: BindProperty(SerializedProperty)
+  nameWithType: MultiSelectDropdownField<T>.BindProperty(SerializedProperty)
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.BindProperty(SerializedProperty)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: BindProperty
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 246
+  namespace: NonNonSheet.Editor
+  summary: >-
+    このフィールドを、T の配列／List を表す SerializedProperty にバインドします。
+
+    このインスタンスメソッドは拡張メソッドを意図的に隠蔽しているため、
+
+    呼び出し側は通常どおり field.BindProperty(property) を使用できます。
+  example: []
+  syntax:
+    content: public void BindProperty(SerializedProperty property)
+    parameters:
+    - id: property
+      type: SerializedProperty
+    content.vb: Public Sub BindProperty([property] As SerializedProperty)
+  overload: NonNonSheet.Editor.MultiSelectDropdownField`1.BindProperty*
+  nameWithType.vb: MultiSelectDropdownField(Of T).BindProperty(SerializedProperty)
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).BindProperty(SerializedProperty)
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty
+  commentId: M:NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty
+  id: UnbindProperty
+  parent: NonNonSheet.Editor.MultiSelectDropdownField`1
+  langs:
+  - csharp
+  - vb
+  name: UnbindProperty()
+  nameWithType: MultiSelectDropdownField<T>.UnbindProperty()
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.UnbindProperty()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: UnbindProperty
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 272
+  namespace: NonNonSheet.Editor
+  summary: BindProperty により設定されたアクティブなバインディングを解除します。
+  example: []
+  syntax:
+    content: public void UnbindProperty()
+    content.vb: Public Sub UnbindProperty()
+  overload: NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty*
+  nameWithType.vb: MultiSelectDropdownField(Of T).UnbindProperty()
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).UnbindProperty()
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: INotifyValueChanged{{T}[]}
+  commentId: '!:INotifyValueChanged{`0[]}'
+  definition: INotifyValueChanged`1
+  name: INotifyValueChanged<T[]>
+  nameWithType: INotifyValueChanged<T[]>
+  fullName: INotifyValueChanged<T[]>
+  nameWithType.vb: INotifyValueChanged(Of T())
+  fullName.vb: INotifyValueChanged(Of T())
+  name.vb: INotifyValueChanged(Of T())
+  spec.csharp:
+  - uid: INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: (
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: INotifyValueChanged`1
+  isExternal: true
+  name: INotifyValueChanged<>
+  nameWithType: INotifyValueChanged<>
+  fullName: INotifyValueChanged<>
+  nameWithType.vb: INotifyValueChanged(Of )
+  fullName.vb: INotifyValueChanged(Of )
+  name.vb: INotifyValueChanged(Of )
+  spec.csharp:
+  - uid: INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: INotifyValueChanged`1
+    name: INotifyValueChanged
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.#ctor*
+  commentId: Overload:NonNonSheet.Editor.MultiSelectDropdownField`1.#ctor
+  href: NonNonSheet.Editor.MultiSelectDropdownField-1.html#NonNonSheet_Editor_MultiSelectDropdownField_1__ctor
+  name: MultiSelectDropdownField
+  nameWithType: MultiSelectDropdownField<T>.MultiSelectDropdownField
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.MultiSelectDropdownField
+  nameWithType.vb: MultiSelectDropdownField(Of T).New
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.label*
+  commentId: Overload:NonNonSheet.Editor.MultiSelectDropdownField`1.label
+  href: NonNonSheet.Editor.MultiSelectDropdownField-1.html#NonNonSheet_Editor_MultiSelectDropdownField_1_label
+  name: label
+  nameWithType: MultiSelectDropdownField<T>.label
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.label
+  nameWithType.vb: MultiSelectDropdownField(Of T).label
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).label
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.Choices*
+  commentId: Overload:NonNonSheet.Editor.MultiSelectDropdownField`1.Choices
+  href: NonNonSheet.Editor.MultiSelectDropdownField-1.html#NonNonSheet_Editor_MultiSelectDropdownField_1_Choices
+  name: Choices
+  nameWithType: MultiSelectDropdownField<T>.Choices
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.Choices
+  nameWithType.vb: MultiSelectDropdownField(Of T).Choices
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).Choices
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.LabelFormatter*
+  commentId: Overload:NonNonSheet.Editor.MultiSelectDropdownField`1.LabelFormatter
+  href: NonNonSheet.Editor.MultiSelectDropdownField-1.html#NonNonSheet_Editor_MultiSelectDropdownField_1_LabelFormatter
+  name: LabelFormatter
+  nameWithType: MultiSelectDropdownField<T>.LabelFormatter
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.LabelFormatter
+  nameWithType.vb: MultiSelectDropdownField(Of T).LabelFormatter
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).LabelFormatter
+- uid: System.Func{{T},System.String}
+  commentId: T:System.Func{`0,System.String}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, string>
+  nameWithType: Func<T, string>
+  fullName: System.Func<T, string>
+  nameWithType.vb: Func(Of T, String)
+  fullName.vb: System.Func(Of T, String)
+  name.vb: Func(Of T, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.Selected*
+  commentId: Overload:NonNonSheet.Editor.MultiSelectDropdownField`1.Selected
+  href: NonNonSheet.Editor.MultiSelectDropdownField-1.html#NonNonSheet_Editor_MultiSelectDropdownField_1_Selected
+  name: Selected
+  nameWithType: MultiSelectDropdownField<T>.Selected
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.Selected
+  nameWithType.vb: MultiSelectDropdownField(Of T).Selected
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).Selected
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.value*
+  commentId: Overload:NonNonSheet.Editor.MultiSelectDropdownField`1.value
+  href: NonNonSheet.Editor.MultiSelectDropdownField-1.html#NonNonSheet_Editor_MultiSelectDropdownField_1_value
+  name: value
+  nameWithType: MultiSelectDropdownField<T>.value
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.value
+  nameWithType.vb: MultiSelectDropdownField(Of T).value
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).value
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.SetValueWithoutNotify*
+  commentId: Overload:NonNonSheet.Editor.MultiSelectDropdownField`1.SetValueWithoutNotify
+  href: NonNonSheet.Editor.MultiSelectDropdownField-1.html#NonNonSheet_Editor_MultiSelectDropdownField_1_SetValueWithoutNotify__0___
+  name: SetValueWithoutNotify
+  nameWithType: MultiSelectDropdownField<T>.SetValueWithoutNotify
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.SetValueWithoutNotify
+  nameWithType.vb: MultiSelectDropdownField(Of T).SetValueWithoutNotify
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).SetValueWithoutNotify
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.BindProperty*
+  commentId: Overload:NonNonSheet.Editor.MultiSelectDropdownField`1.BindProperty
+  href: NonNonSheet.Editor.MultiSelectDropdownField-1.html#NonNonSheet_Editor_MultiSelectDropdownField_1_BindProperty_SerializedProperty_
+  name: BindProperty
+  nameWithType: MultiSelectDropdownField<T>.BindProperty
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.BindProperty
+  nameWithType.vb: MultiSelectDropdownField(Of T).BindProperty
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).BindProperty
+- uid: SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: SerializedProperty
+- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty*
+  commentId: Overload:NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty
+  href: NonNonSheet.Editor.MultiSelectDropdownField-1.html#NonNonSheet_Editor_MultiSelectDropdownField_1_UnbindProperty
+  name: UnbindProperty
+  nameWithType: MultiSelectDropdownField<T>.UnbindProperty
+  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.UnbindProperty
+  nameWithType.vb: MultiSelectDropdownField(Of T).UnbindProperty
+  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).UnbindProperty

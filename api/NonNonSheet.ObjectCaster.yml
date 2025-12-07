@@ -1,0 +1,401 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.ObjectCaster
+  commentId: T:NonNonSheet.ObjectCaster
+  id: ObjectCaster
+  parent: NonNonSheet
+  children:
+  - NonNonSheet.ObjectCaster.Cast(System.Object,System.Type)
+  - NonNonSheet.ObjectCaster.Cast``1(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ObjectCaster
+  nameWithType: ObjectCaster
+  fullName: NonNonSheet.ObjectCaster
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Utilities/ObjectCaster.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ObjectCaster
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Utilities/ObjectCaster.cs
+    startLine: 9
+  namespace: NonNonSheet
+  summary: Provides culture-invariant object-to-type conversion helpers used by NonNonSheet.
+  example: []
+  syntax:
+    content: public static class ObjectCaster
+    content.vb: Public Module ObjectCaster
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NonNonSheet.ObjectCaster.Cast``1(System.Object)
+  commentId: M:NonNonSheet.ObjectCaster.Cast``1(System.Object)
+  id: Cast``1(System.Object)
+  parent: NonNonSheet.ObjectCaster
+  langs:
+  - csharp
+  - vb
+  name: Cast<T>(object)
+  nameWithType: ObjectCaster.Cast<T>(object)
+  fullName: NonNonSheet.ObjectCaster.Cast<T>(object)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Utilities/ObjectCaster.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Cast
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Utilities/ObjectCaster.cs
+    startLine: 18
+  namespace: NonNonSheet
+  summary: Converts <code class="paramref">value</code> to <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: public static T Cast<T>(object value)
+    parameters:
+    - id: value
+      type: System.Object
+      description: Source value.
+    typeParameters:
+    - id: T
+      description: Target type.
+    return:
+      type: '{T}'
+      description: The converted value.
+    content.vb: Public Shared Function Cast(Of T)(value As Object) As T
+  overload: NonNonSheet.ObjectCaster.Cast*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: Thrown when the value cannot be converted.
+  nameWithType.vb: ObjectCaster.Cast(Of T)(Object)
+  fullName.vb: NonNonSheet.ObjectCaster.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+- uid: NonNonSheet.ObjectCaster.Cast(System.Object,System.Type)
+  commentId: M:NonNonSheet.ObjectCaster.Cast(System.Object,System.Type)
+  id: Cast(System.Object,System.Type)
+  parent: NonNonSheet.ObjectCaster
+  langs:
+  - csharp
+  - vb
+  name: Cast(object, Type)
+  nameWithType: ObjectCaster.Cast(object, Type)
+  fullName: NonNonSheet.ObjectCaster.Cast(object, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Utilities/ObjectCaster.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Cast
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Utilities/ObjectCaster.cs
+    startLine: 30
+  namespace: NonNonSheet
+  summary: Converts <code class="paramref">value</code> to the specified <code class="paramref">targetType</code>.
+  example: []
+  syntax:
+    content: public static object Cast(object value, Type targetType)
+    parameters:
+    - id: value
+      type: System.Object
+      description: Source value.
+    - id: targetType
+      type: System.Type
+      description: Desired target type.
+    return:
+      type: System.Object
+      description: The converted value, or default for value types when <code>null</code> is provided and the target is nullable.
+    content.vb: Public Shared Function Cast(value As Object, targetType As Type) As Object
+  overload: NonNonSheet.ObjectCaster.Cast*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: Thrown when the value cannot be converted.
+  nameWithType.vb: ObjectCaster.Cast(Object, Type)
+  fullName.vb: NonNonSheet.ObjectCaster.Cast(Object, System.Type)
+  name.vb: Cast(Object, Type)
+references:
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
+- uid: NonNonSheet.ObjectCaster.Cast*
+  commentId: Overload:NonNonSheet.ObjectCaster.Cast
+  href: NonNonSheet.ObjectCaster.html#NonNonSheet_ObjectCaster_Cast__1_System_Object_
+  name: Cast
+  nameWithType: ObjectCaster.Cast
+  fullName: NonNonSheet.ObjectCaster.Cast
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

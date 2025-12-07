@@ -1,0 +1,191 @@
+### YamlMime:ManagedReference
+items:
+- uid: Exp.Editor
+  commentId: N:Exp.Editor
+  id: Exp.Editor
+  children:
+  - Exp.Editor.TestData
+  - Exp.Editor.TestDataForEnum`1
+  - Exp.Editor.TestElement`1
+  - Exp.Editor.TestEnum
+  - Exp.Editor.TestGoElement
+  - Exp.Editor.TestIntElemenet
+  - Exp.Editor.TestSo
+  - Exp.Editor.UITKPlayGround
+  - Exp.Editor.UITKPlayGround.EnumElem`1
+  - Exp.Editor.UITKPlayGround.TestEnumElem
+  langs:
+  - csharp
+  - vb
+  name: Exp.Editor
+  nameWithType: Exp.Editor
+  fullName: Exp.Editor
+  type: Namespace
+  assemblies:
+  - NonNonSheet.Exp.Editor
+references:
+- uid: Exp.Editor.TestSo
+  commentId: T:Exp.Editor.TestSo
+  href: Exp.Editor.TestSo.html
+  name: TestSo
+  nameWithType: TestSo
+  fullName: Exp.Editor.TestSo
+- uid: Exp.Editor.TestData
+  commentId: T:Exp.Editor.TestData
+  parent: Exp.Editor
+  href: Exp.Editor.TestData.html
+  name: TestData
+  nameWithType: TestData
+  fullName: Exp.Editor.TestData
+- uid: Exp.Editor.TestDataForEnum`1
+  commentId: T:Exp.Editor.TestDataForEnum`1
+  href: Exp.Editor.TestDataForEnum-1.html
+  name: TestDataForEnum<T>
+  nameWithType: TestDataForEnum<T>
+  fullName: Exp.Editor.TestDataForEnum<T>
+  nameWithType.vb: TestDataForEnum(Of T)
+  fullName.vb: Exp.Editor.TestDataForEnum(Of T)
+  name.vb: TestDataForEnum(Of T)
+  spec.csharp:
+  - uid: Exp.Editor.TestDataForEnum`1
+    name: TestDataForEnum
+    href: Exp.Editor.TestDataForEnum-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Exp.Editor.TestDataForEnum`1
+    name: TestDataForEnum
+    href: Exp.Editor.TestDataForEnum-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Exp.Editor.TestEnum
+  commentId: T:Exp.Editor.TestEnum
+  parent: Exp.Editor
+  href: Exp.Editor.TestEnum.html
+  name: TestEnum
+  nameWithType: TestEnum
+  fullName: Exp.Editor.TestEnum
+- uid: Exp.Editor.TestElement`1
+  commentId: T:Exp.Editor.TestElement`1
+  href: Exp.Editor.TestElement-1.html
+  name: TestElement<T>
+  nameWithType: TestElement<T>
+  fullName: Exp.Editor.TestElement<T>
+  nameWithType.vb: TestElement(Of T)
+  fullName.vb: Exp.Editor.TestElement(Of T)
+  name.vb: TestElement(Of T)
+  spec.csharp:
+  - uid: Exp.Editor.TestElement`1
+    name: TestElement
+    href: Exp.Editor.TestElement-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Exp.Editor.TestElement`1
+    name: TestElement
+    href: Exp.Editor.TestElement-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Exp.Editor.TestIntElemenet
+  commentId: T:Exp.Editor.TestIntElemenet
+  href: Exp.Editor.TestIntElemenet.html
+  name: TestIntElemenet
+  nameWithType: TestIntElemenet
+  fullName: Exp.Editor.TestIntElemenet
+- uid: Exp.Editor.TestGoElement
+  commentId: T:Exp.Editor.TestGoElement
+  href: Exp.Editor.TestGoElement.html
+  name: TestGoElement
+  nameWithType: TestGoElement
+  fullName: Exp.Editor.TestGoElement
+- uid: Exp.Editor.UITKPlayGround
+  commentId: T:Exp.Editor.UITKPlayGround
+  href: Exp.Editor.UITKPlayGround.html
+  name: UITKPlayGround
+  nameWithType: UITKPlayGround
+  fullName: Exp.Editor.UITKPlayGround
+- uid: Exp.Editor.UITKPlayGround.TestEnumElem
+  commentId: T:Exp.Editor.UITKPlayGround.TestEnumElem
+  href: Exp.Editor.UITKPlayGround.html
+  name: UITKPlayGround.TestEnumElem
+  nameWithType: UITKPlayGround.TestEnumElem
+  fullName: Exp.Editor.UITKPlayGround.TestEnumElem
+  spec.csharp:
+  - uid: Exp.Editor.UITKPlayGround
+    name: UITKPlayGround
+    href: Exp.Editor.UITKPlayGround.html
+  - name: .
+  - uid: Exp.Editor.UITKPlayGround.TestEnumElem
+    name: TestEnumElem
+    href: Exp.Editor.UITKPlayGround.TestEnumElem.html
+  spec.vb:
+  - uid: Exp.Editor.UITKPlayGround
+    name: UITKPlayGround
+    href: Exp.Editor.UITKPlayGround.html
+  - name: .
+  - uid: Exp.Editor.UITKPlayGround.TestEnumElem
+    name: TestEnumElem
+    href: Exp.Editor.UITKPlayGround.TestEnumElem.html
+- uid: Exp.Editor.UITKPlayGround.EnumElem`1
+  commentId: T:Exp.Editor.UITKPlayGround.EnumElem`1
+  href: Exp.Editor.UITKPlayGround.html
+  name: UITKPlayGround.EnumElem<T>
+  nameWithType: UITKPlayGround.EnumElem<T>
+  fullName: Exp.Editor.UITKPlayGround.EnumElem<T>
+  nameWithType.vb: UITKPlayGround.EnumElem(Of T)
+  fullName.vb: Exp.Editor.UITKPlayGround.EnumElem(Of T)
+  name.vb: UITKPlayGround.EnumElem(Of T)
+  spec.csharp:
+  - uid: Exp.Editor.UITKPlayGround
+    name: UITKPlayGround
+    href: Exp.Editor.UITKPlayGround.html
+  - name: .
+  - uid: Exp.Editor.UITKPlayGround.EnumElem`1
+    name: EnumElem
+    href: Exp.Editor.UITKPlayGround.EnumElem-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Exp.Editor.UITKPlayGround
+    name: UITKPlayGround
+    href: Exp.Editor.UITKPlayGround.html
+  - name: .
+  - uid: Exp.Editor.UITKPlayGround.EnumElem`1
+    name: EnumElem
+    href: Exp.Editor.UITKPlayGround.EnumElem-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Exp.Editor
+  commentId: N:Exp.Editor
+  href: Exp.html
+  name: Exp.Editor
+  nameWithType: Exp.Editor
+  fullName: Exp.Editor
+  spec.csharp:
+  - uid: Exp
+    name: Exp
+    href: Exp.html
+  - name: .
+  - uid: Exp.Editor
+    name: Editor
+    href: Exp.Editor.html
+  spec.vb:
+  - uid: Exp
+    name: Exp
+    href: Exp.html
+  - name: .
+  - uid: Exp.Editor
+    name: Editor
+    href: Exp.Editor.html

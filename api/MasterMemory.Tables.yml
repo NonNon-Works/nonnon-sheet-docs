@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: MasterMemory.Tables
+  commentId: N:MasterMemory.Tables
+  id: MasterMemory.Tables
+  children:
+  - MasterMemory.Tables.SampleDataForMasterMemoryTable
+  langs:
+  - csharp
+  - vb
+  name: MasterMemory.Tables
+  nameWithType: MasterMemory.Tables
+  fullName: MasterMemory.Tables
+  type: Namespace
+  assemblies:
+  - NonNonSheet.Exp.Editor
+references:
+- uid: MasterMemory.Tables.SampleDataForMasterMemoryTable
+  commentId: T:MasterMemory.Tables.SampleDataForMasterMemoryTable
+  parent: MasterMemory.Tables
+  href: MasterMemory.Tables.SampleDataForMasterMemoryTable.html
+  name: SampleDataForMasterMemoryTable
+  nameWithType: SampleDataForMasterMemoryTable
+  fullName: MasterMemory.Tables.SampleDataForMasterMemoryTable
+- uid: MasterMemory.Tables
+  commentId: N:MasterMemory.Tables
+  href: MasterMemory.html
+  name: MasterMemory.Tables
+  nameWithType: MasterMemory.Tables
+  fullName: MasterMemory.Tables
+  spec.csharp:
+  - uid: MasterMemory
+    name: MasterMemory
+    href: MasterMemory.html
+  - name: .
+  - uid: MasterMemory.Tables
+    name: Tables
+    href: MasterMemory.Tables.html
+  spec.vb:
+  - uid: MasterMemory
+    name: MasterMemory
+    href: MasterMemory.html
+  - name: .
+  - uid: MasterMemory.Tables
+    name: Tables
+    href: MasterMemory.Tables.html

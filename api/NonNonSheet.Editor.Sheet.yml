@@ -1,0 +1,651 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.Sheet
+  commentId: T:NonNonSheet.Editor.Sheet
+  id: Sheet
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.Sheet.#ctor(NonNonSheet.NonNonTable)
+  - NonNonSheet.Editor.Sheet.AddDataRow
+  - NonNonSheet.Editor.Sheet.Container
+  - NonNonSheet.Editor.Sheet.DataRows
+  - NonNonSheet.Editor.Sheet.FooterRow
+  - NonNonSheet.Editor.Sheet.HeaderRow
+  - NonNonSheet.Editor.Sheet.OnRowAdded
+  - NonNonSheet.Editor.Sheet.Refresh
+  - NonNonSheet.Editor.Sheet.RemoveDataRow(NonNonSheet.Editor.DataRow)
+  - NonNonSheet.Editor.Sheet.ScrollView
+  - NonNonSheet.Editor.Sheet.TryMoveDataRow(NonNonSheet.Editor.DataRow[],System.Int32,System.Int32@)
+  langs:
+  - csharp
+  - vb
+  name: Sheet
+  nameWithType: Sheet
+  fullName: NonNonSheet.Editor.Sheet
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Sheet
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class Sheet : VisualElement'
+    content.vb: Public Class Sheet Inherits VisualElement
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.Sheet.ScrollView
+  commentId: F:NonNonSheet.Editor.Sheet.ScrollView
+  id: ScrollView
+  parent: NonNonSheet.Editor.Sheet
+  langs:
+  - csharp
+  - vb
+  name: ScrollView
+  nameWithType: Sheet.ScrollView
+  fullName: NonNonSheet.Editor.Sheet.ScrollView
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ScrollView
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 14
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly ScrollView ScrollView
+    return:
+      type: ScrollView
+    content.vb: Public ReadOnly ScrollView As ScrollView
+- uid: NonNonSheet.Editor.Sheet.Container
+  commentId: F:NonNonSheet.Editor.Sheet.Container
+  id: Container
+  parent: NonNonSheet.Editor.Sheet
+  langs:
+  - csharp
+  - vb
+  name: Container
+  nameWithType: Sheet.Container
+  fullName: NonNonSheet.Editor.Sheet.Container
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Container
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 15
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly VisualElement Container
+    return:
+      type: VisualElement
+    content.vb: Public ReadOnly Container As VisualElement
+- uid: NonNonSheet.Editor.Sheet.HeaderRow
+  commentId: F:NonNonSheet.Editor.Sheet.HeaderRow
+  id: HeaderRow
+  parent: NonNonSheet.Editor.Sheet
+  langs:
+  - csharp
+  - vb
+  name: HeaderRow
+  nameWithType: Sheet.HeaderRow
+  fullName: NonNonSheet.Editor.Sheet.HeaderRow
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: HeaderRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 16
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly HeaderRow HeaderRow
+    return:
+      type: NonNonSheet.Editor.HeaderRow
+    content.vb: Public ReadOnly HeaderRow As HeaderRow
+- uid: NonNonSheet.Editor.Sheet.DataRows
+  commentId: F:NonNonSheet.Editor.Sheet.DataRows
+  id: DataRows
+  parent: NonNonSheet.Editor.Sheet
+  langs:
+  - csharp
+  - vb
+  name: DataRows
+  nameWithType: Sheet.DataRows
+  fullName: NonNonSheet.Editor.Sheet.DataRows
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DataRows
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 17
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly List<DataRow> DataRows
+    return:
+      type: System.Collections.Generic.List{NonNonSheet.Editor.DataRow}
+    content.vb: Public ReadOnly DataRows As List(Of DataRow)
+- uid: NonNonSheet.Editor.Sheet.FooterRow
+  commentId: F:NonNonSheet.Editor.Sheet.FooterRow
+  id: FooterRow
+  parent: NonNonSheet.Editor.Sheet
+  langs:
+  - csharp
+  - vb
+  name: FooterRow
+  nameWithType: Sheet.FooterRow
+  fullName: NonNonSheet.Editor.Sheet.FooterRow
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FooterRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 18
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly FooterRow FooterRow
+    return:
+      type: NonNonSheet.Editor.FooterRow
+    content.vb: Public ReadOnly FooterRow As FooterRow
+- uid: NonNonSheet.Editor.Sheet.OnRowAdded
+  commentId: E:NonNonSheet.Editor.Sheet.OnRowAdded
+  id: OnRowAdded
+  parent: NonNonSheet.Editor.Sheet
+  langs:
+  - csharp
+  - vb
+  name: OnRowAdded
+  nameWithType: Sheet.OnRowAdded
+  fullName: NonNonSheet.Editor.Sheet.OnRowAdded
+  type: Event
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OnRowAdded
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 20
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public event Action<DataRow> OnRowAdded
+    return:
+      type: System.Action{NonNonSheet.Editor.DataRow}
+    content.vb: Public Event OnRowAdded As Action(Of DataRow)
+- uid: NonNonSheet.Editor.Sheet.#ctor(NonNonSheet.NonNonTable)
+  commentId: M:NonNonSheet.Editor.Sheet.#ctor(NonNonSheet.NonNonTable)
+  id: '#ctor(NonNonSheet.NonNonTable)'
+  parent: NonNonSheet.Editor.Sheet
+  langs:
+  - csharp
+  - vb
+  name: Sheet(NonNonTable)
+  nameWithType: Sheet.Sheet(NonNonTable)
+  fullName: NonNonSheet.Editor.Sheet.Sheet(NonNonSheet.NonNonTable)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 22
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Sheet(NonNonTable table)
+    parameters:
+    - id: table
+      type: NonNonSheet.NonNonTable
+    content.vb: Public Sub New(table As NonNonTable)
+  overload: NonNonSheet.Editor.Sheet.#ctor*
+  nameWithType.vb: Sheet.New(NonNonTable)
+  fullName.vb: NonNonSheet.Editor.Sheet.New(NonNonSheet.NonNonTable)
+  name.vb: New(NonNonTable)
+- uid: NonNonSheet.Editor.Sheet.AddDataRow
+  commentId: M:NonNonSheet.Editor.Sheet.AddDataRow
+  id: AddDataRow
+  parent: NonNonSheet.Editor.Sheet
+  langs:
+  - csharp
+  - vb
+  name: AddDataRow()
+  nameWithType: Sheet.AddDataRow()
+  fullName: NonNonSheet.Editor.Sheet.AddDataRow()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: AddDataRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 57
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void AddDataRow()
+    content.vb: Public Sub AddDataRow()
+  overload: NonNonSheet.Editor.Sheet.AddDataRow*
+- uid: NonNonSheet.Editor.Sheet.RemoveDataRow(NonNonSheet.Editor.DataRow)
+  commentId: M:NonNonSheet.Editor.Sheet.RemoveDataRow(NonNonSheet.Editor.DataRow)
+  id: RemoveDataRow(NonNonSheet.Editor.DataRow)
+  parent: NonNonSheet.Editor.Sheet
+  langs:
+  - csharp
+  - vb
+  name: RemoveDataRow(DataRow)
+  nameWithType: Sheet.RemoveDataRow(DataRow)
+  fullName: NonNonSheet.Editor.Sheet.RemoveDataRow(NonNonSheet.Editor.DataRow)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: RemoveDataRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 73
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void RemoveDataRow(DataRow dataRow)
+    parameters:
+    - id: dataRow
+      type: NonNonSheet.Editor.DataRow
+    content.vb: Public Sub RemoveDataRow(dataRow As DataRow)
+  overload: NonNonSheet.Editor.Sheet.RemoveDataRow*
+- uid: NonNonSheet.Editor.Sheet.TryMoveDataRow(NonNonSheet.Editor.DataRow[],System.Int32,System.Int32@)
+  commentId: M:NonNonSheet.Editor.Sheet.TryMoveDataRow(NonNonSheet.Editor.DataRow[],System.Int32,System.Int32@)
+  id: TryMoveDataRow(NonNonSheet.Editor.DataRow[],System.Int32,System.Int32@)
+  parent: NonNonSheet.Editor.Sheet
+  langs:
+  - csharp
+  - vb
+  name: TryMoveDataRow(DataRow[], int, out int)
+  nameWithType: Sheet.TryMoveDataRow(DataRow[], int, out int)
+  fullName: NonNonSheet.Editor.Sheet.TryMoveDataRow(NonNonSheet.Editor.DataRow[], int, out int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: TryMoveDataRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 90
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool TryMoveDataRow(DataRow[] moveRows, int toIndex, out int movedFirstRowIndex)
+    parameters:
+    - id: moveRows
+      type: NonNonSheet.Editor.DataRow[]
+    - id: toIndex
+      type: System.Int32
+    - id: movedFirstRowIndex
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryMoveDataRow(moveRows As DataRow(), toIndex As Integer, movedFirstRowIndex As Integer) As Boolean
+  overload: NonNonSheet.Editor.Sheet.TryMoveDataRow*
+  nameWithType.vb: Sheet.TryMoveDataRow(DataRow(), Integer, Integer)
+  fullName.vb: NonNonSheet.Editor.Sheet.TryMoveDataRow(NonNonSheet.Editor.DataRow(), Integer, Integer)
+  name.vb: TryMoveDataRow(DataRow(), Integer, Integer)
+- uid: NonNonSheet.Editor.Sheet.Refresh
+  commentId: M:NonNonSheet.Editor.Sheet.Refresh
+  id: Refresh
+  parent: NonNonSheet.Editor.Sheet
+  langs:
+  - csharp
+  - vb
+  name: Refresh()
+  nameWithType: Sheet.Refresh()
+  fullName: NonNonSheet.Editor.Sheet.Refresh()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Refresh
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Sheet.cs
+    startLine: 130
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void Refresh()
+    content.vb: Public Sub Refresh()
+  overload: NonNonSheet.Editor.Sheet.Refresh*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ScrollView
+  commentId: '!:ScrollView'
+  isExternal: true
+  name: ScrollView
+  nameWithType: ScrollView
+  fullName: ScrollView
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement
+- uid: NonNonSheet.Editor.HeaderRow
+  commentId: T:NonNonSheet.Editor.HeaderRow
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.HeaderRow.html
+  name: HeaderRow
+  nameWithType: HeaderRow
+  fullName: NonNonSheet.Editor.HeaderRow
+- uid: System.Collections.Generic.List{NonNonSheet.Editor.DataRow}
+  commentId: T:System.Collections.Generic.List{NonNonSheet.Editor.DataRow}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DataRow>
+  nameWithType: List<DataRow>
+  fullName: System.Collections.Generic.List<NonNonSheet.Editor.DataRow>
+  nameWithType.vb: List(Of DataRow)
+  fullName.vb: System.Collections.Generic.List(Of NonNonSheet.Editor.DataRow)
+  name.vb: List(Of DataRow)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: NonNonSheet.Editor.DataRow
+    name: DataRow
+    href: NonNonSheet.Editor.DataRow.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Editor.DataRow
+    name: DataRow
+    href: NonNonSheet.Editor.DataRow.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: NonNonSheet.Editor.FooterRow
+  commentId: T:NonNonSheet.Editor.FooterRow
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.FooterRow.html
+  name: FooterRow
+  nameWithType: FooterRow
+  fullName: NonNonSheet.Editor.FooterRow
+- uid: System.Action{NonNonSheet.Editor.DataRow}
+  commentId: T:System.Action{NonNonSheet.Editor.DataRow}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<DataRow>
+  nameWithType: Action<DataRow>
+  fullName: System.Action<NonNonSheet.Editor.DataRow>
+  nameWithType.vb: Action(Of DataRow)
+  fullName.vb: System.Action(Of NonNonSheet.Editor.DataRow)
+  name.vb: Action(Of DataRow)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: NonNonSheet.Editor.DataRow
+    name: DataRow
+    href: NonNonSheet.Editor.DataRow.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Editor.DataRow
+    name: DataRow
+    href: NonNonSheet.Editor.DataRow.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.Editor.Sheet.#ctor*
+  commentId: Overload:NonNonSheet.Editor.Sheet.#ctor
+  href: NonNonSheet.Editor.Sheet.html#NonNonSheet_Editor_Sheet__ctor_NonNonSheet_NonNonTable_
+  name: Sheet
+  nameWithType: Sheet.Sheet
+  fullName: NonNonSheet.Editor.Sheet.Sheet
+  nameWithType.vb: Sheet.New
+  fullName.vb: NonNonSheet.Editor.Sheet.New
+  name.vb: New
+- uid: NonNonSheet.NonNonTable
+  commentId: T:NonNonSheet.NonNonTable
+  parent: NonNonSheet
+  href: NonNonSheet.NonNonTable.html
+  name: NonNonTable
+  nameWithType: NonNonTable
+  fullName: NonNonSheet.NonNonTable
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Editor.Sheet.AddDataRow*
+  commentId: Overload:NonNonSheet.Editor.Sheet.AddDataRow
+  href: NonNonSheet.Editor.Sheet.html#NonNonSheet_Editor_Sheet_AddDataRow
+  name: AddDataRow
+  nameWithType: Sheet.AddDataRow
+  fullName: NonNonSheet.Editor.Sheet.AddDataRow
+- uid: NonNonSheet.Editor.Sheet.RemoveDataRow*
+  commentId: Overload:NonNonSheet.Editor.Sheet.RemoveDataRow
+  href: NonNonSheet.Editor.Sheet.html#NonNonSheet_Editor_Sheet_RemoveDataRow_NonNonSheet_Editor_DataRow_
+  name: RemoveDataRow
+  nameWithType: Sheet.RemoveDataRow
+  fullName: NonNonSheet.Editor.Sheet.RemoveDataRow
+- uid: NonNonSheet.Editor.DataRow
+  commentId: T:NonNonSheet.Editor.DataRow
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.DataRow.html
+  name: DataRow
+  nameWithType: DataRow
+  fullName: NonNonSheet.Editor.DataRow
+- uid: NonNonSheet.Editor.Sheet.TryMoveDataRow*
+  commentId: Overload:NonNonSheet.Editor.Sheet.TryMoveDataRow
+  href: NonNonSheet.Editor.Sheet.html#NonNonSheet_Editor_Sheet_TryMoveDataRow_NonNonSheet_Editor_DataRow___System_Int32_System_Int32__
+  name: TryMoveDataRow
+  nameWithType: Sheet.TryMoveDataRow
+  fullName: NonNonSheet.Editor.Sheet.TryMoveDataRow
+- uid: NonNonSheet.Editor.DataRow[]
+  isExternal: true
+  href: NonNonSheet.Editor.DataRow.html
+  name: DataRow[]
+  nameWithType: DataRow[]
+  fullName: NonNonSheet.Editor.DataRow[]
+  nameWithType.vb: DataRow()
+  fullName.vb: NonNonSheet.Editor.DataRow()
+  name.vb: DataRow()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.DataRow
+    name: DataRow
+    href: NonNonSheet.Editor.DataRow.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: NonNonSheet.Editor.DataRow
+    name: DataRow
+    href: NonNonSheet.Editor.DataRow.html
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NonNonSheet.Editor.Sheet.Refresh*
+  commentId: Overload:NonNonSheet.Editor.Sheet.Refresh
+  href: NonNonSheet.Editor.Sheet.html#NonNonSheet_Editor_Sheet_Refresh
+  name: Refresh
+  nameWithType: Sheet.Refresh
+  fullName: NonNonSheet.Editor.Sheet.Refresh

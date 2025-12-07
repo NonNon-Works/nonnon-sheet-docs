@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.HeaderRow
+  commentId: T:NonNonSheet.Editor.HeaderRow
+  id: HeaderRow
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.HeaderRow.#ctor(NonNonSheet.NonNonTable)
+  - NonNonSheet.Editor.HeaderRow.Cells
+  - NonNonSheet.Editor.HeaderRow.OriginCell
+  langs:
+  - csharp
+  - vb
+  name: HeaderRow
+  nameWithType: HeaderRow
+  fullName: NonNonSheet.Editor.HeaderRow
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/HeaderRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: HeaderRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/HeaderRow.cs
+    startLine: 5
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class HeaderRow : VisualElement'
+    content.vb: Public Class HeaderRow Inherits VisualElement
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.HeaderRow.OriginCell
+  commentId: F:NonNonSheet.Editor.HeaderRow.OriginCell
+  id: OriginCell
+  parent: NonNonSheet.Editor.HeaderRow
+  langs:
+  - csharp
+  - vb
+  name: OriginCell
+  nameWithType: HeaderRow.OriginCell
+  fullName: NonNonSheet.Editor.HeaderRow.OriginCell
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/HeaderRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OriginCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/HeaderRow.cs
+    startLine: 7
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly OriginCell OriginCell
+    return:
+      type: NonNonSheet.Editor.OriginCell
+    content.vb: Public ReadOnly OriginCell As OriginCell
+- uid: NonNonSheet.Editor.HeaderRow.Cells
+  commentId: P:NonNonSheet.Editor.HeaderRow.Cells
+  id: Cells
+  parent: NonNonSheet.Editor.HeaderRow
+  langs:
+  - csharp
+  - vb
+  name: Cells
+  nameWithType: HeaderRow.Cells
+  fullName: NonNonSheet.Editor.HeaderRow.Cells
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/HeaderRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Cells
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/HeaderRow.cs
+    startLine: 9
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public IReadOnlyList<HeaderCell> Cells { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{NonNonSheet.Editor.HeaderCell}
+    content.vb: Public ReadOnly Property Cells As IReadOnlyList(Of HeaderCell)
+  overload: NonNonSheet.Editor.HeaderRow.Cells*
+- uid: NonNonSheet.Editor.HeaderRow.#ctor(NonNonSheet.NonNonTable)
+  commentId: M:NonNonSheet.Editor.HeaderRow.#ctor(NonNonSheet.NonNonTable)
+  id: '#ctor(NonNonSheet.NonNonTable)'
+  parent: NonNonSheet.Editor.HeaderRow
+  langs:
+  - csharp
+  - vb
+  name: HeaderRow(NonNonTable)
+  nameWithType: HeaderRow.HeaderRow(NonNonTable)
+  fullName: NonNonSheet.Editor.HeaderRow.HeaderRow(NonNonSheet.NonNonTable)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/HeaderRow.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/HeaderRow.cs
+    startLine: 11
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public HeaderRow(NonNonTable table)
+    parameters:
+    - id: table
+      type: NonNonSheet.NonNonTable
+    content.vb: Public Sub New(table As NonNonTable)
+  overload: NonNonSheet.Editor.HeaderRow.#ctor*
+  nameWithType.vb: HeaderRow.New(NonNonTable)
+  fullName.vb: NonNonSheet.Editor.HeaderRow.New(NonNonSheet.NonNonTable)
+  name.vb: New(NonNonTable)
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.OriginCell
+  commentId: T:NonNonSheet.Editor.OriginCell
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.OriginCell.html
+  name: OriginCell
+  nameWithType: OriginCell
+  fullName: NonNonSheet.Editor.OriginCell
+- uid: NonNonSheet.Editor.HeaderRow.Cells*
+  commentId: Overload:NonNonSheet.Editor.HeaderRow.Cells
+  href: NonNonSheet.Editor.HeaderRow.html#NonNonSheet_Editor_HeaderRow_Cells
+  name: Cells
+  nameWithType: HeaderRow.Cells
+  fullName: NonNonSheet.Editor.HeaderRow.Cells
+- uid: System.Collections.Generic.IReadOnlyList{NonNonSheet.Editor.HeaderCell}
+  commentId: T:System.Collections.Generic.IReadOnlyList{NonNonSheet.Editor.HeaderCell}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<HeaderCell>
+  nameWithType: IReadOnlyList<HeaderCell>
+  fullName: System.Collections.Generic.IReadOnlyList<NonNonSheet.Editor.HeaderCell>
+  nameWithType.vb: IReadOnlyList(Of HeaderCell)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of NonNonSheet.Editor.HeaderCell)
+  name.vb: IReadOnlyList(Of HeaderCell)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: NonNonSheet.Editor.HeaderCell
+    name: HeaderCell
+    href: NonNonSheet.Editor.HeaderCell.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Editor.HeaderCell
+    name: HeaderCell
+    href: NonNonSheet.Editor.HeaderCell.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: NonNonSheet.Editor.HeaderRow.#ctor*
+  commentId: Overload:NonNonSheet.Editor.HeaderRow.#ctor
+  href: NonNonSheet.Editor.HeaderRow.html#NonNonSheet_Editor_HeaderRow__ctor_NonNonSheet_NonNonTable_
+  name: HeaderRow
+  nameWithType: HeaderRow.HeaderRow
+  fullName: NonNonSheet.Editor.HeaderRow.HeaderRow
+  nameWithType.vb: HeaderRow.New
+  fullName.vb: NonNonSheet.Editor.HeaderRow.New
+  name.vb: New
+- uid: NonNonSheet.NonNonTable
+  commentId: T:NonNonSheet.NonNonTable
+  parent: NonNonSheet
+  href: NonNonSheet.NonNonTable.html
+  name: NonNonTable
+  nameWithType: NonNonTable
+  fullName: NonNonSheet.NonNonTable
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet

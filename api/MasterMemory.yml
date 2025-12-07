@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: MasterMemory
+  commentId: N:MasterMemory
+  id: MasterMemory
+  children:
+  - MasterMemory.DatabaseBuilder
+  - MasterMemory.ImmutableBuilder
+  - MasterMemory.MasterMemoryResolver
+  - MasterMemory.MemoryDatabase
+  langs:
+  - csharp
+  - vb
+  name: MasterMemory
+  nameWithType: MasterMemory
+  fullName: MasterMemory
+  type: Namespace
+  assemblies:
+  - NonNonSheet.Exp.Editor
+references:
+- uid: MasterMemory.MemoryDatabase
+  commentId: T:MasterMemory.MemoryDatabase
+  parent: MasterMemory
+  href: MasterMemory.MemoryDatabase.html
+  name: MemoryDatabase
+  nameWithType: MemoryDatabase
+  fullName: MasterMemory.MemoryDatabase
+- uid: MasterMemory.DatabaseBuilder
+  commentId: T:MasterMemory.DatabaseBuilder
+  parent: MasterMemory
+  href: MasterMemory.DatabaseBuilder.html
+  name: DatabaseBuilder
+  nameWithType: DatabaseBuilder
+  fullName: MasterMemory.DatabaseBuilder
+- uid: MasterMemory.MasterMemoryResolver
+  commentId: T:MasterMemory.MasterMemoryResolver
+  href: MasterMemory.MasterMemoryResolver.html
+  name: MasterMemoryResolver
+  nameWithType: MasterMemoryResolver
+  fullName: MasterMemory.MasterMemoryResolver
+- uid: MasterMemory.ImmutableBuilder
+  commentId: T:MasterMemory.ImmutableBuilder
+  parent: MasterMemory
+  href: MasterMemory.ImmutableBuilder.html
+  name: ImmutableBuilder
+  nameWithType: ImmutableBuilder
+  fullName: MasterMemory.ImmutableBuilder
+- uid: MasterMemory
+  commentId: N:MasterMemory
+  href: MasterMemory.html
+  name: MasterMemory
+  nameWithType: MasterMemory
+  fullName: MasterMemory

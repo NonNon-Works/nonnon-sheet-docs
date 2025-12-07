@@ -1,0 +1,320 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.IStringKeyReferencedTableValidator
+  commentId: T:NonNonSheet.Exp.IStringKeyReferencedTableValidator
+  id: IStringKeyReferencedTableValidator
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateId(NonNonSheet.Exp.StringKeyData,System.String)
+  - NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateName(NonNonSheet.Exp.StringKeyData,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IStringKeyReferencedTableValidator
+  nameWithType: IStringKeyReferencedTableValidator
+  fullName: NonNonSheet.Exp.IStringKeyReferencedTableValidator
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/StringKeyReferencedTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IStringKeyReferencedTableValidator
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/StringKeyReferencedTable.g.cs
+    startLine: 90
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: 'public interface IStringKeyReferencedTableValidator : IValidator<StringKeyData>'
+    content.vb: Public Interface IStringKeyReferencedTableValidator Inherits IValidator(Of StringKeyData)
+  inheritedMembers:
+  - NonNonSheet.IValidator{NonNonSheet.Exp.StringKeyData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.StringKeyData,System.Object)
+- uid: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateId(NonNonSheet.Exp.StringKeyData,System.String)
+  commentId: M:NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateId(NonNonSheet.Exp.StringKeyData,System.String)
+  id: ValidateId(NonNonSheet.Exp.StringKeyData,System.String)
+  parent: NonNonSheet.Exp.IStringKeyReferencedTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateId(StringKeyData, string)
+  nameWithType: IStringKeyReferencedTableValidator.ValidateId(StringKeyData, string)
+  fullName: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateId(NonNonSheet.Exp.StringKeyData, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/StringKeyReferencedTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateId
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/StringKeyReferencedTable.g.cs
+    startLine: 92
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateId(StringKeyData self, string id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.StringKeyData
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateId(self As StringKeyData, id As String) As ValidationResult
+  overload: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateId*
+  nameWithType.vb: IStringKeyReferencedTableValidator.ValidateId(StringKeyData, String)
+  fullName.vb: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateId(NonNonSheet.Exp.StringKeyData, String)
+  name.vb: ValidateId(StringKeyData, String)
+- uid: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateName(NonNonSheet.Exp.StringKeyData,System.String)
+  commentId: M:NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateName(NonNonSheet.Exp.StringKeyData,System.String)
+  id: ValidateName(NonNonSheet.Exp.StringKeyData,System.String)
+  parent: NonNonSheet.Exp.IStringKeyReferencedTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateName(StringKeyData, string)
+  nameWithType: IStringKeyReferencedTableValidator.ValidateName(StringKeyData, string)
+  fullName: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateName(NonNonSheet.Exp.StringKeyData, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/StringKeyReferencedTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateName
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/StringKeyReferencedTable.g.cs
+    startLine: 93
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateName(StringKeyData self, string id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.StringKeyData
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateName(self As StringKeyData, id As String) As ValidationResult
+  overload: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateName*
+  nameWithType.vb: IStringKeyReferencedTableValidator.ValidateName(StringKeyData, String)
+  fullName.vb: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateName(NonNonSheet.Exp.StringKeyData, String)
+  name.vb: ValidateName(StringKeyData, String)
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.StringKeyData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.StringKeyData,System.Object)
+  commentId: M:NonNonSheet.IValidator{NonNonSheet.Exp.StringKeyData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.StringKeyData,System.Object)
+  parent: NonNonSheet.IValidator{NonNonSheet.Exp.StringKeyData}
+  definition: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  href: NonNonSheet.Exp.StringKeyData.html
+  name: Validate(ColumnMetadata, StringKeyData, object)
+  nameWithType: IValidator<StringKeyData>.Validate(ColumnMetadata, StringKeyData, object)
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.StringKeyData>.Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.StringKeyData, object)
+  nameWithType.vb: IValidator(Of StringKeyData).Validate(ColumnMetadata, StringKeyData, Object)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.StringKeyData).Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.StringKeyData, Object)
+  name.vb: Validate(ColumnMetadata, StringKeyData, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.StringKeyData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.StringKeyData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.StringKeyData
+    name: StringKeyData
+    href: NonNonSheet.Exp.StringKeyData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.StringKeyData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.StringKeyData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.StringKeyData
+    name: StringKeyData
+    href: NonNonSheet.Exp.StringKeyData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  commentId: M:NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Validate(ColumnMetadata, T, object)
+  nameWithType: IValidator<T>.Validate(ColumnMetadata, T, object)
+  fullName: NonNonSheet.IValidator<T>.Validate(NonNonSheet.ColumnMetadata, T, object)
+  nameWithType.vb: IValidator(Of T).Validate(ColumnMetadata, T, Object)
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate(NonNonSheet.ColumnMetadata, T, Object)
+  name.vb: Validate(ColumnMetadata, T, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.StringKeyData}
+  commentId: T:NonNonSheet.IValidator{NonNonSheet.Exp.StringKeyData}
+  parent: NonNonSheet
+  definition: NonNonSheet.IValidator`1
+  href: NonNonSheet.Exp.StringKeyData.html
+  name: IValidator<StringKeyData>
+  nameWithType: IValidator<StringKeyData>
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.StringKeyData>
+  nameWithType.vb: IValidator(Of StringKeyData)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.StringKeyData)
+  name.vb: IValidator(Of StringKeyData)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: <
+  - uid: NonNonSheet.Exp.StringKeyData
+    name: StringKeyData
+    href: NonNonSheet.Exp.StringKeyData.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Exp.StringKeyData
+    name: StringKeyData
+    href: NonNonSheet.Exp.StringKeyData.html
+  - name: )
+- uid: NonNonSheet.IValidator`1
+  commentId: T:NonNonSheet.IValidator`1
+  href: NonNonSheet.IValidator-1.html
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: NonNonSheet.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: NonNonSheet.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateId*
+  commentId: Overload:NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateId
+  href: NonNonSheet.Exp.IStringKeyReferencedTableValidator.html#NonNonSheet_Exp_IStringKeyReferencedTableValidator_ValidateId_NonNonSheet_Exp_StringKeyData_System_String_
+  name: ValidateId
+  nameWithType: IStringKeyReferencedTableValidator.ValidateId
+  fullName: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateId
+- uid: NonNonSheet.Exp.StringKeyData
+  commentId: T:NonNonSheet.Exp.StringKeyData
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.StringKeyData.html
+  name: StringKeyData
+  nameWithType: StringKeyData
+  fullName: NonNonSheet.Exp.StringKeyData
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateName*
+  commentId: Overload:NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateName
+  href: NonNonSheet.Exp.IStringKeyReferencedTableValidator.html#NonNonSheet_Exp_IStringKeyReferencedTableValidator_ValidateName_NonNonSheet_Exp_StringKeyData_System_String_
+  name: ValidateName
+  nameWithType: IStringKeyReferencedTableValidator.ValidateName
+  fullName: NonNonSheet.Exp.IStringKeyReferencedTableValidator.ValidateName

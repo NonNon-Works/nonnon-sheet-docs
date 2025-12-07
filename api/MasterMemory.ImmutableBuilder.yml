@@ -1,0 +1,608 @@
+### YamlMime:ManagedReference
+items:
+- uid: MasterMemory.ImmutableBuilder
+  commentId: T:MasterMemory.ImmutableBuilder
+  id: ImmutableBuilder
+  parent: MasterMemory
+  children:
+  - MasterMemory.ImmutableBuilder.#ctor(MasterMemory.MemoryDatabase)
+  - MasterMemory.ImmutableBuilder.Build
+  - MasterMemory.ImmutableBuilder.Diff(NonNonSheet.Exp.SampleDataForMasterMemory[])
+  - MasterMemory.ImmutableBuilder.RemoveSampleDataForMasterMemory(System.String[])
+  - MasterMemory.ImmutableBuilder.ReplaceAll(System.Collections.Generic.IList{NonNonSheet.Exp.SampleDataForMasterMemory})
+  langs:
+  - csharp
+  - vb
+  name: ImmutableBuilder
+  nameWithType: ImmutableBuilder
+  fullName: MasterMemory.ImmutableBuilder
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ImmutableBuilder
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+    startLine: 14
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: 'public sealed class ImmutableBuilder : ImmutableBuilderBase'
+    content.vb: Public NotInheritable Class ImmutableBuilder Inherits ImmutableBuilderBase
+  inheritance:
+  - System.Object
+  - MasterMemory.ImmutableBuilderBase
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MasterMemory.ImmutableBuilder.#ctor(MasterMemory.MemoryDatabase)
+  commentId: M:MasterMemory.ImmutableBuilder.#ctor(MasterMemory.MemoryDatabase)
+  id: '#ctor(MasterMemory.MemoryDatabase)'
+  parent: MasterMemory.ImmutableBuilder
+  langs:
+  - csharp
+  - vb
+  name: ImmutableBuilder(MemoryDatabase)
+  nameWithType: ImmutableBuilder.ImmutableBuilder(MemoryDatabase)
+  fullName: MasterMemory.ImmutableBuilder.ImmutableBuilder(MasterMemory.MemoryDatabase)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+    startLine: 18
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public ImmutableBuilder(MemoryDatabase memory)
+    parameters:
+    - id: memory
+      type: MasterMemory.MemoryDatabase
+    content.vb: Public Sub New(memory As MemoryDatabase)
+  overload: MasterMemory.ImmutableBuilder.#ctor*
+  nameWithType.vb: ImmutableBuilder.New(MemoryDatabase)
+  fullName.vb: MasterMemory.ImmutableBuilder.New(MasterMemory.MemoryDatabase)
+  name.vb: New(MemoryDatabase)
+- uid: MasterMemory.ImmutableBuilder.Build
+  commentId: M:MasterMemory.ImmutableBuilder.Build
+  id: Build
+  parent: MasterMemory.ImmutableBuilder
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: ImmutableBuilder.Build()
+  fullName: MasterMemory.ImmutableBuilder.Build()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Build
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+    startLine: 23
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public MemoryDatabase Build()
+    return:
+      type: MasterMemory.MemoryDatabase
+    content.vb: Public Function Build() As MemoryDatabase
+  overload: MasterMemory.ImmutableBuilder.Build*
+- uid: MasterMemory.ImmutableBuilder.ReplaceAll(System.Collections.Generic.IList{NonNonSheet.Exp.SampleDataForMasterMemory})
+  commentId: M:MasterMemory.ImmutableBuilder.ReplaceAll(System.Collections.Generic.IList{NonNonSheet.Exp.SampleDataForMasterMemory})
+  id: ReplaceAll(System.Collections.Generic.IList{NonNonSheet.Exp.SampleDataForMasterMemory})
+  parent: MasterMemory.ImmutableBuilder
+  langs:
+  - csharp
+  - vb
+  name: ReplaceAll(IList<SampleDataForMasterMemory>)
+  nameWithType: ImmutableBuilder.ReplaceAll(IList<SampleDataForMasterMemory>)
+  fullName: MasterMemory.ImmutableBuilder.ReplaceAll(System.Collections.Generic.IList<NonNonSheet.Exp.SampleDataForMasterMemory>)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ReplaceAll
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+    startLine: 28
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public void ReplaceAll(IList<SampleDataForMasterMemory> data)
+    parameters:
+    - id: data
+      type: System.Collections.Generic.IList{NonNonSheet.Exp.SampleDataForMasterMemory}
+    content.vb: Public Sub ReplaceAll(data As IList(Of SampleDataForMasterMemory))
+  overload: MasterMemory.ImmutableBuilder.ReplaceAll*
+  nameWithType.vb: ImmutableBuilder.ReplaceAll(IList(Of SampleDataForMasterMemory))
+  fullName.vb: MasterMemory.ImmutableBuilder.ReplaceAll(System.Collections.Generic.IList(Of NonNonSheet.Exp.SampleDataForMasterMemory))
+  name.vb: ReplaceAll(IList(Of SampleDataForMasterMemory))
+- uid: MasterMemory.ImmutableBuilder.RemoveSampleDataForMasterMemory(System.String[])
+  commentId: M:MasterMemory.ImmutableBuilder.RemoveSampleDataForMasterMemory(System.String[])
+  id: RemoveSampleDataForMasterMemory(System.String[])
+  parent: MasterMemory.ImmutableBuilder
+  langs:
+  - csharp
+  - vb
+  name: RemoveSampleDataForMasterMemory(string[])
+  nameWithType: ImmutableBuilder.RemoveSampleDataForMasterMemory(string[])
+  fullName: MasterMemory.ImmutableBuilder.RemoveSampleDataForMasterMemory(string[])
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: RemoveSampleDataForMasterMemory
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+    startLine: 38
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public void RemoveSampleDataForMasterMemory(string[] keys)
+    parameters:
+    - id: keys
+      type: System.String[]
+    content.vb: Public Sub RemoveSampleDataForMasterMemory(keys As String())
+  overload: MasterMemory.ImmutableBuilder.RemoveSampleDataForMasterMemory*
+  nameWithType.vb: ImmutableBuilder.RemoveSampleDataForMasterMemory(String())
+  fullName.vb: MasterMemory.ImmutableBuilder.RemoveSampleDataForMasterMemory(String())
+  name.vb: RemoveSampleDataForMasterMemory(String())
+- uid: MasterMemory.ImmutableBuilder.Diff(NonNonSheet.Exp.SampleDataForMasterMemory[])
+  commentId: M:MasterMemory.ImmutableBuilder.Diff(NonNonSheet.Exp.SampleDataForMasterMemory[])
+  id: Diff(NonNonSheet.Exp.SampleDataForMasterMemory[])
+  parent: MasterMemory.ImmutableBuilder
+  langs:
+  - csharp
+  - vb
+  name: Diff(SampleDataForMasterMemory[])
+  nameWithType: ImmutableBuilder.Diff(SampleDataForMasterMemory[])
+  fullName: MasterMemory.ImmutableBuilder.Diff(NonNonSheet.Exp.SampleDataForMasterMemory[])
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Diff
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.ImmutableBuilder.g.cs
+    startLine: 49
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public void Diff(SampleDataForMasterMemory[] addOrReplaceData)
+    parameters:
+    - id: addOrReplaceData
+      type: NonNonSheet.Exp.SampleDataForMasterMemory[]
+    content.vb: Public Sub Diff(addOrReplaceData As SampleDataForMasterMemory())
+  overload: MasterMemory.ImmutableBuilder.Diff*
+  nameWithType.vb: ImmutableBuilder.Diff(SampleDataForMasterMemory())
+  fullName.vb: MasterMemory.ImmutableBuilder.Diff(NonNonSheet.Exp.SampleDataForMasterMemory())
+  name.vb: Diff(SampleDataForMasterMemory())
+references:
+- uid: MasterMemory
+  commentId: N:MasterMemory
+  href: MasterMemory.html
+  name: MasterMemory
+  nameWithType: MasterMemory
+  fullName: MasterMemory
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MasterMemory.ImmutableBuilderBase
+  commentId: T:MasterMemory.ImmutableBuilderBase
+  parent: MasterMemory
+  isExternal: true
+  name: ImmutableBuilderBase
+  nameWithType: ImmutableBuilderBase
+  fullName: MasterMemory.ImmutableBuilderBase
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MasterMemory.ImmutableBuilder.#ctor*
+  commentId: Overload:MasterMemory.ImmutableBuilder.#ctor
+  href: MasterMemory.ImmutableBuilder.html#MasterMemory_ImmutableBuilder__ctor_MasterMemory_MemoryDatabase_
+  name: ImmutableBuilder
+  nameWithType: ImmutableBuilder.ImmutableBuilder
+  fullName: MasterMemory.ImmutableBuilder.ImmutableBuilder
+  nameWithType.vb: ImmutableBuilder.New
+  fullName.vb: MasterMemory.ImmutableBuilder.New
+  name.vb: New
+- uid: MasterMemory.MemoryDatabase
+  commentId: T:MasterMemory.MemoryDatabase
+  parent: MasterMemory
+  href: MasterMemory.MemoryDatabase.html
+  name: MemoryDatabase
+  nameWithType: MemoryDatabase
+  fullName: MasterMemory.MemoryDatabase
+- uid: MasterMemory.ImmutableBuilder.Build*
+  commentId: Overload:MasterMemory.ImmutableBuilder.Build
+  href: MasterMemory.ImmutableBuilder.html#MasterMemory_ImmutableBuilder_Build
+  name: Build
+  nameWithType: ImmutableBuilder.Build
+  fullName: MasterMemory.ImmutableBuilder.Build
+- uid: MasterMemory.ImmutableBuilder.ReplaceAll*
+  commentId: Overload:MasterMemory.ImmutableBuilder.ReplaceAll
+  href: MasterMemory.ImmutableBuilder.html#MasterMemory_ImmutableBuilder_ReplaceAll_System_Collections_Generic_IList_NonNonSheet_Exp_SampleDataForMasterMemory__
+  name: ReplaceAll
+  nameWithType: ImmutableBuilder.ReplaceAll
+  fullName: MasterMemory.ImmutableBuilder.ReplaceAll
+- uid: System.Collections.Generic.IList{NonNonSheet.Exp.SampleDataForMasterMemory}
+  commentId: T:System.Collections.Generic.IList{NonNonSheet.Exp.SampleDataForMasterMemory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<SampleDataForMasterMemory>
+  nameWithType: IList<SampleDataForMasterMemory>
+  fullName: System.Collections.Generic.IList<NonNonSheet.Exp.SampleDataForMasterMemory>
+  nameWithType.vb: IList(Of SampleDataForMasterMemory)
+  fullName.vb: System.Collections.Generic.IList(Of NonNonSheet.Exp.SampleDataForMasterMemory)
+  name.vb: IList(Of SampleDataForMasterMemory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: NonNonSheet.Exp.SampleDataForMasterMemory
+    name: SampleDataForMasterMemory
+    href: NonNonSheet.Exp.SampleDataForMasterMemory.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Exp.SampleDataForMasterMemory
+    name: SampleDataForMasterMemory
+    href: NonNonSheet.Exp.SampleDataForMasterMemory.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MasterMemory.ImmutableBuilder.RemoveSampleDataForMasterMemory*
+  commentId: Overload:MasterMemory.ImmutableBuilder.RemoveSampleDataForMasterMemory
+  href: MasterMemory.ImmutableBuilder.html#MasterMemory_ImmutableBuilder_RemoveSampleDataForMasterMemory_System_String___
+  name: RemoveSampleDataForMasterMemory
+  nameWithType: ImmutableBuilder.RemoveSampleDataForMasterMemory
+  fullName: MasterMemory.ImmutableBuilder.RemoveSampleDataForMasterMemory
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: MasterMemory.ImmutableBuilder.Diff*
+  commentId: Overload:MasterMemory.ImmutableBuilder.Diff
+  href: MasterMemory.ImmutableBuilder.html#MasterMemory_ImmutableBuilder_Diff_NonNonSheet_Exp_SampleDataForMasterMemory___
+  name: Diff
+  nameWithType: ImmutableBuilder.Diff
+  fullName: MasterMemory.ImmutableBuilder.Diff
+- uid: NonNonSheet.Exp.SampleDataForMasterMemory[]
+  isExternal: true
+  href: NonNonSheet.Exp.SampleDataForMasterMemory.html
+  name: SampleDataForMasterMemory[]
+  nameWithType: SampleDataForMasterMemory[]
+  fullName: NonNonSheet.Exp.SampleDataForMasterMemory[]
+  nameWithType.vb: SampleDataForMasterMemory()
+  fullName.vb: NonNonSheet.Exp.SampleDataForMasterMemory()
+  name.vb: SampleDataForMasterMemory()
+  spec.csharp:
+  - uid: NonNonSheet.Exp.SampleDataForMasterMemory
+    name: SampleDataForMasterMemory
+    href: NonNonSheet.Exp.SampleDataForMasterMemory.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: NonNonSheet.Exp.SampleDataForMasterMemory
+    name: SampleDataForMasterMemory
+    href: NonNonSheet.Exp.SampleDataForMasterMemory.html
+  - name: (
+  - name: )

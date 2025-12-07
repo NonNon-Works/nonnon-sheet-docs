@@ -1,0 +1,2246 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.AllTypeData
+  commentId: T:NonNonSheet.Exp.AllTypeData
+  id: AllTypeData
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.AllTypeData.AssetReferenceField
+  - NonNonSheet.Exp.AllTypeData.BoolField
+  - NonNonSheet.Exp.AllTypeData.ByteField
+  - NonNonSheet.Exp.AllTypeData.ColorField
+  - NonNonSheet.Exp.AllTypeData.Date
+  - NonNonSheet.Exp.AllTypeData.DoubleField
+  - NonNonSheet.Exp.AllTypeData.EnumArray
+  - NonNonSheet.Exp.AllTypeData.EnumField
+  - NonNonSheet.Exp.AllTypeData.FlagsEnumField
+  - NonNonSheet.Exp.AllTypeData.FloatField
+  - NonNonSheet.Exp.AllTypeData.Id
+  - NonNonSheet.Exp.AllTypeData.IntArray
+  - NonNonSheet.Exp.AllTypeData.IntField
+  - NonNonSheet.Exp.AllTypeData.IntKeyDataRelation
+  - NonNonSheet.Exp.AllTypeData.IntKeyMultiDataRelation
+  - NonNonSheet.Exp.AllTypeData.IntList
+  - NonNonSheet.Exp.AllTypeData.IntSliderField
+  - NonNonSheet.Exp.AllTypeData.LayerField
+  - NonNonSheet.Exp.AllTypeData.LayerMaskField
+  - NonNonSheet.Exp.AllTypeData.LongField
+  - NonNonSheet.Exp.AllTypeData.MaterialField
+  - NonNonSheet.Exp.AllTypeData.MinMaxSliderField
+  - NonNonSheet.Exp.AllTypeData.MonoBehaviourField
+  - NonNonSheet.Exp.AllTypeData.NotSerializableType
+  - NonNonSheet.Exp.AllTypeData.OtherNamespaceType
+  - NonNonSheet.Exp.AllTypeData.PrefabArray
+  - NonNonSheet.Exp.AllTypeData.PrefabField
+  - NonNonSheet.Exp.AllTypeData.PublicField
+  - NonNonSheet.Exp.AllTypeData.SByteField
+  - NonNonSheet.Exp.AllTypeData.ShortField
+  - NonNonSheet.Exp.AllTypeData.SliderField
+  - NonNonSheet.Exp.AllTypeData.StringField
+  - NonNonSheet.Exp.AllTypeData.StringKeyDataRelation
+  - NonNonSheet.Exp.AllTypeData.StringKeyMultiDataRelation
+  - NonNonSheet.Exp.AllTypeData.TagField
+  - NonNonSheet.Exp.AllTypeData.TextureField
+  - NonNonSheet.Exp.AllTypeData.UIntField
+  - NonNonSheet.Exp.AllTypeData.ULongField
+  - NonNonSheet.Exp.AllTypeData.UShortField
+  - NonNonSheet.Exp.AllTypeData.Vector2Field
+  - NonNonSheet.Exp.AllTypeData.Vector2IntField
+  - NonNonSheet.Exp.AllTypeData.Vector3Array
+  - NonNonSheet.Exp.AllTypeData.Vector3Field
+  - NonNonSheet.Exp.AllTypeData.Vector3IntField
+  - NonNonSheet.Exp.AllTypeData.Vector4Field
+  - NonNonSheet.Exp.AllTypeData._protectedField
+  - NonNonSheet.Exp.AllTypeData._protectedInternalField
+  - NonNonSheet.Exp.AllTypeData.fallbackType
+  langs:
+  - csharp
+  - vb
+  name: AllTypeData
+  nameWithType: AllTypeData
+  fullName: NonNonSheet.Exp.AllTypeData
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: AllTypeData
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 10
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class AllTypeData
+    content.vb: >-
+      <Serializable>
+
+      Public Class AllTypeData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: NonNonSheet.Exp.AllTypeData.Id
+  commentId: F:NonNonSheet.Exp.AllTypeData.Id
+  id: Id
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: AllTypeData.Id
+  fullName: NonNonSheet.Exp.AllTypeData.Id
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Id
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 13
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public int Id
+    return:
+      type: System.Int32
+    content.vb: Public Id As Integer
+- uid: NonNonSheet.Exp.AllTypeData.BoolField
+  commentId: F:NonNonSheet.Exp.AllTypeData.BoolField
+  id: BoolField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: BoolField
+  nameWithType: AllTypeData.BoolField
+  fullName: NonNonSheet.Exp.AllTypeData.BoolField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: BoolField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 14
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public bool BoolField
+    return:
+      type: System.Boolean
+    content.vb: Public BoolField As Boolean
+- uid: NonNonSheet.Exp.AllTypeData.SByteField
+  commentId: F:NonNonSheet.Exp.AllTypeData.SByteField
+  id: SByteField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: SByteField
+  nameWithType: AllTypeData.SByteField
+  fullName: NonNonSheet.Exp.AllTypeData.SByteField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SByteField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 15
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public sbyte SByteField
+    return:
+      type: System.SByte
+    content.vb: Public SByteField As SByte
+- uid: NonNonSheet.Exp.AllTypeData.ByteField
+  commentId: F:NonNonSheet.Exp.AllTypeData.ByteField
+  id: ByteField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: ByteField
+  nameWithType: AllTypeData.ByteField
+  fullName: NonNonSheet.Exp.AllTypeData.ByteField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ByteField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 16
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public byte ByteField
+    return:
+      type: System.Byte
+    content.vb: Public ByteField As Byte
+- uid: NonNonSheet.Exp.AllTypeData.ShortField
+  commentId: F:NonNonSheet.Exp.AllTypeData.ShortField
+  id: ShortField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: ShortField
+  nameWithType: AllTypeData.ShortField
+  fullName: NonNonSheet.Exp.AllTypeData.ShortField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ShortField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 17
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public short ShortField
+    return:
+      type: System.Int16
+    content.vb: Public ShortField As Short
+- uid: NonNonSheet.Exp.AllTypeData.UShortField
+  commentId: F:NonNonSheet.Exp.AllTypeData.UShortField
+  id: UShortField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: UShortField
+  nameWithType: AllTypeData.UShortField
+  fullName: NonNonSheet.Exp.AllTypeData.UShortField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: UShortField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 18
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public ushort UShortField
+    return:
+      type: System.UInt16
+    content.vb: Public UShortField As UShort
+- uid: NonNonSheet.Exp.AllTypeData.IntField
+  commentId: F:NonNonSheet.Exp.AllTypeData.IntField
+  id: IntField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: IntField
+  nameWithType: AllTypeData.IntField
+  fullName: NonNonSheet.Exp.AllTypeData.IntField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IntField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 19
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public int IntField
+    return:
+      type: System.Int32
+    content.vb: Public IntField As Integer
+- uid: NonNonSheet.Exp.AllTypeData.UIntField
+  commentId: F:NonNonSheet.Exp.AllTypeData.UIntField
+  id: UIntField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: UIntField
+  nameWithType: AllTypeData.UIntField
+  fullName: NonNonSheet.Exp.AllTypeData.UIntField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: UIntField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 20
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public uint UIntField
+    return:
+      type: System.UInt32
+    content.vb: Public UIntField As UInteger
+- uid: NonNonSheet.Exp.AllTypeData.LongField
+  commentId: F:NonNonSheet.Exp.AllTypeData.LongField
+  id: LongField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: LongField
+  nameWithType: AllTypeData.LongField
+  fullName: NonNonSheet.Exp.AllTypeData.LongField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: LongField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 21
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public long LongField
+    return:
+      type: System.Int64
+    content.vb: Public LongField As Long
+- uid: NonNonSheet.Exp.AllTypeData.ULongField
+  commentId: F:NonNonSheet.Exp.AllTypeData.ULongField
+  id: ULongField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: ULongField
+  nameWithType: AllTypeData.ULongField
+  fullName: NonNonSheet.Exp.AllTypeData.ULongField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ULongField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 22
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public ulong ULongField
+    return:
+      type: System.UInt64
+    content.vb: Public ULongField As ULong
+- uid: NonNonSheet.Exp.AllTypeData.FloatField
+  commentId: F:NonNonSheet.Exp.AllTypeData.FloatField
+  id: FloatField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: FloatField
+  nameWithType: AllTypeData.FloatField
+  fullName: NonNonSheet.Exp.AllTypeData.FloatField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FloatField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 23
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public float FloatField
+    return:
+      type: System.Single
+    content.vb: Public FloatField As Single
+- uid: NonNonSheet.Exp.AllTypeData.DoubleField
+  commentId: F:NonNonSheet.Exp.AllTypeData.DoubleField
+  id: DoubleField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: DoubleField
+  nameWithType: AllTypeData.DoubleField
+  fullName: NonNonSheet.Exp.AllTypeData.DoubleField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DoubleField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 24
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public double DoubleField
+    return:
+      type: System.Double
+    content.vb: Public DoubleField As Double
+- uid: NonNonSheet.Exp.AllTypeData.StringField
+  commentId: F:NonNonSheet.Exp.AllTypeData.StringField
+  id: StringField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: StringField
+  nameWithType: AllTypeData.StringField
+  fullName: NonNonSheet.Exp.AllTypeData.StringField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StringField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 25
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public string StringField
+    return:
+      type: System.String
+    content.vb: Public StringField As String
+- uid: NonNonSheet.Exp.AllTypeData.EnumField
+  commentId: F:NonNonSheet.Exp.AllTypeData.EnumField
+  id: EnumField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: EnumField
+  nameWithType: AllTypeData.EnumField
+  fullName: NonNonSheet.Exp.AllTypeData.EnumField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EnumField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 26
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public SampleEnum EnumField
+    return:
+      type: NonNonSheet.Exp.SampleEnum
+    content.vb: Public EnumField As SampleEnum
+- uid: NonNonSheet.Exp.AllTypeData.FlagsEnumField
+  commentId: F:NonNonSheet.Exp.AllTypeData.FlagsEnumField
+  id: FlagsEnumField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: FlagsEnumField
+  nameWithType: AllTypeData.FlagsEnumField
+  fullName: NonNonSheet.Exp.AllTypeData.FlagsEnumField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FlagsEnumField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 27
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public SampleFlagsEnum FlagsEnumField
+    return:
+      type: NonNonSheet.Exp.SampleFlagsEnum
+    content.vb: Public FlagsEnumField As SampleFlagsEnum
+- uid: NonNonSheet.Exp.AllTypeData.Vector2Field
+  commentId: F:NonNonSheet.Exp.AllTypeData.Vector2Field
+  id: Vector2Field
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: Vector2Field
+  nameWithType: AllTypeData.Vector2Field
+  fullName: NonNonSheet.Exp.AllTypeData.Vector2Field
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Vector2Field
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 28
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public Vector2 Vector2Field
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Vector2Field As Vector2
+- uid: NonNonSheet.Exp.AllTypeData.Vector3Field
+  commentId: F:NonNonSheet.Exp.AllTypeData.Vector3Field
+  id: Vector3Field
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: Vector3Field
+  nameWithType: AllTypeData.Vector3Field
+  fullName: NonNonSheet.Exp.AllTypeData.Vector3Field
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Vector3Field
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 29
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public Vector3 Vector3Field
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Vector3Field As Vector3
+- uid: NonNonSheet.Exp.AllTypeData.Vector4Field
+  commentId: F:NonNonSheet.Exp.AllTypeData.Vector4Field
+  id: Vector4Field
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: Vector4Field
+  nameWithType: AllTypeData.Vector4Field
+  fullName: NonNonSheet.Exp.AllTypeData.Vector4Field
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Vector4Field
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 30
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public Vector4 Vector4Field
+    return:
+      type: UnityEngine.Vector4
+    content.vb: Public Vector4Field As Vector4
+- uid: NonNonSheet.Exp.AllTypeData.Vector2IntField
+  commentId: F:NonNonSheet.Exp.AllTypeData.Vector2IntField
+  id: Vector2IntField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: Vector2IntField
+  nameWithType: AllTypeData.Vector2IntField
+  fullName: NonNonSheet.Exp.AllTypeData.Vector2IntField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Vector2IntField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 31
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public Vector2Int Vector2IntField
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Vector2IntField As Vector2Int
+- uid: NonNonSheet.Exp.AllTypeData.Vector3IntField
+  commentId: F:NonNonSheet.Exp.AllTypeData.Vector3IntField
+  id: Vector3IntField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: Vector3IntField
+  nameWithType: AllTypeData.Vector3IntField
+  fullName: NonNonSheet.Exp.AllTypeData.Vector3IntField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Vector3IntField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 32
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public Vector3Int Vector3IntField
+    return:
+      type: UnityEngine.Vector3Int
+    content.vb: Public Vector3IntField As Vector3Int
+- uid: NonNonSheet.Exp.AllTypeData.ColorField
+  commentId: F:NonNonSheet.Exp.AllTypeData.ColorField
+  id: ColorField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: ColorField
+  nameWithType: AllTypeData.ColorField
+  fullName: NonNonSheet.Exp.AllTypeData.ColorField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ColorField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 33
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public Color ColorField
+    return:
+      type: UnityEngine.Color
+    content.vb: Public ColorField As Color
+- uid: NonNonSheet.Exp.AllTypeData.TagField
+  commentId: F:NonNonSheet.Exp.AllTypeData.TagField
+  id: TagField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: TagField
+  nameWithType: AllTypeData.TagField
+  fullName: NonNonSheet.Exp.AllTypeData.TagField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: TagField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 34
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public string TagField
+    return:
+      type: System.String
+    content.vb: Public TagField As String
+- uid: NonNonSheet.Exp.AllTypeData.LayerField
+  commentId: F:NonNonSheet.Exp.AllTypeData.LayerField
+  id: LayerField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: LayerField
+  nameWithType: AllTypeData.LayerField
+  fullName: NonNonSheet.Exp.AllTypeData.LayerField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: LayerField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 35
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public int LayerField
+    return:
+      type: System.Int32
+    content.vb: Public LayerField As Integer
+- uid: NonNonSheet.Exp.AllTypeData.LayerMaskField
+  commentId: F:NonNonSheet.Exp.AllTypeData.LayerMaskField
+  id: LayerMaskField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: LayerMaskField
+  nameWithType: AllTypeData.LayerMaskField
+  fullName: NonNonSheet.Exp.AllTypeData.LayerMaskField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: LayerMaskField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 36
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public LayerMask LayerMaskField
+    return:
+      type: UnityEngine.LayerMask
+    content.vb: Public LayerMaskField As LayerMask
+- uid: NonNonSheet.Exp.AllTypeData.PrefabField
+  commentId: F:NonNonSheet.Exp.AllTypeData.PrefabField
+  id: PrefabField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: PrefabField
+  nameWithType: AllTypeData.PrefabField
+  fullName: NonNonSheet.Exp.AllTypeData.PrefabField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: PrefabField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 37
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public GameObject PrefabField
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public PrefabField As GameObject
+- uid: NonNonSheet.Exp.AllTypeData.MonoBehaviourField
+  commentId: F:NonNonSheet.Exp.AllTypeData.MonoBehaviourField
+  id: MonoBehaviourField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: MonoBehaviourField
+  nameWithType: AllTypeData.MonoBehaviourField
+  fullName: NonNonSheet.Exp.AllTypeData.MonoBehaviourField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: MonoBehaviourField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 38
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public SampleMonoBehaviour MonoBehaviourField
+    return:
+      type: NonNonSheet.Exp.SampleMonoBehaviour
+    content.vb: Public MonoBehaviourField As SampleMonoBehaviour
+- uid: NonNonSheet.Exp.AllTypeData.TextureField
+  commentId: F:NonNonSheet.Exp.AllTypeData.TextureField
+  id: TextureField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: TextureField
+  nameWithType: AllTypeData.TextureField
+  fullName: NonNonSheet.Exp.AllTypeData.TextureField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: TextureField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 39
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public Texture TextureField
+    return:
+      type: UnityEngine.Texture
+    content.vb: Public TextureField As Texture
+- uid: NonNonSheet.Exp.AllTypeData.MaterialField
+  commentId: F:NonNonSheet.Exp.AllTypeData.MaterialField
+  id: MaterialField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: MaterialField
+  nameWithType: AllTypeData.MaterialField
+  fullName: NonNonSheet.Exp.AllTypeData.MaterialField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: MaterialField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 40
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public Material MaterialField
+    return:
+      type: UnityEngine.Material
+    content.vb: Public MaterialField As Material
+- uid: NonNonSheet.Exp.AllTypeData.AssetReferenceField
+  commentId: F:NonNonSheet.Exp.AllTypeData.AssetReferenceField
+  id: AssetReferenceField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: AssetReferenceField
+  nameWithType: AllTypeData.AssetReferenceField
+  fullName: NonNonSheet.Exp.AllTypeData.AssetReferenceField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: AssetReferenceField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 41
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public AssetReference AssetReferenceField
+    return:
+      type: UnityEngine.AddressableAssets.AssetReference
+    content.vb: Public AssetReferenceField As AssetReference
+- uid: NonNonSheet.Exp.AllTypeData.SliderField
+  commentId: F:NonNonSheet.Exp.AllTypeData.SliderField
+  id: SliderField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: SliderField
+  nameWithType: AllTypeData.SliderField
+  fullName: NonNonSheet.Exp.AllTypeData.SliderField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SliderField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 43
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: >-
+      [SliderCell(0, 1, 0.1, true)]
+
+      public float SliderField
+    return:
+      type: System.Single
+    content.vb: >-
+      <SliderCell(0, 1, 0.1, True)>
+
+      Public SliderField As Single
+  attributes:
+  - type: NonNonSheet.SliderCellAttribute
+    ctor: NonNonSheet.SliderCellAttribute.#ctor(System.Single,System.Single,System.Single,System.Boolean)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+    - type: System.Single
+      value: 0.1
+    - type: System.Boolean
+      value: true
+- uid: NonNonSheet.Exp.AllTypeData.IntSliderField
+  commentId: F:NonNonSheet.Exp.AllTypeData.IntSliderField
+  id: IntSliderField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: IntSliderField
+  nameWithType: AllTypeData.IntSliderField
+  fullName: NonNonSheet.Exp.AllTypeData.IntSliderField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IntSliderField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 44
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: >-
+      [IntSliderCell(0, 99, 1, false)]
+
+      public int IntSliderField
+    return:
+      type: System.Int32
+    content.vb: >-
+      <IntSliderCell(0, 99, 1, False)>
+
+      Public IntSliderField As Integer
+  attributes:
+  - type: NonNonSheet.IntSliderCellAttribute
+    ctor: NonNonSheet.IntSliderCellAttribute.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean)
+    arguments:
+    - type: System.Int32
+      value: 0
+    - type: System.Int32
+      value: 99
+    - type: System.Int32
+      value: 1
+    - type: System.Boolean
+      value: false
+- uid: NonNonSheet.Exp.AllTypeData.MinMaxSliderField
+  commentId: F:NonNonSheet.Exp.AllTypeData.MinMaxSliderField
+  id: MinMaxSliderField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: MinMaxSliderField
+  nameWithType: AllTypeData.MinMaxSliderField
+  fullName: NonNonSheet.Exp.AllTypeData.MinMaxSliderField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: MinMaxSliderField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 45
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: >-
+      [MinMaxSliderCell(0, 99)]
+
+      public Vector2 MinMaxSliderField
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <MinMaxSliderCell(0, 99)>
+
+      Public MinMaxSliderField As Vector2
+  attributes:
+  - type: NonNonSheet.MinMaxSliderCellAttribute
+    ctor: NonNonSheet.MinMaxSliderCellAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 99
+- uid: NonNonSheet.Exp.AllTypeData.IntKeyDataRelation
+  commentId: F:NonNonSheet.Exp.AllTypeData.IntKeyDataRelation
+  id: IntKeyDataRelation
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: IntKeyDataRelation
+  nameWithType: AllTypeData.IntKeyDataRelation
+  fullName: NonNonSheet.Exp.AllTypeData.IntKeyDataRelation
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IntKeyDataRelation
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 46
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public int IntKeyDataRelation
+    return:
+      type: System.Int32
+    content.vb: Public IntKeyDataRelation As Integer
+- uid: NonNonSheet.Exp.AllTypeData.IntKeyMultiDataRelation
+  commentId: F:NonNonSheet.Exp.AllTypeData.IntKeyMultiDataRelation
+  id: IntKeyMultiDataRelation
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: IntKeyMultiDataRelation
+  nameWithType: AllTypeData.IntKeyMultiDataRelation
+  fullName: NonNonSheet.Exp.AllTypeData.IntKeyMultiDataRelation
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IntKeyMultiDataRelation
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 47
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public int[] IntKeyMultiDataRelation
+    return:
+      type: System.Int32[]
+    content.vb: Public IntKeyMultiDataRelation As Integer()
+- uid: NonNonSheet.Exp.AllTypeData.StringKeyDataRelation
+  commentId: F:NonNonSheet.Exp.AllTypeData.StringKeyDataRelation
+  id: StringKeyDataRelation
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: StringKeyDataRelation
+  nameWithType: AllTypeData.StringKeyDataRelation
+  fullName: NonNonSheet.Exp.AllTypeData.StringKeyDataRelation
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StringKeyDataRelation
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 48
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public string StringKeyDataRelation
+    return:
+      type: System.String
+    content.vb: Public StringKeyDataRelation As String
+- uid: NonNonSheet.Exp.AllTypeData.StringKeyMultiDataRelation
+  commentId: F:NonNonSheet.Exp.AllTypeData.StringKeyMultiDataRelation
+  id: StringKeyMultiDataRelation
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: StringKeyMultiDataRelation
+  nameWithType: AllTypeData.StringKeyMultiDataRelation
+  fullName: NonNonSheet.Exp.AllTypeData.StringKeyMultiDataRelation
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StringKeyMultiDataRelation
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 49
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public string[] StringKeyMultiDataRelation
+    return:
+      type: System.String[]
+    content.vb: Public StringKeyMultiDataRelation As String()
+- uid: NonNonSheet.Exp.AllTypeData.Date
+  commentId: F:NonNonSheet.Exp.AllTypeData.Date
+  id: Date
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: Date
+  nameWithType: AllTypeData.Date
+  fullName: NonNonSheet.Exp.AllTypeData.Date
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Date
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 50
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public Date Date
+    return:
+      type: Date
+    content.vb: Public [Date] As [Date]
+- uid: NonNonSheet.Exp.AllTypeData._protectedField
+  commentId: F:NonNonSheet.Exp.AllTypeData._protectedField
+  id: _protectedField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: _protectedField
+  nameWithType: AllTypeData._protectedField
+  fullName: NonNonSheet.Exp.AllTypeData._protectedField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: _protectedField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 53
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected int _protectedField
+    return:
+      type: System.Int32
+    content.vb: >-
+      <SerializeField>
+
+      Protected _protectedField As Integer
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: NonNonSheet.Exp.AllTypeData._protectedInternalField
+  commentId: F:NonNonSheet.Exp.AllTypeData._protectedInternalField
+  id: _protectedInternalField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: _protectedInternalField
+  nameWithType: AllTypeData._protectedInternalField
+  fullName: NonNonSheet.Exp.AllTypeData._protectedInternalField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: _protectedInternalField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 55
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected int _protectedInternalField
+    return:
+      type: System.Int32
+    content.vb: >-
+      <SerializeField>
+
+      Protected _protectedInternalField As Integer
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: NonNonSheet.Exp.AllTypeData.PublicField
+  commentId: F:NonNonSheet.Exp.AllTypeData.PublicField
+  id: PublicField
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: PublicField
+  nameWithType: AllTypeData.PublicField
+  fullName: NonNonSheet.Exp.AllTypeData.PublicField
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: PublicField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 56
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public int PublicField
+    return:
+      type: System.Int32
+    content.vb: >-
+      <SerializeField>
+
+      Public PublicField As Integer
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: NonNonSheet.Exp.AllTypeData.fallbackType
+  commentId: F:NonNonSheet.Exp.AllTypeData.fallbackType
+  id: fallbackType
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: fallbackType
+  nameWithType: AllTypeData.fallbackType
+  fullName: NonNonSheet.Exp.AllTypeData.fallbackType
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: fallbackType
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 58
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public FallbackType fallbackType
+    return:
+      type: NonNonSheet.Exp.FallbackType
+    content.vb: Public fallbackType As FallbackType
+- uid: NonNonSheet.Exp.AllTypeData.OtherNamespaceType
+  commentId: F:NonNonSheet.Exp.AllTypeData.OtherNamespaceType
+  id: OtherNamespaceType
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: OtherNamespaceType
+  nameWithType: AllTypeData.OtherNamespaceType
+  fullName: NonNonSheet.Exp.AllTypeData.OtherNamespaceType
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OtherNamespaceType
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 59
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public OtherNamespaceType OtherNamespaceType
+    return:
+      type: NonNonSheet.Sample2.OtherNamespaceType
+    content.vb: Public OtherNamespaceType As OtherNamespaceType
+- uid: NonNonSheet.Exp.AllTypeData.NotSerializableType
+  commentId: F:NonNonSheet.Exp.AllTypeData.NotSerializableType
+  id: NotSerializableType
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: NotSerializableType
+  nameWithType: AllTypeData.NotSerializableType
+  fullName: NonNonSheet.Exp.AllTypeData.NotSerializableType
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: NotSerializableType
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 60
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public NotSerializableType NotSerializableType
+    return:
+      type: NonNonSheet.Exp.NotSerializableType
+    content.vb: Public NotSerializableType As NotSerializableType
+- uid: NonNonSheet.Exp.AllTypeData.IntArray
+  commentId: F:NonNonSheet.Exp.AllTypeData.IntArray
+  id: IntArray
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: IntArray
+  nameWithType: AllTypeData.IntArray
+  fullName: NonNonSheet.Exp.AllTypeData.IntArray
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IntArray
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 62
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public int[] IntArray
+    return:
+      type: System.Int32[]
+    content.vb: Public IntArray As Integer()
+- uid: NonNonSheet.Exp.AllTypeData.IntList
+  commentId: F:NonNonSheet.Exp.AllTypeData.IntList
+  id: IntList
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: IntList
+  nameWithType: AllTypeData.IntList
+  fullName: NonNonSheet.Exp.AllTypeData.IntList
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IntList
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 63
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public List<int> IntList
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public IntList As List(Of Integer)
+- uid: NonNonSheet.Exp.AllTypeData.Vector3Array
+  commentId: F:NonNonSheet.Exp.AllTypeData.Vector3Array
+  id: Vector3Array
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: Vector3Array
+  nameWithType: AllTypeData.Vector3Array
+  fullName: NonNonSheet.Exp.AllTypeData.Vector3Array
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Vector3Array
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 64
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public Vector3[] Vector3Array
+    return:
+      type: UnityEngine.Vector3[]
+    content.vb: Public Vector3Array As Vector3()
+- uid: NonNonSheet.Exp.AllTypeData.EnumArray
+  commentId: F:NonNonSheet.Exp.AllTypeData.EnumArray
+  id: EnumArray
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: EnumArray
+  nameWithType: AllTypeData.EnumArray
+  fullName: NonNonSheet.Exp.AllTypeData.EnumArray
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EnumArray
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 65
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public SampleEnum[] EnumArray
+    return:
+      type: NonNonSheet.Exp.SampleEnum[]
+    content.vb: Public EnumArray As SampleEnum()
+- uid: NonNonSheet.Exp.AllTypeData.PrefabArray
+  commentId: F:NonNonSheet.Exp.AllTypeData.PrefabArray
+  id: PrefabArray
+  parent: NonNonSheet.Exp.AllTypeData
+  langs:
+  - csharp
+  - vb
+  name: PrefabArray
+  nameWithType: AllTypeData.PrefabArray
+  fullName: NonNonSheet.Exp.AllTypeData.PrefabArray
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: PrefabArray
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/01_AllType/AllTypeData.cs
+    startLine: 66
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: public GameObject[] PrefabArray
+    return:
+      type: UnityEngine.GameObject[]
+    content.vb: Public PrefabArray As GameObject()
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: NonNonSheet.Exp.SampleEnum
+  commentId: T:NonNonSheet.Exp.SampleEnum
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SampleEnum.html
+  name: SampleEnum
+  nameWithType: SampleEnum
+  fullName: NonNonSheet.Exp.SampleEnum
+- uid: NonNonSheet.Exp.SampleFlagsEnum
+  commentId: T:NonNonSheet.Exp.SampleFlagsEnum
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SampleFlagsEnum.html
+  name: SampleFlagsEnum
+  nameWithType: SampleFlagsEnum
+  fullName: NonNonSheet.Exp.SampleFlagsEnum
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Vector4
+  commentId: T:UnityEngine.Vector4
+  parent: UnityEngine
+  isExternal: true
+  name: Vector4
+  nameWithType: Vector4
+  fullName: UnityEngine.Vector4
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine.Vector3Int
+  commentId: T:UnityEngine.Vector3Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3Int
+  nameWithType: Vector3Int
+  fullName: UnityEngine.Vector3Int
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine.LayerMask
+  commentId: T:UnityEngine.LayerMask
+  parent: UnityEngine
+  isExternal: true
+  name: LayerMask
+  nameWithType: LayerMask
+  fullName: UnityEngine.LayerMask
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: NonNonSheet.Exp.SampleMonoBehaviour
+  commentId: T:NonNonSheet.Exp.SampleMonoBehaviour
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SampleMonoBehaviour.html
+  name: SampleMonoBehaviour
+  nameWithType: SampleMonoBehaviour
+  fullName: NonNonSheet.Exp.SampleMonoBehaviour
+- uid: UnityEngine.Texture
+  commentId: T:UnityEngine.Texture
+  parent: UnityEngine
+  isExternal: true
+  name: Texture
+  nameWithType: Texture
+  fullName: UnityEngine.Texture
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: UnityEngine.AddressableAssets.AssetReference
+  commentId: T:UnityEngine.AddressableAssets.AssetReference
+  parent: UnityEngine.AddressableAssets
+  isExternal: true
+  name: AssetReference
+  nameWithType: AssetReference
+  fullName: UnityEngine.AddressableAssets.AssetReference
+- uid: UnityEngine.AddressableAssets
+  commentId: N:UnityEngine.AddressableAssets
+  isExternal: true
+  name: UnityEngine.AddressableAssets
+  nameWithType: UnityEngine.AddressableAssets
+  fullName: UnityEngine.AddressableAssets
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.AddressableAssets
+    name: AddressableAssets
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.AddressableAssets
+    name: AddressableAssets
+    isExternal: true
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Date
+  commentId: T:Date
+  href: Date.html
+  name: Date
+  nameWithType: Date
+  fullName: Date
+- uid: NonNonSheet.Exp.FallbackType
+  commentId: T:NonNonSheet.Exp.FallbackType
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.FallbackType.html
+  name: FallbackType
+  nameWithType: FallbackType
+  fullName: NonNonSheet.Exp.FallbackType
+- uid: NonNonSheet.Sample2.OtherNamespaceType
+  commentId: T:NonNonSheet.Sample2.OtherNamespaceType
+  parent: NonNonSheet.Sample2
+  href: NonNonSheet.Sample2.OtherNamespaceType.html
+  name: OtherNamespaceType
+  nameWithType: OtherNamespaceType
+  fullName: NonNonSheet.Sample2.OtherNamespaceType
+- uid: NonNonSheet.Sample2
+  commentId: N:NonNonSheet.Sample2
+  href: NonNonSheet.html
+  name: NonNonSheet.Sample2
+  nameWithType: NonNonSheet.Sample2
+  fullName: NonNonSheet.Sample2
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Sample2
+    name: Sample2
+    href: NonNonSheet.Sample2.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Sample2
+    name: Sample2
+    href: NonNonSheet.Sample2.html
+- uid: NonNonSheet.Exp.NotSerializableType
+  commentId: T:NonNonSheet.Exp.NotSerializableType
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.NotSerializableType.html
+  name: NotSerializableType
+  nameWithType: NotSerializableType
+  fullName: NonNonSheet.Exp.NotSerializableType
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UnityEngine.Vector3[]
+  isExternal: true
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: UnityEngine.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: UnityEngine.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: (
+  - name: )
+- uid: NonNonSheet.Exp.SampleEnum[]
+  isExternal: true
+  href: NonNonSheet.Exp.SampleEnum.html
+  name: SampleEnum[]
+  nameWithType: SampleEnum[]
+  fullName: NonNonSheet.Exp.SampleEnum[]
+  nameWithType.vb: SampleEnum()
+  fullName.vb: NonNonSheet.Exp.SampleEnum()
+  name.vb: SampleEnum()
+  spec.csharp:
+  - uid: NonNonSheet.Exp.SampleEnum
+    name: SampleEnum
+    href: NonNonSheet.Exp.SampleEnum.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: NonNonSheet.Exp.SampleEnum
+    name: SampleEnum
+    href: NonNonSheet.Exp.SampleEnum.html
+  - name: (
+  - name: )
+- uid: UnityEngine.GameObject[]
+  isExternal: true
+  name: GameObject[]
+  nameWithType: GameObject[]
+  fullName: UnityEngine.GameObject[]
+  nameWithType.vb: GameObject()
+  fullName.vb: UnityEngine.GameObject()
+  name.vb: GameObject()
+  spec.csharp:
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: (
+  - name: )

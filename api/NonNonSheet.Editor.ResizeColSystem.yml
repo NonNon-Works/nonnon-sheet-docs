@@ -1,0 +1,601 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.ResizeColSystem
+  commentId: T:NonNonSheet.Editor.ResizeColSystem
+  id: ResizeColSystem
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.ResizeColSystem.CopyPasteSystem
+  - NonNonSheet.Editor.ResizeColSystem.RootVisualElement
+  - NonNonSheet.Editor.ResizeColSystem.SelectSystem
+  - NonNonSheet.Editor.ResizeColSystem.Sheet
+  - NonNonSheet.Editor.ResizeColSystem.StartResizing(MouseDownEvent,System.Int32)
+  - NonNonSheet.Editor.ResizeColSystem.Table
+  - NonNonSheet.Editor.ResizeColSystem.UndoRedoSystem
+  langs:
+  - csharp
+  - vb
+  name: ResizeColSystem
+  nameWithType: ResizeColSystem
+  fullName: NonNonSheet.Editor.ResizeColSystem
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ResizeColSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+    startLine: 5
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public class ResizeColSystem
+    content.vb: Public Class ResizeColSystem
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NonNonSheet.Editor.ResizeColSystem.Table
+  commentId: P:NonNonSheet.Editor.ResizeColSystem.Table
+  id: Table
+  parent: NonNonSheet.Editor.ResizeColSystem
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: ResizeColSystem.Table
+  fullName: NonNonSheet.Editor.ResizeColSystem.Table
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Table
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+    startLine: 7
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public NonNonTable Table { get; set; }
+    parameters: []
+    return:
+      type: NonNonSheet.NonNonTable
+    content.vb: Public Property Table As NonNonTable
+  overload: NonNonSheet.Editor.ResizeColSystem.Table*
+- uid: NonNonSheet.Editor.ResizeColSystem.RootVisualElement
+  commentId: P:NonNonSheet.Editor.ResizeColSystem.RootVisualElement
+  id: RootVisualElement
+  parent: NonNonSheet.Editor.ResizeColSystem
+  langs:
+  - csharp
+  - vb
+  name: RootVisualElement
+  nameWithType: ResizeColSystem.RootVisualElement
+  fullName: NonNonSheet.Editor.ResizeColSystem.RootVisualElement
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: RootVisualElement
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public VisualElement RootVisualElement { get; set; }
+    parameters: []
+    return:
+      type: VisualElement
+    content.vb: Public Property RootVisualElement As VisualElement
+  overload: NonNonSheet.Editor.ResizeColSystem.RootVisualElement*
+- uid: NonNonSheet.Editor.ResizeColSystem.Sheet
+  commentId: P:NonNonSheet.Editor.ResizeColSystem.Sheet
+  id: Sheet
+  parent: NonNonSheet.Editor.ResizeColSystem
+  langs:
+  - csharp
+  - vb
+  name: Sheet
+  nameWithType: ResizeColSystem.Sheet
+  fullName: NonNonSheet.Editor.ResizeColSystem.Sheet
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Sheet
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+    startLine: 9
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Sheet Sheet { get; set; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.Sheet
+    content.vb: Public Property Sheet As Sheet
+  overload: NonNonSheet.Editor.ResizeColSystem.Sheet*
+- uid: NonNonSheet.Editor.ResizeColSystem.SelectSystem
+  commentId: P:NonNonSheet.Editor.ResizeColSystem.SelectSystem
+  id: SelectSystem
+  parent: NonNonSheet.Editor.ResizeColSystem
+  langs:
+  - csharp
+  - vb
+  name: SelectSystem
+  nameWithType: ResizeColSystem.SelectSystem
+  fullName: NonNonSheet.Editor.ResizeColSystem.SelectSystem
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+    startLine: 10
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public SelectSystem SelectSystem { get; set; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.SelectSystem
+    content.vb: Public Property SelectSystem As SelectSystem
+  overload: NonNonSheet.Editor.ResizeColSystem.SelectSystem*
+- uid: NonNonSheet.Editor.ResizeColSystem.CopyPasteSystem
+  commentId: P:NonNonSheet.Editor.ResizeColSystem.CopyPasteSystem
+  id: CopyPasteSystem
+  parent: NonNonSheet.Editor.ResizeColSystem
+  langs:
+  - csharp
+  - vb
+  name: CopyPasteSystem
+  nameWithType: ResizeColSystem.CopyPasteSystem
+  fullName: NonNonSheet.Editor.ResizeColSystem.CopyPasteSystem
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: CopyPasteSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+    startLine: 11
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public CopyPasteSystem CopyPasteSystem { get; set; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.CopyPasteSystem
+    content.vb: Public Property CopyPasteSystem As CopyPasteSystem
+  overload: NonNonSheet.Editor.ResizeColSystem.CopyPasteSystem*
+- uid: NonNonSheet.Editor.ResizeColSystem.UndoRedoSystem
+  commentId: P:NonNonSheet.Editor.ResizeColSystem.UndoRedoSystem
+  id: UndoRedoSystem
+  parent: NonNonSheet.Editor.ResizeColSystem
+  langs:
+  - csharp
+  - vb
+  name: UndoRedoSystem
+  nameWithType: ResizeColSystem.UndoRedoSystem
+  fullName: NonNonSheet.Editor.ResizeColSystem.UndoRedoSystem
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: UndoRedoSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+    startLine: 12
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public UndoRedoSystem UndoRedoSystem { get; set; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.UndoRedoSystem
+    content.vb: Public Property UndoRedoSystem As UndoRedoSystem
+  overload: NonNonSheet.Editor.ResizeColSystem.UndoRedoSystem*
+- uid: NonNonSheet.Editor.ResizeColSystem.StartResizing(MouseDownEvent,System.Int32)
+  commentId: M:NonNonSheet.Editor.ResizeColSystem.StartResizing(MouseDownEvent,System.Int32)
+  id: StartResizing(MouseDownEvent,System.Int32)
+  parent: NonNonSheet.Editor.ResizeColSystem
+  langs:
+  - csharp
+  - vb
+  name: StartResizing(MouseDownEvent, int)
+  nameWithType: ResizeColSystem.StartResizing(MouseDownEvent, int)
+  fullName: NonNonSheet.Editor.ResizeColSystem.StartResizing(MouseDownEvent, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StartResizing
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ResizeColSystem.cs
+    startLine: 21
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void StartResizing(MouseDownEvent evt, int columnIndex)
+    parameters:
+    - id: evt
+      type: MouseDownEvent
+    - id: columnIndex
+      type: System.Int32
+    content.vb: Public Sub StartResizing(evt As MouseDownEvent, columnIndex As Integer)
+  overload: NonNonSheet.Editor.ResizeColSystem.StartResizing*
+  nameWithType.vb: ResizeColSystem.StartResizing(MouseDownEvent, Integer)
+  fullName.vb: NonNonSheet.Editor.ResizeColSystem.StartResizing(MouseDownEvent, Integer)
+  name.vb: StartResizing(MouseDownEvent, Integer)
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.ResizeColSystem.Table*
+  commentId: Overload:NonNonSheet.Editor.ResizeColSystem.Table
+  href: NonNonSheet.Editor.ResizeColSystem.html#NonNonSheet_Editor_ResizeColSystem_Table
+  name: Table
+  nameWithType: ResizeColSystem.Table
+  fullName: NonNonSheet.Editor.ResizeColSystem.Table
+- uid: NonNonSheet.NonNonTable
+  commentId: T:NonNonSheet.NonNonTable
+  parent: NonNonSheet
+  href: NonNonSheet.NonNonTable.html
+  name: NonNonTable
+  nameWithType: NonNonTable
+  fullName: NonNonSheet.NonNonTable
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Editor.ResizeColSystem.RootVisualElement*
+  commentId: Overload:NonNonSheet.Editor.ResizeColSystem.RootVisualElement
+  href: NonNonSheet.Editor.ResizeColSystem.html#NonNonSheet_Editor_ResizeColSystem_RootVisualElement
+  name: RootVisualElement
+  nameWithType: ResizeColSystem.RootVisualElement
+  fullName: NonNonSheet.Editor.ResizeColSystem.RootVisualElement
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement
+- uid: NonNonSheet.Editor.ResizeColSystem.Sheet*
+  commentId: Overload:NonNonSheet.Editor.ResizeColSystem.Sheet
+  href: NonNonSheet.Editor.ResizeColSystem.html#NonNonSheet_Editor_ResizeColSystem_Sheet
+  name: Sheet
+  nameWithType: ResizeColSystem.Sheet
+  fullName: NonNonSheet.Editor.ResizeColSystem.Sheet
+- uid: NonNonSheet.Editor.Sheet
+  commentId: T:NonNonSheet.Editor.Sheet
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Sheet.html
+  name: Sheet
+  nameWithType: Sheet
+  fullName: NonNonSheet.Editor.Sheet
+- uid: NonNonSheet.Editor.ResizeColSystem.SelectSystem*
+  commentId: Overload:NonNonSheet.Editor.ResizeColSystem.SelectSystem
+  href: NonNonSheet.Editor.ResizeColSystem.html#NonNonSheet_Editor_ResizeColSystem_SelectSystem
+  name: SelectSystem
+  nameWithType: ResizeColSystem.SelectSystem
+  fullName: NonNonSheet.Editor.ResizeColSystem.SelectSystem
+- uid: NonNonSheet.Editor.SelectSystem
+  commentId: T:NonNonSheet.Editor.SelectSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SelectSystem.html
+  name: SelectSystem
+  nameWithType: SelectSystem
+  fullName: NonNonSheet.Editor.SelectSystem
+- uid: NonNonSheet.Editor.ResizeColSystem.CopyPasteSystem*
+  commentId: Overload:NonNonSheet.Editor.ResizeColSystem.CopyPasteSystem
+  href: NonNonSheet.Editor.ResizeColSystem.html#NonNonSheet_Editor_ResizeColSystem_CopyPasteSystem
+  name: CopyPasteSystem
+  nameWithType: ResizeColSystem.CopyPasteSystem
+  fullName: NonNonSheet.Editor.ResizeColSystem.CopyPasteSystem
+- uid: NonNonSheet.Editor.CopyPasteSystem
+  commentId: T:NonNonSheet.Editor.CopyPasteSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.CopyPasteSystem.html
+  name: CopyPasteSystem
+  nameWithType: CopyPasteSystem
+  fullName: NonNonSheet.Editor.CopyPasteSystem
+- uid: NonNonSheet.Editor.ResizeColSystem.UndoRedoSystem*
+  commentId: Overload:NonNonSheet.Editor.ResizeColSystem.UndoRedoSystem
+  href: NonNonSheet.Editor.ResizeColSystem.html#NonNonSheet_Editor_ResizeColSystem_UndoRedoSystem
+  name: UndoRedoSystem
+  nameWithType: ResizeColSystem.UndoRedoSystem
+  fullName: NonNonSheet.Editor.ResizeColSystem.UndoRedoSystem
+- uid: NonNonSheet.Editor.UndoRedoSystem
+  commentId: T:NonNonSheet.Editor.UndoRedoSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.UndoRedoSystem.html
+  name: UndoRedoSystem
+  nameWithType: UndoRedoSystem
+  fullName: NonNonSheet.Editor.UndoRedoSystem
+- uid: NonNonSheet.Editor.ResizeColSystem.StartResizing*
+  commentId: Overload:NonNonSheet.Editor.ResizeColSystem.StartResizing
+  href: NonNonSheet.Editor.ResizeColSystem.html#NonNonSheet_Editor_ResizeColSystem_StartResizing_MouseDownEvent_System_Int32_
+  name: StartResizing
+  nameWithType: ResizeColSystem.StartResizing
+  fullName: NonNonSheet.Editor.ResizeColSystem.StartResizing
+- uid: MouseDownEvent
+  isExternal: true
+  name: MouseDownEvent
+  nameWithType: MouseDownEvent
+  fullName: MouseDownEvent
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

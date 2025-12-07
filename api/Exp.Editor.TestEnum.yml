@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: Exp.Editor.TestEnum
+  commentId: T:Exp.Editor.TestEnum
+  id: TestEnum
+  parent: Exp.Editor
+  children:
+  - Exp.Editor.TestEnum.None
+  - Exp.Editor.TestEnum.Option1
+  - Exp.Editor.TestEnum.Option2
+  - Exp.Editor.TestEnum.Option3
+  langs:
+  - csharp
+  - vb
+  name: TestEnum
+  nameWithType: TestEnum
+  fullName: Exp.Editor.TestEnum
+  type: Enum
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/xx_Exp/TestSo.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: TestEnum
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/xx_Exp/TestSo.cs
+    startLine: 36
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: Exp.Editor
+  syntax:
+    content: public enum TestEnum
+    content.vb: Public Enum TestEnum
+- uid: Exp.Editor.TestEnum.None
+  commentId: F:Exp.Editor.TestEnum.None
+  id: None
+  parent: Exp.Editor.TestEnum
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: TestEnum.None
+  fullName: Exp.Editor.TestEnum.None
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/xx_Exp/TestSo.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: None
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/xx_Exp/TestSo.cs
+    startLine: 38
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: Exp.Editor
+  syntax:
+    content: None = 0
+    return:
+      type: Exp.Editor.TestEnum
+- uid: Exp.Editor.TestEnum.Option1
+  commentId: F:Exp.Editor.TestEnum.Option1
+  id: Option1
+  parent: Exp.Editor.TestEnum
+  langs:
+  - csharp
+  - vb
+  name: Option1
+  nameWithType: TestEnum.Option1
+  fullName: Exp.Editor.TestEnum.Option1
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/xx_Exp/TestSo.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Option1
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/xx_Exp/TestSo.cs
+    startLine: 39
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: Exp.Editor
+  syntax:
+    content: Option1 = 1
+    return:
+      type: Exp.Editor.TestEnum
+- uid: Exp.Editor.TestEnum.Option2
+  commentId: F:Exp.Editor.TestEnum.Option2
+  id: Option2
+  parent: Exp.Editor.TestEnum
+  langs:
+  - csharp
+  - vb
+  name: Option2
+  nameWithType: TestEnum.Option2
+  fullName: Exp.Editor.TestEnum.Option2
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/xx_Exp/TestSo.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Option2
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/xx_Exp/TestSo.cs
+    startLine: 40
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: Exp.Editor
+  syntax:
+    content: Option2 = 2
+    return:
+      type: Exp.Editor.TestEnum
+- uid: Exp.Editor.TestEnum.Option3
+  commentId: F:Exp.Editor.TestEnum.Option3
+  id: Option3
+  parent: Exp.Editor.TestEnum
+  langs:
+  - csharp
+  - vb
+  name: Option3
+  nameWithType: TestEnum.Option3
+  fullName: Exp.Editor.TestEnum.Option3
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/xx_Exp/TestSo.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Option3
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Assets/NonNonSheet/Editor/xx_Exp/TestSo.cs
+    startLine: 41
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: Exp.Editor
+  syntax:
+    content: Option3 = 3
+    return:
+      type: Exp.Editor.TestEnum
+references:
+- uid: Exp.Editor
+  commentId: N:Exp.Editor
+  href: Exp.html
+  name: Exp.Editor
+  nameWithType: Exp.Editor
+  fullName: Exp.Editor
+  spec.csharp:
+  - uid: Exp
+    name: Exp
+    href: Exp.html
+  - name: .
+  - uid: Exp.Editor
+    name: Editor
+    href: Exp.Editor.html
+  spec.vb:
+  - uid: Exp
+    name: Exp
+    href: Exp.html
+  - name: .
+  - uid: Exp.Editor
+    name: Editor
+    href: Exp.Editor.html
+- uid: Exp.Editor.TestEnum
+  commentId: T:Exp.Editor.TestEnum
+  parent: Exp.Editor
+  href: Exp.Editor.TestEnum.html
+  name: TestEnum
+  nameWithType: TestEnum
+  fullName: Exp.Editor.TestEnum

@@ -1,0 +1,426 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.ILargeTableDataTableValidator
+  commentId: T:NonNonSheet.Exp.ILargeTableDataTableValidator
+  id: ILargeTableDataTableValidator
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateId(LargeTableData,System.Int32)
+  - NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateIntSlider(LargeTableData,System.Int32)
+  - NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateName(LargeTableData,System.String)
+  - NonNonSheet.Exp.ILargeTableDataTableValidator.ValidatePrefab(LargeTableData,UnityEngine.GameObject)
+  langs:
+  - csharp
+  - vb
+  name: ILargeTableDataTableValidator
+  nameWithType: ILargeTableDataTableValidator
+  fullName: NonNonSheet.Exp.ILargeTableDataTableValidator
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/LargeTableDataTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ILargeTableDataTableValidator
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/LargeTableDataTable.g.cs
+    startLine: 104
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: 'public interface ILargeTableDataTableValidator : IValidator<LargeTableData>'
+    content.vb: Public Interface ILargeTableDataTableValidator Inherits IValidator(Of LargeTableData)
+  inheritedMembers:
+  - NonNonSheet.IValidator{LargeTableData}.Validate(NonNonSheet.ColumnMetadata,LargeTableData,System.Object)
+- uid: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateId(LargeTableData,System.Int32)
+  commentId: M:NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateId(LargeTableData,System.Int32)
+  id: ValidateId(LargeTableData,System.Int32)
+  parent: NonNonSheet.Exp.ILargeTableDataTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateId(LargeTableData, int)
+  nameWithType: ILargeTableDataTableValidator.ValidateId(LargeTableData, int)
+  fullName: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateId(LargeTableData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/LargeTableDataTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateId
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/LargeTableDataTable.g.cs
+    startLine: 106
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateId(LargeTableData self, int id)
+    parameters:
+    - id: self
+      type: LargeTableData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateId(self As LargeTableData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateId*
+  nameWithType.vb: ILargeTableDataTableValidator.ValidateId(LargeTableData, Integer)
+  fullName.vb: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateId(LargeTableData, Integer)
+  name.vb: ValidateId(LargeTableData, Integer)
+- uid: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateName(LargeTableData,System.String)
+  commentId: M:NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateName(LargeTableData,System.String)
+  id: ValidateName(LargeTableData,System.String)
+  parent: NonNonSheet.Exp.ILargeTableDataTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateName(LargeTableData, string)
+  nameWithType: ILargeTableDataTableValidator.ValidateName(LargeTableData, string)
+  fullName: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateName(LargeTableData, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/LargeTableDataTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateName
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/LargeTableDataTable.g.cs
+    startLine: 107
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateName(LargeTableData self, string id)
+    parameters:
+    - id: self
+      type: LargeTableData
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateName(self As LargeTableData, id As String) As ValidationResult
+  overload: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateName*
+  nameWithType.vb: ILargeTableDataTableValidator.ValidateName(LargeTableData, String)
+  fullName.vb: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateName(LargeTableData, String)
+  name.vb: ValidateName(LargeTableData, String)
+- uid: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidatePrefab(LargeTableData,UnityEngine.GameObject)
+  commentId: M:NonNonSheet.Exp.ILargeTableDataTableValidator.ValidatePrefab(LargeTableData,UnityEngine.GameObject)
+  id: ValidatePrefab(LargeTableData,UnityEngine.GameObject)
+  parent: NonNonSheet.Exp.ILargeTableDataTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidatePrefab(LargeTableData, GameObject)
+  nameWithType: ILargeTableDataTableValidator.ValidatePrefab(LargeTableData, GameObject)
+  fullName: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidatePrefab(LargeTableData, UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/LargeTableDataTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidatePrefab
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/LargeTableDataTable.g.cs
+    startLine: 108
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidatePrefab(LargeTableData self, GameObject id)
+    parameters:
+    - id: self
+      type: LargeTableData
+    - id: id
+      type: UnityEngine.GameObject
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidatePrefab(self As LargeTableData, id As GameObject) As ValidationResult
+  overload: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidatePrefab*
+- uid: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateIntSlider(LargeTableData,System.Int32)
+  commentId: M:NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateIntSlider(LargeTableData,System.Int32)
+  id: ValidateIntSlider(LargeTableData,System.Int32)
+  parent: NonNonSheet.Exp.ILargeTableDataTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateIntSlider(LargeTableData, int)
+  nameWithType: ILargeTableDataTableValidator.ValidateIntSlider(LargeTableData, int)
+  fullName: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateIntSlider(LargeTableData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/LargeTableDataTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateIntSlider
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/LargeTableDataTable.g.cs
+    startLine: 109
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateIntSlider(LargeTableData self, int id)
+    parameters:
+    - id: self
+      type: LargeTableData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateIntSlider(self As LargeTableData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateIntSlider*
+  nameWithType.vb: ILargeTableDataTableValidator.ValidateIntSlider(LargeTableData, Integer)
+  fullName.vb: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateIntSlider(LargeTableData, Integer)
+  name.vb: ValidateIntSlider(LargeTableData, Integer)
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.IValidator{LargeTableData}.Validate(NonNonSheet.ColumnMetadata,LargeTableData,System.Object)
+  commentId: M:NonNonSheet.IValidator{LargeTableData}.Validate(NonNonSheet.ColumnMetadata,LargeTableData,System.Object)
+  parent: NonNonSheet.IValidator{LargeTableData}
+  definition: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  href: LargeTableData.html
+  name: Validate(ColumnMetadata, LargeTableData, object)
+  nameWithType: IValidator<LargeTableData>.Validate(ColumnMetadata, LargeTableData, object)
+  fullName: NonNonSheet.IValidator<LargeTableData>.Validate(NonNonSheet.ColumnMetadata, LargeTableData, object)
+  nameWithType.vb: IValidator(Of LargeTableData).Validate(ColumnMetadata, LargeTableData, Object)
+  fullName.vb: NonNonSheet.IValidator(Of LargeTableData).Validate(NonNonSheet.ColumnMetadata, LargeTableData, Object)
+  name.vb: Validate(ColumnMetadata, LargeTableData, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator{LargeTableData}.Validate(NonNonSheet.ColumnMetadata,LargeTableData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: LargeTableData
+    name: LargeTableData
+    href: LargeTableData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator{LargeTableData}.Validate(NonNonSheet.ColumnMetadata,LargeTableData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: LargeTableData
+    name: LargeTableData
+    href: LargeTableData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  commentId: M:NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Validate(ColumnMetadata, T, object)
+  nameWithType: IValidator<T>.Validate(ColumnMetadata, T, object)
+  fullName: NonNonSheet.IValidator<T>.Validate(NonNonSheet.ColumnMetadata, T, object)
+  nameWithType.vb: IValidator(Of T).Validate(ColumnMetadata, T, Object)
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate(NonNonSheet.ColumnMetadata, T, Object)
+  name.vb: Validate(ColumnMetadata, T, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator{LargeTableData}
+  commentId: T:NonNonSheet.IValidator{LargeTableData}
+  parent: NonNonSheet
+  definition: NonNonSheet.IValidator`1
+  href: LargeTableData.html
+  name: IValidator<LargeTableData>
+  nameWithType: IValidator<LargeTableData>
+  fullName: NonNonSheet.IValidator<LargeTableData>
+  nameWithType.vb: IValidator(Of LargeTableData)
+  fullName.vb: NonNonSheet.IValidator(Of LargeTableData)
+  name.vb: IValidator(Of LargeTableData)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: <
+  - uid: LargeTableData
+    name: LargeTableData
+    href: LargeTableData.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LargeTableData
+    name: LargeTableData
+    href: LargeTableData.html
+  - name: )
+- uid: NonNonSheet.IValidator`1
+  commentId: T:NonNonSheet.IValidator`1
+  href: NonNonSheet.IValidator-1.html
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: NonNonSheet.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: NonNonSheet.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateId*
+  commentId: Overload:NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateId
+  href: NonNonSheet.Exp.ILargeTableDataTableValidator.html#NonNonSheet_Exp_ILargeTableDataTableValidator_ValidateId_LargeTableData_System_Int32_
+  name: ValidateId
+  nameWithType: ILargeTableDataTableValidator.ValidateId
+  fullName: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateId
+- uid: LargeTableData
+  commentId: T:LargeTableData
+  href: LargeTableData.html
+  name: LargeTableData
+  nameWithType: LargeTableData
+  fullName: LargeTableData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateName*
+  commentId: Overload:NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateName
+  href: NonNonSheet.Exp.ILargeTableDataTableValidator.html#NonNonSheet_Exp_ILargeTableDataTableValidator_ValidateName_LargeTableData_System_String_
+  name: ValidateName
+  nameWithType: ILargeTableDataTableValidator.ValidateName
+  fullName: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidatePrefab*
+  commentId: Overload:NonNonSheet.Exp.ILargeTableDataTableValidator.ValidatePrefab
+  href: NonNonSheet.Exp.ILargeTableDataTableValidator.html#NonNonSheet_Exp_ILargeTableDataTableValidator_ValidatePrefab_LargeTableData_UnityEngine_GameObject_
+  name: ValidatePrefab
+  nameWithType: ILargeTableDataTableValidator.ValidatePrefab
+  fullName: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidatePrefab
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateIntSlider*
+  commentId: Overload:NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateIntSlider
+  href: NonNonSheet.Exp.ILargeTableDataTableValidator.html#NonNonSheet_Exp_ILargeTableDataTableValidator_ValidateIntSlider_LargeTableData_System_Int32_
+  name: ValidateIntSlider
+  nameWithType: ILargeTableDataTableValidator.ValidateIntSlider
+  fullName: NonNonSheet.Exp.ILargeTableDataTableValidator.ValidateIntSlider

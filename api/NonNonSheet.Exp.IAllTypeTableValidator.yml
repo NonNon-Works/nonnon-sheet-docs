@@ -1,0 +1,2783 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.IAllTypeTableValidator
+  commentId: T:NonNonSheet.Exp.IAllTypeTableValidator
+  id: IAllTypeTableValidator
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateAssetReferenceField(NonNonSheet.Exp.AllTypeData,UnityEngine.AddressableAssets.AssetReference)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateBoolField(NonNonSheet.Exp.AllTypeData,System.Boolean)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateByteField(NonNonSheet.Exp.AllTypeData,System.Byte)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateColorField(NonNonSheet.Exp.AllTypeData,UnityEngine.Color)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateDate(NonNonSheet.Exp.AllTypeData,Date)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateDoubleField(NonNonSheet.Exp.AllTypeData,System.Double)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumArray(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleEnum[])
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleEnum)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateFlagsEnumField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleFlagsEnum)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateFloatField(NonNonSheet.Exp.AllTypeData,System.Single)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateId(NonNonSheet.Exp.AllTypeData,System.Int32)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntArray(NonNonSheet.Exp.AllTypeData,System.Int32[])
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyDataRelation(NonNonSheet.Exp.AllTypeData,System.Int32)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData,System.Int32[])
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntList(NonNonSheet.Exp.AllTypeData,System.Collections.Generic.List{System.Int32})
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntSliderField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerMaskField(NonNonSheet.Exp.AllTypeData,UnityEngine.LayerMask)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateLongField(NonNonSheet.Exp.AllTypeData,System.Int64)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateMaterialField(NonNonSheet.Exp.AllTypeData,UnityEngine.Material)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateMinMaxSliderField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateMonoBehaviourField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleMonoBehaviour)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateOtherNamespaceType(NonNonSheet.Exp.AllTypeData,NonNonSheet.Sample2.OtherNamespaceType)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabArray(NonNonSheet.Exp.AllTypeData,UnityEngine.GameObject[])
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabField(NonNonSheet.Exp.AllTypeData,UnityEngine.GameObject)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidatePublicField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateSByteField(NonNonSheet.Exp.AllTypeData,System.SByte)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateShortField(NonNonSheet.Exp.AllTypeData,System.Int16)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateSliderField(NonNonSheet.Exp.AllTypeData,System.Single)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringField(NonNonSheet.Exp.AllTypeData,System.String)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyDataRelation(NonNonSheet.Exp.AllTypeData,System.String)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData,System.String[])
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateTagField(NonNonSheet.Exp.AllTypeData,System.String)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateTextureField(NonNonSheet.Exp.AllTypeData,UnityEngine.Texture)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateUIntField(NonNonSheet.Exp.AllTypeData,System.UInt32)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateULongField(NonNonSheet.Exp.AllTypeData,System.UInt64)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateUShortField(NonNonSheet.Exp.AllTypeData,System.UInt16)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2IntField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2Int)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Array(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3[])
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3IntField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3Int)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector4Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector4)
+  - NonNonSheet.Exp.IAllTypeTableValidator.Validate_internalField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  - NonNonSheet.Exp.IAllTypeTableValidator.Validate_privateField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  - NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  - NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedInternalField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  - NonNonSheet.Exp.IAllTypeTableValidator.ValidatefallbackType(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.FallbackType)
+  langs:
+  - csharp
+  - vb
+  name: IAllTypeTableValidator
+  nameWithType: IAllTypeTableValidator
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IAllTypeTableValidator
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 439
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: 'public interface IAllTypeTableValidator : IValidator<AllTypeData>'
+    content.vb: Public Interface IAllTypeTableValidator Inherits IValidator(Of AllTypeData)
+  inheritedMembers:
+  - NonNonSheet.IValidator{NonNonSheet.Exp.AllTypeData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.AllTypeData,System.Object)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateId(NonNonSheet.Exp.AllTypeData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateId(NonNonSheet.Exp.AllTypeData,System.Int32)
+  id: ValidateId(NonNonSheet.Exp.AllTypeData,System.Int32)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateId(AllTypeData, int)
+  nameWithType: IAllTypeTableValidator.ValidateId(AllTypeData, int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateId(NonNonSheet.Exp.AllTypeData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateId
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 441
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateId(AllTypeData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateId(self As AllTypeData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateId*
+  nameWithType.vb: IAllTypeTableValidator.ValidateId(AllTypeData, Integer)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateId(NonNonSheet.Exp.AllTypeData, Integer)
+  name.vb: ValidateId(AllTypeData, Integer)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateBoolField(NonNonSheet.Exp.AllTypeData,System.Boolean)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateBoolField(NonNonSheet.Exp.AllTypeData,System.Boolean)
+  id: ValidateBoolField(NonNonSheet.Exp.AllTypeData,System.Boolean)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateBoolField(AllTypeData, bool)
+  nameWithType: IAllTypeTableValidator.ValidateBoolField(AllTypeData, bool)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateBoolField(NonNonSheet.Exp.AllTypeData, bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateBoolField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 442
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateBoolField(AllTypeData self, bool id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Boolean
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateBoolField(self As AllTypeData, id As Boolean) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateBoolField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateBoolField(AllTypeData, Boolean)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateBoolField(NonNonSheet.Exp.AllTypeData, Boolean)
+  name.vb: ValidateBoolField(AllTypeData, Boolean)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSByteField(NonNonSheet.Exp.AllTypeData,System.SByte)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateSByteField(NonNonSheet.Exp.AllTypeData,System.SByte)
+  id: ValidateSByteField(NonNonSheet.Exp.AllTypeData,System.SByte)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateSByteField(AllTypeData, sbyte)
+  nameWithType: IAllTypeTableValidator.ValidateSByteField(AllTypeData, sbyte)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSByteField(NonNonSheet.Exp.AllTypeData, sbyte)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateSByteField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 443
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateSByteField(AllTypeData self, sbyte id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.SByte
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateSByteField(self As AllTypeData, id As SByte) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSByteField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateSByteField(AllTypeData, SByte)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSByteField(NonNonSheet.Exp.AllTypeData, SByte)
+  name.vb: ValidateSByteField(AllTypeData, SByte)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateByteField(NonNonSheet.Exp.AllTypeData,System.Byte)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateByteField(NonNonSheet.Exp.AllTypeData,System.Byte)
+  id: ValidateByteField(NonNonSheet.Exp.AllTypeData,System.Byte)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateByteField(AllTypeData, byte)
+  nameWithType: IAllTypeTableValidator.ValidateByteField(AllTypeData, byte)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateByteField(NonNonSheet.Exp.AllTypeData, byte)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateByteField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 444
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateByteField(AllTypeData self, byte id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Byte
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateByteField(self As AllTypeData, id As Byte) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateByteField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateByteField(AllTypeData, Byte)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateByteField(NonNonSheet.Exp.AllTypeData, Byte)
+  name.vb: ValidateByteField(AllTypeData, Byte)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateShortField(NonNonSheet.Exp.AllTypeData,System.Int16)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateShortField(NonNonSheet.Exp.AllTypeData,System.Int16)
+  id: ValidateShortField(NonNonSheet.Exp.AllTypeData,System.Int16)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateShortField(AllTypeData, short)
+  nameWithType: IAllTypeTableValidator.ValidateShortField(AllTypeData, short)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateShortField(NonNonSheet.Exp.AllTypeData, short)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateShortField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 445
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateShortField(AllTypeData self, short id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int16
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateShortField(self As AllTypeData, id As Short) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateShortField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateShortField(AllTypeData, Short)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateShortField(NonNonSheet.Exp.AllTypeData, Short)
+  name.vb: ValidateShortField(AllTypeData, Short)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUShortField(NonNonSheet.Exp.AllTypeData,System.UInt16)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateUShortField(NonNonSheet.Exp.AllTypeData,System.UInt16)
+  id: ValidateUShortField(NonNonSheet.Exp.AllTypeData,System.UInt16)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateUShortField(AllTypeData, ushort)
+  nameWithType: IAllTypeTableValidator.ValidateUShortField(AllTypeData, ushort)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUShortField(NonNonSheet.Exp.AllTypeData, ushort)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateUShortField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 446
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateUShortField(AllTypeData self, ushort id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.UInt16
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateUShortField(self As AllTypeData, id As UShort) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUShortField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateUShortField(AllTypeData, UShort)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUShortField(NonNonSheet.Exp.AllTypeData, UShort)
+  name.vb: ValidateUShortField(AllTypeData, UShort)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  id: ValidateIntField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateIntField(AllTypeData, int)
+  nameWithType: IAllTypeTableValidator.ValidateIntField(AllTypeData, int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntField(NonNonSheet.Exp.AllTypeData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateIntField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 447
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateIntField(AllTypeData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateIntField(self As AllTypeData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateIntField(AllTypeData, Integer)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntField(NonNonSheet.Exp.AllTypeData, Integer)
+  name.vb: ValidateIntField(AllTypeData, Integer)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUIntField(NonNonSheet.Exp.AllTypeData,System.UInt32)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateUIntField(NonNonSheet.Exp.AllTypeData,System.UInt32)
+  id: ValidateUIntField(NonNonSheet.Exp.AllTypeData,System.UInt32)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateUIntField(AllTypeData, uint)
+  nameWithType: IAllTypeTableValidator.ValidateUIntField(AllTypeData, uint)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUIntField(NonNonSheet.Exp.AllTypeData, uint)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateUIntField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 448
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateUIntField(AllTypeData self, uint id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.UInt32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateUIntField(self As AllTypeData, id As UInteger) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUIntField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateUIntField(AllTypeData, UInteger)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUIntField(NonNonSheet.Exp.AllTypeData, UInteger)
+  name.vb: ValidateUIntField(AllTypeData, UInteger)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLongField(NonNonSheet.Exp.AllTypeData,System.Int64)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateLongField(NonNonSheet.Exp.AllTypeData,System.Int64)
+  id: ValidateLongField(NonNonSheet.Exp.AllTypeData,System.Int64)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateLongField(AllTypeData, long)
+  nameWithType: IAllTypeTableValidator.ValidateLongField(AllTypeData, long)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLongField(NonNonSheet.Exp.AllTypeData, long)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateLongField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 449
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateLongField(AllTypeData self, long id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int64
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateLongField(self As AllTypeData, id As Long) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLongField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateLongField(AllTypeData, Long)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLongField(NonNonSheet.Exp.AllTypeData, Long)
+  name.vb: ValidateLongField(AllTypeData, Long)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateULongField(NonNonSheet.Exp.AllTypeData,System.UInt64)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateULongField(NonNonSheet.Exp.AllTypeData,System.UInt64)
+  id: ValidateULongField(NonNonSheet.Exp.AllTypeData,System.UInt64)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateULongField(AllTypeData, ulong)
+  nameWithType: IAllTypeTableValidator.ValidateULongField(AllTypeData, ulong)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateULongField(NonNonSheet.Exp.AllTypeData, ulong)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateULongField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 450
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateULongField(AllTypeData self, ulong id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.UInt64
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateULongField(self As AllTypeData, id As ULong) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateULongField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateULongField(AllTypeData, ULong)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateULongField(NonNonSheet.Exp.AllTypeData, ULong)
+  name.vb: ValidateULongField(AllTypeData, ULong)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateFloatField(NonNonSheet.Exp.AllTypeData,System.Single)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateFloatField(NonNonSheet.Exp.AllTypeData,System.Single)
+  id: ValidateFloatField(NonNonSheet.Exp.AllTypeData,System.Single)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateFloatField(AllTypeData, float)
+  nameWithType: IAllTypeTableValidator.ValidateFloatField(AllTypeData, float)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateFloatField(NonNonSheet.Exp.AllTypeData, float)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateFloatField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 451
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateFloatField(AllTypeData self, float id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Single
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateFloatField(self As AllTypeData, id As Single) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateFloatField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateFloatField(AllTypeData, Single)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateFloatField(NonNonSheet.Exp.AllTypeData, Single)
+  name.vb: ValidateFloatField(AllTypeData, Single)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateDoubleField(NonNonSheet.Exp.AllTypeData,System.Double)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateDoubleField(NonNonSheet.Exp.AllTypeData,System.Double)
+  id: ValidateDoubleField(NonNonSheet.Exp.AllTypeData,System.Double)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateDoubleField(AllTypeData, double)
+  nameWithType: IAllTypeTableValidator.ValidateDoubleField(AllTypeData, double)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateDoubleField(NonNonSheet.Exp.AllTypeData, double)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateDoubleField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 452
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateDoubleField(AllTypeData self, double id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Double
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateDoubleField(self As AllTypeData, id As Double) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateDoubleField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateDoubleField(AllTypeData, Double)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateDoubleField(NonNonSheet.Exp.AllTypeData, Double)
+  name.vb: ValidateDoubleField(AllTypeData, Double)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringField(NonNonSheet.Exp.AllTypeData,System.String)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringField(NonNonSheet.Exp.AllTypeData,System.String)
+  id: ValidateStringField(NonNonSheet.Exp.AllTypeData,System.String)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateStringField(AllTypeData, string)
+  nameWithType: IAllTypeTableValidator.ValidateStringField(AllTypeData, string)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringField(NonNonSheet.Exp.AllTypeData, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateStringField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 453
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateStringField(AllTypeData self, string id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateStringField(self As AllTypeData, id As String) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateStringField(AllTypeData, String)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringField(NonNonSheet.Exp.AllTypeData, String)
+  name.vb: ValidateStringField(AllTypeData, String)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleEnum)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleEnum)
+  id: ValidateEnumField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleEnum)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateEnumField(AllTypeData, SampleEnum)
+  nameWithType: IAllTypeTableValidator.ValidateEnumField(AllTypeData, SampleEnum)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumField(NonNonSheet.Exp.AllTypeData, NonNonSheet.Exp.SampleEnum)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateEnumField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 454
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateEnumField(AllTypeData self, SampleEnum id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: NonNonSheet.Exp.SampleEnum
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateEnumField(self As AllTypeData, id As SampleEnum) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateFlagsEnumField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleFlagsEnum)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateFlagsEnumField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleFlagsEnum)
+  id: ValidateFlagsEnumField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleFlagsEnum)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateFlagsEnumField(AllTypeData, SampleFlagsEnum)
+  nameWithType: IAllTypeTableValidator.ValidateFlagsEnumField(AllTypeData, SampleFlagsEnum)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateFlagsEnumField(NonNonSheet.Exp.AllTypeData, NonNonSheet.Exp.SampleFlagsEnum)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateFlagsEnumField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 455
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateFlagsEnumField(AllTypeData self, SampleFlagsEnum id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: NonNonSheet.Exp.SampleFlagsEnum
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateFlagsEnumField(self As AllTypeData, id As SampleFlagsEnum) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateFlagsEnumField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2)
+  id: ValidateVector2Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateVector2Field(AllTypeData, Vector2)
+  nameWithType: IAllTypeTableValidator.ValidateVector2Field(AllTypeData, Vector2)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2Field(NonNonSheet.Exp.AllTypeData, UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateVector2Field
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 456
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateVector2Field(AllTypeData self, Vector2 id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.Vector2
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateVector2Field(self As AllTypeData, id As Vector2) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2Field*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3)
+  id: ValidateVector3Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateVector3Field(AllTypeData, Vector3)
+  nameWithType: IAllTypeTableValidator.ValidateVector3Field(AllTypeData, Vector3)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Field(NonNonSheet.Exp.AllTypeData, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateVector3Field
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 457
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateVector3Field(AllTypeData self, Vector3 id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.Vector3
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateVector3Field(self As AllTypeData, id As Vector3) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Field*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector4Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector4)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector4Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector4)
+  id: ValidateVector4Field(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector4)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateVector4Field(AllTypeData, Vector4)
+  nameWithType: IAllTypeTableValidator.ValidateVector4Field(AllTypeData, Vector4)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector4Field(NonNonSheet.Exp.AllTypeData, UnityEngine.Vector4)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateVector4Field
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 458
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateVector4Field(AllTypeData self, Vector4 id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.Vector4
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateVector4Field(self As AllTypeData, id As Vector4) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector4Field*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2IntField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2Int)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2IntField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2Int)
+  id: ValidateVector2IntField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2Int)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateVector2IntField(AllTypeData, Vector2Int)
+  nameWithType: IAllTypeTableValidator.ValidateVector2IntField(AllTypeData, Vector2Int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2IntField(NonNonSheet.Exp.AllTypeData, UnityEngine.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateVector2IntField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 459
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateVector2IntField(AllTypeData self, Vector2Int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.Vector2Int
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateVector2IntField(self As AllTypeData, id As Vector2Int) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2IntField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3IntField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3Int)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3IntField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3Int)
+  id: ValidateVector3IntField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3Int)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateVector3IntField(AllTypeData, Vector3Int)
+  nameWithType: IAllTypeTableValidator.ValidateVector3IntField(AllTypeData, Vector3Int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3IntField(NonNonSheet.Exp.AllTypeData, UnityEngine.Vector3Int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateVector3IntField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 460
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateVector3IntField(AllTypeData self, Vector3Int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.Vector3Int
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateVector3IntField(self As AllTypeData, id As Vector3Int) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3IntField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateColorField(NonNonSheet.Exp.AllTypeData,UnityEngine.Color)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateColorField(NonNonSheet.Exp.AllTypeData,UnityEngine.Color)
+  id: ValidateColorField(NonNonSheet.Exp.AllTypeData,UnityEngine.Color)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateColorField(AllTypeData, Color)
+  nameWithType: IAllTypeTableValidator.ValidateColorField(AllTypeData, Color)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateColorField(NonNonSheet.Exp.AllTypeData, UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateColorField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 461
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateColorField(AllTypeData self, Color id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.Color
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateColorField(self As AllTypeData, id As Color) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateColorField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateTagField(NonNonSheet.Exp.AllTypeData,System.String)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateTagField(NonNonSheet.Exp.AllTypeData,System.String)
+  id: ValidateTagField(NonNonSheet.Exp.AllTypeData,System.String)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateTagField(AllTypeData, string)
+  nameWithType: IAllTypeTableValidator.ValidateTagField(AllTypeData, string)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateTagField(NonNonSheet.Exp.AllTypeData, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateTagField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 462
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateTagField(AllTypeData self, string id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateTagField(self As AllTypeData, id As String) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateTagField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateTagField(AllTypeData, String)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateTagField(NonNonSheet.Exp.AllTypeData, String)
+  name.vb: ValidateTagField(AllTypeData, String)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  id: ValidateLayerField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateLayerField(AllTypeData, int)
+  nameWithType: IAllTypeTableValidator.ValidateLayerField(AllTypeData, int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerField(NonNonSheet.Exp.AllTypeData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateLayerField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 463
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateLayerField(AllTypeData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateLayerField(self As AllTypeData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateLayerField(AllTypeData, Integer)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerField(NonNonSheet.Exp.AllTypeData, Integer)
+  name.vb: ValidateLayerField(AllTypeData, Integer)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerMaskField(NonNonSheet.Exp.AllTypeData,UnityEngine.LayerMask)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerMaskField(NonNonSheet.Exp.AllTypeData,UnityEngine.LayerMask)
+  id: ValidateLayerMaskField(NonNonSheet.Exp.AllTypeData,UnityEngine.LayerMask)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateLayerMaskField(AllTypeData, LayerMask)
+  nameWithType: IAllTypeTableValidator.ValidateLayerMaskField(AllTypeData, LayerMask)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerMaskField(NonNonSheet.Exp.AllTypeData, UnityEngine.LayerMask)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateLayerMaskField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 464
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateLayerMaskField(AllTypeData self, LayerMask id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.LayerMask
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateLayerMaskField(self As AllTypeData, id As LayerMask) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerMaskField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabField(NonNonSheet.Exp.AllTypeData,UnityEngine.GameObject)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabField(NonNonSheet.Exp.AllTypeData,UnityEngine.GameObject)
+  id: ValidatePrefabField(NonNonSheet.Exp.AllTypeData,UnityEngine.GameObject)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidatePrefabField(AllTypeData, GameObject)
+  nameWithType: IAllTypeTableValidator.ValidatePrefabField(AllTypeData, GameObject)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabField(NonNonSheet.Exp.AllTypeData, UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidatePrefabField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 465
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidatePrefabField(AllTypeData self, GameObject id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.GameObject
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidatePrefabField(self As AllTypeData, id As GameObject) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMonoBehaviourField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleMonoBehaviour)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateMonoBehaviourField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleMonoBehaviour)
+  id: ValidateMonoBehaviourField(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleMonoBehaviour)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateMonoBehaviourField(AllTypeData, SampleMonoBehaviour)
+  nameWithType: IAllTypeTableValidator.ValidateMonoBehaviourField(AllTypeData, SampleMonoBehaviour)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMonoBehaviourField(NonNonSheet.Exp.AllTypeData, NonNonSheet.Exp.SampleMonoBehaviour)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateMonoBehaviourField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 466
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateMonoBehaviourField(AllTypeData self, SampleMonoBehaviour id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: NonNonSheet.Exp.SampleMonoBehaviour
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateMonoBehaviourField(self As AllTypeData, id As SampleMonoBehaviour) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMonoBehaviourField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateTextureField(NonNonSheet.Exp.AllTypeData,UnityEngine.Texture)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateTextureField(NonNonSheet.Exp.AllTypeData,UnityEngine.Texture)
+  id: ValidateTextureField(NonNonSheet.Exp.AllTypeData,UnityEngine.Texture)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateTextureField(AllTypeData, Texture)
+  nameWithType: IAllTypeTableValidator.ValidateTextureField(AllTypeData, Texture)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateTextureField(NonNonSheet.Exp.AllTypeData, UnityEngine.Texture)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateTextureField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 467
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateTextureField(AllTypeData self, Texture id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.Texture
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateTextureField(self As AllTypeData, id As Texture) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateTextureField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMaterialField(NonNonSheet.Exp.AllTypeData,UnityEngine.Material)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateMaterialField(NonNonSheet.Exp.AllTypeData,UnityEngine.Material)
+  id: ValidateMaterialField(NonNonSheet.Exp.AllTypeData,UnityEngine.Material)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateMaterialField(AllTypeData, Material)
+  nameWithType: IAllTypeTableValidator.ValidateMaterialField(AllTypeData, Material)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMaterialField(NonNonSheet.Exp.AllTypeData, UnityEngine.Material)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateMaterialField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 468
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateMaterialField(AllTypeData self, Material id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.Material
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateMaterialField(self As AllTypeData, id As Material) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMaterialField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateAssetReferenceField(NonNonSheet.Exp.AllTypeData,UnityEngine.AddressableAssets.AssetReference)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateAssetReferenceField(NonNonSheet.Exp.AllTypeData,UnityEngine.AddressableAssets.AssetReference)
+  id: ValidateAssetReferenceField(NonNonSheet.Exp.AllTypeData,UnityEngine.AddressableAssets.AssetReference)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateAssetReferenceField(AllTypeData, AssetReference)
+  nameWithType: IAllTypeTableValidator.ValidateAssetReferenceField(AllTypeData, AssetReference)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateAssetReferenceField(NonNonSheet.Exp.AllTypeData, UnityEngine.AddressableAssets.AssetReference)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateAssetReferenceField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 469
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateAssetReferenceField(AllTypeData self, AssetReference id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.AddressableAssets.AssetReference
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateAssetReferenceField(self As AllTypeData, id As AssetReference) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateAssetReferenceField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSliderField(NonNonSheet.Exp.AllTypeData,System.Single)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateSliderField(NonNonSheet.Exp.AllTypeData,System.Single)
+  id: ValidateSliderField(NonNonSheet.Exp.AllTypeData,System.Single)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateSliderField(AllTypeData, float)
+  nameWithType: IAllTypeTableValidator.ValidateSliderField(AllTypeData, float)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSliderField(NonNonSheet.Exp.AllTypeData, float)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateSliderField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 470
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateSliderField(AllTypeData self, float id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Single
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateSliderField(self As AllTypeData, id As Single) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSliderField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateSliderField(AllTypeData, Single)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSliderField(NonNonSheet.Exp.AllTypeData, Single)
+  name.vb: ValidateSliderField(AllTypeData, Single)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntSliderField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntSliderField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  id: ValidateIntSliderField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateIntSliderField(AllTypeData, int)
+  nameWithType: IAllTypeTableValidator.ValidateIntSliderField(AllTypeData, int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntSliderField(NonNonSheet.Exp.AllTypeData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateIntSliderField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 471
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateIntSliderField(AllTypeData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateIntSliderField(self As AllTypeData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntSliderField*
+  nameWithType.vb: IAllTypeTableValidator.ValidateIntSliderField(AllTypeData, Integer)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntSliderField(NonNonSheet.Exp.AllTypeData, Integer)
+  name.vb: ValidateIntSliderField(AllTypeData, Integer)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMinMaxSliderField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateMinMaxSliderField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2)
+  id: ValidateMinMaxSliderField(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector2)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateMinMaxSliderField(AllTypeData, Vector2)
+  nameWithType: IAllTypeTableValidator.ValidateMinMaxSliderField(AllTypeData, Vector2)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMinMaxSliderField(NonNonSheet.Exp.AllTypeData, UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateMinMaxSliderField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 472
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateMinMaxSliderField(AllTypeData self, Vector2 id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.Vector2
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateMinMaxSliderField(self As AllTypeData, id As Vector2) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMinMaxSliderField*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyDataRelation(NonNonSheet.Exp.AllTypeData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyDataRelation(NonNonSheet.Exp.AllTypeData,System.Int32)
+  id: ValidateIntKeyDataRelation(NonNonSheet.Exp.AllTypeData,System.Int32)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateIntKeyDataRelation(AllTypeData, int)
+  nameWithType: IAllTypeTableValidator.ValidateIntKeyDataRelation(AllTypeData, int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyDataRelation(NonNonSheet.Exp.AllTypeData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateIntKeyDataRelation
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 473
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateIntKeyDataRelation(AllTypeData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateIntKeyDataRelation(self As AllTypeData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyDataRelation*
+  nameWithType.vb: IAllTypeTableValidator.ValidateIntKeyDataRelation(AllTypeData, Integer)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyDataRelation(NonNonSheet.Exp.AllTypeData, Integer)
+  name.vb: ValidateIntKeyDataRelation(AllTypeData, Integer)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData,System.Int32[])
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData,System.Int32[])
+  id: ValidateIntKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData,System.Int32[])
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateIntKeyMultiDataRelation(AllTypeData, int[])
+  nameWithType: IAllTypeTableValidator.ValidateIntKeyMultiDataRelation(AllTypeData, int[])
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData, int[])
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateIntKeyMultiDataRelation
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 474
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateIntKeyMultiDataRelation(AllTypeData self, int[] id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32[]
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateIntKeyMultiDataRelation(self As AllTypeData, id As Integer()) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyMultiDataRelation*
+  nameWithType.vb: IAllTypeTableValidator.ValidateIntKeyMultiDataRelation(AllTypeData, Integer())
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData, Integer())
+  name.vb: ValidateIntKeyMultiDataRelation(AllTypeData, Integer())
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyDataRelation(NonNonSheet.Exp.AllTypeData,System.String)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyDataRelation(NonNonSheet.Exp.AllTypeData,System.String)
+  id: ValidateStringKeyDataRelation(NonNonSheet.Exp.AllTypeData,System.String)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateStringKeyDataRelation(AllTypeData, string)
+  nameWithType: IAllTypeTableValidator.ValidateStringKeyDataRelation(AllTypeData, string)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyDataRelation(NonNonSheet.Exp.AllTypeData, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateStringKeyDataRelation
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 475
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateStringKeyDataRelation(AllTypeData self, string id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateStringKeyDataRelation(self As AllTypeData, id As String) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyDataRelation*
+  nameWithType.vb: IAllTypeTableValidator.ValidateStringKeyDataRelation(AllTypeData, String)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyDataRelation(NonNonSheet.Exp.AllTypeData, String)
+  name.vb: ValidateStringKeyDataRelation(AllTypeData, String)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData,System.String[])
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData,System.String[])
+  id: ValidateStringKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData,System.String[])
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateStringKeyMultiDataRelation(AllTypeData, string[])
+  nameWithType: IAllTypeTableValidator.ValidateStringKeyMultiDataRelation(AllTypeData, string[])
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData, string[])
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateStringKeyMultiDataRelation
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 476
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateStringKeyMultiDataRelation(AllTypeData self, string[] id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.String[]
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateStringKeyMultiDataRelation(self As AllTypeData, id As String()) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyMultiDataRelation*
+  nameWithType.vb: IAllTypeTableValidator.ValidateStringKeyMultiDataRelation(AllTypeData, String())
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyMultiDataRelation(NonNonSheet.Exp.AllTypeData, String())
+  name.vb: ValidateStringKeyMultiDataRelation(AllTypeData, String())
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateDate(NonNonSheet.Exp.AllTypeData,Date)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateDate(NonNonSheet.Exp.AllTypeData,Date)
+  id: ValidateDate(NonNonSheet.Exp.AllTypeData,Date)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateDate(AllTypeData, Date)
+  nameWithType: IAllTypeTableValidator.ValidateDate(AllTypeData, Date)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateDate(NonNonSheet.Exp.AllTypeData, Date)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateDate
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 477
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateDate(AllTypeData self, Date id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: Date
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateDate(self As AllTypeData, id As [Date]) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateDate*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.Validate_privateField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.Validate_privateField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  id: Validate_privateField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: Validate_privateField(AllTypeData, int)
+  nameWithType: IAllTypeTableValidator.Validate_privateField(AllTypeData, int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.Validate_privateField(NonNonSheet.Exp.AllTypeData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Validate_privateField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 478
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult Validate_privateField(AllTypeData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function Validate_privateField(self As AllTypeData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.Validate_privateField*
+  nameWithType.vb: IAllTypeTableValidator.Validate_privateField(AllTypeData, Integer)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.Validate_privateField(NonNonSheet.Exp.AllTypeData, Integer)
+  name.vb: Validate_privateField(AllTypeData, Integer)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  id: Validate_protectedField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: Validate_protectedField(AllTypeData, int)
+  nameWithType: IAllTypeTableValidator.Validate_protectedField(AllTypeData, int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedField(NonNonSheet.Exp.AllTypeData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Validate_protectedField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 479
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult Validate_protectedField(AllTypeData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function Validate_protectedField(self As AllTypeData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedField*
+  nameWithType.vb: IAllTypeTableValidator.Validate_protectedField(AllTypeData, Integer)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedField(NonNonSheet.Exp.AllTypeData, Integer)
+  name.vb: Validate_protectedField(AllTypeData, Integer)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.Validate_internalField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.Validate_internalField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  id: Validate_internalField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: Validate_internalField(AllTypeData, int)
+  nameWithType: IAllTypeTableValidator.Validate_internalField(AllTypeData, int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.Validate_internalField(NonNonSheet.Exp.AllTypeData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Validate_internalField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 480
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult Validate_internalField(AllTypeData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function Validate_internalField(self As AllTypeData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.Validate_internalField*
+  nameWithType.vb: IAllTypeTableValidator.Validate_internalField(AllTypeData, Integer)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.Validate_internalField(NonNonSheet.Exp.AllTypeData, Integer)
+  name.vb: Validate_internalField(AllTypeData, Integer)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedInternalField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedInternalField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  id: Validate_protectedInternalField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: Validate_protectedInternalField(AllTypeData, int)
+  nameWithType: IAllTypeTableValidator.Validate_protectedInternalField(AllTypeData, int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedInternalField(NonNonSheet.Exp.AllTypeData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Validate_protectedInternalField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 481
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult Validate_protectedInternalField(AllTypeData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function Validate_protectedInternalField(self As AllTypeData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedInternalField*
+  nameWithType.vb: IAllTypeTableValidator.Validate_protectedInternalField(AllTypeData, Integer)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedInternalField(NonNonSheet.Exp.AllTypeData, Integer)
+  name.vb: Validate_protectedInternalField(AllTypeData, Integer)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePublicField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidatePublicField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  id: ValidatePublicField(NonNonSheet.Exp.AllTypeData,System.Int32)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidatePublicField(AllTypeData, int)
+  nameWithType: IAllTypeTableValidator.ValidatePublicField(AllTypeData, int)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePublicField(NonNonSheet.Exp.AllTypeData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidatePublicField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 482
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidatePublicField(AllTypeData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidatePublicField(self As AllTypeData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePublicField*
+  nameWithType.vb: IAllTypeTableValidator.ValidatePublicField(AllTypeData, Integer)
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePublicField(NonNonSheet.Exp.AllTypeData, Integer)
+  name.vb: ValidatePublicField(AllTypeData, Integer)
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidatefallbackType(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.FallbackType)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidatefallbackType(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.FallbackType)
+  id: ValidatefallbackType(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.FallbackType)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidatefallbackType(AllTypeData, FallbackType)
+  nameWithType: IAllTypeTableValidator.ValidatefallbackType(AllTypeData, FallbackType)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidatefallbackType(NonNonSheet.Exp.AllTypeData, NonNonSheet.Exp.FallbackType)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidatefallbackType
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 483
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidatefallbackType(AllTypeData self, FallbackType id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: NonNonSheet.Exp.FallbackType
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidatefallbackType(self As AllTypeData, id As FallbackType) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidatefallbackType*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateOtherNamespaceType(NonNonSheet.Exp.AllTypeData,NonNonSheet.Sample2.OtherNamespaceType)
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateOtherNamespaceType(NonNonSheet.Exp.AllTypeData,NonNonSheet.Sample2.OtherNamespaceType)
+  id: ValidateOtherNamespaceType(NonNonSheet.Exp.AllTypeData,NonNonSheet.Sample2.OtherNamespaceType)
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateOtherNamespaceType(AllTypeData, OtherNamespaceType)
+  nameWithType: IAllTypeTableValidator.ValidateOtherNamespaceType(AllTypeData, OtherNamespaceType)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateOtherNamespaceType(NonNonSheet.Exp.AllTypeData, NonNonSheet.Sample2.OtherNamespaceType)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateOtherNamespaceType
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 484
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateOtherNamespaceType(AllTypeData self, OtherNamespaceType id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: NonNonSheet.Sample2.OtherNamespaceType
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateOtherNamespaceType(self As AllTypeData, id As OtherNamespaceType) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateOtherNamespaceType*
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntArray(NonNonSheet.Exp.AllTypeData,System.Int32[])
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntArray(NonNonSheet.Exp.AllTypeData,System.Int32[])
+  id: ValidateIntArray(NonNonSheet.Exp.AllTypeData,System.Int32[])
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateIntArray(AllTypeData, int[])
+  nameWithType: IAllTypeTableValidator.ValidateIntArray(AllTypeData, int[])
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntArray(NonNonSheet.Exp.AllTypeData, int[])
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateIntArray
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 485
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateIntArray(AllTypeData self, int[] id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Int32[]
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateIntArray(self As AllTypeData, id As Integer()) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntArray*
+  nameWithType.vb: IAllTypeTableValidator.ValidateIntArray(AllTypeData, Integer())
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntArray(NonNonSheet.Exp.AllTypeData, Integer())
+  name.vb: ValidateIntArray(AllTypeData, Integer())
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntList(NonNonSheet.Exp.AllTypeData,System.Collections.Generic.List{System.Int32})
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntList(NonNonSheet.Exp.AllTypeData,System.Collections.Generic.List{System.Int32})
+  id: ValidateIntList(NonNonSheet.Exp.AllTypeData,System.Collections.Generic.List{System.Int32})
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateIntList(AllTypeData, List<int>)
+  nameWithType: IAllTypeTableValidator.ValidateIntList(AllTypeData, List<int>)
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntList(NonNonSheet.Exp.AllTypeData, System.Collections.Generic.List<int>)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateIntList
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 486
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateIntList(AllTypeData self, List<int> id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: System.Collections.Generic.List{System.Int32}
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateIntList(self As AllTypeData, id As List(Of Integer)) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntList*
+  nameWithType.vb: IAllTypeTableValidator.ValidateIntList(AllTypeData, List(Of Integer))
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntList(NonNonSheet.Exp.AllTypeData, System.Collections.Generic.List(Of Integer))
+  name.vb: ValidateIntList(AllTypeData, List(Of Integer))
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Array(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3[])
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Array(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3[])
+  id: ValidateVector3Array(NonNonSheet.Exp.AllTypeData,UnityEngine.Vector3[])
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateVector3Array(AllTypeData, Vector3[])
+  nameWithType: IAllTypeTableValidator.ValidateVector3Array(AllTypeData, Vector3[])
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Array(NonNonSheet.Exp.AllTypeData, UnityEngine.Vector3[])
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateVector3Array
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 487
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateVector3Array(AllTypeData self, Vector3[] id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.Vector3[]
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateVector3Array(self As AllTypeData, id As Vector3()) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Array*
+  nameWithType.vb: IAllTypeTableValidator.ValidateVector3Array(AllTypeData, Vector3())
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Array(NonNonSheet.Exp.AllTypeData, UnityEngine.Vector3())
+  name.vb: ValidateVector3Array(AllTypeData, Vector3())
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumArray(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleEnum[])
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumArray(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleEnum[])
+  id: ValidateEnumArray(NonNonSheet.Exp.AllTypeData,NonNonSheet.Exp.SampleEnum[])
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateEnumArray(AllTypeData, SampleEnum[])
+  nameWithType: IAllTypeTableValidator.ValidateEnumArray(AllTypeData, SampleEnum[])
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumArray(NonNonSheet.Exp.AllTypeData, NonNonSheet.Exp.SampleEnum[])
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateEnumArray
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 488
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateEnumArray(AllTypeData self, SampleEnum[] id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: NonNonSheet.Exp.SampleEnum[]
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateEnumArray(self As AllTypeData, id As SampleEnum()) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumArray*
+  nameWithType.vb: IAllTypeTableValidator.ValidateEnumArray(AllTypeData, SampleEnum())
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumArray(NonNonSheet.Exp.AllTypeData, NonNonSheet.Exp.SampleEnum())
+  name.vb: ValidateEnumArray(AllTypeData, SampleEnum())
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabArray(NonNonSheet.Exp.AllTypeData,UnityEngine.GameObject[])
+  commentId: M:NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabArray(NonNonSheet.Exp.AllTypeData,UnityEngine.GameObject[])
+  id: ValidatePrefabArray(NonNonSheet.Exp.AllTypeData,UnityEngine.GameObject[])
+  parent: NonNonSheet.Exp.IAllTypeTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidatePrefabArray(AllTypeData, GameObject[])
+  nameWithType: IAllTypeTableValidator.ValidatePrefabArray(AllTypeData, GameObject[])
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabArray(NonNonSheet.Exp.AllTypeData, UnityEngine.GameObject[])
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidatePrefabArray
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/AllTypeTable.g.cs
+    startLine: 489
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidatePrefabArray(AllTypeData self, GameObject[] id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.AllTypeData
+    - id: id
+      type: UnityEngine.GameObject[]
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidatePrefabArray(self As AllTypeData, id As GameObject()) As ValidationResult
+  overload: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabArray*
+  nameWithType.vb: IAllTypeTableValidator.ValidatePrefabArray(AllTypeData, GameObject())
+  fullName.vb: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabArray(NonNonSheet.Exp.AllTypeData, UnityEngine.GameObject())
+  name.vb: ValidatePrefabArray(AllTypeData, GameObject())
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.AllTypeData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.AllTypeData,System.Object)
+  commentId: M:NonNonSheet.IValidator{NonNonSheet.Exp.AllTypeData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.AllTypeData,System.Object)
+  parent: NonNonSheet.IValidator{NonNonSheet.Exp.AllTypeData}
+  definition: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  href: NonNonSheet.Exp.AllTypeData.html
+  name: Validate(ColumnMetadata, AllTypeData, object)
+  nameWithType: IValidator<AllTypeData>.Validate(ColumnMetadata, AllTypeData, object)
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.AllTypeData>.Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.AllTypeData, object)
+  nameWithType.vb: IValidator(Of AllTypeData).Validate(ColumnMetadata, AllTypeData, Object)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.AllTypeData).Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.AllTypeData, Object)
+  name.vb: Validate(ColumnMetadata, AllTypeData, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.AllTypeData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.AllTypeData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.AllTypeData
+    name: AllTypeData
+    href: NonNonSheet.Exp.AllTypeData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.AllTypeData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.AllTypeData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.AllTypeData
+    name: AllTypeData
+    href: NonNonSheet.Exp.AllTypeData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  commentId: M:NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Validate(ColumnMetadata, T, object)
+  nameWithType: IValidator<T>.Validate(ColumnMetadata, T, object)
+  fullName: NonNonSheet.IValidator<T>.Validate(NonNonSheet.ColumnMetadata, T, object)
+  nameWithType.vb: IValidator(Of T).Validate(ColumnMetadata, T, Object)
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate(NonNonSheet.ColumnMetadata, T, Object)
+  name.vb: Validate(ColumnMetadata, T, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.AllTypeData}
+  commentId: T:NonNonSheet.IValidator{NonNonSheet.Exp.AllTypeData}
+  parent: NonNonSheet
+  definition: NonNonSheet.IValidator`1
+  href: NonNonSheet.Exp.AllTypeData.html
+  name: IValidator<AllTypeData>
+  nameWithType: IValidator<AllTypeData>
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.AllTypeData>
+  nameWithType.vb: IValidator(Of AllTypeData)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.AllTypeData)
+  name.vb: IValidator(Of AllTypeData)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: <
+  - uid: NonNonSheet.Exp.AllTypeData
+    name: AllTypeData
+    href: NonNonSheet.Exp.AllTypeData.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Exp.AllTypeData
+    name: AllTypeData
+    href: NonNonSheet.Exp.AllTypeData.html
+  - name: )
+- uid: NonNonSheet.IValidator`1
+  commentId: T:NonNonSheet.IValidator`1
+  href: NonNonSheet.IValidator-1.html
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: NonNonSheet.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: NonNonSheet.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateId*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateId
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateId_NonNonSheet_Exp_AllTypeData_System_Int32_
+  name: ValidateId
+  nameWithType: IAllTypeTableValidator.ValidateId
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateId
+- uid: NonNonSheet.Exp.AllTypeData
+  commentId: T:NonNonSheet.Exp.AllTypeData
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.AllTypeData.html
+  name: AllTypeData
+  nameWithType: AllTypeData
+  fullName: NonNonSheet.Exp.AllTypeData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateBoolField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateBoolField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateBoolField_NonNonSheet_Exp_AllTypeData_System_Boolean_
+  name: ValidateBoolField
+  nameWithType: IAllTypeTableValidator.ValidateBoolField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateBoolField
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSByteField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateSByteField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateSByteField_NonNonSheet_Exp_AllTypeData_System_SByte_
+  name: ValidateSByteField
+  nameWithType: IAllTypeTableValidator.ValidateSByteField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSByteField
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateByteField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateByteField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateByteField_NonNonSheet_Exp_AllTypeData_System_Byte_
+  name: ValidateByteField
+  nameWithType: IAllTypeTableValidator.ValidateByteField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateByteField
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateShortField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateShortField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateShortField_NonNonSheet_Exp_AllTypeData_System_Int16_
+  name: ValidateShortField
+  nameWithType: IAllTypeTableValidator.ValidateShortField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateShortField
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUShortField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateUShortField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateUShortField_NonNonSheet_Exp_AllTypeData_System_UInt16_
+  name: ValidateUShortField
+  nameWithType: IAllTypeTableValidator.ValidateUShortField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUShortField
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateIntField_NonNonSheet_Exp_AllTypeData_System_Int32_
+  name: ValidateIntField
+  nameWithType: IAllTypeTableValidator.ValidateIntField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntField
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUIntField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateUIntField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateUIntField_NonNonSheet_Exp_AllTypeData_System_UInt32_
+  name: ValidateUIntField
+  nameWithType: IAllTypeTableValidator.ValidateUIntField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateUIntField
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLongField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateLongField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateLongField_NonNonSheet_Exp_AllTypeData_System_Int64_
+  name: ValidateLongField
+  nameWithType: IAllTypeTableValidator.ValidateLongField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLongField
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateULongField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateULongField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateULongField_NonNonSheet_Exp_AllTypeData_System_UInt64_
+  name: ValidateULongField
+  nameWithType: IAllTypeTableValidator.ValidateULongField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateULongField
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateFloatField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateFloatField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateFloatField_NonNonSheet_Exp_AllTypeData_System_Single_
+  name: ValidateFloatField
+  nameWithType: IAllTypeTableValidator.ValidateFloatField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateFloatField
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateDoubleField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateDoubleField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateDoubleField_NonNonSheet_Exp_AllTypeData_System_Double_
+  name: ValidateDoubleField
+  nameWithType: IAllTypeTableValidator.ValidateDoubleField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateDoubleField
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateStringField_NonNonSheet_Exp_AllTypeData_System_String_
+  name: ValidateStringField
+  nameWithType: IAllTypeTableValidator.ValidateStringField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringField
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateEnumField_NonNonSheet_Exp_AllTypeData_NonNonSheet_Exp_SampleEnum_
+  name: ValidateEnumField
+  nameWithType: IAllTypeTableValidator.ValidateEnumField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumField
+- uid: NonNonSheet.Exp.SampleEnum
+  commentId: T:NonNonSheet.Exp.SampleEnum
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SampleEnum.html
+  name: SampleEnum
+  nameWithType: SampleEnum
+  fullName: NonNonSheet.Exp.SampleEnum
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateFlagsEnumField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateFlagsEnumField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateFlagsEnumField_NonNonSheet_Exp_AllTypeData_NonNonSheet_Exp_SampleFlagsEnum_
+  name: ValidateFlagsEnumField
+  nameWithType: IAllTypeTableValidator.ValidateFlagsEnumField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateFlagsEnumField
+- uid: NonNonSheet.Exp.SampleFlagsEnum
+  commentId: T:NonNonSheet.Exp.SampleFlagsEnum
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SampleFlagsEnum.html
+  name: SampleFlagsEnum
+  nameWithType: SampleFlagsEnum
+  fullName: NonNonSheet.Exp.SampleFlagsEnum
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2Field*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2Field
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateVector2Field_NonNonSheet_Exp_AllTypeData_UnityEngine_Vector2_
+  name: ValidateVector2Field
+  nameWithType: IAllTypeTableValidator.ValidateVector2Field
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2Field
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Field*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Field
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateVector3Field_NonNonSheet_Exp_AllTypeData_UnityEngine_Vector3_
+  name: ValidateVector3Field
+  nameWithType: IAllTypeTableValidator.ValidateVector3Field
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Field
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector4Field*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector4Field
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateVector4Field_NonNonSheet_Exp_AllTypeData_UnityEngine_Vector4_
+  name: ValidateVector4Field
+  nameWithType: IAllTypeTableValidator.ValidateVector4Field
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector4Field
+- uid: UnityEngine.Vector4
+  commentId: T:UnityEngine.Vector4
+  parent: UnityEngine
+  isExternal: true
+  name: Vector4
+  nameWithType: Vector4
+  fullName: UnityEngine.Vector4
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2IntField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2IntField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateVector2IntField_NonNonSheet_Exp_AllTypeData_UnityEngine_Vector2Int_
+  name: ValidateVector2IntField
+  nameWithType: IAllTypeTableValidator.ValidateVector2IntField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector2IntField
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3IntField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3IntField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateVector3IntField_NonNonSheet_Exp_AllTypeData_UnityEngine_Vector3Int_
+  name: ValidateVector3IntField
+  nameWithType: IAllTypeTableValidator.ValidateVector3IntField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3IntField
+- uid: UnityEngine.Vector3Int
+  commentId: T:UnityEngine.Vector3Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3Int
+  nameWithType: Vector3Int
+  fullName: UnityEngine.Vector3Int
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateColorField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateColorField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateColorField_NonNonSheet_Exp_AllTypeData_UnityEngine_Color_
+  name: ValidateColorField
+  nameWithType: IAllTypeTableValidator.ValidateColorField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateColorField
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateTagField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateTagField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateTagField_NonNonSheet_Exp_AllTypeData_System_String_
+  name: ValidateTagField
+  nameWithType: IAllTypeTableValidator.ValidateTagField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateTagField
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateLayerField_NonNonSheet_Exp_AllTypeData_System_Int32_
+  name: ValidateLayerField
+  nameWithType: IAllTypeTableValidator.ValidateLayerField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerField
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerMaskField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerMaskField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateLayerMaskField_NonNonSheet_Exp_AllTypeData_UnityEngine_LayerMask_
+  name: ValidateLayerMaskField
+  nameWithType: IAllTypeTableValidator.ValidateLayerMaskField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateLayerMaskField
+- uid: UnityEngine.LayerMask
+  commentId: T:UnityEngine.LayerMask
+  parent: UnityEngine
+  isExternal: true
+  name: LayerMask
+  nameWithType: LayerMask
+  fullName: UnityEngine.LayerMask
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidatePrefabField_NonNonSheet_Exp_AllTypeData_UnityEngine_GameObject_
+  name: ValidatePrefabField
+  nameWithType: IAllTypeTableValidator.ValidatePrefabField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabField
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMonoBehaviourField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateMonoBehaviourField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateMonoBehaviourField_NonNonSheet_Exp_AllTypeData_NonNonSheet_Exp_SampleMonoBehaviour_
+  name: ValidateMonoBehaviourField
+  nameWithType: IAllTypeTableValidator.ValidateMonoBehaviourField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMonoBehaviourField
+- uid: NonNonSheet.Exp.SampleMonoBehaviour
+  commentId: T:NonNonSheet.Exp.SampleMonoBehaviour
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.SampleMonoBehaviour.html
+  name: SampleMonoBehaviour
+  nameWithType: SampleMonoBehaviour
+  fullName: NonNonSheet.Exp.SampleMonoBehaviour
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateTextureField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateTextureField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateTextureField_NonNonSheet_Exp_AllTypeData_UnityEngine_Texture_
+  name: ValidateTextureField
+  nameWithType: IAllTypeTableValidator.ValidateTextureField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateTextureField
+- uid: UnityEngine.Texture
+  commentId: T:UnityEngine.Texture
+  parent: UnityEngine
+  isExternal: true
+  name: Texture
+  nameWithType: Texture
+  fullName: UnityEngine.Texture
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMaterialField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateMaterialField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateMaterialField_NonNonSheet_Exp_AllTypeData_UnityEngine_Material_
+  name: ValidateMaterialField
+  nameWithType: IAllTypeTableValidator.ValidateMaterialField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMaterialField
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateAssetReferenceField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateAssetReferenceField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateAssetReferenceField_NonNonSheet_Exp_AllTypeData_UnityEngine_AddressableAssets_AssetReference_
+  name: ValidateAssetReferenceField
+  nameWithType: IAllTypeTableValidator.ValidateAssetReferenceField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateAssetReferenceField
+- uid: UnityEngine.AddressableAssets.AssetReference
+  commentId: T:UnityEngine.AddressableAssets.AssetReference
+  parent: UnityEngine.AddressableAssets
+  isExternal: true
+  name: AssetReference
+  nameWithType: AssetReference
+  fullName: UnityEngine.AddressableAssets.AssetReference
+- uid: UnityEngine.AddressableAssets
+  commentId: N:UnityEngine.AddressableAssets
+  isExternal: true
+  name: UnityEngine.AddressableAssets
+  nameWithType: UnityEngine.AddressableAssets
+  fullName: UnityEngine.AddressableAssets
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.AddressableAssets
+    name: AddressableAssets
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.AddressableAssets
+    name: AddressableAssets
+    isExternal: true
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSliderField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateSliderField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateSliderField_NonNonSheet_Exp_AllTypeData_System_Single_
+  name: ValidateSliderField
+  nameWithType: IAllTypeTableValidator.ValidateSliderField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateSliderField
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntSliderField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntSliderField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateIntSliderField_NonNonSheet_Exp_AllTypeData_System_Int32_
+  name: ValidateIntSliderField
+  nameWithType: IAllTypeTableValidator.ValidateIntSliderField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntSliderField
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMinMaxSliderField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateMinMaxSliderField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateMinMaxSliderField_NonNonSheet_Exp_AllTypeData_UnityEngine_Vector2_
+  name: ValidateMinMaxSliderField
+  nameWithType: IAllTypeTableValidator.ValidateMinMaxSliderField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateMinMaxSliderField
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyDataRelation*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyDataRelation
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateIntKeyDataRelation_NonNonSheet_Exp_AllTypeData_System_Int32_
+  name: ValidateIntKeyDataRelation
+  nameWithType: IAllTypeTableValidator.ValidateIntKeyDataRelation
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyDataRelation
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyMultiDataRelation*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyMultiDataRelation
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateIntKeyMultiDataRelation_NonNonSheet_Exp_AllTypeData_System_Int32___
+  name: ValidateIntKeyMultiDataRelation
+  nameWithType: IAllTypeTableValidator.ValidateIntKeyMultiDataRelation
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntKeyMultiDataRelation
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyDataRelation*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyDataRelation
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateStringKeyDataRelation_NonNonSheet_Exp_AllTypeData_System_String_
+  name: ValidateStringKeyDataRelation
+  nameWithType: IAllTypeTableValidator.ValidateStringKeyDataRelation
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyDataRelation
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyMultiDataRelation*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyMultiDataRelation
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateStringKeyMultiDataRelation_NonNonSheet_Exp_AllTypeData_System_String___
+  name: ValidateStringKeyMultiDataRelation
+  nameWithType: IAllTypeTableValidator.ValidateStringKeyMultiDataRelation
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateStringKeyMultiDataRelation
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateDate*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateDate
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateDate_NonNonSheet_Exp_AllTypeData_Date_
+  name: ValidateDate
+  nameWithType: IAllTypeTableValidator.ValidateDate
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateDate
+- uid: Date
+  commentId: T:Date
+  href: Date.html
+  name: Date
+  nameWithType: Date
+  fullName: Date
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.Validate_privateField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.Validate_privateField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_Validate_privateField_NonNonSheet_Exp_AllTypeData_System_Int32_
+  name: Validate_privateField
+  nameWithType: IAllTypeTableValidator.Validate_privateField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.Validate_privateField
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_Validate_protectedField_NonNonSheet_Exp_AllTypeData_System_Int32_
+  name: Validate_protectedField
+  nameWithType: IAllTypeTableValidator.Validate_protectedField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedField
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.Validate_internalField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.Validate_internalField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_Validate_internalField_NonNonSheet_Exp_AllTypeData_System_Int32_
+  name: Validate_internalField
+  nameWithType: IAllTypeTableValidator.Validate_internalField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.Validate_internalField
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedInternalField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedInternalField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_Validate_protectedInternalField_NonNonSheet_Exp_AllTypeData_System_Int32_
+  name: Validate_protectedInternalField
+  nameWithType: IAllTypeTableValidator.Validate_protectedInternalField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.Validate_protectedInternalField
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePublicField*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidatePublicField
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidatePublicField_NonNonSheet_Exp_AllTypeData_System_Int32_
+  name: ValidatePublicField
+  nameWithType: IAllTypeTableValidator.ValidatePublicField
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePublicField
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidatefallbackType*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidatefallbackType
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidatefallbackType_NonNonSheet_Exp_AllTypeData_NonNonSheet_Exp_FallbackType_
+  name: ValidatefallbackType
+  nameWithType: IAllTypeTableValidator.ValidatefallbackType
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidatefallbackType
+- uid: NonNonSheet.Exp.FallbackType
+  commentId: T:NonNonSheet.Exp.FallbackType
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.FallbackType.html
+  name: FallbackType
+  nameWithType: FallbackType
+  fullName: NonNonSheet.Exp.FallbackType
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateOtherNamespaceType*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateOtherNamespaceType
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateOtherNamespaceType_NonNonSheet_Exp_AllTypeData_NonNonSheet_Sample2_OtherNamespaceType_
+  name: ValidateOtherNamespaceType
+  nameWithType: IAllTypeTableValidator.ValidateOtherNamespaceType
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateOtherNamespaceType
+- uid: NonNonSheet.Sample2.OtherNamespaceType
+  commentId: T:NonNonSheet.Sample2.OtherNamespaceType
+  parent: NonNonSheet.Sample2
+  href: NonNonSheet.Sample2.OtherNamespaceType.html
+  name: OtherNamespaceType
+  nameWithType: OtherNamespaceType
+  fullName: NonNonSheet.Sample2.OtherNamespaceType
+- uid: NonNonSheet.Sample2
+  commentId: N:NonNonSheet.Sample2
+  href: NonNonSheet.html
+  name: NonNonSheet.Sample2
+  nameWithType: NonNonSheet.Sample2
+  fullName: NonNonSheet.Sample2
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Sample2
+    name: Sample2
+    href: NonNonSheet.Sample2.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Sample2
+    name: Sample2
+    href: NonNonSheet.Sample2.html
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntArray*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntArray
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateIntArray_NonNonSheet_Exp_AllTypeData_System_Int32___
+  name: ValidateIntArray
+  nameWithType: IAllTypeTableValidator.ValidateIntArray
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntArray
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntList*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntList
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateIntList_NonNonSheet_Exp_AllTypeData_System_Collections_Generic_List_System_Int32__
+  name: ValidateIntList
+  nameWithType: IAllTypeTableValidator.ValidateIntList
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateIntList
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Array*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Array
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateVector3Array_NonNonSheet_Exp_AllTypeData_UnityEngine_Vector3___
+  name: ValidateVector3Array
+  nameWithType: IAllTypeTableValidator.ValidateVector3Array
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateVector3Array
+- uid: UnityEngine.Vector3[]
+  isExternal: true
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: UnityEngine.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: UnityEngine.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: (
+  - name: )
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumArray*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumArray
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidateEnumArray_NonNonSheet_Exp_AllTypeData_NonNonSheet_Exp_SampleEnum___
+  name: ValidateEnumArray
+  nameWithType: IAllTypeTableValidator.ValidateEnumArray
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidateEnumArray
+- uid: NonNonSheet.Exp.SampleEnum[]
+  isExternal: true
+  href: NonNonSheet.Exp.SampleEnum.html
+  name: SampleEnum[]
+  nameWithType: SampleEnum[]
+  fullName: NonNonSheet.Exp.SampleEnum[]
+  nameWithType.vb: SampleEnum()
+  fullName.vb: NonNonSheet.Exp.SampleEnum()
+  name.vb: SampleEnum()
+  spec.csharp:
+  - uid: NonNonSheet.Exp.SampleEnum
+    name: SampleEnum
+    href: NonNonSheet.Exp.SampleEnum.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: NonNonSheet.Exp.SampleEnum
+    name: SampleEnum
+    href: NonNonSheet.Exp.SampleEnum.html
+  - name: (
+  - name: )
+- uid: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabArray*
+  commentId: Overload:NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabArray
+  href: NonNonSheet.Exp.IAllTypeTableValidator.html#NonNonSheet_Exp_IAllTypeTableValidator_ValidatePrefabArray_NonNonSheet_Exp_AllTypeData_UnityEngine_GameObject___
+  name: ValidatePrefabArray
+  nameWithType: IAllTypeTableValidator.ValidatePrefabArray
+  fullName: NonNonSheet.Exp.IAllTypeTableValidator.ValidatePrefabArray
+- uid: UnityEngine.GameObject[]
+  isExternal: true
+  name: GameObject[]
+  nameWithType: GameObject[]
+  fullName: UnityEngine.GameObject[]
+  nameWithType.vb: GameObject()
+  fullName.vb: UnityEngine.GameObject()
+  name.vb: GameObject()
+  spec.csharp:
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: (
+  - name: )

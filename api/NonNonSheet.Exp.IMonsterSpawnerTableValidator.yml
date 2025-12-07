@@ -1,0 +1,384 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp.IMonsterSpawnerTableValidator
+  commentId: T:NonNonSheet.Exp.IMonsterSpawnerTableValidator
+  id: IMonsterSpawnerTableValidator
+  parent: NonNonSheet.Exp
+  children:
+  - NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateInverval(NonNonSheet.Exp.MonsterSpawnerData,System.Single)
+  - NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateMonsterId(NonNonSheet.Exp.MonsterSpawnerData,System.Int32)
+  - NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidatePosition(NonNonSheet.Exp.MonsterSpawnerData,UnityEngine.Vector3)
+  langs:
+  - csharp
+  - vb
+  name: IMonsterSpawnerTableValidator
+  nameWithType: IMonsterSpawnerTableValidator
+  fullName: NonNonSheet.Exp.IMonsterSpawnerTableValidator
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterSpawnerTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IMonsterSpawnerTableValidator
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterSpawnerTable.g.cs
+    startLine: 97
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: 'public interface IMonsterSpawnerTableValidator : IValidator<MonsterSpawnerData>'
+    content.vb: Public Interface IMonsterSpawnerTableValidator Inherits IValidator(Of MonsterSpawnerData)
+  inheritedMembers:
+  - NonNonSheet.IValidator{NonNonSheet.Exp.MonsterSpawnerData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.MonsterSpawnerData,System.Object)
+- uid: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateInverval(NonNonSheet.Exp.MonsterSpawnerData,System.Single)
+  commentId: M:NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateInverval(NonNonSheet.Exp.MonsterSpawnerData,System.Single)
+  id: ValidateInverval(NonNonSheet.Exp.MonsterSpawnerData,System.Single)
+  parent: NonNonSheet.Exp.IMonsterSpawnerTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateInverval(MonsterSpawnerData, float)
+  nameWithType: IMonsterSpawnerTableValidator.ValidateInverval(MonsterSpawnerData, float)
+  fullName: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateInverval(NonNonSheet.Exp.MonsterSpawnerData, float)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterSpawnerTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateInverval
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterSpawnerTable.g.cs
+    startLine: 99
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateInverval(MonsterSpawnerData self, float id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.MonsterSpawnerData
+    - id: id
+      type: System.Single
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateInverval(self As MonsterSpawnerData, id As Single) As ValidationResult
+  overload: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateInverval*
+  nameWithType.vb: IMonsterSpawnerTableValidator.ValidateInverval(MonsterSpawnerData, Single)
+  fullName.vb: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateInverval(NonNonSheet.Exp.MonsterSpawnerData, Single)
+  name.vb: ValidateInverval(MonsterSpawnerData, Single)
+- uid: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidatePosition(NonNonSheet.Exp.MonsterSpawnerData,UnityEngine.Vector3)
+  commentId: M:NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidatePosition(NonNonSheet.Exp.MonsterSpawnerData,UnityEngine.Vector3)
+  id: ValidatePosition(NonNonSheet.Exp.MonsterSpawnerData,UnityEngine.Vector3)
+  parent: NonNonSheet.Exp.IMonsterSpawnerTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidatePosition(MonsterSpawnerData, Vector3)
+  nameWithType: IMonsterSpawnerTableValidator.ValidatePosition(MonsterSpawnerData, Vector3)
+  fullName: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidatePosition(NonNonSheet.Exp.MonsterSpawnerData, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterSpawnerTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidatePosition
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterSpawnerTable.g.cs
+    startLine: 100
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidatePosition(MonsterSpawnerData self, Vector3 id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.MonsterSpawnerData
+    - id: id
+      type: UnityEngine.Vector3
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidatePosition(self As MonsterSpawnerData, id As Vector3) As ValidationResult
+  overload: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidatePosition*
+- uid: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateMonsterId(NonNonSheet.Exp.MonsterSpawnerData,System.Int32)
+  commentId: M:NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateMonsterId(NonNonSheet.Exp.MonsterSpawnerData,System.Int32)
+  id: ValidateMonsterId(NonNonSheet.Exp.MonsterSpawnerData,System.Int32)
+  parent: NonNonSheet.Exp.IMonsterSpawnerTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateMonsterId(MonsterSpawnerData, int)
+  nameWithType: IMonsterSpawnerTableValidator.ValidateMonsterId(MonsterSpawnerData, int)
+  fullName: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateMonsterId(NonNonSheet.Exp.MonsterSpawnerData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterSpawnerTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateMonsterId
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/MonsterSpawnerTable.g.cs
+    startLine: 101
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp
+  syntax:
+    content: ValidationResult ValidateMonsterId(MonsterSpawnerData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp.MonsterSpawnerData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateMonsterId(self As MonsterSpawnerData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateMonsterId*
+  nameWithType.vb: IMonsterSpawnerTableValidator.ValidateMonsterId(MonsterSpawnerData, Integer)
+  fullName.vb: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateMonsterId(NonNonSheet.Exp.MonsterSpawnerData, Integer)
+  name.vb: ValidateMonsterId(MonsterSpawnerData, Integer)
+references:
+- uid: NonNonSheet.Exp
+  commentId: N:NonNonSheet.Exp
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp
+  nameWithType: NonNonSheet.Exp
+  fullName: NonNonSheet.Exp
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.MonsterSpawnerData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.MonsterSpawnerData,System.Object)
+  commentId: M:NonNonSheet.IValidator{NonNonSheet.Exp.MonsterSpawnerData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.MonsterSpawnerData,System.Object)
+  parent: NonNonSheet.IValidator{NonNonSheet.Exp.MonsterSpawnerData}
+  definition: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  href: NonNonSheet.Exp.MonsterSpawnerData.html
+  name: Validate(ColumnMetadata, MonsterSpawnerData, object)
+  nameWithType: IValidator<MonsterSpawnerData>.Validate(ColumnMetadata, MonsterSpawnerData, object)
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.MonsterSpawnerData>.Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.MonsterSpawnerData, object)
+  nameWithType.vb: IValidator(Of MonsterSpawnerData).Validate(ColumnMetadata, MonsterSpawnerData, Object)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.MonsterSpawnerData).Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp.MonsterSpawnerData, Object)
+  name.vb: Validate(ColumnMetadata, MonsterSpawnerData, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.MonsterSpawnerData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.MonsterSpawnerData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterSpawnerData
+    name: MonsterSpawnerData
+    href: NonNonSheet.Exp.MonsterSpawnerData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp.MonsterSpawnerData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp.MonsterSpawnerData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterSpawnerData
+    name: MonsterSpawnerData
+    href: NonNonSheet.Exp.MonsterSpawnerData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  commentId: M:NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Validate(ColumnMetadata, T, object)
+  nameWithType: IValidator<T>.Validate(ColumnMetadata, T, object)
+  fullName: NonNonSheet.IValidator<T>.Validate(NonNonSheet.ColumnMetadata, T, object)
+  nameWithType.vb: IValidator(Of T).Validate(ColumnMetadata, T, Object)
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate(NonNonSheet.ColumnMetadata, T, Object)
+  name.vb: Validate(ColumnMetadata, T, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp.MonsterSpawnerData}
+  commentId: T:NonNonSheet.IValidator{NonNonSheet.Exp.MonsterSpawnerData}
+  parent: NonNonSheet
+  definition: NonNonSheet.IValidator`1
+  href: NonNonSheet.Exp.MonsterSpawnerData.html
+  name: IValidator<MonsterSpawnerData>
+  nameWithType: IValidator<MonsterSpawnerData>
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp.MonsterSpawnerData>
+  nameWithType.vb: IValidator(Of MonsterSpawnerData)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp.MonsterSpawnerData)
+  name.vb: IValidator(Of MonsterSpawnerData)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: <
+  - uid: NonNonSheet.Exp.MonsterSpawnerData
+    name: MonsterSpawnerData
+    href: NonNonSheet.Exp.MonsterSpawnerData.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Exp.MonsterSpawnerData
+    name: MonsterSpawnerData
+    href: NonNonSheet.Exp.MonsterSpawnerData.html
+  - name: )
+- uid: NonNonSheet.IValidator`1
+  commentId: T:NonNonSheet.IValidator`1
+  href: NonNonSheet.IValidator-1.html
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: NonNonSheet.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: NonNonSheet.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateInverval*
+  commentId: Overload:NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateInverval
+  href: NonNonSheet.Exp.IMonsterSpawnerTableValidator.html#NonNonSheet_Exp_IMonsterSpawnerTableValidator_ValidateInverval_NonNonSheet_Exp_MonsterSpawnerData_System_Single_
+  name: ValidateInverval
+  nameWithType: IMonsterSpawnerTableValidator.ValidateInverval
+  fullName: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateInverval
+- uid: NonNonSheet.Exp.MonsterSpawnerData
+  commentId: T:NonNonSheet.Exp.MonsterSpawnerData
+  parent: NonNonSheet.Exp
+  href: NonNonSheet.Exp.MonsterSpawnerData.html
+  name: MonsterSpawnerData
+  nameWithType: MonsterSpawnerData
+  fullName: NonNonSheet.Exp.MonsterSpawnerData
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidatePosition*
+  commentId: Overload:NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidatePosition
+  href: NonNonSheet.Exp.IMonsterSpawnerTableValidator.html#NonNonSheet_Exp_IMonsterSpawnerTableValidator_ValidatePosition_NonNonSheet_Exp_MonsterSpawnerData_UnityEngine_Vector3_
+  name: ValidatePosition
+  nameWithType: IMonsterSpawnerTableValidator.ValidatePosition
+  fullName: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidatePosition
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateMonsterId*
+  commentId: Overload:NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateMonsterId
+  href: NonNonSheet.Exp.IMonsterSpawnerTableValidator.html#NonNonSheet_Exp_IMonsterSpawnerTableValidator_ValidateMonsterId_NonNonSheet_Exp_MonsterSpawnerData_System_Int32_
+  name: ValidateMonsterId
+  nameWithType: IMonsterSpawnerTableValidator.ValidateMonsterId
+  fullName: NonNonSheet.Exp.IMonsterSpawnerTableValidator.ValidateMonsterId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

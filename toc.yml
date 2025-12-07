@@ -2,7 +2,9 @@ pdf: true
 pdfTocPage: true
 pdfFileName: NonNonSheet-Documentation.pdf
 items:
-- name: English
+- name: Docs(en)
   href: articles/en/
-- name: Japanese
+- name: Docs(ja)
   href: articles/ja/
+- name: API
+  href: api/

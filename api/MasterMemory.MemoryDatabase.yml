@@ -1,0 +1,1238 @@
+### YamlMime:ManagedReference
+items:
+- uid: MasterMemory.MemoryDatabase
+  commentId: T:MasterMemory.MemoryDatabase
+  id: MemoryDatabase
+  parent: MasterMemory
+  children:
+  - MasterMemory.MemoryDatabase.#ctor(MasterMemory.Tables.SampleDataForMasterMemoryTable)
+  - MasterMemory.MemoryDatabase.#ctor(System.Byte[],System.Boolean,MessagePack.IFormatterResolver,System.Int32)
+  - MasterMemory.MemoryDatabase.GetMetaDatabase
+  - MasterMemory.MemoryDatabase.GetTable(MasterMemory.MemoryDatabase,System.String)
+  - MasterMemory.MemoryDatabase.Init(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}},System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Int32)
+  - MasterMemory.MemoryDatabase.SampleDataForMasterMemoryTable
+  - MasterMemory.MemoryDatabase.ToDatabaseBuilder
+  - MasterMemory.MemoryDatabase.ToDatabaseBuilder(MessagePack.IFormatterResolver)
+  - MasterMemory.MemoryDatabase.ToImmutableBuilder
+  - MasterMemory.MemoryDatabase.Validate
+  langs:
+  - csharp
+  - vb
+  name: MemoryDatabase
+  nameWithType: MemoryDatabase
+  fullName: MasterMemory.MemoryDatabase
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: MemoryDatabase
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+    startLine: 14
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: 'public sealed class MemoryDatabase : MemoryDatabaseBase'
+    content.vb: Public NotInheritable Class MemoryDatabase Inherits MemoryDatabaseBase
+  inheritance:
+  - System.Object
+  - MasterMemory.MemoryDatabaseBase
+  inheritedMembers:
+  - MasterMemory.MemoryDatabaseBase.GetTableInfo(System.Byte[],System.Boolean)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MasterMemory.MemoryDatabase.SampleDataForMasterMemoryTable
+  commentId: P:MasterMemory.MemoryDatabase.SampleDataForMasterMemoryTable
+  id: SampleDataForMasterMemoryTable
+  parent: MasterMemory.MemoryDatabase
+  langs:
+  - csharp
+  - vb
+  name: SampleDataForMasterMemoryTable
+  nameWithType: MemoryDatabase.SampleDataForMasterMemoryTable
+  fullName: MasterMemory.MemoryDatabase.SampleDataForMasterMemoryTable
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SampleDataForMasterMemoryTable
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+    startLine: 16
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public SampleDataForMasterMemoryTable SampleDataForMasterMemoryTable { get; }
+    parameters: []
+    return:
+      type: MasterMemory.Tables.SampleDataForMasterMemoryTable
+    content.vb: Public Property SampleDataForMasterMemoryTable As SampleDataForMasterMemoryTable
+  overload: MasterMemory.MemoryDatabase.SampleDataForMasterMemoryTable*
+- uid: MasterMemory.MemoryDatabase.#ctor(MasterMemory.Tables.SampleDataForMasterMemoryTable)
+  commentId: M:MasterMemory.MemoryDatabase.#ctor(MasterMemory.Tables.SampleDataForMasterMemoryTable)
+  id: '#ctor(MasterMemory.Tables.SampleDataForMasterMemoryTable)'
+  parent: MasterMemory.MemoryDatabase
+  langs:
+  - csharp
+  - vb
+  name: MemoryDatabase(SampleDataForMasterMemoryTable)
+  nameWithType: MemoryDatabase.MemoryDatabase(SampleDataForMasterMemoryTable)
+  fullName: MasterMemory.MemoryDatabase.MemoryDatabase(MasterMemory.Tables.SampleDataForMasterMemoryTable)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+    startLine: 18
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public MemoryDatabase(SampleDataForMasterMemoryTable SampleDataForMasterMemoryTable)
+    parameters:
+    - id: SampleDataForMasterMemoryTable
+      type: MasterMemory.Tables.SampleDataForMasterMemoryTable
+    content.vb: Public Sub New(SampleDataForMasterMemoryTable As SampleDataForMasterMemoryTable)
+  overload: MasterMemory.MemoryDatabase.#ctor*
+  nameWithType.vb: MemoryDatabase.New(SampleDataForMasterMemoryTable)
+  fullName.vb: MasterMemory.MemoryDatabase.New(MasterMemory.Tables.SampleDataForMasterMemoryTable)
+  name.vb: New(SampleDataForMasterMemoryTable)
+- uid: MasterMemory.MemoryDatabase.#ctor(System.Byte[],System.Boolean,MessagePack.IFormatterResolver,System.Int32)
+  commentId: M:MasterMemory.MemoryDatabase.#ctor(System.Byte[],System.Boolean,MessagePack.IFormatterResolver,System.Int32)
+  id: '#ctor(System.Byte[],System.Boolean,MessagePack.IFormatterResolver,System.Int32)'
+  parent: MasterMemory.MemoryDatabase
+  langs:
+  - csharp
+  - vb
+  name: MemoryDatabase(byte[], bool, IFormatterResolver?, int)
+  nameWithType: MemoryDatabase.MemoryDatabase(byte[], bool, IFormatterResolver?, int)
+  fullName: MasterMemory.MemoryDatabase.MemoryDatabase(byte[], bool, MessagePack.IFormatterResolver?, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+    startLine: 25
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public MemoryDatabase(byte[] databaseBinary, bool internString = true, IFormatterResolver? formatterResolver = null, int maxDegreeOfParallelism = 1)
+    parameters:
+    - id: databaseBinary
+      type: System.Byte[]
+    - id: internString
+      type: System.Boolean
+    - id: formatterResolver
+      type: MessagePack.IFormatterResolver
+    - id: maxDegreeOfParallelism
+      type: System.Int32
+    content.vb: Public Sub New(databaseBinary As Byte(), internString As Boolean = True, formatterResolver As IFormatterResolver = Nothing, maxDegreeOfParallelism As Integer = 1)
+  overload: MasterMemory.MemoryDatabase.#ctor*
+  nameWithType.vb: MemoryDatabase.New(Byte(), Boolean, IFormatterResolver, Integer)
+  fullName.vb: MasterMemory.MemoryDatabase.New(Byte(), Boolean, MessagePack.IFormatterResolver, Integer)
+  name.vb: New(Byte(), Boolean, IFormatterResolver, Integer)
+- uid: MasterMemory.MemoryDatabase.Init(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}},System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Int32)
+  commentId: M:MasterMemory.MemoryDatabase.Init(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}},System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Int32)
+  id: Init(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}},System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Int32)
+  parent: MasterMemory.MemoryDatabase
+  langs:
+  - csharp
+  - vb
+  name: Init(Dictionary<string, (int offset, int count)>, ReadOnlyMemory<byte>, MessagePackSerializerOptions, int)
+  nameWithType: MemoryDatabase.Init(Dictionary<string, (int offset, int count)>, ReadOnlyMemory<byte>, MessagePackSerializerOptions, int)
+  fullName: MasterMemory.MemoryDatabase.Init(System.Collections.Generic.Dictionary<string, (int offset, int count)>, System.ReadOnlyMemory<byte>, MessagePack.MessagePackSerializerOptions, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Init
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+    startLine: 30
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  example: []
+  syntax:
+    content: protected override void Init(Dictionary<string, (int offset, int count)> header, ReadOnlyMemory<byte> databaseBinary, MessagePackSerializerOptions options, int maxDegreeOfParallelism)
+    parameters:
+    - id: header
+      type: System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}}
+    - id: databaseBinary
+      type: System.ReadOnlyMemory{System.Byte}
+    - id: options
+      type: MessagePack.MessagePackSerializerOptions
+    - id: maxDegreeOfParallelism
+      type: System.Int32
+    content.vb: Protected Overrides Sub Init(header As Dictionary(Of String, (offset As Integer, count As Integer)), databaseBinary As ReadOnlyMemory(Of Byte), options As MessagePackSerializerOptions, maxDegreeOfParallelism As Integer)
+  overridden: MasterMemory.MemoryDatabaseBase.Init(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}},System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Int32)
+  overload: MasterMemory.MemoryDatabase.Init*
+  nameWithType.vb: MemoryDatabase.Init(Dictionary(Of String, (offset As Integer, count As Integer)), ReadOnlyMemory(Of Byte), MessagePackSerializerOptions, Integer)
+  fullName.vb: MasterMemory.MemoryDatabase.Init(System.Collections.Generic.Dictionary(Of String, (offset As Integer, count As Integer)), System.ReadOnlyMemory(Of Byte), MessagePack.MessagePackSerializerOptions, Integer)
+  name.vb: Init(Dictionary(Of String, (offset As Integer, count As Integer)), ReadOnlyMemory(Of Byte), MessagePackSerializerOptions, Integer)
+- uid: MasterMemory.MemoryDatabase.ToImmutableBuilder
+  commentId: M:MasterMemory.MemoryDatabase.ToImmutableBuilder
+  id: ToImmutableBuilder
+  parent: MasterMemory.MemoryDatabase
+  langs:
+  - csharp
+  - vb
+  name: ToImmutableBuilder()
+  nameWithType: MemoryDatabase.ToImmutableBuilder()
+  fullName: MasterMemory.MemoryDatabase.ToImmutableBuilder()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ToImmutableBuilder
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+    startLine: 60
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public ImmutableBuilder ToImmutableBuilder()
+    return:
+      type: MasterMemory.ImmutableBuilder
+    content.vb: Public Function ToImmutableBuilder() As ImmutableBuilder
+  overload: MasterMemory.MemoryDatabase.ToImmutableBuilder*
+- uid: MasterMemory.MemoryDatabase.ToDatabaseBuilder
+  commentId: M:MasterMemory.MemoryDatabase.ToDatabaseBuilder
+  id: ToDatabaseBuilder
+  parent: MasterMemory.MemoryDatabase
+  langs:
+  - csharp
+  - vb
+  name: ToDatabaseBuilder()
+  nameWithType: MemoryDatabase.ToDatabaseBuilder()
+  fullName: MasterMemory.MemoryDatabase.ToDatabaseBuilder()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ToDatabaseBuilder
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+    startLine: 65
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public DatabaseBuilder ToDatabaseBuilder()
+    return:
+      type: MasterMemory.DatabaseBuilder
+    content.vb: Public Function ToDatabaseBuilder() As DatabaseBuilder
+  overload: MasterMemory.MemoryDatabase.ToDatabaseBuilder*
+- uid: MasterMemory.MemoryDatabase.ToDatabaseBuilder(MessagePack.IFormatterResolver)
+  commentId: M:MasterMemory.MemoryDatabase.ToDatabaseBuilder(MessagePack.IFormatterResolver)
+  id: ToDatabaseBuilder(MessagePack.IFormatterResolver)
+  parent: MasterMemory.MemoryDatabase
+  langs:
+  - csharp
+  - vb
+  name: ToDatabaseBuilder(IFormatterResolver)
+  nameWithType: MemoryDatabase.ToDatabaseBuilder(IFormatterResolver)
+  fullName: MasterMemory.MemoryDatabase.ToDatabaseBuilder(MessagePack.IFormatterResolver)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ToDatabaseBuilder
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+    startLine: 72
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public DatabaseBuilder ToDatabaseBuilder(IFormatterResolver resolver)
+    parameters:
+    - id: resolver
+      type: MessagePack.IFormatterResolver
+    return:
+      type: MasterMemory.DatabaseBuilder
+    content.vb: Public Function ToDatabaseBuilder(resolver As IFormatterResolver) As DatabaseBuilder
+  overload: MasterMemory.MemoryDatabase.ToDatabaseBuilder*
+- uid: MasterMemory.MemoryDatabase.Validate
+  commentId: M:MasterMemory.MemoryDatabase.Validate
+  id: Validate
+  parent: MasterMemory.MemoryDatabase
+  langs:
+  - csharp
+  - vb
+  name: Validate()
+  nameWithType: MemoryDatabase.Validate()
+  fullName: MasterMemory.MemoryDatabase.Validate()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Validate
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+    startLine: 81
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public ValidateResult Validate()
+    return:
+      type: MasterMemory.Validation.ValidateResult
+    content.vb: Public Function Validate() As ValidateResult
+  overload: MasterMemory.MemoryDatabase.Validate*
+- uid: MasterMemory.MemoryDatabase.GetTable(MasterMemory.MemoryDatabase,System.String)
+  commentId: M:MasterMemory.MemoryDatabase.GetTable(MasterMemory.MemoryDatabase,System.String)
+  id: GetTable(MasterMemory.MemoryDatabase,System.String)
+  parent: MasterMemory.MemoryDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetTable(MemoryDatabase, string)
+  nameWithType: MemoryDatabase.GetTable(MemoryDatabase, string)
+  fullName: MasterMemory.MemoryDatabase.GetTable(MasterMemory.MemoryDatabase, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetTable
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+    startLine: 99
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public static object? GetTable(MemoryDatabase db, string tableName)
+    parameters:
+    - id: db
+      type: MasterMemory.MemoryDatabase
+    - id: tableName
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Shared Function GetTable(db As MemoryDatabase, tableName As String) As Object
+  overload: MasterMemory.MemoryDatabase.GetTable*
+  nameWithType.vb: MemoryDatabase.GetTable(MemoryDatabase, String)
+  fullName.vb: MasterMemory.MemoryDatabase.GetTable(MasterMemory.MemoryDatabase, String)
+  name.vb: GetTable(MemoryDatabase, String)
+- uid: MasterMemory.MemoryDatabase.GetMetaDatabase
+  commentId: M:MasterMemory.MemoryDatabase.GetMetaDatabase
+  id: GetMetaDatabase
+  parent: MasterMemory.MemoryDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetMetaDatabase()
+  nameWithType: MemoryDatabase.GetMetaDatabase()
+  fullName: MasterMemory.MemoryDatabase.GetMetaDatabase()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetMetaDatabase
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/MasterMemory.SourceGenerator/MasterMemory.SourceGenerator.MasterMemoryGenerator/MasterMemory.MemoryDatabase.g.cs
+    startLine: 113
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: MasterMemory
+  syntax:
+    content: public static MetaDatabase GetMetaDatabase()
+    return:
+      type: MasterMemory.Meta.MetaDatabase
+    content.vb: Public Shared Function GetMetaDatabase() As MetaDatabase
+  overload: MasterMemory.MemoryDatabase.GetMetaDatabase*
+references:
+- uid: MasterMemory
+  commentId: N:MasterMemory
+  href: MasterMemory.html
+  name: MasterMemory
+  nameWithType: MasterMemory
+  fullName: MasterMemory
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MasterMemory.MemoryDatabaseBase
+  commentId: T:MasterMemory.MemoryDatabaseBase
+  parent: MasterMemory
+  isExternal: true
+  name: MemoryDatabaseBase
+  nameWithType: MemoryDatabaseBase
+  fullName: MasterMemory.MemoryDatabaseBase
+- uid: MasterMemory.MemoryDatabaseBase.GetTableInfo(System.Byte[],System.Boolean)
+  commentId: M:MasterMemory.MemoryDatabaseBase.GetTableInfo(System.Byte[],System.Boolean)
+  parent: MasterMemory.MemoryDatabaseBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: GetTableInfo(byte[], bool)
+  nameWithType: MemoryDatabaseBase.GetTableInfo(byte[], bool)
+  fullName: MasterMemory.MemoryDatabaseBase.GetTableInfo(byte[], bool)
+  nameWithType.vb: MemoryDatabaseBase.GetTableInfo(Byte(), Boolean)
+  fullName.vb: MasterMemory.MemoryDatabaseBase.GetTableInfo(Byte(), Boolean)
+  name.vb: GetTableInfo(Byte(), Boolean)
+  spec.csharp:
+  - uid: MasterMemory.MemoryDatabaseBase.GetTableInfo(System.Byte[],System.Boolean)
+    name: GetTableInfo
+    isExternal: true
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: MasterMemory.MemoryDatabaseBase.GetTableInfo(System.Byte[],System.Boolean)
+    name: GetTableInfo
+    isExternal: true
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MasterMemory.MemoryDatabase.SampleDataForMasterMemoryTable*
+  commentId: Overload:MasterMemory.MemoryDatabase.SampleDataForMasterMemoryTable
+  href: MasterMemory.MemoryDatabase.html#MasterMemory_MemoryDatabase_SampleDataForMasterMemoryTable
+  name: SampleDataForMasterMemoryTable
+  nameWithType: MemoryDatabase.SampleDataForMasterMemoryTable
+  fullName: MasterMemory.MemoryDatabase.SampleDataForMasterMemoryTable
+- uid: MasterMemory.Tables.SampleDataForMasterMemoryTable
+  commentId: T:MasterMemory.Tables.SampleDataForMasterMemoryTable
+  parent: MasterMemory.Tables
+  href: MasterMemory.Tables.SampleDataForMasterMemoryTable.html
+  name: SampleDataForMasterMemoryTable
+  nameWithType: SampleDataForMasterMemoryTable
+  fullName: MasterMemory.Tables.SampleDataForMasterMemoryTable
+- uid: MasterMemory.Tables
+  commentId: N:MasterMemory.Tables
+  href: MasterMemory.html
+  name: MasterMemory.Tables
+  nameWithType: MasterMemory.Tables
+  fullName: MasterMemory.Tables
+  spec.csharp:
+  - uid: MasterMemory
+    name: MasterMemory
+    href: MasterMemory.html
+  - name: .
+  - uid: MasterMemory.Tables
+    name: Tables
+    href: MasterMemory.Tables.html
+  spec.vb:
+  - uid: MasterMemory
+    name: MasterMemory
+    href: MasterMemory.html
+  - name: .
+  - uid: MasterMemory.Tables
+    name: Tables
+    href: MasterMemory.Tables.html
+- uid: MasterMemory.MemoryDatabase.#ctor*
+  commentId: Overload:MasterMemory.MemoryDatabase.#ctor
+  href: MasterMemory.MemoryDatabase.html#MasterMemory_MemoryDatabase__ctor_MasterMemory_Tables_SampleDataForMasterMemoryTable_
+  name: MemoryDatabase
+  nameWithType: MemoryDatabase.MemoryDatabase
+  fullName: MasterMemory.MemoryDatabase.MemoryDatabase
+  nameWithType.vb: MemoryDatabase.New
+  fullName.vb: MasterMemory.MemoryDatabase.New
+  name.vb: New
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MessagePack.IFormatterResolver
+  commentId: T:MessagePack.IFormatterResolver
+  parent: MessagePack
+  isExternal: true
+  name: IFormatterResolver
+  nameWithType: IFormatterResolver
+  fullName: MessagePack.IFormatterResolver
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: MasterMemory.MemoryDatabaseBase.Init(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}},System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Int32)
+  commentId: M:MasterMemory.MemoryDatabaseBase.Init(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}},System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Int32)
+  parent: MasterMemory.MemoryDatabaseBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Init(Dictionary<string, (int offset, int count)>, ReadOnlyMemory<byte>, MessagePackSerializerOptions, int)
+  nameWithType: MemoryDatabaseBase.Init(Dictionary<string, (int offset, int count)>, ReadOnlyMemory<byte>, MessagePackSerializerOptions, int)
+  fullName: MasterMemory.MemoryDatabaseBase.Init(System.Collections.Generic.Dictionary<string, (int offset, int count)>, System.ReadOnlyMemory<byte>, MessagePack.MessagePackSerializerOptions, int)
+  nameWithType.vb: MemoryDatabaseBase.Init(Dictionary(Of String, (offset As Integer, count As Integer)), ReadOnlyMemory(Of Byte), MessagePackSerializerOptions, Integer)
+  fullName.vb: MasterMemory.MemoryDatabaseBase.Init(System.Collections.Generic.Dictionary(Of String, (offset As Integer, count As Integer)), System.ReadOnlyMemory(Of Byte), MessagePack.MessagePackSerializerOptions, Integer)
+  name.vb: Init(Dictionary(Of String, (offset As Integer, count As Integer)), ReadOnlyMemory(Of Byte), MessagePackSerializerOptions, Integer)
+  spec.csharp:
+  - uid: MasterMemory.MemoryDatabaseBase.Init(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}},System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Int32)
+    name: Init
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.offset
+    name: offset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.offset
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.count
+    name: count
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.count
+  - name: )
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MasterMemory.MemoryDatabaseBase.Init(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}},System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Int32)
+    name: Init
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Int32,System.Int32}.offset
+    name: offset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.offset
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.count
+    name: count
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.count
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MasterMemory.MemoryDatabase.Init*
+  commentId: Overload:MasterMemory.MemoryDatabase.Init
+  href: MasterMemory.MemoryDatabase.html#MasterMemory_MemoryDatabase_Init_System_Collections_Generic_Dictionary_System_String_System_ValueTuple_System_Int32_System_Int32___System_ReadOnlyMemory_System_Byte__MessagePack_MessagePackSerializerOptions_System_Int32_
+  name: Init
+  nameWithType: MemoryDatabase.Init
+  fullName: MasterMemory.MemoryDatabase.Init
+- uid: System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.Int32,System.Int32}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, (int offset, int count)>
+  nameWithType: Dictionary<string, (int offset, int count)>
+  fullName: System.Collections.Generic.Dictionary<string, (int offset, int count)>
+  nameWithType.vb: Dictionary(Of String, (offset As Integer, count As Integer))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, (offset As Integer, count As Integer))
+  name.vb: Dictionary(Of String, (offset As Integer, count As Integer))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.offset
+    name: offset
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.offset
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.count
+    name: count
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.count
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Int32,System.Int32}.offset
+    name: offset
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.offset
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.count
+    name: count
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.count
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: System.ReadOnlyMemory{System.Byte}
+  commentId: T:System.ReadOnlyMemory{System.Byte}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<byte>
+  nameWithType: ReadOnlyMemory<byte>
+  fullName: System.ReadOnlyMemory<byte>
+  nameWithType.vb: ReadOnlyMemory(Of Byte)
+  fullName.vb: System.ReadOnlyMemory(Of Byte)
+  name.vb: ReadOnlyMemory(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: MessagePack.MessagePackSerializerOptions
+  commentId: T:MessagePack.MessagePackSerializerOptions
+  parent: MessagePack
+  isExternal: true
+  name: MessagePackSerializerOptions
+  nameWithType: MessagePackSerializerOptions
+  fullName: MessagePack.MessagePackSerializerOptions
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.ReadOnlyMemory`1
+  commentId: T:System.ReadOnlyMemory`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MasterMemory.MemoryDatabase.ToImmutableBuilder*
+  commentId: Overload:MasterMemory.MemoryDatabase.ToImmutableBuilder
+  href: MasterMemory.MemoryDatabase.html#MasterMemory_MemoryDatabase_ToImmutableBuilder
+  name: ToImmutableBuilder
+  nameWithType: MemoryDatabase.ToImmutableBuilder
+  fullName: MasterMemory.MemoryDatabase.ToImmutableBuilder
+- uid: MasterMemory.ImmutableBuilder
+  commentId: T:MasterMemory.ImmutableBuilder
+  parent: MasterMemory
+  href: MasterMemory.ImmutableBuilder.html
+  name: ImmutableBuilder
+  nameWithType: ImmutableBuilder
+  fullName: MasterMemory.ImmutableBuilder
+- uid: MasterMemory.MemoryDatabase.ToDatabaseBuilder*
+  commentId: Overload:MasterMemory.MemoryDatabase.ToDatabaseBuilder
+  href: MasterMemory.MemoryDatabase.html#MasterMemory_MemoryDatabase_ToDatabaseBuilder
+  name: ToDatabaseBuilder
+  nameWithType: MemoryDatabase.ToDatabaseBuilder
+  fullName: MasterMemory.MemoryDatabase.ToDatabaseBuilder
+- uid: MasterMemory.DatabaseBuilder
+  commentId: T:MasterMemory.DatabaseBuilder
+  parent: MasterMemory
+  href: MasterMemory.DatabaseBuilder.html
+  name: DatabaseBuilder
+  nameWithType: DatabaseBuilder
+  fullName: MasterMemory.DatabaseBuilder
+- uid: MasterMemory.MemoryDatabase.Validate*
+  commentId: Overload:MasterMemory.MemoryDatabase.Validate
+  href: MasterMemory.MemoryDatabase.html#MasterMemory_MemoryDatabase_Validate
+  name: Validate
+  nameWithType: MemoryDatabase.Validate
+  fullName: MasterMemory.MemoryDatabase.Validate
+- uid: MasterMemory.Validation.ValidateResult
+  commentId: T:MasterMemory.Validation.ValidateResult
+  parent: MasterMemory.Validation
+  isExternal: true
+  name: ValidateResult
+  nameWithType: ValidateResult
+  fullName: MasterMemory.Validation.ValidateResult
+- uid: MasterMemory.Validation
+  commentId: N:MasterMemory.Validation
+  isExternal: true
+  name: MasterMemory.Validation
+  nameWithType: MasterMemory.Validation
+  fullName: MasterMemory.Validation
+  spec.csharp:
+  - uid: MasterMemory
+    name: MasterMemory
+    isExternal: true
+  - name: .
+  - uid: MasterMemory.Validation
+    name: Validation
+    isExternal: true
+  spec.vb:
+  - uid: MasterMemory
+    name: MasterMemory
+    isExternal: true
+  - name: .
+  - uid: MasterMemory.Validation
+    name: Validation
+    isExternal: true
+- uid: MasterMemory.MemoryDatabase.GetTable*
+  commentId: Overload:MasterMemory.MemoryDatabase.GetTable
+  href: MasterMemory.MemoryDatabase.html#MasterMemory_MemoryDatabase_GetTable_MasterMemory_MemoryDatabase_System_String_
+  name: GetTable
+  nameWithType: MemoryDatabase.GetTable
+  fullName: MasterMemory.MemoryDatabase.GetTable
+- uid: MasterMemory.MemoryDatabase
+  commentId: T:MasterMemory.MemoryDatabase
+  parent: MasterMemory
+  href: MasterMemory.MemoryDatabase.html
+  name: MemoryDatabase
+  nameWithType: MemoryDatabase
+  fullName: MasterMemory.MemoryDatabase
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MasterMemory.MemoryDatabase.GetMetaDatabase*
+  commentId: Overload:MasterMemory.MemoryDatabase.GetMetaDatabase
+  href: MasterMemory.MemoryDatabase.html#MasterMemory_MemoryDatabase_GetMetaDatabase
+  name: GetMetaDatabase
+  nameWithType: MemoryDatabase.GetMetaDatabase
+  fullName: MasterMemory.MemoryDatabase.GetMetaDatabase
+- uid: MasterMemory.Meta.MetaDatabase
+  commentId: T:MasterMemory.Meta.MetaDatabase
+  parent: MasterMemory.Meta
+  isExternal: true
+  name: MetaDatabase
+  nameWithType: MetaDatabase
+  fullName: MasterMemory.Meta.MetaDatabase
+- uid: MasterMemory.Meta
+  commentId: N:MasterMemory.Meta
+  isExternal: true
+  name: MasterMemory.Meta
+  nameWithType: MasterMemory.Meta
+  fullName: MasterMemory.Meta
+  spec.csharp:
+  - uid: MasterMemory
+    name: MasterMemory
+    isExternal: true
+  - name: .
+  - uid: MasterMemory.Meta
+    name: Meta
+    isExternal: true
+  spec.vb:
+  - uid: MasterMemory
+    name: MasterMemory
+    isExternal: true
+  - name: .
+  - uid: MasterMemory.Meta
+    name: Meta
+    isExternal: true

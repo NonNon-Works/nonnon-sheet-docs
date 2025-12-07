@@ -1,0 +1,707 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.NonNonTable`1
+  commentId: T:NonNonSheet.NonNonTable`1
+  id: NonNonTable`1
+  parent: NonNonSheet
+  children:
+  - NonNonSheet.NonNonTable`1.Data
+  - NonNonSheet.NonNonTable`1.DataType
+  - NonNonSheet.NonNonTable`1.GetAllData
+  - NonNonSheet.NonNonTable`1.Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
+  - NonNonSheet.NonNonTable`1._data
+  langs:
+  - csharp
+  - vb
+  name: NonNonTable<T>
+  nameWithType: NonNonTable<T>
+  fullName: NonNonSheet.NonNonTable<T>
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: NonNonTable
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+    startLine: 68
+  namespace: NonNonSheet
+  summary: Generic base class for strongly-typed NonNonSheet tables.
+  example: []
+  syntax:
+    content: 'public abstract class NonNonTable<T> : NonNonTable where T : class, new()'
+    typeParameters:
+    - id: T
+      description: Row type.
+    content.vb: Public MustInherit Class NonNonTable(Of T As {Class, New}) Inherits NonNonTable
+  inheritance:
+  - System.Object
+  - NonNonSheet.NonNonTable
+  inheritedMembers:
+  - NonNonSheet.NonNonTable.GetDataMatrix
+  - NonNonSheet.NonNonTable.Columns
+  - NonNonSheet.NonNonTable.GetColumnWidth(System.Int32)
+  - NonNonSheet.NonNonTable.SetColumnWidth(System.Int32,System.Single)
+  - NonNonSheet.NonNonTable.SetValue(System.Int32,System.Int32,System.Object)
+  nameWithType.vb: NonNonTable(Of T)
+  fullName.vb: NonNonSheet.NonNonTable(Of T)
+  name.vb: NonNonTable(Of T)
+- uid: NonNonSheet.NonNonTable`1._data
+  commentId: F:NonNonSheet.NonNonTable`1._data
+  id: _data
+  parent: NonNonSheet.NonNonTable`1
+  langs:
+  - csharp
+  - vb
+  name: _data
+  nameWithType: NonNonTable<T>._data
+  fullName: NonNonSheet.NonNonTable<T>._data
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: _data
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+    startLine: 70
+  namespace: NonNonSheet
+  syntax:
+    content: protected List<T> _data
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Protected _data As List(Of T)
+  nameWithType.vb: NonNonTable(Of T)._data
+  fullName.vb: NonNonSheet.NonNonTable(Of T)._data
+- uid: NonNonSheet.NonNonTable`1.Data
+  commentId: P:NonNonSheet.NonNonTable`1.Data
+  id: Data
+  parent: NonNonSheet.NonNonTable`1
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: NonNonTable<T>.Data
+  fullName: NonNonSheet.NonNonTable<T>.Data
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Data
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+    startLine: 75
+  namespace: NonNonSheet
+  summary: Backing list of row data.
+  example: []
+  syntax:
+    content: public IReadOnlyList<T> Data { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{{T}}
+    content.vb: Public ReadOnly Property Data As IReadOnlyList(Of T)
+  overload: NonNonSheet.NonNonTable`1.Data*
+  nameWithType.vb: NonNonTable(Of T).Data
+  fullName.vb: NonNonSheet.NonNonTable(Of T).Data
+- uid: NonNonSheet.NonNonTable`1.DataType
+  commentId: P:NonNonSheet.NonNonTable`1.DataType
+  id: DataType
+  parent: NonNonSheet.NonNonTable`1
+  langs:
+  - csharp
+  - vb
+  name: DataType
+  nameWithType: NonNonTable<T>.DataType
+  fullName: NonNonSheet.NonNonTable<T>.DataType
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DataType
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+    startLine: 78
+  namespace: NonNonSheet
+  summary: Runtime data type stored by this table.
+  example: []
+  syntax:
+    content: public override Type DataType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Overrides ReadOnly Property DataType As Type
+  overridden: NonNonSheet.NonNonTable.DataType
+  overload: NonNonSheet.NonNonTable`1.DataType*
+  nameWithType.vb: NonNonTable(Of T).DataType
+  fullName.vb: NonNonSheet.NonNonTable(Of T).DataType
+- uid: NonNonSheet.NonNonTable`1.GetAllData
+  commentId: M:NonNonSheet.NonNonTable`1.GetAllData
+  id: GetAllData
+  parent: NonNonSheet.NonNonTable`1
+  langs:
+  - csharp
+  - vb
+  name: GetAllData()
+  nameWithType: NonNonTable<T>.GetAllData()
+  fullName: NonNonSheet.NonNonTable<T>.GetAllData()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetAllData
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+    startLine: 81
+  namespace: NonNonSheet
+  summary: Returns all rows as objects.
+  example: []
+  syntax:
+    content: public override object[] GetAllData()
+    return:
+      type: System.Object[]
+      description: Array of rows boxed as <xref href="System.Object" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Overrides Function GetAllData() As Object()
+  overridden: NonNonSheet.NonNonTable.GetAllData
+  overload: NonNonSheet.NonNonTable`1.GetAllData*
+  nameWithType.vb: NonNonTable(Of T).GetAllData()
+  fullName.vb: NonNonSheet.NonNonTable(Of T).GetAllData()
+- uid: NonNonSheet.NonNonTable`1.Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
+  commentId: M:NonNonSheet.NonNonTable`1.Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
+  id: Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
+  parent: NonNonSheet.NonNonTable`1
+  langs:
+  - csharp
+  - vb
+  name: Validate(ColumnMetadata, object, object)
+  nameWithType: NonNonTable<T>.Validate(ColumnMetadata, object, object)
+  fullName: NonNonSheet.NonNonTable<T>.Validate(NonNonSheet.ColumnMetadata, object, object)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Validate
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+    startLine: 84
+  namespace: NonNonSheet
+  summary: Validates a value change for the given column and row data.
+  example: []
+  syntax:
+    content: public override ValidationResult Validate(ColumnMetadata column, object data, object newValue)
+    parameters:
+    - id: column
+      type: NonNonSheet.ColumnMetadata
+      description: Column metadata for the edited column.
+    - id: data
+      type: System.Object
+      description: Row object being edited.
+    - id: newValue
+      type: System.Object
+      description: Proposed new value.
+    return:
+      type: NonNonSheet.ValidationResult
+      description: Validation result indicating success or failure with a message.
+    content.vb: Public Overrides Function Validate(column As ColumnMetadata, data As Object, newValue As Object) As ValidationResult
+  overridden: NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
+  overload: NonNonSheet.NonNonTable`1.Validate*
+  nameWithType.vb: NonNonTable(Of T).Validate(ColumnMetadata, Object, Object)
+  fullName.vb: NonNonSheet.NonNonTable(Of T).Validate(NonNonSheet.ColumnMetadata, Object, Object)
+  name.vb: Validate(ColumnMetadata, Object, Object)
+references:
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: NonNonSheet.NonNonTable
+  commentId: T:NonNonSheet.NonNonTable
+  parent: NonNonSheet
+  href: NonNonSheet.NonNonTable.html
+  name: NonNonTable
+  nameWithType: NonNonTable
+  fullName: NonNonSheet.NonNonTable
+- uid: NonNonSheet.NonNonTable.GetDataMatrix
+  commentId: M:NonNonSheet.NonNonTable.GetDataMatrix
+  parent: NonNonSheet.NonNonTable
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetDataMatrix
+  name: GetDataMatrix()
+  nameWithType: NonNonTable.GetDataMatrix()
+  fullName: NonNonSheet.NonNonTable.GetDataMatrix()
+  spec.csharp:
+  - uid: NonNonSheet.NonNonTable.GetDataMatrix
+    name: GetDataMatrix
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetDataMatrix
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.NonNonTable.GetDataMatrix
+    name: GetDataMatrix
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetDataMatrix
+  - name: (
+  - name: )
+- uid: NonNonSheet.NonNonTable.Columns
+  commentId: P:NonNonSheet.NonNonTable.Columns
+  parent: NonNonSheet.NonNonTable
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_Columns
+  name: Columns
+  nameWithType: NonNonTable.Columns
+  fullName: NonNonSheet.NonNonTable.Columns
+- uid: NonNonSheet.NonNonTable.GetColumnWidth(System.Int32)
+  commentId: M:NonNonSheet.NonNonTable.GetColumnWidth(System.Int32)
+  parent: NonNonSheet.NonNonTable
+  isExternal: true
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetColumnWidth_System_Int32_
+  name: GetColumnWidth(int)
+  nameWithType: NonNonTable.GetColumnWidth(int)
+  fullName: NonNonSheet.NonNonTable.GetColumnWidth(int)
+  nameWithType.vb: NonNonTable.GetColumnWidth(Integer)
+  fullName.vb: NonNonSheet.NonNonTable.GetColumnWidth(Integer)
+  name.vb: GetColumnWidth(Integer)
+  spec.csharp:
+  - uid: NonNonSheet.NonNonTable.GetColumnWidth(System.Int32)
+    name: GetColumnWidth
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetColumnWidth_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.NonNonTable.GetColumnWidth(System.Int32)
+    name: GetColumnWidth
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetColumnWidth_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: NonNonSheet.NonNonTable.SetColumnWidth(System.Int32,System.Single)
+  commentId: M:NonNonSheet.NonNonTable.SetColumnWidth(System.Int32,System.Single)
+  parent: NonNonSheet.NonNonTable
+  isExternal: true
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_SetColumnWidth_System_Int32_System_Single_
+  name: SetColumnWidth(int, float)
+  nameWithType: NonNonTable.SetColumnWidth(int, float)
+  fullName: NonNonSheet.NonNonTable.SetColumnWidth(int, float)
+  nameWithType.vb: NonNonTable.SetColumnWidth(Integer, Single)
+  fullName.vb: NonNonSheet.NonNonTable.SetColumnWidth(Integer, Single)
+  name.vb: SetColumnWidth(Integer, Single)
+  spec.csharp:
+  - uid: NonNonSheet.NonNonTable.SetColumnWidth(System.Int32,System.Single)
+    name: SetColumnWidth
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_SetColumnWidth_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.NonNonTable.SetColumnWidth(System.Int32,System.Single)
+    name: SetColumnWidth
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_SetColumnWidth_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: NonNonSheet.NonNonTable.SetValue(System.Int32,System.Int32,System.Object)
+  commentId: M:NonNonSheet.NonNonTable.SetValue(System.Int32,System.Int32,System.Object)
+  parent: NonNonSheet.NonNonTable
+  isExternal: true
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_SetValue_System_Int32_System_Int32_System_Object_
+  name: SetValue(int, int, object)
+  nameWithType: NonNonTable.SetValue(int, int, object)
+  fullName: NonNonSheet.NonNonTable.SetValue(int, int, object)
+  nameWithType.vb: NonNonTable.SetValue(Integer, Integer, Object)
+  fullName.vb: NonNonSheet.NonNonTable.SetValue(Integer, Integer, Object)
+  name.vb: SetValue(Integer, Integer, Object)
+  spec.csharp:
+  - uid: NonNonSheet.NonNonTable.SetValue(System.Int32,System.Int32,System.Object)
+    name: SetValue
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_SetValue_System_Int32_System_Int32_System_Object_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.NonNonTable.SetValue(System.Int32,System.Int32,System.Object)
+    name: SetValue
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_SetValue_System_Int32_System_Int32_System_Object_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: NonNonSheet.NonNonTable`1.Data*
+  commentId: Overload:NonNonSheet.NonNonTable`1.Data
+  href: NonNonSheet.NonNonTable-1.html#NonNonSheet_NonNonTable_1_Data
+  name: Data
+  nameWithType: NonNonTable<T>.Data
+  fullName: NonNonSheet.NonNonTable<T>.Data
+  nameWithType.vb: NonNonTable(Of T).Data
+  fullName.vb: NonNonSheet.NonNonTable(Of T).Data
+- uid: System.Collections.Generic.IReadOnlyList{{T}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.NonNonTable.DataType
+  commentId: P:NonNonSheet.NonNonTable.DataType
+  parent: NonNonSheet.NonNonTable
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_DataType
+  name: DataType
+  nameWithType: NonNonTable.DataType
+  fullName: NonNonSheet.NonNonTable.DataType
+- uid: NonNonSheet.NonNonTable`1.DataType*
+  commentId: Overload:NonNonSheet.NonNonTable`1.DataType
+  href: NonNonSheet.NonNonTable-1.html#NonNonSheet_NonNonTable_1_DataType
+  name: DataType
+  nameWithType: NonNonTable<T>.DataType
+  fullName: NonNonSheet.NonNonTable<T>.DataType
+  nameWithType.vb: NonNonTable(Of T).DataType
+  fullName.vb: NonNonSheet.NonNonTable(Of T).DataType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: NonNonSheet.NonNonTable.GetAllData
+  commentId: M:NonNonSheet.NonNonTable.GetAllData
+  parent: NonNonSheet.NonNonTable
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetAllData
+  name: GetAllData()
+  nameWithType: NonNonTable.GetAllData()
+  fullName: NonNonSheet.NonNonTable.GetAllData()
+  spec.csharp:
+  - uid: NonNonSheet.NonNonTable.GetAllData
+    name: GetAllData
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetAllData
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.NonNonTable.GetAllData
+    name: GetAllData
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetAllData
+  - name: (
+  - name: )
+- uid: NonNonSheet.NonNonTable`1.GetAllData*
+  commentId: Overload:NonNonSheet.NonNonTable`1.GetAllData
+  href: NonNonSheet.NonNonTable-1.html#NonNonSheet_NonNonTable_1_GetAllData
+  name: GetAllData
+  nameWithType: NonNonTable<T>.GetAllData
+  fullName: NonNonSheet.NonNonTable<T>.GetAllData
+  nameWithType.vb: NonNonTable(Of T).GetAllData
+  fullName.vb: NonNonSheet.NonNonTable(Of T).GetAllData
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
+  commentId: M:NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
+  parent: NonNonSheet.NonNonTable
+  isExternal: true
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_Validate_NonNonSheet_ColumnMetadata_System_Object_System_Object_
+  name: Validate(ColumnMetadata, object, object)
+  nameWithType: NonNonTable.Validate(ColumnMetadata, object, object)
+  fullName: NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata, object, object)
+  nameWithType.vb: NonNonTable.Validate(ColumnMetadata, Object, Object)
+  fullName.vb: NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata, Object, Object)
+  name.vb: Validate(ColumnMetadata, Object, Object)
+  spec.csharp:
+  - uid: NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
+    name: Validate
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_Validate_NonNonSheet_ColumnMetadata_System_Object_System_Object_
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+    href: NonNonSheet.ColumnMetadata.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
+    name: Validate
+    href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_Validate_NonNonSheet_ColumnMetadata_System_Object_System_Object_
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+    href: NonNonSheet.ColumnMetadata.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.NonNonTable`1.Validate*
+  commentId: Overload:NonNonSheet.NonNonTable`1.Validate
+  href: NonNonSheet.NonNonTable-1.html#NonNonSheet_NonNonTable_1_Validate_NonNonSheet_ColumnMetadata_System_Object_System_Object_
+  name: Validate
+  nameWithType: NonNonTable<T>.Validate
+  fullName: NonNonSheet.NonNonTable<T>.Validate
+  nameWithType.vb: NonNonTable(Of T).Validate
+  fullName.vb: NonNonSheet.NonNonTable(Of T).Validate
+- uid: NonNonSheet.ColumnMetadata
+  commentId: T:NonNonSheet.ColumnMetadata
+  parent: NonNonSheet
+  href: NonNonSheet.ColumnMetadata.html
+  name: ColumnMetadata
+  nameWithType: ColumnMetadata
+  fullName: NonNonSheet.ColumnMetadata
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult

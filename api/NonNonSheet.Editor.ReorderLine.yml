@@ -1,0 +1,279 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.ReorderLine
+  commentId: T:NonNonSheet.Editor.ReorderLine
+  id: ReorderLine
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.ReorderLine.#ctor(VisualElement)
+  - NonNonSheet.Editor.ReorderLine.FitBottom(NonNonSheet.Editor.DataRow)
+  - NonNonSheet.Editor.ReorderLine.FitTop(NonNonSheet.Editor.DataRow)
+  - NonNonSheet.Editor.ReorderLine.IsVisible
+  - NonNonSheet.Editor.ReorderLine.Width
+  langs:
+  - csharp
+  - vb
+  name: ReorderLine
+  nameWithType: ReorderLine
+  fullName: NonNonSheet.Editor.ReorderLine
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ReorderLine
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+    startLine: 4
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class ReorderLine : VisualElement'
+    content.vb: Public Class ReorderLine Inherits VisualElement
+  inheritance:
+  - System.Object
+- uid: NonNonSheet.Editor.ReorderLine.IsVisible
+  commentId: P:NonNonSheet.Editor.ReorderLine.IsVisible
+  id: IsVisible
+  parent: NonNonSheet.Editor.ReorderLine
+  langs:
+  - csharp
+  - vb
+  name: IsVisible
+  nameWithType: ReorderLine.IsVisible
+  fullName: NonNonSheet.Editor.ReorderLine.IsVisible
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsVisible
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsVisible As Boolean
+  overload: NonNonSheet.Editor.ReorderLine.IsVisible*
+- uid: NonNonSheet.Editor.ReorderLine.Width
+  commentId: P:NonNonSheet.Editor.ReorderLine.Width
+  id: Width
+  parent: NonNonSheet.Editor.ReorderLine
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: ReorderLine.Width
+  fullName: NonNonSheet.Editor.ReorderLine.Width
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Width
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+    startLine: 14
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public float Width { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Width As Single
+  overload: NonNonSheet.Editor.ReorderLine.Width*
+- uid: NonNonSheet.Editor.ReorderLine.#ctor(VisualElement)
+  commentId: M:NonNonSheet.Editor.ReorderLine.#ctor(VisualElement)
+  id: '#ctor(VisualElement)'
+  parent: NonNonSheet.Editor.ReorderLine
+  langs:
+  - csharp
+  - vb
+  name: ReorderLine(VisualElement)
+  nameWithType: ReorderLine.ReorderLine(VisualElement)
+  fullName: NonNonSheet.Editor.ReorderLine.ReorderLine(VisualElement)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+    startLine: 20
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public ReorderLine(VisualElement rootVisualElement)
+    parameters:
+    - id: rootVisualElement
+      type: VisualElement
+    content.vb: Public Sub New(rootVisualElement As VisualElement)
+  overload: NonNonSheet.Editor.ReorderLine.#ctor*
+  nameWithType.vb: ReorderLine.New(VisualElement)
+  fullName.vb: NonNonSheet.Editor.ReorderLine.New(VisualElement)
+  name.vb: New(VisualElement)
+- uid: NonNonSheet.Editor.ReorderLine.FitTop(NonNonSheet.Editor.DataRow)
+  commentId: M:NonNonSheet.Editor.ReorderLine.FitTop(NonNonSheet.Editor.DataRow)
+  id: FitTop(NonNonSheet.Editor.DataRow)
+  parent: NonNonSheet.Editor.ReorderLine
+  langs:
+  - csharp
+  - vb
+  name: FitTop(DataRow)
+  nameWithType: ReorderLine.FitTop(DataRow)
+  fullName: NonNonSheet.Editor.ReorderLine.FitTop(NonNonSheet.Editor.DataRow)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FitTop
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+    startLine: 29
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void FitTop(DataRow dataRow)
+    parameters:
+    - id: dataRow
+      type: NonNonSheet.Editor.DataRow
+    content.vb: Public Sub FitTop(dataRow As DataRow)
+  overload: NonNonSheet.Editor.ReorderLine.FitTop*
+- uid: NonNonSheet.Editor.ReorderLine.FitBottom(NonNonSheet.Editor.DataRow)
+  commentId: M:NonNonSheet.Editor.ReorderLine.FitBottom(NonNonSheet.Editor.DataRow)
+  id: FitBottom(NonNonSheet.Editor.DataRow)
+  parent: NonNonSheet.Editor.ReorderLine
+  langs:
+  - csharp
+  - vb
+  name: FitBottom(DataRow)
+  nameWithType: ReorderLine.FitBottom(DataRow)
+  fullName: NonNonSheet.Editor.ReorderLine.FitBottom(NonNonSheet.Editor.DataRow)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FitBottom
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/ReorderLine.cs
+    startLine: 34
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void FitBottom(DataRow dataRow)
+    parameters:
+    - id: dataRow
+      type: NonNonSheet.Editor.DataRow
+    content.vb: Public Sub FitBottom(dataRow As DataRow)
+  overload: NonNonSheet.Editor.ReorderLine.FitBottom*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.ReorderLine.IsVisible*
+  commentId: Overload:NonNonSheet.Editor.ReorderLine.IsVisible
+  href: NonNonSheet.Editor.ReorderLine.html#NonNonSheet_Editor_ReorderLine_IsVisible
+  name: IsVisible
+  nameWithType: ReorderLine.IsVisible
+  fullName: NonNonSheet.Editor.ReorderLine.IsVisible
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NonNonSheet.Editor.ReorderLine.Width*
+  commentId: Overload:NonNonSheet.Editor.ReorderLine.Width
+  href: NonNonSheet.Editor.ReorderLine.html#NonNonSheet_Editor_ReorderLine_Width
+  name: Width
+  nameWithType: ReorderLine.Width
+  fullName: NonNonSheet.Editor.ReorderLine.Width
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: NonNonSheet.Editor.ReorderLine.#ctor*
+  commentId: Overload:NonNonSheet.Editor.ReorderLine.#ctor
+  href: NonNonSheet.Editor.ReorderLine.html#NonNonSheet_Editor_ReorderLine__ctor_VisualElement_
+  name: ReorderLine
+  nameWithType: ReorderLine.ReorderLine
+  fullName: NonNonSheet.Editor.ReorderLine.ReorderLine
+  nameWithType.vb: ReorderLine.New
+  fullName.vb: NonNonSheet.Editor.ReorderLine.New
+  name.vb: New
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement
+- uid: NonNonSheet.Editor.ReorderLine.FitTop*
+  commentId: Overload:NonNonSheet.Editor.ReorderLine.FitTop
+  href: NonNonSheet.Editor.ReorderLine.html#NonNonSheet_Editor_ReorderLine_FitTop_NonNonSheet_Editor_DataRow_
+  name: FitTop
+  nameWithType: ReorderLine.FitTop
+  fullName: NonNonSheet.Editor.ReorderLine.FitTop
+- uid: NonNonSheet.Editor.DataRow
+  commentId: T:NonNonSheet.Editor.DataRow
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.DataRow.html
+  name: DataRow
+  nameWithType: DataRow
+  fullName: NonNonSheet.Editor.DataRow
+- uid: NonNonSheet.Editor.ReorderLine.FitBottom*
+  commentId: Overload:NonNonSheet.Editor.ReorderLine.FitBottom
+  href: NonNonSheet.Editor.ReorderLine.html#NonNonSheet_Editor_ReorderLine_FitBottom_NonNonSheet_Editor_DataRow_
+  name: FitBottom
+  nameWithType: ReorderLine.FitBottom
+  fullName: NonNonSheet.Editor.ReorderLine.FitBottom

@@ -1,0 +1,339 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator
+  commentId: T:NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator
+  id: ISubclassTableValidator
+  parent: NonNonSheet.Exp._06_SubclassTable
+  children:
+  - NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateId(NonNonSheet.Exp._06_SubclassTable.SubclassData,System.Int32)
+  - NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateName(NonNonSheet.Exp._06_SubclassTable.SubclassData,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ISubclassTableValidator
+  nameWithType: ISubclassTableValidator
+  fullName: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SubclassTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ISubclassTableValidator
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SubclassTable.g.cs
+    startLine: 90
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp._06_SubclassTable
+  syntax:
+    content: 'public interface ISubclassTableValidator : IValidator<SubclassData>'
+    content.vb: Public Interface ISubclassTableValidator Inherits IValidator(Of SubclassData)
+  inheritedMembers:
+  - NonNonSheet.IValidator{NonNonSheet.Exp._06_SubclassTable.SubclassData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp._06_SubclassTable.SubclassData,System.Object)
+- uid: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateId(NonNonSheet.Exp._06_SubclassTable.SubclassData,System.Int32)
+  commentId: M:NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateId(NonNonSheet.Exp._06_SubclassTable.SubclassData,System.Int32)
+  id: ValidateId(NonNonSheet.Exp._06_SubclassTable.SubclassData,System.Int32)
+  parent: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateId(SubclassData, int)
+  nameWithType: ISubclassTableValidator.ValidateId(SubclassData, int)
+  fullName: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateId(NonNonSheet.Exp._06_SubclassTable.SubclassData, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SubclassTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateId
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SubclassTable.g.cs
+    startLine: 92
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp._06_SubclassTable
+  syntax:
+    content: ValidationResult ValidateId(SubclassData self, int id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp._06_SubclassTable.SubclassData
+    - id: id
+      type: System.Int32
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateId(self As SubclassData, id As Integer) As ValidationResult
+  overload: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateId*
+  nameWithType.vb: ISubclassTableValidator.ValidateId(SubclassData, Integer)
+  fullName.vb: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateId(NonNonSheet.Exp._06_SubclassTable.SubclassData, Integer)
+  name.vb: ValidateId(SubclassData, Integer)
+- uid: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateName(NonNonSheet.Exp._06_SubclassTable.SubclassData,System.String)
+  commentId: M:NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateName(NonNonSheet.Exp._06_SubclassTable.SubclassData,System.String)
+  id: ValidateName(NonNonSheet.Exp._06_SubclassTable.SubclassData,System.String)
+  parent: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateName(SubclassData, string)
+  nameWithType: ISubclassTableValidator.ValidateName(SubclassData, string)
+  fullName: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateName(NonNonSheet.Exp._06_SubclassTable.SubclassData, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SubclassTable.g.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateName
+    path: ../NonNonSheet/src/NonNonSheet.Unity/obj/Release/NonNonSheet.SourceGenerator/NonNonSheet.SourceGenerator.Table.TableGenerator/SubclassTable.g.cs
+    startLine: 93
+  assemblies:
+  - NonNonSheet.Exp.Editor
+  namespace: NonNonSheet.Exp._06_SubclassTable
+  syntax:
+    content: ValidationResult ValidateName(SubclassData self, string id)
+    parameters:
+    - id: self
+      type: NonNonSheet.Exp._06_SubclassTable.SubclassData
+    - id: id
+      type: System.String
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Function ValidateName(self As SubclassData, id As String) As ValidationResult
+  overload: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateName*
+  nameWithType.vb: ISubclassTableValidator.ValidateName(SubclassData, String)
+  fullName.vb: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateName(NonNonSheet.Exp._06_SubclassTable.SubclassData, String)
+  name.vb: ValidateName(SubclassData, String)
+references:
+- uid: NonNonSheet.Exp._06_SubclassTable
+  commentId: N:NonNonSheet.Exp._06_SubclassTable
+  href: NonNonSheet.html
+  name: NonNonSheet.Exp._06_SubclassTable
+  nameWithType: NonNonSheet.Exp._06_SubclassTable
+  fullName: NonNonSheet.Exp._06_SubclassTable
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  - name: .
+  - uid: NonNonSheet.Exp._06_SubclassTable
+    name: _06_SubclassTable
+    href: NonNonSheet.Exp._06_SubclassTable.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Exp
+    name: Exp
+    href: NonNonSheet.Exp.html
+  - name: .
+  - uid: NonNonSheet.Exp._06_SubclassTable
+    name: _06_SubclassTable
+    href: NonNonSheet.Exp._06_SubclassTable.html
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp._06_SubclassTable.SubclassData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp._06_SubclassTable.SubclassData,System.Object)
+  commentId: M:NonNonSheet.IValidator{NonNonSheet.Exp._06_SubclassTable.SubclassData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp._06_SubclassTable.SubclassData,System.Object)
+  parent: NonNonSheet.IValidator{NonNonSheet.Exp._06_SubclassTable.SubclassData}
+  definition: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  href: NonNonSheet.Exp._06_SubclassTable.SubclassData.html
+  name: Validate(ColumnMetadata, SubclassData, object)
+  nameWithType: IValidator<SubclassData>.Validate(ColumnMetadata, SubclassData, object)
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp._06_SubclassTable.SubclassData>.Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp._06_SubclassTable.SubclassData, object)
+  nameWithType.vb: IValidator(Of SubclassData).Validate(ColumnMetadata, SubclassData, Object)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp._06_SubclassTable.SubclassData).Validate(NonNonSheet.ColumnMetadata, NonNonSheet.Exp._06_SubclassTable.SubclassData, Object)
+  name.vb: Validate(ColumnMetadata, SubclassData, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp._06_SubclassTable.SubclassData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp._06_SubclassTable.SubclassData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp._06_SubclassTable.SubclassData
+    name: SubclassData
+    href: NonNonSheet.Exp._06_SubclassTable.SubclassData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator{NonNonSheet.Exp._06_SubclassTable.SubclassData}.Validate(NonNonSheet.ColumnMetadata,NonNonSheet.Exp._06_SubclassTable.SubclassData,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Exp._06_SubclassTable.SubclassData
+    name: SubclassData
+    href: NonNonSheet.Exp._06_SubclassTable.SubclassData.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  commentId: M:NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Validate(ColumnMetadata, T, object)
+  nameWithType: IValidator<T>.Validate(ColumnMetadata, T, object)
+  fullName: NonNonSheet.IValidator<T>.Validate(NonNonSheet.ColumnMetadata, T, object)
+  nameWithType.vb: IValidator(Of T).Validate(ColumnMetadata, T, Object)
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate(NonNonSheet.ColumnMetadata, T, Object)
+  name.vb: Validate(ColumnMetadata, T, Object)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+    name: Validate
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: NonNonSheet.IValidator{NonNonSheet.Exp._06_SubclassTable.SubclassData}
+  commentId: T:NonNonSheet.IValidator{NonNonSheet.Exp._06_SubclassTable.SubclassData}
+  parent: NonNonSheet
+  definition: NonNonSheet.IValidator`1
+  href: NonNonSheet.Exp._06_SubclassTable.SubclassData.html
+  name: IValidator<SubclassData>
+  nameWithType: IValidator<SubclassData>
+  fullName: NonNonSheet.IValidator<NonNonSheet.Exp._06_SubclassTable.SubclassData>
+  nameWithType.vb: IValidator(Of SubclassData)
+  fullName.vb: NonNonSheet.IValidator(Of NonNonSheet.Exp._06_SubclassTable.SubclassData)
+  name.vb: IValidator(Of SubclassData)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: <
+  - uid: NonNonSheet.Exp._06_SubclassTable.SubclassData
+    name: SubclassData
+    href: NonNonSheet.Exp._06_SubclassTable.SubclassData.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Exp._06_SubclassTable.SubclassData
+    name: SubclassData
+    href: NonNonSheet.Exp._06_SubclassTable.SubclassData.html
+  - name: )
+- uid: NonNonSheet.IValidator`1
+  commentId: T:NonNonSheet.IValidator`1
+  href: NonNonSheet.IValidator-1.html
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: NonNonSheet.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: NonNonSheet.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.IValidator`1
+    name: IValidator
+    href: NonNonSheet.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateId*
+  commentId: Overload:NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateId
+  href: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.html#NonNonSheet_Exp__06_SubclassTable_ISubclassTableValidator_ValidateId_NonNonSheet_Exp__06_SubclassTable_SubclassData_System_Int32_
+  name: ValidateId
+  nameWithType: ISubclassTableValidator.ValidateId
+  fullName: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateId
+- uid: NonNonSheet.Exp._06_SubclassTable.SubclassData
+  commentId: T:NonNonSheet.Exp._06_SubclassTable.SubclassData
+  parent: NonNonSheet.Exp._06_SubclassTable
+  href: NonNonSheet.Exp._06_SubclassTable.SubclassData.html
+  name: SubclassData
+  nameWithType: SubclassData
+  fullName: NonNonSheet.Exp._06_SubclassTable.SubclassData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
+  parent: NonNonSheet
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateName*
+  commentId: Overload:NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateName
+  href: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.html#NonNonSheet_Exp__06_SubclassTable_ISubclassTableValidator_ValidateName_NonNonSheet_Exp__06_SubclassTable_SubclassData_System_String_
+  name: ValidateName
+  nameWithType: ISubclassTableValidator.ValidateName
+  fullName: NonNonSheet.Exp._06_SubclassTable.ISubclassTableValidator.ValidateName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

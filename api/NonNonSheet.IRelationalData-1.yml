@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.IRelationalData`1
+  commentId: T:NonNonSheet.IRelationalData`1
+  id: IRelationalData`1
+  parent: NonNonSheet
+  children:
+  - NonNonSheet.IRelationalData`1.DisplayName
+  - NonNonSheet.IRelationalData`1.Id
+  langs:
+  - csharp
+  - vb
+  name: IRelationalData<T>
+  nameWithType: IRelationalData<T>
+  fullName: NonNonSheet.IRelationalData<T>
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Relation/IRelationalData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IRelationalData
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Relation/IRelationalData.cs
+    startLine: 8
+  namespace: NonNonSheet
+  summary: Represents a row that can participate in relations using an identifier and a human-friendly name.
+  example: []
+  syntax:
+    content: 'public interface IRelationalData<out T> where T : IEquatable<out T>'
+    typeParameters:
+    - id: T
+      description: Equatable identifier type.
+    content.vb: Public Interface IRelationalData(Of Out T As IEquatable(Of Out T))
+  nameWithType.vb: IRelationalData(Of T)
+  fullName.vb: NonNonSheet.IRelationalData(Of T)
+  name.vb: IRelationalData(Of T)
+- uid: NonNonSheet.IRelationalData`1.Id
+  commentId: P:NonNonSheet.IRelationalData`1.Id
+  id: Id
+  parent: NonNonSheet.IRelationalData`1
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: IRelationalData<T>.Id
+  fullName: NonNonSheet.IRelationalData<T>.Id
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Relation/IRelationalData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Id
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Relation/IRelationalData.cs
+    startLine: 13
+  namespace: NonNonSheet
+  summary: Unique identifier of the row, used to reference this entry from other tables.
+  example: []
+  syntax:
+    content: T Id { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: ReadOnly Property Id As T
+  overload: NonNonSheet.IRelationalData`1.Id*
+  nameWithType.vb: IRelationalData(Of T).Id
+  fullName.vb: NonNonSheet.IRelationalData(Of T).Id
+- uid: NonNonSheet.IRelationalData`1.DisplayName
+  commentId: P:NonNonSheet.IRelationalData`1.DisplayName
+  id: DisplayName
+  parent: NonNonSheet.IRelationalData`1
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: IRelationalData<T>.DisplayName
+  fullName: NonNonSheet.IRelationalData<T>.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Relation/IRelationalData.cs
+      branch: 1.0.0
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DisplayName
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Relation/IRelationalData.cs
+    startLine: 17
+  namespace: NonNonSheet
+  summary: Label shown in selection UIs when referring to this row.
+  example: []
+  syntax:
+    content: string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property DisplayName As String
+  overload: NonNonSheet.IRelationalData`1.DisplayName*
+  nameWithType.vb: IRelationalData(Of T).DisplayName
+  fullName.vb: NonNonSheet.IRelationalData(Of T).DisplayName
+references:
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.IRelationalData`1.Id*
+  commentId: Overload:NonNonSheet.IRelationalData`1.Id
+  href: NonNonSheet.IRelationalData-1.html#NonNonSheet_IRelationalData_1_Id
+  name: Id
+  nameWithType: IRelationalData<T>.Id
+  fullName: NonNonSheet.IRelationalData<T>.Id
+  nameWithType.vb: IRelationalData(Of T).Id
+  fullName.vb: NonNonSheet.IRelationalData(Of T).Id
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: NonNonSheet.IRelationalData`1.DisplayName*
+  commentId: Overload:NonNonSheet.IRelationalData`1.DisplayName
+  href: NonNonSheet.IRelationalData-1.html#NonNonSheet_IRelationalData_1_DisplayName
+  name: DisplayName
+  nameWithType: IRelationalData<T>.DisplayName
+  fullName: NonNonSheet.IRelationalData<T>.DisplayName
+  nameWithType.vb: IRelationalData(Of T).DisplayName
+  fullName.vb: NonNonSheet.IRelationalData(Of T).DisplayName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
