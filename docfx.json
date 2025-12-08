@@ -38,7 +38,8 @@
       "_appFaviconPath": "images/icon.svg",
       "_enableSearch": true,
       "pdf": true,
-      "pdfTocPage": true
+      "pdfTocPage": true,
+      "pdfCoverPage": "pdf/cover.html"
     }
   }
 }
