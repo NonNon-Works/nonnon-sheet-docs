@@ -37,6 +37,7 @@
       "_appLogoPath": "images/icon.svg",
       "_appFaviconPath": "images/icon.svg",
       "_enableSearch": true,
+      "_googleAnalyticsTagId": "G-9JF408P5L8",
       "pdf": true,
       "pdfTocPage": true,
       "pdfCoverPage": "pdf/cover.html"
