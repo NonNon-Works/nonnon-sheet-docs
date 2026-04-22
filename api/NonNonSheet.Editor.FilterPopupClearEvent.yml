@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.FilterPopupClearEvent
+  commentId: T:NonNonSheet.Editor.FilterPopupClearEvent
+  id: FilterPopupClearEvent
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.FilterPopupClearEvent.ColIndex
+  langs:
+  - csharp
+  - vb
+  name: FilterPopupClearEvent
+  nameWithType: FilterPopupClearEvent
+  fullName: NonNonSheet.Editor.FilterPopupClearEvent
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FilterPopupClearEvent
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 96
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class FilterPopupClearEvent : TrickleDownEvent<FilterPopupClearEvent>'
+    content.vb: Public Class FilterPopupClearEvent Inherits TrickleDownEvent(Of FilterPopupClearEvent)
+  inheritance:
+  - System.Object
+  - NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterPopupClearEvent}
+  inheritedMembers:
+  - NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterPopupClearEvent}.Init
+- uid: NonNonSheet.Editor.FilterPopupClearEvent.ColIndex
+  commentId: F:NonNonSheet.Editor.FilterPopupClearEvent.ColIndex
+  id: ColIndex
+  parent: NonNonSheet.Editor.FilterPopupClearEvent
+  langs:
+  - csharp
+  - vb
+  name: ColIndex
+  nameWithType: FilterPopupClearEvent.ColIndex
+  fullName: NonNonSheet.Editor.FilterPopupClearEvent.ColIndex
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ColIndex
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 98
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public int ColIndex
+    return:
+      type: System.Int32
+    content.vb: Public ColIndex As Integer
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterPopupClearEvent}
+  commentId: T:NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterPopupClearEvent}
+  parent: NonNonSheet.Editor
+  definition: NonNonSheet.Editor.TrickleDownEvent`1
+  href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  name: TrickleDownEvent<FilterPopupClearEvent>
+  nameWithType: TrickleDownEvent<FilterPopupClearEvent>
+  fullName: NonNonSheet.Editor.TrickleDownEvent<NonNonSheet.Editor.FilterPopupClearEvent>
+  nameWithType.vb: TrickleDownEvent(Of FilterPopupClearEvent)
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of NonNonSheet.Editor.FilterPopupClearEvent)
+  name.vb: TrickleDownEvent(Of FilterPopupClearEvent)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1
+    name: TrickleDownEvent
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  - name: <
+  - uid: NonNonSheet.Editor.FilterPopupClearEvent
+    name: FilterPopupClearEvent
+    href: NonNonSheet.Editor.FilterPopupClearEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1
+    name: TrickleDownEvent
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Editor.FilterPopupClearEvent
+    name: FilterPopupClearEvent
+    href: NonNonSheet.Editor.FilterPopupClearEvent.html
+  - name: )
+- uid: NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterPopupClearEvent}.Init
+  commentId: M:NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterPopupClearEvent}.Init
+  parent: NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterPopupClearEvent}
+  definition: NonNonSheet.Editor.TrickleDownEvent`1.Init
+  href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  name: Init()
+  nameWithType: TrickleDownEvent<FilterPopupClearEvent>.Init()
+  fullName: NonNonSheet.Editor.TrickleDownEvent<NonNonSheet.Editor.FilterPopupClearEvent>.Init()
+  nameWithType.vb: TrickleDownEvent(Of FilterPopupClearEvent).Init()
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of NonNonSheet.Editor.FilterPopupClearEvent).Init()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterPopupClearEvent}.Init
+    name: Init
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterPopupClearEvent}.Init
+    name: Init
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.TrickleDownEvent`1
+  commentId: T:NonNonSheet.Editor.TrickleDownEvent`1
+  href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  name: TrickleDownEvent<T>
+  nameWithType: TrickleDownEvent<T>
+  fullName: NonNonSheet.Editor.TrickleDownEvent<T>
+  nameWithType.vb: TrickleDownEvent(Of T)
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of T)
+  name.vb: TrickleDownEvent(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1
+    name: TrickleDownEvent
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1
+    name: TrickleDownEvent
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.Editor.TrickleDownEvent`1.Init
+  commentId: M:NonNonSheet.Editor.TrickleDownEvent`1.Init
+  href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  name: Init()
+  nameWithType: TrickleDownEvent<T>.Init()
+  fullName: NonNonSheet.Editor.TrickleDownEvent<T>.Init()
+  nameWithType.vb: TrickleDownEvent(Of T).Init()
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of T).Init()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1.Init
+    name: Init
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1.Init
+    name: Init
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

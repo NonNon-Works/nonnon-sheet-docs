@@ -6,10 +6,6 @@ items:
   parent: NonNonSheet.Editor
   children:
   - NonNonSheet.Editor.DeleteSystem.Delete
-  - NonNonSheet.Editor.DeleteSystem.SelectSystem
-  - NonNonSheet.Editor.DeleteSystem.Sheet
-  - NonNonSheet.Editor.DeleteSystem.Table
-  - NonNonSheet.Editor.DeleteSystem.UndoRedoSystem
   langs:
   - csharp
   - vb
@@ -19,19 +15,23 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/DeleteSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: DeleteSystem
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/DeleteSystem.cs
     startLine: 4
   namespace: NonNonSheet.Editor
   syntax:
-    content: public class DeleteSystem
-    content.vb: Public Class DeleteSystem
+    content: 'public class DeleteSystem : SystemBase'
+    content.vb: Public Class DeleteSystem Inherits SystemBase
   inheritance:
   - System.Object
+  - NonNonSheet.Editor.SystemBase
   inheritedMembers:
+  - NonNonSheet.Editor.SystemBase.Table
+  - NonNonSheet.Editor.SystemBase.EventBus
+  - NonNonSheet.Editor.SystemBase.State
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -39,114 +39,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: NonNonSheet.Editor.DeleteSystem.Table
-  commentId: P:NonNonSheet.Editor.DeleteSystem.Table
-  id: Table
-  parent: NonNonSheet.Editor.DeleteSystem
-  langs:
-  - csharp
-  - vb
-  name: Table
-  nameWithType: DeleteSystem.Table
-  fullName: NonNonSheet.Editor.DeleteSystem.Table
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: Table
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
-    startLine: 6
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public NonNonTable Table { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.NonNonTable
-    content.vb: Public Property Table As NonNonTable
-  overload: NonNonSheet.Editor.DeleteSystem.Table*
-- uid: NonNonSheet.Editor.DeleteSystem.Sheet
-  commentId: P:NonNonSheet.Editor.DeleteSystem.Sheet
-  id: Sheet
-  parent: NonNonSheet.Editor.DeleteSystem
-  langs:
-  - csharp
-  - vb
-  name: Sheet
-  nameWithType: DeleteSystem.Sheet
-  fullName: NonNonSheet.Editor.DeleteSystem.Sheet
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: Sheet
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
-    startLine: 7
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public Sheet Sheet { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.Sheet
-    content.vb: Public Property Sheet As Sheet
-  overload: NonNonSheet.Editor.DeleteSystem.Sheet*
-- uid: NonNonSheet.Editor.DeleteSystem.SelectSystem
-  commentId: P:NonNonSheet.Editor.DeleteSystem.SelectSystem
-  id: SelectSystem
-  parent: NonNonSheet.Editor.DeleteSystem
-  langs:
-  - csharp
-  - vb
-  name: SelectSystem
-  nameWithType: DeleteSystem.SelectSystem
-  fullName: NonNonSheet.Editor.DeleteSystem.SelectSystem
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: SelectSystem
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
-    startLine: 8
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public SelectSystem SelectSystem { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.SelectSystem
-    content.vb: Public Property SelectSystem As SelectSystem
-  overload: NonNonSheet.Editor.DeleteSystem.SelectSystem*
-- uid: NonNonSheet.Editor.DeleteSystem.UndoRedoSystem
-  commentId: P:NonNonSheet.Editor.DeleteSystem.UndoRedoSystem
-  id: UndoRedoSystem
-  parent: NonNonSheet.Editor.DeleteSystem
-  langs:
-  - csharp
-  - vb
-  name: UndoRedoSystem
-  nameWithType: DeleteSystem.UndoRedoSystem
-  fullName: NonNonSheet.Editor.DeleteSystem.UndoRedoSystem
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: UndoRedoSystem
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
-    startLine: 9
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public UndoRedoSystem UndoRedoSystem { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.UndoRedoSystem
-    content.vb: Public Property UndoRedoSystem As UndoRedoSystem
-  overload: NonNonSheet.Editor.DeleteSystem.UndoRedoSystem*
 - uid: NonNonSheet.Editor.DeleteSystem.Delete
   commentId: M:NonNonSheet.Editor.DeleteSystem.Delete
   id: Delete
@@ -160,12 +52,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/DeleteSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Delete
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/DeleteSystem.cs
-    startLine: 11
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/DeleteSystem.cs
+    startLine: 6
   namespace: NonNonSheet.Editor
   syntax:
     content: public void Delete()
@@ -205,6 +97,34 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: NonNonSheet.Editor.SystemBase
+  commentId: T:NonNonSheet.Editor.SystemBase
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SystemBase.html
+  name: SystemBase
+  nameWithType: SystemBase
+  fullName: NonNonSheet.Editor.SystemBase
+- uid: NonNonSheet.Editor.SystemBase.Table
+  commentId: P:NonNonSheet.Editor.SystemBase.Table
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_Table
+  name: Table
+  nameWithType: SystemBase.Table
+  fullName: NonNonSheet.Editor.SystemBase.Table
+- uid: NonNonSheet.Editor.SystemBase.EventBus
+  commentId: P:NonNonSheet.Editor.SystemBase.EventBus
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_EventBus
+  name: EventBus
+  nameWithType: SystemBase.EventBus
+  fullName: NonNonSheet.Editor.SystemBase.EventBus
+- uid: NonNonSheet.Editor.SystemBase.State
+  commentId: P:NonNonSheet.Editor.SystemBase.State
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_State
+  name: State
+  nameWithType: SystemBase.State
+  fullName: NonNonSheet.Editor.SystemBase.State
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -431,64 +351,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: NonNonSheet.Editor.DeleteSystem.Table*
-  commentId: Overload:NonNonSheet.Editor.DeleteSystem.Table
-  href: NonNonSheet.Editor.DeleteSystem.html#NonNonSheet_Editor_DeleteSystem_Table
-  name: Table
-  nameWithType: DeleteSystem.Table
-  fullName: NonNonSheet.Editor.DeleteSystem.Table
-- uid: NonNonSheet.NonNonTable
-  commentId: T:NonNonSheet.NonNonTable
-  parent: NonNonSheet
-  href: NonNonSheet.NonNonTable.html
-  name: NonNonTable
-  nameWithType: NonNonTable
-  fullName: NonNonSheet.NonNonTable
-- uid: NonNonSheet
-  commentId: N:NonNonSheet
-  href: NonNonSheet.html
-  name: NonNonSheet
-  nameWithType: NonNonSheet
-  fullName: NonNonSheet
-- uid: NonNonSheet.Editor.DeleteSystem.Sheet*
-  commentId: Overload:NonNonSheet.Editor.DeleteSystem.Sheet
-  href: NonNonSheet.Editor.DeleteSystem.html#NonNonSheet_Editor_DeleteSystem_Sheet
-  name: Sheet
-  nameWithType: DeleteSystem.Sheet
-  fullName: NonNonSheet.Editor.DeleteSystem.Sheet
-- uid: NonNonSheet.Editor.Sheet
-  commentId: T:NonNonSheet.Editor.Sheet
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.Sheet.html
-  name: Sheet
-  nameWithType: Sheet
-  fullName: NonNonSheet.Editor.Sheet
-- uid: NonNonSheet.Editor.DeleteSystem.SelectSystem*
-  commentId: Overload:NonNonSheet.Editor.DeleteSystem.SelectSystem
-  href: NonNonSheet.Editor.DeleteSystem.html#NonNonSheet_Editor_DeleteSystem_SelectSystem
-  name: SelectSystem
-  nameWithType: DeleteSystem.SelectSystem
-  fullName: NonNonSheet.Editor.DeleteSystem.SelectSystem
-- uid: NonNonSheet.Editor.SelectSystem
-  commentId: T:NonNonSheet.Editor.SelectSystem
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.SelectSystem.html
-  name: SelectSystem
-  nameWithType: SelectSystem
-  fullName: NonNonSheet.Editor.SelectSystem
-- uid: NonNonSheet.Editor.DeleteSystem.UndoRedoSystem*
-  commentId: Overload:NonNonSheet.Editor.DeleteSystem.UndoRedoSystem
-  href: NonNonSheet.Editor.DeleteSystem.html#NonNonSheet_Editor_DeleteSystem_UndoRedoSystem
-  name: UndoRedoSystem
-  nameWithType: DeleteSystem.UndoRedoSystem
-  fullName: NonNonSheet.Editor.DeleteSystem.UndoRedoSystem
-- uid: NonNonSheet.Editor.UndoRedoSystem
-  commentId: T:NonNonSheet.Editor.UndoRedoSystem
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.UndoRedoSystem.html
-  name: UndoRedoSystem
-  nameWithType: UndoRedoSystem
-  fullName: NonNonSheet.Editor.UndoRedoSystem
 - uid: NonNonSheet.Editor.DeleteSystem.Delete*
   commentId: Overload:NonNonSheet.Editor.DeleteSystem.Delete
   href: NonNonSheet.Editor.DeleteSystem.html#NonNonSheet_Editor_DeleteSystem_Delete

@@ -5,7 +5,7 @@ items:
   id: CellBuilder
   parent: NonNonSheet.Editor
   children:
-  - NonNonSheet.Editor.CellBuilder.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata,System.Int32,System.Int32,System.Object,System.Single)
+  - NonNonSheet.Editor.CellBuilder.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata)
   - NonNonSheet.Editor.CellBuilder.CustomFactories
   - NonNonSheet.Editor.CellBuilder.DefaultFactories
   langs:
@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellBuilder.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellBuilder.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: CellBuilder
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellBuilder.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellBuilder.cs
     startLine: 5
   namespace: NonNonSheet.Editor
   syntax:
@@ -50,11 +50,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellBuilder.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellBuilder.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: DefaultFactories
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellBuilder.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellBuilder.cs
     startLine: 7
   namespace: NonNonSheet.Editor
   syntax:
@@ -75,11 +75,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellBuilder.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellBuilder.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: CustomFactories
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellBuilder.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellBuilder.cs
     startLine: 8
   namespace: NonNonSheet.Editor
   syntax:
@@ -87,48 +87,37 @@ items:
     return:
       type: System.Collections.Generic.List{NonNonSheet.Editor.CellFactory}
     content.vb: Public Shared ReadOnly CustomFactories As List(Of CellFactory)
-- uid: NonNonSheet.Editor.CellBuilder.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata,System.Int32,System.Int32,System.Object,System.Single)
-  commentId: M:NonNonSheet.Editor.CellBuilder.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata,System.Int32,System.Int32,System.Object,System.Single)
-  id: Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata,System.Int32,System.Int32,System.Object,System.Single)
+- uid: NonNonSheet.Editor.CellBuilder.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata)
+  commentId: M:NonNonSheet.Editor.CellBuilder.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata)
+  id: Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata)
   parent: NonNonSheet.Editor.CellBuilder
   langs:
   - csharp
   - vb
-  name: Create(NonNonTable, ColumnMetadata, int, int, object, float)
-  nameWithType: CellBuilder.Create(NonNonTable, ColumnMetadata, int, int, object, float)
-  fullName: NonNonSheet.Editor.CellBuilder.Create(NonNonSheet.NonNonTable, NonNonSheet.ColumnMetadata, int, int, object, float)
+  name: Create(NonNonTable, ColumnMetadata)
+  nameWithType: CellBuilder.Create(NonNonTable, ColumnMetadata)
+  fullName: NonNonSheet.Editor.CellBuilder.Create(NonNonSheet.NonNonTable, NonNonSheet.ColumnMetadata)
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellBuilder.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellBuilder.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Create
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellBuilder.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellBuilder.cs
     startLine: 10
   namespace: NonNonSheet.Editor
   syntax:
-    content: public static Cell Create(NonNonTable table, ColumnMetadata metadata, int row, int col, object value, float width)
+    content: public static Cell Create(NonNonTable table, ColumnMetadata metadata)
     parameters:
     - id: table
       type: NonNonSheet.NonNonTable
     - id: metadata
       type: NonNonSheet.ColumnMetadata
-    - id: row
-      type: System.Int32
-    - id: col
-      type: System.Int32
-    - id: value
-      type: System.Object
-    - id: width
-      type: System.Single
     return:
       type: NonNonSheet.Editor.Cell
-    content.vb: Public Shared Function Create(table As NonNonTable, metadata As ColumnMetadata, row As Integer, col As Integer, value As Object, width As Single) As Cell
+    content.vb: Public Shared Function Create(table As NonNonTable, metadata As ColumnMetadata) As Cell
   overload: NonNonSheet.Editor.CellBuilder.Create*
-  nameWithType.vb: CellBuilder.Create(NonNonTable, ColumnMetadata, Integer, Integer, Object, Single)
-  fullName.vb: NonNonSheet.Editor.CellBuilder.Create(NonNonSheet.NonNonTable, NonNonSheet.ColumnMetadata, Integer, Integer, Object, Single)
-  name.vb: Create(NonNonTable, ColumnMetadata, Integer, Integer, Object, Single)
 references:
 - uid: NonNonSheet.Editor
   commentId: N:NonNonSheet.Editor
@@ -489,7 +478,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: NonNonSheet.Editor.CellBuilder.Create*
   commentId: Overload:NonNonSheet.Editor.CellBuilder.Create
-  href: NonNonSheet.Editor.CellBuilder.html#NonNonSheet_Editor_CellBuilder_Create_NonNonSheet_NonNonTable_NonNonSheet_ColumnMetadata_System_Int32_System_Int32_System_Object_System_Single_
+  href: NonNonSheet.Editor.CellBuilder.html#NonNonSheet_Editor_CellBuilder_Create_NonNonSheet_NonNonTable_NonNonSheet_ColumnMetadata_
   name: Create
   nameWithType: CellBuilder.Create
   fullName: NonNonSheet.Editor.CellBuilder.Create
@@ -507,28 +496,6 @@ references:
   name: ColumnMetadata
   nameWithType: ColumnMetadata
   fullName: NonNonSheet.ColumnMetadata
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
 - uid: NonNonSheet.Editor.Cell
   commentId: T:NonNonSheet.Editor.Cell
   parent: NonNonSheet.Editor

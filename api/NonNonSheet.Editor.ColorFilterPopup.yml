@@ -1,0 +1,453 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.ColorFilterPopup
+  commentId: T:NonNonSheet.Editor.ColorFilterPopup
+  id: ColorFilterPopup
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.ColorFilterPopup.#ctor
+  - NonNonSheet.Editor.ColorFilterPopup.OnShow(NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+  - NonNonSheet.Editor.ColorFilterPopup.ResetPanel
+  langs:
+  - csharp
+  - vb
+  name: ColorFilterPopup
+  nameWithType: ColorFilterPopup
+  fullName: NonNonSheet.Editor.ColorFilterPopup
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Filter/ColorFilterPopup.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ColorFilterPopup
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Filter/ColorFilterPopup.cs
+    startLine: 6
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class ColorFilterPopup : FilterPopup'
+    content.vb: Public Class ColorFilterPopup Inherits FilterPopup
+  inheritance:
+  - System.Object
+  - NonNonSheet.Editor.FilterPopup
+  inheritedMembers:
+  - NonNonSheet.Editor.FilterPopup.ClearButton
+  - NonNonSheet.Editor.FilterPopup.ActiveColIndex
+  - NonNonSheet.Editor.FilterPopup.IsVisible
+  - NonNonSheet.Editor.FilterPopup.AppendClearButton
+  - NonNonSheet.Editor.FilterPopup.Show(System.Int32,Rect,Rect,VisualElement,NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+  - NonNonSheet.Editor.FilterPopup.Hide
+  - NonNonSheet.Editor.FilterPopup.DispatchFilterChanged(NonNonSheet.Editor.FilterQuery)
+  - NonNonSheet.Editor.FilterPopup.DispatchFilterCleared
+- uid: NonNonSheet.Editor.ColorFilterPopup.#ctor
+  commentId: M:NonNonSheet.Editor.ColorFilterPopup.#ctor
+  id: '#ctor'
+  parent: NonNonSheet.Editor.ColorFilterPopup
+  langs:
+  - csharp
+  - vb
+  name: ColorFilterPopup()
+  nameWithType: ColorFilterPopup.ColorFilterPopup()
+  fullName: NonNonSheet.Editor.ColorFilterPopup.ColorFilterPopup()
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Filter/ColorFilterPopup.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Filter/ColorFilterPopup.cs
+    startLine: 13
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public ColorFilterPopup()
+    content.vb: Public Sub New()
+  overload: NonNonSheet.Editor.ColorFilterPopup.#ctor*
+  nameWithType.vb: ColorFilterPopup.New()
+  fullName.vb: NonNonSheet.Editor.ColorFilterPopup.New()
+  name.vb: New()
+- uid: NonNonSheet.Editor.ColorFilterPopup.OnShow(NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+  commentId: M:NonNonSheet.Editor.ColorFilterPopup.OnShow(NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+  id: OnShow(NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+  parent: NonNonSheet.Editor.ColorFilterPopup
+  langs:
+  - csharp
+  - vb
+  name: OnShow(ColumnMetadata, ColumnFilter)
+  nameWithType: ColorFilterPopup.OnShow(ColumnMetadata, ColumnFilter)
+  fullName: NonNonSheet.Editor.ColorFilterPopup.OnShow(NonNonSheet.ColumnMetadata, NonNonSheet.Editor.ColumnFilter)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Filter/ColorFilterPopup.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OnShow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Filter/ColorFilterPopup.cs
+    startLine: 35
+  namespace: NonNonSheet.Editor
+  example: []
+  syntax:
+    content: protected override void OnShow(ColumnMetadata metadata, ColumnFilter current)
+    parameters:
+    - id: metadata
+      type: NonNonSheet.ColumnMetadata
+    - id: current
+      type: NonNonSheet.Editor.ColumnFilter
+    content.vb: Protected Overrides Sub OnShow(metadata As ColumnMetadata, current As ColumnFilter)
+  overridden: NonNonSheet.Editor.FilterPopup.OnShow(NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+  overload: NonNonSheet.Editor.ColorFilterPopup.OnShow*
+- uid: NonNonSheet.Editor.ColorFilterPopup.ResetPanel
+  commentId: M:NonNonSheet.Editor.ColorFilterPopup.ResetPanel
+  id: ResetPanel
+  parent: NonNonSheet.Editor.ColorFilterPopup
+  langs:
+  - csharp
+  - vb
+  name: ResetPanel()
+  nameWithType: ColorFilterPopup.ResetPanel()
+  fullName: NonNonSheet.Editor.ColorFilterPopup.ResetPanel()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Filter/ColorFilterPopup.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ResetPanel
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Filter/ColorFilterPopup.cs
+    startLine: 52
+  namespace: NonNonSheet.Editor
+  summary: 現在のパネル入力をリセットする。フィルタクリア後に呼ぶ。
+  example: []
+  syntax:
+    content: public override void ResetPanel()
+    content.vb: Public Overrides Sub ResetPanel()
+  overridden: NonNonSheet.Editor.FilterPopup.ResetPanel
+  overload: NonNonSheet.Editor.ColorFilterPopup.ResetPanel*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: NonNonSheet.Editor.FilterPopup
+  commentId: T:NonNonSheet.Editor.FilterPopup
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.FilterPopup.html
+  name: FilterPopup
+  nameWithType: FilterPopup
+  fullName: NonNonSheet.Editor.FilterPopup
+- uid: NonNonSheet.Editor.FilterPopup.ClearButton
+  commentId: P:NonNonSheet.Editor.FilterPopup.ClearButton
+  parent: NonNonSheet.Editor.FilterPopup
+  href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_ClearButton
+  name: ClearButton
+  nameWithType: FilterPopup.ClearButton
+  fullName: NonNonSheet.Editor.FilterPopup.ClearButton
+- uid: NonNonSheet.Editor.FilterPopup.ActiveColIndex
+  commentId: P:NonNonSheet.Editor.FilterPopup.ActiveColIndex
+  parent: NonNonSheet.Editor.FilterPopup
+  href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_ActiveColIndex
+  name: ActiveColIndex
+  nameWithType: FilterPopup.ActiveColIndex
+  fullName: NonNonSheet.Editor.FilterPopup.ActiveColIndex
+- uid: NonNonSheet.Editor.FilterPopup.IsVisible
+  commentId: P:NonNonSheet.Editor.FilterPopup.IsVisible
+  parent: NonNonSheet.Editor.FilterPopup
+  href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_IsVisible
+  name: IsVisible
+  nameWithType: FilterPopup.IsVisible
+  fullName: NonNonSheet.Editor.FilterPopup.IsVisible
+- uid: NonNonSheet.Editor.FilterPopup.AppendClearButton
+  commentId: M:NonNonSheet.Editor.FilterPopup.AppendClearButton
+  parent: NonNonSheet.Editor.FilterPopup
+  href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_AppendClearButton
+  name: AppendClearButton()
+  nameWithType: FilterPopup.AppendClearButton()
+  fullName: NonNonSheet.Editor.FilterPopup.AppendClearButton()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.FilterPopup.AppendClearButton
+    name: AppendClearButton
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_AppendClearButton
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.FilterPopup.AppendClearButton
+    name: AppendClearButton
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_AppendClearButton
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.FilterPopup.Show(System.Int32,Rect,Rect,VisualElement,NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+  commentId: M:NonNonSheet.Editor.FilterPopup.Show(System.Int32,Rect,Rect,VisualElement,NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+  parent: NonNonSheet.Editor.FilterPopup
+  isExternal: true
+  href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_Show_System_Int32_Rect_Rect_VisualElement_NonNonSheet_ColumnMetadata_NonNonSheet_Editor_ColumnFilter_
+  name: Show(int, Rect, Rect, VisualElement, ColumnMetadata, ColumnFilter)
+  nameWithType: FilterPopup.Show(int, Rect, Rect, VisualElement, ColumnMetadata, ColumnFilter)
+  fullName: NonNonSheet.Editor.FilterPopup.Show(int, Rect, Rect, VisualElement, NonNonSheet.ColumnMetadata, NonNonSheet.Editor.ColumnFilter)
+  nameWithType.vb: FilterPopup.Show(Integer, Rect, Rect, VisualElement, ColumnMetadata, ColumnFilter)
+  fullName.vb: NonNonSheet.Editor.FilterPopup.Show(Integer, Rect, Rect, VisualElement, NonNonSheet.ColumnMetadata, NonNonSheet.Editor.ColumnFilter)
+  name.vb: Show(Integer, Rect, Rect, VisualElement, ColumnMetadata, ColumnFilter)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.FilterPopup.Show(System.Int32,Rect,Rect,VisualElement,NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+    name: Show
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_Show_System_Int32_Rect_Rect_VisualElement_NonNonSheet_ColumnMetadata_NonNonSheet_Editor_ColumnFilter_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+    href: NonNonSheet.ColumnMetadata.html
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Editor.ColumnFilter
+    name: ColumnFilter
+    href: NonNonSheet.Editor.ColumnFilter.html
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.FilterPopup.Show(System.Int32,Rect,Rect,VisualElement,NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+    name: Show
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_Show_System_Int32_Rect_Rect_VisualElement_NonNonSheet_ColumnMetadata_NonNonSheet_Editor_ColumnFilter_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+    href: NonNonSheet.ColumnMetadata.html
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Editor.ColumnFilter
+    name: ColumnFilter
+    href: NonNonSheet.Editor.ColumnFilter.html
+  - name: )
+- uid: NonNonSheet.Editor.FilterPopup.Hide
+  commentId: M:NonNonSheet.Editor.FilterPopup.Hide
+  parent: NonNonSheet.Editor.FilterPopup
+  href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_Hide
+  name: Hide()
+  nameWithType: FilterPopup.Hide()
+  fullName: NonNonSheet.Editor.FilterPopup.Hide()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.FilterPopup.Hide
+    name: Hide
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_Hide
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.FilterPopup.Hide
+    name: Hide
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_Hide
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.FilterPopup.DispatchFilterChanged(NonNonSheet.Editor.FilterQuery)
+  commentId: M:NonNonSheet.Editor.FilterPopup.DispatchFilterChanged(NonNonSheet.Editor.FilterQuery)
+  parent: NonNonSheet.Editor.FilterPopup
+  href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_DispatchFilterChanged_NonNonSheet_Editor_FilterQuery_
+  name: DispatchFilterChanged(FilterQuery)
+  nameWithType: FilterPopup.DispatchFilterChanged(FilterQuery)
+  fullName: NonNonSheet.Editor.FilterPopup.DispatchFilterChanged(NonNonSheet.Editor.FilterQuery)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.FilterPopup.DispatchFilterChanged(NonNonSheet.Editor.FilterQuery)
+    name: DispatchFilterChanged
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_DispatchFilterChanged_NonNonSheet_Editor_FilterQuery_
+  - name: (
+  - uid: NonNonSheet.Editor.FilterQuery
+    name: FilterQuery
+    href: NonNonSheet.Editor.FilterQuery.html
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.FilterPopup.DispatchFilterChanged(NonNonSheet.Editor.FilterQuery)
+    name: DispatchFilterChanged
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_DispatchFilterChanged_NonNonSheet_Editor_FilterQuery_
+  - name: (
+  - uid: NonNonSheet.Editor.FilterQuery
+    name: FilterQuery
+    href: NonNonSheet.Editor.FilterQuery.html
+  - name: )
+- uid: NonNonSheet.Editor.FilterPopup.DispatchFilterCleared
+  commentId: M:NonNonSheet.Editor.FilterPopup.DispatchFilterCleared
+  parent: NonNonSheet.Editor.FilterPopup
+  href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_DispatchFilterCleared
+  name: DispatchFilterCleared()
+  nameWithType: FilterPopup.DispatchFilterCleared()
+  fullName: NonNonSheet.Editor.FilterPopup.DispatchFilterCleared()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.FilterPopup.DispatchFilterCleared
+    name: DispatchFilterCleared
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_DispatchFilterCleared
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.FilterPopup.DispatchFilterCleared
+    name: DispatchFilterCleared
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_DispatchFilterCleared
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.ColorFilterPopup.#ctor*
+  commentId: Overload:NonNonSheet.Editor.ColorFilterPopup.#ctor
+  href: NonNonSheet.Editor.ColorFilterPopup.html#NonNonSheet_Editor_ColorFilterPopup__ctor
+  name: ColorFilterPopup
+  nameWithType: ColorFilterPopup.ColorFilterPopup
+  fullName: NonNonSheet.Editor.ColorFilterPopup.ColorFilterPopup
+  nameWithType.vb: ColorFilterPopup.New
+  fullName.vb: NonNonSheet.Editor.ColorFilterPopup.New
+  name.vb: New
+- uid: NonNonSheet.Editor.FilterPopup.OnShow(NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+  commentId: M:NonNonSheet.Editor.FilterPopup.OnShow(NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+  parent: NonNonSheet.Editor.FilterPopup
+  href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_OnShow_NonNonSheet_ColumnMetadata_NonNonSheet_Editor_ColumnFilter_
+  name: OnShow(ColumnMetadata, ColumnFilter)
+  nameWithType: FilterPopup.OnShow(ColumnMetadata, ColumnFilter)
+  fullName: NonNonSheet.Editor.FilterPopup.OnShow(NonNonSheet.ColumnMetadata, NonNonSheet.Editor.ColumnFilter)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.FilterPopup.OnShow(NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+    name: OnShow
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_OnShow_NonNonSheet_ColumnMetadata_NonNonSheet_Editor_ColumnFilter_
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+    href: NonNonSheet.ColumnMetadata.html
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Editor.ColumnFilter
+    name: ColumnFilter
+    href: NonNonSheet.Editor.ColumnFilter.html
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.FilterPopup.OnShow(NonNonSheet.ColumnMetadata,NonNonSheet.Editor.ColumnFilter)
+    name: OnShow
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_OnShow_NonNonSheet_ColumnMetadata_NonNonSheet_Editor_ColumnFilter_
+  - name: (
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+    href: NonNonSheet.ColumnMetadata.html
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Editor.ColumnFilter
+    name: ColumnFilter
+    href: NonNonSheet.Editor.ColumnFilter.html
+  - name: )
+- uid: NonNonSheet.Editor.ColorFilterPopup.OnShow*
+  commentId: Overload:NonNonSheet.Editor.ColorFilterPopup.OnShow
+  href: NonNonSheet.Editor.ColorFilterPopup.html#NonNonSheet_Editor_ColorFilterPopup_OnShow_NonNonSheet_ColumnMetadata_NonNonSheet_Editor_ColumnFilter_
+  name: OnShow
+  nameWithType: ColorFilterPopup.OnShow
+  fullName: NonNonSheet.Editor.ColorFilterPopup.OnShow
+- uid: NonNonSheet.ColumnMetadata
+  commentId: T:NonNonSheet.ColumnMetadata
+  parent: NonNonSheet
+  href: NonNonSheet.ColumnMetadata.html
+  name: ColumnMetadata
+  nameWithType: ColumnMetadata
+  fullName: NonNonSheet.ColumnMetadata
+- uid: NonNonSheet.Editor.ColumnFilter
+  commentId: T:NonNonSheet.Editor.ColumnFilter
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.ColumnFilter.html
+  name: ColumnFilter
+  nameWithType: ColumnFilter
+  fullName: NonNonSheet.Editor.ColumnFilter
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Editor.FilterPopup.ResetPanel
+  commentId: M:NonNonSheet.Editor.FilterPopup.ResetPanel
+  parent: NonNonSheet.Editor.FilterPopup
+  href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_ResetPanel
+  name: ResetPanel()
+  nameWithType: FilterPopup.ResetPanel()
+  fullName: NonNonSheet.Editor.FilterPopup.ResetPanel()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.FilterPopup.ResetPanel
+    name: ResetPanel
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_ResetPanel
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.FilterPopup.ResetPanel
+    name: ResetPanel
+    href: NonNonSheet.Editor.FilterPopup.html#NonNonSheet_Editor_FilterPopup_ResetPanel
+  - name: (
+  - name: )
+- uid: NonNonSheet.Editor.ColorFilterPopup.ResetPanel*
+  commentId: Overload:NonNonSheet.Editor.ColorFilterPopup.ResetPanel
+  href: NonNonSheet.Editor.ColorFilterPopup.html#NonNonSheet_Editor_ColorFilterPopup_ResetPanel
+  name: ResetPanel
+  nameWithType: ColorFilterPopup.ResetPanel
+  fullName: NonNonSheet.Editor.ColorFilterPopup.ResetPanel

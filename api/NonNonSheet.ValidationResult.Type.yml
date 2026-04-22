@@ -18,11 +18,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Type
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-    startLine: 61
+    startLine: 65
   namespace: NonNonSheet
   syntax:
     content: public enum ValidationResult.Type
@@ -41,11 +41,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Success
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-    startLine: 64
+    startLine: 68
   namespace: NonNonSheet
   summary: Validation succeeded.
   example: []
@@ -67,11 +67,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Warning
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-    startLine: 66
+    startLine: 71
   namespace: NonNonSheet
   summary: Non-blocking issue that may need attention.
   example: []
@@ -93,11 +93,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Error
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-    startLine: 68
+    startLine: 74
   namespace: NonNonSheet
   summary: Blocking issue; the value should not be accepted.
   example: []

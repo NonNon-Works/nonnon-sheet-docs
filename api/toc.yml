@@ -9,7 +9,7 @@ items:
     type: Class
   - uid: NonNonSheet.ColumnMetadata
     name: ColumnMetadata
-    type: Struct
+    type: Class
   - uid: NonNonSheet.IRelationalData`1
     name: IRelationalData<T>
     type: Interface
@@ -56,11 +56,14 @@ items:
   - uid: NonNonSheet.Editor.AssetCell
     name: AssetCell
     type: Class
-  - uid: NonNonSheet.Editor.AwaitableExtension
-    name: AwaitableExtension
-    type: Class
   - uid: NonNonSheet.Editor.BoolCell
     name: BoolCell
+    type: Class
+  - uid: NonNonSheet.Editor.BoolFilterPopup
+    name: BoolFilterPopup
+    type: Class
+  - uid: NonNonSheet.Editor.BoolFilterPopupFactory
+    name: BoolFilterPopupFactory
     type: Class
   - uid: NonNonSheet.Editor.BoundsCell
     name: BoundsCell
@@ -68,8 +71,20 @@ items:
   - uid: NonNonSheet.Editor.ByteCell
     name: ByteCell
     type: Class
+  - uid: NonNonSheet.Editor.CancelCopyEvent
+    name: CancelCopyEvent
+    type: Class
+  - uid: NonNonSheet.Editor.CancelSelectingCommandEvent
+    name: CancelSelectingCommandEvent
+    type: Class
+  - uid: NonNonSheet.Editor.CancelSelectingEvent
+    name: CancelSelectingEvent
+    type: Class
   - uid: NonNonSheet.Editor.Cell
     name: Cell
+    type: Class
+  - uid: NonNonSheet.Editor.CellBoundEvent
+    name: CellBoundEvent
     type: Class
   - uid: NonNonSheet.Editor.CellBuilder
     name: CellBuilder
@@ -80,11 +95,32 @@ items:
   - uid: NonNonSheet.Editor.Cell`1
     name: Cell<T>
     type: Class
+  - uid: NonNonSheet.Editor.ChangeCellValueEvent
+    name: ChangeCellValueEvent
+    type: Class
   - uid: NonNonSheet.Editor.ColorCell
     name: ColorCell
     type: Class
+  - uid: NonNonSheet.Editor.ColorFilterPopup
+    name: ColorFilterPopup
+    type: Class
+  - uid: NonNonSheet.Editor.ColorFilterPopupFactory
+    name: ColorFilterPopupFactory
+    type: Class
+  - uid: NonNonSheet.Editor.ColumnFilter
+    name: ColumnFilter
+    type: Class
+  - uid: NonNonSheet.Editor.ConditionRow
+    name: ConditionRow
+    type: Class
+  - uid: NonNonSheet.Editor.CopyCommandEvent
+    name: CopyCommandEvent
+    type: Class
   - uid: NonNonSheet.Editor.CopyPasteSystem
     name: CopyPasteSystem
+    type: Class
+  - uid: NonNonSheet.Editor.CopyStateChangedEvent
+    name: CopyStateChangedEvent
     type: Class
   - uid: NonNonSheet.Editor.CustomCell`2
     name: CustomCell<T, TAttr>
@@ -92,8 +128,8 @@ items:
   - uid: NonNonSheet.Editor.DataRelationCell`3
     name: DataRelationCell<T, TAttr, TData>
     type: Class
-  - uid: NonNonSheet.Editor.DataRow
-    name: DataRow
+  - uid: NonNonSheet.Editor.DeleteCommandEvent
+    name: DeleteCommandEvent
     type: Class
   - uid: NonNonSheet.Editor.DeleteSystem
     name: DeleteSystem
@@ -104,29 +140,83 @@ items:
   - uid: NonNonSheet.Editor.EmptyCell
     name: EmptyCell
     type: Class
+  - uid: NonNonSheet.Editor.EnterCellEvent
+    name: EnterCellEvent
+    type: Class
   - uid: NonNonSheet.Editor.EnumCell
     name: EnumCell
+    type: Class
+  - uid: NonNonSheet.Editor.EnumFilterPopup
+    name: EnumFilterPopup
+    type: Class
+  - uid: NonNonSheet.Editor.EnumFilterPopupFactory
+    name: EnumFilterPopupFactory
     type: Class
   - uid: NonNonSheet.Editor.EnumFlagsCell
     name: EnumFlagsCell
     type: Class
+  - uid: NonNonSheet.Editor.EventBus
+    name: EventBus
+    type: Class
   - uid: NonNonSheet.Editor.FailedCell
     name: FailedCell
+    type: Class
+  - uid: NonNonSheet.Editor.FallbackFilterPopup
+    name: FallbackFilterPopup
+    type: Class
+  - uid: NonNonSheet.Editor.FilterBuilder
+    name: FilterBuilder
+    type: Class
+  - uid: NonNonSheet.Editor.FilterButtonClickedEvent
+    name: FilterButtonClickedEvent
+    type: Class
+  - uid: NonNonSheet.Editor.FilterChangedEvent
+    name: FilterChangedEvent
+    type: Class
+  - uid: NonNonSheet.Editor.FilterFactory
+    name: FilterFactory
+    type: Class
+  - uid: NonNonSheet.Editor.FilterPopup
+    name: FilterPopup
+    type: Class
+  - uid: NonNonSheet.Editor.FilterPopupBuilder
+    name: FilterPopupBuilder
+    type: Class
+  - uid: NonNonSheet.Editor.FilterPopupChangedEvent
+    name: FilterPopupChangedEvent
+    type: Class
+  - uid: NonNonSheet.Editor.FilterPopupClearEvent
+    name: FilterPopupClearEvent
+    type: Class
+  - uid: NonNonSheet.Editor.FilterPopupFactory
+    name: FilterPopupFactory
+    type: Class
+  - uid: NonNonSheet.Editor.FilterQuery
+    name: FilterQuery
+    type: Class
+  - uid: NonNonSheet.Editor.FilterSystem
+    name: FilterSystem
+    type: Class
+  - uid: NonNonSheet.Editor.FilterView
+    name: FilterView
+    type: Class
+  - uid: NonNonSheet.Editor.FlagsEnumFilterPopup
+    name: FlagsEnumFilterPopup
+    type: Class
+  - uid: NonNonSheet.Editor.FlagsEnumFilterPopupFactory
+    name: FlagsEnumFilterPopupFactory
     type: Class
   - uid: NonNonSheet.Editor.FloatCell
     name: FloatCell
     type: Class
-  - uid: NonNonSheet.Editor.FooterRow
-    name: FooterRow
-    type: Class
-  - uid: NonNonSheet.Editor.HeaderCell
-    name: HeaderCell
-    type: Class
-  - uid: NonNonSheet.Editor.HeaderRow
-    name: HeaderRow
-    type: Class
+  - uid: NonNonSheet.Editor.ISheetSystemEvent
+    name: ISheetSystemEvent
+    type: Interface
   - uid: NonNonSheet.Editor.IndexCell
     name: IndexCell
+    type: Class
+  - uid: NonNonSheet.Editor.IndexCellBoundEvent
+    name: IndexCellBoundEvent
     type: Class
   - uid: NonNonSheet.Editor.IntCell
     name: IntCell
@@ -137,17 +227,32 @@ items:
   - uid: NonNonSheet.Editor.IntSliderCell
     name: IntSliderCell
     type: Class
-  - uid: NonNonSheet.Editor.KeyCodeUtility
-    name: KeyCodeUtility
-    type: Class
   - uid: NonNonSheet.Editor.LayerCell
     name: LayerCell
+    type: Class
+  - uid: NonNonSheet.Editor.LayerFilterPopup
+    name: LayerFilterPopup
+    type: Class
+  - uid: NonNonSheet.Editor.LayerFilterPopupFactory
+    name: LayerFilterPopupFactory
     type: Class
   - uid: NonNonSheet.Editor.LayerMaskCell
     name: LayerMaskCell
     type: Class
+  - uid: NonNonSheet.Editor.LayerMaskFilterPopup
+    name: LayerMaskFilterPopup
+    type: Class
+  - uid: NonNonSheet.Editor.LayerMaskFilterPopupFactory
+    name: LayerMaskFilterPopupFactory
+    type: Class
   - uid: NonNonSheet.Editor.LongCell
     name: LongCell
+    type: Class
+  - uid: NonNonSheet.Editor.MCLVScrolledEvent
+    name: MCLVScrolledEvent
+    type: Class
+  - uid: NonNonSheet.Editor.MCLVWidthChangedEvent
+    name: MCLVWidthChangedEvent
     type: Class
   - uid: NonNonSheet.Editor.Marker
     name: Marker
@@ -155,6 +260,12 @@ items:
   - uid: NonNonSheet.Editor.MinMaxSliderCell
     name: MinMaxSliderCell
     type: Class
+  - uid: NonNonSheet.Editor.MoveSelectionEvent
+    name: MoveSelectionEvent
+    type: Class
+  - uid: NonNonSheet.Editor.MoveSelectionEvent.Direction
+    name: MoveSelectionEvent.Direction
+    type: Enum
   - uid: NonNonSheet.Editor.MultiDataRelationCell`3
     name: MultiDataRelationCell<T, TAttr, TData>
     type: Class
@@ -173,20 +284,17 @@ items:
   - uid: NonNonSheet.Editor.NonNonSheetSettingProvider
     name: NonNonSheetSettingProvider
     type: Class
-  - uid: NonNonSheet.Editor.NonNonTableCsvConverter
-    name: NonNonTableCsvConverter
-    type: Class
   - uid: NonNonSheet.Editor.NonNonTableEditor
     name: NonNonTableEditor
     type: Class
-  - uid: NonNonSheet.Editor.NonNonTableJsonConverter
-    name: NonNonTableJsonConverter
+  - uid: NonNonSheet.Editor.NumericFilterPopup
+    name: NumericFilterPopup
     type: Class
   - uid: NonNonSheet.Editor.OnOpenDatabase
     name: OnOpenDatabase
     type: Class
-  - uid: NonNonSheet.Editor.OriginCell
-    name: OriginCell
+  - uid: NonNonSheet.Editor.PasteCommandEvent
+    name: PasteCommandEvent
     type: Class
   - uid: NonNonSheet.Editor.PropertyCell`1
     name: PropertyCell<T>
@@ -194,11 +302,35 @@ items:
   - uid: NonNonSheet.Editor.RectCell
     name: RectCell
     type: Class
-  - uid: NonNonSheet.Editor.ReorderLine
-    name: ReorderLine
+  - uid: NonNonSheet.Editor.ReorderEndedEvent
+    name: ReorderEndedEvent
     type: Class
-  - uid: NonNonSheet.Editor.ResizeColSystem
-    name: ResizeColSystem
+  - uid: NonNonSheet.Editor.ReorderStartedEvent
+    name: ReorderStartedEvent
+    type: Class
+  - uid: NonNonSheet.Editor.ReorderView
+    name: ReorderView
+    type: Class
+  - uid: NonNonSheet.Editor.RequestFocusCellEvent
+    name: RequestFocusCellEvent
+    type: Class
+  - uid: NonNonSheet.Editor.RequestMoveRowsEvent
+    name: RequestMoveRowsEvent
+    type: Class
+  - uid: NonNonSheet.Editor.RequestRefreshEvent
+    name: RequestRefreshEvent
+    type: Class
+  - uid: NonNonSheet.Editor.RequestRemoveRowsEvent
+    name: RequestRemoveRowsEvent
+    type: Class
+  - uid: NonNonSheet.Editor.RequestScrollToCellEvent
+    name: RequestScrollToCellEvent
+    type: Class
+  - uid: NonNonSheet.Editor.RequestScrollToRowEvent
+    name: RequestScrollToRowEvent
+    type: Class
+  - uid: NonNonSheet.Editor.RequestUndoRecordEvent
+    name: RequestUndoRecordEvent
     type: Class
   - uid: NonNonSheet.Editor.RowReorderSystem
     name: RowReorderSystem
@@ -206,26 +338,59 @@ items:
   - uid: NonNonSheet.Editor.SbyteCell
     name: SbyteCell
     type: Class
+  - uid: NonNonSheet.Editor.SearchResultsChangedEvent
+    name: SearchResultsChangedEvent
+    type: Class
+  - uid: NonNonSheet.Editor.SearchSystem
+    name: SearchSystem
+    type: Class
+  - uid: NonNonSheet.Editor.SearchView
+    name: SearchView
+    type: Class
   - uid: NonNonSheet.Editor.SelectSystem
     name: SelectSystem
     type: Class
-  - uid: NonNonSheet.Editor.Sheet
-    name: Sheet
+  - uid: NonNonSheet.Editor.SelectionChangedEvent
+    name: SelectionChangedEvent
     type: Class
-  - uid: NonNonSheet.Editor.SheetManager
-    name: SheetManager
+  - uid: NonNonSheet.Editor.SheetColumnBuilder
+    name: SheetColumnBuilder
+    type: Class
+  - uid: NonNonSheet.Editor.SheetPresenter
+    name: SheetPresenter
+    type: Class
+  - uid: NonNonSheet.Editor.SheetSystem
+    name: SheetSystem
+    type: Class
+  - uid: NonNonSheet.Editor.SheetSystemState
+    name: SheetSystemState
+    type: Class
+  - uid: NonNonSheet.Editor.SheetView
+    name: SheetView
     type: Class
   - uid: NonNonSheet.Editor.ShortCell
     name: ShortCell
     type: Class
-  - uid: NonNonSheet.Editor.ShortcutKeySystem
-    name: ShortcutKeySystem
+  - uid: NonNonSheet.Editor.SingleClickCellEvent
+    name: SingleClickCellEvent
     type: Class
   - uid: NonNonSheet.Editor.SliderCell
     name: SliderCell
     type: Class
+  - uid: NonNonSheet.Editor.SortChangedEvent
+    name: SortChangedEvent
+    type: Class
   - uid: NonNonSheet.Editor.StringCell
     name: StringCell
+    type: Class
+  - uid: NonNonSheet.Editor.StringFilterPopup
+    name: StringFilterPopup
+    type: Class
+  - uid: NonNonSheet.Editor.StringFilterPopupFactory
+    name: StringFilterPopupFactory
+    type: Class
+  - uid: NonNonSheet.Editor.SystemBase
+    name: SystemBase
     type: Class
   - uid: NonNonSheet.Editor.TableCollectAssetPostprocessor
     name: TableCollectAssetPostprocessor
@@ -233,8 +398,14 @@ items:
   - uid: NonNonSheet.Editor.TagCell
     name: TagCell
     type: Class
-  - uid: NonNonSheet.Editor.UiTkShortcutGuards
-    name: UiTkShortcutGuards
+  - uid: NonNonSheet.Editor.TagFilterPopup
+    name: TagFilterPopup
+    type: Class
+  - uid: NonNonSheet.Editor.TagFilterPopupFactory
+    name: TagFilterPopupFactory
+    type: Class
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1
+    name: TrickleDownEvent<T>
     type: Class
   - uid: NonNonSheet.Editor.UintCell
     name: UintCell
@@ -268,5 +439,11 @@ items:
     type: Class
   - uid: NonNonSheet.Editor.Vector4Cell
     name: Vector4Cell
+    type: Class
+  - uid: NonNonSheet.Editor.VectorFieldCellBase`2
+    name: VectorFieldCellBase<TValue, TField>
+    type: Class
+  - uid: NonNonSheet.Editor.VisibleCellRegistry
+    name: VisibleCellRegistry
     type: Class
 memberLayout: SamePage

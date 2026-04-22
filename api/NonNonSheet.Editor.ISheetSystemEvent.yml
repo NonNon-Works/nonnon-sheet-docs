@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.ISheetSystemEvent
+  commentId: T:NonNonSheet.Editor.ISheetSystemEvent
+  id: ISheetSystemEvent
+  parent: NonNonSheet.Editor
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ISheetSystemEvent
+  nameWithType: ISheetSystemEvent
+  fullName: NonNonSheet.Editor.ISheetSystemEvent
+  type: Interface
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ISheetSystemEvent
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemEvents.cs
+    startLine: 5
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public interface ISheetSystemEvent
+    content.vb: Public Interface ISheetSystemEvent
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html

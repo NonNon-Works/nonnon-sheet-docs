@@ -1,0 +1,238 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.FilterButtonClickedEvent
+  commentId: T:NonNonSheet.Editor.FilterButtonClickedEvent
+  id: FilterButtonClickedEvent
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.FilterButtonClickedEvent.Button
+  - NonNonSheet.Editor.FilterButtonClickedEvent.ColIndex
+  langs:
+  - csharp
+  - vb
+  name: FilterButtonClickedEvent
+  nameWithType: FilterButtonClickedEvent
+  fullName: NonNonSheet.Editor.FilterButtonClickedEvent
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FilterButtonClickedEvent
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 84
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class FilterButtonClickedEvent : TrickleDownEvent<FilterButtonClickedEvent>'
+    content.vb: Public Class FilterButtonClickedEvent Inherits TrickleDownEvent(Of FilterButtonClickedEvent)
+  inheritance:
+  - System.Object
+  - NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterButtonClickedEvent}
+  inheritedMembers:
+  - NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterButtonClickedEvent}.Init
+- uid: NonNonSheet.Editor.FilterButtonClickedEvent.ColIndex
+  commentId: F:NonNonSheet.Editor.FilterButtonClickedEvent.ColIndex
+  id: ColIndex
+  parent: NonNonSheet.Editor.FilterButtonClickedEvent
+  langs:
+  - csharp
+  - vb
+  name: ColIndex
+  nameWithType: FilterButtonClickedEvent.ColIndex
+  fullName: NonNonSheet.Editor.FilterButtonClickedEvent.ColIndex
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ColIndex
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 86
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public int ColIndex
+    return:
+      type: System.Int32
+    content.vb: Public ColIndex As Integer
+- uid: NonNonSheet.Editor.FilterButtonClickedEvent.Button
+  commentId: F:NonNonSheet.Editor.FilterButtonClickedEvent.Button
+  id: Button
+  parent: NonNonSheet.Editor.FilterButtonClickedEvent
+  langs:
+  - csharp
+  - vb
+  name: Button
+  nameWithType: FilterButtonClickedEvent.Button
+  fullName: NonNonSheet.Editor.FilterButtonClickedEvent.Button
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Button
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 87
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public VisualElement Button
+    return:
+      type: VisualElement
+    content.vb: Public Button As VisualElement
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterButtonClickedEvent}
+  commentId: T:NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterButtonClickedEvent}
+  parent: NonNonSheet.Editor
+  definition: NonNonSheet.Editor.TrickleDownEvent`1
+  href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  name: TrickleDownEvent<FilterButtonClickedEvent>
+  nameWithType: TrickleDownEvent<FilterButtonClickedEvent>
+  fullName: NonNonSheet.Editor.TrickleDownEvent<NonNonSheet.Editor.FilterButtonClickedEvent>
+  nameWithType.vb: TrickleDownEvent(Of FilterButtonClickedEvent)
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of NonNonSheet.Editor.FilterButtonClickedEvent)
+  name.vb: TrickleDownEvent(Of FilterButtonClickedEvent)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1
+    name: TrickleDownEvent
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  - name: <
+  - uid: NonNonSheet.Editor.FilterButtonClickedEvent
+    name: FilterButtonClickedEvent
+    href: NonNonSheet.Editor.FilterButtonClickedEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1
+    name: TrickleDownEvent
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Editor.FilterButtonClickedEvent
+    name: FilterButtonClickedEvent
+    href: NonNonSheet.Editor.FilterButtonClickedEvent.html
+  - name: )
+- uid: NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterButtonClickedEvent}.Init
+  commentId: M:NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterButtonClickedEvent}.Init
+  parent: NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterButtonClickedEvent}
+  definition: NonNonSheet.Editor.TrickleDownEvent`1.Init
+  href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  name: Init()
+  nameWithType: TrickleDownEvent<FilterButtonClickedEvent>.Init()
+  fullName: NonNonSheet.Editor.TrickleDownEvent<NonNonSheet.Editor.FilterButtonClickedEvent>.Init()
+  nameWithType.vb: TrickleDownEvent(Of FilterButtonClickedEvent).Init()
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of NonNonSheet.Editor.FilterButtonClickedEvent).Init()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterButtonClickedEvent}.Init
+    name: Init
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.TrickleDownEvent{NonNonSheet.Editor.FilterButtonClickedEvent}.Init
+    name: Init
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.TrickleDownEvent`1
+  commentId: T:NonNonSheet.Editor.TrickleDownEvent`1
+  href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  name: TrickleDownEvent<T>
+  nameWithType: TrickleDownEvent<T>
+  fullName: NonNonSheet.Editor.TrickleDownEvent<T>
+  nameWithType.vb: TrickleDownEvent(Of T)
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of T)
+  name.vb: TrickleDownEvent(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1
+    name: TrickleDownEvent
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1
+    name: TrickleDownEvent
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.Editor.TrickleDownEvent`1.Init
+  commentId: M:NonNonSheet.Editor.TrickleDownEvent`1.Init
+  href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  name: Init()
+  nameWithType: TrickleDownEvent<T>.Init()
+  fullName: NonNonSheet.Editor.TrickleDownEvent<T>.Init()
+  nameWithType.vb: TrickleDownEvent(Of T).Init()
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of T).Init()
+  spec.csharp:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1.Init
+    name: Init
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1.Init
+    name: Init
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement

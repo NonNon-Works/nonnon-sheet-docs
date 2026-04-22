@@ -5,15 +5,19 @@ items:
   id: Cell
   parent: NonNonSheet.Editor
   children:
+  - NonNonSheet.Editor.Cell.ApplySearchMatchClass(System.Boolean,System.Boolean)
   - NonNonSheet.Editor.Cell.AutoBindProperty
-  - NonNonSheet.Editor.Cell.BindField
+  - NonNonSheet.Editor.Cell.Bind(SerializedProperty)
+  - NonNonSheet.Editor.Cell.CancelEditing
   - NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
   - NonNonSheet.Editor.Cell.Col
-  - NonNonSheet.Editor.Cell.DataSerializedProperty
+  - NonNonSheet.Editor.Cell.CommitEditing
   - NonNonSheet.Editor.Cell.FieldSerializedProperty
   - NonNonSheet.Editor.Cell.FocusNextFrame
+  - NonNonSheet.Editor.Cell.FocusNextFrameIfNotCell(VisualElement)
   - NonNonSheet.Editor.Cell.GetValue
-  - NonNonSheet.Editor.Cell.Initialize(SerializedProperty)
+  - NonNonSheet.Editor.Cell.Initialize
+  - NonNonSheet.Editor.Cell.IsEditing
   - NonNonSheet.Editor.Cell.Metadata
   - NonNonSheet.Editor.Cell.OnBindProperty
   - NonNonSheet.Editor.Cell.OnInitialize
@@ -22,8 +26,6 @@ items:
   - NonNonSheet.Editor.Cell.Row
   - NonNonSheet.Editor.Cell.Table
   - NonNonSheet.Editor.Cell.ToString
-  - NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
-  - NonNonSheet.Editor.Cell.Width
   langs:
   - csharp
   - vb
@@ -33,12 +35,12 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Cell
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-    startLine: 10
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 9
   namespace: NonNonSheet.Editor
   syntax:
     content: 'public abstract class Cell : BindableElement'
@@ -47,33 +49,6 @@ items:
   - System.Object
   derivedClasses:
   - NonNonSheet.Editor.Cell`1
-- uid: NonNonSheet.Editor.Cell.DataSerializedProperty
-  commentId: P:NonNonSheet.Editor.Cell.DataSerializedProperty
-  id: DataSerializedProperty
-  parent: NonNonSheet.Editor.Cell
-  langs:
-  - csharp
-  - vb
-  name: DataSerializedProperty
-  nameWithType: Cell.DataSerializedProperty
-  fullName: NonNonSheet.Editor.Cell.DataSerializedProperty
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: DataSerializedProperty
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-    startLine: 12
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: protected SerializedProperty DataSerializedProperty { get; }
-    parameters: []
-    return:
-      type: SerializedProperty
-    content.vb: Protected Property DataSerializedProperty As SerializedProperty
-  overload: NonNonSheet.Editor.Cell.DataSerializedProperty*
 - uid: NonNonSheet.Editor.Cell.FieldSerializedProperty
   commentId: P:NonNonSheet.Editor.Cell.FieldSerializedProperty
   id: FieldSerializedProperty
@@ -87,11 +62,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: FieldSerializedProperty
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
     startLine: 13
   namespace: NonNonSheet.Editor
   syntax:
@@ -114,11 +89,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: AutoBindProperty
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
     startLine: 16
   namespace: NonNonSheet.Editor
   syntax:
@@ -141,11 +116,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Table
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
     startLine: 18
   namespace: NonNonSheet.Editor
   syntax:
@@ -168,11 +143,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Metadata
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
     startLine: 19
   namespace: NonNonSheet.Editor
   syntax:
@@ -195,11 +170,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Row
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
     startLine: 20
   namespace: NonNonSheet.Editor
   syntax:
@@ -222,11 +197,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Col
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
     startLine: 21
   namespace: NonNonSheet.Editor
   syntax:
@@ -249,11 +224,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Position
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
     startLine: 22
   namespace: NonNonSheet.Editor
   syntax:
@@ -276,11 +251,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: GetValue
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
     startLine: 24
   namespace: NonNonSheet.Editor
   syntax:
@@ -289,114 +264,57 @@ items:
       type: System.Object
     content.vb: Public MustOverride Function GetValue() As Object
   overload: NonNonSheet.Editor.Cell.GetValue*
-- uid: NonNonSheet.Editor.Cell.Width
-  commentId: P:NonNonSheet.Editor.Cell.Width
-  id: Width
+- uid: NonNonSheet.Editor.Cell.Initialize
+  commentId: M:NonNonSheet.Editor.Cell.Initialize
+  id: Initialize
   parent: NonNonSheet.Editor.Cell
   langs:
   - csharp
   - vb
-  name: Width
-  nameWithType: Cell.Width
-  fullName: NonNonSheet.Editor.Cell.Width
-  type: Property
+  name: Initialize()
+  nameWithType: Cell.Initialize()
+  fullName: NonNonSheet.Editor.Cell.Initialize()
+  type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
-    id: Width
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
+    id: Initialize
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
     startLine: 26
   namespace: NonNonSheet.Editor
   syntax:
-    content: public float Width { get; set; }
-    parameters: []
-    return:
-      type: System.Single
-    content.vb: Public Property Width As Single
-  overload: NonNonSheet.Editor.Cell.Width*
-- uid: NonNonSheet.Editor.Cell.Initialize(SerializedProperty)
-  commentId: M:NonNonSheet.Editor.Cell.Initialize(SerializedProperty)
-  id: Initialize(SerializedProperty)
-  parent: NonNonSheet.Editor.Cell
-  langs:
-  - csharp
-  - vb
-  name: Initialize(SerializedProperty)
-  nameWithType: Cell.Initialize(SerializedProperty)
-  fullName: NonNonSheet.Editor.Cell.Initialize(SerializedProperty)
-  type: Method
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: Initialize
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-    startLine: 32
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public void Initialize(SerializedProperty dataSerializedProperty)
-    parameters:
-    - id: dataSerializedProperty
-      type: SerializedProperty
-    content.vb: Public Sub Initialize(dataSerializedProperty As SerializedProperty)
+    content: public void Initialize()
+    content.vb: Public Sub Initialize()
   overload: NonNonSheet.Editor.Cell.Initialize*
-- uid: NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
-  commentId: M:NonNonSheet.Editor.Cell.UpdateRow(System.Int32)
-  id: UpdateRow(System.Int32)
+- uid: NonNonSheet.Editor.Cell.Bind(SerializedProperty)
+  commentId: M:NonNonSheet.Editor.Cell.Bind(SerializedProperty)
+  id: Bind(SerializedProperty)
   parent: NonNonSheet.Editor.Cell
   langs:
   - csharp
   - vb
-  name: UpdateRow(int)
-  nameWithType: Cell.UpdateRow(int)
-  fullName: NonNonSheet.Editor.Cell.UpdateRow(int)
+  name: Bind(SerializedProperty)
+  nameWithType: Cell.Bind(SerializedProperty)
+  fullName: NonNonSheet.Editor.Cell.Bind(SerializedProperty)
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
-    id: UpdateRow
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-    startLine: 46
+    id: Bind
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 71
   namespace: NonNonSheet.Editor
   syntax:
-    content: public void UpdateRow(int row)
+    content: public void Bind(SerializedProperty fieldSerializedProperty)
     parameters:
-    - id: row
-      type: System.Int32
-    content.vb: Public Sub UpdateRow(row As Integer)
-  overload: NonNonSheet.Editor.Cell.UpdateRow*
-  nameWithType.vb: Cell.UpdateRow(Integer)
-  fullName.vb: NonNonSheet.Editor.Cell.UpdateRow(Integer)
-  name.vb: UpdateRow(Integer)
-- uid: NonNonSheet.Editor.Cell.BindField
-  commentId: M:NonNonSheet.Editor.Cell.BindField
-  id: BindField
-  parent: NonNonSheet.Editor.Cell
-  langs:
-  - csharp
-  - vb
-  name: BindField()
-  nameWithType: Cell.BindField()
-  fullName: NonNonSheet.Editor.Cell.BindField()
-  type: Method
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: BindField
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-    startLine: 52
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public void BindField()
-    content.vb: Public Sub BindField()
-  overload: NonNonSheet.Editor.Cell.BindField*
+    - id: fieldSerializedProperty
+      type: SerializedProperty
+    content.vb: Public Sub Bind(fieldSerializedProperty As SerializedProperty)
+  overload: NonNonSheet.Editor.Cell.Bind*
 - uid: NonNonSheet.Editor.Cell.OnInitialize
   commentId: M:NonNonSheet.Editor.Cell.OnInitialize
   id: OnInitialize
@@ -410,12 +328,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: OnInitialize
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-    startLine: 58
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 88
   namespace: NonNonSheet.Editor
   syntax:
     content: protected virtual void OnInitialize()
@@ -434,12 +352,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: OnBindProperty
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-    startLine: 59
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 89
   namespace: NonNonSheet.Editor
   syntax:
     content: protected virtual void OnBindProperty()
@@ -458,17 +376,101 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: OnStartEditing
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-    startLine: 60
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 90
   namespace: NonNonSheet.Editor
   syntax:
     content: public virtual void OnStartEditing()
     content.vb: Public Overridable Sub OnStartEditing()
   overload: NonNonSheet.Editor.Cell.OnStartEditing*
+- uid: NonNonSheet.Editor.Cell.IsEditing
+  commentId: P:NonNonSheet.Editor.Cell.IsEditing
+  id: IsEditing
+  parent: NonNonSheet.Editor.Cell
+  langs:
+  - csharp
+  - vb
+  name: IsEditing
+  nameWithType: Cell.IsEditing
+  fullName: NonNonSheet.Editor.Cell.IsEditing
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsEditing
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 96
+  namespace: NonNonSheet.Editor
+  summary: >-
+    セルがモーダル編集中（テキストフィールド表示中）かどうか。
+
+    編集状態を持つサブクラスはこのプロパティを override する。
+  example: []
+  syntax:
+    content: public virtual bool IsEditing { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsEditing As Boolean
+  overload: NonNonSheet.Editor.Cell.IsEditing*
+- uid: NonNonSheet.Editor.Cell.CommitEditing
+  commentId: M:NonNonSheet.Editor.Cell.CommitEditing
+  id: CommitEditing
+  parent: NonNonSheet.Editor.Cell
+  langs:
+  - csharp
+  - vb
+  name: CommitEditing()
+  nameWithType: Cell.CommitEditing()
+  fullName: NonNonSheet.Editor.Cell.CommitEditing()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: CommitEditing
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 101
+  namespace: NonNonSheet.Editor
+  summary: 編集中の入力を確定してフィールドを閉じる。Enter 相当。
+  example: []
+  syntax:
+    content: public virtual void CommitEditing()
+    content.vb: Public Overridable Sub CommitEditing()
+  overload: NonNonSheet.Editor.Cell.CommitEditing*
+- uid: NonNonSheet.Editor.Cell.CancelEditing
+  commentId: M:NonNonSheet.Editor.Cell.CancelEditing
+  id: CancelEditing
+  parent: NonNonSheet.Editor.Cell
+  langs:
+  - csharp
+  - vb
+  name: CancelEditing()
+  nameWithType: Cell.CancelEditing()
+  fullName: NonNonSheet.Editor.Cell.CancelEditing()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: CancelEditing
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 106
+  namespace: NonNonSheet.Editor
+  summary: 編集中の入力を破棄してフィールドを閉じる。ESC 相当。
+  example: []
+  syntax:
+    content: public virtual void CancelEditing()
+    content.vb: Public Overridable Sub CancelEditing()
+  overload: NonNonSheet.Editor.Cell.CancelEditing*
 - uid: NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
   commentId: M:NonNonSheet.Editor.Cell.ChangeStatus(NonNonSheet.ValidationResult)
   id: ChangeStatus(NonNonSheet.ValidationResult)
@@ -482,12 +484,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: ChangeStatus
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-    startLine: 62
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 108
   namespace: NonNonSheet.Editor
   syntax:
     content: public void ChangeStatus(ValidationResult result)
@@ -496,6 +498,38 @@ items:
       type: NonNonSheet.ValidationResult
     content.vb: Public Sub ChangeStatus(result As ValidationResult)
   overload: NonNonSheet.Editor.Cell.ChangeStatus*
+- uid: NonNonSheet.Editor.Cell.ApplySearchMatchClass(System.Boolean,System.Boolean)
+  commentId: M:NonNonSheet.Editor.Cell.ApplySearchMatchClass(System.Boolean,System.Boolean)
+  id: ApplySearchMatchClass(System.Boolean,System.Boolean)
+  parent: NonNonSheet.Editor.Cell
+  langs:
+  - csharp
+  - vb
+  name: ApplySearchMatchClass(bool, bool)
+  nameWithType: Cell.ApplySearchMatchClass(bool, bool)
+  fullName: NonNonSheet.Editor.Cell.ApplySearchMatchClass(bool, bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ApplySearchMatchClass
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 130
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void ApplySearchMatchClass(bool isMatch, bool isCurrent)
+    parameters:
+    - id: isMatch
+      type: System.Boolean
+    - id: isCurrent
+      type: System.Boolean
+    content.vb: Public Sub ApplySearchMatchClass(isMatch As Boolean, isCurrent As Boolean)
+  overload: NonNonSheet.Editor.Cell.ApplySearchMatchClass*
+  nameWithType.vb: Cell.ApplySearchMatchClass(Boolean, Boolean)
+  fullName.vb: NonNonSheet.Editor.Cell.ApplySearchMatchClass(Boolean, Boolean)
+  name.vb: ApplySearchMatchClass(Boolean, Boolean)
 - uid: NonNonSheet.Editor.Cell.ToString
   commentId: M:NonNonSheet.Editor.Cell.ToString
   id: ToString
@@ -509,12 +543,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: ToString
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-    startLine: 82
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 136
   namespace: NonNonSheet.Editor
   example: []
   syntax:
@@ -536,17 +570,51 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: FocusNextFrame
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Cell.cs
-    startLine: 84
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 138
   namespace: NonNonSheet.Editor
   syntax:
     content: public void FocusNextFrame()
     content.vb: Public Sub FocusNextFrame()
   overload: NonNonSheet.Editor.Cell.FocusNextFrame*
+- uid: NonNonSheet.Editor.Cell.FocusNextFrameIfNotCell(VisualElement)
+  commentId: M:NonNonSheet.Editor.Cell.FocusNextFrameIfNotCell(VisualElement)
+  id: FocusNextFrameIfNotCell(VisualElement)
+  parent: NonNonSheet.Editor.Cell
+  langs:
+  - csharp
+  - vb
+  name: FocusNextFrameIfNotCell(VisualElement)
+  nameWithType: Cell.FocusNextFrameIfNotCell(VisualElement)
+  fullName: NonNonSheet.Editor.Cell.FocusNextFrameIfNotCell(VisualElement)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FocusNextFrameIfNotCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Cell.cs
+    startLine: 148
+  namespace: NonNonSheet.Editor
+  summary: >-
+    フォーカスが別の Cell に移動した場合はスキップし、そうでなければ次フレームで自身にフォーカスを当てる。
+
+    編集終了時に FocusNextFrame() の代わりに呼ぶことで、他のセルへの選択直後に数値キーを押したとき
+
+    誤って自セルが編集状態になるバグを防ぐ。
+  example: []
+  syntax:
+    content: public void FocusNextFrameIfNotCell(VisualElement focusMovedTo)
+    parameters:
+    - id: focusMovedTo
+      type: VisualElement
+    content.vb: Public Sub FocusNextFrameIfNotCell(focusMovedTo As VisualElement)
+  overload: NonNonSheet.Editor.Cell.FocusNextFrameIfNotCell*
 references:
 - uid: NonNonSheet.Editor
   commentId: N:NonNonSheet.Editor
@@ -588,23 +656,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: NonNonSheet.Editor.Cell.DataSerializedProperty*
-  commentId: Overload:NonNonSheet.Editor.Cell.DataSerializedProperty
-  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_DataSerializedProperty
-  name: DataSerializedProperty
-  nameWithType: Cell.DataSerializedProperty
-  fullName: NonNonSheet.Editor.Cell.DataSerializedProperty
-- uid: SerializedProperty
-  isExternal: true
-  name: SerializedProperty
-  nameWithType: SerializedProperty
-  fullName: SerializedProperty
 - uid: NonNonSheet.Editor.Cell.FieldSerializedProperty*
   commentId: Overload:NonNonSheet.Editor.Cell.FieldSerializedProperty
   href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_FieldSerializedProperty
   name: FieldSerializedProperty
   nameWithType: Cell.FieldSerializedProperty
   fullName: NonNonSheet.Editor.Cell.FieldSerializedProperty
+- uid: SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: SerializedProperty
 - uid: NonNonSheet.Editor.Cell.AutoBindProperty*
   commentId: Overload:NonNonSheet.Editor.Cell.AutoBindProperty
   href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_AutoBindProperty
@@ -694,41 +756,18 @@ references:
   name: GetValue
   nameWithType: Cell.GetValue
   fullName: NonNonSheet.Editor.Cell.GetValue
-- uid: NonNonSheet.Editor.Cell.Width*
-  commentId: Overload:NonNonSheet.Editor.Cell.Width
-  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Width
-  name: Width
-  nameWithType: Cell.Width
-  fullName: NonNonSheet.Editor.Cell.Width
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
 - uid: NonNonSheet.Editor.Cell.Initialize*
   commentId: Overload:NonNonSheet.Editor.Cell.Initialize
-  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Initialize_SerializedProperty_
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Initialize
   name: Initialize
   nameWithType: Cell.Initialize
   fullName: NonNonSheet.Editor.Cell.Initialize
-- uid: NonNonSheet.Editor.Cell.UpdateRow*
-  commentId: Overload:NonNonSheet.Editor.Cell.UpdateRow
-  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_UpdateRow_System_Int32_
-  name: UpdateRow
-  nameWithType: Cell.UpdateRow
-  fullName: NonNonSheet.Editor.Cell.UpdateRow
-- uid: NonNonSheet.Editor.Cell.BindField*
-  commentId: Overload:NonNonSheet.Editor.Cell.BindField
-  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_BindField
-  name: BindField
-  nameWithType: Cell.BindField
-  fullName: NonNonSheet.Editor.Cell.BindField
+- uid: NonNonSheet.Editor.Cell.Bind*
+  commentId: Overload:NonNonSheet.Editor.Cell.Bind
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_Bind_SerializedProperty_
+  name: Bind
+  nameWithType: Cell.Bind
+  fullName: NonNonSheet.Editor.Cell.Bind
 - uid: NonNonSheet.Editor.Cell.OnInitialize*
   commentId: Overload:NonNonSheet.Editor.Cell.OnInitialize
   href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_OnInitialize
@@ -747,6 +786,24 @@ references:
   name: OnStartEditing
   nameWithType: Cell.OnStartEditing
   fullName: NonNonSheet.Editor.Cell.OnStartEditing
+- uid: NonNonSheet.Editor.Cell.IsEditing*
+  commentId: Overload:NonNonSheet.Editor.Cell.IsEditing
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_IsEditing
+  name: IsEditing
+  nameWithType: Cell.IsEditing
+  fullName: NonNonSheet.Editor.Cell.IsEditing
+- uid: NonNonSheet.Editor.Cell.CommitEditing*
+  commentId: Overload:NonNonSheet.Editor.Cell.CommitEditing
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_CommitEditing
+  name: CommitEditing
+  nameWithType: Cell.CommitEditing
+  fullName: NonNonSheet.Editor.Cell.CommitEditing
+- uid: NonNonSheet.Editor.Cell.CancelEditing*
+  commentId: Overload:NonNonSheet.Editor.Cell.CancelEditing
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_CancelEditing
+  name: CancelEditing
+  nameWithType: Cell.CancelEditing
+  fullName: NonNonSheet.Editor.Cell.CancelEditing
 - uid: NonNonSheet.Editor.Cell.ChangeStatus*
   commentId: Overload:NonNonSheet.Editor.Cell.ChangeStatus
   href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ChangeStatus_NonNonSheet_ValidationResult_
@@ -760,6 +817,12 @@ references:
   name: ValidationResult
   nameWithType: ValidationResult
   fullName: NonNonSheet.ValidationResult
+- uid: NonNonSheet.Editor.Cell.ApplySearchMatchClass*
+  commentId: Overload:NonNonSheet.Editor.Cell.ApplySearchMatchClass
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ApplySearchMatchClass_System_Boolean_System_Boolean_
+  name: ApplySearchMatchClass
+  nameWithType: Cell.ApplySearchMatchClass
+  fullName: NonNonSheet.Editor.Cell.ApplySearchMatchClass
 - uid: NonNonSheet.Editor.Cell.ToString*
   commentId: Overload:NonNonSheet.Editor.Cell.ToString
   href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_ToString
@@ -783,3 +846,14 @@ references:
   name: FocusNextFrame
   nameWithType: Cell.FocusNextFrame
   fullName: NonNonSheet.Editor.Cell.FocusNextFrame
+- uid: NonNonSheet.Editor.Cell.FocusNextFrameIfNotCell*
+  commentId: Overload:NonNonSheet.Editor.Cell.FocusNextFrameIfNotCell
+  href: NonNonSheet.Editor.Cell.html#NonNonSheet_Editor_Cell_FocusNextFrameIfNotCell_VisualElement_
+  name: FocusNextFrameIfNotCell
+  nameWithType: Cell.FocusNextFrameIfNotCell
+  fullName: NonNonSheet.Editor.Cell.FocusNextFrameIfNotCell
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement

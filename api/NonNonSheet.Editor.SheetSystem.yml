@@ -1,0 +1,746 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.SheetSystem
+  commentId: T:NonNonSheet.Editor.SheetSystem
+  id: SheetSystem
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.SheetSystem.#ctor(NonNonSheet.NonNonTable)
+  - NonNonSheet.Editor.SheetSystem.CopyPasteSystem
+  - NonNonSheet.Editor.SheetSystem.DeleteSystem
+  - NonNonSheet.Editor.SheetSystem.Dispose
+  - NonNonSheet.Editor.SheetSystem.EventBus
+  - NonNonSheet.Editor.SheetSystem.FilterSystem
+  - NonNonSheet.Editor.SheetSystem.RowReorderSystem
+  - NonNonSheet.Editor.SheetSystem.SearchSystem
+  - NonNonSheet.Editor.SheetSystem.SelectSystem
+  - NonNonSheet.Editor.SheetSystem.SystemState
+  - NonNonSheet.Editor.SheetSystem.UndoRedoSystem
+  - NonNonSheet.Editor.SheetSystem.ValidateSystem
+  langs:
+  - csharp
+  - vb
+  name: SheetSystem
+  nameWithType: SheetSystem
+  fullName: NonNonSheet.Editor.SheetSystem
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SheetSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 5
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class SheetSystem : IDisposable'
+    content.vb: Public Class SheetSystem Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NonNonSheet.Editor.SheetSystem.EventBus
+  commentId: F:NonNonSheet.Editor.SheetSystem.EventBus
+  id: EventBus
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: EventBus
+  nameWithType: SheetSystem.EventBus
+  fullName: NonNonSheet.Editor.SheetSystem.EventBus
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EventBus
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 7
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly EventBus EventBus
+    return:
+      type: NonNonSheet.Editor.EventBus
+    content.vb: Public ReadOnly EventBus As EventBus
+- uid: NonNonSheet.Editor.SheetSystem.SystemState
+  commentId: F:NonNonSheet.Editor.SheetSystem.SystemState
+  id: SystemState
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: SystemState
+  nameWithType: SheetSystem.SystemState
+  fullName: NonNonSheet.Editor.SheetSystem.SystemState
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SystemState
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly SheetSystemState SystemState
+    return:
+      type: NonNonSheet.Editor.SheetSystemState
+    content.vb: Public ReadOnly SystemState As SheetSystemState
+- uid: NonNonSheet.Editor.SheetSystem.SelectSystem
+  commentId: F:NonNonSheet.Editor.SheetSystem.SelectSystem
+  id: SelectSystem
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: SelectSystem
+  nameWithType: SheetSystem.SelectSystem
+  fullName: NonNonSheet.Editor.SheetSystem.SelectSystem
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 10
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly SelectSystem SelectSystem
+    return:
+      type: NonNonSheet.Editor.SelectSystem
+    content.vb: Public ReadOnly SelectSystem As SelectSystem
+- uid: NonNonSheet.Editor.SheetSystem.CopyPasteSystem
+  commentId: F:NonNonSheet.Editor.SheetSystem.CopyPasteSystem
+  id: CopyPasteSystem
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: CopyPasteSystem
+  nameWithType: SheetSystem.CopyPasteSystem
+  fullName: NonNonSheet.Editor.SheetSystem.CopyPasteSystem
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: CopyPasteSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 11
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly CopyPasteSystem CopyPasteSystem
+    return:
+      type: NonNonSheet.Editor.CopyPasteSystem
+    content.vb: Public ReadOnly CopyPasteSystem As CopyPasteSystem
+- uid: NonNonSheet.Editor.SheetSystem.DeleteSystem
+  commentId: F:NonNonSheet.Editor.SheetSystem.DeleteSystem
+  id: DeleteSystem
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: DeleteSystem
+  nameWithType: SheetSystem.DeleteSystem
+  fullName: NonNonSheet.Editor.SheetSystem.DeleteSystem
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DeleteSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 12
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly DeleteSystem DeleteSystem
+    return:
+      type: NonNonSheet.Editor.DeleteSystem
+    content.vb: Public ReadOnly DeleteSystem As DeleteSystem
+- uid: NonNonSheet.Editor.SheetSystem.UndoRedoSystem
+  commentId: F:NonNonSheet.Editor.SheetSystem.UndoRedoSystem
+  id: UndoRedoSystem
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: UndoRedoSystem
+  nameWithType: SheetSystem.UndoRedoSystem
+  fullName: NonNonSheet.Editor.SheetSystem.UndoRedoSystem
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: UndoRedoSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 13
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly UndoRedoSystem UndoRedoSystem
+    return:
+      type: NonNonSheet.Editor.UndoRedoSystem
+    content.vb: Public ReadOnly UndoRedoSystem As UndoRedoSystem
+- uid: NonNonSheet.Editor.SheetSystem.ValidateSystem
+  commentId: F:NonNonSheet.Editor.SheetSystem.ValidateSystem
+  id: ValidateSystem
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: ValidateSystem
+  nameWithType: SheetSystem.ValidateSystem
+  fullName: NonNonSheet.Editor.SheetSystem.ValidateSystem
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 14
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly ValidateSystem ValidateSystem
+    return:
+      type: NonNonSheet.Editor.ValidateSystem
+    content.vb: Public ReadOnly ValidateSystem As ValidateSystem
+- uid: NonNonSheet.Editor.SheetSystem.RowReorderSystem
+  commentId: F:NonNonSheet.Editor.SheetSystem.RowReorderSystem
+  id: RowReorderSystem
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: RowReorderSystem
+  nameWithType: SheetSystem.RowReorderSystem
+  fullName: NonNonSheet.Editor.SheetSystem.RowReorderSystem
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: RowReorderSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 15
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly RowReorderSystem RowReorderSystem
+    return:
+      type: NonNonSheet.Editor.RowReorderSystem
+    content.vb: Public ReadOnly RowReorderSystem As RowReorderSystem
+- uid: NonNonSheet.Editor.SheetSystem.SearchSystem
+  commentId: F:NonNonSheet.Editor.SheetSystem.SearchSystem
+  id: SearchSystem
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: SearchSystem
+  nameWithType: SheetSystem.SearchSystem
+  fullName: NonNonSheet.Editor.SheetSystem.SearchSystem
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SearchSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 16
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly SearchSystem SearchSystem
+    return:
+      type: NonNonSheet.Editor.SearchSystem
+    content.vb: Public ReadOnly SearchSystem As SearchSystem
+- uid: NonNonSheet.Editor.SheetSystem.FilterSystem
+  commentId: F:NonNonSheet.Editor.SheetSystem.FilterSystem
+  id: FilterSystem
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: FilterSystem
+  nameWithType: SheetSystem.FilterSystem
+  fullName: NonNonSheet.Editor.SheetSystem.FilterSystem
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FilterSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 17
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly FilterSystem FilterSystem
+    return:
+      type: NonNonSheet.Editor.FilterSystem
+    content.vb: Public ReadOnly FilterSystem As FilterSystem
+- uid: NonNonSheet.Editor.SheetSystem.#ctor(NonNonSheet.NonNonTable)
+  commentId: M:NonNonSheet.Editor.SheetSystem.#ctor(NonNonSheet.NonNonTable)
+  id: '#ctor(NonNonSheet.NonNonTable)'
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: SheetSystem(NonNonTable)
+  nameWithType: SheetSystem.SheetSystem(NonNonTable)
+  fullName: NonNonSheet.Editor.SheetSystem.SheetSystem(NonNonSheet.NonNonTable)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 19
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public SheetSystem(NonNonTable table)
+    parameters:
+    - id: table
+      type: NonNonSheet.NonNonTable
+    content.vb: Public Sub New(table As NonNonTable)
+  overload: NonNonSheet.Editor.SheetSystem.#ctor*
+  nameWithType.vb: SheetSystem.New(NonNonTable)
+  fullName.vb: NonNonSheet.Editor.SheetSystem.New(NonNonSheet.NonNonTable)
+  name.vb: New(NonNonTable)
+- uid: NonNonSheet.Editor.SheetSystem.Dispose
+  commentId: M:NonNonSheet.Editor.SheetSystem.Dispose
+  id: Dispose
+  parent: NonNonSheet.Editor.SheetSystem
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SheetSystem.Dispose()
+  fullName: NonNonSheet.Editor.SheetSystem.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Dispose
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetSystem.cs
+    startLine: 44
+  namespace: NonNonSheet.Editor
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: NonNonSheet.Editor.SheetSystem.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.EventBus
+  commentId: T:NonNonSheet.Editor.EventBus
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.EventBus.html
+  name: EventBus
+  nameWithType: EventBus
+  fullName: NonNonSheet.Editor.EventBus
+- uid: NonNonSheet.Editor.SheetSystemState
+  commentId: T:NonNonSheet.Editor.SheetSystemState
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SheetSystemState.html
+  name: SheetSystemState
+  nameWithType: SheetSystemState
+  fullName: NonNonSheet.Editor.SheetSystemState
+- uid: NonNonSheet.Editor.SelectSystem
+  commentId: T:NonNonSheet.Editor.SelectSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SelectSystem.html
+  name: SelectSystem
+  nameWithType: SelectSystem
+  fullName: NonNonSheet.Editor.SelectSystem
+- uid: NonNonSheet.Editor.CopyPasteSystem
+  commentId: T:NonNonSheet.Editor.CopyPasteSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.CopyPasteSystem.html
+  name: CopyPasteSystem
+  nameWithType: CopyPasteSystem
+  fullName: NonNonSheet.Editor.CopyPasteSystem
+- uid: NonNonSheet.Editor.DeleteSystem
+  commentId: T:NonNonSheet.Editor.DeleteSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.DeleteSystem.html
+  name: DeleteSystem
+  nameWithType: DeleteSystem
+  fullName: NonNonSheet.Editor.DeleteSystem
+- uid: NonNonSheet.Editor.UndoRedoSystem
+  commentId: T:NonNonSheet.Editor.UndoRedoSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.UndoRedoSystem.html
+  name: UndoRedoSystem
+  nameWithType: UndoRedoSystem
+  fullName: NonNonSheet.Editor.UndoRedoSystem
+- uid: NonNonSheet.Editor.ValidateSystem
+  commentId: T:NonNonSheet.Editor.ValidateSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.ValidateSystem.html
+  name: ValidateSystem
+  nameWithType: ValidateSystem
+  fullName: NonNonSheet.Editor.ValidateSystem
+- uid: NonNonSheet.Editor.RowReorderSystem
+  commentId: T:NonNonSheet.Editor.RowReorderSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.RowReorderSystem.html
+  name: RowReorderSystem
+  nameWithType: RowReorderSystem
+  fullName: NonNonSheet.Editor.RowReorderSystem
+- uid: NonNonSheet.Editor.SearchSystem
+  commentId: T:NonNonSheet.Editor.SearchSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SearchSystem.html
+  name: SearchSystem
+  nameWithType: SearchSystem
+  fullName: NonNonSheet.Editor.SearchSystem
+- uid: NonNonSheet.Editor.FilterSystem
+  commentId: T:NonNonSheet.Editor.FilterSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.FilterSystem.html
+  name: FilterSystem
+  nameWithType: FilterSystem
+  fullName: NonNonSheet.Editor.FilterSystem
+- uid: NonNonSheet.Editor.SheetSystem.#ctor*
+  commentId: Overload:NonNonSheet.Editor.SheetSystem.#ctor
+  href: NonNonSheet.Editor.SheetSystem.html#NonNonSheet_Editor_SheetSystem__ctor_NonNonSheet_NonNonTable_
+  name: SheetSystem
+  nameWithType: SheetSystem.SheetSystem
+  fullName: NonNonSheet.Editor.SheetSystem.SheetSystem
+  nameWithType.vb: SheetSystem.New
+  fullName.vb: NonNonSheet.Editor.SheetSystem.New
+  name.vb: New
+- uid: NonNonSheet.NonNonTable
+  commentId: T:NonNonSheet.NonNonTable
+  parent: NonNonSheet
+  href: NonNonSheet.NonNonTable.html
+  name: NonNonTable
+  nameWithType: NonNonTable
+  fullName: NonNonSheet.NonNonTable
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Editor.SheetSystem.Dispose*
+  commentId: Overload:NonNonSheet.Editor.SheetSystem.Dispose
+  href: NonNonSheet.Editor.SheetSystem.html#NonNonSheet_Editor_SheetSystem_Dispose
+  name: Dispose
+  nameWithType: SheetSystem.Dispose
+  fullName: NonNonSheet.Editor.SheetSystem.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

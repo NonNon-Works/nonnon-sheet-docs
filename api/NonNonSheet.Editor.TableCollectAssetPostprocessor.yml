@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/TableCollectAssetPostprocessor.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: TableCollectAssetPostprocessor
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/TableCollectAssetPostprocessor.cs

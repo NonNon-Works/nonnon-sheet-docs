@@ -18,11 +18,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: MinMaxSliderCellAttribute
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-    startLine: 84
+    startLine: 90
   namespace: NonNonSheet
   summary: Renders the target field with a min-max slider constrained by the specified limits.
   example: []
@@ -90,11 +90,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: MinLimit
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-    startLine: 87
+    startLine: 93
   namespace: NonNonSheet
   summary: Lower bound of the allowed range.
   example: []
@@ -117,11 +117,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: MaxLimit
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-    startLine: 89
+    startLine: 96
   namespace: NonNonSheet
   summary: Upper bound of the allowed range.
   example: []
@@ -144,11 +144,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: .ctor
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-    startLine: 96
+    startLine: 103
   namespace: NonNonSheet
   summary: Initializes a new min-max slider specification.
   example: []

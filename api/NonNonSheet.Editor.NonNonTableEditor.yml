@@ -15,12 +15,12 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomInspectors/NonNonTableEditor.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/Inspectors/NonNonTableEditor.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: NonNonTableEditor
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomInspectors/NonNonTableEditor.cs
-    startLine: 6
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/Inspectors/NonNonTableEditor.cs
+    startLine: 8
   namespace: NonNonSheet.Editor
   syntax:
     content: 'public class NonNonTableEditor : UnityEditor.Editor'
@@ -40,12 +40,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomInspectors/NonNonTableEditor.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/Inspectors/NonNonTableEditor.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: OnInspectorGUI
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomInspectors/NonNonTableEditor.cs
-    startLine: 12
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/Inspectors/NonNonTableEditor.cs
+    startLine: 14
   namespace: NonNonSheet.Editor
   example: []
   syntax:

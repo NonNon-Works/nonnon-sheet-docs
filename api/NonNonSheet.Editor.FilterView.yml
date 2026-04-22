@@ -1,0 +1,794 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.FilterView
+  commentId: T:NonNonSheet.Editor.FilterView
+  id: FilterView
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.FilterView.#ctor(VisualElement,VisualElement)
+  - NonNonSheet.Editor.FilterView.FilterClearAllButton
+  - NonNonSheet.Editor.FilterView.FilterReEvaluateButton
+  - NonNonSheet.Editor.FilterView.FilterStatusBar
+  - NonNonSheet.Editor.FilterView.FilterStatusLabel
+  - NonNonSheet.Editor.FilterView.GetFilterButton(System.Int32)
+  - NonNonSheet.Editor.FilterView.GetFilterPopup(NonNonSheet.ColumnMetadata)
+  - NonNonSheet.Editor.FilterView.RegisterFilterButton(System.Int32,Button)
+  - NonNonSheet.Editor.FilterView.SetFilterActive(System.Boolean)
+  - NonNonSheet.Editor.FilterView.ShowStatusBar(System.Boolean,System.String)
+  - NonNonSheet.Editor.FilterView.UpdateFilterHeaderState(System.Int32,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: FilterView
+  nameWithType: FilterView
+  fullName: NonNonSheet.Editor.FilterView
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FilterView
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 5
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public class FilterView
+    content.vb: Public Class FilterView
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NonNonSheet.Editor.FilterView.FilterStatusBar
+  commentId: P:NonNonSheet.Editor.FilterView.FilterStatusBar
+  id: FilterStatusBar
+  parent: NonNonSheet.Editor.FilterView
+  langs:
+  - csharp
+  - vb
+  name: FilterStatusBar
+  nameWithType: FilterView.FilterStatusBar
+  fullName: NonNonSheet.Editor.FilterView.FilterStatusBar
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FilterStatusBar
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 7
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public VisualElement FilterStatusBar { get; }
+    parameters: []
+    return:
+      type: VisualElement
+    content.vb: Public ReadOnly Property FilterStatusBar As VisualElement
+  overload: NonNonSheet.Editor.FilterView.FilterStatusBar*
+- uid: NonNonSheet.Editor.FilterView.FilterStatusLabel
+  commentId: P:NonNonSheet.Editor.FilterView.FilterStatusLabel
+  id: FilterStatusLabel
+  parent: NonNonSheet.Editor.FilterView
+  langs:
+  - csharp
+  - vb
+  name: FilterStatusLabel
+  nameWithType: FilterView.FilterStatusLabel
+  fullName: NonNonSheet.Editor.FilterView.FilterStatusLabel
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FilterStatusLabel
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Label FilterStatusLabel { get; }
+    parameters: []
+    return:
+      type: Label
+    content.vb: Public ReadOnly Property FilterStatusLabel As Label
+  overload: NonNonSheet.Editor.FilterView.FilterStatusLabel*
+- uid: NonNonSheet.Editor.FilterView.FilterReEvaluateButton
+  commentId: P:NonNonSheet.Editor.FilterView.FilterReEvaluateButton
+  id: FilterReEvaluateButton
+  parent: NonNonSheet.Editor.FilterView
+  langs:
+  - csharp
+  - vb
+  name: FilterReEvaluateButton
+  nameWithType: FilterView.FilterReEvaluateButton
+  fullName: NonNonSheet.Editor.FilterView.FilterReEvaluateButton
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FilterReEvaluateButton
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 9
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Button FilterReEvaluateButton { get; }
+    parameters: []
+    return:
+      type: Button
+    content.vb: Public ReadOnly Property FilterReEvaluateButton As Button
+  overload: NonNonSheet.Editor.FilterView.FilterReEvaluateButton*
+- uid: NonNonSheet.Editor.FilterView.FilterClearAllButton
+  commentId: P:NonNonSheet.Editor.FilterView.FilterClearAllButton
+  id: FilterClearAllButton
+  parent: NonNonSheet.Editor.FilterView
+  langs:
+  - csharp
+  - vb
+  name: FilterClearAllButton
+  nameWithType: FilterView.FilterClearAllButton
+  fullName: NonNonSheet.Editor.FilterView.FilterClearAllButton
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FilterClearAllButton
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 10
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Button FilterClearAllButton { get; }
+    parameters: []
+    return:
+      type: Button
+    content.vb: Public ReadOnly Property FilterClearAllButton As Button
+  overload: NonNonSheet.Editor.FilterView.FilterClearAllButton*
+- uid: NonNonSheet.Editor.FilterView.#ctor(VisualElement,VisualElement)
+  commentId: M:NonNonSheet.Editor.FilterView.#ctor(VisualElement,VisualElement)
+  id: '#ctor(VisualElement,VisualElement)'
+  parent: NonNonSheet.Editor.FilterView
+  langs:
+  - csharp
+  - vb
+  name: FilterView(VisualElement, VisualElement)
+  nameWithType: FilterView.FilterView(VisualElement, VisualElement)
+  fullName: NonNonSheet.Editor.FilterView.FilterView(VisualElement, VisualElement)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 18
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public FilterView(VisualElement rootVisualElement, VisualElement container)
+    parameters:
+    - id: rootVisualElement
+      type: VisualElement
+    - id: container
+      type: VisualElement
+    content.vb: Public Sub New(rootVisualElement As VisualElement, container As VisualElement)
+  overload: NonNonSheet.Editor.FilterView.#ctor*
+  nameWithType.vb: FilterView.New(VisualElement, VisualElement)
+  fullName.vb: NonNonSheet.Editor.FilterView.New(VisualElement, VisualElement)
+  name.vb: New(VisualElement, VisualElement)
+- uid: NonNonSheet.Editor.FilterView.SetFilterActive(System.Boolean)
+  commentId: M:NonNonSheet.Editor.FilterView.SetFilterActive(System.Boolean)
+  id: SetFilterActive(System.Boolean)
+  parent: NonNonSheet.Editor.FilterView
+  langs:
+  - csharp
+  - vb
+  name: SetFilterActive(bool)
+  nameWithType: FilterView.SetFilterActive(bool)
+  fullName: NonNonSheet.Editor.FilterView.SetFilterActive(bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SetFilterActive
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 44
+  namespace: NonNonSheet.Editor
+  summary: フィルタアクティブ CSS クラスの付け外しをする。
+  example: []
+  syntax:
+    content: public void SetFilterActive(bool active)
+    parameters:
+    - id: active
+      type: System.Boolean
+    content.vb: Public Sub SetFilterActive(active As Boolean)
+  overload: NonNonSheet.Editor.FilterView.SetFilterActive*
+  nameWithType.vb: FilterView.SetFilterActive(Boolean)
+  fullName.vb: NonNonSheet.Editor.FilterView.SetFilterActive(Boolean)
+  name.vb: SetFilterActive(Boolean)
+- uid: NonNonSheet.Editor.FilterView.GetFilterPopup(NonNonSheet.ColumnMetadata)
+  commentId: M:NonNonSheet.Editor.FilterView.GetFilterPopup(NonNonSheet.ColumnMetadata)
+  id: GetFilterPopup(NonNonSheet.ColumnMetadata)
+  parent: NonNonSheet.Editor.FilterView
+  langs:
+  - csharp
+  - vb
+  name: GetFilterPopup(ColumnMetadata)
+  nameWithType: FilterView.GetFilterPopup(ColumnMetadata)
+  fullName: NonNonSheet.Editor.FilterView.GetFilterPopup(NonNonSheet.ColumnMetadata)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetFilterPopup
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 51
+  namespace: NonNonSheet.Editor
+  summary: >-
+    指定カラムに対応するポップアップを返す。初めて呼ばれた場合は生成して RootVisualElement に追加する。
+
+    同じファクトリを使う列はこの SheetView インスタンス内で同一ポップアップを共有する。
+
+    ファクトリが見つからない場合はフォールバック用の <xref href="NonNonSheet.Editor.StringFilterPopup" data-throw-if-not-resolved="false"></xref> を返す。
+  example: []
+  syntax:
+    content: public FilterPopup GetFilterPopup(ColumnMetadata metadata)
+    parameters:
+    - id: metadata
+      type: NonNonSheet.ColumnMetadata
+    return:
+      type: NonNonSheet.Editor.FilterPopup
+    content.vb: Public Function GetFilterPopup(metadata As ColumnMetadata) As FilterPopup
+  overload: NonNonSheet.Editor.FilterView.GetFilterPopup*
+- uid: NonNonSheet.Editor.FilterView.RegisterFilterButton(System.Int32,Button)
+  commentId: M:NonNonSheet.Editor.FilterView.RegisterFilterButton(System.Int32,Button)
+  id: RegisterFilterButton(System.Int32,Button)
+  parent: NonNonSheet.Editor.FilterView
+  langs:
+  - csharp
+  - vb
+  name: RegisterFilterButton(int, Button)
+  nameWithType: FilterView.RegisterFilterButton(int, Button)
+  fullName: NonNonSheet.Editor.FilterView.RegisterFilterButton(int, Button)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: RegisterFilterButton
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 66
+  namespace: NonNonSheet.Editor
+  summary: フィルタボタンの参照を登録する。SheetColumnBuilder から makeHeader 時に呼ぶ。
+  example: []
+  syntax:
+    content: public void RegisterFilterButton(int colIndex, Button button)
+    parameters:
+    - id: colIndex
+      type: System.Int32
+    - id: button
+      type: Button
+    content.vb: Public Sub RegisterFilterButton(colIndex As Integer, button As Button)
+  overload: NonNonSheet.Editor.FilterView.RegisterFilterButton*
+  nameWithType.vb: FilterView.RegisterFilterButton(Integer, Button)
+  fullName.vb: NonNonSheet.Editor.FilterView.RegisterFilterButton(Integer, Button)
+  name.vb: RegisterFilterButton(Integer, Button)
+- uid: NonNonSheet.Editor.FilterView.UpdateFilterHeaderState(System.Int32,System.Boolean)
+  commentId: M:NonNonSheet.Editor.FilterView.UpdateFilterHeaderState(System.Int32,System.Boolean)
+  id: UpdateFilterHeaderState(System.Int32,System.Boolean)
+  parent: NonNonSheet.Editor.FilterView
+  langs:
+  - csharp
+  - vb
+  name: UpdateFilterHeaderState(int, bool)
+  nameWithType: FilterView.UpdateFilterHeaderState(int, bool)
+  fullName: NonNonSheet.Editor.FilterView.UpdateFilterHeaderState(int, bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: UpdateFilterHeaderState
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 74
+  namespace: NonNonSheet.Editor
+  summary: 指定カラムのフィルタアイコンのアクティブ状態を更新する。
+  example: []
+  syntax:
+    content: public void UpdateFilterHeaderState(int colIndex, bool isActive)
+    parameters:
+    - id: colIndex
+      type: System.Int32
+    - id: isActive
+      type: System.Boolean
+    content.vb: Public Sub UpdateFilterHeaderState(colIndex As Integer, isActive As Boolean)
+  overload: NonNonSheet.Editor.FilterView.UpdateFilterHeaderState*
+  nameWithType.vb: FilterView.UpdateFilterHeaderState(Integer, Boolean)
+  fullName.vb: NonNonSheet.Editor.FilterView.UpdateFilterHeaderState(Integer, Boolean)
+  name.vb: UpdateFilterHeaderState(Integer, Boolean)
+- uid: NonNonSheet.Editor.FilterView.GetFilterButton(System.Int32)
+  commentId: M:NonNonSheet.Editor.FilterView.GetFilterButton(System.Int32)
+  id: GetFilterButton(System.Int32)
+  parent: NonNonSheet.Editor.FilterView
+  langs:
+  - csharp
+  - vb
+  name: GetFilterButton(int)
+  nameWithType: FilterView.GetFilterButton(int)
+  fullName: NonNonSheet.Editor.FilterView.GetFilterButton(int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetFilterButton
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 82
+  namespace: NonNonSheet.Editor
+  summary: 指定カラムのフィルタボタンを取得する。テスト用途。
+  example: []
+  syntax:
+    content: public Button GetFilterButton(int colIndex)
+    parameters:
+    - id: colIndex
+      type: System.Int32
+    return:
+      type: Button
+    content.vb: Public Function GetFilterButton(colIndex As Integer) As Button
+  overload: NonNonSheet.Editor.FilterView.GetFilterButton*
+  nameWithType.vb: FilterView.GetFilterButton(Integer)
+  fullName.vb: NonNonSheet.Editor.FilterView.GetFilterButton(Integer)
+  name.vb: GetFilterButton(Integer)
+- uid: NonNonSheet.Editor.FilterView.ShowStatusBar(System.Boolean,System.String)
+  commentId: M:NonNonSheet.Editor.FilterView.ShowStatusBar(System.Boolean,System.String)
+  id: ShowStatusBar(System.Boolean,System.String)
+  parent: NonNonSheet.Editor.FilterView
+  langs:
+  - csharp
+  - vb
+  name: ShowStatusBar(bool, string)
+  nameWithType: FilterView.ShowStatusBar(bool, string)
+  fullName: NonNonSheet.Editor.FilterView.ShowStatusBar(bool, string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ShowStatusBar
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/FilterView.cs
+    startLine: 87
+  namespace: NonNonSheet.Editor
+  summary: フィルタステータスバーの表示状態とラベルテキストを更新する。
+  example: []
+  syntax:
+    content: public void ShowStatusBar(bool show, string labelText = "")
+    parameters:
+    - id: show
+      type: System.Boolean
+    - id: labelText
+      type: System.String
+    content.vb: Public Sub ShowStatusBar(show As Boolean, labelText As String = "")
+  overload: NonNonSheet.Editor.FilterView.ShowStatusBar*
+  nameWithType.vb: FilterView.ShowStatusBar(Boolean, String)
+  fullName.vb: NonNonSheet.Editor.FilterView.ShowStatusBar(Boolean, String)
+  name.vb: ShowStatusBar(Boolean, String)
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.FilterView.FilterStatusBar*
+  commentId: Overload:NonNonSheet.Editor.FilterView.FilterStatusBar
+  href: NonNonSheet.Editor.FilterView.html#NonNonSheet_Editor_FilterView_FilterStatusBar
+  name: FilterStatusBar
+  nameWithType: FilterView.FilterStatusBar
+  fullName: NonNonSheet.Editor.FilterView.FilterStatusBar
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement
+- uid: NonNonSheet.Editor.FilterView.FilterStatusLabel*
+  commentId: Overload:NonNonSheet.Editor.FilterView.FilterStatusLabel
+  href: NonNonSheet.Editor.FilterView.html#NonNonSheet_Editor_FilterView_FilterStatusLabel
+  name: FilterStatusLabel
+  nameWithType: FilterView.FilterStatusLabel
+  fullName: NonNonSheet.Editor.FilterView.FilterStatusLabel
+- uid: Label
+  isExternal: true
+  name: Label
+  nameWithType: Label
+  fullName: Label
+- uid: NonNonSheet.Editor.FilterView.FilterReEvaluateButton*
+  commentId: Overload:NonNonSheet.Editor.FilterView.FilterReEvaluateButton
+  href: NonNonSheet.Editor.FilterView.html#NonNonSheet_Editor_FilterView_FilterReEvaluateButton
+  name: FilterReEvaluateButton
+  nameWithType: FilterView.FilterReEvaluateButton
+  fullName: NonNonSheet.Editor.FilterView.FilterReEvaluateButton
+- uid: Button
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: Button
+- uid: NonNonSheet.Editor.FilterView.FilterClearAllButton*
+  commentId: Overload:NonNonSheet.Editor.FilterView.FilterClearAllButton
+  href: NonNonSheet.Editor.FilterView.html#NonNonSheet_Editor_FilterView_FilterClearAllButton
+  name: FilterClearAllButton
+  nameWithType: FilterView.FilterClearAllButton
+  fullName: NonNonSheet.Editor.FilterView.FilterClearAllButton
+- uid: NonNonSheet.Editor.FilterView.#ctor*
+  commentId: Overload:NonNonSheet.Editor.FilterView.#ctor
+  href: NonNonSheet.Editor.FilterView.html#NonNonSheet_Editor_FilterView__ctor_VisualElement_VisualElement_
+  name: FilterView
+  nameWithType: FilterView.FilterView
+  fullName: NonNonSheet.Editor.FilterView.FilterView
+  nameWithType.vb: FilterView.New
+  fullName.vb: NonNonSheet.Editor.FilterView.New
+  name.vb: New
+- uid: NonNonSheet.Editor.FilterView.SetFilterActive*
+  commentId: Overload:NonNonSheet.Editor.FilterView.SetFilterActive
+  href: NonNonSheet.Editor.FilterView.html#NonNonSheet_Editor_FilterView_SetFilterActive_System_Boolean_
+  name: SetFilterActive
+  nameWithType: FilterView.SetFilterActive
+  fullName: NonNonSheet.Editor.FilterView.SetFilterActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NonNonSheet.Editor.StringFilterPopup
+  commentId: T:NonNonSheet.Editor.StringFilterPopup
+  href: NonNonSheet.Editor.StringFilterPopup.html
+  name: StringFilterPopup
+  nameWithType: StringFilterPopup
+  fullName: NonNonSheet.Editor.StringFilterPopup
+- uid: NonNonSheet.Editor.FilterView.GetFilterPopup*
+  commentId: Overload:NonNonSheet.Editor.FilterView.GetFilterPopup
+  href: NonNonSheet.Editor.FilterView.html#NonNonSheet_Editor_FilterView_GetFilterPopup_NonNonSheet_ColumnMetadata_
+  name: GetFilterPopup
+  nameWithType: FilterView.GetFilterPopup
+  fullName: NonNonSheet.Editor.FilterView.GetFilterPopup
+- uid: NonNonSheet.ColumnMetadata
+  commentId: T:NonNonSheet.ColumnMetadata
+  parent: NonNonSheet
+  href: NonNonSheet.ColumnMetadata.html
+  name: ColumnMetadata
+  nameWithType: ColumnMetadata
+  fullName: NonNonSheet.ColumnMetadata
+- uid: NonNonSheet.Editor.FilterPopup
+  commentId: T:NonNonSheet.Editor.FilterPopup
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.FilterPopup.html
+  name: FilterPopup
+  nameWithType: FilterPopup
+  fullName: NonNonSheet.Editor.FilterPopup
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Editor.FilterView.RegisterFilterButton*
+  commentId: Overload:NonNonSheet.Editor.FilterView.RegisterFilterButton
+  href: NonNonSheet.Editor.FilterView.html#NonNonSheet_Editor_FilterView_RegisterFilterButton_System_Int32_Button_
+  name: RegisterFilterButton
+  nameWithType: FilterView.RegisterFilterButton
+  fullName: NonNonSheet.Editor.FilterView.RegisterFilterButton
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.Editor.FilterView.UpdateFilterHeaderState*
+  commentId: Overload:NonNonSheet.Editor.FilterView.UpdateFilterHeaderState
+  href: NonNonSheet.Editor.FilterView.html#NonNonSheet_Editor_FilterView_UpdateFilterHeaderState_System_Int32_System_Boolean_
+  name: UpdateFilterHeaderState
+  nameWithType: FilterView.UpdateFilterHeaderState
+  fullName: NonNonSheet.Editor.FilterView.UpdateFilterHeaderState
+- uid: NonNonSheet.Editor.FilterView.GetFilterButton*
+  commentId: Overload:NonNonSheet.Editor.FilterView.GetFilterButton
+  href: NonNonSheet.Editor.FilterView.html#NonNonSheet_Editor_FilterView_GetFilterButton_System_Int32_
+  name: GetFilterButton
+  nameWithType: FilterView.GetFilterButton
+  fullName: NonNonSheet.Editor.FilterView.GetFilterButton
+- uid: NonNonSheet.Editor.FilterView.ShowStatusBar*
+  commentId: Overload:NonNonSheet.Editor.FilterView.ShowStatusBar
+  href: NonNonSheet.Editor.FilterView.html#NonNonSheet_Editor_FilterView_ShowStatusBar_System_Boolean_System_String_
+  name: ShowStatusBar
+  nameWithType: FilterView.ShowStatusBar
+  fullName: NonNonSheet.Editor.FilterView.ShowStatusBar
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

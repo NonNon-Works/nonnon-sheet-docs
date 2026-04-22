@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: ValidationResult
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: ResultType
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
@@ -80,11 +80,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Message
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-    startLine: 31
+    startLine: 32
   namespace: NonNonSheet
   summary: Additional information for warnings and errors; empty for success.
   example: []
@@ -107,11 +107,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: ConflictingData
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-    startLine: 35
+    startLine: 37
   namespace: NonNonSheet
   summary: Optional related data causing the conflict (e.g., duplicate rows).
   example: []
@@ -134,11 +134,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Success
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-    startLine: 47
+    startLine: 49
   namespace: NonNonSheet
   summary: Creates a success result with no message.
   example: []
@@ -162,11 +162,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Warning
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-    startLine: 53
+    startLine: 56
   namespace: NonNonSheet
   summary: Creates a warning result with an explanatory <code class="paramref">message</code>.
   example: []
@@ -200,11 +200,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Error
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-    startLine: 59
+    startLine: 63
   namespace: NonNonSheet
   summary: Creates an error result with an explanatory <code class="paramref">message</code>.
   example: []

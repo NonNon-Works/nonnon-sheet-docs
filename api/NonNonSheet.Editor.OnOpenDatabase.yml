@@ -16,14 +16,12 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: OnOpenDatabase
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
-    startLine: 87
+    startLine: 73
   namespace: NonNonSheet.Editor
-  summary: Opens the NonNonSheet window when a <xref href="NonNonSheet.NonNonTable" data-throw-if-not-resolved="false"></xref> asset is double-clicked.
-  example: []
   syntax:
     content: public static class OnOpenDatabase
     content.vb: Public Module OnOpenDatabase
@@ -51,34 +49,27 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: OnOpen
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
-    startLine: 89
+    startLine: 75
   namespace: NonNonSheet.Editor
   syntax:
-    content: public static bool OnOpen(int instanceID, int line)
+    content: public static bool OnOpen(int entityId, int line)
     parameters:
-    - id: instanceID
+    - id: entityId
       type: System.Int32
     - id: line
       type: System.Int32
     return:
       type: System.Boolean
-    content.vb: Public Shared Function OnOpen(instanceID As Integer, line As Integer) As Boolean
+    content.vb: Public Shared Function OnOpen(entityId As Integer, line As Integer) As Boolean
   overload: NonNonSheet.Editor.OnOpenDatabase.OnOpen*
   nameWithType.vb: OnOpenDatabase.OnOpen(Integer, Integer)
   fullName.vb: NonNonSheet.Editor.OnOpenDatabase.OnOpen(Integer, Integer)
   name.vb: OnOpen(Integer, Integer)
 references:
-- uid: NonNonSheet.NonNonTable
-  commentId: T:NonNonSheet.NonNonTable
-  parent: NonNonSheet
-  href: NonNonSheet.NonNonTable.html
-  name: NonNonTable
-  nameWithType: NonNonTable
-  fullName: NonNonSheet.NonNonTable
 - uid: NonNonSheet.Editor
   commentId: N:NonNonSheet.Editor
   href: NonNonSheet.html
@@ -331,12 +322,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
-- uid: NonNonSheet
-  commentId: N:NonNonSheet
-  href: NonNonSheet.html
-  name: NonNonSheet
-  nameWithType: NonNonSheet
-  fullName: NonNonSheet
 - uid: System
   commentId: N:System
   isExternal: true

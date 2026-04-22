@@ -1,0 +1,1714 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.SheetView
+  commentId: T:NonNonSheet.Editor.SheetView
+  id: SheetView
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.SheetView.#ctor(NonNonSheet.NonNonTable,VisualElement,SerializedObject,SerializedProperty)
+  - NonNonSheet.Editor.SheetView.AddRowButton
+  - NonNonSheet.Editor.SheetView.CopyMarker
+  - NonNonSheet.Editor.SheetView.DataSerializedProperty
+  - NonNonSheet.Editor.SheetView.DisplayIndices
+  - NonNonSheet.Editor.SheetView.FilterView
+  - NonNonSheet.Editor.SheetView.Focus
+  - NonNonSheet.Editor.SheetView.FocusCell(System.Int32,System.Int32)
+  - NonNonSheet.Editor.SheetView.ForEachVisibleCell(System.Action{NonNonSheet.Editor.Cell})
+  - NonNonSheet.Editor.SheetView.ForEachVisibleIndexCell(System.Action{NonNonSheet.Editor.IndexCell})
+  - NonNonSheet.Editor.SheetView.GetVisibleIndicesCallback
+  - NonNonSheet.Editor.SheetView.IsSorted
+  - NonNonSheet.Editor.SheetView.MultiColumnListView
+  - NonNonSheet.Editor.SheetView.OnEnable
+  - NonNonSheet.Editor.SheetView.RefreshItems(System.Collections.Generic.List{System.Int32})
+  - NonNonSheet.Editor.SheetView.ReorderView
+  - NonNonSheet.Editor.SheetView.RootVisualElement
+  - NonNonSheet.Editor.SheetView.ScheduleAction(System.Action)
+  - NonNonSheet.Editor.SheetView.ScrollToCell(System.Int32,System.Int32)
+  - NonNonSheet.Editor.SheetView.ScrollToRow(System.Int32)
+  - NonNonSheet.Editor.SheetView.SearchView
+  - NonNonSheet.Editor.SheetView.SelectMarker
+  - NonNonSheet.Editor.SheetView.SelectRangeMarker
+  - NonNonSheet.Editor.SheetView.StartEditingCell(System.Int32,System.Int32)
+  - NonNonSheet.Editor.SheetView.SwitchAddRowButton(System.Boolean)
+  - NonNonSheet.Editor.SheetView.TableSerializedObject
+  - NonNonSheet.Editor.SheetView.VisibleCellRegistry
+  langs:
+  - csharp
+  - vb
+  name: SheetView
+  nameWithType: SheetView
+  fullName: NonNonSheet.Editor.SheetView
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SheetView
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public class SheetView
+    content.vb: Public Class SheetView
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NonNonSheet.Editor.SheetView.SearchView
+  commentId: P:NonNonSheet.Editor.SheetView.SearchView
+  id: SearchView
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: SearchView
+  nameWithType: SheetView.SearchView
+  fullName: NonNonSheet.Editor.SheetView.SearchView
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SearchView
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 16
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public SearchView SearchView { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.SearchView
+    content.vb: Public ReadOnly Property SearchView As SearchView
+  overload: NonNonSheet.Editor.SheetView.SearchView*
+- uid: NonNonSheet.Editor.SheetView.FilterView
+  commentId: P:NonNonSheet.Editor.SheetView.FilterView
+  id: FilterView
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: FilterView
+  nameWithType: SheetView.FilterView
+  fullName: NonNonSheet.Editor.SheetView.FilterView
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FilterView
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 17
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public FilterView FilterView { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.FilterView
+    content.vb: Public ReadOnly Property FilterView As FilterView
+  overload: NonNonSheet.Editor.SheetView.FilterView*
+- uid: NonNonSheet.Editor.SheetView.ReorderView
+  commentId: P:NonNonSheet.Editor.SheetView.ReorderView
+  id: ReorderView
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: ReorderView
+  nameWithType: SheetView.ReorderView
+  fullName: NonNonSheet.Editor.SheetView.ReorderView
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ReorderView
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 18
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public ReorderView ReorderView { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.ReorderView
+    content.vb: Public ReadOnly Property ReorderView As ReorderView
+  overload: NonNonSheet.Editor.SheetView.ReorderView*
+- uid: NonNonSheet.Editor.SheetView.VisibleCellRegistry
+  commentId: P:NonNonSheet.Editor.SheetView.VisibleCellRegistry
+  id: VisibleCellRegistry
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: VisibleCellRegistry
+  nameWithType: SheetView.VisibleCellRegistry
+  fullName: NonNonSheet.Editor.SheetView.VisibleCellRegistry
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: VisibleCellRegistry
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 19
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public VisibleCellRegistry VisibleCellRegistry { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.VisibleCellRegistry
+    content.vb: Public ReadOnly Property VisibleCellRegistry As VisibleCellRegistry
+  overload: NonNonSheet.Editor.SheetView.VisibleCellRegistry*
+- uid: NonNonSheet.Editor.SheetView.TableSerializedObject
+  commentId: P:NonNonSheet.Editor.SheetView.TableSerializedObject
+  id: TableSerializedObject
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: TableSerializedObject
+  nameWithType: SheetView.TableSerializedObject
+  fullName: NonNonSheet.Editor.SheetView.TableSerializedObject
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: TableSerializedObject
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 21
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public SerializedObject TableSerializedObject { get; }
+    parameters: []
+    return:
+      type: SerializedObject
+    content.vb: Public ReadOnly Property TableSerializedObject As SerializedObject
+  overload: NonNonSheet.Editor.SheetView.TableSerializedObject*
+- uid: NonNonSheet.Editor.SheetView.DataSerializedProperty
+  commentId: P:NonNonSheet.Editor.SheetView.DataSerializedProperty
+  id: DataSerializedProperty
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: DataSerializedProperty
+  nameWithType: SheetView.DataSerializedProperty
+  fullName: NonNonSheet.Editor.SheetView.DataSerializedProperty
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DataSerializedProperty
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 22
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public SerializedProperty DataSerializedProperty { get; }
+    parameters: []
+    return:
+      type: SerializedProperty
+    content.vb: Public ReadOnly Property DataSerializedProperty As SerializedProperty
+  overload: NonNonSheet.Editor.SheetView.DataSerializedProperty*
+- uid: NonNonSheet.Editor.SheetView.RootVisualElement
+  commentId: P:NonNonSheet.Editor.SheetView.RootVisualElement
+  id: RootVisualElement
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: RootVisualElement
+  nameWithType: SheetView.RootVisualElement
+  fullName: NonNonSheet.Editor.SheetView.RootVisualElement
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: RootVisualElement
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 24
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public VisualElement RootVisualElement { get; }
+    parameters: []
+    return:
+      type: VisualElement
+    content.vb: Public ReadOnly Property RootVisualElement As VisualElement
+  overload: NonNonSheet.Editor.SheetView.RootVisualElement*
+- uid: NonNonSheet.Editor.SheetView.MultiColumnListView
+  commentId: P:NonNonSheet.Editor.SheetView.MultiColumnListView
+  id: MultiColumnListView
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: MultiColumnListView
+  nameWithType: SheetView.MultiColumnListView
+  fullName: NonNonSheet.Editor.SheetView.MultiColumnListView
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: MultiColumnListView
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 25
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public MultiColumnListView MultiColumnListView { get; }
+    parameters: []
+    return:
+      type: MultiColumnListView
+    content.vb: Public ReadOnly Property MultiColumnListView As MultiColumnListView
+  overload: NonNonSheet.Editor.SheetView.MultiColumnListView*
+- uid: NonNonSheet.Editor.SheetView.SelectMarker
+  commentId: P:NonNonSheet.Editor.SheetView.SelectMarker
+  id: SelectMarker
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: SelectMarker
+  nameWithType: SheetView.SelectMarker
+  fullName: NonNonSheet.Editor.SheetView.SelectMarker
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectMarker
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 27
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Marker SelectMarker { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.Marker
+    content.vb: Public ReadOnly Property SelectMarker As Marker
+  overload: NonNonSheet.Editor.SheetView.SelectMarker*
+- uid: NonNonSheet.Editor.SheetView.SelectRangeMarker
+  commentId: P:NonNonSheet.Editor.SheetView.SelectRangeMarker
+  id: SelectRangeMarker
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: SelectRangeMarker
+  nameWithType: SheetView.SelectRangeMarker
+  fullName: NonNonSheet.Editor.SheetView.SelectRangeMarker
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SelectRangeMarker
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 28
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Marker SelectRangeMarker { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.Marker
+    content.vb: Public ReadOnly Property SelectRangeMarker As Marker
+  overload: NonNonSheet.Editor.SheetView.SelectRangeMarker*
+- uid: NonNonSheet.Editor.SheetView.CopyMarker
+  commentId: P:NonNonSheet.Editor.SheetView.CopyMarker
+  id: CopyMarker
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: CopyMarker
+  nameWithType: SheetView.CopyMarker
+  fullName: NonNonSheet.Editor.SheetView.CopyMarker
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: CopyMarker
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 29
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Marker CopyMarker { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.Marker
+    content.vb: Public ReadOnly Property CopyMarker As Marker
+  overload: NonNonSheet.Editor.SheetView.CopyMarker*
+- uid: NonNonSheet.Editor.SheetView.AddRowButton
+  commentId: P:NonNonSheet.Editor.SheetView.AddRowButton
+  id: AddRowButton
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: AddRowButton
+  nameWithType: SheetView.AddRowButton
+  fullName: NonNonSheet.Editor.SheetView.AddRowButton
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: AddRowButton
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 30
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Button AddRowButton { get; }
+    parameters: []
+    return:
+      type: Button
+    content.vb: Public ReadOnly Property AddRowButton As Button
+  overload: NonNonSheet.Editor.SheetView.AddRowButton*
+- uid: NonNonSheet.Editor.SheetView.DisplayIndices
+  commentId: P:NonNonSheet.Editor.SheetView.DisplayIndices
+  id: DisplayIndices
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: DisplayIndices
+  nameWithType: SheetView.DisplayIndices
+  fullName: NonNonSheet.Editor.SheetView.DisplayIndices
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DisplayIndices
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 45
+  namespace: NonNonSheet.Editor
+  summary: >-
+    現在の表示順インデックス一覧 (displayPos → dataRowIndex)。
+
+    ソート・フィルタが適用済みの順序を返す。
+  example: []
+  syntax:
+    content: public IReadOnlyList<int> DisplayIndices { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Int32}
+    content.vb: Public ReadOnly Property DisplayIndices As IReadOnlyList(Of Integer)
+  overload: NonNonSheet.Editor.SheetView.DisplayIndices*
+- uid: NonNonSheet.Editor.SheetView.IsSorted
+  commentId: P:NonNonSheet.Editor.SheetView.IsSorted
+  id: IsSorted
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: IsSorted
+  nameWithType: SheetView.IsSorted
+  fullName: NonNonSheet.Editor.SheetView.IsSorted
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsSorted
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 50
+  namespace: NonNonSheet.Editor
+  summary: 現在ソートが適用されているかどうかを返す。
+  example: []
+  syntax:
+    content: public bool IsSorted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsSorted As Boolean
+  overload: NonNonSheet.Editor.SheetView.IsSorted*
+- uid: NonNonSheet.Editor.SheetView.GetVisibleIndicesCallback
+  commentId: F:NonNonSheet.Editor.SheetView.GetVisibleIndicesCallback
+  id: GetVisibleIndicesCallback
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: GetVisibleIndicesCallback
+  nameWithType: SheetView.GetVisibleIndicesCallback
+  fullName: NonNonSheet.Editor.SheetView.GetVisibleIndicesCallback
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetVisibleIndicesCallback
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 65
+  namespace: NonNonSheet.Editor
+  summary: >-
+    フィルタ適用後の表示行インデックス一覧を返すコールバック。null の場合は全行表示。
+
+    Presenter 側で設定する。RefreshItems() が呼ばれるたびに評価される。
+  example: []
+  syntax:
+    content: public Func<List<int>> GetVisibleIndicesCallback
+    return:
+      type: System.Func{System.Collections.Generic.List{System.Int32}}
+    content.vb: Public GetVisibleIndicesCallback As Func(Of List(Of Integer))
+- uid: NonNonSheet.Editor.SheetView.#ctor(NonNonSheet.NonNonTable,VisualElement,SerializedObject,SerializedProperty)
+  commentId: M:NonNonSheet.Editor.SheetView.#ctor(NonNonSheet.NonNonTable,VisualElement,SerializedObject,SerializedProperty)
+  id: '#ctor(NonNonSheet.NonNonTable,VisualElement,SerializedObject,SerializedProperty)'
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: SheetView(NonNonTable, VisualElement, SerializedObject, SerializedProperty)
+  nameWithType: SheetView.SheetView(NonNonTable, VisualElement, SerializedObject, SerializedProperty)
+  fullName: NonNonSheet.Editor.SheetView.SheetView(NonNonSheet.NonNonTable, VisualElement, SerializedObject, SerializedProperty)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 67
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public SheetView(NonNonTable table, VisualElement rootVisualElement, SerializedObject tableSerializedObject, SerializedProperty dataSerializedProperty)
+    parameters:
+    - id: table
+      type: NonNonSheet.NonNonTable
+    - id: rootVisualElement
+      type: VisualElement
+    - id: tableSerializedObject
+      type: SerializedObject
+    - id: dataSerializedProperty
+      type: SerializedProperty
+    content.vb: Public Sub New(table As NonNonTable, rootVisualElement As VisualElement, tableSerializedObject As SerializedObject, dataSerializedProperty As SerializedProperty)
+  overload: NonNonSheet.Editor.SheetView.#ctor*
+  nameWithType.vb: SheetView.New(NonNonTable, VisualElement, SerializedObject, SerializedProperty)
+  fullName.vb: NonNonSheet.Editor.SheetView.New(NonNonSheet.NonNonTable, VisualElement, SerializedObject, SerializedProperty)
+  name.vb: New(NonNonTable, VisualElement, SerializedObject, SerializedProperty)
+- uid: NonNonSheet.Editor.SheetView.OnEnable
+  commentId: M:NonNonSheet.Editor.SheetView.OnEnable
+  id: OnEnable
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: SheetView.OnEnable()
+  fullName: NonNonSheet.Editor.SheetView.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: OnEnable
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 210
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void OnEnable()
+    content.vb: Public Sub OnEnable()
+  overload: NonNonSheet.Editor.SheetView.OnEnable*
+- uid: NonNonSheet.Editor.SheetView.RefreshItems(System.Collections.Generic.List{System.Int32})
+  commentId: M:NonNonSheet.Editor.SheetView.RefreshItems(System.Collections.Generic.List{System.Int32})
+  id: RefreshItems(System.Collections.Generic.List{System.Int32})
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: RefreshItems(List<int>)
+  nameWithType: SheetView.RefreshItems(List<int>)
+  fullName: NonNonSheet.Editor.SheetView.RefreshItems(System.Collections.Generic.List<int>)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: RefreshItems
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 219
+  namespace: NonNonSheet.Editor
+  summary: >-
+    リストビューを更新する。フィルタが有効な場合は itemsSource を再計算する。
+
+    <code class="paramref">overrideVisibleIndices</code> が指定された場合は GetVisibleIndicesCallback を呼ばずに直接使用する。
+  example: []
+  syntax:
+    content: public void RefreshItems(List<int> overrideVisibleIndices = null)
+    parameters:
+    - id: overrideVisibleIndices
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Sub RefreshItems(overrideVisibleIndices As List(Of Integer) = Nothing)
+  overload: NonNonSheet.Editor.SheetView.RefreshItems*
+  nameWithType.vb: SheetView.RefreshItems(List(Of Integer))
+  fullName.vb: NonNonSheet.Editor.SheetView.RefreshItems(System.Collections.Generic.List(Of Integer))
+  name.vb: RefreshItems(List(Of Integer))
+- uid: NonNonSheet.Editor.SheetView.Focus
+  commentId: M:NonNonSheet.Editor.SheetView.Focus
+  id: Focus
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: Focus()
+  nameWithType: SheetView.Focus()
+  fullName: NonNonSheet.Editor.SheetView.Focus()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Focus
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 247
+  namespace: NonNonSheet.Editor
+  summary: ルート要素にフォーカスを当てる。
+  example: []
+  syntax:
+    content: public void Focus()
+    content.vb: Public Sub Focus()
+  overload: NonNonSheet.Editor.SheetView.Focus*
+- uid: NonNonSheet.Editor.SheetView.ForEachVisibleCell(System.Action{NonNonSheet.Editor.Cell})
+  commentId: M:NonNonSheet.Editor.SheetView.ForEachVisibleCell(System.Action{NonNonSheet.Editor.Cell})
+  id: ForEachVisibleCell(System.Action{NonNonSheet.Editor.Cell})
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: ForEachVisibleCell(Action<Cell>)
+  nameWithType: SheetView.ForEachVisibleCell(Action<Cell>)
+  fullName: NonNonSheet.Editor.SheetView.ForEachVisibleCell(System.Action<NonNonSheet.Editor.Cell>)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ForEachVisibleCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 252
+  namespace: NonNonSheet.Editor
+  summary: 現在表示されている Cell を列挙する。
+  example: []
+  syntax:
+    content: public void ForEachVisibleCell(Action<Cell> action)
+    parameters:
+    - id: action
+      type: System.Action{NonNonSheet.Editor.Cell}
+    content.vb: Public Sub ForEachVisibleCell(action As Action(Of Cell))
+  overload: NonNonSheet.Editor.SheetView.ForEachVisibleCell*
+  nameWithType.vb: SheetView.ForEachVisibleCell(Action(Of Cell))
+  fullName.vb: NonNonSheet.Editor.SheetView.ForEachVisibleCell(System.Action(Of NonNonSheet.Editor.Cell))
+  name.vb: ForEachVisibleCell(Action(Of Cell))
+- uid: NonNonSheet.Editor.SheetView.ForEachVisibleIndexCell(System.Action{NonNonSheet.Editor.IndexCell})
+  commentId: M:NonNonSheet.Editor.SheetView.ForEachVisibleIndexCell(System.Action{NonNonSheet.Editor.IndexCell})
+  id: ForEachVisibleIndexCell(System.Action{NonNonSheet.Editor.IndexCell})
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: ForEachVisibleIndexCell(Action<IndexCell>)
+  nameWithType: SheetView.ForEachVisibleIndexCell(Action<IndexCell>)
+  fullName: NonNonSheet.Editor.SheetView.ForEachVisibleIndexCell(System.Action<NonNonSheet.Editor.IndexCell>)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ForEachVisibleIndexCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 257
+  namespace: NonNonSheet.Editor
+  summary: 現在表示されている IndexCell を列挙する。
+  example: []
+  syntax:
+    content: public void ForEachVisibleIndexCell(Action<IndexCell> action)
+    parameters:
+    - id: action
+      type: System.Action{NonNonSheet.Editor.IndexCell}
+    content.vb: Public Sub ForEachVisibleIndexCell(action As Action(Of IndexCell))
+  overload: NonNonSheet.Editor.SheetView.ForEachVisibleIndexCell*
+  nameWithType.vb: SheetView.ForEachVisibleIndexCell(Action(Of IndexCell))
+  fullName.vb: NonNonSheet.Editor.SheetView.ForEachVisibleIndexCell(System.Action(Of NonNonSheet.Editor.IndexCell))
+  name.vb: ForEachVisibleIndexCell(Action(Of IndexCell))
+- uid: NonNonSheet.Editor.SheetView.SwitchAddRowButton(System.Boolean)
+  commentId: M:NonNonSheet.Editor.SheetView.SwitchAddRowButton(System.Boolean)
+  id: SwitchAddRowButton(System.Boolean)
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: SwitchAddRowButton(bool)
+  nameWithType: SheetView.SwitchAddRowButton(bool)
+  fullName: NonNonSheet.Editor.SheetView.SwitchAddRowButton(bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SwitchAddRowButton
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 262
+  namespace: NonNonSheet.Editor
+  summary: 行追加ボタンの表示を切り替える。
+  example: []
+  syntax:
+    content: public void SwitchAddRowButton(bool show)
+    parameters:
+    - id: show
+      type: System.Boolean
+    content.vb: Public Sub SwitchAddRowButton(show As Boolean)
+  overload: NonNonSheet.Editor.SheetView.SwitchAddRowButton*
+  nameWithType.vb: SheetView.SwitchAddRowButton(Boolean)
+  fullName.vb: NonNonSheet.Editor.SheetView.SwitchAddRowButton(Boolean)
+  name.vb: SwitchAddRowButton(Boolean)
+- uid: NonNonSheet.Editor.SheetView.ScheduleAction(System.Action)
+  commentId: M:NonNonSheet.Editor.SheetView.ScheduleAction(System.Action)
+  id: ScheduleAction(System.Action)
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: ScheduleAction(Action)
+  nameWithType: SheetView.ScheduleAction(Action)
+  fullName: NonNonSheet.Editor.SheetView.ScheduleAction(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ScheduleAction
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 267
+  namespace: NonNonSheet.Editor
+  summary: 次の UI フレームにアクションを遅延実行する。
+  example: []
+  syntax:
+    content: public void ScheduleAction(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+    content.vb: Public Sub ScheduleAction(action As Action)
+  overload: NonNonSheet.Editor.SheetView.ScheduleAction*
+- uid: NonNonSheet.Editor.SheetView.ScrollToRow(System.Int32)
+  commentId: M:NonNonSheet.Editor.SheetView.ScrollToRow(System.Int32)
+  id: ScrollToRow(System.Int32)
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: ScrollToRow(int)
+  nameWithType: SheetView.ScrollToRow(int)
+  fullName: NonNonSheet.Editor.SheetView.ScrollToRow(int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ScrollToRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 272
+  namespace: NonNonSheet.Editor
+  summary: 指定行にスクロールする。
+  example: []
+  syntax:
+    content: public void ScrollToRow(int rowIndex)
+    parameters:
+    - id: rowIndex
+      type: System.Int32
+    content.vb: Public Sub ScrollToRow(rowIndex As Integer)
+  overload: NonNonSheet.Editor.SheetView.ScrollToRow*
+  nameWithType.vb: SheetView.ScrollToRow(Integer)
+  fullName.vb: NonNonSheet.Editor.SheetView.ScrollToRow(Integer)
+  name.vb: ScrollToRow(Integer)
+- uid: NonNonSheet.Editor.SheetView.ScrollToCell(System.Int32,System.Int32)
+  commentId: M:NonNonSheet.Editor.SheetView.ScrollToCell(System.Int32,System.Int32)
+  id: ScrollToCell(System.Int32,System.Int32)
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: ScrollToCell(int, int)
+  nameWithType: SheetView.ScrollToCell(int, int)
+  fullName: NonNonSheet.Editor.SheetView.ScrollToCell(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ScrollToCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 277
+  namespace: NonNonSheet.Editor
+  summary: 指定セルが表示範囲に入るようにスクロールする。
+  example: []
+  syntax:
+    content: public void ScrollToCell(int row, int col)
+    parameters:
+    - id: row
+      type: System.Int32
+    - id: col
+      type: System.Int32
+    content.vb: Public Sub ScrollToCell(row As Integer, col As Integer)
+  overload: NonNonSheet.Editor.SheetView.ScrollToCell*
+  nameWithType.vb: SheetView.ScrollToCell(Integer, Integer)
+  fullName.vb: NonNonSheet.Editor.SheetView.ScrollToCell(Integer, Integer)
+  name.vb: ScrollToCell(Integer, Integer)
+- uid: NonNonSheet.Editor.SheetView.FocusCell(System.Int32,System.Int32)
+  commentId: M:NonNonSheet.Editor.SheetView.FocusCell(System.Int32,System.Int32)
+  id: FocusCell(System.Int32,System.Int32)
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: FocusCell(int, int)
+  nameWithType: SheetView.FocusCell(int, int)
+  fullName: NonNonSheet.Editor.SheetView.FocusCell(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FocusCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 323
+  namespace: NonNonSheet.Editor
+  summary: 指定位置のセルにフォーカスを当てる。
+  example: []
+  syntax:
+    content: public void FocusCell(int row, int col)
+    parameters:
+    - id: row
+      type: System.Int32
+    - id: col
+      type: System.Int32
+    content.vb: Public Sub FocusCell(row As Integer, col As Integer)
+  overload: NonNonSheet.Editor.SheetView.FocusCell*
+  nameWithType.vb: SheetView.FocusCell(Integer, Integer)
+  fullName.vb: NonNonSheet.Editor.SheetView.FocusCell(Integer, Integer)
+  name.vb: FocusCell(Integer, Integer)
+- uid: NonNonSheet.Editor.SheetView.StartEditingCell(System.Int32,System.Int32)
+  commentId: M:NonNonSheet.Editor.SheetView.StartEditingCell(System.Int32,System.Int32)
+  id: StartEditingCell(System.Int32,System.Int32)
+  parent: NonNonSheet.Editor.SheetView
+  langs:
+  - csharp
+  - vb
+  name: StartEditingCell(int, int)
+  nameWithType: SheetView.StartEditingCell(int, int)
+  fullName: NonNonSheet.Editor.SheetView.StartEditingCell(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StartEditingCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/SheetView.cs
+    startLine: 332
+  namespace: NonNonSheet.Editor
+  summary: 指定位置のセルの編集を開始する。
+  example: []
+  syntax:
+    content: public void StartEditingCell(int row, int col)
+    parameters:
+    - id: row
+      type: System.Int32
+    - id: col
+      type: System.Int32
+    content.vb: Public Sub StartEditingCell(row As Integer, col As Integer)
+  overload: NonNonSheet.Editor.SheetView.StartEditingCell*
+  nameWithType.vb: SheetView.StartEditingCell(Integer, Integer)
+  fullName.vb: NonNonSheet.Editor.SheetView.StartEditingCell(Integer, Integer)
+  name.vb: StartEditingCell(Integer, Integer)
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.SheetView.SearchView*
+  commentId: Overload:NonNonSheet.Editor.SheetView.SearchView
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_SearchView
+  name: SearchView
+  nameWithType: SheetView.SearchView
+  fullName: NonNonSheet.Editor.SheetView.SearchView
+- uid: NonNonSheet.Editor.SearchView
+  commentId: T:NonNonSheet.Editor.SearchView
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SearchView.html
+  name: SearchView
+  nameWithType: SearchView
+  fullName: NonNonSheet.Editor.SearchView
+- uid: NonNonSheet.Editor.SheetView.FilterView*
+  commentId: Overload:NonNonSheet.Editor.SheetView.FilterView
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_FilterView
+  name: FilterView
+  nameWithType: SheetView.FilterView
+  fullName: NonNonSheet.Editor.SheetView.FilterView
+- uid: NonNonSheet.Editor.FilterView
+  commentId: T:NonNonSheet.Editor.FilterView
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.FilterView.html
+  name: FilterView
+  nameWithType: FilterView
+  fullName: NonNonSheet.Editor.FilterView
+- uid: NonNonSheet.Editor.SheetView.ReorderView*
+  commentId: Overload:NonNonSheet.Editor.SheetView.ReorderView
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_ReorderView
+  name: ReorderView
+  nameWithType: SheetView.ReorderView
+  fullName: NonNonSheet.Editor.SheetView.ReorderView
+- uid: NonNonSheet.Editor.ReorderView
+  commentId: T:NonNonSheet.Editor.ReorderView
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.ReorderView.html
+  name: ReorderView
+  nameWithType: ReorderView
+  fullName: NonNonSheet.Editor.ReorderView
+- uid: NonNonSheet.Editor.SheetView.VisibleCellRegistry*
+  commentId: Overload:NonNonSheet.Editor.SheetView.VisibleCellRegistry
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_VisibleCellRegistry
+  name: VisibleCellRegistry
+  nameWithType: SheetView.VisibleCellRegistry
+  fullName: NonNonSheet.Editor.SheetView.VisibleCellRegistry
+- uid: NonNonSheet.Editor.VisibleCellRegistry
+  commentId: T:NonNonSheet.Editor.VisibleCellRegistry
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.VisibleCellRegistry.html
+  name: VisibleCellRegistry
+  nameWithType: VisibleCellRegistry
+  fullName: NonNonSheet.Editor.VisibleCellRegistry
+- uid: NonNonSheet.Editor.SheetView.TableSerializedObject*
+  commentId: Overload:NonNonSheet.Editor.SheetView.TableSerializedObject
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_TableSerializedObject
+  name: TableSerializedObject
+  nameWithType: SheetView.TableSerializedObject
+  fullName: NonNonSheet.Editor.SheetView.TableSerializedObject
+- uid: SerializedObject
+  isExternal: true
+  name: SerializedObject
+  nameWithType: SerializedObject
+  fullName: SerializedObject
+- uid: NonNonSheet.Editor.SheetView.DataSerializedProperty*
+  commentId: Overload:NonNonSheet.Editor.SheetView.DataSerializedProperty
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_DataSerializedProperty
+  name: DataSerializedProperty
+  nameWithType: SheetView.DataSerializedProperty
+  fullName: NonNonSheet.Editor.SheetView.DataSerializedProperty
+- uid: SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: SerializedProperty
+- uid: NonNonSheet.Editor.SheetView.RootVisualElement*
+  commentId: Overload:NonNonSheet.Editor.SheetView.RootVisualElement
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_RootVisualElement
+  name: RootVisualElement
+  nameWithType: SheetView.RootVisualElement
+  fullName: NonNonSheet.Editor.SheetView.RootVisualElement
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement
+- uid: NonNonSheet.Editor.SheetView.MultiColumnListView*
+  commentId: Overload:NonNonSheet.Editor.SheetView.MultiColumnListView
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_MultiColumnListView
+  name: MultiColumnListView
+  nameWithType: SheetView.MultiColumnListView
+  fullName: NonNonSheet.Editor.SheetView.MultiColumnListView
+- uid: MultiColumnListView
+  isExternal: true
+  name: MultiColumnListView
+  nameWithType: MultiColumnListView
+  fullName: MultiColumnListView
+- uid: NonNonSheet.Editor.SheetView.SelectMarker*
+  commentId: Overload:NonNonSheet.Editor.SheetView.SelectMarker
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_SelectMarker
+  name: SelectMarker
+  nameWithType: SheetView.SelectMarker
+  fullName: NonNonSheet.Editor.SheetView.SelectMarker
+- uid: NonNonSheet.Editor.Marker
+  commentId: T:NonNonSheet.Editor.Marker
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Marker.html
+  name: Marker
+  nameWithType: Marker
+  fullName: NonNonSheet.Editor.Marker
+- uid: NonNonSheet.Editor.SheetView.SelectRangeMarker*
+  commentId: Overload:NonNonSheet.Editor.SheetView.SelectRangeMarker
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_SelectRangeMarker
+  name: SelectRangeMarker
+  nameWithType: SheetView.SelectRangeMarker
+  fullName: NonNonSheet.Editor.SheetView.SelectRangeMarker
+- uid: NonNonSheet.Editor.SheetView.CopyMarker*
+  commentId: Overload:NonNonSheet.Editor.SheetView.CopyMarker
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_CopyMarker
+  name: CopyMarker
+  nameWithType: SheetView.CopyMarker
+  fullName: NonNonSheet.Editor.SheetView.CopyMarker
+- uid: NonNonSheet.Editor.SheetView.AddRowButton*
+  commentId: Overload:NonNonSheet.Editor.SheetView.AddRowButton
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_AddRowButton
+  name: AddRowButton
+  nameWithType: SheetView.AddRowButton
+  fullName: NonNonSheet.Editor.SheetView.AddRowButton
+- uid: Button
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: Button
+- uid: NonNonSheet.Editor.SheetView.DisplayIndices*
+  commentId: Overload:NonNonSheet.Editor.SheetView.DisplayIndices
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_DisplayIndices
+  name: DisplayIndices
+  nameWithType: SheetView.DisplayIndices
+  fullName: NonNonSheet.Editor.SheetView.DisplayIndices
+- uid: System.Collections.Generic.IReadOnlyList{System.Int32}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<int>
+  nameWithType: IReadOnlyList<int>
+  fullName: System.Collections.Generic.IReadOnlyList<int>
+  nameWithType.vb: IReadOnlyList(Of Integer)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Integer)
+  name.vb: IReadOnlyList(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: NonNonSheet.Editor.SheetView.IsSorted*
+  commentId: Overload:NonNonSheet.Editor.SheetView.IsSorted
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_IsSorted
+  name: IsSorted
+  nameWithType: SheetView.IsSorted
+  fullName: NonNonSheet.Editor.SheetView.IsSorted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Func{System.Collections.Generic.List{System.Int32}}
+  commentId: T:System.Func{System.Collections.Generic.List{System.Int32}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<List<int>>
+  nameWithType: Func<List<int>>
+  fullName: System.Func<System.Collections.Generic.List<int>>
+  nameWithType.vb: Func(Of List(Of Integer))
+  fullName.vb: System.Func(Of System.Collections.Generic.List(Of Integer))
+  name.vb: Func(Of List(Of Integer))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: NonNonSheet.Editor.SheetView.#ctor*
+  commentId: Overload:NonNonSheet.Editor.SheetView.#ctor
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView__ctor_NonNonSheet_NonNonTable_VisualElement_SerializedObject_SerializedProperty_
+  name: SheetView
+  nameWithType: SheetView.SheetView
+  fullName: NonNonSheet.Editor.SheetView.SheetView
+  nameWithType.vb: SheetView.New
+  fullName.vb: NonNonSheet.Editor.SheetView.New
+  name.vb: New
+- uid: NonNonSheet.NonNonTable
+  commentId: T:NonNonSheet.NonNonTable
+  parent: NonNonSheet
+  href: NonNonSheet.NonNonTable.html
+  name: NonNonTable
+  nameWithType: NonNonTable
+  fullName: NonNonSheet.NonNonTable
+- uid: NonNonSheet
+  commentId: N:NonNonSheet
+  href: NonNonSheet.html
+  name: NonNonSheet
+  nameWithType: NonNonSheet
+  fullName: NonNonSheet
+- uid: NonNonSheet.Editor.SheetView.OnEnable*
+  commentId: Overload:NonNonSheet.Editor.SheetView.OnEnable
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_OnEnable
+  name: OnEnable
+  nameWithType: SheetView.OnEnable
+  fullName: NonNonSheet.Editor.SheetView.OnEnable
+- uid: NonNonSheet.Editor.SheetView.RefreshItems*
+  commentId: Overload:NonNonSheet.Editor.SheetView.RefreshItems
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_RefreshItems_System_Collections_Generic_List_System_Int32__
+  name: RefreshItems
+  nameWithType: SheetView.RefreshItems
+  fullName: NonNonSheet.Editor.SheetView.RefreshItems
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.Editor.SheetView.Focus*
+  commentId: Overload:NonNonSheet.Editor.SheetView.Focus
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_Focus
+  name: Focus
+  nameWithType: SheetView.Focus
+  fullName: NonNonSheet.Editor.SheetView.Focus
+- uid: NonNonSheet.Editor.SheetView.ForEachVisibleCell*
+  commentId: Overload:NonNonSheet.Editor.SheetView.ForEachVisibleCell
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_ForEachVisibleCell_System_Action_NonNonSheet_Editor_Cell__
+  name: ForEachVisibleCell
+  nameWithType: SheetView.ForEachVisibleCell
+  fullName: NonNonSheet.Editor.SheetView.ForEachVisibleCell
+- uid: System.Action{NonNonSheet.Editor.Cell}
+  commentId: T:System.Action{NonNonSheet.Editor.Cell}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Cell>
+  nameWithType: Action<Cell>
+  fullName: System.Action<NonNonSheet.Editor.Cell>
+  nameWithType.vb: Action(Of Cell)
+  fullName.vb: System.Action(Of NonNonSheet.Editor.Cell)
+  name.vb: Action(Of Cell)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: NonNonSheet.Editor.Cell
+    name: Cell
+    href: NonNonSheet.Editor.Cell.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Editor.Cell
+    name: Cell
+    href: NonNonSheet.Editor.Cell.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.Editor.SheetView.ForEachVisibleIndexCell*
+  commentId: Overload:NonNonSheet.Editor.SheetView.ForEachVisibleIndexCell
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_ForEachVisibleIndexCell_System_Action_NonNonSheet_Editor_IndexCell__
+  name: ForEachVisibleIndexCell
+  nameWithType: SheetView.ForEachVisibleIndexCell
+  fullName: NonNonSheet.Editor.SheetView.ForEachVisibleIndexCell
+- uid: System.Action{NonNonSheet.Editor.IndexCell}
+  commentId: T:System.Action{NonNonSheet.Editor.IndexCell}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<IndexCell>
+  nameWithType: Action<IndexCell>
+  fullName: System.Action<NonNonSheet.Editor.IndexCell>
+  nameWithType.vb: Action(Of IndexCell)
+  fullName.vb: System.Action(Of NonNonSheet.Editor.IndexCell)
+  name.vb: Action(Of IndexCell)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: NonNonSheet.Editor.IndexCell
+    name: IndexCell
+    href: NonNonSheet.Editor.IndexCell.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NonNonSheet.Editor.IndexCell
+    name: IndexCell
+    href: NonNonSheet.Editor.IndexCell.html
+  - name: )
+- uid: NonNonSheet.Editor.SheetView.SwitchAddRowButton*
+  commentId: Overload:NonNonSheet.Editor.SheetView.SwitchAddRowButton
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_SwitchAddRowButton_System_Boolean_
+  name: SwitchAddRowButton
+  nameWithType: SheetView.SwitchAddRowButton
+  fullName: NonNonSheet.Editor.SheetView.SwitchAddRowButton
+- uid: NonNonSheet.Editor.SheetView.ScheduleAction*
+  commentId: Overload:NonNonSheet.Editor.SheetView.ScheduleAction
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_ScheduleAction_System_Action_
+  name: ScheduleAction
+  nameWithType: SheetView.ScheduleAction
+  fullName: NonNonSheet.Editor.SheetView.ScheduleAction
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: NonNonSheet.Editor.SheetView.ScrollToRow*
+  commentId: Overload:NonNonSheet.Editor.SheetView.ScrollToRow
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_ScrollToRow_System_Int32_
+  name: ScrollToRow
+  nameWithType: SheetView.ScrollToRow
+  fullName: NonNonSheet.Editor.SheetView.ScrollToRow
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.Editor.SheetView.ScrollToCell*
+  commentId: Overload:NonNonSheet.Editor.SheetView.ScrollToCell
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_ScrollToCell_System_Int32_System_Int32_
+  name: ScrollToCell
+  nameWithType: SheetView.ScrollToCell
+  fullName: NonNonSheet.Editor.SheetView.ScrollToCell
+- uid: NonNonSheet.Editor.SheetView.FocusCell*
+  commentId: Overload:NonNonSheet.Editor.SheetView.FocusCell
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_FocusCell_System_Int32_System_Int32_
+  name: FocusCell
+  nameWithType: SheetView.FocusCell
+  fullName: NonNonSheet.Editor.SheetView.FocusCell
+- uid: NonNonSheet.Editor.SheetView.StartEditingCell*
+  commentId: Overload:NonNonSheet.Editor.SheetView.StartEditingCell
+  href: NonNonSheet.Editor.SheetView.html#NonNonSheet_Editor_SheetView_StartEditingCell_System_Int32_System_Int32_
+  name: StartEditingCell
+  nameWithType: SheetView.StartEditingCell
+  fullName: NonNonSheet.Editor.SheetView.StartEditingCell

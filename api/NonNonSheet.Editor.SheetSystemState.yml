@@ -1,0 +1,1863 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.SheetSystemState
+  commentId: T:NonNonSheet.Editor.SheetSystemState
+  id: SheetSystemState
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.SheetSystemState.ClearCopy
+  - NonNonSheet.Editor.SheetSystemState.ClearSelection
+  - NonNonSheet.Editor.SheetSystemState.ColumnCount
+  - NonNonSheet.Editor.SheetSystemState.CopyCellPosition
+  - NonNonSheet.Editor.SheetSystemState.DataSerializedProperty
+  - NonNonSheet.Editor.SheetSystemState.DisplayIndices
+  - NonNonSheet.Editor.SheetSystemState.DisplayRowCount
+  - NonNonSheet.Editor.SheetSystemState.EndSelectedCellPos
+  - NonNonSheet.Editor.SheetSystemState.EndSelectedRowIndex
+  - NonNonSheet.Editor.SheetSystemState.Filters
+  - NonNonSheet.Editor.SheetSystemState.GetCellSelectionRange
+  - NonNonSheet.Editor.SheetSystemState.GetDataRowAtDisplayPos(System.Int32)
+  - NonNonSheet.Editor.SheetSystemState.GetDisplayPos(System.Int32)
+  - NonNonSheet.Editor.SheetSystemState.GetRowSelectionRange
+  - NonNonSheet.Editor.SheetSystemState.GetSelectedCellDataRows
+  - NonNonSheet.Editor.SheetSystemState.GetSelectedRowDataRows
+  - NonNonSheet.Editor.SheetSystemState.InvalidPosition
+  - NonNonSheet.Editor.SheetSystemState.InvalidRowIndex
+  - NonNonSheet.Editor.SheetSystemState.IsCellCopied(System.Int32,System.Int32)
+  - NonNonSheet.Editor.SheetSystemState.IsCellInSelection(System.Int32,System.Int32)
+  - NonNonSheet.Editor.SheetSystemState.IsCellSelecting
+  - NonNonSheet.Editor.SheetSystemState.IsCellSelectionStart(System.Int32,System.Int32)
+  - NonNonSheet.Editor.SheetSystemState.IsExistCopyCell
+  - NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedCell
+  - NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedRow
+  - NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedCell
+  - NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedRow
+  - NonNonSheet.Editor.SheetSystemState.IsRowInSelection(System.Int32)
+  - NonNonSheet.Editor.SheetSystemState.IsRowSelecting
+  - NonNonSheet.Editor.SheetSystemState.RowCount
+  - NonNonSheet.Editor.SheetSystemState.StartSelectedCellPos
+  - NonNonSheet.Editor.SheetSystemState.StartSelectedRowIndex
+  - NonNonSheet.Editor.SheetSystemState.TableSerializedObject
+  langs:
+  - csharp
+  - vb
+  name: SheetSystemState
+  nameWithType: SheetSystemState
+  fullName: NonNonSheet.Editor.SheetSystemState
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SheetSystemState
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 6
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public class SheetSystemState
+    content.vb: Public Class SheetSystemState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NonNonSheet.Editor.SheetSystemState.TableSerializedObject
+  commentId: F:NonNonSheet.Editor.SheetSystemState.TableSerializedObject
+  id: TableSerializedObject
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: TableSerializedObject
+  nameWithType: SheetSystemState.TableSerializedObject
+  fullName: NonNonSheet.Editor.SheetSystemState.TableSerializedObject
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: TableSerializedObject
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public SerializedObject TableSerializedObject
+    return:
+      type: SerializedObject
+    content.vb: Public TableSerializedObject As SerializedObject
+- uid: NonNonSheet.Editor.SheetSystemState.DataSerializedProperty
+  commentId: F:NonNonSheet.Editor.SheetSystemState.DataSerializedProperty
+  id: DataSerializedProperty
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: DataSerializedProperty
+  nameWithType: SheetSystemState.DataSerializedProperty
+  fullName: NonNonSheet.Editor.SheetSystemState.DataSerializedProperty
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DataSerializedProperty
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 9
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public SerializedProperty DataSerializedProperty
+    return:
+      type: SerializedProperty
+    content.vb: Public DataSerializedProperty As SerializedProperty
+- uid: NonNonSheet.Editor.SheetSystemState.InvalidPosition
+  commentId: F:NonNonSheet.Editor.SheetSystemState.InvalidPosition
+  id: InvalidPosition
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: InvalidPosition
+  nameWithType: SheetSystemState.InvalidPosition
+  fullName: NonNonSheet.Editor.SheetSystemState.InvalidPosition
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: InvalidPosition
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 11
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public static readonly Vector2Int InvalidPosition
+    return:
+      type: Vector2Int
+    content.vb: Public Shared ReadOnly InvalidPosition As Vector2Int
+- uid: NonNonSheet.Editor.SheetSystemState.InvalidRowIndex
+  commentId: F:NonNonSheet.Editor.SheetSystemState.InvalidRowIndex
+  id: InvalidRowIndex
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: InvalidRowIndex
+  nameWithType: SheetSystemState.InvalidRowIndex
+  fullName: NonNonSheet.Editor.SheetSystemState.InvalidRowIndex
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: InvalidRowIndex
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 12
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public const int InvalidRowIndex = -1
+    return:
+      type: System.Int32
+    content.vb: Public Const InvalidRowIndex As Integer = -1
+- uid: NonNonSheet.Editor.SheetSystemState.ColumnCount
+  commentId: F:NonNonSheet.Editor.SheetSystemState.ColumnCount
+  id: ColumnCount
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: ColumnCount
+  nameWithType: SheetSystemState.ColumnCount
+  fullName: NonNonSheet.Editor.SheetSystemState.ColumnCount
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ColumnCount
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 14
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public int ColumnCount
+    return:
+      type: System.Int32
+    content.vb: Public ColumnCount As Integer
+- uid: NonNonSheet.Editor.SheetSystemState.RowCount
+  commentId: F:NonNonSheet.Editor.SheetSystemState.RowCount
+  id: RowCount
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: RowCount
+  nameWithType: SheetSystemState.RowCount
+  fullName: NonNonSheet.Editor.SheetSystemState.RowCount
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: RowCount
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 15
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public int RowCount
+    return:
+      type: System.Int32
+    content.vb: Public RowCount As Integer
+- uid: NonNonSheet.Editor.SheetSystemState.DisplayIndices
+  commentId: F:NonNonSheet.Editor.SheetSystemState.DisplayIndices
+  id: DisplayIndices
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: DisplayIndices
+  nameWithType: SheetSystemState.DisplayIndices
+  fullName: NonNonSheet.Editor.SheetSystemState.DisplayIndices
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DisplayIndices
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 22
+  namespace: NonNonSheet.Editor
+  summary: >-
+    ソート/フィルタ後の表示順インデックスリスト (displayPos → dataRowIndex)。
+
+    SheetView.DisplayIndices と同一参照。Presenter 側で設定する。
+
+    null の場合は identity (displayPos == dataRowIndex)。
+  example: []
+  syntax:
+    content: public IReadOnlyList<int> DisplayIndices
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Int32}
+    content.vb: Public DisplayIndices As IReadOnlyList(Of Integer)
+- uid: NonNonSheet.Editor.SheetSystemState.DisplayRowCount
+  commentId: P:NonNonSheet.Editor.SheetSystemState.DisplayRowCount
+  id: DisplayRowCount
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: DisplayRowCount
+  nameWithType: SheetSystemState.DisplayRowCount
+  fullName: NonNonSheet.Editor.SheetSystemState.DisplayRowCount
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: DisplayRowCount
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 25
+  namespace: NonNonSheet.Editor
+  summary: 表示行数 (ソート/フィルタ適用後)。
+  example: []
+  syntax:
+    content: public int DisplayRowCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property DisplayRowCount As Integer
+  overload: NonNonSheet.Editor.SheetSystemState.DisplayRowCount*
+- uid: NonNonSheet.Editor.SheetSystemState.IsCellSelecting
+  commentId: F:NonNonSheet.Editor.SheetSystemState.IsCellSelecting
+  id: IsCellSelecting
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: IsCellSelecting
+  nameWithType: SheetSystemState.IsCellSelecting
+  fullName: NonNonSheet.Editor.SheetSystemState.IsCellSelecting
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsCellSelecting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 27
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsCellSelecting
+    return:
+      type: System.Boolean
+    content.vb: Public IsCellSelecting As Boolean
+- uid: NonNonSheet.Editor.SheetSystemState.IsRowSelecting
+  commentId: F:NonNonSheet.Editor.SheetSystemState.IsRowSelecting
+  id: IsRowSelecting
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: IsRowSelecting
+  nameWithType: SheetSystemState.IsRowSelecting
+  fullName: NonNonSheet.Editor.SheetSystemState.IsRowSelecting
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsRowSelecting
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 28
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsRowSelecting
+    return:
+      type: System.Boolean
+    content.vb: Public IsRowSelecting As Boolean
+- uid: NonNonSheet.Editor.SheetSystemState.StartSelectedCellPos
+  commentId: F:NonNonSheet.Editor.SheetSystemState.StartSelectedCellPos
+  id: StartSelectedCellPos
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: StartSelectedCellPos
+  nameWithType: SheetSystemState.StartSelectedCellPos
+  fullName: NonNonSheet.Editor.SheetSystemState.StartSelectedCellPos
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StartSelectedCellPos
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 30
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Vector2Int StartSelectedCellPos
+    return:
+      type: Vector2Int
+    content.vb: Public StartSelectedCellPos As Vector2Int
+- uid: NonNonSheet.Editor.SheetSystemState.EndSelectedCellPos
+  commentId: F:NonNonSheet.Editor.SheetSystemState.EndSelectedCellPos
+  id: EndSelectedCellPos
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: EndSelectedCellPos
+  nameWithType: SheetSystemState.EndSelectedCellPos
+  fullName: NonNonSheet.Editor.SheetSystemState.EndSelectedCellPos
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EndSelectedCellPos
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 31
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Vector2Int EndSelectedCellPos
+    return:
+      type: Vector2Int
+    content.vb: Public EndSelectedCellPos As Vector2Int
+- uid: NonNonSheet.Editor.SheetSystemState.StartSelectedRowIndex
+  commentId: F:NonNonSheet.Editor.SheetSystemState.StartSelectedRowIndex
+  id: StartSelectedRowIndex
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: StartSelectedRowIndex
+  nameWithType: SheetSystemState.StartSelectedRowIndex
+  fullName: NonNonSheet.Editor.SheetSystemState.StartSelectedRowIndex
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StartSelectedRowIndex
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 32
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public int StartSelectedRowIndex
+    return:
+      type: System.Int32
+    content.vb: Public StartSelectedRowIndex As Integer
+- uid: NonNonSheet.Editor.SheetSystemState.EndSelectedRowIndex
+  commentId: F:NonNonSheet.Editor.SheetSystemState.EndSelectedRowIndex
+  id: EndSelectedRowIndex
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: EndSelectedRowIndex
+  nameWithType: SheetSystemState.EndSelectedRowIndex
+  fullName: NonNonSheet.Editor.SheetSystemState.EndSelectedRowIndex
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: EndSelectedRowIndex
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 33
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public int EndSelectedRowIndex
+    return:
+      type: System.Int32
+    content.vb: Public EndSelectedRowIndex As Integer
+- uid: NonNonSheet.Editor.SheetSystemState.CopyCellPosition
+  commentId: F:NonNonSheet.Editor.SheetSystemState.CopyCellPosition
+  id: CopyCellPosition
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: CopyCellPosition
+  nameWithType: SheetSystemState.CopyCellPosition
+  fullName: NonNonSheet.Editor.SheetSystemState.CopyCellPosition
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: CopyCellPosition
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 35
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Vector2Int CopyCellPosition
+    return:
+      type: Vector2Int
+    content.vb: Public CopyCellPosition As Vector2Int
+- uid: NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedCell
+  commentId: P:NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedCell
+  id: IsExistStartSelectedCell
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: IsExistStartSelectedCell
+  nameWithType: SheetSystemState.IsExistStartSelectedCell
+  fullName: NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedCell
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsExistStartSelectedCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 37
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsExistStartSelectedCell { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsExistStartSelectedCell As Boolean
+  overload: NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedCell*
+- uid: NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedCell
+  commentId: P:NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedCell
+  id: IsExistEndSelectedCell
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: IsExistEndSelectedCell
+  nameWithType: SheetSystemState.IsExistEndSelectedCell
+  fullName: NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedCell
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsExistEndSelectedCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 38
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsExistEndSelectedCell { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsExistEndSelectedCell As Boolean
+  overload: NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedCell*
+- uid: NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedRow
+  commentId: P:NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedRow
+  id: IsExistStartSelectedRow
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: IsExistStartSelectedRow
+  nameWithType: SheetSystemState.IsExistStartSelectedRow
+  fullName: NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedRow
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsExistStartSelectedRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 39
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsExistStartSelectedRow { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsExistStartSelectedRow As Boolean
+  overload: NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedRow*
+- uid: NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedRow
+  commentId: P:NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedRow
+  id: IsExistEndSelectedRow
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: IsExistEndSelectedRow
+  nameWithType: SheetSystemState.IsExistEndSelectedRow
+  fullName: NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedRow
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsExistEndSelectedRow
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 40
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsExistEndSelectedRow { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsExistEndSelectedRow As Boolean
+  overload: NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedRow*
+- uid: NonNonSheet.Editor.SheetSystemState.IsExistCopyCell
+  commentId: P:NonNonSheet.Editor.SheetSystemState.IsExistCopyCell
+  id: IsExistCopyCell
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: IsExistCopyCell
+  nameWithType: SheetSystemState.IsExistCopyCell
+  fullName: NonNonSheet.Editor.SheetSystemState.IsExistCopyCell
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsExistCopyCell
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 41
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsExistCopyCell { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsExistCopyCell As Boolean
+  overload: NonNonSheet.Editor.SheetSystemState.IsExistCopyCell*
+- uid: NonNonSheet.Editor.SheetSystemState.Filters
+  commentId: F:NonNonSheet.Editor.SheetSystemState.Filters
+  id: Filters
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: Filters
+  nameWithType: SheetSystemState.Filters
+  fullName: NonNonSheet.Editor.SheetSystemState.Filters
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Filters
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 43
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public readonly Dictionary<int, ColumnFilter> Filters
+    return:
+      type: System.Collections.Generic.Dictionary{System.Int32,NonNonSheet.Editor.ColumnFilter}
+    content.vb: Public ReadOnly Filters As Dictionary(Of Integer, ColumnFilter)
+- uid: NonNonSheet.Editor.SheetSystemState.GetDisplayPos(System.Int32)
+  commentId: M:NonNonSheet.Editor.SheetSystemState.GetDisplayPos(System.Int32)
+  id: GetDisplayPos(System.Int32)
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: GetDisplayPos(int)
+  nameWithType: SheetSystemState.GetDisplayPos(int)
+  fullName: NonNonSheet.Editor.SheetSystemState.GetDisplayPos(int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetDisplayPos
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 49
+  namespace: NonNonSheet.Editor
+  summary: >-
+    データ行インデックスから表示位置を返す。DisplayIndices が null なら identity。
+
+    -1 = 非表示 (フィルタで除外されている行)。
+  example: []
+  syntax:
+    content: public int GetDisplayPos(int dataRowIndex)
+    parameters:
+    - id: dataRowIndex
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function GetDisplayPos(dataRowIndex As Integer) As Integer
+  overload: NonNonSheet.Editor.SheetSystemState.GetDisplayPos*
+  nameWithType.vb: SheetSystemState.GetDisplayPos(Integer)
+  fullName.vb: NonNonSheet.Editor.SheetSystemState.GetDisplayPos(Integer)
+  name.vb: GetDisplayPos(Integer)
+- uid: NonNonSheet.Editor.SheetSystemState.GetDataRowAtDisplayPos(System.Int32)
+  commentId: M:NonNonSheet.Editor.SheetSystemState.GetDataRowAtDisplayPos(System.Int32)
+  id: GetDataRowAtDisplayPos(System.Int32)
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: GetDataRowAtDisplayPos(int)
+  nameWithType: SheetSystemState.GetDataRowAtDisplayPos(int)
+  fullName: NonNonSheet.Editor.SheetSystemState.GetDataRowAtDisplayPos(int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetDataRowAtDisplayPos
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 60
+  namespace: NonNonSheet.Editor
+  summary: 表示位置からデータ行インデックスを返す。DisplayIndices が null なら identity。
+  example: []
+  syntax:
+    content: public int GetDataRowAtDisplayPos(int displayPos)
+    parameters:
+    - id: displayPos
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function GetDataRowAtDisplayPos(displayPos As Integer) As Integer
+  overload: NonNonSheet.Editor.SheetSystemState.GetDataRowAtDisplayPos*
+  nameWithType.vb: SheetSystemState.GetDataRowAtDisplayPos(Integer)
+  fullName.vb: NonNonSheet.Editor.SheetSystemState.GetDataRowAtDisplayPos(Integer)
+  name.vb: GetDataRowAtDisplayPos(Integer)
+- uid: NonNonSheet.Editor.SheetSystemState.IsCellInSelection(System.Int32,System.Int32)
+  commentId: M:NonNonSheet.Editor.SheetSystemState.IsCellInSelection(System.Int32,System.Int32)
+  id: IsCellInSelection(System.Int32,System.Int32)
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: IsCellInSelection(int, int)
+  nameWithType: SheetSystemState.IsCellInSelection(int, int)
+  fullName: NonNonSheet.Editor.SheetSystemState.IsCellInSelection(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsCellInSelection
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 70
+  namespace: NonNonSheet.Editor
+  summary: 指定セルが選択範囲内かどうか。
+  example: []
+  syntax:
+    content: public bool IsCellInSelection(int row, int col)
+    parameters:
+    - id: row
+      type: System.Int32
+    - id: col
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsCellInSelection(row As Integer, col As Integer) As Boolean
+  overload: NonNonSheet.Editor.SheetSystemState.IsCellInSelection*
+  nameWithType.vb: SheetSystemState.IsCellInSelection(Integer, Integer)
+  fullName.vb: NonNonSheet.Editor.SheetSystemState.IsCellInSelection(Integer, Integer)
+  name.vb: IsCellInSelection(Integer, Integer)
+- uid: NonNonSheet.Editor.SheetSystemState.IsCellSelectionStart(System.Int32,System.Int32)
+  commentId: M:NonNonSheet.Editor.SheetSystemState.IsCellSelectionStart(System.Int32,System.Int32)
+  id: IsCellSelectionStart(System.Int32,System.Int32)
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: IsCellSelectionStart(int, int)
+  nameWithType: SheetSystemState.IsCellSelectionStart(int, int)
+  fullName: NonNonSheet.Editor.SheetSystemState.IsCellSelectionStart(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsCellSelectionStart
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 95
+  namespace: NonNonSheet.Editor
+  summary: 指定セルが選択開始位置かどうか。
+  example: []
+  syntax:
+    content: public bool IsCellSelectionStart(int row, int col)
+    parameters:
+    - id: row
+      type: System.Int32
+    - id: col
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsCellSelectionStart(row As Integer, col As Integer) As Boolean
+  overload: NonNonSheet.Editor.SheetSystemState.IsCellSelectionStart*
+  nameWithType.vb: SheetSystemState.IsCellSelectionStart(Integer, Integer)
+  fullName.vb: NonNonSheet.Editor.SheetSystemState.IsCellSelectionStart(Integer, Integer)
+  name.vb: IsCellSelectionStart(Integer, Integer)
+- uid: NonNonSheet.Editor.SheetSystemState.IsRowInSelection(System.Int32)
+  commentId: M:NonNonSheet.Editor.SheetSystemState.IsRowInSelection(System.Int32)
+  id: IsRowInSelection(System.Int32)
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: IsRowInSelection(int)
+  nameWithType: SheetSystemState.IsRowInSelection(int)
+  fullName: NonNonSheet.Editor.SheetSystemState.IsRowInSelection(int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsRowInSelection
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 100
+  namespace: NonNonSheet.Editor
+  summary: 指定行が選択範囲内かどうか。
+  example: []
+  syntax:
+    content: public bool IsRowInSelection(int row)
+    parameters:
+    - id: row
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsRowInSelection(row As Integer) As Boolean
+  overload: NonNonSheet.Editor.SheetSystemState.IsRowInSelection*
+  nameWithType.vb: SheetSystemState.IsRowInSelection(Integer)
+  fullName.vb: NonNonSheet.Editor.SheetSystemState.IsRowInSelection(Integer)
+  name.vb: IsRowInSelection(Integer)
+- uid: NonNonSheet.Editor.SheetSystemState.IsCellCopied(System.Int32,System.Int32)
+  commentId: M:NonNonSheet.Editor.SheetSystemState.IsCellCopied(System.Int32,System.Int32)
+  id: IsCellCopied(System.Int32,System.Int32)
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: IsCellCopied(int, int)
+  nameWithType: SheetSystemState.IsCellCopied(int, int)
+  fullName: NonNonSheet.Editor.SheetSystemState.IsCellCopied(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsCellCopied
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 120
+  namespace: NonNonSheet.Editor
+  summary: 指定セルがコピーされたセルかどうか。
+  example: []
+  syntax:
+    content: public bool IsCellCopied(int row, int col)
+    parameters:
+    - id: row
+      type: System.Int32
+    - id: col
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsCellCopied(row As Integer, col As Integer) As Boolean
+  overload: NonNonSheet.Editor.SheetSystemState.IsCellCopied*
+  nameWithType.vb: SheetSystemState.IsCellCopied(Integer, Integer)
+  fullName.vb: NonNonSheet.Editor.SheetSystemState.IsCellCopied(Integer, Integer)
+  name.vb: IsCellCopied(Integer, Integer)
+- uid: NonNonSheet.Editor.SheetSystemState.GetCellSelectionRange
+  commentId: M:NonNonSheet.Editor.SheetSystemState.GetCellSelectionRange
+  id: GetCellSelectionRange
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: GetCellSelectionRange()
+  nameWithType: SheetSystemState.GetCellSelectionRange()
+  fullName: NonNonSheet.Editor.SheetSystemState.GetCellSelectionRange()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetCellSelectionRange
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 127
+  namespace: NonNonSheet.Editor
+  summary: >-
+    セル選択範囲を正規化 (top, bottom, left, right) で返す。
+
+    top/bottom はデータ行インデックスの min/max。列範囲取得や後方互換に使う。
+
+    行の実際の選択セットは GetSelectedCellDataRows() を使うこと。
+  example: []
+  syntax:
+    content: public (int top, int bottom, int left, int right) GetCellSelectionRange()
+    return:
+      type: System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}
+    content.vb: Public Function GetCellSelectionRange() As (top As Integer, bottom As Integer, left As Integer, right As Integer)
+  overload: NonNonSheet.Editor.SheetSystemState.GetCellSelectionRange*
+- uid: NonNonSheet.Editor.SheetSystemState.GetRowSelectionRange
+  commentId: M:NonNonSheet.Editor.SheetSystemState.GetRowSelectionRange
+  id: GetRowSelectionRange
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: GetRowSelectionRange()
+  nameWithType: SheetSystemState.GetRowSelectionRange()
+  fullName: NonNonSheet.Editor.SheetSystemState.GetRowSelectionRange()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetRowSelectionRange
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 147
+  namespace: NonNonSheet.Editor
+  summary: >-
+    行選択範囲を正規化 (top, bottom) で返す。
+
+    top/bottom はデータ行インデックスの min/max。RowReorderSystem などデータ空間での操作に使う。
+
+    行の実際の選択セットは GetSelectedRowDataRows() を使うこと。
+  example: []
+  syntax:
+    content: public (int top, int bottom) GetRowSelectionRange()
+    return:
+      type: System.ValueTuple{System.Int32,System.Int32}
+    content.vb: Public Function GetRowSelectionRange() As (top As Integer, bottom As Integer)
+  overload: NonNonSheet.Editor.SheetSystemState.GetRowSelectionRange*
+- uid: NonNonSheet.Editor.SheetSystemState.GetSelectedRowDataRows
+  commentId: M:NonNonSheet.Editor.SheetSystemState.GetSelectedRowDataRows
+  id: GetSelectedRowDataRows
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: GetSelectedRowDataRows()
+  nameWithType: SheetSystemState.GetSelectedRowDataRows()
+  fullName: NonNonSheet.Editor.SheetSystemState.GetSelectedRowDataRows()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetSelectedRowDataRows
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 161
+  namespace: NonNonSheet.Editor
+  summary: >-
+    行選択範囲に含まれるデータ行インデックス一覧を表示順で返す。
+
+    ソート時は表示位置に基づいた範囲から取得する。
+  example: []
+  syntax:
+    content: public IEnumerable<int> GetSelectedRowDataRows()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+    content.vb: Public Function GetSelectedRowDataRows() As IEnumerable(Of Integer)
+  overload: NonNonSheet.Editor.SheetSystemState.GetSelectedRowDataRows*
+- uid: NonNonSheet.Editor.SheetSystemState.GetSelectedCellDataRows
+  commentId: M:NonNonSheet.Editor.SheetSystemState.GetSelectedCellDataRows
+  id: GetSelectedCellDataRows
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: GetSelectedCellDataRows()
+  nameWithType: SheetSystemState.GetSelectedCellDataRows()
+  fullName: NonNonSheet.Editor.SheetSystemState.GetSelectedCellDataRows()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetSelectedCellDataRows
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 183
+  namespace: NonNonSheet.Editor
+  summary: >-
+    セル選択範囲の行部分のデータ行インデックス一覧を表示順で返す。
+
+    ソート時は表示位置に基づいた範囲から取得する。
+  example: []
+  syntax:
+    content: public IEnumerable<int> GetSelectedCellDataRows()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+    content.vb: Public Function GetSelectedCellDataRows() As IEnumerable(Of Integer)
+  overload: NonNonSheet.Editor.SheetSystemState.GetSelectedCellDataRows*
+- uid: NonNonSheet.Editor.SheetSystemState.ClearSelection
+  commentId: M:NonNonSheet.Editor.SheetSystemState.ClearSelection
+  id: ClearSelection
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: ClearSelection()
+  nameWithType: SheetSystemState.ClearSelection()
+  fullName: NonNonSheet.Editor.SheetSystemState.ClearSelection()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ClearSelection
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 204
+  namespace: NonNonSheet.Editor
+  summary: 全選択状態をクリアする。
+  example: []
+  syntax:
+    content: public void ClearSelection()
+    content.vb: Public Sub ClearSelection()
+  overload: NonNonSheet.Editor.SheetSystemState.ClearSelection*
+- uid: NonNonSheet.Editor.SheetSystemState.ClearCopy
+  commentId: M:NonNonSheet.Editor.SheetSystemState.ClearCopy
+  id: ClearCopy
+  parent: NonNonSheet.Editor.SheetSystemState
+  langs:
+  - csharp
+  - vb
+  name: ClearCopy()
+  nameWithType: SheetSystemState.ClearCopy()
+  fullName: NonNonSheet.Editor.SheetSystemState.ClearCopy()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ClearCopy
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/Helpers/SheetSystemState.cs
+    startLine: 217
+  namespace: NonNonSheet.Editor
+  summary: コピー状態をクリアする。
+  example: []
+  syntax:
+    content: public void ClearCopy()
+    content.vb: Public Sub ClearCopy()
+  overload: NonNonSheet.Editor.SheetSystemState.ClearCopy*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SerializedObject
+  isExternal: true
+  name: SerializedObject
+  nameWithType: SerializedObject
+  fullName: SerializedObject
+- uid: SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: SerializedProperty
+- uid: Vector2Int
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: Vector2Int
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IReadOnlyList{System.Int32}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<int>
+  nameWithType: IReadOnlyList<int>
+  fullName: System.Collections.Generic.IReadOnlyList<int>
+  nameWithType.vb: IReadOnlyList(Of Integer)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Integer)
+  name.vb: IReadOnlyList(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: NonNonSheet.Editor.SheetSystemState.DisplayRowCount*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.DisplayRowCount
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_DisplayRowCount
+  name: DisplayRowCount
+  nameWithType: SheetSystemState.DisplayRowCount
+  fullName: NonNonSheet.Editor.SheetSystemState.DisplayRowCount
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedCell*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedCell
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_IsExistStartSelectedCell
+  name: IsExistStartSelectedCell
+  nameWithType: SheetSystemState.IsExistStartSelectedCell
+  fullName: NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedCell
+- uid: NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedCell*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedCell
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_IsExistEndSelectedCell
+  name: IsExistEndSelectedCell
+  nameWithType: SheetSystemState.IsExistEndSelectedCell
+  fullName: NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedCell
+- uid: NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedRow*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedRow
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_IsExistStartSelectedRow
+  name: IsExistStartSelectedRow
+  nameWithType: SheetSystemState.IsExistStartSelectedRow
+  fullName: NonNonSheet.Editor.SheetSystemState.IsExistStartSelectedRow
+- uid: NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedRow*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedRow
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_IsExistEndSelectedRow
+  name: IsExistEndSelectedRow
+  nameWithType: SheetSystemState.IsExistEndSelectedRow
+  fullName: NonNonSheet.Editor.SheetSystemState.IsExistEndSelectedRow
+- uid: NonNonSheet.Editor.SheetSystemState.IsExistCopyCell*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.IsExistCopyCell
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_IsExistCopyCell
+  name: IsExistCopyCell
+  nameWithType: SheetSystemState.IsExistCopyCell
+  fullName: NonNonSheet.Editor.SheetSystemState.IsExistCopyCell
+- uid: System.Collections.Generic.Dictionary{System.Int32,NonNonSheet.Editor.ColumnFilter}
+  commentId: T:System.Collections.Generic.Dictionary{System.Int32,NonNonSheet.Editor.ColumnFilter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<int, ColumnFilter>
+  nameWithType: Dictionary<int, ColumnFilter>
+  fullName: System.Collections.Generic.Dictionary<int, NonNonSheet.Editor.ColumnFilter>
+  nameWithType.vb: Dictionary(Of Integer, ColumnFilter)
+  fullName.vb: System.Collections.Generic.Dictionary(Of Integer, NonNonSheet.Editor.ColumnFilter)
+  name.vb: Dictionary(Of Integer, ColumnFilter)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Editor.ColumnFilter
+    name: ColumnFilter
+    href: NonNonSheet.Editor.ColumnFilter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: NonNonSheet.Editor.ColumnFilter
+    name: ColumnFilter
+    href: NonNonSheet.Editor.ColumnFilter.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: NonNonSheet.Editor.SheetSystemState.GetDisplayPos*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.GetDisplayPos
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_GetDisplayPos_System_Int32_
+  name: GetDisplayPos
+  nameWithType: SheetSystemState.GetDisplayPos
+  fullName: NonNonSheet.Editor.SheetSystemState.GetDisplayPos
+- uid: NonNonSheet.Editor.SheetSystemState.GetDataRowAtDisplayPos*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.GetDataRowAtDisplayPos
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_GetDataRowAtDisplayPos_System_Int32_
+  name: GetDataRowAtDisplayPos
+  nameWithType: SheetSystemState.GetDataRowAtDisplayPos
+  fullName: NonNonSheet.Editor.SheetSystemState.GetDataRowAtDisplayPos
+- uid: NonNonSheet.Editor.SheetSystemState.IsCellInSelection*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.IsCellInSelection
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_IsCellInSelection_System_Int32_System_Int32_
+  name: IsCellInSelection
+  nameWithType: SheetSystemState.IsCellInSelection
+  fullName: NonNonSheet.Editor.SheetSystemState.IsCellInSelection
+- uid: NonNonSheet.Editor.SheetSystemState.IsCellSelectionStart*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.IsCellSelectionStart
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_IsCellSelectionStart_System_Int32_System_Int32_
+  name: IsCellSelectionStart
+  nameWithType: SheetSystemState.IsCellSelectionStart
+  fullName: NonNonSheet.Editor.SheetSystemState.IsCellSelectionStart
+- uid: NonNonSheet.Editor.SheetSystemState.IsRowInSelection*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.IsRowInSelection
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_IsRowInSelection_System_Int32_
+  name: IsRowInSelection
+  nameWithType: SheetSystemState.IsRowInSelection
+  fullName: NonNonSheet.Editor.SheetSystemState.IsRowInSelection
+- uid: NonNonSheet.Editor.SheetSystemState.IsCellCopied*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.IsCellCopied
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_IsCellCopied_System_Int32_System_Int32_
+  name: IsCellCopied
+  nameWithType: SheetSystemState.IsCellCopied
+  fullName: NonNonSheet.Editor.SheetSystemState.IsCellCopied
+- uid: NonNonSheet.Editor.SheetSystemState.GetCellSelectionRange*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.GetCellSelectionRange
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_GetCellSelectionRange
+  name: GetCellSelectionRange
+  nameWithType: SheetSystemState.GetCellSelectionRange
+  fullName: NonNonSheet.Editor.SheetSystemState.GetCellSelectionRange
+- uid: System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}
+  commentId: T:System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}
+  parent: System
+  definition: System.ValueTuple`4
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: (int top, int bottom, int left, int right)
+  nameWithType: (int top, int bottom, int left, int right)
+  fullName: (int top, int bottom, int left, int right)
+  nameWithType.vb: (top As Integer, bottom As Integer, left As Integer, right As Integer)
+  fullName.vb: (top As Integer, bottom As Integer, left As Integer, right As Integer)
+  name.vb: (top As Integer, bottom As Integer, left As Integer, right As Integer)
+  spec.csharp:
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}.top
+    name: top
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32,system.int32,system.int32-.top
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}.bottom
+    name: bottom
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32,system.int32,system.int32-.bottom
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}.left
+    name: left
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32,system.int32,system.int32-.left
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}.right
+    name: right
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32,system.int32,system.int32-.right
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}.top
+    name: top
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32,system.int32,system.int32-.top
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}.bottom
+    name: bottom
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32,system.int32,system.int32-.bottom
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}.left
+    name: left
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32,system.int32,system.int32-.left
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}.right
+    name: right
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32,system.int32,system.int32-.right
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ValueTuple`4
+  commentId: T:System.ValueTuple`4
+  name: (T1, T2, T3, T4)
+  nameWithType: (T1, T2, T3, T4)
+  fullName: (T1, T2, T3, T4)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: )
+- uid: NonNonSheet.Editor.SheetSystemState.GetRowSelectionRange*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.GetRowSelectionRange
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_GetRowSelectionRange
+  name: GetRowSelectionRange
+  nameWithType: SheetSystemState.GetRowSelectionRange
+  fullName: NonNonSheet.Editor.SheetSystemState.GetRowSelectionRange
+- uid: System.ValueTuple{System.Int32,System.Int32}
+  commentId: T:System.ValueTuple{System.Int32,System.Int32}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: (int top, int bottom)
+  nameWithType: (int top, int bottom)
+  fullName: (int top, int bottom)
+  nameWithType.vb: (top As Integer, bottom As Integer)
+  fullName.vb: (top As Integer, bottom As Integer)
+  name.vb: (top As Integer, bottom As Integer)
+  spec.csharp:
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.top
+    name: top
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.top
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.bottom
+    name: bottom
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.bottom
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Int32,System.Int32}.top
+    name: top
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.top
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.bottom
+    name: bottom
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.bottom
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: NonNonSheet.Editor.SheetSystemState.GetSelectedRowDataRows*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.GetSelectedRowDataRows
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_GetSelectedRowDataRows
+  name: GetSelectedRowDataRows
+  nameWithType: SheetSystemState.GetSelectedRowDataRows
+  fullName: NonNonSheet.Editor.SheetSystemState.GetSelectedRowDataRows
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<int>
+  nameWithType: IEnumerable<int>
+  fullName: System.Collections.Generic.IEnumerable<int>
+  nameWithType.vb: IEnumerable(Of Integer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Integer)
+  name.vb: IEnumerable(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.Editor.SheetSystemState.GetSelectedCellDataRows*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.GetSelectedCellDataRows
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_GetSelectedCellDataRows
+  name: GetSelectedCellDataRows
+  nameWithType: SheetSystemState.GetSelectedCellDataRows
+  fullName: NonNonSheet.Editor.SheetSystemState.GetSelectedCellDataRows
+- uid: NonNonSheet.Editor.SheetSystemState.ClearSelection*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.ClearSelection
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_ClearSelection
+  name: ClearSelection
+  nameWithType: SheetSystemState.ClearSelection
+  fullName: NonNonSheet.Editor.SheetSystemState.ClearSelection
+- uid: NonNonSheet.Editor.SheetSystemState.ClearCopy*
+  commentId: Overload:NonNonSheet.Editor.SheetSystemState.ClearCopy
+  href: NonNonSheet.Editor.SheetSystemState.html#NonNonSheet_Editor_SheetSystemState_ClearCopy
+  name: ClearCopy
+  nameWithType: SheetSystemState.ClearCopy
+  fullName: NonNonSheet.Editor.SheetSystemState.ClearCopy

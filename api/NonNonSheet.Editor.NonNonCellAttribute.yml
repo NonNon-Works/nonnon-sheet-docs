@@ -14,11 +14,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/NonNonCellAttribute.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/NonNonCellAttribute.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: NonNonCellAttribute
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/NonNonCellAttribute.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/NonNonCellAttribute.cs
     startLine: 8
   namespace: NonNonSheet.Editor
   summary: >-

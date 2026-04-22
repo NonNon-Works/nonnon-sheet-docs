@@ -6,7 +6,7 @@ items:
   parent: NonNonSheet.Editor
   children:
   - NonNonSheet.Editor.CellFactory.CanCreate(NonNonSheet.ColumnMetadata)
-  - NonNonSheet.Editor.CellFactory.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata,System.Int32,System.Int32,System.Object,System.Single)
+  - NonNonSheet.Editor.CellFactory.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata)
   langs:
   - csharp
   - vb
@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellFactory.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellFactory.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: CellFactory
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellFactory.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellFactory.cs
     startLine: 2
   namespace: NonNonSheet.Editor
   syntax:
@@ -49,11 +49,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellFactory.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellFactory.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: CanCreate
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellFactory.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellFactory.cs
     startLine: 4
   namespace: NonNonSheet.Editor
   syntax:
@@ -65,48 +65,37 @@ items:
       type: System.Boolean
     content.vb: Public MustOverride Function CanCreate(column As ColumnMetadata) As Boolean
   overload: NonNonSheet.Editor.CellFactory.CanCreate*
-- uid: NonNonSheet.Editor.CellFactory.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata,System.Int32,System.Int32,System.Object,System.Single)
-  commentId: M:NonNonSheet.Editor.CellFactory.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata,System.Int32,System.Int32,System.Object,System.Single)
-  id: Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata,System.Int32,System.Int32,System.Object,System.Single)
+- uid: NonNonSheet.Editor.CellFactory.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata)
+  commentId: M:NonNonSheet.Editor.CellFactory.Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata)
+  id: Create(NonNonSheet.NonNonTable,NonNonSheet.ColumnMetadata)
   parent: NonNonSheet.Editor.CellFactory
   langs:
   - csharp
   - vb
-  name: Create(NonNonTable, ColumnMetadata, int, int, object, float)
-  nameWithType: CellFactory.Create(NonNonTable, ColumnMetadata, int, int, object, float)
-  fullName: NonNonSheet.Editor.CellFactory.Create(NonNonSheet.NonNonTable, NonNonSheet.ColumnMetadata, int, int, object, float)
+  name: Create(NonNonTable, ColumnMetadata)
+  nameWithType: CellFactory.Create(NonNonTable, ColumnMetadata)
+  fullName: NonNonSheet.Editor.CellFactory.Create(NonNonSheet.NonNonTable, NonNonSheet.ColumnMetadata)
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellFactory.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellFactory.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Create
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/CustomCell/CellFactory.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/CustomCell/CellFactory.cs
     startLine: 5
   namespace: NonNonSheet.Editor
   syntax:
-    content: public abstract Cell Create(NonNonTable table, ColumnMetadata column, int row, int col, object value, float width)
+    content: public abstract Cell Create(NonNonTable table, ColumnMetadata column)
     parameters:
     - id: table
       type: NonNonSheet.NonNonTable
     - id: column
       type: NonNonSheet.ColumnMetadata
-    - id: row
-      type: System.Int32
-    - id: col
-      type: System.Int32
-    - id: value
-      type: System.Object
-    - id: width
-      type: System.Single
     return:
       type: NonNonSheet.Editor.Cell
-    content.vb: Public MustOverride Function Create(table As NonNonTable, column As ColumnMetadata, row As Integer, col As Integer, value As Object, width As Single) As Cell
+    content.vb: Public MustOverride Function Create(table As NonNonTable, column As ColumnMetadata) As Cell
   overload: NonNonSheet.Editor.CellFactory.Create*
-  nameWithType.vb: CellFactory.Create(NonNonTable, ColumnMetadata, Integer, Integer, Object, Single)
-  fullName.vb: NonNonSheet.Editor.CellFactory.Create(NonNonSheet.NonNonTable, NonNonSheet.ColumnMetadata, Integer, Integer, Object, Single)
-  name.vb: Create(NonNonTable, ColumnMetadata, Integer, Integer, Object, Single)
 references:
 - uid: NonNonSheet.Editor
   commentId: N:NonNonSheet.Editor
@@ -399,7 +388,7 @@ references:
   fullName: NonNonSheet
 - uid: NonNonSheet.Editor.CellFactory.Create*
   commentId: Overload:NonNonSheet.Editor.CellFactory.Create
-  href: NonNonSheet.Editor.CellFactory.html#NonNonSheet_Editor_CellFactory_Create_NonNonSheet_NonNonTable_NonNonSheet_ColumnMetadata_System_Int32_System_Int32_System_Object_System_Single_
+  href: NonNonSheet.Editor.CellFactory.html#NonNonSheet_Editor_CellFactory_Create_NonNonSheet_NonNonTable_NonNonSheet_ColumnMetadata_
   name: Create
   nameWithType: CellFactory.Create
   fullName: NonNonSheet.Editor.CellFactory.Create
@@ -410,28 +399,6 @@ references:
   name: NonNonTable
   nameWithType: NonNonTable
   fullName: NonNonSheet.NonNonTable
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
 - uid: NonNonSheet.Editor.Cell
   commentId: T:NonNonSheet.Editor.Cell
   parent: NonNonSheet.Editor

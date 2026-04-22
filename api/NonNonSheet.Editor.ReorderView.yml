@@ -1,0 +1,603 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.ReorderView
+  commentId: T:NonNonSheet.Editor.ReorderView
+  id: ReorderView
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.ReorderView.#ctor(VisualElement,MultiColumnListView)
+  - NonNonSheet.Editor.ReorderView.GetReorderShadowTop
+  - NonNonSheet.Editor.ReorderView.HideReorderLine
+  - NonNonSheet.Editor.ReorderView.ReorderLine
+  - NonNonSheet.Editor.ReorderView.ReorderShadowMarker
+  - NonNonSheet.Editor.ReorderView.SetReorderShadowTop(System.Single)
+  - NonNonSheet.Editor.ReorderView.ShowReorderLineAtBottom(VisualElement)
+  - NonNonSheet.Editor.ReorderView.ShowReorderLineAtTop(VisualElement)
+  langs:
+  - csharp
+  - vb
+  name: ReorderView
+  nameWithType: ReorderView
+  fullName: NonNonSheet.Editor.ReorderView
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ReorderView
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+    startLine: 5
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public class ReorderView
+    content.vb: Public Class ReorderView
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NonNonSheet.Editor.ReorderView.ReorderShadowMarker
+  commentId: P:NonNonSheet.Editor.ReorderView.ReorderShadowMarker
+  id: ReorderShadowMarker
+  parent: NonNonSheet.Editor.ReorderView
+  langs:
+  - csharp
+  - vb
+  name: ReorderShadowMarker
+  nameWithType: ReorderView.ReorderShadowMarker
+  fullName: NonNonSheet.Editor.ReorderView.ReorderShadowMarker
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ReorderShadowMarker
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+    startLine: 10
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Marker ReorderShadowMarker { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.Editor.Marker
+    content.vb: Public ReadOnly Property ReorderShadowMarker As Marker
+  overload: NonNonSheet.Editor.ReorderView.ReorderShadowMarker*
+- uid: NonNonSheet.Editor.ReorderView.ReorderLine
+  commentId: P:NonNonSheet.Editor.ReorderView.ReorderLine
+  id: ReorderLine
+  parent: NonNonSheet.Editor.ReorderView
+  langs:
+  - csharp
+  - vb
+  name: ReorderLine
+  nameWithType: ReorderView.ReorderLine
+  fullName: NonNonSheet.Editor.ReorderView.ReorderLine
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ReorderLine
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+    startLine: 11
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public VisualElement ReorderLine { get; }
+    parameters: []
+    return:
+      type: VisualElement
+    content.vb: Public ReadOnly Property ReorderLine As VisualElement
+  overload: NonNonSheet.Editor.ReorderView.ReorderLine*
+- uid: NonNonSheet.Editor.ReorderView.#ctor(VisualElement,MultiColumnListView)
+  commentId: M:NonNonSheet.Editor.ReorderView.#ctor(VisualElement,MultiColumnListView)
+  id: '#ctor(VisualElement,MultiColumnListView)'
+  parent: NonNonSheet.Editor.ReorderView
+  langs:
+  - csharp
+  - vb
+  name: ReorderView(VisualElement, MultiColumnListView)
+  nameWithType: ReorderView.ReorderView(VisualElement, MultiColumnListView)
+  fullName: NonNonSheet.Editor.ReorderView.ReorderView(VisualElement, MultiColumnListView)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+    startLine: 13
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public ReorderView(VisualElement rootVisualElement, MultiColumnListView listView)
+    parameters:
+    - id: rootVisualElement
+      type: VisualElement
+    - id: listView
+      type: MultiColumnListView
+    content.vb: Public Sub New(rootVisualElement As VisualElement, listView As MultiColumnListView)
+  overload: NonNonSheet.Editor.ReorderView.#ctor*
+  nameWithType.vb: ReorderView.New(VisualElement, MultiColumnListView)
+  fullName.vb: NonNonSheet.Editor.ReorderView.New(VisualElement, MultiColumnListView)
+  name.vb: New(VisualElement, MultiColumnListView)
+- uid: NonNonSheet.Editor.ReorderView.HideReorderLine
+  commentId: M:NonNonSheet.Editor.ReorderView.HideReorderLine
+  id: HideReorderLine
+  parent: NonNonSheet.Editor.ReorderView
+  langs:
+  - csharp
+  - vb
+  name: HideReorderLine()
+  nameWithType: ReorderView.HideReorderLine()
+  fullName: NonNonSheet.Editor.ReorderView.HideReorderLine()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: HideReorderLine
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+    startLine: 29
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void HideReorderLine()
+    content.vb: Public Sub HideReorderLine()
+  overload: NonNonSheet.Editor.ReorderView.HideReorderLine*
+- uid: NonNonSheet.Editor.ReorderView.ShowReorderLineAtTop(VisualElement)
+  commentId: M:NonNonSheet.Editor.ReorderView.ShowReorderLineAtTop(VisualElement)
+  id: ShowReorderLineAtTop(VisualElement)
+  parent: NonNonSheet.Editor.ReorderView
+  langs:
+  - csharp
+  - vb
+  name: ShowReorderLineAtTop(VisualElement)
+  nameWithType: ReorderView.ShowReorderLineAtTop(VisualElement)
+  fullName: NonNonSheet.Editor.ReorderView.ShowReorderLineAtTop(VisualElement)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ShowReorderLineAtTop
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+    startLine: 31
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void ShowReorderLineAtTop(VisualElement element)
+    parameters:
+    - id: element
+      type: VisualElement
+    content.vb: Public Sub ShowReorderLineAtTop(element As VisualElement)
+  overload: NonNonSheet.Editor.ReorderView.ShowReorderLineAtTop*
+- uid: NonNonSheet.Editor.ReorderView.ShowReorderLineAtBottom(VisualElement)
+  commentId: M:NonNonSheet.Editor.ReorderView.ShowReorderLineAtBottom(VisualElement)
+  id: ShowReorderLineAtBottom(VisualElement)
+  parent: NonNonSheet.Editor.ReorderView
+  langs:
+  - csharp
+  - vb
+  name: ShowReorderLineAtBottom(VisualElement)
+  nameWithType: ReorderView.ShowReorderLineAtBottom(VisualElement)
+  fullName: NonNonSheet.Editor.ReorderView.ShowReorderLineAtBottom(VisualElement)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ShowReorderLineAtBottom
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+    startLine: 39
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void ShowReorderLineAtBottom(VisualElement element)
+    parameters:
+    - id: element
+      type: VisualElement
+    content.vb: Public Sub ShowReorderLineAtBottom(element As VisualElement)
+  overload: NonNonSheet.Editor.ReorderView.ShowReorderLineAtBottom*
+- uid: NonNonSheet.Editor.ReorderView.SetReorderShadowTop(System.Single)
+  commentId: M:NonNonSheet.Editor.ReorderView.SetReorderShadowTop(System.Single)
+  id: SetReorderShadowTop(System.Single)
+  parent: NonNonSheet.Editor.ReorderView
+  langs:
+  - csharp
+  - vb
+  name: SetReorderShadowTop(float)
+  nameWithType: ReorderView.SetReorderShadowTop(float)
+  fullName: NonNonSheet.Editor.ReorderView.SetReorderShadowTop(float)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SetReorderShadowTop
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+    startLine: 47
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void SetReorderShadowTop(float top)
+    parameters:
+    - id: top
+      type: System.Single
+    content.vb: Public Sub SetReorderShadowTop(top As Single)
+  overload: NonNonSheet.Editor.ReorderView.SetReorderShadowTop*
+  nameWithType.vb: ReorderView.SetReorderShadowTop(Single)
+  fullName.vb: NonNonSheet.Editor.ReorderView.SetReorderShadowTop(Single)
+  name.vb: SetReorderShadowTop(Single)
+- uid: NonNonSheet.Editor.ReorderView.GetReorderShadowTop
+  commentId: M:NonNonSheet.Editor.ReorderView.GetReorderShadowTop
+  id: GetReorderShadowTop
+  parent: NonNonSheet.Editor.ReorderView
+  langs:
+  - csharp
+  - vb
+  name: GetReorderShadowTop()
+  nameWithType: ReorderView.GetReorderShadowTop()
+  fullName: NonNonSheet.Editor.ReorderView.GetReorderShadowTop()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetReorderShadowTop
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/ReorderView.cs
+    startLine: 49
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public float GetReorderShadowTop()
+    return:
+      type: System.Single
+    content.vb: Public Function GetReorderShadowTop() As Single
+  overload: NonNonSheet.Editor.ReorderView.GetReorderShadowTop*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.ReorderView.ReorderShadowMarker*
+  commentId: Overload:NonNonSheet.Editor.ReorderView.ReorderShadowMarker
+  href: NonNonSheet.Editor.ReorderView.html#NonNonSheet_Editor_ReorderView_ReorderShadowMarker
+  name: ReorderShadowMarker
+  nameWithType: ReorderView.ReorderShadowMarker
+  fullName: NonNonSheet.Editor.ReorderView.ReorderShadowMarker
+- uid: NonNonSheet.Editor.Marker
+  commentId: T:NonNonSheet.Editor.Marker
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Marker.html
+  name: Marker
+  nameWithType: Marker
+  fullName: NonNonSheet.Editor.Marker
+- uid: NonNonSheet.Editor.ReorderView.ReorderLine*
+  commentId: Overload:NonNonSheet.Editor.ReorderView.ReorderLine
+  href: NonNonSheet.Editor.ReorderView.html#NonNonSheet_Editor_ReorderView_ReorderLine
+  name: ReorderLine
+  nameWithType: ReorderView.ReorderLine
+  fullName: NonNonSheet.Editor.ReorderView.ReorderLine
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement
+- uid: NonNonSheet.Editor.ReorderView.#ctor*
+  commentId: Overload:NonNonSheet.Editor.ReorderView.#ctor
+  href: NonNonSheet.Editor.ReorderView.html#NonNonSheet_Editor_ReorderView__ctor_VisualElement_MultiColumnListView_
+  name: ReorderView
+  nameWithType: ReorderView.ReorderView
+  fullName: NonNonSheet.Editor.ReorderView.ReorderView
+  nameWithType.vb: ReorderView.New
+  fullName.vb: NonNonSheet.Editor.ReorderView.New
+  name.vb: New
+- uid: MultiColumnListView
+  isExternal: true
+  name: MultiColumnListView
+  nameWithType: MultiColumnListView
+  fullName: MultiColumnListView
+- uid: NonNonSheet.Editor.ReorderView.HideReorderLine*
+  commentId: Overload:NonNonSheet.Editor.ReorderView.HideReorderLine
+  href: NonNonSheet.Editor.ReorderView.html#NonNonSheet_Editor_ReorderView_HideReorderLine
+  name: HideReorderLine
+  nameWithType: ReorderView.HideReorderLine
+  fullName: NonNonSheet.Editor.ReorderView.HideReorderLine
+- uid: NonNonSheet.Editor.ReorderView.ShowReorderLineAtTop*
+  commentId: Overload:NonNonSheet.Editor.ReorderView.ShowReorderLineAtTop
+  href: NonNonSheet.Editor.ReorderView.html#NonNonSheet_Editor_ReorderView_ShowReorderLineAtTop_VisualElement_
+  name: ShowReorderLineAtTop
+  nameWithType: ReorderView.ShowReorderLineAtTop
+  fullName: NonNonSheet.Editor.ReorderView.ShowReorderLineAtTop
+- uid: NonNonSheet.Editor.ReorderView.ShowReorderLineAtBottom*
+  commentId: Overload:NonNonSheet.Editor.ReorderView.ShowReorderLineAtBottom
+  href: NonNonSheet.Editor.ReorderView.html#NonNonSheet_Editor_ReorderView_ShowReorderLineAtBottom_VisualElement_
+  name: ShowReorderLineAtBottom
+  nameWithType: ReorderView.ShowReorderLineAtBottom
+  fullName: NonNonSheet.Editor.ReorderView.ShowReorderLineAtBottom
+- uid: NonNonSheet.Editor.ReorderView.SetReorderShadowTop*
+  commentId: Overload:NonNonSheet.Editor.ReorderView.SetReorderShadowTop
+  href: NonNonSheet.Editor.ReorderView.html#NonNonSheet_Editor_ReorderView_SetReorderShadowTop_System_Single_
+  name: SetReorderShadowTop
+  nameWithType: ReorderView.SetReorderShadowTop
+  fullName: NonNonSheet.Editor.ReorderView.SetReorderShadowTop
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: NonNonSheet.Editor.ReorderView.GetReorderShadowTop*
+  commentId: Overload:NonNonSheet.Editor.ReorderView.GetReorderShadowTop
+  href: NonNonSheet.Editor.ReorderView.html#NonNonSheet_Editor_ReorderView_GetReorderShadowTop
+  name: GetReorderShadowTop
+  nameWithType: ReorderView.GetReorderShadowTop
+  fullName: NonNonSheet.Editor.ReorderView.GetReorderShadowTop

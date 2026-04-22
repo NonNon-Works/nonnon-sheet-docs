@@ -16,14 +16,12 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: NonNonSheetEditorWindow
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
-    startLine: 10
+    startLine: 6
   namespace: NonNonSheet.Editor
-  summary: Editor window that displays and edits NonNonSheet tables.
-  example: []
   syntax:
     content: 'public class NonNonSheetEditorWindow : EditorWindow'
     content.vb: Public Class NonNonSheetEditorWindow Inherits EditorWindow
@@ -43,11 +41,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Open
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/NonNonSheetEditorWindow.cs
-    startLine: 27
+    startLine: 20
   namespace: NonNonSheet.Editor
   summary: >-
     Opens the NonNonSheet window for the specified <code class="paramref">table</code>.

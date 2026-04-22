@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: SliderCellAttribute
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Min
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
@@ -119,11 +119,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Max
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-    startLine: 29
+    startLine: 30
   namespace: NonNonSheet
   summary: Inclusive maximum value.
   example: []
@@ -146,11 +146,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Step
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-    startLine: 31
+    startLine: 33
   namespace: NonNonSheet
   summary: Slider step increment.
   example: []
@@ -173,11 +173,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: ShowInputField
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-    startLine: 33
+    startLine: 36
   namespace: NonNonSheet
   summary: Whether to show a numeric input field alongside the slider.
   example: []
@@ -200,11 +200,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: .ctor
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/CustomCell/CellCustomAttribute.cs
-    startLine: 42
+    startLine: 45
   namespace: NonNonSheet
   summary: Initializes a new floating-point slider specification.
   example: []

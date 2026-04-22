@@ -1,0 +1,715 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.FilterSystem
+  commentId: T:NonNonSheet.Editor.FilterSystem
+  id: FilterSystem
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.FilterSystem.ClearAllFilters
+  - NonNonSheet.Editor.FilterSystem.ClearFilter(System.Int32)
+  - NonNonSheet.Editor.FilterSystem.ComputeVisibleIndices
+  - NonNonSheet.Editor.FilterSystem.GetFilter(System.Int32)
+  - NonNonSheet.Editor.FilterSystem.HasAnyFilter
+  - NonNonSheet.Editor.FilterSystem.IsFilterActive(System.Int32)
+  - NonNonSheet.Editor.FilterSystem.SetFilter(System.Int32,NonNonSheet.Editor.FilterQuery)
+  langs:
+  - csharp
+  - vb
+  name: FilterSystem
+  nameWithType: FilterSystem
+  fullName: NonNonSheet.Editor.FilterSystem
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: FilterSystem
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+    startLine: 5
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class FilterSystem : SystemBase'
+    content.vb: Public Class FilterSystem Inherits SystemBase
+  inheritance:
+  - System.Object
+  - NonNonSheet.Editor.SystemBase
+  inheritedMembers:
+  - NonNonSheet.Editor.SystemBase.Table
+  - NonNonSheet.Editor.SystemBase.EventBus
+  - NonNonSheet.Editor.SystemBase.State
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NonNonSheet.Editor.FilterSystem.HasAnyFilter
+  commentId: M:NonNonSheet.Editor.FilterSystem.HasAnyFilter
+  id: HasAnyFilter
+  parent: NonNonSheet.Editor.FilterSystem
+  langs:
+  - csharp
+  - vb
+  name: HasAnyFilter()
+  nameWithType: FilterSystem.HasAnyFilter()
+  fullName: NonNonSheet.Editor.FilterSystem.HasAnyFilter()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: HasAnyFilter
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+    startLine: 7
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool HasAnyFilter()
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasAnyFilter() As Boolean
+  overload: NonNonSheet.Editor.FilterSystem.HasAnyFilter*
+- uid: NonNonSheet.Editor.FilterSystem.GetFilter(System.Int32)
+  commentId: M:NonNonSheet.Editor.FilterSystem.GetFilter(System.Int32)
+  id: GetFilter(System.Int32)
+  parent: NonNonSheet.Editor.FilterSystem
+  langs:
+  - csharp
+  - vb
+  name: GetFilter(int)
+  nameWithType: FilterSystem.GetFilter(int)
+  fullName: NonNonSheet.Editor.FilterSystem.GetFilter(int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetFilter
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+    startLine: 9
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public ColumnFilter GetFilter(int colIndex)
+    parameters:
+    - id: colIndex
+      type: System.Int32
+    return:
+      type: NonNonSheet.Editor.ColumnFilter
+    content.vb: Public Function GetFilter(colIndex As Integer) As ColumnFilter
+  overload: NonNonSheet.Editor.FilterSystem.GetFilter*
+  nameWithType.vb: FilterSystem.GetFilter(Integer)
+  fullName.vb: NonNonSheet.Editor.FilterSystem.GetFilter(Integer)
+  name.vb: GetFilter(Integer)
+- uid: NonNonSheet.Editor.FilterSystem.SetFilter(System.Int32,NonNonSheet.Editor.FilterQuery)
+  commentId: M:NonNonSheet.Editor.FilterSystem.SetFilter(System.Int32,NonNonSheet.Editor.FilterQuery)
+  id: SetFilter(System.Int32,NonNonSheet.Editor.FilterQuery)
+  parent: NonNonSheet.Editor.FilterSystem
+  langs:
+  - csharp
+  - vb
+  name: SetFilter(int, FilterQuery)
+  nameWithType: FilterSystem.SetFilter(int, FilterQuery)
+  fullName: NonNonSheet.Editor.FilterSystem.SetFilter(int, NonNonSheet.Editor.FilterQuery)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SetFilter
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+    startLine: 11
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void SetFilter(int colIndex, FilterQuery query)
+    parameters:
+    - id: colIndex
+      type: System.Int32
+    - id: query
+      type: NonNonSheet.Editor.FilterQuery
+    content.vb: Public Sub SetFilter(colIndex As Integer, query As FilterQuery)
+  overload: NonNonSheet.Editor.FilterSystem.SetFilter*
+  nameWithType.vb: FilterSystem.SetFilter(Integer, FilterQuery)
+  fullName.vb: NonNonSheet.Editor.FilterSystem.SetFilter(Integer, NonNonSheet.Editor.FilterQuery)
+  name.vb: SetFilter(Integer, FilterQuery)
+- uid: NonNonSheet.Editor.FilterSystem.ClearFilter(System.Int32)
+  commentId: M:NonNonSheet.Editor.FilterSystem.ClearFilter(System.Int32)
+  id: ClearFilter(System.Int32)
+  parent: NonNonSheet.Editor.FilterSystem
+  langs:
+  - csharp
+  - vb
+  name: ClearFilter(int)
+  nameWithType: FilterSystem.ClearFilter(int)
+  fullName: NonNonSheet.Editor.FilterSystem.ClearFilter(int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ClearFilter
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+    startLine: 44
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void ClearFilter(int colIndex)
+    parameters:
+    - id: colIndex
+      type: System.Int32
+    content.vb: Public Sub ClearFilter(colIndex As Integer)
+  overload: NonNonSheet.Editor.FilterSystem.ClearFilter*
+  nameWithType.vb: FilterSystem.ClearFilter(Integer)
+  fullName.vb: NonNonSheet.Editor.FilterSystem.ClearFilter(Integer)
+  name.vb: ClearFilter(Integer)
+- uid: NonNonSheet.Editor.FilterSystem.ClearAllFilters
+  commentId: M:NonNonSheet.Editor.FilterSystem.ClearAllFilters
+  id: ClearAllFilters
+  parent: NonNonSheet.Editor.FilterSystem
+  langs:
+  - csharp
+  - vb
+  name: ClearAllFilters()
+  nameWithType: FilterSystem.ClearAllFilters()
+  fullName: NonNonSheet.Editor.FilterSystem.ClearAllFilters()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ClearAllFilters
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+    startLine: 50
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void ClearAllFilters()
+    content.vb: Public Sub ClearAllFilters()
+  overload: NonNonSheet.Editor.FilterSystem.ClearAllFilters*
+- uid: NonNonSheet.Editor.FilterSystem.IsFilterActive(System.Int32)
+  commentId: M:NonNonSheet.Editor.FilterSystem.IsFilterActive(System.Int32)
+  id: IsFilterActive(System.Int32)
+  parent: NonNonSheet.Editor.FilterSystem
+  langs:
+  - csharp
+  - vb
+  name: IsFilterActive(int)
+  nameWithType: FilterSystem.IsFilterActive(int)
+  fullName: NonNonSheet.Editor.FilterSystem.IsFilterActive(int)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsFilterActive
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+    startLine: 56
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsFilterActive(int colIndex)
+    parameters:
+    - id: colIndex
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsFilterActive(colIndex As Integer) As Boolean
+  overload: NonNonSheet.Editor.FilterSystem.IsFilterActive*
+  nameWithType.vb: FilterSystem.IsFilterActive(Integer)
+  fullName.vb: NonNonSheet.Editor.FilterSystem.IsFilterActive(Integer)
+  name.vb: IsFilterActive(Integer)
+- uid: NonNonSheet.Editor.FilterSystem.ComputeVisibleIndices
+  commentId: M:NonNonSheet.Editor.FilterSystem.ComputeVisibleIndices
+  id: ComputeVisibleIndices
+  parent: NonNonSheet.Editor.FilterSystem
+  langs:
+  - csharp
+  - vb
+  name: ComputeVisibleIndices()
+  nameWithType: FilterSystem.ComputeVisibleIndices()
+  fullName: NonNonSheet.Editor.FilterSystem.ComputeVisibleIndices()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ComputeVisibleIndices
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/FilterSystem.cs
+    startLine: 58
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public List<int> ComputeVisibleIndices()
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Function ComputeVisibleIndices() As List(Of Integer)
+  overload: NonNonSheet.Editor.FilterSystem.ComputeVisibleIndices*
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: NonNonSheet.Editor.SystemBase
+  commentId: T:NonNonSheet.Editor.SystemBase
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SystemBase.html
+  name: SystemBase
+  nameWithType: SystemBase
+  fullName: NonNonSheet.Editor.SystemBase
+- uid: NonNonSheet.Editor.SystemBase.Table
+  commentId: P:NonNonSheet.Editor.SystemBase.Table
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_Table
+  name: Table
+  nameWithType: SystemBase.Table
+  fullName: NonNonSheet.Editor.SystemBase.Table
+- uid: NonNonSheet.Editor.SystemBase.EventBus
+  commentId: P:NonNonSheet.Editor.SystemBase.EventBus
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_EventBus
+  name: EventBus
+  nameWithType: SystemBase.EventBus
+  fullName: NonNonSheet.Editor.SystemBase.EventBus
+- uid: NonNonSheet.Editor.SystemBase.State
+  commentId: P:NonNonSheet.Editor.SystemBase.State
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_State
+  name: State
+  nameWithType: SystemBase.State
+  fullName: NonNonSheet.Editor.SystemBase.State
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.FilterSystem.HasAnyFilter*
+  commentId: Overload:NonNonSheet.Editor.FilterSystem.HasAnyFilter
+  href: NonNonSheet.Editor.FilterSystem.html#NonNonSheet_Editor_FilterSystem_HasAnyFilter
+  name: HasAnyFilter
+  nameWithType: FilterSystem.HasAnyFilter
+  fullName: NonNonSheet.Editor.FilterSystem.HasAnyFilter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NonNonSheet.Editor.FilterSystem.GetFilter*
+  commentId: Overload:NonNonSheet.Editor.FilterSystem.GetFilter
+  href: NonNonSheet.Editor.FilterSystem.html#NonNonSheet_Editor_FilterSystem_GetFilter_System_Int32_
+  name: GetFilter
+  nameWithType: FilterSystem.GetFilter
+  fullName: NonNonSheet.Editor.FilterSystem.GetFilter
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.Editor.ColumnFilter
+  commentId: T:NonNonSheet.Editor.ColumnFilter
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.ColumnFilter.html
+  name: ColumnFilter
+  nameWithType: ColumnFilter
+  fullName: NonNonSheet.Editor.ColumnFilter
+- uid: NonNonSheet.Editor.FilterSystem.SetFilter*
+  commentId: Overload:NonNonSheet.Editor.FilterSystem.SetFilter
+  href: NonNonSheet.Editor.FilterSystem.html#NonNonSheet_Editor_FilterSystem_SetFilter_System_Int32_NonNonSheet_Editor_FilterQuery_
+  name: SetFilter
+  nameWithType: FilterSystem.SetFilter
+  fullName: NonNonSheet.Editor.FilterSystem.SetFilter
+- uid: NonNonSheet.Editor.FilterQuery
+  commentId: T:NonNonSheet.Editor.FilterQuery
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.FilterQuery.html
+  name: FilterQuery
+  nameWithType: FilterQuery
+  fullName: NonNonSheet.Editor.FilterQuery
+- uid: NonNonSheet.Editor.FilterSystem.ClearFilter*
+  commentId: Overload:NonNonSheet.Editor.FilterSystem.ClearFilter
+  href: NonNonSheet.Editor.FilterSystem.html#NonNonSheet_Editor_FilterSystem_ClearFilter_System_Int32_
+  name: ClearFilter
+  nameWithType: FilterSystem.ClearFilter
+  fullName: NonNonSheet.Editor.FilterSystem.ClearFilter
+- uid: NonNonSheet.Editor.FilterSystem.ClearAllFilters*
+  commentId: Overload:NonNonSheet.Editor.FilterSystem.ClearAllFilters
+  href: NonNonSheet.Editor.FilterSystem.html#NonNonSheet_Editor_FilterSystem_ClearAllFilters
+  name: ClearAllFilters
+  nameWithType: FilterSystem.ClearAllFilters
+  fullName: NonNonSheet.Editor.FilterSystem.ClearAllFilters
+- uid: NonNonSheet.Editor.FilterSystem.IsFilterActive*
+  commentId: Overload:NonNonSheet.Editor.FilterSystem.IsFilterActive
+  href: NonNonSheet.Editor.FilterSystem.html#NonNonSheet_Editor_FilterSystem_IsFilterActive_System_Int32_
+  name: IsFilterActive
+  nameWithType: FilterSystem.IsFilterActive
+  fullName: NonNonSheet.Editor.FilterSystem.IsFilterActive
+- uid: NonNonSheet.Editor.FilterSystem.ComputeVisibleIndices*
+  commentId: Overload:NonNonSheet.Editor.FilterSystem.ComputeVisibleIndices
+  href: NonNonSheet.Editor.FilterSystem.html#NonNonSheet_Editor_FilterSystem_ComputeVisibleIndices
+  name: ComputeVisibleIndices
+  nameWithType: FilterSystem.ComputeVisibleIndices
+  fullName: NonNonSheet.Editor.FilterSystem.ComputeVisibleIndices
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

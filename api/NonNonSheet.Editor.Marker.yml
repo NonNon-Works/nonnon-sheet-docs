@@ -6,8 +6,8 @@ items:
   parent: NonNonSheet.Editor
   children:
   - NonNonSheet.Editor.Marker.#ctor(VisualElement,System.String)
-  - NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell)
-  - NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell)
+  - NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell,System.Nullable{Rect})
+  - NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,System.Nullable{Rect})
   - NonNonSheet.Editor.Marker.IsVisible
   langs:
   - csharp
@@ -18,11 +18,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Marker.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Marker
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Marker.cs
     startLine: 5
   namespace: NonNonSheet.Editor
   syntax:
@@ -43,11 +43,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Marker.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: IsVisible
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Marker.cs
     startLine: 9
   namespace: NonNonSheet.Editor
   syntax:
@@ -70,11 +70,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Marker.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: .ctor
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Marker.cs
     startLine: 15
   namespace: NonNonSheet.Editor
   syntax:
@@ -89,61 +89,74 @@ items:
   nameWithType.vb: Marker.New(VisualElement, String)
   fullName.vb: NonNonSheet.Editor.Marker.New(VisualElement, String)
   name.vb: New(VisualElement, String)
-- uid: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell)
-  commentId: M:NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell)
-  id: Fit(NonNonSheet.Editor.Cell)
+- uid: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,System.Nullable{Rect})
+  commentId: M:NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,System.Nullable{Rect})
+  id: Fit(NonNonSheet.Editor.Cell,System.Nullable{Rect})
   parent: NonNonSheet.Editor.Marker
   langs:
   - csharp
   - vb
-  name: Fit(Cell)
-  nameWithType: Marker.Fit(Cell)
-  fullName: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell)
+  name: Fit(Cell, Rect?)
+  nameWithType: Marker.Fit(Cell, Rect?)
+  fullName: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell, Rect?)
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Marker.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Fit
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
-    startLine: 24
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Marker.cs
+    startLine: 28
   namespace: NonNonSheet.Editor
+  summary: >-
+    単一セルに合わせて配置する。<code class="paramref">clipWorldBound</code> が渡された場合は Y 方向でクランプする。
+
+    クランプ結果として可視領域が無くなる場合は false を返す（呼び出し側で非表示化すること）。
+  example: []
   syntax:
-    content: public void Fit(Cell cell)
+    content: public bool Fit(Cell cell, Rect? clipWorldBound = null)
     parameters:
     - id: cell
       type: NonNonSheet.Editor.Cell
-    content.vb: Public Sub Fit(cell As Cell)
+    - id: clipWorldBound
+      type: System.Nullable{Rect}
+    return:
+      type: System.Boolean
+    content.vb: Public Function Fit(cell As Cell, clipWorldBound As Rect? = Nothing) As Boolean
   overload: NonNonSheet.Editor.Marker.Fit*
-- uid: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell)
-  commentId: M:NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell)
-  id: Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell)
+- uid: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell,System.Nullable{Rect})
+  commentId: M:NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell,System.Nullable{Rect})
+  id: Fit(NonNonSheet.Editor.Cell,NonNonSheet.Editor.Cell,System.Nullable{Rect})
   parent: NonNonSheet.Editor.Marker
   langs:
   - csharp
   - vb
-  name: Fit(Cell, Cell)
-  nameWithType: Marker.Fit(Cell, Cell)
-  fullName: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell, NonNonSheet.Editor.Cell)
+  name: Fit(Cell, Cell, Rect?)
+  nameWithType: Marker.Fit(Cell, Cell, Rect?)
+  fullName: NonNonSheet.Editor.Marker.Fit(NonNonSheet.Editor.Cell, NonNonSheet.Editor.Cell, Rect?)
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Marker.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Fit
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Marker.cs
-    startLine: 30
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Core/Marker.cs
+    startLine: 34
   namespace: NonNonSheet.Editor
   syntax:
-    content: public void Fit(Cell startCell, Cell endCell)
+    content: public bool Fit(Cell startCell, Cell endCell, Rect? clipWorldBound = null)
     parameters:
     - id: startCell
       type: NonNonSheet.Editor.Cell
     - id: endCell
       type: NonNonSheet.Editor.Cell
-    content.vb: Public Sub Fit(startCell As Cell, endCell As Cell)
+    - id: clipWorldBound
+      type: System.Nullable{Rect}
+    return:
+      type: System.Boolean
+    content.vb: Public Function Fit(startCell As Cell, endCell As Cell, clipWorldBound As Rect? = Nothing) As Boolean
   overload: NonNonSheet.Editor.Marker.Fit*
 references:
 - uid: NonNonSheet.Editor
@@ -230,7 +243,7 @@ references:
   name.vb: String
 - uid: NonNonSheet.Editor.Marker.Fit*
   commentId: Overload:NonNonSheet.Editor.Marker.Fit
-  href: NonNonSheet.Editor.Marker.html#NonNonSheet_Editor_Marker_Fit_NonNonSheet_Editor_Cell_
+  href: NonNonSheet.Editor.Marker.html#NonNonSheet_Editor_Marker_Fit_NonNonSheet_Editor_Cell_System_Nullable_Rect__
   name: Fit
   nameWithType: Marker.Fit
   fullName: NonNonSheet.Editor.Marker.Fit
@@ -241,3 +254,48 @@ references:
   name: Cell
   nameWithType: Cell
   fullName: NonNonSheet.Editor.Cell
+- uid: System.Nullable{Rect}
+  commentId: T:System.Nullable{Rect}
+  parent: System
+  definition: System.Nullable`1
+  name: Rect?
+  nameWithType: Rect?
+  fullName: Rect?
+  spec.csharp:
+  - uid: Rect
+    name: Rect
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Rect
+    name: Rect
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

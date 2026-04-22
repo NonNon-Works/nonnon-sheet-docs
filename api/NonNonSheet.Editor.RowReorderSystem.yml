@@ -5,15 +5,13 @@ items:
   id: RowReorderSystem
   parent: NonNonSheet.Editor
   children:
-  - NonNonSheet.Editor.RowReorderSystem.#ctor(VisualElement)
-  - NonNonSheet.Editor.RowReorderSystem.EndReordering(NonNonSheet.Editor.DataRow)
+  - NonNonSheet.Editor.RowReorderSystem.CancelReordering
+  - NonNonSheet.Editor.RowReorderSystem.EndReordering
   - NonNonSheet.Editor.RowReorderSystem.IsReordering
-  - NonNonSheet.Editor.RowReorderSystem.Reordering(MouseMoveEvent)
-  - NonNonSheet.Editor.RowReorderSystem.Reordering(NonNonSheet.Editor.DataRow)
-  - NonNonSheet.Editor.RowReorderSystem.SelectSystem
-  - NonNonSheet.Editor.RowReorderSystem.Sheet
-  - NonNonSheet.Editor.RowReorderSystem.StartReordering(NonNonSheet.Editor.DataRow,MouseDownEvent)
-  - NonNonSheet.Editor.RowReorderSystem.UndoRedoSystem
+  - NonNonSheet.Editor.RowReorderSystem.StartBottomRowIndex
+  - NonNonSheet.Editor.RowReorderSystem.StartReordering(System.Int32,System.Single)
+  - NonNonSheet.Editor.RowReorderSystem.StartTopRowIndex
+  - NonNonSheet.Editor.RowReorderSystem.UpdateReorderTarget(System.Int32)
   langs:
   - csharp
   - vb
@@ -23,19 +21,23 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: RowReorderSystem
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-    startLine: 5
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+    startLine: 2
   namespace: NonNonSheet.Editor
   syntax:
-    content: public class RowReorderSystem
-    content.vb: Public Class RowReorderSystem
+    content: 'public class RowReorderSystem : SystemBase'
+    content.vb: Public Class RowReorderSystem Inherits SystemBase
   inheritance:
   - System.Object
+  - NonNonSheet.Editor.SystemBase
   inheritedMembers:
+  - NonNonSheet.Editor.SystemBase.Table
+  - NonNonSheet.Editor.SystemBase.EventBus
+  - NonNonSheet.Editor.SystemBase.State
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -43,87 +45,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: NonNonSheet.Editor.RowReorderSystem.Sheet
-  commentId: P:NonNonSheet.Editor.RowReorderSystem.Sheet
-  id: Sheet
-  parent: NonNonSheet.Editor.RowReorderSystem
-  langs:
-  - csharp
-  - vb
-  name: Sheet
-  nameWithType: RowReorderSystem.Sheet
-  fullName: NonNonSheet.Editor.RowReorderSystem.Sheet
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: Sheet
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-    startLine: 7
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public Sheet Sheet { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.Sheet
-    content.vb: Public Property Sheet As Sheet
-  overload: NonNonSheet.Editor.RowReorderSystem.Sheet*
-- uid: NonNonSheet.Editor.RowReorderSystem.SelectSystem
-  commentId: P:NonNonSheet.Editor.RowReorderSystem.SelectSystem
-  id: SelectSystem
-  parent: NonNonSheet.Editor.RowReorderSystem
-  langs:
-  - csharp
-  - vb
-  name: SelectSystem
-  nameWithType: RowReorderSystem.SelectSystem
-  fullName: NonNonSheet.Editor.RowReorderSystem.SelectSystem
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: SelectSystem
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-    startLine: 8
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public SelectSystem SelectSystem { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.SelectSystem
-    content.vb: Public Property SelectSystem As SelectSystem
-  overload: NonNonSheet.Editor.RowReorderSystem.SelectSystem*
-- uid: NonNonSheet.Editor.RowReorderSystem.UndoRedoSystem
-  commentId: P:NonNonSheet.Editor.RowReorderSystem.UndoRedoSystem
-  id: UndoRedoSystem
-  parent: NonNonSheet.Editor.RowReorderSystem
-  langs:
-  - csharp
-  - vb
-  name: UndoRedoSystem
-  nameWithType: RowReorderSystem.UndoRedoSystem
-  fullName: NonNonSheet.Editor.RowReorderSystem.UndoRedoSystem
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: UndoRedoSystem
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-    startLine: 9
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public UndoRedoSystem UndoRedoSystem { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.UndoRedoSystem
-    content.vb: Public Property UndoRedoSystem As UndoRedoSystem
-  overload: NonNonSheet.Editor.RowReorderSystem.UndoRedoSystem*
 - uid: NonNonSheet.Editor.RowReorderSystem.IsReordering
   commentId: P:NonNonSheet.Editor.RowReorderSystem.IsReordering
   id: IsReordering
@@ -137,12 +58,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: IsReordering
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-    startLine: 11
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+    startLine: 4
   namespace: NonNonSheet.Editor
   syntax:
     content: public bool IsReordering { get; }
@@ -151,146 +72,170 @@ items:
       type: System.Boolean
     content.vb: Public Property IsReordering As Boolean
   overload: NonNonSheet.Editor.RowReorderSystem.IsReordering*
-- uid: NonNonSheet.Editor.RowReorderSystem.#ctor(VisualElement)
-  commentId: M:NonNonSheet.Editor.RowReorderSystem.#ctor(VisualElement)
-  id: '#ctor(VisualElement)'
+- uid: NonNonSheet.Editor.RowReorderSystem.StartTopRowIndex
+  commentId: P:NonNonSheet.Editor.RowReorderSystem.StartTopRowIndex
+  id: StartTopRowIndex
   parent: NonNonSheet.Editor.RowReorderSystem
   langs:
   - csharp
   - vb
-  name: RowReorderSystem(VisualElement)
-  nameWithType: RowReorderSystem.RowReorderSystem(VisualElement)
-  fullName: NonNonSheet.Editor.RowReorderSystem.RowReorderSystem(VisualElement)
-  type: Constructor
+  name: StartTopRowIndex
+  nameWithType: RowReorderSystem.StartTopRowIndex
+  fullName: NonNonSheet.Editor.RowReorderSystem.StartTopRowIndex
+  type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
-    id: .ctor
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-    startLine: 21
+    id: StartTopRowIndex
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+    startLine: 5
   namespace: NonNonSheet.Editor
   syntax:
-    content: public RowReorderSystem(VisualElement rootVisualElement)
-    parameters:
-    - id: rootVisualElement
-      type: VisualElement
-    content.vb: Public Sub New(rootVisualElement As VisualElement)
-  overload: NonNonSheet.Editor.RowReorderSystem.#ctor*
-  nameWithType.vb: RowReorderSystem.New(VisualElement)
-  fullName.vb: NonNonSheet.Editor.RowReorderSystem.New(VisualElement)
-  name.vb: New(VisualElement)
-- uid: NonNonSheet.Editor.RowReorderSystem.StartReordering(NonNonSheet.Editor.DataRow,MouseDownEvent)
-  commentId: M:NonNonSheet.Editor.RowReorderSystem.StartReordering(NonNonSheet.Editor.DataRow,MouseDownEvent)
-  id: StartReordering(NonNonSheet.Editor.DataRow,MouseDownEvent)
+    content: public int StartTopRowIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StartTopRowIndex As Integer
+  overload: NonNonSheet.Editor.RowReorderSystem.StartTopRowIndex*
+- uid: NonNonSheet.Editor.RowReorderSystem.StartBottomRowIndex
+  commentId: P:NonNonSheet.Editor.RowReorderSystem.StartBottomRowIndex
+  id: StartBottomRowIndex
   parent: NonNonSheet.Editor.RowReorderSystem
   langs:
   - csharp
   - vb
-  name: StartReordering(DataRow, MouseDownEvent)
-  nameWithType: RowReorderSystem.StartReordering(DataRow, MouseDownEvent)
-  fullName: NonNonSheet.Editor.RowReorderSystem.StartReordering(NonNonSheet.Editor.DataRow, MouseDownEvent)
+  name: StartBottomRowIndex
+  nameWithType: RowReorderSystem.StartBottomRowIndex
+  fullName: NonNonSheet.Editor.RowReorderSystem.StartBottomRowIndex
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: StartBottomRowIndex
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+    startLine: 6
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public int StartBottomRowIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StartBottomRowIndex As Integer
+  overload: NonNonSheet.Editor.RowReorderSystem.StartBottomRowIndex*
+- uid: NonNonSheet.Editor.RowReorderSystem.StartReordering(System.Int32,System.Single)
+  commentId: M:NonNonSheet.Editor.RowReorderSystem.StartReordering(System.Int32,System.Single)
+  id: StartReordering(System.Int32,System.Single)
+  parent: NonNonSheet.Editor.RowReorderSystem
+  langs:
+  - csharp
+  - vb
+  name: StartReordering(int, float)
+  nameWithType: RowReorderSystem.StartReordering(int, float)
+  fullName: NonNonSheet.Editor.RowReorderSystem.StartReordering(int, float)
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: StartReordering
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-    startLine: 27
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+    startLine: 12
   namespace: NonNonSheet.Editor
   syntax:
-    content: public void StartReordering(DataRow row, MouseDownEvent evt)
+    content: public void StartReordering(int rowIndex, float mousePositionY)
     parameters:
-    - id: row
-      type: NonNonSheet.Editor.DataRow
-    - id: evt
-      type: MouseDownEvent
-    content.vb: Public Sub StartReordering(row As DataRow, evt As MouseDownEvent)
+    - id: rowIndex
+      type: System.Int32
+    - id: mousePositionY
+      type: System.Single
+    content.vb: Public Sub StartReordering(rowIndex As Integer, mousePositionY As Single)
   overload: NonNonSheet.Editor.RowReorderSystem.StartReordering*
-- uid: NonNonSheet.Editor.RowReorderSystem.Reordering(MouseMoveEvent)
-  commentId: M:NonNonSheet.Editor.RowReorderSystem.Reordering(MouseMoveEvent)
-  id: Reordering(MouseMoveEvent)
+  nameWithType.vb: RowReorderSystem.StartReordering(Integer, Single)
+  fullName.vb: NonNonSheet.Editor.RowReorderSystem.StartReordering(Integer, Single)
+  name.vb: StartReordering(Integer, Single)
+- uid: NonNonSheet.Editor.RowReorderSystem.UpdateReorderTarget(System.Int32)
+  commentId: M:NonNonSheet.Editor.RowReorderSystem.UpdateReorderTarget(System.Int32)
+  id: UpdateReorderTarget(System.Int32)
   parent: NonNonSheet.Editor.RowReorderSystem
   langs:
   - csharp
   - vb
-  name: Reordering(MouseMoveEvent)
-  nameWithType: RowReorderSystem.Reordering(MouseMoveEvent)
-  fullName: NonNonSheet.Editor.RowReorderSystem.Reordering(MouseMoveEvent)
+  name: UpdateReorderTarget(int)
+  nameWithType: RowReorderSystem.UpdateReorderTarget(int)
+  fullName: NonNonSheet.Editor.RowReorderSystem.UpdateReorderTarget(int)
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
-    id: Reordering
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-    startLine: 44
+    id: UpdateReorderTarget
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+    startLine: 33
   namespace: NonNonSheet.Editor
   syntax:
-    content: public void Reordering(MouseMoveEvent evt)
+    content: public void UpdateReorderTarget(int targetRowIndex)
     parameters:
-    - id: evt
-      type: MouseMoveEvent
-    content.vb: Public Sub Reordering(evt As MouseMoveEvent)
-  overload: NonNonSheet.Editor.RowReorderSystem.Reordering*
-- uid: NonNonSheet.Editor.RowReorderSystem.Reordering(NonNonSheet.Editor.DataRow)
-  commentId: M:NonNonSheet.Editor.RowReorderSystem.Reordering(NonNonSheet.Editor.DataRow)
-  id: Reordering(NonNonSheet.Editor.DataRow)
+    - id: targetRowIndex
+      type: System.Int32
+    content.vb: Public Sub UpdateReorderTarget(targetRowIndex As Integer)
+  overload: NonNonSheet.Editor.RowReorderSystem.UpdateReorderTarget*
+  nameWithType.vb: RowReorderSystem.UpdateReorderTarget(Integer)
+  fullName.vb: NonNonSheet.Editor.RowReorderSystem.UpdateReorderTarget(Integer)
+  name.vb: UpdateReorderTarget(Integer)
+- uid: NonNonSheet.Editor.RowReorderSystem.EndReordering
+  commentId: M:NonNonSheet.Editor.RowReorderSystem.EndReordering
+  id: EndReordering
   parent: NonNonSheet.Editor.RowReorderSystem
   langs:
   - csharp
   - vb
-  name: Reordering(DataRow)
-  nameWithType: RowReorderSystem.Reordering(DataRow)
-  fullName: NonNonSheet.Editor.RowReorderSystem.Reordering(NonNonSheet.Editor.DataRow)
+  name: EndReordering()
+  nameWithType: RowReorderSystem.EndReordering()
+  fullName: NonNonSheet.Editor.RowReorderSystem.EndReordering()
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: Reordering
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-    startLine: 52
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public void Reordering(DataRow dataRow)
-    parameters:
-    - id: dataRow
-      type: NonNonSheet.Editor.DataRow
-    content.vb: Public Sub Reordering(dataRow As DataRow)
-  overload: NonNonSheet.Editor.RowReorderSystem.Reordering*
-- uid: NonNonSheet.Editor.RowReorderSystem.EndReordering(NonNonSheet.Editor.DataRow)
-  commentId: M:NonNonSheet.Editor.RowReorderSystem.EndReordering(NonNonSheet.Editor.DataRow)
-  id: EndReordering(NonNonSheet.Editor.DataRow)
-  parent: NonNonSheet.Editor.RowReorderSystem
-  langs:
-  - csharp
-  - vb
-  name: EndReordering(DataRow)
-  nameWithType: RowReorderSystem.EndReordering(DataRow)
-  fullName: NonNonSheet.Editor.RowReorderSystem.EndReordering(NonNonSheet.Editor.DataRow)
-  type: Method
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: EndReordering
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/RowReorderSystem.cs
-    startLine: 77
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+    startLine: 53
   namespace: NonNonSheet.Editor
   syntax:
-    content: public void EndReordering(DataRow dataRow)
-    parameters:
-    - id: dataRow
-      type: NonNonSheet.Editor.DataRow
-    content.vb: Public Sub EndReordering(dataRow As DataRow)
+    content: public void EndReordering()
+    content.vb: Public Sub EndReordering()
   overload: NonNonSheet.Editor.RowReorderSystem.EndReordering*
+- uid: NonNonSheet.Editor.RowReorderSystem.CancelReordering
+  commentId: M:NonNonSheet.Editor.RowReorderSystem.CancelReordering
+  id: CancelReordering
+  parent: NonNonSheet.Editor.RowReorderSystem
+  langs:
+  - csharp
+  - vb
+  name: CancelReordering()
+  nameWithType: RowReorderSystem.CancelReordering()
+  fullName: NonNonSheet.Editor.RowReorderSystem.CancelReordering()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: CancelReordering
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/RowReorderSystem.cs
+    startLine: 110
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void CancelReordering()
+    content.vb: Public Sub CancelReordering()
+  overload: NonNonSheet.Editor.RowReorderSystem.CancelReordering*
 references:
 - uid: NonNonSheet.Editor
   commentId: N:NonNonSheet.Editor
@@ -325,6 +270,34 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: NonNonSheet.Editor.SystemBase
+  commentId: T:NonNonSheet.Editor.SystemBase
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SystemBase.html
+  name: SystemBase
+  nameWithType: SystemBase
+  fullName: NonNonSheet.Editor.SystemBase
+- uid: NonNonSheet.Editor.SystemBase.Table
+  commentId: P:NonNonSheet.Editor.SystemBase.Table
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_Table
+  name: Table
+  nameWithType: SystemBase.Table
+  fullName: NonNonSheet.Editor.SystemBase.Table
+- uid: NonNonSheet.Editor.SystemBase.EventBus
+  commentId: P:NonNonSheet.Editor.SystemBase.EventBus
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_EventBus
+  name: EventBus
+  nameWithType: SystemBase.EventBus
+  fullName: NonNonSheet.Editor.SystemBase.EventBus
+- uid: NonNonSheet.Editor.SystemBase.State
+  commentId: P:NonNonSheet.Editor.SystemBase.State
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_State
+  name: State
+  nameWithType: SystemBase.State
+  fullName: NonNonSheet.Editor.SystemBase.State
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -551,45 +524,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: NonNonSheet.Editor.RowReorderSystem.Sheet*
-  commentId: Overload:NonNonSheet.Editor.RowReorderSystem.Sheet
-  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_Sheet
-  name: Sheet
-  nameWithType: RowReorderSystem.Sheet
-  fullName: NonNonSheet.Editor.RowReorderSystem.Sheet
-- uid: NonNonSheet.Editor.Sheet
-  commentId: T:NonNonSheet.Editor.Sheet
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.Sheet.html
-  name: Sheet
-  nameWithType: Sheet
-  fullName: NonNonSheet.Editor.Sheet
-- uid: NonNonSheet.Editor.RowReorderSystem.SelectSystem*
-  commentId: Overload:NonNonSheet.Editor.RowReorderSystem.SelectSystem
-  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_SelectSystem
-  name: SelectSystem
-  nameWithType: RowReorderSystem.SelectSystem
-  fullName: NonNonSheet.Editor.RowReorderSystem.SelectSystem
-- uid: NonNonSheet.Editor.SelectSystem
-  commentId: T:NonNonSheet.Editor.SelectSystem
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.SelectSystem.html
-  name: SelectSystem
-  nameWithType: SelectSystem
-  fullName: NonNonSheet.Editor.SelectSystem
-- uid: NonNonSheet.Editor.RowReorderSystem.UndoRedoSystem*
-  commentId: Overload:NonNonSheet.Editor.RowReorderSystem.UndoRedoSystem
-  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_UndoRedoSystem
-  name: UndoRedoSystem
-  nameWithType: RowReorderSystem.UndoRedoSystem
-  fullName: NonNonSheet.Editor.RowReorderSystem.UndoRedoSystem
-- uid: NonNonSheet.Editor.UndoRedoSystem
-  commentId: T:NonNonSheet.Editor.UndoRedoSystem
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.UndoRedoSystem.html
-  name: UndoRedoSystem
-  nameWithType: UndoRedoSystem
-  fullName: NonNonSheet.Editor.UndoRedoSystem
 - uid: NonNonSheet.Editor.RowReorderSystem.IsReordering*
   commentId: Overload:NonNonSheet.Editor.RowReorderSystem.IsReordering
   href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_IsReordering
@@ -607,53 +541,61 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: NonNonSheet.Editor.RowReorderSystem.#ctor*
-  commentId: Overload:NonNonSheet.Editor.RowReorderSystem.#ctor
-  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem__ctor_VisualElement_
-  name: RowReorderSystem
-  nameWithType: RowReorderSystem.RowReorderSystem
-  fullName: NonNonSheet.Editor.RowReorderSystem.RowReorderSystem
-  nameWithType.vb: RowReorderSystem.New
-  fullName.vb: NonNonSheet.Editor.RowReorderSystem.New
-  name.vb: New
-- uid: VisualElement
+- uid: NonNonSheet.Editor.RowReorderSystem.StartTopRowIndex*
+  commentId: Overload:NonNonSheet.Editor.RowReorderSystem.StartTopRowIndex
+  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_StartTopRowIndex
+  name: StartTopRowIndex
+  nameWithType: RowReorderSystem.StartTopRowIndex
+  fullName: NonNonSheet.Editor.RowReorderSystem.StartTopRowIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
   isExternal: true
-  name: VisualElement
-  nameWithType: VisualElement
-  fullName: VisualElement
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: NonNonSheet.Editor.RowReorderSystem.StartBottomRowIndex*
+  commentId: Overload:NonNonSheet.Editor.RowReorderSystem.StartBottomRowIndex
+  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_StartBottomRowIndex
+  name: StartBottomRowIndex
+  nameWithType: RowReorderSystem.StartBottomRowIndex
+  fullName: NonNonSheet.Editor.RowReorderSystem.StartBottomRowIndex
 - uid: NonNonSheet.Editor.RowReorderSystem.StartReordering*
   commentId: Overload:NonNonSheet.Editor.RowReorderSystem.StartReordering
-  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_StartReordering_NonNonSheet_Editor_DataRow_MouseDownEvent_
+  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_StartReordering_System_Int32_System_Single_
   name: StartReordering
   nameWithType: RowReorderSystem.StartReordering
   fullName: NonNonSheet.Editor.RowReorderSystem.StartReordering
-- uid: NonNonSheet.Editor.DataRow
-  commentId: T:NonNonSheet.Editor.DataRow
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.DataRow.html
-  name: DataRow
-  nameWithType: DataRow
-  fullName: NonNonSheet.Editor.DataRow
-- uid: MouseDownEvent
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
   isExternal: true
-  name: MouseDownEvent
-  nameWithType: MouseDownEvent
-  fullName: MouseDownEvent
-- uid: NonNonSheet.Editor.RowReorderSystem.Reordering*
-  commentId: Overload:NonNonSheet.Editor.RowReorderSystem.Reordering
-  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_Reordering_MouseMoveEvent_
-  name: Reordering
-  nameWithType: RowReorderSystem.Reordering
-  fullName: NonNonSheet.Editor.RowReorderSystem.Reordering
-- uid: MouseMoveEvent
-  commentId: '!:MouseMoveEvent'
-  isExternal: true
-  name: MouseMoveEvent
-  nameWithType: MouseMoveEvent
-  fullName: MouseMoveEvent
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: NonNonSheet.Editor.RowReorderSystem.UpdateReorderTarget*
+  commentId: Overload:NonNonSheet.Editor.RowReorderSystem.UpdateReorderTarget
+  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_UpdateReorderTarget_System_Int32_
+  name: UpdateReorderTarget
+  nameWithType: RowReorderSystem.UpdateReorderTarget
+  fullName: NonNonSheet.Editor.RowReorderSystem.UpdateReorderTarget
 - uid: NonNonSheet.Editor.RowReorderSystem.EndReordering*
   commentId: Overload:NonNonSheet.Editor.RowReorderSystem.EndReordering
-  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_EndReordering_NonNonSheet_Editor_DataRow_
+  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_EndReordering
   name: EndReordering
   nameWithType: RowReorderSystem.EndReordering
   fullName: NonNonSheet.Editor.RowReorderSystem.EndReordering
+- uid: NonNonSheet.Editor.RowReorderSystem.CancelReordering*
+  commentId: Overload:NonNonSheet.Editor.RowReorderSystem.CancelReordering
+  href: NonNonSheet.Editor.RowReorderSystem.html#NonNonSheet_Editor_RowReorderSystem_CancelReordering
+  name: CancelReordering
+  nameWithType: RowReorderSystem.CancelReordering
+  fullName: NonNonSheet.Editor.RowReorderSystem.CancelReordering

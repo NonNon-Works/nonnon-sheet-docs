@@ -5,9 +5,8 @@ items:
   id: ValidateSystem
   parent: NonNonSheet.Editor
   children:
-  - NonNonSheet.Editor.ValidateSystem.Sheet
-  - NonNonSheet.Editor.ValidateSystem.StartValidateTable
-  - NonNonSheet.Editor.ValidateSystem.Table
+  - NonNonSheet.Editor.ValidateSystem.Validate(NonNonSheet.Editor.Cell)
+  - NonNonSheet.Editor.ValidateSystem.ValidateFromTable(NonNonSheet.Editor.Cell)
   langs:
   - csharp
   - vb
@@ -17,19 +16,23 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ValidateSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/ValidateSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: ValidateSystem
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ValidateSystem.cs
-    startLine: 6
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/ValidateSystem.cs
+    startLine: 2
   namespace: NonNonSheet.Editor
   syntax:
-    content: public class ValidateSystem
-    content.vb: Public Class ValidateSystem
+    content: 'public class ValidateSystem : SystemBase'
+    content.vb: Public Class ValidateSystem Inherits SystemBase
   inheritance:
   - System.Object
+  - NonNonSheet.Editor.SystemBase
   inheritedMembers:
+  - NonNonSheet.Editor.SystemBase.Table
+  - NonNonSheet.Editor.SystemBase.EventBus
+  - NonNonSheet.Editor.SystemBase.State
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -37,84 +40,67 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: NonNonSheet.Editor.ValidateSystem.Table
-  commentId: P:NonNonSheet.Editor.ValidateSystem.Table
-  id: Table
+- uid: NonNonSheet.Editor.ValidateSystem.Validate(NonNonSheet.Editor.Cell)
+  commentId: M:NonNonSheet.Editor.ValidateSystem.Validate(NonNonSheet.Editor.Cell)
+  id: Validate(NonNonSheet.Editor.Cell)
   parent: NonNonSheet.Editor.ValidateSystem
   langs:
   - csharp
   - vb
-  name: Table
-  nameWithType: ValidateSystem.Table
-  fullName: NonNonSheet.Editor.ValidateSystem.Table
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ValidateSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: Table
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ValidateSystem.cs
-    startLine: 8
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public NonNonTable Table { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.NonNonTable
-    content.vb: Public Property Table As NonNonTable
-  overload: NonNonSheet.Editor.ValidateSystem.Table*
-- uid: NonNonSheet.Editor.ValidateSystem.Sheet
-  commentId: P:NonNonSheet.Editor.ValidateSystem.Sheet
-  id: Sheet
-  parent: NonNonSheet.Editor.ValidateSystem
-  langs:
-  - csharp
-  - vb
-  name: Sheet
-  nameWithType: ValidateSystem.Sheet
-  fullName: NonNonSheet.Editor.ValidateSystem.Sheet
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ValidateSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: Sheet
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ValidateSystem.cs
-    startLine: 9
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public Sheet Sheet { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.Sheet
-    content.vb: Public Property Sheet As Sheet
-  overload: NonNonSheet.Editor.ValidateSystem.Sheet*
-- uid: NonNonSheet.Editor.ValidateSystem.StartValidateTable
-  commentId: M:NonNonSheet.Editor.ValidateSystem.StartValidateTable
-  id: StartValidateTable
-  parent: NonNonSheet.Editor.ValidateSystem
-  langs:
-  - csharp
-  - vb
-  name: StartValidateTable()
-  nameWithType: ValidateSystem.StartValidateTable()
-  fullName: NonNonSheet.Editor.ValidateSystem.StartValidateTable()
+  name: Validate(Cell)
+  nameWithType: ValidateSystem.Validate(Cell)
+  fullName: NonNonSheet.Editor.ValidateSystem.Validate(NonNonSheet.Editor.Cell)
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ValidateSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/ValidateSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
-    id: StartValidateTable
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/ValidateSystem.cs
-    startLine: 13
+    id: Validate
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/ValidateSystem.cs
+    startLine: 4
   namespace: NonNonSheet.Editor
   syntax:
-    content: public void StartValidateTable()
-    content.vb: Public Sub StartValidateTable()
-  overload: NonNonSheet.Editor.ValidateSystem.StartValidateTable*
+    content: public ValidationResult Validate(Cell cell)
+    parameters:
+    - id: cell
+      type: NonNonSheet.Editor.Cell
+    return:
+      type: NonNonSheet.ValidationResult
+    content.vb: Public Function Validate(cell As Cell) As ValidationResult
+  overload: NonNonSheet.Editor.ValidateSystem.Validate*
+- uid: NonNonSheet.Editor.ValidateSystem.ValidateFromTable(NonNonSheet.Editor.Cell)
+  commentId: M:NonNonSheet.Editor.ValidateSystem.ValidateFromTable(NonNonSheet.Editor.Cell)
+  id: ValidateFromTable(NonNonSheet.Editor.Cell)
+  parent: NonNonSheet.Editor.ValidateSystem
+  langs:
+  - csharp
+  - vb
+  name: ValidateFromTable(Cell)
+  nameWithType: ValidateSystem.ValidateFromTable(Cell)
+  fullName: NonNonSheet.Editor.ValidateSystem.ValidateFromTable(NonNonSheet.Editor.Cell)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/ValidateSystem.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ValidateFromTable
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/ValidateSystem.cs
+    startLine: 20
+  namespace: NonNonSheet.Editor
+  summary: >-
+    セルバインド時に使用するバリデーション。
+
+    BindProperty は非同期のため cell.GetValue() が未反映の可能性があるので Table.GetValue を使う。
+  example: []
+  syntax:
+    content: public void ValidateFromTable(Cell cell)
+    parameters:
+    - id: cell
+      type: NonNonSheet.Editor.Cell
+    content.vb: Public Sub ValidateFromTable(cell As Cell)
+  overload: NonNonSheet.Editor.ValidateSystem.ValidateFromTable*
 references:
 - uid: NonNonSheet.Editor
   commentId: N:NonNonSheet.Editor
@@ -149,6 +135,34 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: NonNonSheet.Editor.SystemBase
+  commentId: T:NonNonSheet.Editor.SystemBase
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SystemBase.html
+  name: SystemBase
+  nameWithType: SystemBase
+  fullName: NonNonSheet.Editor.SystemBase
+- uid: NonNonSheet.Editor.SystemBase.Table
+  commentId: P:NonNonSheet.Editor.SystemBase.Table
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_Table
+  name: Table
+  nameWithType: SystemBase.Table
+  fullName: NonNonSheet.Editor.SystemBase.Table
+- uid: NonNonSheet.Editor.SystemBase.EventBus
+  commentId: P:NonNonSheet.Editor.SystemBase.EventBus
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_EventBus
+  name: EventBus
+  nameWithType: SystemBase.EventBus
+  fullName: NonNonSheet.Editor.SystemBase.EventBus
+- uid: NonNonSheet.Editor.SystemBase.State
+  commentId: P:NonNonSheet.Editor.SystemBase.State
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_State
+  name: State
+  nameWithType: SystemBase.State
+  fullName: NonNonSheet.Editor.SystemBase.State
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -375,41 +389,35 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: NonNonSheet.Editor.ValidateSystem.Table*
-  commentId: Overload:NonNonSheet.Editor.ValidateSystem.Table
-  href: NonNonSheet.Editor.ValidateSystem.html#NonNonSheet_Editor_ValidateSystem_Table
-  name: Table
-  nameWithType: ValidateSystem.Table
-  fullName: NonNonSheet.Editor.ValidateSystem.Table
-- uid: NonNonSheet.NonNonTable
-  commentId: T:NonNonSheet.NonNonTable
+- uid: NonNonSheet.Editor.ValidateSystem.Validate*
+  commentId: Overload:NonNonSheet.Editor.ValidateSystem.Validate
+  href: NonNonSheet.Editor.ValidateSystem.html#NonNonSheet_Editor_ValidateSystem_Validate_NonNonSheet_Editor_Cell_
+  name: Validate
+  nameWithType: ValidateSystem.Validate
+  fullName: NonNonSheet.Editor.ValidateSystem.Validate
+- uid: NonNonSheet.Editor.Cell
+  commentId: T:NonNonSheet.Editor.Cell
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Cell.html
+  name: Cell
+  nameWithType: Cell
+  fullName: NonNonSheet.Editor.Cell
+- uid: NonNonSheet.ValidationResult
+  commentId: T:NonNonSheet.ValidationResult
   parent: NonNonSheet
-  href: NonNonSheet.NonNonTable.html
-  name: NonNonTable
-  nameWithType: NonNonTable
-  fullName: NonNonSheet.NonNonTable
+  href: NonNonSheet.ValidationResult.html
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: NonNonSheet.ValidationResult
 - uid: NonNonSheet
   commentId: N:NonNonSheet
   href: NonNonSheet.html
   name: NonNonSheet
   nameWithType: NonNonSheet
   fullName: NonNonSheet
-- uid: NonNonSheet.Editor.ValidateSystem.Sheet*
-  commentId: Overload:NonNonSheet.Editor.ValidateSystem.Sheet
-  href: NonNonSheet.Editor.ValidateSystem.html#NonNonSheet_Editor_ValidateSystem_Sheet
-  name: Sheet
-  nameWithType: ValidateSystem.Sheet
-  fullName: NonNonSheet.Editor.ValidateSystem.Sheet
-- uid: NonNonSheet.Editor.Sheet
-  commentId: T:NonNonSheet.Editor.Sheet
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.Sheet.html
-  name: Sheet
-  nameWithType: Sheet
-  fullName: NonNonSheet.Editor.Sheet
-- uid: NonNonSheet.Editor.ValidateSystem.StartValidateTable*
-  commentId: Overload:NonNonSheet.Editor.ValidateSystem.StartValidateTable
-  href: NonNonSheet.Editor.ValidateSystem.html#NonNonSheet_Editor_ValidateSystem_StartValidateTable
-  name: StartValidateTable
-  nameWithType: ValidateSystem.StartValidateTable
-  fullName: NonNonSheet.Editor.ValidateSystem.StartValidateTable
+- uid: NonNonSheet.Editor.ValidateSystem.ValidateFromTable*
+  commentId: Overload:NonNonSheet.Editor.ValidateSystem.ValidateFromTable
+  href: NonNonSheet.Editor.ValidateSystem.html#NonNonSheet_Editor_ValidateSystem_ValidateFromTable_NonNonSheet_Editor_Cell_
+  name: ValidateFromTable
+  nameWithType: ValidateSystem.ValidateFromTable
+  fullName: NonNonSheet.Editor.ValidateSystem.ValidateFromTable

@@ -5,7 +5,7 @@ items:
   id: IValidator`1
   parent: NonNonSheet
   children:
-  - NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+  - NonNonSheet.IValidator`1.Validate(System.Int32,`0,System.Object)
   langs:
   - csharp
   - vb
@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: IValidator
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
@@ -36,21 +36,21 @@ items:
   nameWithType.vb: IValidator(Of T)
   fullName.vb: NonNonSheet.IValidator(Of T)
   name.vb: IValidator(Of T)
-- uid: NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
-  commentId: M:NonNonSheet.IValidator`1.Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
-  id: Validate(NonNonSheet.ColumnMetadata,`0,System.Object)
+- uid: NonNonSheet.IValidator`1.Validate(System.Int32,`0,System.Object)
+  commentId: M:NonNonSheet.IValidator`1.Validate(System.Int32,`0,System.Object)
+  id: Validate(System.Int32,`0,System.Object)
   parent: NonNonSheet.IValidator`1
   langs:
   - csharp
   - vb
-  name: Validate(ColumnMetadata, T, object)
-  nameWithType: IValidator<T>.Validate(ColumnMetadata, T, object)
-  fullName: NonNonSheet.IValidator<T>.Validate(NonNonSheet.ColumnMetadata, T, object)
+  name: Validate(int, T, object)
+  nameWithType: IValidator<T>.Validate(int, T, object)
+  fullName: NonNonSheet.IValidator<T>.Validate(int, T, object)
   type: Method
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Validate
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Validation/IValidator.cs
@@ -59,11 +59,11 @@ items:
   summary: Checks whether assigning <code class="paramref">value</code> to the column is acceptable for the given row.
   example: []
   syntax:
-    content: ValidationResult Validate(ColumnMetadata column, T data, object value)
+    content: ValidationResult Validate(int columnIndex, T data, object value)
     parameters:
-    - id: column
-      type: NonNonSheet.ColumnMetadata
-      description: Metadata of the edited column.
+    - id: columnIndex
+      type: System.Int32
+      description: Index of the edited column.
     - id: data
       type: '{T}'
       description: The current row instance.
@@ -73,11 +73,11 @@ items:
     return:
       type: NonNonSheet.ValidationResult
       description: A <xref href="NonNonSheet.ValidationResult" data-throw-if-not-resolved="false"></xref> indicating success, warning, or error.
-    content.vb: Function Validate(column As ColumnMetadata, data As T, value As Object) As ValidationResult
+    content.vb: Function Validate(columnIndex As Integer, data As T, value As Object) As ValidationResult
   overload: NonNonSheet.IValidator`1.Validate*
-  nameWithType.vb: IValidator(Of T).Validate(ColumnMetadata, T, Object)
-  fullName.vb: NonNonSheet.IValidator(Of T).Validate(NonNonSheet.ColumnMetadata, T, Object)
-  name.vb: Validate(ColumnMetadata, T, Object)
+  nameWithType.vb: IValidator(Of T).Validate(Integer, T, Object)
+  fullName.vb: NonNonSheet.IValidator(Of T).Validate(Integer, T, Object)
+  name.vb: Validate(Integer, T, Object)
 references:
 - uid: NonNonSheet
   commentId: N:NonNonSheet
@@ -94,19 +94,23 @@ references:
   fullName: NonNonSheet.ValidationResult
 - uid: NonNonSheet.IValidator`1.Validate*
   commentId: Overload:NonNonSheet.IValidator`1.Validate
-  href: NonNonSheet.IValidator-1.html#NonNonSheet_IValidator_1_Validate_NonNonSheet_ColumnMetadata__0_System_Object_
+  href: NonNonSheet.IValidator-1.html#NonNonSheet_IValidator_1_Validate_System_Int32__0_System_Object_
   name: Validate
   nameWithType: IValidator<T>.Validate
   fullName: NonNonSheet.IValidator<T>.Validate
   nameWithType.vb: IValidator(Of T).Validate
   fullName.vb: NonNonSheet.IValidator(Of T).Validate
-- uid: NonNonSheet.ColumnMetadata
-  commentId: T:NonNonSheet.ColumnMetadata
-  parent: NonNonSheet
-  href: NonNonSheet.ColumnMetadata.html
-  name: ColumnMetadata
-  nameWithType: ColumnMetadata
-  fullName: NonNonSheet.ColumnMetadata
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: '{T}'
   commentId: '!:T'
   definition: T
@@ -124,10 +128,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: T
-  name: T
-  nameWithType: T
-  fullName: T
 - uid: System
   commentId: N:System
   isExternal: true
@@ -135,3 +135,7 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

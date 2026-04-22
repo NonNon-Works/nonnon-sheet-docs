@@ -5,14 +5,15 @@ items:
   id: NonNonTable
   parent: NonNonSheet
   children:
+  - NonNonSheet.NonNonTable.ColumnWidths
   - NonNonSheet.NonNonTable.Columns
   - NonNonSheet.NonNonTable.DataType
   - NonNonSheet.NonNonTable.GetAllData
-  - NonNonSheet.NonNonTable.GetColumnWidth(System.Int32)
+  - NonNonSheet.NonNonTable.GetDataCount
   - NonNonSheet.NonNonTable.GetDataMatrix
-  - NonNonSheet.NonNonTable.SetColumnWidth(System.Int32,System.Single)
+  - NonNonSheet.NonNonTable.GetValue(System.Int32,System.Int32)
   - NonNonSheet.NonNonTable.SetValue(System.Int32,System.Int32,System.Object)
-  - NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
+  - NonNonSheet.NonNonTable.Validate(System.Int32,System.Object,System.Object)
   langs:
   - csharp
   - vb
@@ -23,11 +24,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: NonNonTable
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-    startLine: 12
+    startLine: 11
   namespace: NonNonSheet
   summary: >-
     Base ScriptableObject representing a NonNonSheet table.
@@ -55,11 +56,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: DataType
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-    startLine: 17
+    startLine: 16
   namespace: NonNonSheet
   summary: Runtime data type stored by this table.
   example: []
@@ -70,6 +71,61 @@ items:
       type: System.Type
     content.vb: Public MustOverride ReadOnly Property DataType As Type
   overload: NonNonSheet.NonNonTable.DataType*
+- uid: NonNonSheet.NonNonTable.Columns
+  commentId: P:NonNonSheet.NonNonTable.Columns
+  id: Columns
+  parent: NonNonSheet.NonNonTable
+  langs:
+  - csharp
+  - vb
+  name: Columns
+  nameWithType: NonNonTable.Columns
+  fullName: NonNonSheet.NonNonTable.Columns
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Columns
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+    startLine: 21
+  namespace: NonNonSheet
+  summary: Describes columns of this table in UI/editor.
+  example: []
+  syntax:
+    content: public abstract ColumnMetadata[] Columns { get; }
+    parameters: []
+    return:
+      type: NonNonSheet.ColumnMetadata[]
+    content.vb: Public MustOverride ReadOnly Property Columns As ColumnMetadata()
+  overload: NonNonSheet.NonNonTable.Columns*
+- uid: NonNonSheet.NonNonTable.GetDataCount
+  commentId: M:NonNonSheet.NonNonTable.GetDataCount
+  id: GetDataCount
+  parent: NonNonSheet.NonNonTable
+  langs:
+  - csharp
+  - vb
+  name: GetDataCount()
+  nameWithType: NonNonTable.GetDataCount()
+  fullName: NonNonSheet.NonNonTable.GetDataCount()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: GetDataCount
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+    startLine: 23
+  namespace: NonNonSheet
+  syntax:
+    content: public abstract int GetDataCount()
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride Function GetDataCount() As Integer
+  overload: NonNonSheet.NonNonTable.GetDataCount*
 - uid: NonNonSheet.NonNonTable.GetAllData
   commentId: M:NonNonSheet.NonNonTable.GetAllData
   id: GetAllData
@@ -84,11 +140,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: GetAllData
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-    startLine: 22
+    startLine: 29
   namespace: NonNonSheet
   summary: Returns all rows as objects.
   example: []
@@ -113,11 +169,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: GetDataMatrix
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-    startLine: 27
+    startLine: 35
   namespace: NonNonSheet
   summary: Returns the table as a jagged matrix [row][column].
   example: []
@@ -128,107 +184,40 @@ items:
       description: Matrix of cell values.
     content.vb: Public MustOverride Function GetDataMatrix() As Object()()
   overload: NonNonSheet.NonNonTable.GetDataMatrix*
-- uid: NonNonSheet.NonNonTable.Columns
-  commentId: P:NonNonSheet.NonNonTable.Columns
-  id: Columns
+- uid: NonNonSheet.NonNonTable.GetValue(System.Int32,System.Int32)
+  commentId: M:NonNonSheet.NonNonTable.GetValue(System.Int32,System.Int32)
+  id: GetValue(System.Int32,System.Int32)
   parent: NonNonSheet.NonNonTable
   langs:
   - csharp
   - vb
-  name: Columns
-  nameWithType: NonNonTable.Columns
-  fullName: NonNonSheet.NonNonTable.Columns
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: Columns
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-    startLine: 32
-  namespace: NonNonSheet
-  summary: Describes columns of this table in UI/editor.
-  example: []
-  syntax:
-    content: public abstract ColumnMetadata[] Columns { get; }
-    parameters: []
-    return:
-      type: NonNonSheet.ColumnMetadata[]
-    content.vb: Public MustOverride ReadOnly Property Columns As ColumnMetadata()
-  overload: NonNonSheet.NonNonTable.Columns*
-- uid: NonNonSheet.NonNonTable.GetColumnWidth(System.Int32)
-  commentId: M:NonNonSheet.NonNonTable.GetColumnWidth(System.Int32)
-  id: GetColumnWidth(System.Int32)
-  parent: NonNonSheet.NonNonTable
-  langs:
-  - csharp
-  - vb
-  name: GetColumnWidth(int)
-  nameWithType: NonNonTable.GetColumnWidth(int)
-  fullName: NonNonSheet.NonNonTable.GetColumnWidth(int)
+  name: GetValue(int, int)
+  nameWithType: NonNonTable.GetValue(int, int)
+  fullName: NonNonSheet.NonNonTable.GetValue(int, int)
   type: Method
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
-    id: GetColumnWidth
+    id: GetValue
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-    startLine: 38
+    startLine: 37
   namespace: NonNonSheet
-  summary: Gets the pixel width of a column.
-  example: []
   syntax:
-    content: public abstract float GetColumnWidth(int colIndex)
+    content: public abstract object GetValue(int row, int col)
     parameters:
-    - id: colIndex
+    - id: row
       type: System.Int32
-      description: Zero-based column index.
+    - id: col
+      type: System.Int32
     return:
-      type: System.Single
-      description: Width in pixels.
-    content.vb: Public MustOverride Function GetColumnWidth(colIndex As Integer) As Single
-  overload: NonNonSheet.NonNonTable.GetColumnWidth*
-  nameWithType.vb: NonNonTable.GetColumnWidth(Integer)
-  fullName.vb: NonNonSheet.NonNonTable.GetColumnWidth(Integer)
-  name.vb: GetColumnWidth(Integer)
-- uid: NonNonSheet.NonNonTable.SetColumnWidth(System.Int32,System.Single)
-  commentId: M:NonNonSheet.NonNonTable.SetColumnWidth(System.Int32,System.Single)
-  id: SetColumnWidth(System.Int32,System.Single)
-  parent: NonNonSheet.NonNonTable
-  langs:
-  - csharp
-  - vb
-  name: SetColumnWidth(int, float)
-  nameWithType: NonNonTable.SetColumnWidth(int, float)
-  fullName: NonNonSheet.NonNonTable.SetColumnWidth(int, float)
-  type: Method
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: SetColumnWidth
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-    startLine: 44
-  namespace: NonNonSheet
-  summary: Sets the pixel width of a column.
-  example: []
-  syntax:
-    content: public abstract void SetColumnWidth(int colIndex, float columnWidth)
-    parameters:
-    - id: colIndex
-      type: System.Int32
-      description: Zero-based column index.
-    - id: columnWidth
-      type: System.Single
-      description: Width in pixels.
-    content.vb: Public MustOverride Sub SetColumnWidth(colIndex As Integer, columnWidth As Single)
-  overload: NonNonSheet.NonNonTable.SetColumnWidth*
-  nameWithType.vb: NonNonTable.SetColumnWidth(Integer, Single)
-  fullName.vb: NonNonSheet.NonNonTable.SetColumnWidth(Integer, Single)
-  name.vb: SetColumnWidth(Integer, Single)
+      type: System.Object
+    content.vb: Public MustOverride Function GetValue(row As Integer, col As Integer) As Object
+  overload: NonNonSheet.NonNonTable.GetValue*
+  nameWithType.vb: NonNonTable.GetValue(Integer, Integer)
+  fullName.vb: NonNonSheet.NonNonTable.GetValue(Integer, Integer)
+  name.vb: GetValue(Integer, Integer)
 - uid: NonNonSheet.NonNonTable.SetValue(System.Int32,System.Int32,System.Object)
   commentId: M:NonNonSheet.NonNonTable.SetValue(System.Int32,System.Int32,System.Object)
   id: SetValue(System.Int32,System.Int32,System.Object)
@@ -243,11 +232,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: SetValue
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-    startLine: 52
+    startLine: 45
   namespace: NonNonSheet
   summary: Sets a cell value at the specified row and column.
   example: []
@@ -268,34 +257,33 @@ items:
   nameWithType.vb: NonNonTable.SetValue(Integer, Integer, Object)
   fullName.vb: NonNonSheet.NonNonTable.SetValue(Integer, Integer, Object)
   name.vb: SetValue(Integer, Integer, Object)
-- uid: NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
-  commentId: M:NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
-  id: Validate(NonNonSheet.ColumnMetadata,System.Object,System.Object)
+- uid: NonNonSheet.NonNonTable.Validate(System.Int32,System.Object,System.Object)
+  commentId: M:NonNonSheet.NonNonTable.Validate(System.Int32,System.Object,System.Object)
+  id: Validate(System.Int32,System.Object,System.Object)
   parent: NonNonSheet.NonNonTable
   langs:
   - csharp
   - vb
-  name: Validate(ColumnMetadata, object, object)
-  nameWithType: NonNonTable.Validate(ColumnMetadata, object, object)
-  fullName: NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata, object, object)
+  name: Validate(int, object, object)
+  nameWithType: NonNonTable.Validate(int, object, object)
+  fullName: NonNonSheet.NonNonTable.Validate(int, object, object)
   type: Method
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Validate
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
-    startLine: 61
+    startLine: 54
   namespace: NonNonSheet
   summary: Validates a value change for the given column and row data.
   example: []
   syntax:
-    content: public abstract ValidationResult Validate(ColumnMetadata column, object data, object newValue)
+    content: public abstract ValidationResult Validate(int columnIndex, object data, object newValue)
     parameters:
-    - id: column
-      type: NonNonSheet.ColumnMetadata
-      description: Column metadata for the edited column.
+    - id: columnIndex
+      type: System.Int32
     - id: data
       type: System.Object
       description: Row object being edited.
@@ -305,11 +293,36 @@ items:
     return:
       type: NonNonSheet.ValidationResult
       description: Validation result indicating success or failure with a message.
-    content.vb: Public MustOverride Function Validate(column As ColumnMetadata, data As Object, newValue As Object) As ValidationResult
+    content.vb: Public MustOverride Function Validate(columnIndex As Integer, data As Object, newValue As Object) As ValidationResult
   overload: NonNonSheet.NonNonTable.Validate*
-  nameWithType.vb: NonNonTable.Validate(ColumnMetadata, Object, Object)
-  fullName.vb: NonNonSheet.NonNonTable.Validate(NonNonSheet.ColumnMetadata, Object, Object)
-  name.vb: Validate(ColumnMetadata, Object, Object)
+  nameWithType.vb: NonNonTable.Validate(Integer, Object, Object)
+  fullName.vb: NonNonSheet.NonNonTable.Validate(Integer, Object, Object)
+  name.vb: Validate(Integer, Object, Object)
+- uid: NonNonSheet.NonNonTable.ColumnWidths
+  commentId: F:NonNonSheet.NonNonTable.ColumnWidths
+  id: ColumnWidths
+  parent: NonNonSheet.NonNonTable
+  langs:
+  - csharp
+  - vb
+  name: ColumnWidths
+  nameWithType: NonNonTable.ColumnWidths
+  fullName: NonNonSheet.NonNonTable.ColumnWidths
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ColumnWidths
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Runtime/Scripts/Core/NonNonTable.cs
+    startLine: 56
+  namespace: NonNonSheet
+  syntax:
+    content: public float[] ColumnWidths
+    return:
+      type: System.Single[]
+    content.vb: Public ColumnWidths As Single()
 references:
 - uid: NonNonSheet
   commentId: N:NonNonSheet
@@ -349,6 +362,50 @@ references:
   name: Type
   nameWithType: Type
   fullName: System.Type
+- uid: NonNonSheet.NonNonTable.Columns*
+  commentId: Overload:NonNonSheet.NonNonTable.Columns
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_Columns
+  name: Columns
+  nameWithType: NonNonTable.Columns
+  fullName: NonNonSheet.NonNonTable.Columns
+- uid: NonNonSheet.ColumnMetadata[]
+  isExternal: true
+  href: NonNonSheet.ColumnMetadata.html
+  name: ColumnMetadata[]
+  nameWithType: ColumnMetadata[]
+  fullName: NonNonSheet.ColumnMetadata[]
+  nameWithType.vb: ColumnMetadata()
+  fullName.vb: NonNonSheet.ColumnMetadata()
+  name.vb: ColumnMetadata()
+  spec.csharp:
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+    href: NonNonSheet.ColumnMetadata.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: NonNonSheet.ColumnMetadata
+    name: ColumnMetadata
+    href: NonNonSheet.ColumnMetadata.html
+  - name: (
+  - name: )
+- uid: NonNonSheet.NonNonTable.GetDataCount*
+  commentId: Overload:NonNonSheet.NonNonTable.GetDataCount
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetDataCount
+  name: GetDataCount
+  nameWithType: NonNonTable.GetDataCount
+  fullName: NonNonSheet.NonNonTable.GetDataCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: NonNonSheet.NonNonTable.GetAllData*
   commentId: Overload:NonNonSheet.NonNonTable.GetAllData
   href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetAllData
@@ -411,67 +468,12 @@ references:
   - name: )
   - name: (
   - name: )
-- uid: NonNonSheet.NonNonTable.Columns*
-  commentId: Overload:NonNonSheet.NonNonTable.Columns
-  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_Columns
-  name: Columns
-  nameWithType: NonNonTable.Columns
-  fullName: NonNonSheet.NonNonTable.Columns
-- uid: NonNonSheet.ColumnMetadata[]
-  isExternal: true
-  href: NonNonSheet.ColumnMetadata.html
-  name: ColumnMetadata[]
-  nameWithType: ColumnMetadata[]
-  fullName: NonNonSheet.ColumnMetadata[]
-  nameWithType.vb: ColumnMetadata()
-  fullName.vb: NonNonSheet.ColumnMetadata()
-  name.vb: ColumnMetadata()
-  spec.csharp:
-  - uid: NonNonSheet.ColumnMetadata
-    name: ColumnMetadata
-    href: NonNonSheet.ColumnMetadata.html
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: NonNonSheet.ColumnMetadata
-    name: ColumnMetadata
-    href: NonNonSheet.ColumnMetadata.html
-  - name: (
-  - name: )
-- uid: NonNonSheet.NonNonTable.GetColumnWidth*
-  commentId: Overload:NonNonSheet.NonNonTable.GetColumnWidth
-  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetColumnWidth_System_Int32_
-  name: GetColumnWidth
-  nameWithType: NonNonTable.GetColumnWidth
-  fullName: NonNonSheet.NonNonTable.GetColumnWidth
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
-- uid: NonNonSheet.NonNonTable.SetColumnWidth*
-  commentId: Overload:NonNonSheet.NonNonTable.SetColumnWidth
-  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_SetColumnWidth_System_Int32_System_Single_
-  name: SetColumnWidth
-  nameWithType: NonNonTable.SetColumnWidth
-  fullName: NonNonSheet.NonNonTable.SetColumnWidth
+- uid: NonNonSheet.NonNonTable.GetValue*
+  commentId: Overload:NonNonSheet.NonNonTable.GetValue
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_GetValue_System_Int32_System_Int32_
+  name: GetValue
+  nameWithType: NonNonTable.GetValue
+  fullName: NonNonSheet.NonNonTable.GetValue
 - uid: NonNonSheet.NonNonTable.SetValue*
   commentId: Overload:NonNonSheet.NonNonTable.SetValue
   href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_SetValue_System_Int32_System_Int32_System_Object_
@@ -480,17 +482,10 @@ references:
   fullName: NonNonSheet.NonNonTable.SetValue
 - uid: NonNonSheet.NonNonTable.Validate*
   commentId: Overload:NonNonSheet.NonNonTable.Validate
-  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_Validate_NonNonSheet_ColumnMetadata_System_Object_System_Object_
+  href: NonNonSheet.NonNonTable.html#NonNonSheet_NonNonTable_Validate_System_Int32_System_Object_System_Object_
   name: Validate
   nameWithType: NonNonTable.Validate
   fullName: NonNonSheet.NonNonTable.Validate
-- uid: NonNonSheet.ColumnMetadata
-  commentId: T:NonNonSheet.ColumnMetadata
-  parent: NonNonSheet
-  href: NonNonSheet.ColumnMetadata.html
-  name: ColumnMetadata
-  nameWithType: ColumnMetadata
-  fullName: NonNonSheet.ColumnMetadata
 - uid: NonNonSheet.ValidationResult
   commentId: T:NonNonSheet.ValidationResult
   parent: NonNonSheet
@@ -498,3 +493,26 @@ references:
   name: ValidationResult
   nameWithType: ValidationResult
   fullName: NonNonSheet.ValidationResult
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )

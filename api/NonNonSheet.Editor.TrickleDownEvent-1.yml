@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.TrickleDownEvent`1
+  commentId: T:NonNonSheet.Editor.TrickleDownEvent`1
+  id: TrickleDownEvent`1
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.TrickleDownEvent`1.Init
+  langs:
+  - csharp
+  - vb
+  name: TrickleDownEvent<T>
+  nameWithType: TrickleDownEvent<T>
+  fullName: NonNonSheet.Editor.TrickleDownEvent<T>
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: TrickleDownEvent
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 4
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: 'public class TrickleDownEvent<T> : EventBase<T> where T : EventBase<T>, new()'
+    typeParameters:
+    - id: T
+    content.vb: Public Class TrickleDownEvent(Of T As {EventBase(Of T), New}) Inherits EventBase(Of T)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - NonNonSheet.Editor.CancelCopyEvent
+  - NonNonSheet.Editor.CancelSelectingEvent
+  - NonNonSheet.Editor.CellBoundEvent
+  - NonNonSheet.Editor.ChangeCellValueEvent
+  - NonNonSheet.Editor.CopyCommandEvent
+  - NonNonSheet.Editor.DeleteCommandEvent
+  - NonNonSheet.Editor.EnterCellEvent
+  - NonNonSheet.Editor.FilterButtonClickedEvent
+  - NonNonSheet.Editor.FilterPopupChangedEvent
+  - NonNonSheet.Editor.FilterPopupClearEvent
+  - NonNonSheet.Editor.IndexCellBoundEvent
+  - NonNonSheet.Editor.MCLVScrolledEvent
+  - NonNonSheet.Editor.MCLVWidthChangedEvent
+  - NonNonSheet.Editor.MoveSelectionEvent
+  - NonNonSheet.Editor.PasteCommandEvent
+  - NonNonSheet.Editor.SingleClickCellEvent
+  - NonNonSheet.Editor.SortChangedEvent
+  nameWithType.vb: TrickleDownEvent(Of T)
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of T)
+  name.vb: TrickleDownEvent(Of T)
+- uid: NonNonSheet.Editor.TrickleDownEvent`1.Init
+  commentId: M:NonNonSheet.Editor.TrickleDownEvent`1.Init
+  id: Init
+  parent: NonNonSheet.Editor.TrickleDownEvent`1
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: TrickleDownEvent<T>.Init()
+  fullName: NonNonSheet.Editor.TrickleDownEvent<T>.Init()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Init
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 6
+  namespace: NonNonSheet.Editor
+  example: []
+  syntax:
+    content: protected override void Init()
+    content.vb: Protected Overrides Sub Init()
+  overload: NonNonSheet.Editor.TrickleDownEvent`1.Init*
+  nameWithType.vb: TrickleDownEvent(Of T).Init()
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of T).Init()
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.TrickleDownEvent`1.Init*
+  commentId: Overload:NonNonSheet.Editor.TrickleDownEvent`1.Init
+  href: NonNonSheet.Editor.TrickleDownEvent-1.html#NonNonSheet_Editor_TrickleDownEvent_1_Init
+  name: Init
+  nameWithType: TrickleDownEvent<T>.Init
+  fullName: NonNonSheet.Editor.TrickleDownEvent<T>.Init
+  nameWithType.vb: TrickleDownEvent(Of T).Init
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of T).Init

@@ -8,8 +8,6 @@ items:
   - NonNonSheet.Editor.UndoRedoSystem.#ctor
   - NonNonSheet.Editor.UndoRedoSystem.Dispose
   - NonNonSheet.Editor.UndoRedoSystem.RecordObject(System.String)
-  - NonNonSheet.Editor.UndoRedoSystem.Sheet
-  - NonNonSheet.Editor.UndoRedoSystem.Table
   langs:
   - csharp
   - vb
@@ -19,21 +17,25 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/UndoRedoSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: UndoRedoSystem
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-    startLine: 6
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/UndoRedoSystem.cs
+    startLine: 5
   namespace: NonNonSheet.Editor
   syntax:
-    content: 'public class UndoRedoSystem : IDisposable'
-    content.vb: Public Class UndoRedoSystem Implements IDisposable
+    content: 'public class UndoRedoSystem : SystemBase, IDisposable'
+    content.vb: Public Class UndoRedoSystem Inherits SystemBase Implements IDisposable
   inheritance:
   - System.Object
+  - NonNonSheet.Editor.SystemBase
   implements:
   - System.IDisposable
   inheritedMembers:
+  - NonNonSheet.Editor.SystemBase.Table
+  - NonNonSheet.Editor.SystemBase.EventBus
+  - NonNonSheet.Editor.SystemBase.State
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -41,60 +43,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: NonNonSheet.Editor.UndoRedoSystem.Table
-  commentId: P:NonNonSheet.Editor.UndoRedoSystem.Table
-  id: Table
-  parent: NonNonSheet.Editor.UndoRedoSystem
-  langs:
-  - csharp
-  - vb
-  name: Table
-  nameWithType: UndoRedoSystem.Table
-  fullName: NonNonSheet.Editor.UndoRedoSystem.Table
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: Table
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-    startLine: 10
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public NonNonTable Table { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.NonNonTable
-    content.vb: Public Property Table As NonNonTable
-  overload: NonNonSheet.Editor.UndoRedoSystem.Table*
-- uid: NonNonSheet.Editor.UndoRedoSystem.Sheet
-  commentId: P:NonNonSheet.Editor.UndoRedoSystem.Sheet
-  id: Sheet
-  parent: NonNonSheet.Editor.UndoRedoSystem
-  langs:
-  - csharp
-  - vb
-  name: Sheet
-  nameWithType: UndoRedoSystem.Sheet
-  fullName: NonNonSheet.Editor.UndoRedoSystem.Sheet
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: Sheet
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-    startLine: 11
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public Sheet Sheet { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.Sheet
-    content.vb: Public Property Sheet As Sheet
-  overload: NonNonSheet.Editor.UndoRedoSystem.Sheet*
 - uid: NonNonSheet.Editor.UndoRedoSystem.#ctor
   commentId: M:NonNonSheet.Editor.UndoRedoSystem.#ctor
   id: '#ctor'
@@ -108,12 +56,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/UndoRedoSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: .ctor
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-    startLine: 13
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/UndoRedoSystem.cs
+    startLine: 9
   namespace: NonNonSheet.Editor
   syntax:
     content: public UndoRedoSystem()
@@ -135,12 +83,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/UndoRedoSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: RecordObject
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-    startLine: 19
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/UndoRedoSystem.cs
+    startLine: 14
   namespace: NonNonSheet.Editor
   syntax:
     content: public void RecordObject(string message)
@@ -165,12 +113,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/UndoRedoSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Dispose
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/UndoRedoSystem.cs
-    startLine: 30
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/UndoRedoSystem.cs
+    startLine: 25
   namespace: NonNonSheet.Editor
   summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []
@@ -214,6 +162,13 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: NonNonSheet.Editor.SystemBase
+  commentId: T:NonNonSheet.Editor.SystemBase
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SystemBase.html
+  name: SystemBase
+  nameWithType: SystemBase
+  fullName: NonNonSheet.Editor.SystemBase
 - uid: System.IDisposable
   commentId: T:System.IDisposable
   parent: System
@@ -222,6 +177,27 @@ references:
   name: IDisposable
   nameWithType: IDisposable
   fullName: System.IDisposable
+- uid: NonNonSheet.Editor.SystemBase.Table
+  commentId: P:NonNonSheet.Editor.SystemBase.Table
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_Table
+  name: Table
+  nameWithType: SystemBase.Table
+  fullName: NonNonSheet.Editor.SystemBase.Table
+- uid: NonNonSheet.Editor.SystemBase.EventBus
+  commentId: P:NonNonSheet.Editor.SystemBase.EventBus
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_EventBus
+  name: EventBus
+  nameWithType: SystemBase.EventBus
+  fullName: NonNonSheet.Editor.SystemBase.EventBus
+- uid: NonNonSheet.Editor.SystemBase.State
+  commentId: P:NonNonSheet.Editor.SystemBase.State
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_State
+  name: State
+  nameWithType: SystemBase.State
+  fullName: NonNonSheet.Editor.SystemBase.State
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -448,38 +424,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: NonNonSheet.Editor.UndoRedoSystem.Table*
-  commentId: Overload:NonNonSheet.Editor.UndoRedoSystem.Table
-  href: NonNonSheet.Editor.UndoRedoSystem.html#NonNonSheet_Editor_UndoRedoSystem_Table
-  name: Table
-  nameWithType: UndoRedoSystem.Table
-  fullName: NonNonSheet.Editor.UndoRedoSystem.Table
-- uid: NonNonSheet.NonNonTable
-  commentId: T:NonNonSheet.NonNonTable
-  parent: NonNonSheet
-  href: NonNonSheet.NonNonTable.html
-  name: NonNonTable
-  nameWithType: NonNonTable
-  fullName: NonNonSheet.NonNonTable
-- uid: NonNonSheet
-  commentId: N:NonNonSheet
-  href: NonNonSheet.html
-  name: NonNonSheet
-  nameWithType: NonNonSheet
-  fullName: NonNonSheet
-- uid: NonNonSheet.Editor.UndoRedoSystem.Sheet*
-  commentId: Overload:NonNonSheet.Editor.UndoRedoSystem.Sheet
-  href: NonNonSheet.Editor.UndoRedoSystem.html#NonNonSheet_Editor_UndoRedoSystem_Sheet
-  name: Sheet
-  nameWithType: UndoRedoSystem.Sheet
-  fullName: NonNonSheet.Editor.UndoRedoSystem.Sheet
-- uid: NonNonSheet.Editor.Sheet
-  commentId: T:NonNonSheet.Editor.Sheet
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.Sheet.html
-  name: Sheet
-  nameWithType: Sheet
-  fullName: NonNonSheet.Editor.Sheet
 - uid: NonNonSheet.Editor.UndoRedoSystem.#ctor*
   commentId: Overload:NonNonSheet.Editor.UndoRedoSystem.#ctor
   href: NonNonSheet.Editor.UndoRedoSystem.html#NonNonSheet_Editor_UndoRedoSystem__ctor

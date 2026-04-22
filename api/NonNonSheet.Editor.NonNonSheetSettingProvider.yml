@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: NonNonSheetSettingProvider
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
@@ -46,7 +46,7 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: CreateProvider
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
@@ -72,11 +72,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: .ctor
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
-    startLine: 28
+    startLine: 25
   namespace: NonNonSheet.Editor
   summary: Initializes a new instance of the provider.
   example: []
@@ -111,11 +111,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: OnActivate
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
-    startLine: 36
+    startLine: 33
   namespace: NonNonSheet.Editor
   summary: Called when the settings page is activated; prepares the inspector for <xref href="NonNonSheet.Editor.NonNonSheetSetting" data-throw-if-not-resolved="false"></xref>.
   example: []
@@ -147,11 +147,11 @@ items:
   source:
     remote:
       path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
-      branch: 1.0.0
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: OnGUI
     path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/Settings/NonNonSheetSettingProvider.cs
-    startLine: 47
+    startLine: 44
   namespace: NonNonSheet.Editor
   summary: Draws the IMGUI for the NonNonSheet settings and handles saving.
   example: []

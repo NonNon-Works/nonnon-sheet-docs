@@ -12,7 +12,6 @@ items:
   - NonNonSheet.Editor.MultiSelectDropdownField`1.LabelFormatter
   - NonNonSheet.Editor.MultiSelectDropdownField`1.Selected
   - NonNonSheet.Editor.MultiSelectDropdownField`1.SetValueWithoutNotify(`0[])
-  - NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty
   - NonNonSheet.Editor.MultiSelectDropdownField`1.label
   - NonNonSheet.Editor.MultiSelectDropdownField`1.value
   langs:
@@ -24,12 +23,12 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: MultiSelectDropdownField
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-    startLine: 10
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 12
   namespace: NonNonSheet.Editor
   syntax:
     content: 'public class MultiSelectDropdownField<T> : BindableElement, INotifyValueChanged<T[]>'
@@ -56,12 +55,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: .ctor
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-    startLine: 27
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 29
   namespace: NonNonSheet.Editor
   syntax:
     content: public MultiSelectDropdownField()
@@ -83,12 +82,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: .ctor
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-    startLine: 29
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 31
   namespace: NonNonSheet.Editor
   syntax:
     content: public MultiSelectDropdownField(string label)
@@ -113,12 +112,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: label
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-    startLine: 64
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 66
   namespace: NonNonSheet.Editor
   syntax:
     content: public string label { get; set; }
@@ -142,12 +141,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Choices
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-    startLine: 85
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 87
   namespace: NonNonSheet.Editor
   summary: 選択可能な要素の一覧。
   example: []
@@ -173,12 +172,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: LabelFormatter
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-    startLine: 101
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 103
   namespace: NonNonSheet.Editor
   summary: 値を表示用の文字列に変換するためのフォーマッタ。
   example: []
@@ -204,12 +203,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Selected
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-    startLine: 114
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 116
   namespace: NonNonSheet.Editor
   summary: 便宜上、選択状態を List として取得／設定できるプロパティ。
   example: []
@@ -235,12 +234,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: value
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-    startLine: 121
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 123
   namespace: NonNonSheet.Editor
   syntax:
     content: public T[] value { get; set; }
@@ -264,12 +263,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: SetValueWithoutNotify
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-    startLine: 136
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 138
   namespace: NonNonSheet.Editor
   syntax:
     content: public void SetValueWithoutNotify(T[] newValue)
@@ -294,12 +293,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: BindProperty
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-    startLine: 246
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Fields/MultiSelectDropdownField.cs
+    startLine: 245
   namespace: NonNonSheet.Editor
   summary: >-
     このフィールドを、T の配列／List を表す SerializedProperty にバインドします。
@@ -317,34 +316,6 @@ items:
   overload: NonNonSheet.Editor.MultiSelectDropdownField`1.BindProperty*
   nameWithType.vb: MultiSelectDropdownField(Of T).BindProperty(SerializedProperty)
   fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).BindProperty(SerializedProperty)
-- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty
-  commentId: M:NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty
-  id: UnbindProperty
-  parent: NonNonSheet.Editor.MultiSelectDropdownField`1
-  langs:
-  - csharp
-  - vb
-  name: UnbindProperty()
-  nameWithType: MultiSelectDropdownField<T>.UnbindProperty()
-  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.UnbindProperty()
-  type: Method
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: UnbindProperty
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/VisualElements/Fields/MultiSelectDropdownField.cs
-    startLine: 272
-  namespace: NonNonSheet.Editor
-  summary: BindProperty により設定されたアクティブなバインディングを解除します。
-  example: []
-  syntax:
-    content: public void UnbindProperty()
-    content.vb: Public Sub UnbindProperty()
-  overload: NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty*
-  nameWithType.vb: MultiSelectDropdownField(Of T).UnbindProperty()
-  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).UnbindProperty()
 references:
 - uid: NonNonSheet.Editor
   commentId: N:NonNonSheet.Editor
@@ -705,11 +676,3 @@ references:
   name: SerializedProperty
   nameWithType: SerializedProperty
   fullName: SerializedProperty
-- uid: NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty*
-  commentId: Overload:NonNonSheet.Editor.MultiSelectDropdownField`1.UnbindProperty
-  href: NonNonSheet.Editor.MultiSelectDropdownField-1.html#NonNonSheet_Editor_MultiSelectDropdownField_1_UnbindProperty
-  name: UnbindProperty
-  nameWithType: MultiSelectDropdownField<T>.UnbindProperty
-  fullName: NonNonSheet.Editor.MultiSelectDropdownField<T>.UnbindProperty
-  nameWithType.vb: MultiSelectDropdownField(Of T).UnbindProperty
-  fullName.vb: NonNonSheet.Editor.MultiSelectDropdownField(Of T).UnbindProperty

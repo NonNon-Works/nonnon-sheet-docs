@@ -5,19 +5,10 @@ items:
   id: CopyPasteSystem
   parent: NonNonSheet.Editor
   children:
-  - NonNonSheet.Editor.CopyPasteSystem.#ctor(VisualElement)
-  - NonNonSheet.Editor.CopyPasteSystem.CancelCopy
-  - NonNonSheet.Editor.CopyPasteSystem.CopiedCell
-  - NonNonSheet.Editor.CopyPasteSystem.CopyCell
-  - NonNonSheet.Editor.CopyPasteSystem.CopyCellPosition
-  - NonNonSheet.Editor.CopyPasteSystem.FitCopyMarker
-  - NonNonSheet.Editor.CopyPasteSystem.IsCopyCell(NonNonSheet.Editor.Cell)
-  - NonNonSheet.Editor.CopyPasteSystem.IsExistCopyCell
+  - NonNonSheet.Editor.CopyPasteSystem.Cancel
+  - NonNonSheet.Editor.CopyPasteSystem.Copy
+  - NonNonSheet.Editor.CopyPasteSystem.IsCellCopied(System.Int32,System.Int32)
   - NonNonSheet.Editor.CopyPasteSystem.Paste
-  - NonNonSheet.Editor.CopyPasteSystem.SelectSystem
-  - NonNonSheet.Editor.CopyPasteSystem.Sheet
-  - NonNonSheet.Editor.CopyPasteSystem.Table
-  - NonNonSheet.Editor.CopyPasteSystem.UndoRedoSystem
   langs:
   - csharp
   - vb
@@ -27,19 +18,23 @@ items:
   type: Class
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/CopyPasteSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: CopyPasteSystem
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 6
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/CopyPasteSystem.cs
+    startLine: 7
   namespace: NonNonSheet.Editor
   syntax:
-    content: public class CopyPasteSystem
-    content.vb: Public Class CopyPasteSystem
+    content: 'public class CopyPasteSystem : SystemBase'
+    content.vb: Public Class CopyPasteSystem Inherits SystemBase
   inheritance:
   - System.Object
+  - NonNonSheet.Editor.SystemBase
   inheritedMembers:
+  - NonNonSheet.Editor.SystemBase.Table
+  - NonNonSheet.Editor.SystemBase.EventBus
+  - NonNonSheet.Editor.SystemBase.State
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -47,278 +42,30 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: NonNonSheet.Editor.CopyPasteSystem.Table
-  commentId: P:NonNonSheet.Editor.CopyPasteSystem.Table
-  id: Table
+- uid: NonNonSheet.Editor.CopyPasteSystem.Copy
+  commentId: M:NonNonSheet.Editor.CopyPasteSystem.Copy
+  id: Copy
   parent: NonNonSheet.Editor.CopyPasteSystem
   langs:
   - csharp
   - vb
-  name: Table
-  nameWithType: CopyPasteSystem.Table
-  fullName: NonNonSheet.Editor.CopyPasteSystem.Table
-  type: Property
+  name: Copy()
+  nameWithType: CopyPasteSystem.Copy()
+  fullName: NonNonSheet.Editor.CopyPasteSystem.Copy()
+  type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/CopyPasteSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
-    id: Table
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 8
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public NonNonTable Table { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.NonNonTable
-    content.vb: Public Property Table As NonNonTable
-  overload: NonNonSheet.Editor.CopyPasteSystem.Table*
-- uid: NonNonSheet.Editor.CopyPasteSystem.Sheet
-  commentId: P:NonNonSheet.Editor.CopyPasteSystem.Sheet
-  id: Sheet
-  parent: NonNonSheet.Editor.CopyPasteSystem
-  langs:
-  - csharp
-  - vb
-  name: Sheet
-  nameWithType: CopyPasteSystem.Sheet
-  fullName: NonNonSheet.Editor.CopyPasteSystem.Sheet
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: Sheet
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
+    id: Copy
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/CopyPasteSystem.cs
     startLine: 9
   namespace: NonNonSheet.Editor
   syntax:
-    content: public Sheet Sheet { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.Sheet
-    content.vb: Public Property Sheet As Sheet
-  overload: NonNonSheet.Editor.CopyPasteSystem.Sheet*
-- uid: NonNonSheet.Editor.CopyPasteSystem.SelectSystem
-  commentId: P:NonNonSheet.Editor.CopyPasteSystem.SelectSystem
-  id: SelectSystem
-  parent: NonNonSheet.Editor.CopyPasteSystem
-  langs:
-  - csharp
-  - vb
-  name: SelectSystem
-  nameWithType: CopyPasteSystem.SelectSystem
-  fullName: NonNonSheet.Editor.CopyPasteSystem.SelectSystem
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: SelectSystem
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 10
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public SelectSystem SelectSystem { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.SelectSystem
-    content.vb: Public Property SelectSystem As SelectSystem
-  overload: NonNonSheet.Editor.CopyPasteSystem.SelectSystem*
-- uid: NonNonSheet.Editor.CopyPasteSystem.UndoRedoSystem
-  commentId: P:NonNonSheet.Editor.CopyPasteSystem.UndoRedoSystem
-  id: UndoRedoSystem
-  parent: NonNonSheet.Editor.CopyPasteSystem
-  langs:
-  - csharp
-  - vb
-  name: UndoRedoSystem
-  nameWithType: CopyPasteSystem.UndoRedoSystem
-  fullName: NonNonSheet.Editor.CopyPasteSystem.UndoRedoSystem
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: UndoRedoSystem
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 11
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public UndoRedoSystem UndoRedoSystem { get; set; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.UndoRedoSystem
-    content.vb: Public Property UndoRedoSystem As UndoRedoSystem
-  overload: NonNonSheet.Editor.CopyPasteSystem.UndoRedoSystem*
-- uid: NonNonSheet.Editor.CopyPasteSystem.CopyCellPosition
-  commentId: P:NonNonSheet.Editor.CopyPasteSystem.CopyCellPosition
-  id: CopyCellPosition
-  parent: NonNonSheet.Editor.CopyPasteSystem
-  langs:
-  - csharp
-  - vb
-  name: CopyCellPosition
-  nameWithType: CopyPasteSystem.CopyCellPosition
-  fullName: NonNonSheet.Editor.CopyPasteSystem.CopyCellPosition
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: CopyCellPosition
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 15
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public Vector2Int CopyCellPosition { get; }
-    parameters: []
-    return:
-      type: Vector2Int
-    content.vb: Public Property CopyCellPosition As Vector2Int
-  overload: NonNonSheet.Editor.CopyPasteSystem.CopyCellPosition*
-- uid: NonNonSheet.Editor.CopyPasteSystem.IsExistCopyCell
-  commentId: P:NonNonSheet.Editor.CopyPasteSystem.IsExistCopyCell
-  id: IsExistCopyCell
-  parent: NonNonSheet.Editor.CopyPasteSystem
-  langs:
-  - csharp
-  - vb
-  name: IsExistCopyCell
-  nameWithType: CopyPasteSystem.IsExistCopyCell
-  fullName: NonNonSheet.Editor.CopyPasteSystem.IsExistCopyCell
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: IsExistCopyCell
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 16
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public bool IsExistCopyCell { get; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public ReadOnly Property IsExistCopyCell As Boolean
-  overload: NonNonSheet.Editor.CopyPasteSystem.IsExistCopyCell*
-- uid: NonNonSheet.Editor.CopyPasteSystem.IsCopyCell(NonNonSheet.Editor.Cell)
-  commentId: M:NonNonSheet.Editor.CopyPasteSystem.IsCopyCell(NonNonSheet.Editor.Cell)
-  id: IsCopyCell(NonNonSheet.Editor.Cell)
-  parent: NonNonSheet.Editor.CopyPasteSystem
-  langs:
-  - csharp
-  - vb
-  name: IsCopyCell(Cell)
-  nameWithType: CopyPasteSystem.IsCopyCell(Cell)
-  fullName: NonNonSheet.Editor.CopyPasteSystem.IsCopyCell(NonNonSheet.Editor.Cell)
-  type: Method
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: IsCopyCell
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 17
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public bool IsCopyCell(Cell cell)
-    parameters:
-    - id: cell
-      type: NonNonSheet.Editor.Cell
-    return:
-      type: System.Boolean
-    content.vb: Public Function IsCopyCell(cell As Cell) As Boolean
-  overload: NonNonSheet.Editor.CopyPasteSystem.IsCopyCell*
-- uid: NonNonSheet.Editor.CopyPasteSystem.CopiedCell
-  commentId: P:NonNonSheet.Editor.CopyPasteSystem.CopiedCell
-  id: CopiedCell
-  parent: NonNonSheet.Editor.CopyPasteSystem
-  langs:
-  - csharp
-  - vb
-  name: CopiedCell
-  nameWithType: CopyPasteSystem.CopiedCell
-  fullName: NonNonSheet.Editor.CopyPasteSystem.CopiedCell
-  type: Property
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: CopiedCell
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 18
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public Cell CopiedCell { get; }
-    parameters: []
-    return:
-      type: NonNonSheet.Editor.Cell
-    content.vb: Public ReadOnly Property CopiedCell As Cell
-  overload: NonNonSheet.Editor.CopyPasteSystem.CopiedCell*
-- uid: NonNonSheet.Editor.CopyPasteSystem.#ctor(VisualElement)
-  commentId: M:NonNonSheet.Editor.CopyPasteSystem.#ctor(VisualElement)
-  id: '#ctor(VisualElement)'
-  parent: NonNonSheet.Editor.CopyPasteSystem
-  langs:
-  - csharp
-  - vb
-  name: CopyPasteSystem(VisualElement)
-  nameWithType: CopyPasteSystem.CopyPasteSystem(VisualElement)
-  fullName: NonNonSheet.Editor.CopyPasteSystem.CopyPasteSystem(VisualElement)
-  type: Constructor
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: .ctor
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 22
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public CopyPasteSystem(VisualElement rootVisualElement)
-    parameters:
-    - id: rootVisualElement
-      type: VisualElement
-    content.vb: Public Sub New(rootVisualElement As VisualElement)
-  overload: NonNonSheet.Editor.CopyPasteSystem.#ctor*
-  nameWithType.vb: CopyPasteSystem.New(VisualElement)
-  fullName.vb: NonNonSheet.Editor.CopyPasteSystem.New(VisualElement)
-  name.vb: New(VisualElement)
-- uid: NonNonSheet.Editor.CopyPasteSystem.CopyCell
-  commentId: M:NonNonSheet.Editor.CopyPasteSystem.CopyCell
-  id: CopyCell
-  parent: NonNonSheet.Editor.CopyPasteSystem
-  langs:
-  - csharp
-  - vb
-  name: CopyCell()
-  nameWithType: CopyPasteSystem.CopyCell()
-  fullName: NonNonSheet.Editor.CopyPasteSystem.CopyCell()
-  type: Method
-  source:
-    remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
-      repo: https://github.com/chromee/nonnon-sheet.git
-    id: CopyCell
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 27
-  namespace: NonNonSheet.Editor
-  syntax:
-    content: public void CopyCell()
-    content.vb: Public Sub CopyCell()
-  overload: NonNonSheet.Editor.CopyPasteSystem.CopyCell*
+    content: public void Copy()
+    content.vb: Public Sub Copy()
+  overload: NonNonSheet.Editor.CopyPasteSystem.Copy*
 - uid: NonNonSheet.Editor.CopyPasteSystem.Paste
   commentId: M:NonNonSheet.Editor.CopyPasteSystem.Paste
   id: Paste
@@ -332,65 +79,75 @@ items:
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/CopyPasteSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
     id: Paste
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 35
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/CopyPasteSystem.cs
+    startLine: 23
   namespace: NonNonSheet.Editor
   syntax:
     content: public void Paste()
     content.vb: Public Sub Paste()
   overload: NonNonSheet.Editor.CopyPasteSystem.Paste*
-- uid: NonNonSheet.Editor.CopyPasteSystem.CancelCopy
-  commentId: M:NonNonSheet.Editor.CopyPasteSystem.CancelCopy
-  id: CancelCopy
+- uid: NonNonSheet.Editor.CopyPasteSystem.Cancel
+  commentId: M:NonNonSheet.Editor.CopyPasteSystem.Cancel
+  id: Cancel
   parent: NonNonSheet.Editor.CopyPasteSystem
   langs:
   - csharp
   - vb
-  name: CancelCopy()
-  nameWithType: CopyPasteSystem.CancelCopy()
-  fullName: NonNonSheet.Editor.CopyPasteSystem.CancelCopy()
+  name: Cancel()
+  nameWithType: CopyPasteSystem.Cancel()
+  fullName: NonNonSheet.Editor.CopyPasteSystem.Cancel()
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/CopyPasteSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
-    id: CancelCopy
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 53
+    id: Cancel
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/CopyPasteSystem.cs
+    startLine: 62
   namespace: NonNonSheet.Editor
   syntax:
-    content: public void CancelCopy()
-    content.vb: Public Sub CancelCopy()
-  overload: NonNonSheet.Editor.CopyPasteSystem.CancelCopy*
-- uid: NonNonSheet.Editor.CopyPasteSystem.FitCopyMarker
-  commentId: M:NonNonSheet.Editor.CopyPasteSystem.FitCopyMarker
-  id: FitCopyMarker
+    content: public void Cancel()
+    content.vb: Public Sub Cancel()
+  overload: NonNonSheet.Editor.CopyPasteSystem.Cancel*
+- uid: NonNonSheet.Editor.CopyPasteSystem.IsCellCopied(System.Int32,System.Int32)
+  commentId: M:NonNonSheet.Editor.CopyPasteSystem.IsCellCopied(System.Int32,System.Int32)
+  id: IsCellCopied(System.Int32,System.Int32)
   parent: NonNonSheet.Editor.CopyPasteSystem
   langs:
   - csharp
   - vb
-  name: FitCopyMarker()
-  nameWithType: CopyPasteSystem.FitCopyMarker()
-  fullName: NonNonSheet.Editor.CopyPasteSystem.FitCopyMarker()
+  name: IsCellCopied(int, int)
+  nameWithType: CopyPasteSystem.IsCellCopied(int, int)
+  fullName: NonNonSheet.Editor.CopyPasteSystem.IsCellCopied(int, int)
   type: Method
   source:
     remote:
-      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-      branch: 1.0.0
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/CopyPasteSystem.cs
+      branch: develop
       repo: https://github.com/chromee/nonnon-sheet.git
-    id: FitCopyMarker
-    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/UI/System/CopyPasteSystem.cs
-    startLine: 59
+    id: IsCellCopied
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/System/CopyPasteSystem.cs
+    startLine: 68
   namespace: NonNonSheet.Editor
   syntax:
-    content: public void FitCopyMarker()
-    content.vb: Public Sub FitCopyMarker()
-  overload: NonNonSheet.Editor.CopyPasteSystem.FitCopyMarker*
+    content: public bool IsCellCopied(int row, int col)
+    parameters:
+    - id: row
+      type: System.Int32
+    - id: col
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsCellCopied(row As Integer, col As Integer) As Boolean
+  overload: NonNonSheet.Editor.CopyPasteSystem.IsCellCopied*
+  nameWithType.vb: CopyPasteSystem.IsCellCopied(Integer, Integer)
+  fullName.vb: NonNonSheet.Editor.CopyPasteSystem.IsCellCopied(Integer, Integer)
+  name.vb: IsCellCopied(Integer, Integer)
 references:
 - uid: NonNonSheet.Editor
   commentId: N:NonNonSheet.Editor
@@ -425,6 +182,34 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: NonNonSheet.Editor.SystemBase
+  commentId: T:NonNonSheet.Editor.SystemBase
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SystemBase.html
+  name: SystemBase
+  nameWithType: SystemBase
+  fullName: NonNonSheet.Editor.SystemBase
+- uid: NonNonSheet.Editor.SystemBase.Table
+  commentId: P:NonNonSheet.Editor.SystemBase.Table
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_Table
+  name: Table
+  nameWithType: SystemBase.Table
+  fullName: NonNonSheet.Editor.SystemBase.Table
+- uid: NonNonSheet.Editor.SystemBase.EventBus
+  commentId: P:NonNonSheet.Editor.SystemBase.EventBus
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_EventBus
+  name: EventBus
+  nameWithType: SystemBase.EventBus
+  fullName: NonNonSheet.Editor.SystemBase.EventBus
+- uid: NonNonSheet.Editor.SystemBase.State
+  commentId: P:NonNonSheet.Editor.SystemBase.State
+  parent: NonNonSheet.Editor.SystemBase
+  href: NonNonSheet.Editor.SystemBase.html#NonNonSheet_Editor_SystemBase_State
+  name: State
+  nameWithType: SystemBase.State
+  fullName: NonNonSheet.Editor.SystemBase.State
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -651,81 +436,41 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: NonNonSheet.Editor.CopyPasteSystem.Table*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.Table
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_Table
-  name: Table
-  nameWithType: CopyPasteSystem.Table
-  fullName: NonNonSheet.Editor.CopyPasteSystem.Table
-- uid: NonNonSheet.NonNonTable
-  commentId: T:NonNonSheet.NonNonTable
-  parent: NonNonSheet
-  href: NonNonSheet.NonNonTable.html
-  name: NonNonTable
-  nameWithType: NonNonTable
-  fullName: NonNonSheet.NonNonTable
-- uid: NonNonSheet
-  commentId: N:NonNonSheet
-  href: NonNonSheet.html
-  name: NonNonSheet
-  nameWithType: NonNonSheet
-  fullName: NonNonSheet
-- uid: NonNonSheet.Editor.CopyPasteSystem.Sheet*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.Sheet
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_Sheet
-  name: Sheet
-  nameWithType: CopyPasteSystem.Sheet
-  fullName: NonNonSheet.Editor.CopyPasteSystem.Sheet
-- uid: NonNonSheet.Editor.Sheet
-  commentId: T:NonNonSheet.Editor.Sheet
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.Sheet.html
-  name: Sheet
-  nameWithType: Sheet
-  fullName: NonNonSheet.Editor.Sheet
-- uid: NonNonSheet.Editor.CopyPasteSystem.SelectSystem*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.SelectSystem
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_SelectSystem
-  name: SelectSystem
-  nameWithType: CopyPasteSystem.SelectSystem
-  fullName: NonNonSheet.Editor.CopyPasteSystem.SelectSystem
-- uid: NonNonSheet.Editor.SelectSystem
-  commentId: T:NonNonSheet.Editor.SelectSystem
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.SelectSystem.html
-  name: SelectSystem
-  nameWithType: SelectSystem
-  fullName: NonNonSheet.Editor.SelectSystem
-- uid: NonNonSheet.Editor.CopyPasteSystem.UndoRedoSystem*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.UndoRedoSystem
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_UndoRedoSystem
-  name: UndoRedoSystem
-  nameWithType: CopyPasteSystem.UndoRedoSystem
-  fullName: NonNonSheet.Editor.CopyPasteSystem.UndoRedoSystem
-- uid: NonNonSheet.Editor.UndoRedoSystem
-  commentId: T:NonNonSheet.Editor.UndoRedoSystem
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.UndoRedoSystem.html
-  name: UndoRedoSystem
-  nameWithType: UndoRedoSystem
-  fullName: NonNonSheet.Editor.UndoRedoSystem
-- uid: NonNonSheet.Editor.CopyPasteSystem.CopyCellPosition*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.CopyCellPosition
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_CopyCellPosition
-  name: CopyCellPosition
-  nameWithType: CopyPasteSystem.CopyCellPosition
-  fullName: NonNonSheet.Editor.CopyPasteSystem.CopyCellPosition
-- uid: Vector2Int
+- uid: NonNonSheet.Editor.CopyPasteSystem.Copy*
+  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.Copy
+  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_Copy
+  name: Copy
+  nameWithType: CopyPasteSystem.Copy
+  fullName: NonNonSheet.Editor.CopyPasteSystem.Copy
+- uid: NonNonSheet.Editor.CopyPasteSystem.Paste*
+  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.Paste
+  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_Paste
+  name: Paste
+  nameWithType: CopyPasteSystem.Paste
+  fullName: NonNonSheet.Editor.CopyPasteSystem.Paste
+- uid: NonNonSheet.Editor.CopyPasteSystem.Cancel*
+  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.Cancel
+  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_Cancel
+  name: Cancel
+  nameWithType: CopyPasteSystem.Cancel
+  fullName: NonNonSheet.Editor.CopyPasteSystem.Cancel
+- uid: NonNonSheet.Editor.CopyPasteSystem.IsCellCopied*
+  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.IsCellCopied
+  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_IsCellCopied_System_Int32_System_Int32_
+  name: IsCellCopied
+  nameWithType: CopyPasteSystem.IsCellCopied
+  fullName: NonNonSheet.Editor.CopyPasteSystem.IsCellCopied
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
   isExternal: true
-  name: Vector2Int
-  nameWithType: Vector2Int
-  fullName: Vector2Int
-- uid: NonNonSheet.Editor.CopyPasteSystem.IsExistCopyCell*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.IsExistCopyCell
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_IsExistCopyCell
-  name: IsExistCopyCell
-  nameWithType: CopyPasteSystem.IsExistCopyCell
-  fullName: NonNonSheet.Editor.CopyPasteSystem.IsExistCopyCell
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -737,60 +482,3 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: NonNonSheet.Editor.CopyPasteSystem.IsCopyCell*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.IsCopyCell
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_IsCopyCell_NonNonSheet_Editor_Cell_
-  name: IsCopyCell
-  nameWithType: CopyPasteSystem.IsCopyCell
-  fullName: NonNonSheet.Editor.CopyPasteSystem.IsCopyCell
-- uid: NonNonSheet.Editor.Cell
-  commentId: T:NonNonSheet.Editor.Cell
-  parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.Cell.html
-  name: Cell
-  nameWithType: Cell
-  fullName: NonNonSheet.Editor.Cell
-- uid: NonNonSheet.Editor.CopyPasteSystem.CopiedCell*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.CopiedCell
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_CopiedCell
-  name: CopiedCell
-  nameWithType: CopyPasteSystem.CopiedCell
-  fullName: NonNonSheet.Editor.CopyPasteSystem.CopiedCell
-- uid: NonNonSheet.Editor.CopyPasteSystem.#ctor*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.#ctor
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem__ctor_VisualElement_
-  name: CopyPasteSystem
-  nameWithType: CopyPasteSystem.CopyPasteSystem
-  fullName: NonNonSheet.Editor.CopyPasteSystem.CopyPasteSystem
-  nameWithType.vb: CopyPasteSystem.New
-  fullName.vb: NonNonSheet.Editor.CopyPasteSystem.New
-  name.vb: New
-- uid: VisualElement
-  isExternal: true
-  name: VisualElement
-  nameWithType: VisualElement
-  fullName: VisualElement
-- uid: NonNonSheet.Editor.CopyPasteSystem.CopyCell*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.CopyCell
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_CopyCell
-  name: CopyCell
-  nameWithType: CopyPasteSystem.CopyCell
-  fullName: NonNonSheet.Editor.CopyPasteSystem.CopyCell
-- uid: NonNonSheet.Editor.CopyPasteSystem.Paste*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.Paste
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_Paste
-  name: Paste
-  nameWithType: CopyPasteSystem.Paste
-  fullName: NonNonSheet.Editor.CopyPasteSystem.Paste
-- uid: NonNonSheet.Editor.CopyPasteSystem.CancelCopy*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.CancelCopy
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_CancelCopy
-  name: CancelCopy
-  nameWithType: CopyPasteSystem.CancelCopy
-  fullName: NonNonSheet.Editor.CopyPasteSystem.CancelCopy
-- uid: NonNonSheet.Editor.CopyPasteSystem.FitCopyMarker*
-  commentId: Overload:NonNonSheet.Editor.CopyPasteSystem.FitCopyMarker
-  href: NonNonSheet.Editor.CopyPasteSystem.html#NonNonSheet_Editor_CopyPasteSystem_FitCopyMarker
-  name: FitCopyMarker
-  nameWithType: CopyPasteSystem.FitCopyMarker
-  fullName: NonNonSheet.Editor.CopyPasteSystem.FitCopyMarker

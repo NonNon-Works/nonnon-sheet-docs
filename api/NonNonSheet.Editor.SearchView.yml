@@ -1,0 +1,725 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.SearchView
+  commentId: T:NonNonSheet.Editor.SearchView
+  id: SearchView
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.SearchView.#ctor(VisualElement)
+  - NonNonSheet.Editor.SearchView.ClearSearchText
+  - NonNonSheet.Editor.SearchView.IsShownForm
+  - NonNonSheet.Editor.SearchView.SearchCloseButton
+  - NonNonSheet.Editor.SearchView.SearchForm
+  - NonNonSheet.Editor.SearchView.SearchNextButton
+  - NonNonSheet.Editor.SearchView.SearchPrevButton
+  - NonNonSheet.Editor.SearchView.SearchResultCountLabel
+  - NonNonSheet.Editor.SearchView.SearchTextField
+  - NonNonSheet.Editor.SearchView.ShowSearchForm(System.Boolean)
+  - NonNonSheet.Editor.SearchView.UpdateResultCount(System.String)
+  langs:
+  - csharp
+  - vb
+  name: SearchView
+  nameWithType: SearchView
+  fullName: NonNonSheet.Editor.SearchView
+  type: Class
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SearchView
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 4
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public class SearchView
+    content.vb: Public Class SearchView
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NonNonSheet.Editor.SearchView.SearchForm
+  commentId: P:NonNonSheet.Editor.SearchView.SearchForm
+  id: SearchForm
+  parent: NonNonSheet.Editor.SearchView
+  langs:
+  - csharp
+  - vb
+  name: SearchForm
+  nameWithType: SearchView.SearchForm
+  fullName: NonNonSheet.Editor.SearchView.SearchForm
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SearchForm
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 6
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public VisualElement SearchForm { get; }
+    parameters: []
+    return:
+      type: VisualElement
+    content.vb: Public ReadOnly Property SearchForm As VisualElement
+  overload: NonNonSheet.Editor.SearchView.SearchForm*
+- uid: NonNonSheet.Editor.SearchView.SearchTextField
+  commentId: P:NonNonSheet.Editor.SearchView.SearchTextField
+  id: SearchTextField
+  parent: NonNonSheet.Editor.SearchView
+  langs:
+  - csharp
+  - vb
+  name: SearchTextField
+  nameWithType: SearchView.SearchTextField
+  fullName: NonNonSheet.Editor.SearchView.SearchTextField
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SearchTextField
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 7
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public TextField SearchTextField { get; }
+    parameters: []
+    return:
+      type: TextField
+    content.vb: Public ReadOnly Property SearchTextField As TextField
+  overload: NonNonSheet.Editor.SearchView.SearchTextField*
+- uid: NonNonSheet.Editor.SearchView.SearchPrevButton
+  commentId: P:NonNonSheet.Editor.SearchView.SearchPrevButton
+  id: SearchPrevButton
+  parent: NonNonSheet.Editor.SearchView
+  langs:
+  - csharp
+  - vb
+  name: SearchPrevButton
+  nameWithType: SearchView.SearchPrevButton
+  fullName: NonNonSheet.Editor.SearchView.SearchPrevButton
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SearchPrevButton
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 8
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Button SearchPrevButton { get; }
+    parameters: []
+    return:
+      type: Button
+    content.vb: Public ReadOnly Property SearchPrevButton As Button
+  overload: NonNonSheet.Editor.SearchView.SearchPrevButton*
+- uid: NonNonSheet.Editor.SearchView.SearchNextButton
+  commentId: P:NonNonSheet.Editor.SearchView.SearchNextButton
+  id: SearchNextButton
+  parent: NonNonSheet.Editor.SearchView
+  langs:
+  - csharp
+  - vb
+  name: SearchNextButton
+  nameWithType: SearchView.SearchNextButton
+  fullName: NonNonSheet.Editor.SearchView.SearchNextButton
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SearchNextButton
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 9
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Button SearchNextButton { get; }
+    parameters: []
+    return:
+      type: Button
+    content.vb: Public ReadOnly Property SearchNextButton As Button
+  overload: NonNonSheet.Editor.SearchView.SearchNextButton*
+- uid: NonNonSheet.Editor.SearchView.SearchCloseButton
+  commentId: P:NonNonSheet.Editor.SearchView.SearchCloseButton
+  id: SearchCloseButton
+  parent: NonNonSheet.Editor.SearchView
+  langs:
+  - csharp
+  - vb
+  name: SearchCloseButton
+  nameWithType: SearchView.SearchCloseButton
+  fullName: NonNonSheet.Editor.SearchView.SearchCloseButton
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SearchCloseButton
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 10
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Button SearchCloseButton { get; }
+    parameters: []
+    return:
+      type: Button
+    content.vb: Public ReadOnly Property SearchCloseButton As Button
+  overload: NonNonSheet.Editor.SearchView.SearchCloseButton*
+- uid: NonNonSheet.Editor.SearchView.SearchResultCountLabel
+  commentId: P:NonNonSheet.Editor.SearchView.SearchResultCountLabel
+  id: SearchResultCountLabel
+  parent: NonNonSheet.Editor.SearchView
+  langs:
+  - csharp
+  - vb
+  name: SearchResultCountLabel
+  nameWithType: SearchView.SearchResultCountLabel
+  fullName: NonNonSheet.Editor.SearchView.SearchResultCountLabel
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: SearchResultCountLabel
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 11
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public Label SearchResultCountLabel { get; }
+    parameters: []
+    return:
+      type: Label
+    content.vb: Public ReadOnly Property SearchResultCountLabel As Label
+  overload: NonNonSheet.Editor.SearchView.SearchResultCountLabel*
+- uid: NonNonSheet.Editor.SearchView.#ctor(VisualElement)
+  commentId: M:NonNonSheet.Editor.SearchView.#ctor(VisualElement)
+  id: '#ctor(VisualElement)'
+  parent: NonNonSheet.Editor.SearchView
+  langs:
+  - csharp
+  - vb
+  name: SearchView(VisualElement)
+  nameWithType: SearchView.SearchView(VisualElement)
+  fullName: NonNonSheet.Editor.SearchView.SearchView(VisualElement)
+  type: Constructor
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: .ctor
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 13
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public SearchView(VisualElement container)
+    parameters:
+    - id: container
+      type: VisualElement
+    content.vb: Public Sub New(container As VisualElement)
+  overload: NonNonSheet.Editor.SearchView.#ctor*
+  nameWithType.vb: SearchView.New(VisualElement)
+  fullName.vb: NonNonSheet.Editor.SearchView.New(VisualElement)
+  name.vb: New(VisualElement)
+- uid: NonNonSheet.Editor.SearchView.IsShownForm
+  commentId: P:NonNonSheet.Editor.SearchView.IsShownForm
+  id: IsShownForm
+  parent: NonNonSheet.Editor.SearchView
+  langs:
+  - csharp
+  - vb
+  name: IsShownForm
+  nameWithType: SearchView.IsShownForm
+  fullName: NonNonSheet.Editor.SearchView.IsShownForm
+  type: Property
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: IsShownForm
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 23
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public bool IsShownForm { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsShownForm As Boolean
+  overload: NonNonSheet.Editor.SearchView.IsShownForm*
+- uid: NonNonSheet.Editor.SearchView.ShowSearchForm(System.Boolean)
+  commentId: M:NonNonSheet.Editor.SearchView.ShowSearchForm(System.Boolean)
+  id: ShowSearchForm(System.Boolean)
+  parent: NonNonSheet.Editor.SearchView
+  langs:
+  - csharp
+  - vb
+  name: ShowSearchForm(bool)
+  nameWithType: SearchView.ShowSearchForm(bool)
+  fullName: NonNonSheet.Editor.SearchView.ShowSearchForm(bool)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ShowSearchForm
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 25
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public void ShowSearchForm(bool show)
+    parameters:
+    - id: show
+      type: System.Boolean
+    content.vb: Public Sub ShowSearchForm(show As Boolean)
+  overload: NonNonSheet.Editor.SearchView.ShowSearchForm*
+  nameWithType.vb: SearchView.ShowSearchForm(Boolean)
+  fullName.vb: NonNonSheet.Editor.SearchView.ShowSearchForm(Boolean)
+  name.vb: ShowSearchForm(Boolean)
+- uid: NonNonSheet.Editor.SearchView.ClearSearchText
+  commentId: M:NonNonSheet.Editor.SearchView.ClearSearchText
+  id: ClearSearchText
+  parent: NonNonSheet.Editor.SearchView
+  langs:
+  - csharp
+  - vb
+  name: ClearSearchText()
+  nameWithType: SearchView.ClearSearchText()
+  fullName: NonNonSheet.Editor.SearchView.ClearSearchText()
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: ClearSearchText
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 85
+  namespace: NonNonSheet.Editor
+  summary: 検索テキストをクリアする（変更イベントは発火しない）。
+  example: []
+  syntax:
+    content: public void ClearSearchText()
+    content.vb: Public Sub ClearSearchText()
+  overload: NonNonSheet.Editor.SearchView.ClearSearchText*
+- uid: NonNonSheet.Editor.SearchView.UpdateResultCount(System.String)
+  commentId: M:NonNonSheet.Editor.SearchView.UpdateResultCount(System.String)
+  id: UpdateResultCount(System.String)
+  parent: NonNonSheet.Editor.SearchView
+  langs:
+  - csharp
+  - vb
+  name: UpdateResultCount(string)
+  nameWithType: SearchView.UpdateResultCount(string)
+  fullName: NonNonSheet.Editor.SearchView.UpdateResultCount(string)
+  type: Method
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: UpdateResultCount
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/SearchView.cs
+    startLine: 90
+  namespace: NonNonSheet.Editor
+  summary: 検索結果件数ラベルを更新する。
+  example: []
+  syntax:
+    content: public void UpdateResultCount(string text)
+    parameters:
+    - id: text
+      type: System.String
+    content.vb: Public Sub UpdateResultCount(text As String)
+  overload: NonNonSheet.Editor.SearchView.UpdateResultCount*
+  nameWithType.vb: SearchView.UpdateResultCount(String)
+  fullName.vb: NonNonSheet.Editor.SearchView.UpdateResultCount(String)
+  name.vb: UpdateResultCount(String)
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NonNonSheet.Editor.SearchView.SearchForm*
+  commentId: Overload:NonNonSheet.Editor.SearchView.SearchForm
+  href: NonNonSheet.Editor.SearchView.html#NonNonSheet_Editor_SearchView_SearchForm
+  name: SearchForm
+  nameWithType: SearchView.SearchForm
+  fullName: NonNonSheet.Editor.SearchView.SearchForm
+- uid: VisualElement
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: VisualElement
+- uid: NonNonSheet.Editor.SearchView.SearchTextField*
+  commentId: Overload:NonNonSheet.Editor.SearchView.SearchTextField
+  href: NonNonSheet.Editor.SearchView.html#NonNonSheet_Editor_SearchView_SearchTextField
+  name: SearchTextField
+  nameWithType: SearchView.SearchTextField
+  fullName: NonNonSheet.Editor.SearchView.SearchTextField
+- uid: TextField
+  isExternal: true
+  name: TextField
+  nameWithType: TextField
+  fullName: TextField
+- uid: NonNonSheet.Editor.SearchView.SearchPrevButton*
+  commentId: Overload:NonNonSheet.Editor.SearchView.SearchPrevButton
+  href: NonNonSheet.Editor.SearchView.html#NonNonSheet_Editor_SearchView_SearchPrevButton
+  name: SearchPrevButton
+  nameWithType: SearchView.SearchPrevButton
+  fullName: NonNonSheet.Editor.SearchView.SearchPrevButton
+- uid: Button
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: Button
+- uid: NonNonSheet.Editor.SearchView.SearchNextButton*
+  commentId: Overload:NonNonSheet.Editor.SearchView.SearchNextButton
+  href: NonNonSheet.Editor.SearchView.html#NonNonSheet_Editor_SearchView_SearchNextButton
+  name: SearchNextButton
+  nameWithType: SearchView.SearchNextButton
+  fullName: NonNonSheet.Editor.SearchView.SearchNextButton
+- uid: NonNonSheet.Editor.SearchView.SearchCloseButton*
+  commentId: Overload:NonNonSheet.Editor.SearchView.SearchCloseButton
+  href: NonNonSheet.Editor.SearchView.html#NonNonSheet_Editor_SearchView_SearchCloseButton
+  name: SearchCloseButton
+  nameWithType: SearchView.SearchCloseButton
+  fullName: NonNonSheet.Editor.SearchView.SearchCloseButton
+- uid: NonNonSheet.Editor.SearchView.SearchResultCountLabel*
+  commentId: Overload:NonNonSheet.Editor.SearchView.SearchResultCountLabel
+  href: NonNonSheet.Editor.SearchView.html#NonNonSheet_Editor_SearchView_SearchResultCountLabel
+  name: SearchResultCountLabel
+  nameWithType: SearchView.SearchResultCountLabel
+  fullName: NonNonSheet.Editor.SearchView.SearchResultCountLabel
+- uid: Label
+  isExternal: true
+  name: Label
+  nameWithType: Label
+  fullName: Label
+- uid: NonNonSheet.Editor.SearchView.#ctor*
+  commentId: Overload:NonNonSheet.Editor.SearchView.#ctor
+  href: NonNonSheet.Editor.SearchView.html#NonNonSheet_Editor_SearchView__ctor_VisualElement_
+  name: SearchView
+  nameWithType: SearchView.SearchView
+  fullName: NonNonSheet.Editor.SearchView.SearchView
+  nameWithType.vb: SearchView.New
+  fullName.vb: NonNonSheet.Editor.SearchView.New
+  name.vb: New
+- uid: NonNonSheet.Editor.SearchView.IsShownForm*
+  commentId: Overload:NonNonSheet.Editor.SearchView.IsShownForm
+  href: NonNonSheet.Editor.SearchView.html#NonNonSheet_Editor_SearchView_IsShownForm
+  name: IsShownForm
+  nameWithType: SearchView.IsShownForm
+  fullName: NonNonSheet.Editor.SearchView.IsShownForm
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NonNonSheet.Editor.SearchView.ShowSearchForm*
+  commentId: Overload:NonNonSheet.Editor.SearchView.ShowSearchForm
+  href: NonNonSheet.Editor.SearchView.html#NonNonSheet_Editor_SearchView_ShowSearchForm_System_Boolean_
+  name: ShowSearchForm
+  nameWithType: SearchView.ShowSearchForm
+  fullName: NonNonSheet.Editor.SearchView.ShowSearchForm
+- uid: NonNonSheet.Editor.SearchView.ClearSearchText*
+  commentId: Overload:NonNonSheet.Editor.SearchView.ClearSearchText
+  href: NonNonSheet.Editor.SearchView.html#NonNonSheet_Editor_SearchView_ClearSearchText
+  name: ClearSearchText
+  nameWithType: SearchView.ClearSearchText
+  fullName: NonNonSheet.Editor.SearchView.ClearSearchText
+- uid: NonNonSheet.Editor.SearchView.UpdateResultCount*
+  commentId: Overload:NonNonSheet.Editor.SearchView.UpdateResultCount
+  href: NonNonSheet.Editor.SearchView.html#NonNonSheet_Editor_SearchView_UpdateResultCount_System_String_
+  name: UpdateResultCount
+  nameWithType: SearchView.UpdateResultCount
+  fullName: NonNonSheet.Editor.SearchView.UpdateResultCount
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

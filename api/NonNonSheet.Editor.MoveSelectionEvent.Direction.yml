@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: NonNonSheet.Editor.MoveSelectionEvent.Direction
+  commentId: T:NonNonSheet.Editor.MoveSelectionEvent.Direction
+  id: MoveSelectionEvent.Direction
+  parent: NonNonSheet.Editor
+  children:
+  - NonNonSheet.Editor.MoveSelectionEvent.Direction.Down
+  - NonNonSheet.Editor.MoveSelectionEvent.Direction.Left
+  - NonNonSheet.Editor.MoveSelectionEvent.Direction.Right
+  - NonNonSheet.Editor.MoveSelectionEvent.Direction.Up
+  langs:
+  - csharp
+  - vb
+  name: MoveSelectionEvent.Direction
+  nameWithType: MoveSelectionEvent.Direction
+  fullName: NonNonSheet.Editor.MoveSelectionEvent.Direction
+  type: Enum
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Direction
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 46
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: public enum MoveSelectionEvent.Direction
+    content.vb: Public Enum MoveSelectionEvent.Direction
+- uid: NonNonSheet.Editor.MoveSelectionEvent.Direction.Up
+  commentId: F:NonNonSheet.Editor.MoveSelectionEvent.Direction.Up
+  id: Up
+  parent: NonNonSheet.Editor.MoveSelectionEvent.Direction
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: MoveSelectionEvent.Direction.Up
+  fullName: NonNonSheet.Editor.MoveSelectionEvent.Direction.Up
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Up
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 48
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: Up = 0
+    return:
+      type: NonNonSheet.Editor.MoveSelectionEvent.Direction
+- uid: NonNonSheet.Editor.MoveSelectionEvent.Direction.Down
+  commentId: F:NonNonSheet.Editor.MoveSelectionEvent.Direction.Down
+  id: Down
+  parent: NonNonSheet.Editor.MoveSelectionEvent.Direction
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: MoveSelectionEvent.Direction.Down
+  fullName: NonNonSheet.Editor.MoveSelectionEvent.Direction.Down
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Down
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 49
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: Down = 1
+    return:
+      type: NonNonSheet.Editor.MoveSelectionEvent.Direction
+- uid: NonNonSheet.Editor.MoveSelectionEvent.Direction.Left
+  commentId: F:NonNonSheet.Editor.MoveSelectionEvent.Direction.Left
+  id: Left
+  parent: NonNonSheet.Editor.MoveSelectionEvent.Direction
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: MoveSelectionEvent.Direction.Left
+  fullName: NonNonSheet.Editor.MoveSelectionEvent.Direction.Left
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Left
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 50
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: Left = 2
+    return:
+      type: NonNonSheet.Editor.MoveSelectionEvent.Direction
+- uid: NonNonSheet.Editor.MoveSelectionEvent.Direction.Right
+  commentId: F:NonNonSheet.Editor.MoveSelectionEvent.Direction.Right
+  id: Right
+  parent: NonNonSheet.Editor.MoveSelectionEvent.Direction
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: MoveSelectionEvent.Direction.Right
+  fullName: NonNonSheet.Editor.MoveSelectionEvent.Direction.Right
+  type: Field
+  source:
+    remote:
+      path: src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+      branch: develop
+      repo: https://github.com/chromee/nonnon-sheet.git
+    id: Right
+    path: ../NonNonSheet/src/NonNonSheet.Unity/Packages/com.nonnon-works.nonnon-sheet/Editor/Scripts/View/VisualElements/Helpers/SheetEvents.cs
+    startLine: 51
+  namespace: NonNonSheet.Editor
+  syntax:
+    content: Right = 3
+    return:
+      type: NonNonSheet.Editor.MoveSelectionEvent.Direction
+references:
+- uid: NonNonSheet.Editor
+  commentId: N:NonNonSheet.Editor
+  href: NonNonSheet.html
+  name: NonNonSheet.Editor
+  nameWithType: NonNonSheet.Editor
+  fullName: NonNonSheet.Editor
+  spec.csharp:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+  spec.vb:
+  - uid: NonNonSheet
+    name: NonNonSheet
+    href: NonNonSheet.html
+  - name: .
+  - uid: NonNonSheet.Editor
+    name: Editor
+    href: NonNonSheet.Editor.html
+- uid: NonNonSheet.Editor.MoveSelectionEvent.Direction
+  commentId: T:NonNonSheet.Editor.MoveSelectionEvent.Direction
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.MoveSelectionEvent.html
+  name: MoveSelectionEvent.Direction
+  nameWithType: MoveSelectionEvent.Direction
+  fullName: NonNonSheet.Editor.MoveSelectionEvent.Direction
+  spec.csharp:
+  - uid: NonNonSheet.Editor.MoveSelectionEvent
+    name: MoveSelectionEvent
+    href: NonNonSheet.Editor.MoveSelectionEvent.html
+  - name: .
+  - uid: NonNonSheet.Editor.MoveSelectionEvent.Direction
+    name: Direction
+    href: NonNonSheet.Editor.MoveSelectionEvent.Direction.html
+  spec.vb:
+  - uid: NonNonSheet.Editor.MoveSelectionEvent
+    name: MoveSelectionEvent
+    href: NonNonSheet.Editor.MoveSelectionEvent.html
+  - name: .
+  - uid: NonNonSheet.Editor.MoveSelectionEvent.Direction
+    name: Direction
+    href: NonNonSheet.Editor.MoveSelectionEvent.Direction.html

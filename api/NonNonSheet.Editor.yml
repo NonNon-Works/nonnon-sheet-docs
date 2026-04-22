@@ -5,66 +5,123 @@ items:
   id: NonNonSheet.Editor
   children:
   - NonNonSheet.Editor.AssetCell
-  - NonNonSheet.Editor.AwaitableExtension
   - NonNonSheet.Editor.BoolCell
+  - NonNonSheet.Editor.BoolFilterPopup
+  - NonNonSheet.Editor.BoolFilterPopupFactory
   - NonNonSheet.Editor.BoundsCell
   - NonNonSheet.Editor.ByteCell
+  - NonNonSheet.Editor.CancelCopyEvent
+  - NonNonSheet.Editor.CancelSelectingCommandEvent
+  - NonNonSheet.Editor.CancelSelectingEvent
   - NonNonSheet.Editor.Cell
+  - NonNonSheet.Editor.CellBoundEvent
   - NonNonSheet.Editor.CellBuilder
   - NonNonSheet.Editor.CellFactory
   - NonNonSheet.Editor.Cell`1
+  - NonNonSheet.Editor.ChangeCellValueEvent
   - NonNonSheet.Editor.ColorCell
+  - NonNonSheet.Editor.ColorFilterPopup
+  - NonNonSheet.Editor.ColorFilterPopupFactory
+  - NonNonSheet.Editor.ColumnFilter
+  - NonNonSheet.Editor.ConditionRow
+  - NonNonSheet.Editor.CopyCommandEvent
   - NonNonSheet.Editor.CopyPasteSystem
+  - NonNonSheet.Editor.CopyStateChangedEvent
   - NonNonSheet.Editor.CustomCell`2
   - NonNonSheet.Editor.DataRelationCell`3
-  - NonNonSheet.Editor.DataRow
+  - NonNonSheet.Editor.DeleteCommandEvent
   - NonNonSheet.Editor.DeleteSystem
   - NonNonSheet.Editor.DoubleCell
   - NonNonSheet.Editor.EmptyCell
+  - NonNonSheet.Editor.EnterCellEvent
   - NonNonSheet.Editor.EnumCell
+  - NonNonSheet.Editor.EnumFilterPopup
+  - NonNonSheet.Editor.EnumFilterPopupFactory
   - NonNonSheet.Editor.EnumFlagsCell
+  - NonNonSheet.Editor.EventBus
   - NonNonSheet.Editor.FailedCell
+  - NonNonSheet.Editor.FallbackFilterPopup
+  - NonNonSheet.Editor.FilterBuilder
+  - NonNonSheet.Editor.FilterButtonClickedEvent
+  - NonNonSheet.Editor.FilterChangedEvent
+  - NonNonSheet.Editor.FilterFactory
+  - NonNonSheet.Editor.FilterPopup
+  - NonNonSheet.Editor.FilterPopupBuilder
+  - NonNonSheet.Editor.FilterPopupChangedEvent
+  - NonNonSheet.Editor.FilterPopupClearEvent
+  - NonNonSheet.Editor.FilterPopupFactory
+  - NonNonSheet.Editor.FilterQuery
+  - NonNonSheet.Editor.FilterSystem
+  - NonNonSheet.Editor.FilterView
+  - NonNonSheet.Editor.FlagsEnumFilterPopup
+  - NonNonSheet.Editor.FlagsEnumFilterPopupFactory
   - NonNonSheet.Editor.FloatCell
-  - NonNonSheet.Editor.FooterRow
-  - NonNonSheet.Editor.HeaderCell
-  - NonNonSheet.Editor.HeaderRow
+  - NonNonSheet.Editor.ISheetSystemEvent
   - NonNonSheet.Editor.IndexCell
+  - NonNonSheet.Editor.IndexCellBoundEvent
   - NonNonSheet.Editor.IntCell
   - NonNonSheet.Editor.IntFieldCellBase`1
   - NonNonSheet.Editor.IntSliderCell
-  - NonNonSheet.Editor.KeyCodeUtility
   - NonNonSheet.Editor.LayerCell
+  - NonNonSheet.Editor.LayerFilterPopup
+  - NonNonSheet.Editor.LayerFilterPopupFactory
   - NonNonSheet.Editor.LayerMaskCell
+  - NonNonSheet.Editor.LayerMaskFilterPopup
+  - NonNonSheet.Editor.LayerMaskFilterPopupFactory
   - NonNonSheet.Editor.LongCell
+  - NonNonSheet.Editor.MCLVScrolledEvent
+  - NonNonSheet.Editor.MCLVWidthChangedEvent
   - NonNonSheet.Editor.Marker
   - NonNonSheet.Editor.MinMaxSliderCell
+  - NonNonSheet.Editor.MoveSelectionEvent
+  - NonNonSheet.Editor.MoveSelectionEvent.Direction
   - NonNonSheet.Editor.MultiDataRelationCell`3
   - NonNonSheet.Editor.MultiSelectDropdownField`1
   - NonNonSheet.Editor.NonNonCellAttribute
   - NonNonSheet.Editor.NonNonSheetEditorWindow
   - NonNonSheet.Editor.NonNonSheetSetting
   - NonNonSheet.Editor.NonNonSheetSettingProvider
-  - NonNonSheet.Editor.NonNonTableCsvConverter
   - NonNonSheet.Editor.NonNonTableEditor
-  - NonNonSheet.Editor.NonNonTableJsonConverter
+  - NonNonSheet.Editor.NumericFilterPopup
   - NonNonSheet.Editor.OnOpenDatabase
-  - NonNonSheet.Editor.OriginCell
+  - NonNonSheet.Editor.PasteCommandEvent
   - NonNonSheet.Editor.PropertyCell`1
   - NonNonSheet.Editor.RectCell
-  - NonNonSheet.Editor.ReorderLine
-  - NonNonSheet.Editor.ResizeColSystem
+  - NonNonSheet.Editor.ReorderEndedEvent
+  - NonNonSheet.Editor.ReorderStartedEvent
+  - NonNonSheet.Editor.ReorderView
+  - NonNonSheet.Editor.RequestFocusCellEvent
+  - NonNonSheet.Editor.RequestMoveRowsEvent
+  - NonNonSheet.Editor.RequestRefreshEvent
+  - NonNonSheet.Editor.RequestRemoveRowsEvent
+  - NonNonSheet.Editor.RequestScrollToCellEvent
+  - NonNonSheet.Editor.RequestScrollToRowEvent
+  - NonNonSheet.Editor.RequestUndoRecordEvent
   - NonNonSheet.Editor.RowReorderSystem
   - NonNonSheet.Editor.SbyteCell
+  - NonNonSheet.Editor.SearchResultsChangedEvent
+  - NonNonSheet.Editor.SearchSystem
+  - NonNonSheet.Editor.SearchView
   - NonNonSheet.Editor.SelectSystem
-  - NonNonSheet.Editor.Sheet
-  - NonNonSheet.Editor.SheetManager
+  - NonNonSheet.Editor.SelectionChangedEvent
+  - NonNonSheet.Editor.SheetColumnBuilder
+  - NonNonSheet.Editor.SheetPresenter
+  - NonNonSheet.Editor.SheetSystem
+  - NonNonSheet.Editor.SheetSystemState
+  - NonNonSheet.Editor.SheetView
   - NonNonSheet.Editor.ShortCell
-  - NonNonSheet.Editor.ShortcutKeySystem
+  - NonNonSheet.Editor.SingleClickCellEvent
   - NonNonSheet.Editor.SliderCell
+  - NonNonSheet.Editor.SortChangedEvent
   - NonNonSheet.Editor.StringCell
+  - NonNonSheet.Editor.StringFilterPopup
+  - NonNonSheet.Editor.StringFilterPopupFactory
+  - NonNonSheet.Editor.SystemBase
   - NonNonSheet.Editor.TableCollectAssetPostprocessor
   - NonNonSheet.Editor.TagCell
-  - NonNonSheet.Editor.UiTkShortcutGuards
+  - NonNonSheet.Editor.TagFilterPopup
+  - NonNonSheet.Editor.TagFilterPopupFactory
+  - NonNonSheet.Editor.TrickleDownEvent`1
   - NonNonSheet.Editor.UintCell
   - NonNonSheet.Editor.UintFieldCellBase`1
   - NonNonSheet.Editor.UlongCell
@@ -76,6 +133,8 @@ items:
   - NonNonSheet.Editor.Vector3Cell
   - NonNonSheet.Editor.Vector3IntCell
   - NonNonSheet.Editor.Vector4Cell
+  - NonNonSheet.Editor.VectorFieldCellBase`2
+  - NonNonSheet.Editor.VisibleCellRegistry
   langs:
   - csharp
   - vb
@@ -86,7 +145,6 @@ items:
 references:
 - uid: NonNonSheet.Editor.NonNonSheetEditorWindow
   commentId: T:NonNonSheet.Editor.NonNonSheetEditorWindow
-  parent: NonNonSheet.Editor
   href: NonNonSheet.Editor.NonNonSheetEditorWindow.html
   name: NonNonSheetEditorWindow
   nameWithType: NonNonSheetEditorWindow
@@ -97,30 +155,26 @@ references:
   name: OnOpenDatabase
   nameWithType: OnOpenDatabase
   fullName: NonNonSheet.Editor.OnOpenDatabase
-- uid: NonNonSheet.Editor.CellBuilder
-  commentId: T:NonNonSheet.Editor.CellBuilder
-  href: NonNonSheet.Editor.CellBuilder.html
-  name: CellBuilder
-  nameWithType: CellBuilder
-  fullName: NonNonSheet.Editor.CellBuilder
-- uid: NonNonSheet.Editor.CellFactory
-  commentId: T:NonNonSheet.Editor.CellFactory
-  href: NonNonSheet.Editor.CellFactory.html
-  name: CellFactory
-  nameWithType: CellFactory
-  fullName: NonNonSheet.Editor.CellFactory
-- uid: NonNonSheet.Editor.NonNonCellAttribute
-  commentId: T:NonNonSheet.Editor.NonNonCellAttribute
-  href: NonNonSheet.Editor.NonNonCellAttribute.html
-  name: NonNonCellAttribute
-  nameWithType: NonNonCellAttribute
-  fullName: NonNonSheet.Editor.NonNonCellAttribute
-- uid: NonNonSheet.Editor.NonNonTableEditor
-  commentId: T:NonNonSheet.Editor.NonNonTableEditor
-  href: NonNonSheet.Editor.NonNonTableEditor.html
-  name: NonNonTableEditor
-  nameWithType: NonNonTableEditor
-  fullName: NonNonSheet.Editor.NonNonTableEditor
+- uid: NonNonSheet.Editor.SheetPresenter
+  commentId: T:NonNonSheet.Editor.SheetPresenter
+  href: NonNonSheet.Editor.SheetPresenter.html
+  name: SheetPresenter
+  nameWithType: SheetPresenter
+  fullName: NonNonSheet.Editor.SheetPresenter
+- uid: NonNonSheet.Editor.SheetSystem
+  commentId: T:NonNonSheet.Editor.SheetSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SheetSystem.html
+  name: SheetSystem
+  nameWithType: SheetSystem
+  fullName: NonNonSheet.Editor.SheetSystem
+- uid: NonNonSheet.Editor.SheetView
+  commentId: T:NonNonSheet.Editor.SheetView
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SheetView.html
+  name: SheetView
+  nameWithType: SheetView
+  fullName: NonNonSheet.Editor.SheetView
 - uid: NonNonSheet.Editor.NonNonSheetSetting
   commentId: T:NonNonSheet.Editor.NonNonSheetSetting
   href: NonNonSheet.Editor.NonNonSheetSetting.html
@@ -139,12 +193,6 @@ references:
   name: TableCollectAssetPostprocessor
   nameWithType: TableCollectAssetPostprocessor
   fullName: NonNonSheet.Editor.TableCollectAssetPostprocessor
-- uid: NonNonSheet.Editor.SheetManager
-  commentId: T:NonNonSheet.Editor.SheetManager
-  href: NonNonSheet.Editor.SheetManager.html
-  name: SheetManager
-  nameWithType: SheetManager
-  fullName: NonNonSheet.Editor.SheetManager
 - uid: NonNonSheet.Editor.CopyPasteSystem
   commentId: T:NonNonSheet.Editor.CopyPasteSystem
   parent: NonNonSheet.Editor
@@ -159,18 +207,27 @@ references:
   name: DeleteSystem
   nameWithType: DeleteSystem
   fullName: NonNonSheet.Editor.DeleteSystem
-- uid: NonNonSheet.Editor.ResizeColSystem
-  commentId: T:NonNonSheet.Editor.ResizeColSystem
-  href: NonNonSheet.Editor.ResizeColSystem.html
-  name: ResizeColSystem
-  nameWithType: ResizeColSystem
-  fullName: NonNonSheet.Editor.ResizeColSystem
+- uid: NonNonSheet.Editor.FilterSystem
+  commentId: T:NonNonSheet.Editor.FilterSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.FilterSystem.html
+  name: FilterSystem
+  nameWithType: FilterSystem
+  fullName: NonNonSheet.Editor.FilterSystem
 - uid: NonNonSheet.Editor.RowReorderSystem
   commentId: T:NonNonSheet.Editor.RowReorderSystem
+  parent: NonNonSheet.Editor
   href: NonNonSheet.Editor.RowReorderSystem.html
   name: RowReorderSystem
   nameWithType: RowReorderSystem
   fullName: NonNonSheet.Editor.RowReorderSystem
+- uid: NonNonSheet.Editor.SearchSystem
+  commentId: T:NonNonSheet.Editor.SearchSystem
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SearchSystem.html
+  name: SearchSystem
+  nameWithType: SearchSystem
+  fullName: NonNonSheet.Editor.SearchSystem
 - uid: NonNonSheet.Editor.SelectSystem
   commentId: T:NonNonSheet.Editor.SelectSystem
   parent: NonNonSheet.Editor
@@ -178,12 +235,13 @@ references:
   name: SelectSystem
   nameWithType: SelectSystem
   fullName: NonNonSheet.Editor.SelectSystem
-- uid: NonNonSheet.Editor.ShortcutKeySystem
-  commentId: T:NonNonSheet.Editor.ShortcutKeySystem
-  href: NonNonSheet.Editor.ShortcutKeySystem.html
-  name: ShortcutKeySystem
-  nameWithType: ShortcutKeySystem
-  fullName: NonNonSheet.Editor.ShortcutKeySystem
+- uid: NonNonSheet.Editor.SystemBase
+  commentId: T:NonNonSheet.Editor.SystemBase
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SystemBase.html
+  name: SystemBase
+  nameWithType: SystemBase
+  fullName: NonNonSheet.Editor.SystemBase
 - uid: NonNonSheet.Editor.UndoRedoSystem
   commentId: T:NonNonSheet.Editor.UndoRedoSystem
   parent: NonNonSheet.Editor
@@ -193,102 +251,207 @@ references:
   fullName: NonNonSheet.Editor.UndoRedoSystem
 - uid: NonNonSheet.Editor.ValidateSystem
   commentId: T:NonNonSheet.Editor.ValidateSystem
+  parent: NonNonSheet.Editor
   href: NonNonSheet.Editor.ValidateSystem.html
   name: ValidateSystem
   nameWithType: ValidateSystem
   fullName: NonNonSheet.Editor.ValidateSystem
-- uid: NonNonSheet.Editor.Cell
-  commentId: T:NonNonSheet.Editor.Cell
+- uid: NonNonSheet.Editor.ColumnFilter
+  commentId: T:NonNonSheet.Editor.ColumnFilter
   parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.Cell.html
-  name: Cell
-  nameWithType: Cell
-  fullName: NonNonSheet.Editor.Cell
-- uid: NonNonSheet.Editor.Cell`1
-  commentId: T:NonNonSheet.Editor.Cell`1
-  href: NonNonSheet.Editor.Cell-1.html
-  name: Cell<T>
-  nameWithType: Cell<T>
-  fullName: NonNonSheet.Editor.Cell<T>
-  nameWithType.vb: Cell(Of T)
-  fullName.vb: NonNonSheet.Editor.Cell(Of T)
-  name.vb: Cell(Of T)
-  spec.csharp:
-  - uid: NonNonSheet.Editor.Cell`1
-    name: Cell
-    href: NonNonSheet.Editor.Cell-1.html
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: NonNonSheet.Editor.Cell`1
-    name: Cell
-    href: NonNonSheet.Editor.Cell-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: NonNonSheet.Editor.DataRow
-  commentId: T:NonNonSheet.Editor.DataRow
+  href: NonNonSheet.Editor.ColumnFilter.html
+  name: ColumnFilter
+  nameWithType: ColumnFilter
+  fullName: NonNonSheet.Editor.ColumnFilter
+- uid: NonNonSheet.Editor.FilterQuery
+  commentId: T:NonNonSheet.Editor.FilterQuery
   parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.DataRow.html
-  name: DataRow
-  nameWithType: DataRow
-  fullName: NonNonSheet.Editor.DataRow
-- uid: NonNonSheet.Editor.FooterRow
-  commentId: T:NonNonSheet.Editor.FooterRow
+  href: NonNonSheet.Editor.FilterQuery.html
+  name: FilterQuery
+  nameWithType: FilterQuery
+  fullName: NonNonSheet.Editor.FilterQuery
+- uid: NonNonSheet.Editor.FilterBuilder
+  commentId: T:NonNonSheet.Editor.FilterBuilder
+  href: NonNonSheet.Editor.FilterBuilder.html
+  name: FilterBuilder
+  nameWithType: FilterBuilder
+  fullName: NonNonSheet.Editor.FilterBuilder
+- uid: NonNonSheet.Editor.FilterFactory
+  commentId: T:NonNonSheet.Editor.FilterFactory
+  href: NonNonSheet.Editor.FilterFactory.html
+  name: FilterFactory
+  nameWithType: FilterFactory
+  fullName: NonNonSheet.Editor.FilterFactory
+- uid: NonNonSheet.Editor.EventBus
+  commentId: T:NonNonSheet.Editor.EventBus
   parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.FooterRow.html
-  name: FooterRow
-  nameWithType: FooterRow
-  fullName: NonNonSheet.Editor.FooterRow
-- uid: NonNonSheet.Editor.HeaderCell
-  commentId: T:NonNonSheet.Editor.HeaderCell
-  href: NonNonSheet.Editor.HeaderCell.html
-  name: HeaderCell
-  nameWithType: HeaderCell
-  fullName: NonNonSheet.Editor.HeaderCell
-- uid: NonNonSheet.Editor.HeaderRow
-  commentId: T:NonNonSheet.Editor.HeaderRow
+  href: NonNonSheet.Editor.EventBus.html
+  name: EventBus
+  nameWithType: EventBus
+  fullName: NonNonSheet.Editor.EventBus
+- uid: NonNonSheet.Editor.ISheetSystemEvent
+  commentId: T:NonNonSheet.Editor.ISheetSystemEvent
   parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.HeaderRow.html
-  name: HeaderRow
-  nameWithType: HeaderRow
-  fullName: NonNonSheet.Editor.HeaderRow
-- uid: NonNonSheet.Editor.IndexCell
-  commentId: T:NonNonSheet.Editor.IndexCell
+  href: NonNonSheet.Editor.ISheetSystemEvent.html
+  name: ISheetSystemEvent
+  nameWithType: ISheetSystemEvent
+  fullName: NonNonSheet.Editor.ISheetSystemEvent
+- uid: NonNonSheet.Editor.CancelSelectingCommandEvent
+  commentId: T:NonNonSheet.Editor.CancelSelectingCommandEvent
+  href: NonNonSheet.Editor.CancelSelectingCommandEvent.html
+  name: CancelSelectingCommandEvent
+  nameWithType: CancelSelectingCommandEvent
+  fullName: NonNonSheet.Editor.CancelSelectingCommandEvent
+- uid: NonNonSheet.Editor.RequestUndoRecordEvent
+  commentId: T:NonNonSheet.Editor.RequestUndoRecordEvent
+  href: NonNonSheet.Editor.RequestUndoRecordEvent.html
+  name: RequestUndoRecordEvent
+  nameWithType: RequestUndoRecordEvent
+  fullName: NonNonSheet.Editor.RequestUndoRecordEvent
+- uid: NonNonSheet.Editor.CopyStateChangedEvent
+  commentId: T:NonNonSheet.Editor.CopyStateChangedEvent
+  href: NonNonSheet.Editor.CopyStateChangedEvent.html
+  name: CopyStateChangedEvent
+  nameWithType: CopyStateChangedEvent
+  fullName: NonNonSheet.Editor.CopyStateChangedEvent
+- uid: NonNonSheet.Editor.RequestRefreshEvent
+  commentId: T:NonNonSheet.Editor.RequestRefreshEvent
+  href: NonNonSheet.Editor.RequestRefreshEvent.html
+  name: RequestRefreshEvent
+  nameWithType: RequestRefreshEvent
+  fullName: NonNonSheet.Editor.RequestRefreshEvent
+- uid: NonNonSheet.Editor.RequestRemoveRowsEvent
+  commentId: T:NonNonSheet.Editor.RequestRemoveRowsEvent
+  href: NonNonSheet.Editor.RequestRemoveRowsEvent.html
+  name: RequestRemoveRowsEvent
+  nameWithType: RequestRemoveRowsEvent
+  fullName: NonNonSheet.Editor.RequestRemoveRowsEvent
+- uid: NonNonSheet.Editor.RequestMoveRowsEvent
+  commentId: T:NonNonSheet.Editor.RequestMoveRowsEvent
+  href: NonNonSheet.Editor.RequestMoveRowsEvent.html
+  name: RequestMoveRowsEvent
+  nameWithType: RequestMoveRowsEvent
+  fullName: NonNonSheet.Editor.RequestMoveRowsEvent
+- uid: NonNonSheet.Editor.ReorderStartedEvent
+  commentId: T:NonNonSheet.Editor.ReorderStartedEvent
+  href: NonNonSheet.Editor.ReorderStartedEvent.html
+  name: ReorderStartedEvent
+  nameWithType: ReorderStartedEvent
+  fullName: NonNonSheet.Editor.ReorderStartedEvent
+- uid: NonNonSheet.Editor.ReorderEndedEvent
+  commentId: T:NonNonSheet.Editor.ReorderEndedEvent
+  href: NonNonSheet.Editor.ReorderEndedEvent.html
+  name: ReorderEndedEvent
+  nameWithType: ReorderEndedEvent
+  fullName: NonNonSheet.Editor.ReorderEndedEvent
+- uid: NonNonSheet.Editor.SelectionChangedEvent
+  commentId: T:NonNonSheet.Editor.SelectionChangedEvent
+  href: NonNonSheet.Editor.SelectionChangedEvent.html
+  name: SelectionChangedEvent
+  nameWithType: SelectionChangedEvent
+  fullName: NonNonSheet.Editor.SelectionChangedEvent
+- uid: NonNonSheet.Editor.RequestScrollToRowEvent
+  commentId: T:NonNonSheet.Editor.RequestScrollToRowEvent
+  href: NonNonSheet.Editor.RequestScrollToRowEvent.html
+  name: RequestScrollToRowEvent
+  nameWithType: RequestScrollToRowEvent
+  fullName: NonNonSheet.Editor.RequestScrollToRowEvent
+- uid: NonNonSheet.Editor.RequestScrollToCellEvent
+  commentId: T:NonNonSheet.Editor.RequestScrollToCellEvent
+  href: NonNonSheet.Editor.RequestScrollToCellEvent.html
+  name: RequestScrollToCellEvent
+  nameWithType: RequestScrollToCellEvent
+  fullName: NonNonSheet.Editor.RequestScrollToCellEvent
+- uid: NonNonSheet.Editor.RequestFocusCellEvent
+  commentId: T:NonNonSheet.Editor.RequestFocusCellEvent
+  href: NonNonSheet.Editor.RequestFocusCellEvent.html
+  name: RequestFocusCellEvent
+  nameWithType: RequestFocusCellEvent
+  fullName: NonNonSheet.Editor.RequestFocusCellEvent
+- uid: NonNonSheet.Editor.SearchResultsChangedEvent
+  commentId: T:NonNonSheet.Editor.SearchResultsChangedEvent
+  href: NonNonSheet.Editor.SearchResultsChangedEvent.html
+  name: SearchResultsChangedEvent
+  nameWithType: SearchResultsChangedEvent
+  fullName: NonNonSheet.Editor.SearchResultsChangedEvent
+- uid: NonNonSheet.Editor.FilterChangedEvent
+  commentId: T:NonNonSheet.Editor.FilterChangedEvent
+  href: NonNonSheet.Editor.FilterChangedEvent.html
+  name: FilterChangedEvent
+  nameWithType: FilterChangedEvent
+  fullName: NonNonSheet.Editor.FilterChangedEvent
+- uid: NonNonSheet.Editor.SheetSystemState
+  commentId: T:NonNonSheet.Editor.SheetSystemState
   parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.IndexCell.html
-  name: IndexCell
-  nameWithType: IndexCell
-  fullName: NonNonSheet.Editor.IndexCell
-- uid: NonNonSheet.Editor.Marker
-  commentId: T:NonNonSheet.Editor.Marker
-  href: NonNonSheet.Editor.Marker.html
-  name: Marker
-  nameWithType: Marker
-  fullName: NonNonSheet.Editor.Marker
-- uid: NonNonSheet.Editor.OriginCell
-  commentId: T:NonNonSheet.Editor.OriginCell
+  href: NonNonSheet.Editor.SheetSystemState.html
+  name: SheetSystemState
+  nameWithType: SheetSystemState
+  fullName: NonNonSheet.Editor.SheetSystemState
+- uid: NonNonSheet.Editor.FilterView
+  commentId: T:NonNonSheet.Editor.FilterView
   parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.OriginCell.html
-  name: OriginCell
-  nameWithType: OriginCell
-  fullName: NonNonSheet.Editor.OriginCell
-- uid: NonNonSheet.Editor.ReorderLine
-  commentId: T:NonNonSheet.Editor.ReorderLine
-  href: NonNonSheet.Editor.ReorderLine.html
-  name: ReorderLine
-  nameWithType: ReorderLine
-  fullName: NonNonSheet.Editor.ReorderLine
-- uid: NonNonSheet.Editor.Sheet
-  commentId: T:NonNonSheet.Editor.Sheet
+  href: NonNonSheet.Editor.FilterView.html
+  name: FilterView
+  nameWithType: FilterView
+  fullName: NonNonSheet.Editor.FilterView
+- uid: NonNonSheet.Editor.ReorderView
+  commentId: T:NonNonSheet.Editor.ReorderView
   parent: NonNonSheet.Editor
-  href: NonNonSheet.Editor.Sheet.html
-  name: Sheet
-  nameWithType: Sheet
-  fullName: NonNonSheet.Editor.Sheet
+  href: NonNonSheet.Editor.ReorderView.html
+  name: ReorderView
+  nameWithType: ReorderView
+  fullName: NonNonSheet.Editor.ReorderView
+- uid: NonNonSheet.Editor.SearchView
+  commentId: T:NonNonSheet.Editor.SearchView
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.SearchView.html
+  name: SearchView
+  nameWithType: SearchView
+  fullName: NonNonSheet.Editor.SearchView
+- uid: NonNonSheet.Editor.VisibleCellRegistry
+  commentId: T:NonNonSheet.Editor.VisibleCellRegistry
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.VisibleCellRegistry.html
+  name: VisibleCellRegistry
+  nameWithType: VisibleCellRegistry
+  fullName: NonNonSheet.Editor.VisibleCellRegistry
+- uid: NonNonSheet.Editor.CellBuilder
+  commentId: T:NonNonSheet.Editor.CellBuilder
+  href: NonNonSheet.Editor.CellBuilder.html
+  name: CellBuilder
+  nameWithType: CellBuilder
+  fullName: NonNonSheet.Editor.CellBuilder
+- uid: NonNonSheet.Editor.CellFactory
+  commentId: T:NonNonSheet.Editor.CellFactory
+  href: NonNonSheet.Editor.CellFactory.html
+  name: CellFactory
+  nameWithType: CellFactory
+  fullName: NonNonSheet.Editor.CellFactory
+- uid: NonNonSheet.Editor.NonNonCellAttribute
+  commentId: T:NonNonSheet.Editor.NonNonCellAttribute
+  href: NonNonSheet.Editor.NonNonCellAttribute.html
+  name: NonNonCellAttribute
+  nameWithType: NonNonCellAttribute
+  fullName: NonNonSheet.Editor.NonNonCellAttribute
+- uid: NonNonSheet.Editor.FilterPopupBuilder
+  commentId: T:NonNonSheet.Editor.FilterPopupBuilder
+  href: NonNonSheet.Editor.FilterPopupBuilder.html
+  name: FilterPopupBuilder
+  nameWithType: FilterPopupBuilder
+  fullName: NonNonSheet.Editor.FilterPopupBuilder
+- uid: NonNonSheet.Editor.FilterPopupFactory
+  commentId: T:NonNonSheet.Editor.FilterPopupFactory
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.FilterPopupFactory.html
+  name: FilterPopupFactory
+  nameWithType: FilterPopupFactory
+  fullName: NonNonSheet.Editor.FilterPopupFactory
+- uid: NonNonSheet.Editor.NonNonTableEditor
+  commentId: T:NonNonSheet.Editor.NonNonTableEditor
+  href: NonNonSheet.Editor.NonNonTableEditor.html
+  name: NonNonTableEditor
+  nameWithType: NonNonTableEditor
+  fullName: NonNonSheet.Editor.NonNonTableEditor
 - uid: NonNonSheet.Editor.AssetCell
   commentId: T:NonNonSheet.Editor.AssetCell
   href: NonNonSheet.Editor.AssetCell.html
@@ -520,6 +683,83 @@ references:
   name: Vector4Cell
   nameWithType: Vector4Cell
   fullName: NonNonSheet.Editor.Vector4Cell
+- uid: NonNonSheet.Editor.VectorFieldCellBase`2
+  commentId: T:NonNonSheet.Editor.VectorFieldCellBase`2
+  href: NonNonSheet.Editor.VectorFieldCellBase-2.html
+  name: VectorFieldCellBase<TValue, TField>
+  nameWithType: VectorFieldCellBase<TValue, TField>
+  fullName: NonNonSheet.Editor.VectorFieldCellBase<TValue, TField>
+  nameWithType.vb: VectorFieldCellBase(Of TValue, TField)
+  fullName.vb: NonNonSheet.Editor.VectorFieldCellBase(Of TValue, TField)
+  name.vb: VectorFieldCellBase(Of TValue, TField)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.VectorFieldCellBase`2
+    name: VectorFieldCellBase
+    href: NonNonSheet.Editor.VectorFieldCellBase-2.html
+  - name: <
+  - name: TValue
+  - name: ','
+  - name: " "
+  - name: TField
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.VectorFieldCellBase`2
+    name: VectorFieldCellBase
+    href: NonNonSheet.Editor.VectorFieldCellBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: ','
+  - name: " "
+  - name: TField
+  - name: )
+- uid: NonNonSheet.Editor.Cell
+  commentId: T:NonNonSheet.Editor.Cell
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Cell.html
+  name: Cell
+  nameWithType: Cell
+  fullName: NonNonSheet.Editor.Cell
+- uid: NonNonSheet.Editor.Cell`1
+  commentId: T:NonNonSheet.Editor.Cell`1
+  href: NonNonSheet.Editor.Cell-1.html
+  name: Cell<T>
+  nameWithType: Cell<T>
+  fullName: NonNonSheet.Editor.Cell<T>
+  nameWithType.vb: Cell(Of T)
+  fullName.vb: NonNonSheet.Editor.Cell(Of T)
+  name.vb: Cell(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.Cell`1
+    name: Cell
+    href: NonNonSheet.Editor.Cell-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.Cell`1
+    name: Cell
+    href: NonNonSheet.Editor.Cell-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.Editor.IndexCell
+  commentId: T:NonNonSheet.Editor.IndexCell
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.IndexCell.html
+  name: IndexCell
+  nameWithType: IndexCell
+  fullName: NonNonSheet.Editor.IndexCell
+- uid: NonNonSheet.Editor.Marker
+  commentId: T:NonNonSheet.Editor.Marker
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.Marker.html
+  name: Marker
+  nameWithType: Marker
+  fullName: NonNonSheet.Editor.Marker
 - uid: NonNonSheet.Editor.CustomCell`2
   commentId: T:NonNonSheet.Editor.CustomCell`2
   href: NonNonSheet.Editor.CustomCell-2.html
@@ -680,36 +920,283 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: NonNonSheet.Editor.AwaitableExtension
-  commentId: T:NonNonSheet.Editor.AwaitableExtension
-  href: NonNonSheet.Editor.AwaitableExtension.html
-  name: AwaitableExtension
-  nameWithType: AwaitableExtension
-  fullName: NonNonSheet.Editor.AwaitableExtension
-- uid: NonNonSheet.Editor.KeyCodeUtility
-  commentId: T:NonNonSheet.Editor.KeyCodeUtility
-  href: NonNonSheet.Editor.KeyCodeUtility.html
-  name: KeyCodeUtility
-  nameWithType: KeyCodeUtility
-  fullName: NonNonSheet.Editor.KeyCodeUtility
-- uid: NonNonSheet.Editor.NonNonTableCsvConverter
-  commentId: T:NonNonSheet.Editor.NonNonTableCsvConverter
-  href: NonNonSheet.Editor.NonNonTableCsvConverter.html
-  name: NonNonTableCsvConverter
-  nameWithType: NonNonTableCsvConverter
-  fullName: NonNonSheet.Editor.NonNonTableCsvConverter
-- uid: NonNonSheet.Editor.NonNonTableJsonConverter
-  commentId: T:NonNonSheet.Editor.NonNonTableJsonConverter
-  href: NonNonSheet.Editor.NonNonTableJsonConverter.html
-  name: NonNonTableJsonConverter
-  nameWithType: NonNonTableJsonConverter
-  fullName: NonNonSheet.Editor.NonNonTableJsonConverter
-- uid: NonNonSheet.Editor.UiTkShortcutGuards
-  commentId: T:NonNonSheet.Editor.UiTkShortcutGuards
-  href: NonNonSheet.Editor.UiTkShortcutGuards.html
-  name: UiTkShortcutGuards
-  nameWithType: UiTkShortcutGuards
-  fullName: NonNonSheet.Editor.UiTkShortcutGuards
+- uid: NonNonSheet.Editor.BoolFilterPopup
+  commentId: T:NonNonSheet.Editor.BoolFilterPopup
+  href: NonNonSheet.Editor.BoolFilterPopup.html
+  name: BoolFilterPopup
+  nameWithType: BoolFilterPopup
+  fullName: NonNonSheet.Editor.BoolFilterPopup
+- uid: NonNonSheet.Editor.BoolFilterPopupFactory
+  commentId: T:NonNonSheet.Editor.BoolFilterPopupFactory
+  href: NonNonSheet.Editor.BoolFilterPopupFactory.html
+  name: BoolFilterPopupFactory
+  nameWithType: BoolFilterPopupFactory
+  fullName: NonNonSheet.Editor.BoolFilterPopupFactory
+- uid: NonNonSheet.Editor.ColorFilterPopup
+  commentId: T:NonNonSheet.Editor.ColorFilterPopup
+  href: NonNonSheet.Editor.ColorFilterPopup.html
+  name: ColorFilterPopup
+  nameWithType: ColorFilterPopup
+  fullName: NonNonSheet.Editor.ColorFilterPopup
+- uid: NonNonSheet.Editor.ColorFilterPopupFactory
+  commentId: T:NonNonSheet.Editor.ColorFilterPopupFactory
+  href: NonNonSheet.Editor.ColorFilterPopupFactory.html
+  name: ColorFilterPopupFactory
+  nameWithType: ColorFilterPopupFactory
+  fullName: NonNonSheet.Editor.ColorFilterPopupFactory
+- uid: NonNonSheet.Editor.EnumFilterPopup
+  commentId: T:NonNonSheet.Editor.EnumFilterPopup
+  href: NonNonSheet.Editor.EnumFilterPopup.html
+  name: EnumFilterPopup
+  nameWithType: EnumFilterPopup
+  fullName: NonNonSheet.Editor.EnumFilterPopup
+- uid: NonNonSheet.Editor.EnumFilterPopupFactory
+  commentId: T:NonNonSheet.Editor.EnumFilterPopupFactory
+  href: NonNonSheet.Editor.EnumFilterPopupFactory.html
+  name: EnumFilterPopupFactory
+  nameWithType: EnumFilterPopupFactory
+  fullName: NonNonSheet.Editor.EnumFilterPopupFactory
+- uid: NonNonSheet.Editor.FallbackFilterPopup
+  commentId: T:NonNonSheet.Editor.FallbackFilterPopup
+  href: NonNonSheet.Editor.FallbackFilterPopup.html
+  name: FallbackFilterPopup
+  nameWithType: FallbackFilterPopup
+  fullName: NonNonSheet.Editor.FallbackFilterPopup
+- uid: NonNonSheet.Editor.FilterPopup
+  commentId: T:NonNonSheet.Editor.FilterPopup
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.FilterPopup.html
+  name: FilterPopup
+  nameWithType: FilterPopup
+  fullName: NonNonSheet.Editor.FilterPopup
+- uid: NonNonSheet.Editor.FlagsEnumFilterPopup
+  commentId: T:NonNonSheet.Editor.FlagsEnumFilterPopup
+  href: NonNonSheet.Editor.FlagsEnumFilterPopup.html
+  name: FlagsEnumFilterPopup
+  nameWithType: FlagsEnumFilterPopup
+  fullName: NonNonSheet.Editor.FlagsEnumFilterPopup
+- uid: NonNonSheet.Editor.FlagsEnumFilterPopupFactory
+  commentId: T:NonNonSheet.Editor.FlagsEnumFilterPopupFactory
+  href: NonNonSheet.Editor.FlagsEnumFilterPopupFactory.html
+  name: FlagsEnumFilterPopupFactory
+  nameWithType: FlagsEnumFilterPopupFactory
+  fullName: NonNonSheet.Editor.FlagsEnumFilterPopupFactory
+- uid: NonNonSheet.Editor.LayerFilterPopup
+  commentId: T:NonNonSheet.Editor.LayerFilterPopup
+  href: NonNonSheet.Editor.LayerFilterPopup.html
+  name: LayerFilterPopup
+  nameWithType: LayerFilterPopup
+  fullName: NonNonSheet.Editor.LayerFilterPopup
+- uid: NonNonSheet.Editor.LayerFilterPopupFactory
+  commentId: T:NonNonSheet.Editor.LayerFilterPopupFactory
+  href: NonNonSheet.Editor.LayerFilterPopupFactory.html
+  name: LayerFilterPopupFactory
+  nameWithType: LayerFilterPopupFactory
+  fullName: NonNonSheet.Editor.LayerFilterPopupFactory
+- uid: NonNonSheet.Editor.LayerMaskFilterPopup
+  commentId: T:NonNonSheet.Editor.LayerMaskFilterPopup
+  href: NonNonSheet.Editor.LayerMaskFilterPopup.html
+  name: LayerMaskFilterPopup
+  nameWithType: LayerMaskFilterPopup
+  fullName: NonNonSheet.Editor.LayerMaskFilterPopup
+- uid: NonNonSheet.Editor.LayerMaskFilterPopupFactory
+  commentId: T:NonNonSheet.Editor.LayerMaskFilterPopupFactory
+  href: NonNonSheet.Editor.LayerMaskFilterPopupFactory.html
+  name: LayerMaskFilterPopupFactory
+  nameWithType: LayerMaskFilterPopupFactory
+  fullName: NonNonSheet.Editor.LayerMaskFilterPopupFactory
+- uid: NonNonSheet.Editor.NumericFilterPopup
+  commentId: T:NonNonSheet.Editor.NumericFilterPopup
+  href: NonNonSheet.Editor.NumericFilterPopup.html
+  name: NumericFilterPopup
+  nameWithType: NumericFilterPopup
+  fullName: NonNonSheet.Editor.NumericFilterPopup
+- uid: NonNonSheet.Editor.ConditionRow
+  commentId: T:NonNonSheet.Editor.ConditionRow
+  href: NonNonSheet.Editor.ConditionRow.html
+  name: ConditionRow
+  nameWithType: ConditionRow
+  fullName: NonNonSheet.Editor.ConditionRow
+- uid: NonNonSheet.Editor.StringFilterPopup
+  commentId: T:NonNonSheet.Editor.StringFilterPopup
+  href: NonNonSheet.Editor.StringFilterPopup.html
+  name: StringFilterPopup
+  nameWithType: StringFilterPopup
+  fullName: NonNonSheet.Editor.StringFilterPopup
+- uid: NonNonSheet.Editor.StringFilterPopupFactory
+  commentId: T:NonNonSheet.Editor.StringFilterPopupFactory
+  href: NonNonSheet.Editor.StringFilterPopupFactory.html
+  name: StringFilterPopupFactory
+  nameWithType: StringFilterPopupFactory
+  fullName: NonNonSheet.Editor.StringFilterPopupFactory
+- uid: NonNonSheet.Editor.TagFilterPopup
+  commentId: T:NonNonSheet.Editor.TagFilterPopup
+  href: NonNonSheet.Editor.TagFilterPopup.html
+  name: TagFilterPopup
+  nameWithType: TagFilterPopup
+  fullName: NonNonSheet.Editor.TagFilterPopup
+- uid: NonNonSheet.Editor.TagFilterPopupFactory
+  commentId: T:NonNonSheet.Editor.TagFilterPopupFactory
+  href: NonNonSheet.Editor.TagFilterPopupFactory.html
+  name: TagFilterPopupFactory
+  nameWithType: TagFilterPopupFactory
+  fullName: NonNonSheet.Editor.TagFilterPopupFactory
+- uid: NonNonSheet.Editor.SheetColumnBuilder
+  commentId: T:NonNonSheet.Editor.SheetColumnBuilder
+  href: NonNonSheet.Editor.SheetColumnBuilder.html
+  name: SheetColumnBuilder
+  nameWithType: SheetColumnBuilder
+  fullName: NonNonSheet.Editor.SheetColumnBuilder
+- uid: NonNonSheet.Editor.TrickleDownEvent`1
+  commentId: T:NonNonSheet.Editor.TrickleDownEvent`1
+  href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  name: TrickleDownEvent<T>
+  nameWithType: TrickleDownEvent<T>
+  fullName: NonNonSheet.Editor.TrickleDownEvent<T>
+  nameWithType.vb: TrickleDownEvent(Of T)
+  fullName.vb: NonNonSheet.Editor.TrickleDownEvent(Of T)
+  name.vb: TrickleDownEvent(Of T)
+  spec.csharp:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1
+    name: TrickleDownEvent
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: NonNonSheet.Editor.TrickleDownEvent`1
+    name: TrickleDownEvent
+    href: NonNonSheet.Editor.TrickleDownEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NonNonSheet.Editor.SingleClickCellEvent
+  commentId: T:NonNonSheet.Editor.SingleClickCellEvent
+  href: NonNonSheet.Editor.SingleClickCellEvent.html
+  name: SingleClickCellEvent
+  nameWithType: SingleClickCellEvent
+  fullName: NonNonSheet.Editor.SingleClickCellEvent
+- uid: NonNonSheet.Editor.EnterCellEvent
+  commentId: T:NonNonSheet.Editor.EnterCellEvent
+  href: NonNonSheet.Editor.EnterCellEvent.html
+  name: EnterCellEvent
+  nameWithType: EnterCellEvent
+  fullName: NonNonSheet.Editor.EnterCellEvent
+- uid: NonNonSheet.Editor.ChangeCellValueEvent
+  commentId: T:NonNonSheet.Editor.ChangeCellValueEvent
+  href: NonNonSheet.Editor.ChangeCellValueEvent.html
+  name: ChangeCellValueEvent
+  nameWithType: ChangeCellValueEvent
+  fullName: NonNonSheet.Editor.ChangeCellValueEvent
+- uid: NonNonSheet.Editor.CopyCommandEvent
+  commentId: T:NonNonSheet.Editor.CopyCommandEvent
+  href: NonNonSheet.Editor.CopyCommandEvent.html
+  name: CopyCommandEvent
+  nameWithType: CopyCommandEvent
+  fullName: NonNonSheet.Editor.CopyCommandEvent
+- uid: NonNonSheet.Editor.PasteCommandEvent
+  commentId: T:NonNonSheet.Editor.PasteCommandEvent
+  href: NonNonSheet.Editor.PasteCommandEvent.html
+  name: PasteCommandEvent
+  nameWithType: PasteCommandEvent
+  fullName: NonNonSheet.Editor.PasteCommandEvent
+- uid: NonNonSheet.Editor.DeleteCommandEvent
+  commentId: T:NonNonSheet.Editor.DeleteCommandEvent
+  href: NonNonSheet.Editor.DeleteCommandEvent.html
+  name: DeleteCommandEvent
+  nameWithType: DeleteCommandEvent
+  fullName: NonNonSheet.Editor.DeleteCommandEvent
+- uid: NonNonSheet.Editor.CancelSelectingEvent
+  commentId: T:NonNonSheet.Editor.CancelSelectingEvent
+  href: NonNonSheet.Editor.CancelSelectingEvent.html
+  name: CancelSelectingEvent
+  nameWithType: CancelSelectingEvent
+  fullName: NonNonSheet.Editor.CancelSelectingEvent
+- uid: NonNonSheet.Editor.CancelCopyEvent
+  commentId: T:NonNonSheet.Editor.CancelCopyEvent
+  href: NonNonSheet.Editor.CancelCopyEvent.html
+  name: CancelCopyEvent
+  nameWithType: CancelCopyEvent
+  fullName: NonNonSheet.Editor.CancelCopyEvent
+- uid: NonNonSheet.Editor.MoveSelectionEvent
+  commentId: T:NonNonSheet.Editor.MoveSelectionEvent
+  href: NonNonSheet.Editor.MoveSelectionEvent.html
+  name: MoveSelectionEvent
+  nameWithType: MoveSelectionEvent
+  fullName: NonNonSheet.Editor.MoveSelectionEvent
+- uid: NonNonSheet.Editor.MoveSelectionEvent.Direction
+  commentId: T:NonNonSheet.Editor.MoveSelectionEvent.Direction
+  parent: NonNonSheet.Editor
+  href: NonNonSheet.Editor.MoveSelectionEvent.html
+  name: MoveSelectionEvent.Direction
+  nameWithType: MoveSelectionEvent.Direction
+  fullName: NonNonSheet.Editor.MoveSelectionEvent.Direction
+  spec.csharp:
+  - uid: NonNonSheet.Editor.MoveSelectionEvent
+    name: MoveSelectionEvent
+    href: NonNonSheet.Editor.MoveSelectionEvent.html
+  - name: .
+  - uid: NonNonSheet.Editor.MoveSelectionEvent.Direction
+    name: Direction
+    href: NonNonSheet.Editor.MoveSelectionEvent.Direction.html
+  spec.vb:
+  - uid: NonNonSheet.Editor.MoveSelectionEvent
+    name: MoveSelectionEvent
+    href: NonNonSheet.Editor.MoveSelectionEvent.html
+  - name: .
+  - uid: NonNonSheet.Editor.MoveSelectionEvent.Direction
+    name: Direction
+    href: NonNonSheet.Editor.MoveSelectionEvent.Direction.html
+- uid: NonNonSheet.Editor.CellBoundEvent
+  commentId: T:NonNonSheet.Editor.CellBoundEvent
+  href: NonNonSheet.Editor.CellBoundEvent.html
+  name: CellBoundEvent
+  nameWithType: CellBoundEvent
+  fullName: NonNonSheet.Editor.CellBoundEvent
+- uid: NonNonSheet.Editor.IndexCellBoundEvent
+  commentId: T:NonNonSheet.Editor.IndexCellBoundEvent
+  href: NonNonSheet.Editor.IndexCellBoundEvent.html
+  name: IndexCellBoundEvent
+  nameWithType: IndexCellBoundEvent
+  fullName: NonNonSheet.Editor.IndexCellBoundEvent
+- uid: NonNonSheet.Editor.SortChangedEvent
+  commentId: T:NonNonSheet.Editor.SortChangedEvent
+  href: NonNonSheet.Editor.SortChangedEvent.html
+  name: SortChangedEvent
+  nameWithType: SortChangedEvent
+  fullName: NonNonSheet.Editor.SortChangedEvent
+- uid: NonNonSheet.Editor.FilterButtonClickedEvent
+  commentId: T:NonNonSheet.Editor.FilterButtonClickedEvent
+  href: NonNonSheet.Editor.FilterButtonClickedEvent.html
+  name: FilterButtonClickedEvent
+  nameWithType: FilterButtonClickedEvent
+  fullName: NonNonSheet.Editor.FilterButtonClickedEvent
+- uid: NonNonSheet.Editor.FilterPopupChangedEvent
+  commentId: T:NonNonSheet.Editor.FilterPopupChangedEvent
+  href: NonNonSheet.Editor.FilterPopupChangedEvent.html
+  name: FilterPopupChangedEvent
+  nameWithType: FilterPopupChangedEvent
+  fullName: NonNonSheet.Editor.FilterPopupChangedEvent
+- uid: NonNonSheet.Editor.FilterPopupClearEvent
+  commentId: T:NonNonSheet.Editor.FilterPopupClearEvent
+  href: NonNonSheet.Editor.FilterPopupClearEvent.html
+  name: FilterPopupClearEvent
+  nameWithType: FilterPopupClearEvent
+  fullName: NonNonSheet.Editor.FilterPopupClearEvent
+- uid: NonNonSheet.Editor.MCLVWidthChangedEvent
+  commentId: T:NonNonSheet.Editor.MCLVWidthChangedEvent
+  href: NonNonSheet.Editor.MCLVWidthChangedEvent.html
+  name: MCLVWidthChangedEvent
+  nameWithType: MCLVWidthChangedEvent
+  fullName: NonNonSheet.Editor.MCLVWidthChangedEvent
+- uid: NonNonSheet.Editor.MCLVScrolledEvent
+  commentId: T:NonNonSheet.Editor.MCLVScrolledEvent
+  href: NonNonSheet.Editor.MCLVScrolledEvent.html
+  name: MCLVScrolledEvent
+  nameWithType: MCLVScrolledEvent
+  fullName: NonNonSheet.Editor.MCLVScrolledEvent
 - uid: NonNonSheet.Editor
   commentId: N:NonNonSheet.Editor
   href: NonNonSheet.html
