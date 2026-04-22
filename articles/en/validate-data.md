@@ -1,6 +1,6 @@
 # Validate data
 
-<img src="~/images/image (10).png" alt=""><br>
+<img src="~/images/validate-data/validation-table-view.png" alt=""><br>
 
 When managing master data it's common to impose constraints (e.g., uniqueness, required fields).
 
@@ -85,7 +85,7 @@ ValidationResult IValidationSampleTableValidator.ValidateName(ValidationSampleDa
 
 Return `ValidationResult.Error` to indicate failure. The message you pass is shown as the cell tooltip.
 
-<img src="~/images/image (11).png" alt=""><br>
+<img src="~/images/validate-data/validation-error-tooltip.png" alt=""><br>
 
 ```csharp
 ValidationResult IValidationSampleTableValidator.ValidateId(ValidationSampleData self, int id)

@@ -8,6 +8,8 @@ items:
   href: quick-start.md
 - name: テーブルの基本
   href: table-basics.md
+- name: データを探索する
+  href: explore-data.md
 - name: カスタムセルの使い方
   href: how-to-use-custom-cell.md
 - name: カスタムセルを自作する

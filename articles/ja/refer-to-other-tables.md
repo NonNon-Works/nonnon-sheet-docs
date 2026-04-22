@@ -1,6 +1,6 @@
 # 他のテーブルを参照する
 
-<img src="~/images/image (18).png" alt=""><br>
+<img src="~/images/refer-to-other-tables/dropdown-relation-cell.png" alt=""><br>
 
 他のテーブルのデータをドロップダウンで選択できるようにすることも可能です。
 
@@ -81,7 +81,7 @@ public class SampleTableMultiRelationCell : MultiDataRelationCell<int, MultiSamp
 
 `DataRelationCell` の代わりに `MultiDataRelationCell` を継承したクラスを実装することで、複数のキーを保存させることもできます。
 
-<img src="~/images/image (1).png" alt=""><br>
+<img src="~/images/refer-to-other-tables/multi-relation-cell.png" alt=""><br>
 
 ```csharp
 [NonNonTable]
@@ -103,7 +103,7 @@ public class ReferencingData
 
 そのフィールドに `CellCustomAttribute` を継承した Attribute（今回だと `SampleTableRefAttribute` または `MultiSampleTableRefAttribute`）を付与します。
 
-<img src="~/images/image.png" alt=""><br>
+<img src="~/images/refer-to-other-tables/referencing-table-result.png" alt=""><br>
 
 以上で ReferencingTable から SampleTable を参照することができるようになりました。
 

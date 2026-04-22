@@ -1,6 +1,6 @@
 # Refer to other tables
 
-<img src="~/images/image (18).png" alt=""><br>
+<img src="~/images/refer-to-other-tables/dropdown-relation-cell.png" alt=""><br>
 
 You can allow users to select data from another table via a dropdown.
 
@@ -82,7 +82,7 @@ public class SampleTableMultiRelationCell : MultiDataRelationCell<int, MultiSamp
 
 You can inherit from `MultiDataRelationCell` instead of `DataRelationCell` to store multiple keys.
 
-<img src="~/images/image (1).png" alt=""><br>
+<img src="~/images/refer-to-other-tables/multi-relation-cell.png" alt=""><br>
 
 ```csharp
 [NonNonTable]
@@ -104,7 +104,7 @@ Add a field whose type matches the key type `T` used by the referenced data clas
 
 Apply the attribute you defined (in this case `SampleTableRef` or `MultiSampleTableRef`).
 
-<img src="~/images/image.png" alt=""><br>
+<img src="~/images/refer-to-other-tables/referencing-table-result.png" alt=""><br>
 
 With this setup, `ReferencingTable` can reference entries in `SampleTable`.
 

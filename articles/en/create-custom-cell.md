@@ -57,7 +57,7 @@ Type parameters of `CustomCell`:
 
 ## Custom Cell Implementation Example
 
-<img src="~/images/image (26).png" alt=""><br>
+<img src="~/images/create-custom-cell/date-cell-example.png" alt=""><br>
 
 The following example demonstrates a custom cell using a simple date type.
 

@@ -8,6 +8,8 @@ items:
   href: quick-start.md
 - name: Table Basics
   href: table-basics.md
+- name: Exploring Data
+  href: explore-data.md
 - name: How to use custom cell
   href: how-to-use-custom-cell.md
 - name: Create custom cell

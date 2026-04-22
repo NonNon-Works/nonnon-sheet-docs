@@ -5,7 +5,7 @@
 `NonNonTable` is a `ScriptableObject` that stores a `List<T>` of serializable row objects.<br>
 It is rendered in a tabular format in the Unity **Editor**, and each field is editable on a per-cell basis.
 
-<img src="~/images/image (6).png" alt=""><br>
+<img src="~/images/table-basics/table-view.png" alt=""><br>
 
 The cell changes its editor/control based on the field type.
 
@@ -43,13 +43,13 @@ For example, an **IntegerField** is used for an `int` field, and a **Toggle** is
 
 </details><br>
 
-<img src="~/images/image (16).png" alt=""><br>
+<img src="~/images/table-basics/cell-types.png" alt=""><br>
 
 If a type does not have a dedicated cell, the value is shown as the string returned by `ToString()`.
 
 Double-clicking a cell opens a popup with a `PropertyField`, allowing you to edit the value.
 
-<img src="~/images/image (17).png" alt=""><br>
+<img src="~/images/table-basics/property-popup.png" alt=""><br>
 
 For arrays, the cell shows a comma-separated string of elements.
 

@@ -2,7 +2,7 @@
 
 You can customize a field's cell UI by applying specific attributes. For example, applying the `Slider` attribute to a `float` field changes its cell UI to a slider.
 
-<img src="~/images/image (28).png" alt=""><br>
+<img src="~/images/how-to-use-custom-cell/slider-cell.png" alt=""><br>
 
 ```csharp
 [Serializable]
